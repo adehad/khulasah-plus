@@ -1,11 +1,9 @@
-import { LitElement, html } from "lit";
+import { html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
-
+import { styles as sharedStyles } from "../../styles/shared-styles";
 // You can also import styles from another file
 // if you prefer to keep your CSS seperate from your component
 import { styles } from "./about-styles";
-
-import { styles as sharedStyles } from "../../styles/shared-styles";
 
 import "@shoelace-style/shoelace/dist/components/card/card.js";
 

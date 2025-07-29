@@ -1,5 +1,5 @@
-import { LitElement, css, html } from "lit";
-import { property, customElement } from "lit/decorators.js";
+import { css, html, LitElement } from "lit";
+import { customElement, property } from "lit/decorators.js";
 import { resolveRouterPath } from "../router";
 
 import "@shoelace-style/shoelace/dist/components/button/button.js";

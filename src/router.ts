@@ -7,16 +7,15 @@ if (!(globalThis as any).URLPattern) {
   await import("urlpattern-polyfill");
 }
 
-import { Router } from "@thepassle/app-tools/router.js";
 import { lazy } from "@thepassle/app-tools/router/plugins/lazy.js";
-
 // @ts-ignore
 // biome-ignore lint/correctness/noUnusedImports:TODO: figure out why this is needed.
 import { title } from "@thepassle/app-tools/router/plugins/title.js";
+import { Router } from "@thepassle/app-tools/router.js";
 
 import "./pages/app-home.js";
 
-const baseURL: string = (import.meta).env.BASE_URL;
+const baseURL: string = import.meta.env.BASE_URL;
 
 export const router = new Router({
   routes: [
