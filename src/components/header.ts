@@ -1,13 +1,13 @@
-import { LitElement, css, html } from 'lit';
-import { property, customElement } from 'lit/decorators.js';
-import { resolveRouterPath } from '../router';
+import { LitElement, css, html } from "lit";
+import { property, customElement } from "lit/decorators.js";
+import { resolveRouterPath } from "../router";
 
-import '@shoelace-style/shoelace/dist/components/button/button.js';
-@customElement('app-header')
+import "@shoelace-style/shoelace/dist/components/button/button.js";
+@customElement("app-header")
 export class AppHeader extends LitElement {
-  @property({ type: String }) title = 'khulasah-plus';
+  @property({ type: String }) title = "khulasah-plus";
 
-  @property({ type: Boolean}) enableBack: boolean = false;
+  @property({ type: Boolean }) enableBack: boolean = false;
 
   static styles = css`
     header {
@@ -61,9 +61,13 @@ export class AppHeader extends LitElement {
       <header>
 
         <div id="back-button-block">
-          ${this.enableBack ? html`<sl-button size="small" href="${resolveRouterPath()}">
+          ${
+            this.enableBack
+              ? html`<sl-button size="small" href="${resolveRouterPath()}">
             Back
-          </sl-button>` : null}
+          </sl-button>`
+              : null
+          }
 
           <h1>${this.title}</h1>
         </div>

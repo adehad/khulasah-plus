@@ -1,18 +1,19 @@
-import { LitElement, css, html } from 'lit';
-import { property, customElement } from 'lit/decorators.js';
-import { resolveRouterPath } from '../router';
+import { LitElement, css, html } from "lit";
+import { property, customElement } from "lit/decorators.js";
+import { resolveRouterPath } from "../router";
 
-import '@shoelace-style/shoelace/dist/components/card/card.js';
-import '@shoelace-style/shoelace/dist/components/button/button.js';
+import "@shoelace-style/shoelace/dist/components/card/card.js";
+import "@shoelace-style/shoelace/dist/components/button/button.js";
+import "@shoelace-style/shoelace/dist/components/tab/tab.js";
+import "@shoelace-style/shoelace/dist/components/tab-panel/tab-panel.js";
 
-import { styles } from '../styles/shared-styles';
+import { styles } from "../styles/shared-styles";
 
-@customElement('app-home')
+@customElement("app-home")
 export class AppHome extends LitElement {
-
   // For more information on using properties and state in lit
   // check out this link https://lit.dev/docs/components/properties/
-  @property() message = 'Welcome!';
+  @property() message = "Welcome!";
 
   static styles = [
     styles,
@@ -53,20 +54,21 @@ export class AppHome extends LitElement {
         margin-right: 64px;
       }
     }
-  `];
+  `,
+  ];
 
   async firstUpdated() {
     // this method is a lifecycle even in lit
     // for more info check out the lit docs https://lit.dev/docs/components/lifecycle/
-    console.log('This is your home page');
+    console.log("This is your home page");
   }
 
   share() {
-    if ((navigator as any).share) {
-      (navigator as any).share({
-        title: 'PWABuilder pwa-starter',
-        text: 'Check out the PWABuilder pwa-starter!',
-        url: 'https://github.com/pwa-builder/pwa-starter',
+    if (navigator.share) {
+      navigator.share({
+        title: "PWABuilder pwa-starter",
+        text: "Check out the PWABuilder pwa-starter!",
+        url: "https://github.com/pwa-builder/pwa-starter",
       });
     }
   }
@@ -97,13 +99,28 @@ export class AppHome extends LitElement {
               and the Apple App Store!
             </p>
 
-            ${'share' in navigator
-              ? html`<sl-button slot="footer" variant="default" @click="${this.share}">
+            ${
+              "share" in navigator
+                ? html`<sl-button slot="footer" variant="default" @click="${this.share}">
                         <sl-icon slot="prefix" name="share"></sl-icon>
                         Share this Starter!
                       </sl-button>`
-              : null}
+                : null
+            }
           </sl-card>
+
+          <sl-tab-group>
+            <sl-tab slot="nav" panel="general">General</sl-tab>
+            <sl-tab slot="nav" panel="custom">Custom</sl-tab>
+            <sl-tab slot="nav" panel="advanced">Advanced</sl-tab>
+            <sl-tab slot="nav" panel="disabled" disabled>Disabled</sl-tab>
+
+            <sl-tab-panel name="general">This is the general tab panel.</sl-tab-panel>
+            <sl-tab-panel name="custom">This is the custom tab panel.</sl-tab-panel>
+            <sl-tab-panel name="advanced">This is the advanced tab panel.</sl-tab-panel>
+            <sl-tab-panel name="disabled">This is a disabled tab panel.</sl-tab-panel>
+          </sl-tab-group>
+
 
           <sl-card id="infoCard">
             <h2>Technology Used</h2>
@@ -128,7 +145,7 @@ export class AppHome extends LitElement {
             </ul>
           </sl-card>
 
-          <sl-button href="${resolveRouterPath('about')}" variant="primary">Navigate to About</sl-button>
+          <sl-button href="${resolveRouterPath("about")}" variant="primary">Navigate to About</sl-button>
         </div>
       </main>
     `;

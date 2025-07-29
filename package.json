@@ -10,7 +10,9 @@
     "deploy": "npx @azure/static-web-apps-cli login --no-use-keychain && npx @azure/static-web-apps-cli deploy",
     "build": "tsc && vite build",
     "start": "bun run dev",
-    "start-remote": "vite --host"
+    "start-remote": "vite --host",
+    "lint": "biome lint",
+    "format": "biome format --write"
   },
   "author": "",
   "license": "ISC",
@@ -24,18 +26,9 @@
     "workbox-precaching": "^7.3.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.1.2",
     "typescript": "^5.8.3",
     "vite": "^5.4.19",
     "vite-plugin-pwa": "^0.20.5"
-  },
-  "prettier": {
-    "tabWidth": 2,
-    "useTabs": false,
-    "semi": true,
-    "singleQuote": true,
-    "quoteProps": "consistent",
-    "trailingComma": "es5",
-    "endOfLine": "crlf",
-    "bracketSpacing": true
   }
 }

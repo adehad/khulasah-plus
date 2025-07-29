@@ -189,7 +189,7 @@
               "title": "The chorus entry",
               "required": ["repeat", "index"],
               "properties": {
-                "repeat":{
+                "repeat": {
                   "type": "integer",
                   "title": "How many times to repeat the chorus",
                   "examples": [1]
@@ -240,7 +240,7 @@
               "title": "The verse entry",
               "required": ["repeat", "index"],
               "properties": {
-                "repeat":{
+                "repeat": {
                   "type": "integer",
                   "title": "How many times to repeat the verse",
                   "examples": [1]
