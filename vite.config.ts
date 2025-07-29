@@ -18,6 +18,7 @@ export default defineConfig({
   },
   define: {
     __SHOELACE_VERSION__: JSON.stringify(packageJson.dependencies["@shoelace-style/shoelace"]),
+    __WORKBOX_VERSION__: JSON.stringify(packageJson.dependencies["workbox-build"].replace('^', '')),
   },
   plugins: [
     VitePWA({
