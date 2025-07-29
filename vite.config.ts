@@ -3,9 +3,15 @@ import { resolve } from "node:path";
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
 
-const packageJson = JSON.parse(
-  readFileSync(resolve(__dirname, "package.json"), "utf-8"),
-);
+const bunLock = readFileSync(resolve(__dirname, "bun.lock"), "utf-8");
+
+const getVersion = (pkg: string) => {
+  const match = bunLock.match(new RegExp(`"${pkg}@([^"]+)"`));
+  const version = match ? match[1].match(/\d+\.\d+\.\d+/)?.[0] : null;
+  if (!version) throw new Error(`Version for ${pkg} not found in bun.lock`);
+  console.log(`Version string for ${pkg} = '${version}'`);
+  return JSON.stringify(version);
+};
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -18,12 +24,8 @@ export default defineConfig({
     lib: false,
   },
   define: {
-    __SHOELACE_VERSION__: JSON.stringify(
-      packageJson.dependencies["@shoelace-style/shoelace"],
-    ),
-    __WORKBOX_VERSION__: JSON.stringify(
-      packageJson.dependencies["workbox-build"].replace("^", ""),
-    ),
+    __SHOELACE_VERSION__: getVersion("@shoelace-style/shoelace"),
+    __WORKBOX_VERSION__: getVersion("workbox-build"),
   },
   plugins: [
     VitePWA({
