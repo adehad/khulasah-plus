@@ -1,9 +1,30 @@
+@font-face {
+  font-family: 'Lexend';
+  src: url('/fonts/lexend-v25-latin_latin-ext-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Scheherazade New';
+  src: url('/fonts/scheherazade-new-v17-arabic_latin-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Uthmanic Hafs';
+  src: url('/fonts/UthmanicHafs1Ver18.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
 /*
   This file is used for all of your global styles and CSS variables.
   Check here https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties for more info on using CSS variables.
 */
 :root {
-  --font-family: sans-serif;
+  --font-family: 'Lexend', sans-serif;
 }
 
 html,
@@ -13,6 +34,14 @@ body {
   margin: 0;
 
   height: 100%;
+}
+
+.arabic-text {
+  font-family: 'Scheherazade New', serif;
+}
+
+.quran-text {
+  font-family: 'Uthmanic Hafs', serif;
 }
 
 @media (prefers-color-scheme: dark) {

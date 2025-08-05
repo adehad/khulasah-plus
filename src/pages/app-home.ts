@@ -1,18 +1,22 @@
 import { css, html, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
-import { resolveRouterPath } from "../router";
+import { resolveRouterPath } from "@/router";
 
 import "@shoelace-style/shoelace/dist/components/card/card.js";
 import "@shoelace-style/shoelace/dist/components/button/button.js";
 import "@shoelace-style/shoelace/dist/components/tab/tab.js";
 import "@shoelace-style/shoelace/dist/components/tab-panel/tab-panel.js";
 
-import { styles } from "../styles/shared-styles";
+import "@/components/dhikr.ts";
+import "@/components/dhikr-entry.ts";
+import "@/components/quran.ts";
+import "@/components/quran-entry";
+import "@/components/footnote.ts";
+
+import { styles } from "@/styles/shared-styles";
 
 @customElement("app-home")
 export class AppHome extends LitElement {
-  // For more information on using properties and state in lit
-  // check out this link https://lit.dev/docs/components/properties/
   @property() message = "Welcome!";
 
   static styles = [
@@ -78,75 +82,49 @@ export class AppHome extends LitElement {
       <app-header></app-header>
 
       <main>
-        <div id="welcomeBar">
-          <sl-card id="welcomeCard">
-            <div slot="header">
-              <h2>${this.message}</h2>
-            </div>
+        <kp-dhikr title="Dhikr Example">
+          <kp-instruction>Read the following aloud.</kp-instruction>
+          <kp-dhikr-entry repeat="3">
+            <span slot="arabic">سُبْحَانَ اللَّهِ</span>
+            <span slot="translit">Subhanallah</span>
+            <span slot="translation">Glory be to Allah</span>
+          </kp-dhikr-entry>
+          <kp-dhikr-entry>
+            <span slot="arabic">الْحَمْدُ لِلَّهِ</span>
+            <span slot="translit">Alhamdulillah</span>
+            <span slot="translation">Praise be to Allah</span>
+          </kp-dhikr-entry>
+        </kp-dhikr>
 
-            <p>
-              For more information on the PWABuilder pwa-starter, check out the
-              <a href="https://docs.pwabuilder.com/#/starter/quick-start">
-                documentation</a>.
-            </p>
+        <hr>
 
-            <p id="mainInfo">
-              Welcome to the
-              <a href="https://pwabuilder.com">PWABuilder</a>
-              pwa-starter! Be sure to head back to
-              <a href="https://pwabuilder.com">PWABuilder</a>
-              when you are ready to ship this PWA to the Microsoft Store, Google Play
-              and the Apple App Store!
-            </p>
+        <kp-mushaf surah="2" title="Quran Example">
+          <kp-instruction>Recite the following verses from Surah Al-Baqarah.</kp-instruction>
+          <kp-mushaf-entry verse="255">
+            <span slot="arabic">اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ...</span>
+            <span slot="translit">Allahu la ilaha illa Huwa al-Hayyul-Qayyum...</span>
+            <span slot="translation">Allah - there is no deity except Him, the Ever-Living, the Sustainer of [all] existence...</span>
+          </kp-mushaf-entry>
+          <kp-mushaf-entry verse="256">
+            <span slot="arabic">لَا إِكْرَاهَ فِي الدِّينِ...</span>
+            <span slot="translit">La ikraha fid-din...</span>
+            <span slot="translation">There shall be no compulsion in [acceptance of] the religion...</span>
+          </kp-mushaf-entry>
+        </kp-mushaf>
 
-            ${
-              "share" in navigator
-                ? html`<sl-button slot="footer" variant="default" @click="${this.share}">
-                        <sl-icon slot="prefix" name="share"></sl-icon>
-                        Share this Starter!
-                      </sl-button>`
-                : null
-            }
-          </sl-card>
+        <hr>
 
-          <sl-tab-group>
-            <sl-tab slot="nav" panel="general">General</sl-tab>
-            <sl-tab slot="nav" panel="custom">Custom</sl-tab>
-            <sl-tab slot="nav" panel="advanced">Advanced</sl-tab>
-            <sl-tab slot="nav" panel="disabled" disabled>Disabled</sl-tab>
+        <p>
+          Here is a footnote: <kp-footnote type="book">See al-Ghazali, Ihya Ulum al-Din</kp-footnote>
+        </p>
+        <p>
+          Another footnote: <kp-footnote type="hadith">Sahih al-Bukhari 1</kp-footnote>
+        </p>
+        <p>
+          And one more: <kp-footnote type="question">What does this mean?</kp-footnote>
+        </p>
 
-            <sl-tab-panel name="general">This is the general tab panel.</sl-tab-panel>
-            <sl-tab-panel name="custom">This is the custom tab panel.</sl-tab-panel>
-            <sl-tab-panel name="advanced">This is the advanced tab panel.</sl-tab-panel>
-            <sl-tab-panel name="disabled">This is a disabled tab panel.</sl-tab-panel>
-          </sl-tab-group>
-
-
-          <sl-card id="infoCard">
-            <h2>Technology Used</h2>
-
-            <ul>
-              <li>
-                <a href="https://www.typescriptlang.org/">TypeScript</a>
-              </li>
-
-              <li>
-                <a href="https://lit.dev">lit</a>
-              </li>
-
-              <li>
-                <a href="https://shoelace.style/">Shoelace</a>
-              </li>
-
-              <li>
-                <a href="https://github.com/thepassle/app-tools/blob/master/router/README.md"
-                  >App Tools Router</a>
-              </li>
-            </ul>
-          </sl-card>
-
-          <sl-button href="${resolveRouterPath("about")}" variant="primary">Navigate to About</sl-button>
-        </div>
+        <sl-button href="${resolveRouterPath("about")}" variant="primary">Navigate to About</sl-button>
       </main>
     `;
   }

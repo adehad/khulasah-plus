@@ -18,7 +18,11 @@
     "forceConsistentCasingInFileNames": true,
     "useDefineForClassFields": false,
     "isolatedModules": true,
-    "types": ["vite-plugin-pwa/client", "vite/client"]
+    "types": ["vite-plugin-pwa/client", "vite/client"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": ["src/**/*.ts", "router.d.ts"],
   "exclude": ["node_modules"]
