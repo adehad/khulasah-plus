@@ -3,10 +3,11 @@ import { customElement, property } from "lit/decorators.js";
 import { resolveRouterPath } from "../router";
 
 import "@shoelace-style/shoelace/dist/components/button/button.js";
+import "./theme-switcher.js"; // Import the new theme switcher component
+
 @customElement("app-header")
 export class AppHeader extends LitElement {
   @property({ type: String }) title = "khulasah-plus";
-
   @property({ type: Boolean }) enableBack: boolean = false;
 
   static styles = css`
@@ -45,6 +46,10 @@ export class AppHeader extends LitElement {
       gap: 8px;
     }
 
+    .theme-switcher-container {
+      -webkit-app-region: no-drag; /* Allow interaction with the theme switcher */
+    }
+
     @media(prefers-color-scheme: light) {
       header {
         color: black;
@@ -59,7 +64,6 @@ export class AppHeader extends LitElement {
   render() {
     return html`
       <header>
-
         <div id="back-button-block">
           ${
             this.enableBack
@@ -68,8 +72,10 @@ export class AppHeader extends LitElement {
           </sl-button>`
               : null
           }
-
           <h1>${this.title}</h1>
+        </div>
+        <div class="theme-switcher-container">
+          <theme-switcher></theme-switcher>
         </div>
       </header>
     `;
