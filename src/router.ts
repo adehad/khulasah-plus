@@ -30,6 +30,12 @@ export const router = new Router({
       plugins: [lazy(() => import("./pages/app-about/app-about.js"))],
       render: () => html`<app-about></app-about>`,
     },
+    {
+      path: resolveRouterPath("khulasah/the-khulasah/after-asr/hizb-al-bahr"),
+      title: "Hizb al-Bahr",
+      plugins: [lazy(() => import("./pages/hizb-al-bahr.ts"))],
+      render: () => html`<hizb-al-bahr></hizb-al-bahr>`,
+    },
   ],
 });
 

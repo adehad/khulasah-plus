@@ -1,17 +1,10 @@
 import { css, html, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
-import { resolveRouterPath } from "@/router";
 
 import "@shoelace-style/shoelace/dist/components/card/card.js";
 import "@shoelace-style/shoelace/dist/components/button/button.js";
-import "@shoelace-style/shoelace/dist/components/tab/tab.js";
-import "@shoelace-style/shoelace/dist/components/tab-panel/tab-panel.js";
 
-import "@/components/dhikr.ts";
-import "@/components/dhikr-entry.ts";
-import "@/components/quran.ts";
-import "@/components/quran-entry";
-import "@/components/footnote.ts";
+import "@/components/nav-button.ts";
 
 import { styles } from "@/styles/shared-styles";
 
@@ -82,49 +75,13 @@ export class AppHome extends LitElement {
       <app-header></app-header>
 
       <main>
-        <kp-dhikr title="Dhikr Example">
-          <kp-instruction>Read the following aloud.</kp-instruction>
-          <kp-dhikr-entry repeat="3">
-            <span slot="arabic">سُبْحَانَ اللَّهِ</span>
-            <span slot="translit">Subhanallah</span>
-            <span slot="translation">Glory be to Allah</span>
-          </kp-dhikr-entry>
-          <kp-dhikr-entry>
-            <span slot="arabic">الْحَمْدُ لِلَّهِ</span>
-            <span slot="translit">Alhamdulillah</span>
-            <span slot="translation">Praise be to Allah</span>
-          </kp-dhikr-entry>
-        </kp-dhikr>
+        <h1>Khulasah Plus</h1>
 
-        <hr>
+        <p>A web app for the Khulasah and other Islamic texts.</p>
 
-        <kp-mushaf surah="2" title="Quran Example">
-          <kp-instruction>Recite the following verses from Surah Al-Baqarah.</kp-instruction>
-          <kp-mushaf-entry verse="255">
-            <span slot="arabic">اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ...</span>
-            <span slot="translit">Allahu la ilaha illa Huwa al-Hayyul-Qayyum...</span>
-            <span slot="translation">Allah - there is no deity except Him, the Ever-Living, the Sustainer of [all] existence...</span>
-          </kp-mushaf-entry>
-          <kp-mushaf-entry verse="256">
-            <span slot="arabic">لَا إِكْرَاهَ فِي الدِّينِ...</span>
-            <span slot="translit">La ikraha fid-din...</span>
-            <span slot="translation">There shall be no compulsion in [acceptance of] the religion...</span>
-          </kp-mushaf-entry>
-        </kp-mushaf>
-
-        <hr>
-
-        <p>
-          Here is a footnote: <kp-footnote type="book">See al-Ghazali, Ihya Ulum al-Din</kp-footnote>
-        </p>
-        <p>
-          Another footnote: <kp-footnote type="hadith">Sahih al-Bukhari 1</kp-footnote>
-        </p>
-        <p>
-          And one more: <kp-footnote type="question">What does this mean?</kp-footnote>
-        </p>
-
-        <sl-button href="${resolveRouterPath("about")}" variant="primary">Navigate to About</sl-button>
+        <nav-button href="khulasah/the-khulasah/after-asr/hizb-al-bahr">
+          Hizb al-Bahr
+        </nav-button>
       </main>
     `;
   }

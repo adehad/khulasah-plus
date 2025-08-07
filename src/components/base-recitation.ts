@@ -23,7 +23,7 @@ export class BaseRecitation extends LitElement {
 
     .arabic {
       font-family: 'Scheherazade New', serif;
-      font-size: 1.2em;
+      font-size: 2.2em;
       text-align: right;
     }
 
@@ -39,7 +39,7 @@ export class BaseRecitation extends LitElement {
   render() {
     return html`
       <div class="title">${this.title}</div>
-      ${this.instruction ? html`<div class="instruction">${this.instruction}</div>` : ''}
+      ${this.instruction ? html`<div class="instruction">${this.instruction}</div>` : ""}
       <slot></slot>
     `;
   }

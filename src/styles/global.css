@@ -36,14 +36,6 @@ body {
   height: 100%;
 }
 
-.arabic-text {
-  font-family: 'Scheherazade New', serif;
-}
-
-.quran-text {
-  font-family: 'Uthmanic Hafs', serif;
-}
-
 html.dark {
   background-color: #181818;
   color: white;

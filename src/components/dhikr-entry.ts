@@ -12,7 +12,7 @@ export class DhikrEntry extends LitElement {
 
     .arabic {
       font-family: 'Scheherazade New', serif;
-      font-size: 1.2em;
+      font-size: 2.2em;
       text-align: right;
     }
 
@@ -26,12 +26,13 @@ export class DhikrEntry extends LitElement {
   `;
 
   render() {
+    const repeatText = this.repeat > 1 ? ` (x${this.repeat})` : "";
+
     return html`
       <div class="entry">
-        <div class="arabic"><slot name="arabic"></slot></div>
-        <div class="translit"><slot name="translit"></slot></div>
-        <div class="translation"><slot name="translation"></slot></div>
-        ${this.repeat > 1 ? html`<div class="repeat">Repeat ${this.repeat} times</div>` : ''}
+        <div class="arabic"><slot name="arabic"></slot>${repeatText}</div>
+        <div class="translit"><slot name="translit"></slot>${repeatText}</div>
+        <div class="translation"><slot name="translation"></slot>${repeatText}</div>
       </div>
     `;
   }

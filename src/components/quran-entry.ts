@@ -12,7 +12,7 @@ export class MushafEntry extends LitElement {
 
     .arabic {
       font-family: 'Uthmanic Hafs', serif;
-      font-size: 1.2em;
+      font-size: 2.2em;
       text-align: right;
     }
 
@@ -23,12 +23,23 @@ export class MushafEntry extends LitElement {
     .translation {
       font-weight: bold;
     }
+
+    .verse-bracket {
+      /* font-weight: bold; */
+      display: inline-block;
+      position: relative;
+    }
+    .verse-number {
+      font-size: 1.2em;
+      position: absolute;
+      overflow: hidden;
+    }
   `;
 
   render() {
     return html`
       <div class="entry">
-        <div class="arabic quranic-text"><slot name="arabic"></slot> [${this.verse}]</div>
+        <div class="arabic"><slot name="arabic"></slot><div class="arabic verse-bracket"> <span class="verse-number">${this.verse}</span>۝</div></div>
         <div class="translit"><slot name="translit"></slot></div>
         <div class="translation"><slot name="translation"></slot></div>
       </div>
