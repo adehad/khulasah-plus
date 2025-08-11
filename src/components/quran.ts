@@ -1,11 +1,13 @@
 import { css } from "lit";
 import { customElement, property } from "lit/decorators.js";
 import { html } from "lit/static-html.js";
+import type { QuranModel } from "../../types/recitation";
 import { BaseRecitation } from "./base-recitation";
+import "./quran-entry.ts";
 
 @customElement("kp-mushaf")
 export class Quran extends BaseRecitation {
-  @property({ type: Number }) surah = 0;
+  @property({ type: Object }) recitation!: QuranModel;
 
   static styles = css`
       .entry {
@@ -20,16 +22,20 @@ export class Quran extends BaseRecitation {
     `;
 
   render() {
-    const entries = Array.from(this.querySelectorAll("kp-mushaf-entry"));
-    const firstVerse = entries[0]?.getAttribute("verse");
-    const lastVerse = entries[entries.length - 1]?.getAttribute("verse");
+    const firstVerse = this.recitation.entries[0]?.verse;
+    const lastVerse =
+      this.recitation.entries[this.recitation.entries.length - 1]?.verse;
 
     return html`
       <div class="quran-container">
+        <h2>${this.recitation.title}</h2>
+        <p>${this.recitation.instruction}</p>
         <span class="arabic">﴿</span>
-        <slot></slot>
+        ${this.recitation.entries.map(
+          (entry) => html`<kp-mushaf-entry .entry=${entry}></kp-mushaf-entry>`,
+        )}
         <span class="arabic">﴾</span>
-        <kp-footnote type="quran">Surah ${this.title} (${this.surah}):${firstVerse}-${lastVerse}</kp-footnote>
+        <kp-footnote type="quran">Surah ${this.recitation.title} (${this.recitation.surah}):${firstVerse}-${lastVerse}</kp-footnote>
       </div>
     `;
   }

@@ -1,9 +1,10 @@
 import { css, html, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
+import type { QuranEntryModel } from "../../types/recitation";
 
 @customElement("kp-mushaf-entry")
 export class MushafEntry extends LitElement {
-  @property({ type: Number }) verse = 0;
+  @property({ type: Object }) entry!: QuranEntryModel;
 
   static styles = css`
     .entry {
@@ -33,15 +34,20 @@ export class MushafEntry extends LitElement {
       font-size: 1.2em;
       position: absolute;
       overflow: hidden;
+      /* Align the number to be inside the verse bracket */
+      transform: translateX(-30%) translateY(18%) scale(0.3);
+      text-align: center;
+      width: 3ch;
+      font-family: 'Amiri', serif; /* Transform is font specific */
     }
   `;
 
   render() {
     return html`
       <div class="entry">
-        <div class="arabic"><slot name="arabic"></slot><div class="arabic verse-bracket"> <span class="verse-number">${this.verse}</span>۝</div></div>
-        <div class="translit"><slot name="translit"></slot></div>
-        <div class="translation"><slot name="translation"></slot></div>
+        <div class="arabic">${this.entry.arabic}<div class="arabic verse-bracket"> <span class="verse-number">${this.entry.verse}</span>۝</div></div>
+        <div class="translit">${this.entry.translit}</div>
+        <div class="translation">${this.entry.translation}</div>
       </div>
     `;
   }

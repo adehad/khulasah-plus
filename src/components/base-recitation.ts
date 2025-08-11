@@ -1,10 +1,6 @@
-import { css, html, LitElement } from "lit";
-import { property } from "lit/decorators.js";
+import { css, LitElement } from "lit";
 
 export class BaseRecitation extends LitElement {
-  @property({ type: String }) title = "";
-  @property({ type: String }) instruction = "";
-
   static styles = css`
     .title {
       font-size: 1.5em;
@@ -35,12 +31,4 @@ export class BaseRecitation extends LitElement {
       font-weight: bold;
     }
   `;
-
-  render() {
-    return html`
-      <div class="title">${this.title}</div>
-      ${this.instruction ? html`<div class="instruction">${this.instruction}</div>` : ""}
-      <slot></slot>
-    `;
-  }
 }
