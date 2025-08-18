@@ -29,13 +29,14 @@ export class MushafEntry extends LitElement {
       /* font-weight: bold; */
       display: inline-block;
       position: relative;
+      line-height: 0.8em
     }
     .verse-number {
       font-size: 1.2em;
       position: absolute;
       overflow: hidden;
       /* Align the number to be inside the verse bracket */
-      transform: translateX(-30%) translateY(18%) scale(0.3);
+      transform: translateX(-30%) translateY(7%) scale(0.3);
       text-align: center;
       width: 3ch;
       font-family: 'Amiri', serif; /* Transform is font specific */
