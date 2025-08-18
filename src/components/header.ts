@@ -46,6 +46,8 @@ export class AppHeader extends LitElement {
     }
 
     .theme-switcher-container {
+      display: flex;
+      gap: 8px;
       -webkit-app-region: no-drag; /* Allow interaction with the theme switcher */
     }
 
@@ -70,6 +72,7 @@ export class AppHeader extends LitElement {
           <h1>${this.title}</h1>
         </div>
         <div class="theme-switcher-container">
+          <slot name="actions"></slot>
           <theme-switcher></theme-switcher>
         </div>
       </header>

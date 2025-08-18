@@ -19,12 +19,14 @@
   font-style: normal;
 }
 
-/*
-  This file is used for all of your global styles and CSS variables.
-  Check here https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties for more info on using CSS variables.
-*/
 :root {
   --font-family: 'Lexend', sans-serif;
+  --arabic-font-size: 2rem;
+  --translation-font-size: 1rem;
+  --transliteration-font-size: 1rem;
+  --show-arabic: 1;
+  --show-translation: 1;
+  --show-transliteration: 1;
 }
 
 html,
@@ -58,4 +60,20 @@ html[data-theme="light"] {
     background-color: #f5f5f5;
     color: black;
   }
+}
+
+.arabic {
+  font-family: 'Uthmanic Hafs', 'Scheherazade New', serif;
+  font-size: var(--arabic-font-size);
+  display: var(--show-arabic, 1);
+}
+
+.translation {
+  font-size: var(--translation-font-size);
+  display: var(--show-translation, 1);
+}
+
+.transliteration {
+  font-size: var(--transliteration-font-size);
+  display: var(--show-transliteration, 1);
 }
