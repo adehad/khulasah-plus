@@ -5,11 +5,15 @@ import type { QuranModel } from "../../types/recitation";
 import { BaseRecitation } from "./base-recitation";
 import "./quran-entry.ts";
 
+import { textStyles } from "../styles/shared-styles.ts";
+
 @customElement("kp-mushaf")
 export class Quran extends BaseRecitation {
   @property({ type: Object }) recitation!: QuranModel;
 
-  static styles = css`
+  static styles = [
+    textStyles,
+    css`
       .entry {
         margin-bottom: 1em;
       }
@@ -19,7 +23,8 @@ export class Quran extends BaseRecitation {
         font-size: 2.2em;
         text-align: right;
       }
-    `;
+    `,
+  ];
 
   render() {
     const firstVerse = this.recitation.entries[0]?.verse;

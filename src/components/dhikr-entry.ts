@@ -1,30 +1,20 @@
 import { css, html, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
-import { DhikrEntryModel } from "../../types/recitation";
+import type { DhikrEntryModel } from "../../types/recitation";
+import { textStyles } from "../styles/shared-styles.ts";
 
 @customElement("kp-dhikr-entry")
 export class DhikrEntry extends LitElement {
   @property({ type: Object }) entry!: DhikrEntryModel;
 
-  static styles = css`
+  static styles = [
+    textStyles,
+    css`
     .entry {
       margin-bottom: 1em;
     }
-
-    .arabic {
-      font-family: 'Scheherazade New', serif;
-      font-size: 2.2em;
-      text-align: right;
-    }
-
-    .translit {
-      font-style: italic;
-    }
-
-    .translation {
-      font-weight: bold;
-    }
-  `;
+  `,
+  ];
 
   render() {
     const repeatText = this.entry.repeat > 1 ? ` (x${this.entry.repeat})` : "";

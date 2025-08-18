@@ -14,3 +14,24 @@ export const styles = css`
     padding: 12px;
   }
 `;
+
+export const textStyles = css`
+  .arabic {
+    font-family: 'Uthmanic Hafs', 'Scheherazade New', serif;
+    direction: rtl;
+    font-size: var(--arabic-font-size);
+    display: var(--show-arabic, block);
+  }
+
+  .translation {
+    font-size: var(--translation-font-size);
+    display: var(--show-translation, block);
+    font-weight: bold;
+  }
+
+  .translit {
+    font-size: var(--transliteration-font-size);
+    display: var(--show-transliteration, block);
+    font-style: italic;
+  }
+`;

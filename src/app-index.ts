@@ -1,17 +1,14 @@
 import { css, LitElement, html } from "lit";
-import { customElement, query } from "lit/decorators.js";
+import { customElement } from "lit/decorators.js";
 
 import "./pages/app-home";
 import "./components/header";
 import "./styles/global.css";
 import { router } from "./router";
-import { SettingsMenu } from "./components/settings-menu";
+import "./components/settings-menu";
 
 @customElement("app-index")
 export class AppIndex extends LitElement {
-  @query("settings-menu")
-  settingsMenu!: SettingsMenu;
-
   static styles = css`
     main {
       padding-left: 16px;
@@ -31,9 +28,7 @@ export class AppIndex extends LitElement {
       }
     });
 
-    this.shadowRoot!.querySelector("app-header")!.addEventListener("settings-change", (e: any) => {
-      this.updateStyles(e.detail.name, e.detail.value);
-    });
+    
   }
 
   loadSettings() {
@@ -46,9 +41,9 @@ export class AppIndex extends LitElement {
   updateStyles(name: string, value: any) {
     const root = document.documentElement;
     if (typeof value === "boolean") {
-      root.style.setProperty(`--${name}`, value ? "block" : "none");
+      root.style.setProperty(`--show-${name.replace("show", "").toLowerCase()}`, value ? "block" : "none");
     } else if (name.includes("FontSize")) {
-      root.style.setProperty(`--${name.replace("FontSize", "-font-size")}`, `${value}rem`);
+      root.style.setProperty(`--${name.replace("FontSize", "-font-size").toLowerCase()}`, `${value}rem`);
     } else {
       root.style.setProperty(`--${name}`, value);
     }
@@ -58,7 +53,7 @@ export class AppIndex extends LitElement {
     // router config can be round in src/router.ts
     return html`
       <app-header>
-        <settings-menu slot="actions"></settings-menu>
+        <settings-menu slot="actions" @settings-change=${(e: CustomEvent<{ name: string; value: any }>) => this.updateStyles(e.detail.name, e.detail.value)}></settings-menu>
       </app-header>
       <main>
         ${router.render()}

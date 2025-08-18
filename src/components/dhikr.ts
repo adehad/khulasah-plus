@@ -3,10 +3,13 @@ import { html } from "lit/static-html.js";
 import { BaseRecitation } from "./base-recitation";
 import { DhikrModel } from "../../types/recitation";
 import "./dhikr-entry.ts";
+import { textStyles } from "../styles/shared-styles.ts";
 
 @customElement("kp-dhikr")
 export class Dhikr extends BaseRecitation {
   @property({ type: Object }) recitation!: DhikrModel;
+
+  static styles = [textStyles];
 
   render() {
     return html`
@@ -20,4 +23,3 @@ export class Dhikr extends BaseRecitation {
     `;
   }
 }
-

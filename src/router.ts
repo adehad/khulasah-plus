@@ -33,7 +33,7 @@ export const router = new Router({
     {
       path: resolveRouterPath("khulasah/the-khulasah/after-asr/hizb-al-bahr"),
       title: "Hizb al-Bahr",
-      plugins: [lazy(() => import("./pages/hizb-al-bahr.ts"))],
+      plugins: [lazy(() => import("./pages/khulasah/hizb-al-bahr.ts"))],
       render: () => html`<hizb-al-bahr></hizb-al-bahr>`,
     },
   ],

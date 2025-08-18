@@ -72,9 +72,6 @@ export class AppHome extends LitElement {
 
   render() {
     return html`
-      <app-header></app-header>
-
-      <main>
         <h1>Khulasah Plus</h1>
 
         <p>A web app for the Khulasah and other Islamic texts.</p>
@@ -82,7 +79,6 @@ export class AppHome extends LitElement {
         <nav-button href="khulasah/the-khulasah/after-asr/hizb-al-bahr">
           Hizb al-Bahr
         </nav-button>
-      </main>
     `;
   }
 }

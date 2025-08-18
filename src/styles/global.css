@@ -73,7 +73,7 @@ html[data-theme="light"] {
   display: var(--show-translation, 1);
 }
 
-.transliteration {
+.translit {
   font-size: var(--transliteration-font-size);
   display: var(--show-transliteration, 1);
 }
