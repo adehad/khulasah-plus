@@ -160,7 +160,7 @@ export class SettingsMenu extends LitElement {
             ></sl-switch>
           </div>
         </div>
-        <button slot="footer" @click=${() => (this.isDialogOpen = false)}>Close</button>
+        <sl-button slot="footer" @click=${() => (this.isDialogOpen = false)}>Close</sl-button>
       </sl-dialog>
     `;
   }

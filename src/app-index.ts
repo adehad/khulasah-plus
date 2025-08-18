@@ -27,8 +27,6 @@ export class AppIndex extends LitElement {
         this.requestUpdate();
       }
     });
-
-    
   }
 
   loadSettings() {

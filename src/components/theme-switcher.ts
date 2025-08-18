@@ -1,5 +1,6 @@
 import { css, html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
+import { darkTheme, lightTheme } from "../themes/khulasah";
 
 @customElement("theme-switcher")
 export class ThemeSwitcher extends LitElement {
@@ -68,20 +69,46 @@ export class ThemeSwitcher extends LitElement {
       .matchMedia("(prefers-color-scheme: dark)")
       .addEventListener("change", (e) => {
         this.prefersDark = e.matches;
+        this.applyTheme();
       });
+  }
+
+  applyTheme() {
+    const root = document.documentElement;
+    let themeToApply = this.theme;
+
+    if (themeToApply === "auto") {
+      themeToApply = this.prefersDark ? "dark" : "light";
+    }
+
+    if (themeToApply === "dark") {
+      root.classList.remove("sl-theme-light");
+      root.classList.add("sl-theme-dark");
+      const style = document.createElement("style");
+      style.innerHTML = darkTheme.cssText;
+      document.head.appendChild(style);
+    } else {
+      root.classList.remove("sl-theme-dark");
+      root.classList.add("sl-theme-light");
+      const style = document.createElement("style");
+      style.innerHTML = lightTheme.cssText;
+      document.head.appendChild(style);
+    }
   }
 
   setTheme(theme: "light" | "dark" | "auto") {
     this.theme = theme;
     this.classList.remove("light", "dark", "auto");
     this.classList.add(theme);
-    if (theme === "auto") {
-      document.documentElement.removeAttribute("data-theme");
-      localStorage.removeItem("theme");
-    } else {
-      document.documentElement.setAttribute("data-theme", theme);
-      localStorage.setItem("theme", theme);
-    }
+    localStorage.setItem("theme", theme);
+    this.applyTheme();
+    this.dispatchEvent(
+      new CustomEvent("theme-change", {
+        detail: { theme },
+        bubbles: true,
+        composed: true,
+      }),
+    );
   }
 
   toggleTheme() {
