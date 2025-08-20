@@ -1,4 +1,4 @@
-import { css, LitElement, html } from "lit";
+import { css, html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
 
 import "./pages/app-home";
@@ -6,14 +6,13 @@ import "./components/header";
 import "./styles/global.css";
 import { router } from "./router";
 import "./components/settings-menu";
+import "./components/border-image";
 
 @customElement("app-index")
 export class AppIndex extends LitElement {
   static styles = css`
     main {
-      padding-left: 16px;
-      padding-right: 16px;
-      padding-bottom: 16px;
+      padding: 50px; /* Adjust this value to match the border-width */
     }
   `;
 
@@ -39,9 +38,15 @@ export class AppIndex extends LitElement {
   updateStyles(name: string, value: any) {
     const root = document.documentElement;
     if (typeof value === "boolean") {
-      root.style.setProperty(`--show-${name.replace("show", "").toLowerCase()}`, value ? "block" : "none");
+      root.style.setProperty(
+        `--show-${name.replace("show", "").toLowerCase()}`,
+        value ? "block" : "none",
+      );
     } else if (name.includes("FontSize")) {
-      root.style.setProperty(`--${name.replace("FontSize", "-font-size").toLowerCase()}`, `${value}rem`);
+      root.style.setProperty(
+        `--${name.replace("FontSize", "-font-size").toLowerCase()}`,
+        `${value}rem`,
+      );
     } else {
       root.style.setProperty(`--${name}`, value);
     }
@@ -54,6 +59,7 @@ export class AppIndex extends LitElement {
         <settings-menu slot="actions" @settings-change=${(e: CustomEvent<{ name: string; value: any }>) => this.updateStyles(e.detail.name, e.detail.value)}></settings-menu>
       </app-header>
       <main>
+        <border-image></border-image>
         ${router.render()}
       </main>
     `;
