@@ -6,13 +6,21 @@ import "./components/header";
 import "./styles/global.css";
 import { router } from "./router";
 import "./components/settings-menu";
-import "./components/border-image";
 
 @customElement("app-index")
 export class AppIndex extends LitElement {
   static styles = css`
     main {
-      padding: 50px; /* Adjust this value to match the border-width */
+
+      position: fixed;
+      inset: 0;
+      top: calc(env(titlebar-area-height, 30px) + 12px); /* Adjust for header height */
+      overflow-y: auto;
+      border-style: solid;
+      border-width: 33px;
+      border-image-source: url("/assets/images/ornamental-border-simplified.png");
+      border-image-slice: 20% 20%; /* top and bottom | left and right */
+      border-image-repeat: round;
     }
   `;
 
@@ -59,8 +67,7 @@ export class AppIndex extends LitElement {
         <settings-menu slot="actions" @settings-change=${(e: CustomEvent<{ name: string; value: any }>) => this.updateStyles(e.detail.name, e.detail.value)}></settings-menu>
       </app-header>
       <main>
-        <border-image></border-image>
-        ${router.render()}
+          ${router.render()}
       </main>
     `;
   }
