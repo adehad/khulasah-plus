@@ -34,4 +34,10 @@ export const textStyles = css`
     display: var(--show-transliteration, block);
     font-style: italic;
   }
+
+  .instruction {
+    font-size: var(--translation-font-size);
+    font-style: italic;
+    color: var(--sl-color-primary-500);
+  }
 `;

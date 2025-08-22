@@ -33,8 +33,7 @@ export class Quran extends BaseRecitation {
 
     return html`
       <div class="quran-container">
-        <h2>${this.recitation.title}</h2>
-        <p>${this.recitation.instruction}</p>
+        <p class="instruction">${this.recitation.instruction}</p>
         <span class="arabic">﴿</span>
         ${this.recitation.entries.map(
           (entry) => html`<kp-mushaf-entry .entry=${entry}></kp-mushaf-entry>`,

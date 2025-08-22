@@ -14,8 +14,7 @@ export class Dhikr extends BaseRecitation {
   render() {
     return html`
       <div class="dhikr-container">
-        <h2>${this.recitation.title}</h2>
-        <p>${this.recitation.instruction}</p>
+        <p class="instruction">${this.recitation.instruction}</p>
         ${this.recitation.entries.map(
           (entry) => html`<kp-dhikr-entry .entry=${entry}></kp-dhikr-entry>`,
         )}
