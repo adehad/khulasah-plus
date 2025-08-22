@@ -2,8 +2,27 @@ import { css, html, LitElement } from "lit";
 import { customElement, property, state } from "lit/decorators.js";
 import "@shoelace-style/shoelace/dist/components/dialog/dialog.js";
 import "@shoelace-style/shoelace/dist/components/icon/icon.js";
+import type SlRange from "@shoelace-style/shoelace/dist/components/range/range.js";
 import "@shoelace-style/shoelace/dist/components/range/range.js";
+import type SlSwitch from "@shoelace-style/shoelace/dist/components/switch/switch.js";
 import "@shoelace-style/shoelace/dist/components/switch/switch.js";
+
+export type SettingName =
+  | "arabicFontSize"
+  | "translationFontSize"
+  | "transliterationFontSize"
+  | "showArabic"
+  | "showTranslation"
+  | "showTransliteration";
+
+export class SettingsChangeEvent extends CustomEvent<{
+  name: SettingName;
+  value: any;
+}> {
+  constructor(detail: { name: SettingName; value: any }) {
+    super("settings-change", { detail, bubbles: true, composed: true });
+  }
+}
 
 @customElement("settings-menu")
 export class SettingsMenu extends LitElement {
@@ -85,13 +104,11 @@ export class SettingsMenu extends LitElement {
         : settings.showTransliteration;
   }
 
-  saveSetting(name: string, value: any) {
+  saveSetting(name: SettingName, value: any) {
     const settings = JSON.parse(localStorage.getItem("settings") || "{}");
     settings[name] = value;
     localStorage.setItem("settings", JSON.stringify(settings));
-    this.dispatchEvent(
-      new CustomEvent("settings-change", { detail: { name, value } }),
-    );
+    this.dispatchEvent(new SettingsChangeEvent({ name, value }));
   }
 
   render() {
@@ -110,7 +127,7 @@ export class SettingsMenu extends LitElement {
               max="5"
               step="0.1"
               .value=${this.arabicFontSize}
-              @sl-change=${(e: any) => this.saveSetting("arabicFontSize", e.target.value)}
+              @sl-change=${(e: Event) => this.saveSetting("arabicFontSize", (e.target as SlRange).value)}
             ></sl-range>
           </div>
           <div class="setting">
@@ -121,7 +138,7 @@ export class SettingsMenu extends LitElement {
               max="2"
               step="0.1"
               .value=${this.translationFontSize}
-              @sl-change=${(e: any) => this.saveSetting("translationFontSize", e.target.value)}
+              @sl-change=${(e: Event) => this.saveSetting("translationFontSize", (e.target as SlRange).value)}
             ></sl-range>
           </div>
           <div class="setting">
@@ -132,7 +149,7 @@ export class SettingsMenu extends LitElement {
               max="2"
               step="0.1"
               .value=${this.transliterationFontSize}
-              @sl-change=${(e: any) => this.saveSetting("transliterationFontSize", e.target.value)}
+              @sl-change=${(e: Event) => this.saveSetting("transliterationFontSize", (e.target as SlRange).value)}
             ></sl-range>
           </div>
           <div class="setting">
@@ -140,7 +157,7 @@ export class SettingsMenu extends LitElement {
             <sl-switch
               id="show-arabic"
               ?checked=${this.showArabic}
-              @sl-change=${(e: any) => this.saveSetting("showArabic", e.target.checked)}
+              @sl-change=${(e: Event) => this.saveSetting("showArabic", (e.target as SlSwitch).checked)}
             ></sl-switch>
           </div>
           <div class="setting">
@@ -148,7 +165,7 @@ export class SettingsMenu extends LitElement {
             <sl-switch
               id="show-translation"
               ?checked=${this.showTranslation}
-              @sl-change=${(e: any) => this.saveSetting("showTranslation", e.target.checked)}
+              @sl-change=${(e: Event) => this.saveSetting("showTranslation", (e.target as SlSwitch).checked)}
             ></sl-switch>
           </div>
           <div class="setting">
@@ -156,7 +173,7 @@ export class SettingsMenu extends LitElement {
             <sl-switch
               id="show-transliteration"
               ?checked=${this.showTransliteration}
-              @sl-change=${(e: any) => this.saveSetting("showTransliteration", e.target.checked)}
+              @sl-change=${(e: Event) => this.saveSetting("showTransliteration", (e.target as SlSwitch).checked)}
             ></sl-switch>
           </div>
         </div>

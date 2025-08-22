@@ -7,6 +7,8 @@ import "@/styles/global.css";
 import { router } from "@/router";
 import "@/components/settings-menu";
 
+import { SettingsChangeEvent } from "@/components/settings-menu";
+
 @customElement("app-index")
 export class AppIndex extends LitElement {
   static styles = css`
@@ -63,7 +65,7 @@ export class AppIndex extends LitElement {
     // router config can be round in src/router.ts
     return html`
       <app-header>
-        <settings-menu slot="actions" @settings-change=${(e: CustomEvent<{ name: string; value: any }>) => this.updateStyles(e.detail.name, e.detail.value)}></settings-menu>
+        <settings-menu slot="actions" @settings-change=${(e: SettingsChangeEvent) => this.updateStyles(e.detail.name, e.detail.value)}></settings-menu>
       </app-header>
       <main>
           ${router.render()}
