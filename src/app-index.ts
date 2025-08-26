@@ -1,17 +1,16 @@
 import { css, html, LitElement } from "lit";
-import { customElement } from "lit/decorators.js";
+import { customElement, state } from "lit/decorators.js";
 
-import "./pages/app-home";
-import "./components/header";
-import "./styles/global.css";
-import { router } from "./router";
-import "./components/settings-menu";
+import "@/pages/app-home";
+import "@/components/header";
+import "@/styles/global.css";
+import { router } from "@/router";
+import "@/components/settings-menu";
 
 @customElement("app-index")
 export class AppIndex extends LitElement {
   static styles = css`
     main {
-
       position: fixed;
       inset: 0;
       top: calc(env(titlebar-area-height, 30px) + 12px); /* Adjust for header height */

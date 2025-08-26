@@ -1,9 +1,9 @@
 import { customElement, property } from "lit/decorators.js";
 import { html } from "lit/static-html.js";
-import { BaseRecitation } from "./base-recitation";
-import { DhikrModel } from "../../types/recitation";
-import "./dhikr-entry.ts";
-import { textStyles } from "../styles/shared-styles.ts";
+import { BaseRecitation } from "@/components/base-recitation";
+import type { DhikrModel } from "@/models/recitation.ts";
+import "@/components/dhikr-entry.ts";
+import { textStyles } from "@/styles/shared-styles.ts";
 
 @customElement("kp-dhikr")
 export class Dhikr extends BaseRecitation {
@@ -17,7 +17,7 @@ export class Dhikr extends BaseRecitation {
         <h2>${this.recitation.title}</h2>
         <p>${this.recitation.instruction}</p>
         ${this.recitation.entries.map(
-          (entry) => html`<kp-dhikr-entry .entry=${entry}></kp-dhikr-entry>`
+          (entry) => html`<kp-dhikr-entry .entry=${entry}></kp-dhikr-entry>`,
         )}
       </div>
     `;

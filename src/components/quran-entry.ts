@@ -1,8 +1,8 @@
 import { css, html, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
-import type { QuranEntryModel } from "../../types/recitation";
+import type { QuranEntryModel } from "@/models/recitation.ts";
 
-import { textStyles } from "../styles/shared-styles.ts";
+import { textStyles } from "@/styles/shared-styles.ts";
 
 @customElement("kp-mushaf-entry")
 export class MushafEntry extends LitElement {

@@ -1,9 +1,9 @@
 import { css, html, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
-import { resolveRouterPath } from "../router";
+import { resolveRouterPath } from "@/router";
 
 import "@shoelace-style/shoelace/dist/components/button/button.js";
-import "./theme-switcher.js"; // Import the new theme switcher component
+import "@/components/theme-switcher";
 
 @customElement("app-header")
 export class AppHeader extends LitElement {

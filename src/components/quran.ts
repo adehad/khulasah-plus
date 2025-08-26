@@ -1,11 +1,11 @@
 import { css } from "lit";
 import { customElement, property } from "lit/decorators.js";
 import { html } from "lit/static-html.js";
-import type { QuranModel } from "../../types/recitation";
-import { BaseRecitation } from "./base-recitation";
-import "./quran-entry.ts";
+import { BaseRecitation } from "@/components/base-recitation";
+import type { QuranModel } from "@/models/recitation.ts";
+import "@/components/quran-entry.ts";
 
-import { textStyles } from "../styles/shared-styles.ts";
+import { textStyles } from "@/styles/shared-styles.ts";
 
 @customElement("kp-mushaf")
 export class Quran extends BaseRecitation {

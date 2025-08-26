@@ -1,7 +1,7 @@
 import { css, html, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
-import type { DhikrEntryModel } from "../../types/recitation";
-import { textStyles } from "../styles/shared-styles.ts";
+import type { DhikrEntryModel } from "@/models/recitation.ts";
+import { textStyles } from "@/styles/shared-styles.ts";
 
 @customElement("kp-dhikr-entry")
 export class DhikrEntry extends LitElement {

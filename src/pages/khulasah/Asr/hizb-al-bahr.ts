@@ -1,6 +1,6 @@
 import { html, LitElement } from "lit";
 import { customElement } from "lit/decorators.js";
-import { hizbAlBahrContent } from "../../../content/hizb-al-bahr-content";
+import { hizbAlBahrContent } from "@/content/hizb-al-bahr-content";
 
 import "@/components/dhikr.ts";
 import "@/components/quran.ts";

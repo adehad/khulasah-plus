@@ -1,11 +1,11 @@
-import { LitElement, html } from 'lit';
-import { customElement, property } from 'lit/decorators.js';
-import { resolveRouterPath } from '../router';
+import { html, LitElement } from "lit";
+import { customElement, property } from "lit/decorators.js";
+import { resolveRouterPath } from "@/router";
 
-@customElement('nav-button')
+@customElement("nav-button")
 export class NavButton extends LitElement {
   @property({ type: String })
-  href = '';
+  href = "";
 
   render() {
     return html`
