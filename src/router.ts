@@ -1,5 +1,8 @@
-// docs for router https://github.com/thepassle/app-tools/blob/master/router/README.md
+// This file is generated based on page-config.ts and page-renderer.ts
+// Do not modify this file directly.
 
+import { lazy } from "@thepassle/app-tools/router/plugins/lazy.js";
+import { Router } from "@thepassle/app-tools/router.js";
 import { html } from "lit";
 
 // biome-ignore lint/suspicious/noExplicitAny: TODO: figure out why this is needed.
@@ -7,47 +10,43 @@ if (!(globalThis as any).URLPattern) {
   await import("urlpattern-polyfill");
 }
 
-import { lazy } from "@thepassle/app-tools/router/plugins/lazy.js";
-// @ts-ignore
-// biome-ignore lint/correctness/noUnusedImports:TODO: figure out why this is needed.
-import { title } from "@thepassle/app-tools/router/plugins/title.js";
-import { Router } from "@thepassle/app-tools/router.js";
+import { pageConfigs } from "./pages/page-config.ts";
+import "./components/page-renderer.ts"; // Ensure page-renderer is registered
 
-import "./pages/app-home.js";
-
-const baseURL: string = import.meta.env.BASE_URL;
+const baseURL: string = `${import.meta.env.BASE_URL}${import.meta.env.BASE_URL.endsWith("/") ? "" : "/"}`;
+const isDev: boolean = import.meta.env.BASE_URL === "/";
 
 export const router = new Router({
+  fallback: "/404",
   routes: [
     {
-      path: resolveRouterPath(),
-      title: "Home",
-      render: () => html`<app-home></app-home>`,
-    },
-    {
-      path: resolveRouterPath("about"),
-      title: "About",
-      plugins: [lazy(() => import("./pages/app-about/app-about.js"))],
-      render: () => html`<app-about></app-about>`,
-    },
-    {
-      path: resolveRouterPath("khulasah/the-khulasah/after-asr/hizb-al-bahr"),
-      title: "Hizb al-Bahr",
-      plugins: [lazy(() => import("./pages/khulasah/Asr/hizb-al-bahr.ts"))],
+      path: resolveRouterPath("hizb-bahr-real"),
+      title: "Hizb Bahr real",
+      plugins: [
+        lazy(() => import("./pages/khulasah/after-asr/hizb-al-bahr.ts")),
+      ],
       render: () => html`<hizb-al-bahr></hizb-al-bahr>`,
+    },
+    ...pageConfigs.map((config) => ({
+      path: resolveRouterPath(config.path),
+      plugins: [lazy(() => import("./components/page-renderer.js"))],
+      title: config.title,
+      render: () =>
+        html`<page-renderer contentImportPath="${config.contentImportPath}"></page-renderer>`,
+    })),
+    {
+      path: "/404",
+      title: "404 - Not Found",
+      render: () =>
+        html`<h1>404 - Not Found</h1><p>The page you are looking for does not exist.</p>`,
     },
   ],
 });
 
-// This function will resolve a path with whatever Base URL was passed to the vite build process.
-// Use of this function throughout the starter is not required, but highly recommended, especially if you plan to use GitHub Pages to deploy.
-// If no arg is passed to this function, it will return the base URL.
-
-export function resolveRouterPath(unresolvedPath?: string) {
-  var resolvedPath = baseURL;
-  if (unresolvedPath) {
-    resolvedPath = resolvedPath + unresolvedPath;
+export function resolveRouterPath(unresolvedPath?: string): string {
+  if (isDev) {
+    return unresolvedPath ?? "/";
   }
-
-  return resolvedPath;
+  var resolvedURL = new URL(unresolvedPath ?? "", baseURL);
+  return resolvedURL.href;
 }

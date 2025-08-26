@@ -5,7 +5,7 @@ import {
   QuranModel,
 } from "@/models/recitation";
 
-export const hizbAlBahrContent = [
+const hizbAlBahrContent = [
   new DhikrModel("Hizb al-Bahr", [
     new DhikrEntryModel({
       arabic: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
@@ -491,3 +491,5 @@ export const hizbAlBahrContent = [
     }),
   ]),
 ];
+
+export default hizbAlBahrContent;
