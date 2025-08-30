@@ -1,6 +1,6 @@
 import { css, html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
-import { darkTheme, lightTheme } from "../themes/khulasah";
+import { darkTheme, lightTheme } from "@/themes/khulasah";
 
 @customElement("theme-switcher")
 export class ThemeSwitcher extends LitElement {
@@ -84,15 +84,9 @@ export class ThemeSwitcher extends LitElement {
     if (themeToApply === "dark") {
       root.classList.remove("sl-theme-light");
       root.classList.add("sl-theme-dark");
-      const style = document.createElement("style");
-      style.innerHTML = darkTheme.cssText;
-      document.head.appendChild(style);
     } else {
       root.classList.remove("sl-theme-dark");
       root.classList.add("sl-theme-light");
-      const style = document.createElement("style");
-      style.innerHTML = lightTheme.cssText;
-      document.head.appendChild(style);
     }
   }
 

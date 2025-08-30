@@ -31,6 +31,9 @@ export class AppIndex extends LitElement {
   @state()
   private isSettingsDialogOpen = false; // New state property
 
+  @state()
+  private isDarkTheme = false;
+
   static styles = css`
     main {
       display: block;
@@ -54,6 +57,25 @@ export class AppIndex extends LitElement {
         this.requestUpdate();
       }
     });
+
+    // Observe changes to the <html> element's class attribute
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (
+          mutation.type === "attributes" &&
+          mutation.attributeName === "class"
+        ) {
+          this.isDarkTheme =
+            document.documentElement.classList.contains("sl-theme-dark");
+        }
+      });
+    });
+
+    observer.observe(document.documentElement, { attributes: true });
+
+    // Initial check for dark theme
+    this.isDarkTheme =
+      document.documentElement.classList.contains("sl-theme-dark");
   }
 
   loadSettings() {
@@ -81,6 +103,8 @@ export class AppIndex extends LitElement {
   }
 
   render() {
+    const invertStyle = this.isDarkTheme ? "filter: invert(1);" : "";
+
     // router config can be round in src/router.ts
     return html`
       <app-header>
@@ -90,8 +114,8 @@ export class AppIndex extends LitElement {
           @dialog-open-change=${(e: CustomEvent) => (this.isSettingsDialogOpen = e.detail.isOpen)}
         ></settings-menu>
       </app-header>
-      <border-frame ?dialog-open=${this.isSettingsDialogOpen}>
-        <main>
+      <border-frame ?dialog-open=${this.isSettingsDialogOpen} style=${invertStyle} ?dark-theme=${this.isDarkTheme}>
+        <main style=${invertStyle}>
           ${router.render()}
         </main>
       </border-frame>
