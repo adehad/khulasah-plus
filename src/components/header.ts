@@ -48,6 +48,7 @@ export class AppHeader extends LitElement {
     .theme-switcher-container {
       display: flex;
       gap: 8px;
+      /* z-index: 1000; */
       -webkit-app-region: no-drag; /* Allow interaction with the theme switcher */
     }
 

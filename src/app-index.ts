@@ -1,27 +1,46 @@
 import { css, html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
 
-import "@/pages/app-home";
+// import "@/pages/app-home";
 import "@/components/header";
 import "@/styles/global.css";
 import { router } from "@/router";
 import "@/components/settings-menu";
+import "./components/border-frame.ts"; // <-- New line inserted here
 
-import { SettingsChangeEvent } from "@/components/settings-menu";
+/* We have to import all components here for stuff to work */
+import "@/components/dhikr.ts";
+import "@/components/quran.ts";
+import "@/components/settings-menu";
+import "@/components/theme-switcher";
+import "@shoelace-style/shoelace/dist/components/card/card.js";
+import "@shoelace-style/shoelace/dist/components/button/button.js";
+import "@/components/nav-button.ts";
+import "@shoelace-style/shoelace/dist/components/dialog/dialog.js";
+import "@shoelace-style/shoelace/dist/components/icon/icon.js";
+import "@shoelace-style/shoelace/dist/components/range/range.js";
+import "@shoelace-style/shoelace/dist/components/switch/switch.js";
+import { styles } from "@/styles/shared-styles";
+
+/* end magic imports */
+
+import type { SettingsChangeEvent } from "@/components/settings-menu";
 
 @customElement("app-index")
 export class AppIndex extends LitElement {
+  @state()
+  private isSettingsDialogOpen = false; // New state property
+
   static styles = css`
     main {
-      position: fixed;
+      display: block;
+      position: absolute;
       inset: 0;
-      top: calc(env(titlebar-area-height, 30px) + 12px); /* Adjust for header height */
-      overflow-y: auto;
-      border-style: solid;
-      border-width: 33px;
-      border-image-source: url("/assets/images/ornamental-border-simplified.png");
-      border-image-slice: 20% 20%; /* top and bottom | left and right */
-      border-image-repeat: round;
+      height: 100%; /* Fill the height of border-frame */
+      overflow-y: auto; /* Enable vertical scrolling for main content */
+      box-sizing: border-box; /* Include padding in the element's total width and height */
+      padding: 5px; /* Add padding to account for the border-frame's border-width */
+      pointer-events: auto; /* Ensure main content is interactive */
     }
   `;
 
@@ -65,11 +84,17 @@ export class AppIndex extends LitElement {
     // router config can be round in src/router.ts
     return html`
       <app-header>
-        <settings-menu slot="actions" @settings-change=${(e: SettingsChangeEvent) => this.updateStyles(e.detail.name, e.detail.value)}></settings-menu>
+        <settings-menu
+          slot="actions"
+          @settings-change=${(e: SettingsChangeEvent) => this.updateStyles(e.detail.name, e.detail.value)}
+          @dialog-open-change=${(e: CustomEvent) => (this.isSettingsDialogOpen = e.detail.isOpen)}
+        ></settings-menu>
       </app-header>
-      <main>
+      <border-frame ?dialog-open=${this.isSettingsDialogOpen}>
+        <main>
           ${router.render()}
-      </main>
+        </main>
+      </border-frame>
     `;
   }
 }

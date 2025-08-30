@@ -111,6 +111,16 @@ export class SettingsMenu extends LitElement {
     this.dispatchEvent(new SettingsChangeEvent({ name, value }));
   }
 
+  updated(changedProperties: Map<string | number | symbol, unknown>) {
+    if (changedProperties.has('isDialogOpen')) {
+      this.dispatchEvent(new CustomEvent('dialog-open-change', {
+        detail: { isOpen: this.isDialogOpen },
+        bubbles: true,
+        composed: true
+      }));
+    }
+  }
+
   render() {
     return html`
       <button class="settings-button" @click=${() => (this.isDialogOpen = true)}>
