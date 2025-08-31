@@ -37,9 +37,9 @@ export class BorderFrame extends LitElement {
 
   connectedCallback() {
     super.connectedCallback();
-    this.style.setProperty(
-      "border-image-source",
-      `url(${resolveRouterPath("assets/images/ornamental-border-simplified.png")})`,
+    const url = resolveRouterPath(
+      "assets/images/ornamental-border-simplified.png",
     );
+    this.style.borderImageSource = `url(${url})`;
   }
 }
