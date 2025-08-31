@@ -13,7 +13,7 @@ if (!(globalThis as any).URLPattern) {
 import { pageConfigs } from "./pages/page-config.ts";
 import "./components/page-renderer.ts"; // Ensure page-renderer is registered
 
-const baseURL: string = `${import.meta.env.BASE_URL}${import.meta.env.BASE_URL.endsWith("/") ? "" : "/"}`;
+const baseURL: string = import.meta.env.BASE_URL;
 const isDev: boolean = import.meta.env.BASE_URL === "/";
 
 export const router = new Router({
@@ -47,13 +47,9 @@ export function resolveRouterPath(unresolvedPath?: string): string {
   if (isDev) {
     return unresolvedPath ?? "/";
   }
-  let tmpBaseURL = baseURL;
-  if (!tmpBaseURL.startsWith("http")) {
-    if (!tmpBaseURL.startsWith("/")) {
-      tmpBaseURL = `/${tmpBaseURL}`; // ensure that we get it relative to baseURL
-    }
-    tmpBaseURL = `https://nota.url${tmpBaseURL}`;
+  var resolvedPath = baseURL;
+  if (unresolvedPath) {
+    resolvedPath = resolvedPath + unresolvedPath;
   }
-  var resolvedURL = new URL(unresolvedPath ?? "", tmpBaseURL);
-  return resolvedURL.pathname;
+  return resolvedPath;
 }
