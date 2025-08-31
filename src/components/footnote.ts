@@ -4,7 +4,8 @@ import "@shoelace-style/shoelace/dist/components/icon/icon.js";
 
 @customElement("kp-footnote")
 export class Footnote extends LitElement {
-  @property({ type: String }) type: 'book' | 'hadith' | 'question' | 'quran' = 'question';
+  @property({ type: String }) type: "book" | "hadith" | "question" | "quran" =
+    "question";
 
   static styles = css`
     :host {
@@ -17,13 +18,13 @@ export class Footnote extends LitElement {
 
   private getIconName() {
     switch (this.type) {
-      case 'book':
-      case 'quran':
-        return 'book';
-      case 'hadith':
-        return 'quote';
-      case 'question':
-        return 'patch-question';
+      case "book":
+      case "quran":
+        return "book";
+      case "hadith":
+        return "quote";
+      case "question":
+        return "patch-question";
     }
   }
 

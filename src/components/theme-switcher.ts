@@ -1,6 +1,5 @@
 import { css, html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
-import { darkTheme, lightTheme } from "@/themes/khulasah";
 
 @customElement("theme-switcher")
 export class ThemeSwitcher extends LitElement {

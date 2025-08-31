@@ -9,7 +9,7 @@ import { textStyles } from "@/styles/shared-styles.ts";
 export class Dhikr extends BaseRecitation {
   @property({ type: Object }) recitation!: DhikrModel;
 
-  static styles = [textStyles];
+  static styles = textStyles;
 
   render() {
     return html`

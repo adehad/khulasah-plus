@@ -17,8 +17,10 @@ export type SettingName =
 
 export class SettingsChangeEvent extends CustomEvent<{
   name: SettingName;
+  // biome-ignore lint/suspicious/noExplicitAny: setting can be any JSON-serializable
   value: any;
 }> {
+  // biome-ignore lint/suspicious/noExplicitAny: setting can be any JSON-serializable
   constructor(detail: { name: SettingName; value: any }) {
     super("settings-change", { detail, bubbles: true, composed: true });
   }
@@ -104,6 +106,7 @@ export class SettingsMenu extends LitElement {
         : settings.showTransliteration;
   }
 
+  // biome-ignore lint/suspicious/noExplicitAny: setting can be any JSON-serializable
   saveSetting(name: SettingName, value: any) {
     const settings = JSON.parse(localStorage.getItem("settings") || "{}");
     settings[name] = value;
@@ -112,22 +115,28 @@ export class SettingsMenu extends LitElement {
   }
 
   updated(changedProperties: Map<string | number | symbol, unknown>) {
-    if (changedProperties.has('isDialogOpen')) {
-      this.dispatchEvent(new CustomEvent('dialog-open-change', {
-        detail: { isOpen: this.isDialogOpen },
-        bubbles: true,
-        composed: true
-      }));
+    if (changedProperties.has("isDialogOpen")) {
+      this.dispatchEvent(
+        new CustomEvent("dialog-open-change", {
+          detail: { isOpen: this.isDialogOpen },
+          bubbles: true,
+          composed: true,
+        }),
+      );
     }
+  }
+
+  openDialog(toOpen: boolean) {
+    this.isDialogOpen = toOpen;
   }
 
   render() {
     return html`
-      <button class="settings-button" @click=${() => (this.isDialogOpen = true)}>
+      <button class="settings-button" @click=${() => this.openDialog(true)}>
         <sl-icon name="gear"></sl-icon>
       </button>
 
-      <sl-dialog ?open=${this.isDialogOpen} @sl-hide=${() => (this.isDialogOpen = false)} label="Settings">
+      <sl-dialog ?open=${this.isDialogOpen} @sl-hide=${() => this.openDialog(false)} label="Settings">
         <div class="settings-container">
           <div class="setting">
             <label for="arabic-font-size">Arabic Font Size</label>
@@ -187,7 +196,7 @@ export class SettingsMenu extends LitElement {
             ></sl-switch>
           </div>
         </div>
-        <sl-button slot="footer" @click=${() => (this.isDialogOpen = false)}>Close</sl-button>
+        <sl-button slot="footer" @click=${() => this.openDialog(false)}>Close</sl-button>
       </sl-dialog>
     `;
   }

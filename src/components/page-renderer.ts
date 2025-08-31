@@ -10,7 +10,7 @@ import "@/components/theme-switcher";
 import "@shoelace-style/shoelace/dist/components/card/card.js";
 import "@shoelace-style/shoelace/dist/components/button/button.js";
 import "@/components/nav-button.ts";
-import { styles } from "@/styles/shared-styles";
+import type { BaseRecitationModel } from "@/models/recitation";
 /* end magic imports */
 
 @customElement("page-renderer")
@@ -31,7 +31,7 @@ export class PageRenderer extends LitElement {
       if (module?.default) {
         this._content = module.default;
         this._content = html`
-          ${module.default.map((item) => item.render())}
+          ${module.default.map((item: BaseRecitationModel) => item.render())}
         `;
       } else {
         this._content = html`<p>Error: Content not found or invalid module format.</p>`;

@@ -29,7 +29,7 @@ import type { SettingsChangeEvent } from "@/components/settings-menu";
 @customElement("app-index")
 export class AppIndex extends LitElement {
   @state()
-  private isSettingsDialogOpen = false; // New state property
+  private isSettingsDialogOpen = false;
 
   @state()
   private isDarkTheme = false;
@@ -106,16 +106,19 @@ export class AppIndex extends LitElement {
     }
   }
 
+  setIsSettingDialogOpen(isOpen: boolean) {
+    this.isSettingsDialogOpen = isOpen;
+  }
+
   render() {
     const invertStyle = this.isDarkTheme ? "filter: invert(1);" : "";
 
-    // router config can be round in src/router.ts
     return html`
       <app-header>
         <settings-menu
           slot="actions"
           @settings-change=${(e: SettingsChangeEvent) => this.updateStyles(e.detail.name, e.detail.value)}
-          @dialog-open-change=${(e: CustomEvent) => (this.isSettingsDialogOpen = e.detail.isOpen)}
+          @dialog-open-change=${(e: CustomEvent) => this.setIsSettingDialogOpen(e.detail.isOpen)}
         ></settings-menu>
       </app-header>
       <border-frame ?dialog-open=${this.isSettingsDialogOpen} style=${invertStyle} ?dark-theme=${this.isDarkTheme}>
