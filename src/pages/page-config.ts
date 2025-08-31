@@ -6,12 +6,12 @@ export interface PageConfig {
 
 export const pageConfigs: PageConfig[] = [
   {
-    path: "/home",
+    path: "home",
     title: "Home",
     contentImportPath: "hizb-al-bahr-content",
   },
   {
-    path: "/hizb",
+    path: "hizb",
     title: "Home Al Bahr",
     contentImportPath: "hizb-al-bahr-content",
   },

@@ -17,7 +17,7 @@ export class BorderFrame extends LitElement {
       top: calc(env(titlebar-area-height, 30px) + 12px); /* Adjust for header height */
       border-style: solid;
       border-width: 33px;
-      border-image-source: url("/assets/images/ornamental-border-simplified.png");
+      border-image-source: url("assets/images/ornamental-border-simplified.png");
       border-image-slice: 20% 20%;
       border-image-repeat: round;
       /* Ensure content inside is not clipped by the border */

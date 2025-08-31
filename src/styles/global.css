@@ -26,9 +26,9 @@
   --arabic-font-size: 2rem;
   --translation-font-size: 1rem;
   --transliteration-font-size: 1rem;
-  --show-arabic: 1;
-  --show-translation: 1;
-  --show-transliteration: 1;
+  --show-arabic: block;
+  --show-translation: block;
+  --show-transliteration: block;
 }
 
 html,
