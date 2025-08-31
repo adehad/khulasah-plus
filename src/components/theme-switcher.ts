@@ -74,20 +74,21 @@ export class ThemeSwitcher extends LitElement {
   }
 
   applyTheme() {
-    const root = document.documentElement;
     let themeToApply = this.theme;
 
     if (themeToApply === "auto") {
       themeToApply = this.prefersDark ? "dark" : "light";
     }
+    const useDark = themeToApply === "dark";
 
-    if (themeToApply === "dark") {
-      root.classList.remove("sl-theme-light");
-      root.classList.add("sl-theme-dark");
-    } else {
-      root.classList.remove("sl-theme-dark");
-      root.classList.add("sl-theme-light");
-    }
+    const lightLink = document.getElementById("light-theme") as HTMLLinkElement;
+    const darkLink = document.getElementById("dark-theme") as HTMLLinkElement;
+
+    lightLink.disabled = useDark; // when dark, disable the light CSS
+    darkLink.disabled = !useDark; // when dark, enable the dark CSS
+
+    document.documentElement.classList.toggle("sl-theme-dark", useDark);
+    document.documentElement.classList.toggle("sl-theme-light", !useDark);
   }
 
   setTheme(theme: "light" | "dark" | "auto") {

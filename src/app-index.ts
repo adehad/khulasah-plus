@@ -20,7 +20,7 @@ import "@shoelace-style/shoelace/dist/components/dialog/dialog.js";
 import "@shoelace-style/shoelace/dist/components/icon/icon.js";
 import "@shoelace-style/shoelace/dist/components/range/range.js";
 import "@shoelace-style/shoelace/dist/components/switch/switch.js";
-import { styles } from "@/styles/shared-styles";
+import { darkTheme, lightTheme } from "@/themes/khulasah";
 
 /* end magic imports */
 
@@ -34,18 +34,22 @@ export class AppIndex extends LitElement {
   @state()
   private isDarkTheme = false;
 
-  static styles = css`
-    main {
-      display: block;
-      position: absolute;
-      inset: 0;
-      height: 100%; /* Fill the height of border-frame */
-      overflow-y: auto; /* Enable vertical scrolling for main content */
-      box-sizing: border-box; /* Include padding in the element's total width and height */
-      padding: 5px; /* Add padding to account for the border-frame's border-width */
-      pointer-events: auto; /* Ensure main content is interactive */
-    }
-  `;
+  static styles = [
+    lightTheme,
+    darkTheme,
+    css`
+      main {
+        display: block;
+        position: absolute;
+        inset: 0;
+        height: 100%; /* Fill the height of border-frame */
+        overflow-y: auto; /* Enable vertical scrolling for main content */
+        box-sizing: border-box; /* Include padding in the element's total width and height */
+        padding: 5px; /* Add padding to account for the border-frame's border-width */
+        pointer-events: auto; /* Ensure main content is interactive */
+      }
+    `,
+  ];
 
   firstUpdated() {
     this.loadSettings();
