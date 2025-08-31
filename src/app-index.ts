@@ -4,7 +4,7 @@ import { customElement, state } from "lit/decorators.js";
 // import "@/pages/app-home";
 import "@/components/header";
 import "@/styles/global.css";
-import { router } from "@/router";
+import { resolveRouterPath, router } from "@/router";
 import "@/components/settings-menu";
 import "./components/border-frame.ts"; // <-- New line inserted here
 
@@ -112,7 +112,9 @@ export class AppIndex extends LitElement {
 
   render() {
     const invertStyle = this.isDarkTheme ? "filter: invert(1);" : "";
-
+    const borderImageURL = resolveRouterPath(
+      "assets/images/ornamental-border-simplified.png",
+    );
     return html`
       <app-header>
         <settings-menu
@@ -121,7 +123,9 @@ export class AppIndex extends LitElement {
           @dialog-open-change=${(e: CustomEvent) => this.setIsSettingDialogOpen(e.detail.isOpen)}
         ></settings-menu>
       </app-header>
-      <border-frame ?dialog-open=${this.isSettingsDialogOpen} style=${invertStyle} ?dark-theme=${this.isDarkTheme}>
+      <border-frame ?dialog-open=${this.isSettingsDialogOpen}
+          style="${invertStyle} --border-img: url(${borderImageURL})"
+          ?dark-theme=${this.isDarkTheme}>
         <main style=${invertStyle}>
           ${router.render()}
         </main>

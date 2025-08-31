@@ -1,6 +1,5 @@
 import { css, html, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js"; // Import 'property'
-import { resolveRouterPath } from "@/router";
 
 @customElement("border-frame")
 export class BorderFrame extends LitElement {
@@ -18,7 +17,7 @@ export class BorderFrame extends LitElement {
       top: calc(env(titlebar-area-height, 30px) + 12px); /* Adjust for header height */
       border-style: solid;
       border-width: 33px;
-      /* border-image-source is set dynamically in the component class */
+      border-image-source: var(--border-img); /* In order to ensure the asset has its path resolved, we need to pass in the source after resolution */
       border-image-slice: 20% 20%;
       border-image-repeat: round;
       /* Ensure content inside is not clipped by the border */
@@ -33,13 +32,5 @@ export class BorderFrame extends LitElement {
 
   render() {
     return html`<slot></slot>`; // Renders whatever is placed inside <border-frame>
-  }
-
-  connectedCallback() {
-    super.connectedCallback();
-    const url = resolveRouterPath(
-      "assets/images/ornamental-border-simplified.png",
-    );
-    this.style.borderImageSource = `url(${url})`;
   }
 }
