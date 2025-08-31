@@ -20,7 +20,6 @@ import "@shoelace-style/shoelace/dist/components/dialog/dialog.js";
 import "@shoelace-style/shoelace/dist/components/icon/icon.js";
 import "@shoelace-style/shoelace/dist/components/range/range.js";
 import "@shoelace-style/shoelace/dist/components/switch/switch.js";
-import { darkTheme, lightTheme } from "@/themes/khulasah";
 
 /* end magic imports */
 
@@ -35,8 +34,6 @@ export class AppIndex extends LitElement {
   private isDarkTheme = false;
 
   static styles = [
-    lightTheme,
-    darkTheme,
     css`
       main {
         display: block;
