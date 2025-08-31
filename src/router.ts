@@ -47,6 +47,13 @@ export function resolveRouterPath(unresolvedPath?: string): string {
   if (isDev) {
     return unresolvedPath ?? "/";
   }
-  var resolvedURL = new URL(unresolvedPath ?? "", baseURL);
-  return resolvedURL.href;
+  let tmpBaseURL = baseURL;
+  if (!tmpBaseURL.startsWith("http")) {
+    if (!tmpBaseURL.startsWith("/")) {
+      tmpBaseURL = `/${tmpBaseURL}`; // ensure that we get it relative to baseURL
+    }
+    tmpBaseURL = `https://nota.url${tmpBaseURL}`;
+  }
+  var resolvedURL = new URL(unresolvedPath ?? "", tmpBaseURL);
+  return resolvedURL.pathname;
 }
