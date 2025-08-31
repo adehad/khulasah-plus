@@ -6,9 +6,19 @@ export interface PageConfig {
 
 export const pageConfigs: PageConfig[] = [
   {
+    path: "",
+    title: "Home",
+    contentImportPath: "_index",
+  },
+  {
     path: "home",
     title: "Home",
-    contentImportPath: "hizb-al-bahr-content",
+    contentImportPath: "_index",
+  },
+  {
+    path: "khulasah",
+    title: "Khulasah",
+    contentImportPath: "khulasah-index",
   },
   {
     path: "hizb",
