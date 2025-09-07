@@ -21,6 +21,11 @@ export const pageConfigs: PageConfig[] = [
     contentImportPath: "khulasah-index",
   },
   {
+    path: "mawlids",
+    title: "Mawlids",
+    contentImportPath: "mawlids-index",
+  },
+  {
     path: "hizb",
     title: "Home Al Bahr",
     contentImportPath: "hizb-al-bahr-content",
