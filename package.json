@@ -12,7 +12,8 @@
     "start": "bun run dev",
     "start-remote": "vite --host",
     "lint": "biome lint",
-    "format": "biome format --write"
+    "format": "biome format --write",
+    "generate-pwa-assets": "pwa-assets-generator"
   },
   "author": "",
   "license": "ISC",
@@ -28,6 +29,7 @@
   "devDependencies": {
     "@biomejs/biome": "2.1.2",
     "@types/node": "^24.3.0",
+    "@vite-pwa/assets-generator": "^1.0.1",
     "typescript": "^5.8.3",
     "vite": "^5.4.19",
     "vite-plugin-pwa": "^0.20.5"
