@@ -3,7 +3,7 @@ import { NavModel } from "@/models/nav";
 const mawlidsContent = [
   new NavModel({
     title: "The Shimmering Light (Ad-Dhiya Al-Lam'i)",
-    href: "/",
+    href: "mawlids/shimmering",
   }),
   new NavModel({
     title: "The Pure Drink (Al-Sharab At-Tahur)",

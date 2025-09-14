@@ -10,6 +10,8 @@ import "@/components/theme-switcher";
 import "@shoelace-style/shoelace/dist/components/card/card.js";
 import "@shoelace-style/shoelace/dist/components/button/button.js";
 import "@/components/nav-button.ts";
+import "@/components/qasida.ts";
+import "@/components/qasida-entry.ts";
 import type { BaseRecitationModel } from "@/models/recitation";
 /* end magic imports */
 
