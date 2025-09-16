@@ -45,7 +45,9 @@ export const router = new Router({
 
 export function resolveRouterPath(unresolvedPath?: string): string {
   if (isDev) {
-    return unresolvedPath ?? "/";
+    const path = unresolvedPath ?? "/";
+    const resolvedPath = path.startsWith("/") ? path : `/${path}`;
+    return resolvedPath;
   }
   var resolvedPath = baseURL;
   if (unresolvedPath) {
