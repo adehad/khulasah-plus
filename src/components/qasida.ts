@@ -8,7 +8,7 @@ all at the same level.
 
 */
 import { css, html } from "lit";
-import { customElement, property } from "lit/decorators.js";
+import { customElement, property, state } from "lit/decorators.js";
 import { BaseRecitation } from "@/components/base-recitation";
 import {
   QasidaChapterModel,
@@ -24,6 +24,9 @@ import { textStyles } from "@/styles/shared-styles.ts";
 @customElement("kp-qasida")
 export class Qasida extends BaseRecitation {
   @property({ type: Object }) qasida!: QasidaModel;
+
+  @state()
+  private _activeChorusId: string | null = null;
 
   static styles = [
     textStyles,
@@ -91,6 +94,50 @@ export class Qasida extends BaseRecitation {
       padding: 0.5rem 1ch;
       font-weight: bold;
     }
+
+    .chorus-toggle-button {
+        position: sticky;
+        top: 7rem; /* Positioned below chapter and verse numbers */
+        width: 4ch;
+        writing-mode: sideways-rl;
+        padding: 8px 5px;
+        border-radius: 5px 15px 15px 5px;
+        z-index: 95;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        background-color: var(--sl-color-primary-700);
+        color: var(--sl-color-primary-50);
+        border: none;
+      }
+
+      .sticky-chorus {
+        transition: max-height 0.5s ease-out;
+        background-color: hsl(from var(--sl-color-primary-700) h s l / 90%);
+        color: var(--sl-color-primary-50);
+        top: 30px;
+        z-index: 9;
+        flex-basis: 100% !important; /* Take full width when active */
+      }
+
+      .sticky-chorus.is-active {
+        position: sticky;
+        max-height: 70vh;
+        overflow-y: auto;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+        animation: slideIn 0.4s ease-out forwards;
+        padding: 20px;
+      }
+
+      @keyframes slideIn {
+        from {
+            transform: translateY(-50px);
+            opacity: 0.8;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+      }
     `,
   ];
 
@@ -126,6 +173,14 @@ export class Qasida extends BaseRecitation {
     window.location.hash = hash;
   }
 
+  private toggleChorus(verseId: string) {
+    if (this._activeChorusId === verseId) {
+      this._activeChorusId = null;
+    } else {
+      this._activeChorusId = verseId;
+    }
+  }
+
   renderEntry(
     entry: QasidaChapterModel | QasidaVerseModel,
     index: number,
@@ -144,19 +199,40 @@ export class Qasida extends BaseRecitation {
         `;
     } else if (entry instanceof QasidaVerseModel) {
       const verse = entry;
-      const chorusClassAdd = entry.chorus ? " chorus" : "";
       const verseId = prefix
         ? `verse-${prefix}-${index + 1}`
         : `verse-${index + 1}`;
-      return html`
-        <button class="sticky verse-num" @click=${() => this.setWindowHash(verseId)}>${index + 1}</button>
-        <div class="verses${chorusClassAdd}" id="${verseId}">
-          ${verse.entries.map(
-            (verseEntry) =>
-              html`<kp-qasida-entry .entry=${verseEntry}></kp-qasida-entry>`,
-          )}
-        </div>
-      `;
+
+      if (entry.chorus) {
+        const isActive = this._activeChorusId === verseId;
+        return html`
+          <button
+            class="chorus-toggle-button"
+            @click=${() => this.toggleChorus(verseId)}
+          >
+            Chorus
+          </button>
+          <div
+            class="verses sticky-chorus ${isActive ? "is-active" : ""}"
+            id="${verseId}"
+          >
+            ${verse.entries.map(
+              (verseEntry) =>
+                html`<kp-qasida-entry .entry=${verseEntry}></kp-qasida-entry>`,
+            )}
+          </div>
+        `;
+      } else {
+        return html`
+          <button class="sticky verse-num" @click=${() => this.setWindowHash(verseId)}>${index + 1}</button>
+          <div class="verses" id="${verseId}">
+            ${verse.entries.map(
+              (verseEntry) =>
+                html`<kp-qasida-entry .entry=${verseEntry}></kp-qasida-entry>`,
+            )}
+          </div>
+        `;
+      }
     }
     throw new Error(`Unhandled entry type`); // 'entry'
   }
