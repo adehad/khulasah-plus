@@ -86,6 +86,7 @@ export class AppIndex extends LitElement {
     }
   }
 
+  // biome-ignore lint/suspicious/noExplicitAny: TODO to make interface more restricted.
   updateStyles(name: string, value: any) {
     const root = document.documentElement;
     if (typeof value === "boolean") {
