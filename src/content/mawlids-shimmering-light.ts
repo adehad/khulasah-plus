@@ -16,12 +16,12 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
-              translit: "",
+              translit: "yā rabbi ṣalli ʿalá muḥammad",
               translation: "O Lord, send blessings upon Muhammad",
             }),
             new QasidaEntryModel({
               arabic: "يَا ربِّ صَلِّ عَلَيْهِ وَسَلِّمْ",
-              translit: "",
+              translit: "yā rabbi ṣalli ʿalayhi wa-sallim",
               translation:
                 "O Lord, send blessings upon him and grant him peace",
             }),
@@ -31,12 +31,12 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
-              translit: "",
+              translit: "yā rabbi ṣalli ʿalá muḥammad",
               translation: "O Lord, send blessings upon Muhammad",
             }),
             new QasidaEntryModel({
               arabic: "حَبِيبِكَ الشَّافِعِ الْمُشَفَّعْ",
-              translit: "",
+              translit: "ḥabībuka ash-shāfiʿ al-mushaffiʿ",
               translation: "Your Beloved, the Accepted Intercessor",
             }),
           ],
@@ -45,12 +45,12 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
-              translit: "",
+              translit: "yā rabbi ṣalli ʿalá muḥammad",
               translation: "O Lord, send blessings upon Muhammad",
             }),
             new QasidaEntryModel({
               arabic: "أَعْلَى الْوَرَى رُتْبَةً وَأَرْفَعْ",
-              translit: "",
+              translit: "aʿlá al-wará rutbatan wa-arfaʿ",
               translation:
                 "the loftiest and most exalted of creation in station",
             }),
@@ -60,12 +60,12 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
-              translit: "",
+              translit: "yā rabbi ṣalli ʿalá muḥammad",
               translation: "O Lord, send blessings upon Muhammad",
             }),
             new QasidaEntryModel({
               arabic: "أَسْمَى الْبَرَايَا جَاهًا وَأَوسَعْ",
-              translit: "",
+              translit: "asmá al-baráyá jāhan wa-awsaʿ",
               translation: "the highest and greatest of humankind in rank",
             }),
           ],
@@ -74,12 +74,12 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
-              translit: "",
+              translit: "yā rabbi ṣalli ʿalá muḥammad",
               translation: "O Lord, send blessings upon Muhammad",
             }),
             new QasidaEntryModel({
               arabic: "وَاسْلُكْ بِنَا رَبِّ خَيْرَ مَهْيَعْ",
-              translit: "",
+              translit: "wa-sluk binā rabbi khayra mahyaʿ",
               translation: "and set us on the best path, O Lord",
             }),
           ],
@@ -88,12 +88,12 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
-              translit: "",
+              translit: "yā rabbi ṣalli ʿalá muḥammad",
               translation: "O Lord, send blessings upon Muhammad",
             }),
             new QasidaEntryModel({
               arabic: "وَعَافِنَا وَاشْفِ كُلَّ مُوجَعْ",
-              translit: "",
+              translit: "wa-ʿāfinā wa-ishfi kulla mujʿ",
               translation:
                 "and grant us well-being and heal all who are pained",
             }),
@@ -103,12 +103,12 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
-              translit: "",
+              translit: "yā rabbi ṣalli ʿalá muḥammad",
               translation: "O Lord, send blessings upon Muhammad",
             }),
             new QasidaEntryModel({
               arabic: "وَأَصْلِحِ الْقَلْبَ وَاعْفُ وَانْفَعْ",
-              translit: "",
+              translit: "wa-aṣliḥi al-qalba wa-ʿfū wa-nfaʿ",
               translation: "and mend our hearts, pardon us, and benefit us",
             }),
           ],
@@ -117,12 +117,12 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
-              translit: "",
+              translit: "yā rabbi ṣalli ʿalá muḥammad",
               translation: "O Lord, send blessings upon Muhammad",
             }),
             new QasidaEntryModel({
               arabic: "وَاكْفِ الْمُعَادِي وَاصْرِفْهُ وَارْدَعْ",
-              translit: "",
+              translit: "wa-kfi al-muʿādī wa-ṣrifhu wa-ardaʿ",
               translation: "and restrain our Foe; avert and deter him",
             }),
           ],
@@ -131,12 +131,12 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
-              translit: "",
+              translit: "yā rabbi ṣalli ʿalá muḥammad",
               translation: "O Lord, send blessings upon Muhammad",
             }),
             new QasidaEntryModel({
               arabic: "نَحُلُّ فِي حِصْنِكَ الْمُمَنَّعْ",
-              translit: "",
+              translit: "naḥullu fī ḥiṣnika al-mumanʿ",
               translation: "Lodge us in Your impregnable fortress",
             }),
           ],
@@ -145,12 +145,12 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
-              translit: "",
+              translit: "yā rabbi ṣalli ʿalá muḥammad",
               translation: "O Lord, send blessings upon Muhammad",
             }),
             new QasidaEntryModel({
               arabic: "رَبِّ ارْضَ عَنَّا رِضَاكَ الْأَرْفَعْ",
-              translit: "",
+              translit: "rabbi irḍá ʿannā riḍāka al-arfaʿ",
               translation: "Lord, be supremely pleased with us",
             }),
           ],
@@ -159,12 +159,12 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
-              translit: "",
+              translit: "yā rabbi ṣalli ʿalá muḥammad",
               translation: "O Lord, send blessings upon Muhammad",
             }),
             new QasidaEntryModel({
               arabic: "وَاجْعَلْ لَنَا فِي الْجِنَانِ مَجْمَعْ",
-              translit: "",
+              translit: "wa-jʿal lanā fī al-jināni majmaʿ",
               translation: "and let us attend his gatherings in the Gardens",
             }),
           ],
@@ -173,12 +173,12 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
-              translit: "",
+              translit: "yā rabbi ṣalli ʿalá muḥammad",
               translation: "O Lord, send blessings upon Muhammad",
             }),
             new QasidaEntryModel({
               arabic: "رَافِقْ بِنَا خَيْرَ خَلْقِكَ اجْمَعْ",
-              translit: "",
+              translit: "rāfiq binā khayra khalqika ijmaʿ",
               translation:
                 "Grant us the companionship of the Best of Your Creation in entirety",
             }),
@@ -188,12 +188,12 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
-              translit: "",
+              translit: "yā rabbi ṣalli ʿalá muḥammad",
               translation: "O Lord, send blessings upon Muhammad",
             }),
             new QasidaEntryModel({
               arabic: "يَا ربِّ صَلِّ عَلَيْهِ وَسَلِّمْ",
-              translit: "",
+              translit: "yā rabbi ṣalli ʿalayhi wa-sallim",
               translation:
                 "O Lord, send blessings upon him and grant him peace",
             }),
@@ -203,7 +203,8 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهْ",
-              translit: "",
+              translit:
+                "allāhumma ṣalli wa-sallim wa-bārik ʿalayhi waʿalá ālihi",
               translation:
                 "Oh Allāh, send Your mercy, peace and blessings upon him and his Family",
             }),
@@ -219,7 +220,7 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "أَعُوذُ باِللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
-              translit: "",
+              translit: "aʿūdhu bi-llāhi mina ash-shayṭāni r-rajīm",
               translation: "I seek refuge with Allah from the accursed satan",
             }),
           ],
@@ -228,7 +229,7 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ",
-              translit: "",
+              translit: "bismi-llāhi r-raḥmāni r-raḥīm",
               translation:
                 "In the name of Allah, Most Compassionate, Ever-Merciful",
             }),
@@ -239,7 +240,8 @@ const shimmeringLight = [
             new QasidaEntryModel({
               arabic:
                 "﴿ إِنَّا فَتَحْنَا لَكَ فَتْحًا مُّبِينًا ۝ لِّيَغْفِرَ لَكَ ٱللَّهُ مَا تَقَدَّمَ مِن ذَنۢبِكَ وَمَا تَأَخَّرَ وَيُتِمَّ نِعْمَتَهُۥ عَلَيْكَ وَيَهْدِيَكَ صِرَٰطًا مُّسْتَقِيمًا ۝ وَيَنصُرَكَ ٱللَّهُ نَصْرًا عَزِيزًا ﴾ ﴿ لَقَدْ جَآءَكُمْ رَسُولٌ مِّنْ أَنفُسِكُمْ عَزِيزٌ عَلَيْهِ مَا عَنِتُّمْ حَرِيصٌ عَلَيْكُم بِٱلْمُؤْمِنِينَ رَءُوفٌ رَّحِيمٌ ۝ فَإِن تَوَلَّوْا۟ فَقُلْ حَسْبِىَ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَهُوَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيمِ ﴾ ﴿ إِنَّ ٱللَّهَ وَمَلَائِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ يَا أَيُّهَا الَّذِينَ آمَنُوا صَلُّوا عَلَيْهِ وَسَلِّمُوا تَسْلِيمًا ﴾",
-              translit: "",
+              translit:
+                "﴿ innā fataḥnā laka fatḥan mubīnan ۝ li-yaghfira laka llāhu mā taqaddama min dhanbika wa-mā taʾakhkhara wa-yutimmu ni‘matahu ʿalayka wa-yahdīka ṣirāṭan mustaqīman ۝ wa-yansuraka llāhu naṣran ʿazīzan ﴾﴿ laqad jāʾakum rasūlun min anfusikum ʿazīzun ʿalayhi mā ʿanittum ḥarīṣun ʿalaykum bi-l-muʾminīna raʾūfun raḥīm ۝ fa-in tawallaw fa-qul ḥasbiyallāhu lā ilāha illā huwa ʿalayhi tawakkaltu wa-huwa rabbu l-ʿarshi l-ʿaẓīm ﴾ ﴿ innā llāhu wa-malāʾikatuhu yuṣallūna ʿalā n-nabiyy yā ayyuhā alladhīna āmanū ṣallū ʿalayhi wa-sallimū taslīman ﴾",
               translation:
                 "{Truly We have granted you a manifest victory [O Beloved] so that Allah may forgive, for your sake, your community’s past faults and those to follow, complete His favor to you, guide [your community] to a straight path and help you mightily.} {A Messenger has come to you from among yourselves. Your suffering distresses him: he is deeply concerned for you and full of kindness and mercy towards the believers. If they turn away [O Beloved], say, ‘Allah is enough for me: there is no god but Him; I put my trust in Him; He is the Lord of the Mighty Throne.’} {Indeed, Allah and His angels send blessings upon the Prophet. O you who believe, send blessings upon him and salute him with abundant greetings of peace.}",
             }),
@@ -249,7 +251,8 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهْ",
-              translit: "",
+              translit:
+                "allāhumma ṣalli wa-sallim wa-bārik ʿalayhi waʿalá ālihi",
               translation:
                 "Oh Allāh, send Your mercy, peace and blessings upon him and his Family",
             }),
@@ -265,12 +268,12 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "ٱلْحَمْدُ لِلَّهِ الَّذِي هَدَانَا",
-              translit: "",
+              translit: "al-ḥamdu li-llāhi alladhī hadānā",
               translation: "All praise be to Allah who guided us",
             }),
             new QasidaEntryModel({
               arabic: "بِعَبْدِهِ الْمُخْتَارِ مَنْ دَعَانَا",
-              translit: "",
+              translit: "bi-ʿabdihi al-mukhtār man daʿānā",
               translation: "through His chosen servant",
             }),
           ],
@@ -279,12 +282,12 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "إِلَيْهِ بِٱلْإِذْنِ وَقَدْ نَادَانَا",
-              translit: "",
+              translit: "ilayhi bi-l-idhn wa-qad nādānā",
               translation: "who called us unto Him by His permission.",
             }),
             new QasidaEntryModel({
               arabic: "لَبَّيْكَ يَا مَنْ دَلَّنَا وَحَدَانَا",
-              translit: "",
+              translit: "labbayka yā man dallanā wa-hadānā",
               translation:
                 "Here we are! At your service, O you who guided and urged us on!",
             }),
@@ -294,13 +297,13 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "صَلَّى عَلَيْكَ اللَّهُ بَارِئُكَ الَّذِي",
-              translit: "",
+              translit: "ṣallá ʿalayka llāhu bāriʿuka alladhī",
               translation:
                 "May Allah, Your Maker, who distinguished and gifted us with you,",
             }),
             new QasidaEntryModel({
               arabic: "بِكَ يَا مُشَفَّعُ خَصَّنَا وَحَبَانَا",
-              translit: "",
+              translit: "bika yā mushaffiʿ khaṣṣanā wa-ḥabānā",
               translation: "send blessings upon you, O Accepted Intercessor",
             }),
           ],
@@ -309,13 +312,13 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "مَعَ آلِكَ الأَطْهَارِ مَعْدِنِ سِرِّكَ الْــ",
-              translit: "",
+              translit: "maʿa ālika al-aṭhār maʿdin sirrika al-",
               translation:
                 "and upon your pure family, the treasure-trove of your sublime secret,",
             }),
             new QasidaEntryModel({
               arabic: "أَسْمَى فَهُمْ سُفُنُ النَّجَاةِ حِمَانَا",
-              translit: "",
+              translit: "asmá fahum sufun an-najāti ḥimānā",
               translation:
                 "for they are the ships of salvation; our protection",
             }),
@@ -325,12 +328,12 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "وَعَلَى صَحَابَتِكَ الْكِرَامِ حُمَاةِ دِيــ",
-              translit: "",
+              translit: "wa-ʿalá ṣaḥābatika al-kiram ḥumāāti di-",
               translation: "and upon your noble companions, the protectors of",
             }),
             new QasidaEntryModel({
               arabic: "ــنِكَ أَصْبَحُوا لِوَلَائِهِ عُنْوَانَا",
-              translit: "",
+              translit: "nika aṣbaḥū li-wilāʾihi ʿunwānā",
               translation:
                 "your religion. --They are the epitome of fidelity to him.",
             }),
@@ -340,13 +343,13 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "وَالتَّابِعِيْنَ لَهُمْ بِصِدْقٍ مَا حَدَا",
-              translit: "",
+              translit: "wa-t-tābiʿīna lahum bi-ṣidqin mā ḥadā",
               translation:
                 "And upon those who truly follow them, for as long as",
             }),
             new QasidaEntryModel({
               arabic: "حَادِي الْمَوَدَّةِ هَيَّجَ الْأَشْجَانَا",
-              translit: "",
+              translit: "ḥādi al-mawadda hayyaja al-ashjānā",
               translation:
                 "the melodies of the leader of the caravan of love urge the caravan onward.",
             }),
@@ -356,13 +359,13 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "وَاللَّهِ مَا ذُكِرَ الْحَبِيبُ لَدَى الْمُحِبّ",
-              translit: "",
+              translit: "wa-llāhi mā dhukira l-ḥabību ladá l-muḥibb",
               translation:
                 "I swear by Allah, never is the beloved mentioned to a lover",
             }),
             new QasidaEntryModel({
               arabic: "إِلَّا وَأَضْحَى وَالِهًا نَشْوَانَا",
-              translit: "",
+              translit: "illā wa-aḍḥá wa-iláhan nashwānā",
               translation:
                 "except that the lover becomes enraptured and intoxicated.",
             }),
@@ -372,12 +375,12 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "أَيْنَ الْمُحِبُّونَ الَّذِينَ عَلَيْهِمُ",
-              translit: "",
+              translit: "ayna al-muḥibbūna alladhīna ʿalayhim",
               translation: "Where are the lovers who find it paltry to expend",
             }),
             new QasidaEntryModel({
               arabic: "بَذْلُ النُّفُوسِ مَعَ النَّفَائِسِ هَانَا",
-              translit: "",
+              translit: "badhlun-nufūsi maʿa n-nufāʾisi hānā",
               translation:
                 "their souls and all that is precious for the beloved?",
             }),
@@ -387,13 +390,13 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "لَا يَسْمَعُونَ بِذِكْرِ طَهَ الْمُصْطَفَى",
-              translit: "",
+              translit: "lā yasmaʿūna bi-dhikri Ṭaha l-muṣṭafá",
               translation:
                 "Never do they hear mention of Taha, the Chosen One,",
             }),
             new QasidaEntryModel({
               arabic: "إِلَّا بِهِ انْتَعَشُوا وَأَذْهَبَ رَانَا",
-              translit: "",
+              translit: "illā bihi intʿashū wa-adhhabā ranānā",
               translation:
                 "except that they are invigorated and the rust on their hearts is removed.",
             }),
@@ -403,13 +406,13 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "فَاهْتَاجَتِ الْأَرْوَاحُ تَشْتَاقُ اللِّقَا",
-              translit: "",
+              translit: "fa-htājati l-arwāḥu tashtāqu l-liqā",
               translation:
                 "Their souls become excited. They yearn and pine for a meeting with their beloved,",
             }),
             new QasidaEntryModel({
               arabic: "وَتَحِنُّ تَسْأَلُ رَبَّهَا الرِّضْوَانَا",
-              translit: "",
+              translit: "wa-taḥinnu tasʾalu rabbahā r-riḍwānā",
               translation: "and implore their Lord for His good-pleasure.",
             }),
           ],
@@ -418,13 +421,13 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "حَالُ الْمُحِبِّينَ كَذَا فَاسْمَعْ إِلَى",
-              translit: "",
+              translit: "ḥālu l-muḥibbīna ka-dhā fa-asmaʿ ilá",
               translation:
                 "Such is the state of lovers. So listen to the biography",
             }),
             new QasidaEntryModel({
               arabic: "سِيَرِ الْمُشَفَّعِ وَارْهِفِ الْآذَانَا",
-              translit: "",
+              translit: "siyari l-mushaffiʿ wa-arhif al-ādhānā",
               translation: "of the Accepted Intercessor, and listen well!",
             }),
           ],
@@ -433,12 +436,12 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "وَانْصِتْ إِلَى أَوْصَافِ طَهَ الْمُجْتَبَى",
-              translit: "",
+              translit: "wa-nṣit ilá awṣāfi Ṭaha l-mujtabā",
               translation: "Listen to the traits of Taha, the Chosen One.",
             }),
             new QasidaEntryModel({
               arabic: "وَاحْضِرْ لِقَلْبِكَ يَمْتَلِئْ وِجْدَانَا",
-              translit: "",
+              translit: "wa-aḥḍir li-qalbika yamtaliʾ wijdānā",
               translation:
                 "Make your heart present. It will brim with ecstasy.",
             }),
@@ -448,13 +451,13 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "يَا رَبَّنَا صَلِّ وَسَلِّمْ دَائِمًا",
-              translit: "",
+              translit: "yā rabbanā ṣalli wa-sallim dāʾiman",
               translation:
                 "O our Lord, send blessings and grant peace constantly",
             }),
             new QasidaEntryModel({
               arabic: "عَلَى حَبِيبِكَ مَنْ إِلَيْكَ دَعَانَا",
-              translit: "",
+              translit: "ʿalá ḥabībika man ilayka daʿānā",
               translation: "to Your Beloved who called us unto You",
             }),
           ],
@@ -463,7 +466,8 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهْ",
-              translit: "",
+              translit:
+                "allāhumma ṣalli wa-sallim wa-bārik ʿalayhi waʿalá ālihi",
               translation:
                 "Oh Allāh, send Your mercy, peace and blessings upon him and his Family",
             }),
