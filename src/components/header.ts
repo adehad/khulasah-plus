@@ -21,6 +21,9 @@ export class AppHeader extends LitElement {
   @state()
   private _tocItems: Array<{ text: string; id: string }> = [];
 
+  @state()
+  private _previousPath: string | undefined;
+
   static styles = css`
     header {
       display: flex;
@@ -80,6 +83,7 @@ export class AppHeader extends LitElement {
     window.addEventListener("toc-updated", this.handleTocUpdate);
     queueMicrotask(() => {
       this.generateBreadcrumbs(router.url);
+      this._previousPath = router.url.pathname;
     });
   }
 
@@ -95,10 +99,23 @@ export class AppHeader extends LitElement {
   };
 
   private handleRouteChange = (event: Event) => {
-    this._tocItems = []; // Clear TOC on route change
     const routeEvent = event as unknown as RouterEvent;
-    if (routeEvent.context?.url) {
-      this.generateBreadcrumbs(routeEvent.context.url);
+    const newUrl = routeEvent.context?.url;
+
+    if (newUrl) {
+      const newPath = newUrl.pathname;
+      if (this._previousPath === newPath) {
+        // Path is the same, likely a hash change, so don't clear TOC.
+        // Just update the previous path and exit.
+        this._previousPath = newPath;
+        return;
+      }
+      this._previousPath = newPath;
+    }
+
+    this._tocItems = []; // Clear TOC on route change
+    if (newUrl) {
+      this.generateBreadcrumbs(newUrl);
     }
   };
 
@@ -150,6 +167,10 @@ export class AppHeader extends LitElement {
       detail: { background: isBackground },
     });
     this.dispatchEvent(event);
+  }
+
+  private _handleTocItemClick(id: string) {
+    window.location.hash = id;
   }
 
   render() {
@@ -205,11 +226,11 @@ export class AppHeader extends LitElement {
               ? html`
             <sl-breadcrumb-item>
               <sl-dropdown @sl-show=${this.handleShow} @sl-hide=${this.handleHide}>
-                <sl-icon-button name="arrow-down-circle" slot="trigger"></sl-icon-button>
+                <sl-icon-button name="chevron-double-down" slot="trigger"></sl-icon-button>
                 <sl-menu>
                   ${this._tocItems.map(
                     (item) => html`
-                    <sl-menu-item @click=${() => (window.location.hash = item.id)}>${item.text}</sl-menu-item>
+                    <sl-menu-item @click=${() => this._handleTocItemClick(item.id)}>${item.text}</sl-menu-item>
                   `,
                   )}
                 </sl-menu>
