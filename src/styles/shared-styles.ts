@@ -17,10 +17,15 @@ export const styles = css`
 
 export const textStyles = css`
   .arabic {
-    font-family: 'Uthmanic Hafs', 'Scheherazade New', serif;
+    font-family: "Scheherazade New", "Uthmanic Hafs", serif;
     direction: rtl;
     font-size: var(--arabic-font-size);
     display: var(--show-arabic, block);
+  }
+
+  .quran {
+    font-family: "Uthmanic Hafs", "Scheherazade New", serif;
+    font-size: calc(var(--arabic-font-size)*1.1); /* Font is a bit smaller */
   }
 
   .translation {
