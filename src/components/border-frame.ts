@@ -4,7 +4,7 @@ import { customElement, property } from "lit/decorators.js"; // Import 'property
 @customElement("border-frame")
 export class BorderFrame extends LitElement {
   @property({ type: Boolean })
-  dialogOpen = false; // to receive state from app-index
+  putBorderToBackground = false;
 
   static styles = css`
     :host {
@@ -25,8 +25,8 @@ export class BorderFrame extends LitElement {
       pointer-events: none;  /* Pass Pointer Events to main content */
     }
 
-    :host([dialog-open]) { /* When dialogOpen is true, attribute 'dialogopen' will be present */
-      z-index: -1; /* So settings-dialog is not obscured by border */
+    :host([put-border-to-background]) {
+      z-index: -1; /* So other elements are not obscured by border */
     }
   `;
 

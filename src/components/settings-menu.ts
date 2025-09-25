@@ -114,16 +114,13 @@ export class SettingsMenu extends LitElement {
     this.dispatchEvent(new SettingsChangeEvent({ name, value }));
   }
 
-  updated(changedProperties: Map<string | number | symbol, unknown>) {
-    if (changedProperties.has("isDialogOpen")) {
-      this.dispatchEvent(
-        new CustomEvent("dialog-open-change", {
-          detail: { isOpen: this.isDialogOpen },
-          bubbles: true,
-          composed: true,
-        }),
-      );
-    }
+  emitBorderStateChange(isBackground: boolean) {
+    const event = new CustomEvent("border-state-change", {
+      bubbles: true,
+      composed: true,
+      detail: { background: isBackground },
+    });
+    this.dispatchEvent(event);
   }
 
   openDialog(toOpen: boolean) {
@@ -136,7 +133,10 @@ export class SettingsMenu extends LitElement {
         <sl-icon name="gear"></sl-icon>
       </button>
 
-      <sl-dialog ?open=${this.isDialogOpen} @sl-hide=${() => this.openDialog(false)} label="Settings">
+      <sl-dialog ?open=${this.isDialogOpen} @sl-show=${() => this.emitBorderStateChange(true)} @sl-hide=${() => {
+        this.openDialog(false);
+        this.emitBorderStateChange(false);
+      }} label="Settings">
         <div class="settings-container">
           <div class="setting">
             <label for="arabic-font-size">Arabic Font Size</label>

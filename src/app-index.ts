@@ -28,10 +28,10 @@ import type { SettingsChangeEvent } from "@/components/settings-menu";
 @customElement("app-index")
 export class AppIndex extends LitElement {
   @state()
-  private isSettingsDialogOpen = false;
+  private isDarkTheme = false;
 
   @state()
-  private isDarkTheme = false;
+  private putBorderToBackground = false;
 
   static styles = [
     css`
@@ -47,6 +47,10 @@ export class AppIndex extends LitElement {
       }
     `,
   ];
+
+  handleBorderStateChange(e: CustomEvent) {
+    this.putBorderToBackground = e.detail.background;
+  }
 
   firstUpdated() {
     this.loadSettings();
@@ -104,26 +108,22 @@ export class AppIndex extends LitElement {
     }
   }
 
-  setIsSettingDialogOpen(isOpen: boolean) {
-    this.isSettingsDialogOpen = isOpen;
-  }
-
   render() {
     const invertStyle = this.isDarkTheme ? "filter: invert(1);" : "";
     const borderImageURL = resolveRouterPath(
       "assets/images/ornamental-border-simplified.png",
     );
     return html`
-      <app-header>
+      <app-header @border-state-change=${this.handleBorderStateChange}>
         <settings-menu
           slot="actions"
           @settings-change=${(e: SettingsChangeEvent) => this.updateStyles(e.detail.name, e.detail.value)}
-          @dialog-open-change=${(e: CustomEvent) => this.setIsSettingDialogOpen(e.detail.isOpen)}
         ></settings-menu>
       </app-header>
-      <border-frame ?dialog-open=${this.isSettingsDialogOpen}
+      <border-frame
           style="${invertStyle} --border-img: url(${borderImageURL})"
-          ?dark-theme=${this.isDarkTheme}>
+          ?dark-theme=${this.isDarkTheme}
+          ?put-border-to-background=${this.putBorderToBackground}>
         <main style=${invertStyle}>
           ${router.render()}
         </main>

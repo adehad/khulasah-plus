@@ -135,6 +135,23 @@ export class AppHeader extends LitElement {
     this._breadcrumbs = breadcrumbs;
   }
 
+  private handleShow() {
+    this.emitBorderStateChange(true);
+  }
+
+  private handleHide() {
+    this.emitBorderStateChange(false);
+  }
+
+  private emitBorderStateChange(isBackground: boolean) {
+    const event = new CustomEvent("border-state-change", {
+      bubbles: true,
+      composed: true,
+      detail: { background: isBackground },
+    });
+    this.dispatchEvent(event);
+  }
+
   render() {
     const breadcrumbs = this._breadcrumbs;
     const homeCrumb = breadcrumbs[0];
@@ -158,7 +175,7 @@ export class AppHeader extends LitElement {
             intermediateCrumbs.length > 0
               ? html`
             <sl-breadcrumb-item>
-              <sl-dropdown>
+              <sl-dropdown @sl-show=${this.handleShow} @sl-hide=${this.handleHide}>
                 <sl-button slot="trigger" size="small" caret>
                   ${intermediateCrumbs.length}
                 </sl-button>
@@ -187,7 +204,7 @@ export class AppHeader extends LitElement {
             this._tocItems.length > 0
               ? html`
             <sl-breadcrumb-item>
-              <sl-dropdown>
+              <sl-dropdown @sl-show=${this.handleShow} @sl-hide=${this.handleHide}>
                 <sl-icon-button name="arrow-down-circle" slot="trigger"></sl-icon-button>
                 <sl-menu>
                   ${this._tocItems.map(
