@@ -43,8 +43,7 @@ export class Qasida extends BaseRecitation {
       }
 
       .verses {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 20px 30px; // Top-Bottom [for visual separation], Right-Left prevent overlap with Chapter/Verse
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: wrap;
@@ -102,7 +101,7 @@ export class Qasida extends BaseRecitation {
         writing-mode: sideways-rl;
         padding: 8px 5px;
         border-radius: 5px 15px 15px 5px;
-        z-index: 95;
+        z-index: 11;
         cursor: pointer;
         transition: transform 0.3s ease-in-out;
         background-color: var(--sl-color-primary-700);
