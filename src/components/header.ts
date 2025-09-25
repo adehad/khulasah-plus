@@ -1,18 +1,19 @@
 import type { Router as RouterEvent } from "@thepassle/app-tools/router.js";
 import { css, html, LitElement } from "lit";
-import { customElement, property, state } from "lit/decorators.js";
+import { customElement, state } from "lit/decorators.js";
 import { resolveRouterPath, router } from "@/router";
 
 import "@shoelace-style/shoelace/dist/components/button/button.js";
 import "@shoelace-style/shoelace/dist/components/breadcrumb/breadcrumb.js";
 import "@shoelace-style/shoelace/dist/components/breadcrumb-item/breadcrumb-item.js";
+import "@shoelace-style/shoelace/dist/components/dropdown/dropdown.js";
+import "@shoelace-style/shoelace/dist/components/menu/menu.js";
+import "@shoelace-style/shoelace/dist/components/menu-item/menu-item.js";
+import "@shoelace-style/shoelace/dist/components/icon/icon.js";
 import "@/components/theme-switcher";
 
 @customElement("app-header")
 export class AppHeader extends LitElement {
-  @property({ type: String }) title = "khulasah-plus";
-  @property({ type: Boolean }) enableBack: boolean = false;
-
   @state()
   private _breadcrumbs: Array<{ text: string; href: string }> = [];
 
@@ -124,25 +125,52 @@ export class AppHeader extends LitElement {
   }
 
   render() {
+    const breadcrumbs = this._breadcrumbs;
+    const homeCrumb = breadcrumbs[0];
+    const currentCrumb = breadcrumbs[breadcrumbs.length - 1];
+    const intermediateCrumbs = breadcrumbs.slice(1, breadcrumbs.length - 1);
+
     return html`
       <header>
-        <div id="back-button-block">
-          ${
-            this.enableBack
-              ? html`<sl-button size="small" href="${resolveRouterPath()}">
-            Back
-          </sl-button>`
-              : null
-          }
-          <h1>${this.title}</h1>
-        </div>
-
         <sl-breadcrumb>
-          ${this._breadcrumbs.map((crumb, index) =>
-            index === this._breadcrumbs.length - 1
-              ? html`<sl-breadcrumb-item>${crumb.text}</sl-breadcrumb-item>`
-              : html`<sl-breadcrumb-item href="${crumb.href}">${crumb.text}</sl-breadcrumb-item>`,
-          )}
+          ${
+            homeCrumb
+              ? html`
+            <sl-breadcrumb-item href="${homeCrumb.href}">
+              <sl-icon name="house" style="font-size: 1.2rem;"></sl-icon>
+            </sl-breadcrumb-item>
+          `
+              : ""
+          }
+
+          ${
+            intermediateCrumbs.length > 0
+              ? html`
+            <sl-breadcrumb-item>
+              <sl-dropdown>
+                <sl-button slot="trigger" size="small" caret>
+                  ${intermediateCrumbs.length}
+                </sl-button>
+                <sl-menu>
+                  ${intermediateCrumbs.map(
+                    (crumb) => html`
+                    <sl-menu-item @click=${() => router.navigate(crumb.href)}>${crumb.text}</sl-menu-item>
+                  `,
+                  )}
+                </sl-menu>
+              </sl-dropdown>
+            </sl-breadcrumb-item>
+          `
+              : ""
+          }
+
+          ${
+            currentCrumb && breadcrumbs.length > 1
+              ? html`
+            <sl-breadcrumb-item>${currentCrumb.text}</sl-breadcrumb-item>
+          `
+              : ""
+          }
         </sl-breadcrumb>
 
         <div class="theme-switcher-container">
