@@ -147,6 +147,7 @@ export class Qasida extends BaseRecitation {
   updated(changedProperties: Map<string | symbol, unknown>) {
     if (changedProperties.has("qasida")) {
       this.handleHashChange();
+      this.updateToc();
     }
   }
 
@@ -170,6 +171,22 @@ export class Qasida extends BaseRecitation {
 
   setWindowHash(hash: string) {
     window.location.hash = hash;
+  }
+
+  private updateToc() {
+    queueMicrotask(() => {
+      const headers = this.renderRoot.querySelectorAll("h1, h2, h3");
+      const tocItems = Array.from(headers).map((header) => {
+        return { text: header.textContent || "", id: header.id };
+      });
+
+      const event = new CustomEvent("toc-updated", {
+        detail: { tocItems },
+        bubbles: true,
+        composed: true,
+      });
+      this.dispatchEvent(event);
+    });
   }
 
   private toggleChorus(verseId: string) {

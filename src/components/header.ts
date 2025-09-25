@@ -10,12 +10,16 @@ import "@shoelace-style/shoelace/dist/components/dropdown/dropdown.js";
 import "@shoelace-style/shoelace/dist/components/menu/menu.js";
 import "@shoelace-style/shoelace/dist/components/menu-item/menu-item.js";
 import "@shoelace-style/shoelace/dist/components/icon/icon.js";
+import "@shoelace-style/shoelace/dist/components/icon-button/icon-button.js";
 import "@/components/theme-switcher";
 
 @customElement("app-header")
 export class AppHeader extends LitElement {
   @state()
   private _breadcrumbs: Array<{ text: string; href: string }> = [];
+
+  @state()
+  private _tocItems: Array<{ text: string; id: string }> = [];
 
   static styles = css`
     header {
@@ -73,7 +77,7 @@ export class AppHeader extends LitElement {
   connectedCallback() {
     super.connectedCallback();
     router.addEventListener("route-changed", this.handleRouteChange);
-    // Use a microtask to allow router to initialize
+    window.addEventListener("toc-updated", this.handleTocUpdate);
     queueMicrotask(() => {
       this.generateBreadcrumbs(router.url);
     });
@@ -82,9 +86,16 @@ export class AppHeader extends LitElement {
   disconnectedCallback() {
     super.disconnectedCallback();
     router.removeEventListener("route-changed", this.handleRouteChange);
+    window.removeEventListener("toc-updated", this.handleTocUpdate);
   }
 
+  private handleTocUpdate = (event: Event) => {
+    const customEvent = event as CustomEvent;
+    this._tocItems = customEvent.detail.tocItems;
+  };
+
   private handleRouteChange = (event: Event) => {
+    this._tocItems = []; // Clear TOC on route change
     const routeEvent = event as unknown as RouterEvent;
     if (routeEvent.context?.url) {
       this.generateBreadcrumbs(routeEvent.context.url);
@@ -168,6 +179,25 @@ export class AppHeader extends LitElement {
             currentCrumb && breadcrumbs.length > 1
               ? html`
             <sl-breadcrumb-item>${currentCrumb.text}</sl-breadcrumb-item>
+          `
+              : ""
+          }
+
+          ${
+            this._tocItems.length > 0
+              ? html`
+            <sl-breadcrumb-item>
+              <sl-dropdown>
+                <sl-icon-button name="arrow-down-circle" slot="trigger"></sl-icon-button>
+                <sl-menu>
+                  ${this._tocItems.map(
+                    (item) => html`
+                    <sl-menu-item @click=${() => (window.location.hash = item.id)}>${item.text}</sl-menu-item>
+                  `,
+                  )}
+                </sl-menu>
+              </sl-dropdown>
+            </sl-breadcrumb-item>
           `
               : ""
           }
