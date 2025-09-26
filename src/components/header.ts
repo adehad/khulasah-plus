@@ -186,7 +186,7 @@ export class AppHeader extends LitElement {
             homeCrumb
               ? html`
             <sl-breadcrumb-item href="${homeCrumb.href}">
-              <sl-icon name="house" style="font-size: 1.2rem;"></sl-icon>
+              <sl-icon name="house" style="font-size: 1.2rem; transform: translateY(0.2rem);"></sl-icon>
             </sl-breadcrumb-item>
           `
               : ""
@@ -216,25 +216,24 @@ export class AppHeader extends LitElement {
           ${
             currentCrumb && breadcrumbs.length > 1
               ? html`
-            <sl-breadcrumb-item>${currentCrumb.text}</sl-breadcrumb-item>
-          `
-              : ""
-          }
-
-          ${
-            this._tocItems.length > 0
-              ? html`
             <sl-breadcrumb-item>
-              <sl-dropdown @sl-show=${this.handleShow} @sl-hide=${this.handleHide}>
-                <sl-icon-button name="chevron-double-down" slot="trigger"></sl-icon-button>
-                <sl-menu>
-                  ${this._tocItems.map(
-                    (item) => html`
-                    <sl-menu-item @click=${() => this._handleTocItemClick(item.id)}>${item.text}</sl-menu-item>
-                  `,
-                  )}
-                </sl-menu>
-              </sl-dropdown>
+              ${currentCrumb.text}
+              ${
+                this._tocItems.length > 0
+                  ? html`
+                  <sl-dropdown @sl-show=${this.handleShow} @sl-hide=${this.handleHide}>
+                    <sl-icon-button name="chevron-double-down" slot="trigger" style="transform: translateY(0.2rem);"></sl-icon-button>
+                    <sl-menu>
+                      ${this._tocItems.map(
+                        (item) => html`
+                        <sl-menu-item @click=${() => this._handleTocItemClick(item.id)}>${item.text}</sl-menu-item>
+                      `,
+                      )}
+                    </sl-menu>
+                  </sl-dropdown>
+                `
+                  : ""
+              }
             </sl-breadcrumb-item>
           `
               : ""
