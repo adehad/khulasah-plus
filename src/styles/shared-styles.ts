@@ -17,7 +17,7 @@ export const styles = css`
 
 export const textStyles = css`
   .arabic {
-    font-family: "Scheherazade New", "Uthmanic Hafs", serif;
+    font-family: var(--preferred-arabic-font-family), "Scheherazade New", "Uthmanic Hafs", serif;
     direction: rtl;
     font-size: var(--arabic-font-size);
     display: var(--show-arabic, block);

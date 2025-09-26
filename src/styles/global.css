@@ -22,6 +22,7 @@
 
 :host,
 :root {
+  --preferred-arabic-font-family: "Uthmanic Hafs";
   --font-family: "Lexend", sans-serif;
   --arabic-font-size: 2rem;
   --translation-font-size: 1rem;
@@ -41,7 +42,9 @@ body {
 }
 
 .arabic {
-  font-family: "Scheherazade New", "Uthmanic Hafs", serif;
+  font-family:
+    var(--preferred-arabic-font-family), "Scheherazade New", "Uthmanic Hafs",
+    serif;
   direction: rtl;
   font-size: var(--arabic-font-size);
   display: var(--show-arabic, block);
