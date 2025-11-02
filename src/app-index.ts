@@ -53,8 +53,45 @@ export class AppIndex extends LitElement {
   }
 
   firstUpdated() {
+    this.handleProtocol();
     this.loadSettings();
+    this.setupRouter();
+    this.setupThemeObserver();
+  }
 
+  /**
+   * Handles an incoming custom/protocol URL passed via the current page's query string.
+   *
+   * Reads the current window location, looks for a "url" search parameter, and if present:
+   * - Parses the value as a URL.
+   * - Extracts the pathname (removing the leading '/').
+   * - Instructs the application router to navigate to that path.
+   *
+   * Invalid or unparsable URLs are caught and logged to the console; no navigation is attempted in that case.
+   *
+   * @private
+   * @remarks
+   * - Relies on a global or surrounding-scope `router` object exposing a `navigate(path: string)` method.
+   * - Uses the browser `URL` constructor for robust parsing and `window.location.href` as the source URL.
+   *
+   * @returns void
+   */
+  private handleProtocol() {
+    const url = new URL(window.location.href);
+    const protocolUrlString = url.searchParams.get("url");
+
+    if (protocolUrlString) {
+      try {
+        const protocolUrl = new URL(protocolUrlString);
+        const path = protocolUrl.pathname.substring(1); // Remove leading '/'
+        router.navigate(path);
+      } catch (e) {
+        console.error("Invalid protocol URL:", protocolUrlString, e);
+      }
+    }
+  }
+
+  private setupRouter() {
     router.addEventListener("route-changed", () => {
       if ("startViewTransition" in document) {
         document.startViewTransition(() => this.requestUpdate());
@@ -62,8 +99,30 @@ export class AppIndex extends LitElement {
         this.requestUpdate();
       }
     });
+  }
 
-    // Observe changes to the <html> element's class attribute
+  /**
+   * Observes the document root for theme changes and updates the component's
+   * `isDarkTheme` flag when the "sl-theme-dark" class is added or removed.
+   *
+   * The method:
+   * - Creates a MutationObserver that listens for attribute changes on
+   *   `document.documentElement`.
+   * - Filters mutations to changes of the `"class"` attribute and updates
+   *   `this.isDarkTheme` to reflect whether the `"sl-theme-dark"` class is present.
+   * - Begins observing immediately with `{ attributes: true }`.
+   * - Performs an initial synchronous check to set `this.isDarkTheme` based on
+   *   the current document state.
+   *
+   * @remarks
+   * - This method does not disconnect the observer; callers should keep a
+   *   reference to the observer and disconnect it (e.g., in a cleanup or
+   *   component teardown) to avoid memory leaks.
+   * - Assumes `this.isDarkTheme` is a boolean property on the surrounding class.
+   *
+   * @returns void
+   */
+  private setupThemeObserver() {
     const observer = new MutationObserver((mutations) => {
       mutations.forEach((mutation) => {
         if (

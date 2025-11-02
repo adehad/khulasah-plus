@@ -1,6 +1,12 @@
 {
   "id": "/",
   "scope": "/",
+  "protocol_handlers": [
+    {
+      "protocol": "web+khulasahplus",
+      "url": "/?url=%s"
+    }
+  ],
   "name": "Khulasah+",
   "display": "standalone",
   "start_url": "/",
