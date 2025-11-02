@@ -28,12 +28,11 @@ export const pageConfigs: PageConfig[] = [
   {
     path: "mawlids/shimmering",
     title: "The Shimmering Light",
-    // contentImportPath: "hizb-al-bahr-content",
     contentImportPath: "mawlids-shimmering-light",
   },
   {
     path: "hizb",
-    title: "Home Al Bahr",
+    title: "Hizb Al Bahr",
     contentImportPath: "hizb-al-bahr-content",
   },
   // Add more page configurations here

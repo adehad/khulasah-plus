@@ -19,14 +19,6 @@ const isDev: boolean = import.meta.env.BASE_URL === "/";
 export const router = new Router({
   fallback: "/404",
   routes: [
-    {
-      path: resolveRouterPath("hizb-bahr-real"),
-      title: "Hizb Bahr real",
-      plugins: [
-        lazy(() => import("./pages/khulasah/after-asr/hizb-al-bahr.ts")),
-      ],
-      render: () => html`<hizb-al-bahr></hizb-al-bahr>`,
-    },
     ...pageConfigs.map((config) => ({
       path: resolveRouterPath(config.path),
       plugins: [lazy(() => import("./components/page-renderer.js"))],
