@@ -1,3 +1,5 @@
+@import url("./preflight.css");
+
 @font-face {
   font-family: "Lexend";
   src: url("/fonts/lexend-v25-latin_latin-ext-regular.woff2") format("woff2");
