@@ -6,6 +6,8 @@ import { textStyles } from "@/styles/shared-styles.ts";
 
 @customElement("kp-mushaf-entry")
 export class MushafEntry extends LitElement {
+  @property({ type: Boolean }) openingBrace!: boolean;
+  @property({ type: Boolean }) closingBrace!: boolean;
   @property({ type: Object }) entry!: QuranEntryModel;
 
   static styles = [
@@ -36,7 +38,15 @@ export class MushafEntry extends LitElement {
   render() {
     return html`
       <div class="entry">
-        <div class="arabic">${this.entry.arabic}<div class="arabic verse-bracket"> <span class="arabic verse-number">${this.entry.verse}</span>۝</div></div>
+        <div class="arabic">
+          <span class="arabic verse-bracket">${this.openingBrace ? "﴿" : ""}</span>
+          ${this.entry.arabic}
+          <div class="arabic verse-bracket">
+            <span class="arabic verse-number">${this.entry.verse}</span>
+            ۝
+          </div>
+          <span class="arabic verse-bracket">${this.closingBrace ? "﴾" : ""}</span>
+        </div>
         <div class="translit">${this.entry.translit}</div>
         <div class="translation">${this.entry.translation}</div>
       </div>

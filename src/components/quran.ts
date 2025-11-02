@@ -34,11 +34,14 @@ export class Quran extends BaseRecitation {
     return html`
       <div class="quran-container">
         <p class="instruction">${this.recitation.instruction}</p>
-        <span class="arabic">﴿</span>
         ${this.recitation.entries.map(
-          (entry) => html`<kp-mushaf-entry .entry=${entry}></kp-mushaf-entry>`,
+          (entry, i) =>
+            html`<kp-mushaf-entry
+                  .entry=${entry}
+                  .openingBrace=${i === 0}
+                  .closingBrace=${i === this.recitation.entries.length - 1}>
+                </kp-mushaf-entry>`,
         )}
-        <span class="arabic">﴾</span>
         <kp-footnote type="quran">Surah ${this.recitation.title} (${this.recitation.surah}):${firstVerse}-${lastVerse}</kp-footnote>
       </div>
     `;
