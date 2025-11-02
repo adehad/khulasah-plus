@@ -1,5 +1,5 @@
+import { html } from "lit";
 import { customElement, property } from "lit/decorators.js";
-import { html } from "lit/static-html.js";
 import { BaseRecitation } from "@/components/base-recitation";
 import type { DhikrModel } from "@/models/recitation.ts";
 import "@/components/dhikr-entry.ts";
@@ -12,12 +12,13 @@ export class Dhikr extends BaseRecitation {
   static styles = [textStyles];
 
   render() {
+    const instruction = this.recitation.instruction
+      ? html`<p class="instruction">${this.recitation.instruction}</p>`
+      : "";
     return html`
       <div class="dhikr-container">
-        <p class="instruction">${this.recitation.instruction}</p>
-        ${this.recitation.entries.map(
-          (entry) => html`<kp-dhikr-entry .entry=${entry}></kp-dhikr-entry>`,
-        )}
+        ${instruction}
+        ${this.recitation.entries?.map((dhikrEntry) => html`<kp-dhikr-entry .entry=${dhikrEntry}></kp-dhikr-entry>`)}
       </div>
     `;
   }

@@ -150,15 +150,30 @@ export abstract class BaseRecitationModel {
  */
 export class DhikrModel extends BaseRecitationModel {
   constructor(
+    instruction?: string,
+    public entries?: DhikrEntryModel[],
+    title?: string,
+  ) {
+    super(title ?? "", instruction);
+    this.entries = entries ?? [];
+  }
+
+  render() {
+    return html`<kp-dhikr .recitation=${this}></kp-dhikr>`;
+  }
+}
+
+export class WirdModel extends BaseRecitationModel {
+  constructor(
     title: string,
-    public entries: DhikrEntryModel[],
+    public entries: (DhikrModel | QuranModel)[],
     instruction?: string,
   ) {
     super(title, instruction);
   }
 
   render() {
-    return html`<kp-dhikr .recitation=${this}></kp-dhikr>`;
+    return html`<kp-wird .recitation=${this}></kp-wird>`;
   }
 }
 

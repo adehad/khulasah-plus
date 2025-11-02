@@ -2,6 +2,7 @@ import { html, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
 
 /* We have to import all components here for stuff to work */
+import "@/components/dhikr-wird";
 import "@/components/dhikr.ts";
 import "@/components/quran.ts";
 import "@/components/settings-menu";
