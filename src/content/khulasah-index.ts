@@ -27,7 +27,7 @@ const theKhulasahContent = [
   }),
   new NavModel({
     title: "After Asr",
-    href: "/khulasah/after-asr",
+    href: "khulasah/after-asr",
   }),
   new NavModel({
     title: "Maghrib",

@@ -11,7 +11,7 @@ export const afterAsrContent = [
   }),
   new NavModel({
     title: "Hizb al-Bahr",
-    href: "/khulasah/after-asr/hizb-al-bahr",
+    href: "khulasah/after-asr/hizb-al-bahr",
   }),
 ];
 
