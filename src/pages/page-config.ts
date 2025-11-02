@@ -31,9 +31,14 @@ export const pageConfigs: PageConfig[] = [
     contentImportPath: "mawlids-shimmering-light",
   },
   {
-    path: "hizb",
+    path: "khulasah/after-asr",
+    title: "After Asr",
+    contentImportPath: "khulasah-after-asr-index",
+  },
+  {
+    path: "khulasah/after-asr/hizb-al-bahr",
     title: "Hizb Al Bahr",
-    contentImportPath: "hizb-al-bahr-content",
+    contentImportPath: "khulasah-after-asr-hizb-al-bahr",
   },
   // Add more page configurations here
 ];
