@@ -31,42 +31,33 @@ export class Qasida extends BaseRecitation {
   static styles = [
     textStyles,
     css`
-      .qasida-container {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end; /* aligns child to the right */
-          position: relative; /* needed for sticky to work properly */
-      }
-
-      .chapter-header {
-        text-align: center;
-      }
-
-      .verses {
-        padding: 20px 30px; // Top-Bottom [for visual separation], Right-Left prevent overlap with Chapter/Verse
+    .qasida-container {
+        width: 100%;
         display: flex;
-        flex-direction: row-reverse;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
+        flex-direction: column;
+        justify-content: flex-end; /* aligns child to the right */
+        position: relative; /* needed for sticky to work properly */
+        container-type: inline-size; /* Make this a query container */
+    }
 
-      .verses > kp-qasida-entry {
-        flex: 0 1 48%; // 2 column layout
-        box-sizing: border-box;
-      }
+    .chapter-header {
+      text-align: center;
+    }
 
-      .verses > kp-qasida-entry:only-child {
-        flex-basis: 100%; // When only a single item in the column, take all the space
-      }
+    .verses {
+      padding: 20px 30px; // Top-Bottom [for visual separation], Right-Left prevent overlap with Chapter/Verse
+      display: flex;
+      flex-direction: column; // Mobile-first: single column
+    }
 
-      @media (max-width: 768px) {
-        .verses {
-          flex-direction: column; // narrow screens don't have two columns
-        }
-      }
-      .chorus {
-        background-color: hsla(0, 0%, 78%, 50%);
-      }
+    .verses > kp-qasida-entry {
+      flex: 1 1 100%; // Full width on mobile
+      box-sizing: border-box;
+    }
+
+    .verses > kp-qasida-entry:only-child {
+      flex-basis: 100%; // When only a single item in the column, take all the space
+    }
 
     button.sticky {
       position: sticky;
@@ -135,6 +126,23 @@ export class Qasida extends BaseRecitation {
         to {
             transform: translateY(0);
             opacity: 1;
+        }
+      }
+
+      .chorus {
+        background-color: hsla(0, 0%, 78%, 50%);
+      }
+    `,
+    css`
+      @container (width > 600px) {
+        .verses {
+          display: flex; /* TODO: why is this needed when we have it already? */
+          flex-direction: row-reverse; // 2 columns on wider screens
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        .verses > kp-qasida-entry {
+          flex: 0 1 48%; // 2 column layout
         }
       }
     `,
