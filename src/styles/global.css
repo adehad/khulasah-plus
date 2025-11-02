@@ -20,6 +20,16 @@
   font-style: normal;
 }
 
+@font-face {
+  /* Uthmanic Hafs does not have punctionation marks, we take them from Scheherazade */
+  font-family: "Uthmanic Hafs Punctuation";
+  src: url("/fonts/scheherazade-new-v17-arabic_latin-regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  unicode-range: U+060C; /* ،*/
+}
+
 :host,
 :root {
   --preferred-arabic-font-family: "Uthmanic Hafs";
@@ -43,8 +53,8 @@ body {
 
 .arabic {
   font-family:
-    var(--preferred-arabic-font-family), "Scheherazade New", "Uthmanic Hafs",
-    serif;
+    "Uthmanic Hafs Punctuation", var(--preferred-arabic-font-family),
+    "Scheherazade New", "Uthmanic Hafs", serif;
   direction: rtl;
   font-size: var(--arabic-font-size);
   display: var(--show-arabic, block);
