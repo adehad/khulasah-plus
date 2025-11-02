@@ -10,7 +10,7 @@ const hizbAlBahrContent = [
   new WirdModel("Hizb al-Bahr", [
     new DhikrModel("", [
       new DhikrEntryModel({
-        arabic: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+        arabic: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
         translit: "Bismi Allahi alrrahmani alrraheemi",
         translation:
           "In the name of Allah, the Most Gracious, the Most Merciful.",
@@ -21,21 +21,21 @@ const hizbAlBahrContent = [
         translation: "O Most High, O Supreme, O Forbearing, O All-Knowing,",
       }),
       new DhikrEntryModel({
-        arabic: "أَنْتَ رَبِّي وَعِلْمُكَ حَسْبِي فَنِعْمَ الرَّبُّ رَبِّي وَنِعْمَ الْحَسْبُ حَسْبِي",
+        arabic: "أَنْتَ رَبِّي وَعِلْمُكَ حَسْبِي فَنِعْمَ الرَّبُّ رَبِّي ونِعْمَ الْحَسْبُ حَسْبِي",
         translit:
           "Anta rabbi wa 'ilmuka hasbi, fa ni'ma-r-rabbu rabbi, wa ni'ma-l-hasbu hasbi",
         translation:
           "You are my Lord and Your knowledge is sufficient for me, so what an excellent Lord is my Lord, and what an excellent sufficiency is my sufficiency.",
       }),
       new DhikrEntryModel({
-        arabic: "تَنْصُرُ مَنْ تَشَاءُ وَأَنْتَ الْعَزِيزُ الرَّحِيمُ",
+        arabic: "تَنْصُرُ مَنْ تَشَاءُ وَأَنْتَ الْعَزِيزُ الرَّحِيم",
         translit: "tanṣuru man tashā'u wa anta-l-ʿazīzu-r-raḥīm",
         translation:
           "You give victory to whomever You will, and You are the Almighty, the Merciful.",
       }),
       new DhikrEntryModel({
         arabic:
-          "نَسْأَلُكَ الْعِصْمَةَ فِي الْحَرَكَاتِ وَالسَّكَنَاتِ وَالْكَلِمَاتِ وَالْإِرَادَاتِ وَالْخَطَرَاتِ مِنَ الشُّكُوكِ وَالظُّنُونِ وَالْأَوْهَامِ السَّاطِرَةِ لِلْقُلُوبِ عَنْ مُطَالَعَةِ الْغُيُوبِ",
+          "نَسْأَلُكَ الْعِصْمَةَ فِي الْحَرَكَاتِ وَالسَّكَنَاتِ وَالْكَلِمَاتِ وَالْإِرَادَاتِ وَالْخَطَرَاتِ مِنَ الشُّكُوكِ وَالظُّنُونِ وَالْأَوْهَامِ السَّاتِرَةِ لِلْقُلُوبِ عَنْ مُطَالَعَةِ الْغُيُوبِ",
         translit:
           "nas'aluka-l-ʿiṣmata fi-l-ḥarakāti wa-s-sakanāti wa-l-kalimāti wa-l-irādāti wa-l-khaṭarāti mina-sh-shukūki wa-ẓ-ẓunūni wa-l-awhāmi-s-sāṭirati li-l-qulūbi ʿan muṭālaʿati-l-ghuyūb",
         translation:
@@ -44,15 +44,15 @@ const hizbAlBahrContent = [
     ]),
     new QuranModel("Al-Ahzab", 33, [
       new QuranEntryModel({
-        arabic: "فَقَدِ ابْتُلِيَ الْمُؤْمِنُونَ وَزُلْزِلُوا زِلْزَالًا شَدِيدًا",
-        translit: "Faqadi-btuliya-l-mu'minūna wa zulzilū zilzālan shadīdan",
+        arabic: " (فَقَد) ٱبۡتُلِيَ ٱلۡمُؤۡمِنُونَ وَزُلۡزِلُواْ زِلۡزَالٗا شَدِيدٗا",
+        translit: "(Faqad)i-btuliya-l-mu'minūna wa zulzilū zilzālan shadīdan",
         translation:
-          "There, the believers were tried and shaken with a mighty shaking.",
+          "(There,) the believers were tried and shaken with a mighty shaking.",
         verse: 11,
       }),
       new QuranEntryModel({
         arabic:
-          "وَإِذْ يَقُولُ الْمُنَافِقُونَ وَالَّذِينَ فِي قُلُوبِهِمْ مَرَضٌ مَا وَعَدَنَا اللَّهُ وَرَسُولُهُ إِلَّا غُرُورًا",
+          "وَإِذْ يَقُولُ ٱلْمُنَـٰفِقُونَ وَٱلَّذِينَ فِى قُلُوبِهِم مَّرَضٌ مَّا وَعَدَنَا ٱللَّهُ وَرَسُولُهُۥٓ إِلَّا غُرُورًا",
         translit:
           "Wa idh yaqūlu-l-munāfiqūna wa-lladhīna fī qulūbihim maraḍun mā waʿadanā-llāhu wa rasūluhū illā ghurūran",
         translation:
@@ -62,31 +62,31 @@ const hizbAlBahrContent = [
     ]),
     new DhikrModel("", [
       new DhikrEntryModel({
-        arabic: "فَثَبِّتْنَا وَانْصُرْنَا وَسَخِّرْ لَنَا هَٰذَا الْبَحْرَ كَمَا سَخَّرْتَ الْبَحْرَ لِمُوسَىٰ",
+        arabic: "فَثَبِّتْنَا وَانْصُرْنَا وَسَخِّرْ لَنَا هَذَا الْبَحْرَ كَمَا سَخَّرْتَ الْبَحْرَ لِمُوسَى",
         translit:
           "fa-thabbitnā wa-nṣurnā wa-sakhkhir lanā hādhā-l-baḥra kamā sakhkharta-l-baḥra li-Mūsā",
         translation:
           "So make us firm and grant us victory, and subjugate this sea to us as You subjugated the sea to Moses.",
       }),
       new DhikrEntryModel({
-        arabic: "وَسَخَّرْتَ النَّارَ لِإِبْرَاهِيمَ",
+        arabic: "وَسَخَّرْتَ النَّارَ لِإِبْرَاهِيم",
         translit: "wa sakhkharta-n-nāra li-Ibrāhīm",
         translation: "And You subjugated the fire to Abraham.",
       }),
       new DhikrEntryModel({
-        arabic: "وَسَخَّرْتَ الْجِبَالَ وَالْحَدِيدَ لِدَاوُدَ",
+        arabic: "وَسَخَّرْتَ الْجِبَالَ وَالْحَدِيدَ لِدَاوُۥدَ",
         translit: "wa sakhkharta-l-jibāla wa-l-ḥadīda li-Dāwūd",
         translation: "And You subjugated the mountains and the iron to David.",
       }),
       new DhikrEntryModel({
-        arabic: "وَسَخَّرْتَ الرِّيحَ وَالشَّيَاطِينَ وَالْجِنَّ لِسُلَيْمَانَ",
+        arabic: "وَسَخَّرْتَ الرِّيْحَ وَالشَّيَاطِينَ وَالْجِنَّ لِسُلَيْمَانَ",
         translit: "wa sakhkharta-r-rīḥa wa-sh-shayāṭīna wa-l-jinna li-Sulaymān",
         translation:
           "And You subjugated the wind and the devils and the jinn to Solomon.",
       }),
       new DhikrEntryModel({
         arabic:
-          "وَسَخِّرْ لَنَا كُلَّ بَحْرٍ هُوَ لَكَ فِي الْأَرْضِ وَالسَّمَاءِ وَالْمُلْكِ وَالْمَلَكُوتِ وَبَحْرَ الدُّنْيَا وَبَحْرَ الْآخِرَةِ",
+          "وَسَخِّرْ لَنَا كُلَّ بَحْرٍ هُوَ لَكَ فِي الْأَرْضِ وَالسَّمَاءِ وَالْمُلْكِ وَالْمَلَكُوتِ وَبَحْرَ الدُّنيَا وبَحْرَ الْآخِرَةِ",
         translit:
           "wa sakhkhir lanā kulla baḥrin huwa laka fi-l-arḍi wa-s-samā'i wa-l-mulki wa-l-malakūti, wa baḥra-d-dunyā wa baḥra-l-ākhirah",
         translation:
@@ -100,13 +100,13 @@ const hizbAlBahrContent = [
           "And subjugate to us everything, O You in Whose hand is the dominion of everything.",
       }),
       new DhikrEntryModel({
-        arabic: "كهيعص",
+        arabic: "كٓهيعٓصٓ",
         translit: "Kāf Hā Yā 'Ayn Ṣād",
         translation: "Kāf Hā Yā 'Ayn Ṣād",
         repeat: 3,
       }),
       new DhikrEntryModel({
-        arabic: "انْصُرْنَا فَإِنَّكَ خَيْرُ النَّاصِرِينَ",
+        arabic: "اُنْصُرْنَا فَإِنَّكَ خَيْرُ النَّاصِرِينَ",
         translit: "unṣurnā fa-innaka khayru-n-nāṣirīn",
         translation:
           "Grant us victory, for You are the best of those who grant victory.",
@@ -134,6 +134,11 @@ const hizbAlBahrContent = [
         translation: "And provide for us, for You are the best of providers.",
       }),
       new DhikrEntryModel({
+        arabic: "وَاهْدِنَا وَنَجِّنَا مِنَ الْقَومِ الظَّالِمِينَ",
+        translit: "wa-hdinā wa-najjinā mina-l-qawmi-ẓ-ẓālimīn",
+        translation: "And guide us and save us from the wrongdoing people.",
+      }),
+      new DhikrEntryModel({
         arabic: "وَهَبْ لَنَا رِيحًا طَيِّبَةً كَمَا هِيَ فِي عِلْمِكَ",
         translit: "wa hab lanā rīḥan ṭayyibatan kamā hiya fī ʿilmik",
         translation: "And grant us a goodly wind, as is in Your knowledge.",
@@ -145,20 +150,20 @@ const hizbAlBahrContent = [
       }),
       new DhikrEntryModel({
         arabic:
-          "وَاحْمِلْنَا بِهَا حَمْلَ الْكَرَامَةِ مَعَ السَّلَامَةِ وَالْعَافِيَةِ فِي الدِّينِ وَالدُّنْيَا وَالْآخِرَةِ",
+          "وَاحْمِلْنَا بِهَا حَمْلَ الْكَرَامَةِ مَعَ السَّلَامَةِ وَالْعَافِيَةِ فِي الدِّينِ وَالدُّنيَا وَالْآخِرَةِ",
         translit:
           "wa-ḥmilnā bihā ḥamla-l-karāmati maʿa-s-salāmati wa-l-ʿāfiyati fi-d-dīni wa-d-dunyā wa-l-ākhirah",
         translation:
           "And carry us by it with a carriage of honor, with safety and well-being in our religion, our world, and the Hereafter.",
       }),
       new DhikrEntryModel({
-        arabic: "إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ",
+        arabic: "إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
         translit: "innaka ʿalā kulli shay'in qadīr",
         translation: "Indeed, You have power over all things.",
       }),
       new DhikrEntryModel({
         arabic:
-          "اللَّهُمَّ يَسِّرْ لَنَا أُمُورَنَا مَعَ الرَّاحَةِ لِقُلُوبِنَا وَأَبْدَانِنَا وَالسَّلَامَةِ وَالْعَافِيَةِ فِي دِينِنَا وَدُنْيَانَا",
+          "اللَّهُمَّ يَسِّرْ لَنَا أُمُورَنَا مَعَ الرَّاحَةِ لِقُلُوبِنَا وَأَبْدَانِنَا، وَالسَّلَامَةِ وَالْعَافِيَةِ فِي دِينِنَا وَدُنْيَانَا",
         translit:
           "allāhumma yassir lanā umūranā maʿa-r-rāḥati li-qulūbinā wa abdāninā wa-s-salāmati wa-l-ʿāfiyati fī dīninā wa dunyānā",
         translation:
@@ -171,12 +176,12 @@ const hizbAlBahrContent = [
           "And be for us a companion in our journey and a guardian in our families.",
       }),
       new DhikrEntryModel({
-        arabic: "وَاطْمِسْ عَلَىٰ وُجُوهِ أَعْدَائِنَا",
+        arabic: "وَاطْمِسْ عَلَى وُجُوهِ أَعْدَائِنَا",
         translit: "wa-ṭmis ʿalā wujūhi aʿdā'inā",
         translation: "And blind the faces of our enemies.",
       }),
       new DhikrEntryModel({
-        arabic: "وَامْسَخْهُمْ عَلَىٰ مَكَانَتِهِمْ فَلَا يَسْتَطِيعُونَ الْمُضِيَّ وَلَا الْمَجِيءَ إِلَيْنَا",
+        arabic: "وَامْسَخْهُمْ عَلَى مَكَانَتِهِم فَلَا يَستَطِيعُونَ الْمُضِيَّ وَلَا الْمَجِيءَ إِلَيْنَا",
         translit:
           "wa-msakhhum ʿalā makānatihim fa-lā yastaṭīʿūna-l-muḍiyya wa-l-majī'a ilaynā",
         translation:
@@ -185,7 +190,7 @@ const hizbAlBahrContent = [
     ]),
     new QuranModel("Ya-Sin", 36, [
       new QuranEntryModel({
-        arabic: "وَلَوْ نَشَاءُ لَطَمَسْنَا عَلَىٰ أَعْيُنِهِمْ فَاسْتَبَقُوا الصِّرَاطَ فَأَنَّىٰ يُبْصِرُونَ",
+        arabic: "وَلَوۡ نَشَآءُ لَطَمَسۡنَا عَلَىٰٓ أَعۡيُنِهِمۡ فَٱسۡتَبَقُواْ ٱلصِّرَٰطَ فَأَنَّىٰ يُبۡصِرُونَ",
         translit:
           "wa law nashā'u la-ṭamasnā ʿalā aʿyunihim fa-stabaqū-ṣ-ṣirāṭa fa-annā yubṣirūn",
         translation:
@@ -193,7 +198,7 @@ const hizbAlBahrContent = [
         verse: 66,
       }),
       new QuranEntryModel({
-        arabic: "وَلَوْ نَشَاءُ لَمَسَخْنَاهُمْ عَلَىٰ مَكَانَتِهِمْ فَمَا اسْتَطَاعُوا مُضِيًّا وَلَا يَرْجِعُونَ",
+        arabic: "وَلَوۡ نَشَآءُ لَمَسَخۡنَٰهُمۡ عَلَىٰ مَكَانَتِهِمۡ فَمَا ٱسۡتَطَٰعُواْ مُضِيّٗا وَلَا يَرۡجِعُونَ",
         translit:
           "wa law nashā'u la-masakhnāhum ʿalā makānatihim fa-mā-staṭāʿū muḍiyyan wa lā yarjiʿūn",
         translation:
@@ -203,7 +208,7 @@ const hizbAlBahrContent = [
     ]),
     new QuranModel("Ya-Sin", 36, [
       new QuranEntryModel({
-        arabic: "يس",
+        arabic: "يسٓ",
         translit: "Yā Sīn",
         translation: "Ya Sin.",
         verse: 1,
@@ -274,7 +279,7 @@ const hizbAlBahrContent = [
     ]),
     new QuranModel("Taha", 20, [
       new QuranEntryModel({
-        arabic: "وَعَنَتِ الْوُجُوهُ لِلْحَيِّ الْقَيُّومِ ۖ وَقَدْ خَابَ مَنْ حَمَلَ ظُلْمًا",
+        arabic: "وَعَنَتِ ٱلْوُجُوهُ لِلْحَيِّ ٱلْقَيُّومِ ۖ وَقَدْ خَابَ مَنْ حَمَلَ ظُلْمً",
         translit:
           "wa ʿanati-l-wujūhu li-l-ḥayyi-l-qayyūm, wa qad khāba man ḥamala ẓulmā",
         translation:
@@ -282,22 +287,23 @@ const hizbAlBahrContent = [
         verse: 111,
       }),
     ]),
-    new DhikrModel("", [
-      new DhikrEntryModel({
-        arabic: "طس",
+    new QuranModel("An-Naml", 27, [
+      new QuranEntryModel({
+        arabic: "طسٓ",
         translit: "Ṭā Sīn",
         translation: "Ta Sin.",
+        verse: 1,
       }),
     ]),
     new QuranModel("Ash-Shura", 42, [
       new QuranEntryModel({
-        arabic: "حم",
+        arabic: "حمٓ",
         translit: "Ḥā Mīm",
         translation: "Ha Mim.",
         verse: 1,
       }),
       new QuranEntryModel({
-        arabic: "عسق",
+        arabic: "عٓسٓقٓ",
         translit: "ʿAyn Sīn Qāf",
         translation: "Ayn Sin Qaf.",
         verse: 2,
@@ -319,7 +325,7 @@ const hizbAlBahrContent = [
     ]),
     new DhikrModel("", [
       new DhikrEntryModel({
-        arabic: "حم",
+        arabic: "حمٓ",
         translit: "Ḥā Mīm",
         translation: "Ha Mim.",
         repeat: 7,
@@ -333,7 +339,7 @@ const hizbAlBahrContent = [
     ]),
     new QuranModel("Fussilat", 41, [
       new QuranEntryModel({
-        arabic: "حم",
+        arabic: "حمٓ",
         translit: "Ḥā Mīm",
         translation: "Ha Mim.",
         verse: 1,
@@ -379,17 +385,17 @@ const hizbAlBahrContent = [
         translation: "Blessed is our enclosure.",
       }),
       new DhikrEntryModel({
-        arabic: "يس سَقْفُنَا",
+        arabic: "يسٓ سَقْفُنَا",
         translit: "yā sīn saqfunā",
         translation: "Ya Sin is our roof.",
       }),
       new DhikrEntryModel({
-        arabic: "كهيعص كِفَايَتُنَا",
+        arabic: "كٓهيعٓصٓ كِفَايَتُنَا",
         translit: "kāf hā yā ʿayn ṣād kifāyatunā",
         translation: "Kaf Ha Ya 'Ayn Sad is our sufficiency.",
       }),
       new DhikrEntryModel({
-        arabic: "حم عسق حِمَايَتُنَا",
+        arabic: "حمٓ عٓسٓقٓ حِمَايَتُنَا",
         translit: "ḥā mīm ʿayn sīn qāf ḥimāyatunā",
         translation: "Ha Mim 'Ayn Sin Qaf is our protection.",
       }),
@@ -405,7 +411,7 @@ const hizbAlBahrContent = [
     ]),
     new DhikrModel("", [
       new DhikrEntryModel({
-        arabic: "سِتْرُ الْعَرْشِ مَسْبُولٌ عَلَيْنَا",
+        arabic: "سَتْرُ الْعَرْشِ مَسْبُولٌ عَلَيْنَا",
         translit: "sitru-l-ʿarshi masbūlun ʿalaynā",
         translation: "The veil of the Throne is extended over us.",
       }),
@@ -472,7 +478,7 @@ const hizbAlBahrContent = [
     new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
-          "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ ۖ وَهُوَ السَّمِيعُ الْعَلِيمُ",
+          "بِسۡمِ ٱللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
         translit:
           "bismi-llāhi-lladhī lā yaḍurru maʿa-smihī shay'un fi-l-arḍi wa lā fi-s-samā'i wa huwa-s-samīʿu-l-ʿalīm",
         translation:
@@ -480,18 +486,78 @@ const hizbAlBahrContent = [
         repeat: 3,
       }),
       new DhikrEntryModel({
-        arabic: "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ الْعَلِيِّ الْعَظِيمِ",
+        arabic: "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّهِ الْعَلِيِّ الْعَظِيمِ",
         translit: "wa lā ḥawla wa lā quwwata illā bi-llāhi-l-ʿaliyyi-l-ʿaẓīm",
         translation:
           "And there is no might nor power except with Allah, the Most High, the Most Great.",
+      }),
+    ]),
+    new QuranModel("Al-Ahzab", 33, [
+      new QuranEntryModel({
+        arabic:
+          "إِنَّ ٱللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى ٱلنَّبِيِّۚ يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيۡهِ وَسَلِّمُواْ تَسۡلِيمًا",
+        translit:
+          "Inna Allāha wa malā’ikatahu yuṣallūna ‘alā al-nabīyi yā ayyuhā alladhīna āmanū ṣallū ‘alayhi wa sallimū taslīman.",
+        translation:
+          "Indeed, Allah confers blessing upon the Prophet, and His angels [ask Him to do so]. O you who have believed, ask [Allah to confer] blessing upon him and ask [Allah to grant him] peace.",
+        verse: 56,
+      }),
+    ]),
+    new QuranModel(
+      "Al-Baqarah",
+      2,
+      [
+        new QuranEntryModel({
+          arabic:
+            "اللَّهُ لاَ إِلَهَ إِلاَّ هُوَ الْحَيُّ الْقَيُّومُ لاَ تَأْخُذُهُ سِنَةٌ وَلاَ نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الأَرْضِ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلاَّ بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلاَ يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلاَّ بِمَا شَاءَ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالأَرْضَ وَلاَ يَئُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+          translit:
+            "Allāhu lā ilāha illā huwa al-ḥayyu al-qayyūmu lā ta’khudhuhu sinatun wa lā nawmun lahu mā fī al-samāwāti wa mā fī al-arḍi man dhā alladhī yashfa‘u ‘indahu illā bi-idhnihi ya‘lamu mā bayna aydīhim wa mā khalfahum wa lā yuḥīṭūna bi-shay’in min ‘ilmihi illā bi-mā shā’a wasi‘a kursīyuhu al-samāwāti wa al-arḍa wa lā ya’ūduhu ḥifẓuhumā wa huwa al-‘alīyu al-‘aẓīmu",
+          translation:
+            "Allah! There is no deity except Him, the Ever-Living, the Sustainer of [all] existence. Neither drowsiness overtakes Him nor sleep. To Him belongs whatever is in the heavens and whatever is on the earth. Who is it that can intercede with Him except by His permission? He knows what is [presently] before them and what will be after them, and they encompass not a thing of His knowledge except for what He wills. His Kursi (Throne) extends over the heavens and the earth, and their preservation tires Him not. And He is the Most High, the Most Great.",
+          verse: 255,
+        }),
+      ],
+      "Ayatul Kursi - it is better if it is read in one breath",
+    ),
+    new DhikrModel("", [
+      new DhikrEntryModel({
+        arabic:
+          "يَا اللَّهُ يَا نُورُ يَا حَقُّ يَا مُبِينُ، اُكْسُنِي مِنْ نُورِكَ، وَعَلِّمْنِي مِنْ عِلْمِكَ، وَأَفْهِمْنِي عَنْكَ، وَأَسْمِعْنِي مِنْكَ، وَبَصِّرنِي بِكَ، وَأَقِمْنِي بِشُهُودِكَ، وَعَرِّفْنِي الطَّرِيقَ إِلَيْكَ، وَهَوِّنْهَا عَلَيَّ بِفَضْلِكَ، وَأَلْبِسْنِي لِبَاسَ التَّقْوَى مِنْكَ، إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ. يَا سَمِيعُ يَا عَلِيمُ يَا حَلِيمُ يَا عَلِيُّ يَا عَظِيمُ يَا اللَّهُ، اِسْمَعْ دُعَائِي بِخَصَائِصِ لُطْفِكَ آمِينَ",
+        translit:
+          "Yā Allāhu yā Nūru yā Ḥaqqu yā Mubīnu, uksunī min nūrika, wa ‘allimnī min ‘ilmika, wa afhimnī ‘anka, wa asmi‘nī minka, wa baṣṣirnī bika, wa aqimnī bi-shuhūdika, wa ‘arrifnī al-ṭarīqa ilayka, wa hawwinhā ‘alayya bi-faḍlika, wa albisnī libāsa al-taqwā minka, innaka ‘alā kulli shay’in qadīr. Yā Samī‘u yā ‘Alīmu yā Ḥalīmu yā ‘Alīyu yā ‘Aẓīmu yā Allāhu, isma‘ du‘ā’ī bi-khaṣā’iṣi luṭfika, Āmīn.",
+        translation:
+          "O Allah, O Light, O Truth, O Clear One, clothe me from Your light, teach me from Your knowledge, make me understand from You, make me hear from You, make me see by You, establish me in Your presence, show me the way to You, make it easy for me by Your grace, and clothe me with the garment of piety from You. Indeed, You have power over all things. O All-Hearing, O All-Knowing, O Forbearing, O Most High, O Supreme, O Allah, hear my prayer with the specialties of Your subtlety, Amin.",
+      }),
+      new DhikrEntryModel({
+        arabic: "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ كُلِّهَا مِنْ شَرِّ مَا خَلَقَ",
+        translit:
+          "A‘ūdhu bi-kalimāti Allāhi al-tāmmāti kullihā min sharri mā khalaqa.",
+        translation:
+          "I seek refuge in the perfect words of Allah from the evil of what He has created.",
         repeat: 3,
       }),
       new DhikrEntryModel({
-        arabic: "وَصَلَّى اللَّهُ عَلَىٰ سَيِّدِنَا مُحَمَّدٍ وَعَلَىٰ آلِهِ وَصَحْبِهِ وَسَلَّMَ",
+        arabic:
+          "يَا عَظِيمَ السُّلْطَانِ، يَا قَدِيمَ الْإِحْسَانِ، يَا دَائِمَ النَّعْمَاءِ، يَا بَاسِطَ الرِّزْقِ، يَا كَثِيرَ الْخَيْرَاتِ، يَا وَاسِعَ الْعَطَاءِ، يَا دَافِعَ الْبَلَاءِ، وَيَا سَامِعَ الدُّعَاءِ، يَا حَاضِرًا لَيْسَ بِغَائِبٍ، يَا مَوجُودًا عِنْدَ الشَّدَائِدِ، يَا خَفِيَّ اللُّطْفِ، يَا لَطِيفَ الصُّنْعِ، يَا حَلِيمًا لَا يَعْجَلُ، اِقْضِ حَاجَتِي بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ",
         translit:
-          "wa ṣallā-llāhu ʿalā sayyidinā muḥammadin wa ʿalā ālihī wa ṣaḥbihī wa sallam",
+          "Yā ‘Aẓīma al-sulṭāni, yā Qadīma al-iḥsāni, yā Dā’ima al-na‘mā’i, yā Bāsiṭa al-rizqi, yā Kathīra al-khayrāti, yā Wāsi‘a al-‘aṭā’i, yā Dāfi‘a al-balā’i, wa yā Sāmi‘a al-du‘ā’i, yā Ḥāḍiran laysa bi-ghā’ibin, yā Mawjūdan ‘inda al-shadā’idi, yā Khafīya al-luṭfi, yā Laṭīfa al-ṣun‘i, yā Ḥalīman lā ya‘jalu, iqḍi ḥājatī bi-raḥmatika yā Arḥama al-rāḥimīn.",
         translation:
-          "And may Allah send blessings and peace upon our master Muhammad and upon his family and companions.",
+          "O great of authority, O ancient of goodness, O eternal of blessings, O extender of provision, O abundant of good things, O vast of giving, O repeller of affliction, O hearer of prayer, O present one who is not absent, O existent one at times of hardship, O subtle of kindness, O gentle of creation, O forbearing one who does not hasten, fulfill my need by Your mercy, O most merciful of the merciful.",
+      }),
+      new DhikrEntryModel({
+        arabic:
+          "اللَّهُمَّ إِنَّكَ تَعْلَمُ مَا نَحْنُ فِيهِ، وَمَا نَطْلُبُهُ وَنَرْتَجِيهِ مِنْ رَحْمَتِكَ فِي أَمْرِنَا كُلِّه، فَيَسِّرْ لَنَا مَا نَحْنُ فِيهِ مِنْ سَفَرِنَا وَمَا نَطْلُبُهُ مِنْ حَوَائِجِنَا، وَقَرِّبْ عَلَيْنَا الْمَسَافَاتِ، وَسَلِّمْنَا مِنَ الْعِلَلِ وَالْآفَاتِ، وَلَا تَجْعَلِ الدُّنْيَا أَكْبَرَ هَمِّنَا، وَلَا مَبْلَغَ عِلْمِنَا، وَلَا تُسَلِّطْ عَلَيْنَا مَنْ لَا يَرْحَمُنَا، بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ",
+        translit:
+          "Allāhumma innaka ta‘lamu mā naḥnu fīhi, wa mā naṭlubuhu wa nartajīhi min raḥmatika fī amrinā kullih, fa-yassir lanā mā naḥnu fīhi min safarinā wa mā naṭlubuhu min ḥawā’ijinā, wa qarrib ‘alaynā al-masāfāti, wa sallimnā mina al-‘ilali wa al-āfāti, wa lā taj‘al al-dunyā akbara hamminā, wa lā mablagha ‘ilminā, wa lā tusalliṭ ‘alaynā man lā yarḥamunā, bi-raḥmatika yā Arḥama al-rāḥimīn.",
+        translation:
+          "O Allah, You know what we are in, and what we seek and hope for from Your mercy in all our affairs. So make easy for us what we are in of our journey and what we seek of our needs, and shorten the distances for us, and save us from illnesses and calamities, and do not make this world our greatest concern, nor the extent of our knowledge, and do not give authority over us to one who will not have mercy on us, by Your mercy, O most merciful of the merciful.",
+      }),
+      new DhikrEntryModel({
+        arabic: "وَصَلَّى اللَّهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَآلِهِ وَصَحْبِهِ وَسَلَّمَ",
+        translit:
+          "Wa ṣallā Allāhu ‘alā sayyidinā Muḥammadin wa ālihi wa ṣaḥbihi wa sallam.",
+        translation:
+          "And may Allah send blessings and peace upon our master Muhammad and his family and companions.",
       }),
     ]),
   ]),
