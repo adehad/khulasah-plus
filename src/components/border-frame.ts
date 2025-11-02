@@ -28,6 +28,18 @@ export class BorderFrame extends LitElement {
     :host([put-border-to-background]) {
       z-index: -1; /* So other elements are not obscured by border */
     }
+
+    @media print {
+      :host {
+        position: static !important;
+        display: block !important;
+        height: auto !important;
+        width: auto !important;
+        overflow: visible !important;
+        padding: 0 !important;
+        top: 0 !important;
+      }
+    }
   `;
 
   render() {

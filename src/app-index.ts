@@ -46,6 +46,20 @@ export class AppIndex extends LitElement {
         pointer-events: auto; /* Ensure main content is interactive */
       }
     `,
+    css`
+      @media print {
+        app-header {
+          display: none !important;
+        }
+
+        main {
+          position: static !important;
+          height: auto !important;
+          overflow-y: visible !important;
+          padding: 0 !important;
+        }
+      }
+    `,
   ];
 
   handleBorderStateChange(e: CustomEvent) {
