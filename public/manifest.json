@@ -74,27 +74,5 @@
         }
       ]
     }
-  ],
-  "widgets": [
-    {
-      "name": "Starter Widget",
-      "tag": "starterWidget",
-      "ms_ac_template": "widget/ac.json",
-      "data": "widget/data.json",
-      "description": "A simple widget example from pwa-starter.",
-      "screenshots": [
-        {
-          "src": "assets/screenshots/widget-screen.png",
-          "sizes": "500x500",
-          "label": "Widget screenshot"
-        }
-      ],
-      "icons": [
-        {
-          "src": "assets/icons/pwa-64x64.png",
-          "sizes": "64x64"
-        }
-      ]
-    }
   ]
 }
