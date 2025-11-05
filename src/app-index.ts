@@ -70,7 +70,7 @@ export class AppIndex extends LitElement {
     this.handleProtocol();
     this.loadSettings();
     this.setupRouter();
-    this.setupThemeObserver();
+    this.setupTheme();
     this.setupServiceWorker();
   }
 
@@ -106,6 +106,9 @@ export class AppIndex extends LitElement {
     }
   }
 
+  /**
+   * Loads the service worker. Choses a dev worker during local development.
+   */
   private setupServiceWorker() {
     if ("serviceWorker" in navigator) {
       const swPath = import.meta.env.PROD ? "/sw.js" : "/sw.dev.js";
@@ -126,44 +129,45 @@ export class AppIndex extends LitElement {
   }
 
   /**
-   * Observes the document root for theme changes and updates the component's
-   * `isDarkTheme` flag when the "sl-theme-dark" class is added or removed.
+   * Initializes theme management by observing <html> class changes.
    *
-   * The method:
-   * - Creates a MutationObserver that listens for attribute changes on
-   *   `document.documentElement`.
-   * - Filters mutations to changes of the `"class"` attribute and updates
-   *   `this.isDarkTheme` to reflect whether the `"sl-theme-dark"` class is present.
-   * - Begins observing immediately with `{ attributes: true }`.
-   * - Performs an initial synchronous check to set `this.isDarkTheme` based on
-   *   the current document state.
-   *
-   * @remarks
-   * - This method does not disconnect the observer; callers should keep a
-   *   reference to the observer and disconnect it (e.g., in a cleanup or
-   *   component teardown) to avoid memory leaks.
-   * - Assumes `this.isDarkTheme` is a boolean property on the surrounding class.
-   *
-   * @returns void
+   * It sets up a listener for theme class modifications and applies the current theme on load.
+   * This covers: device auto changing theme AND theme switcher triggered theme change.
    */
-  private setupThemeObserver() {
+  private setupTheme() {
     const observer = new MutationObserver((mutations) => {
       mutations.forEach((mutation) => {
         if (
           mutation.type === "attributes" &&
           mutation.attributeName === "class"
         ) {
-          this.isDarkTheme =
-            document.documentElement.classList.contains("sl-theme-dark");
+          this.applyTheme();
         }
       });
     });
 
     observer.observe(document.documentElement, { attributes: true });
 
-    // Initial check for dark theme
-    this.isDarkTheme =
-      document.documentElement.classList.contains("sl-theme-dark");
+    this.applyTheme();
+  }
+
+  /**
+   *  Activates the appropriate theme stylesheet.
+   *
+   * It reads the <html> class, updates internal state, and toggles the CSS's
+   * <link> tag media attributes to enable/disable themes.
+   */
+  private applyTheme() {
+    const isDark = document.documentElement.classList.contains("sl-theme-dark");
+    this.isDarkTheme = isDark;
+
+    const lightTheme = document.querySelector(
+      "#light-theme",
+    ) as HTMLLinkElement;
+    const darkTheme = document.querySelector("#dark-theme") as HTMLLinkElement;
+
+    lightTheme.media = isDark ? "not all" : "all";
+    darkTheme.media = isDark ? "all" : "not all";
   }
 
   loadSettings() {

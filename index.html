@@ -44,9 +44,9 @@
     const darkTheme = document.querySelector('#dark-theme');
     darkTheme.href = `https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@${__SHOELACE_VERSION__}/dist/themes/dark.css`;
 
-    const useDark =  window.matchMedia('(prefers-color-scheme: dark)').matches;
-    document.documentElement.classList.add(useDark ? 'sl-theme-dark' : 'sl-theme-light',);
-
+    // Initially disable both themes; app-index.ts will manage activation
+    lightTheme.media = 'not all';
+    darkTheme.media = 'not all';
 
     import { setBasePath } from '@shoelace-style/shoelace/dist/utilities/base-path.js';
     setBasePath(`https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@${__SHOELACE_VERSION__}/cdn/`);
