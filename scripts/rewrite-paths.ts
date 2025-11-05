@@ -7,7 +7,7 @@ NOT https://<your-username>.github.io/
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-const repoName = process.argv[2]; // Get repo name from command line argument
+const [, , repoName, postBuild = false] = process.argv;
 
 if (!repoName) {
   console.error("Usage: bun run scripts/rewrite-paths.ts <repository-name>");
@@ -16,22 +16,28 @@ if (!repoName) {
 
 console.log(`Rewriting paths for repository: ${repoName}`);
 
-const filesToModify = [
+const preBuildFiles = [
   {
     path: "index.html",
-    replacements: [
-      { old: "manifest.json", new: `/${repoName}/manifest.json` },
-      { old: "/sw.js", new: `/${repoName}/sw.js` },
-    ],
+    replacements: [{ old: "manifest.json", new: `/${repoName}/manifest.json` }],
   },
   {
     path: "public/manifest.json",
     replacements: [
       { old: '"url": "/', new: `"url": "/${repoName}/` },
-      { old: '"/"', new: `"/${repoName}/"` }, // Note: Escaping quotes for JSON string
+      { old: '"/"', new: `"/${repoName}/"` },
     ],
   },
 ];
+const postBuildFiles = [
+  {
+    path: "dist/sw.js",
+    replacements: [{ old: '"url":"/"', new: `"url":"/../"` }],
+  },
+];
+
+console.log(`Running ${postBuild ? "post" : "pre"}-build`);
+const filesToModify = postBuild ? postBuildFiles : preBuildFiles;
 
 for (const file of filesToModify) {
   const filePath = join(process.cwd(), file.path);
