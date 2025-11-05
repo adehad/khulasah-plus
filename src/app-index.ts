@@ -113,7 +113,7 @@ export class AppIndex extends LitElement {
     if ("serviceWorker" in navigator) {
       const swPath = import.meta.env.PROD ? "/sw.js" : "/sw.dev.js";
       window.addEventListener("load", () => {
-        navigator.serviceWorker.register(swPath);
+        navigator.serviceWorker.register(resolveRouterPath(swPath));
       });
     }
   }
