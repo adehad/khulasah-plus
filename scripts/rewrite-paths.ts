@@ -27,6 +27,7 @@ const filesToModify = [
   {
     path: "public/manifest.json",
     replacements: [
+      { old: '"url": "/', new: `"url": "/${repoName}/` },
       { old: '"/"', new: `"/${repoName}/"` }, // Note: Escaping quotes for JSON string
     ],
   },
