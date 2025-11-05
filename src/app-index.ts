@@ -71,6 +71,7 @@ export class AppIndex extends LitElement {
     this.loadSettings();
     this.setupRouter();
     this.setupThemeObserver();
+    this.setupServiceWorker();
   }
 
   /**
@@ -102,6 +103,15 @@ export class AppIndex extends LitElement {
       } catch (e) {
         console.error("Invalid protocol URL:", protocolUrlString, e);
       }
+    }
+  }
+
+  private setupServiceWorker() {
+    if ("serviceWorker" in navigator) {
+      const swPath = import.meta.env.PROD ? "/sw.js" : "/sw.dev.js";
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register(swPath);
+      });
     }
   }
 
