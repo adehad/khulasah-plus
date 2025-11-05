@@ -12,6 +12,25 @@ self.addEventListener("activate", (event) => {
 });
 // End Service Worker Take over
 
+// Cache shoelace assets
+workbox.routing.registerRoute(
+  ({ url }) =>
+    url.origin === "https://cdn.jsdelivr.net" &&
+    url.pathname.startsWith("/npm/@shoelace-style/shoelace"),
+  new workbox.strategies.CacheFirst({
+    cacheName: "shoelace-assets",
+    plugins: [
+      new workbox.cacheableResponse.CacheableResponsePlugin({
+        statuses: [0, 200],
+      }),
+      new workbox.expiration.ExpirationPlugin({
+        maxEntries: 100,
+        maxAgeSeconds: 60 * 60 * 24 * 30, // 30 Days
+      }),
+    ],
+  }),
+);
+
 // This is your Service Worker, you can put any of your custom Service Worker
 // code in this file, above the `precacheAndRoute` line.
 
