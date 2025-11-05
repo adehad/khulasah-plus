@@ -2,6 +2,8 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
+import { pageConfigs } from "./src/pages/page-config.ts";
+import { createPageRevisionTransform } from "./vite-dynamic-import-config.ts";
 import { prepareDevServiceWorker } from "./vite-local-dev.ts";
 
 const bunLock = readFileSync(resolve(__dirname, "bun.lock"), "utf-8");
@@ -50,6 +52,7 @@ export default defineConfig(({ mode }) => {
           swDest: "dist/sw.js",
           globDirectory: "dist",
           globPatterns: ["**/*.{html,js,css,json,png,ico,svg,woff,woff2}"],
+          manifestTransforms: [createPageRevisionTransform(pageConfigs)],
         },
         injectRegister: false,
         manifest: false,

@@ -11,11 +11,6 @@ export const pageConfigs: PageConfig[] = [
     contentImportPath: "_index",
   },
   {
-    path: "home",
-    title: "Home",
-    contentImportPath: "_index",
-  },
-  {
     path: "khulasah",
     title: "Khulasah",
     contentImportPath: "khulasah-index",

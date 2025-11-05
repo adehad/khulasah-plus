@@ -14,7 +14,8 @@
     "start-remote": "vite --host",
     "lint": "biome lint",
     "format": "biome format --write",
-    "generate-pwa-assets": "pwa-assets-generator"
+    "generate-pwa-assets": "pwa-assets-generator",
+    "preview": "vite preview"
   },
   "author": "",
   "license": "ISC",

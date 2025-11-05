@@ -19,6 +19,23 @@
       }
     },
     {
+      "label": "bun run preview",
+      "type": "npm",
+      "script": "preview",
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "custom",
+        "pattern": {
+          "regexp": "^$"
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": ".*",
+          "endsPattern": "ready in .+"
+        }
+      }
+    },
+    {
       "label": "postdebugKill",
       "command": "echo ${input:terminate}",
       "type": "shell",
