@@ -96,7 +96,7 @@ export const createPageRevisionTransform = (
       }
 
       return {
-        url: config.path === "" ? "/" : config.path,
+        url: config.path === "" ? "." : config.path,
         revision: revision,
       };
     });
