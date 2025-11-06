@@ -7,7 +7,7 @@ NOT https://<your-username>.github.io/
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-const [, , repoName] = process.argv;
+const [, , repoName, postBuild = false] = process.argv;
 
 if (!repoName) {
   console.error("Usage: bun run scripts/rewrite-paths.ts <repository-name>");
@@ -29,8 +29,15 @@ const preBuildFiles = [
     ],
   },
 ];
+const postBuildFiles = [
+  {
+    path: "dist/sw.js",
+    replacements: [{ old: '"url":"/"', new: `"url":"/../"` }],
+  },
+];
 
-const filesToModify = preBuildFiles;
+console.log(`Running ${postBuild ? "post" : "pre"}-build`);
+const filesToModify = postBuild ? postBuildFiles : preBuildFiles;
 
 for (const file of filesToModify) {
   const filePath = join(process.cwd(), file.path);
