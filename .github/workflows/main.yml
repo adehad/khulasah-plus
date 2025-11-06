@@ -45,6 +45,10 @@ jobs:
       - name: Redirect 404 to Index for SPA
         run: cp dist/index.html dist/404.html
 
+      - name: Add Google Site Verification
+        run: |
+          echo 'google-site-verification: google5574d0898cd86e31.html' >> dist/google5574d0898cd86e31.html
+
       - name: Upload static files as artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3
