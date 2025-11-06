@@ -43,7 +43,7 @@ export function resolveRouterPath(unresolvedPath?: string): string {
   }
   var resolvedPath = baseURL;
   if (unresolvedPath) {
-    resolvedPath = resolvedPath + unresolvedPath;
+    resolvedPath = `${resolvedPath}/${unresolvedPath}`;
   }
   return resolvedPath;
 }

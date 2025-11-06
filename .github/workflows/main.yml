@@ -37,7 +37,7 @@ jobs:
         run: bun run scripts/rewrite-paths.ts ${{ github.event.repository.name }}
 
       - name: Production Build
-        run: bun run build:prod -- --base=/${{ github.event.repository.name }}/
+        run: bun run build:prod -- --base=/${{ github.event.repository.name }}
 
       - name: Run Path Rewriting Script (Post-build)
         run: bun run scripts/rewrite-paths.ts ${{ github.event.repository.name }} --post-build
