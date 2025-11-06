@@ -40,7 +40,7 @@ function SPASpecificHacks() {
   INDEX_CACHE_ENTRY = "index.html"
   workbox.routing.registerRoute(
     ({ request }) => request.mode === 'navigate',
-    createHandlerBoundToURL(INDEX_CACHE_ENTRY)
+    workbox.precaching.createHandlerBoundToURL(INDEX_CACHE_ENTRY)
   );
 
   self.addEventListener('fetch', (event) => {

@@ -108,6 +108,29 @@ export const createPageRevisionTransform = (
       (entry): entry is { url: string; revision: string } => entry !== null,
     );
 
-    return { manifest: [...updatedEntries, ...validPageEntries] };
+    const codeFileEntries: { url: string; revision: string }[] = [];
+    // biome-ignore lint/suspicious/noExplicitAny: is a JSON
+    for (const manifestEntry of Object.values(manifest) as any[]) {
+      if (manifestEntry?.file.startsWith("code/")) {
+        const revision = revisionMap.get(manifestEntry.file);
+        if (revision) {
+          codeFileEntries.push({ url: manifestEntry.file, revision: revision });
+        }
+      }
+      if (manifestEntry.css && Array.isArray(manifestEntry.css)) {
+        for (const cssFile of manifestEntry.css) {
+          if (cssFile.startsWith("code/")) {
+            const revision = revisionMap.get(cssFile);
+            if (revision) {
+              codeFileEntries.push({ url: cssFile, revision: revision });
+            }
+          }
+        }
+      }
+    }
+    console.log(`Not using ${validPageEntries.length}`);
+    return {
+      manifest: [...updatedEntries, ...codeFileEntries],
+    };
   };
 };
