@@ -37,23 +37,11 @@ workbox.routing.registerRoute(
 workbox.precaching.precacheAndRoute(self.__WB_MANIFEST || []);
 
 function SPASpecificHacks() {
-  INDEX_CACHE_ENTRY = "index.html"
+  INDEX_CACHE_ENTRY = "index.html";
   workbox.routing.registerRoute(
-    ({ request }) => request.mode === 'navigate',
-    workbox.precaching.createHandlerBoundToURL(INDEX_CACHE_ENTRY)
+    ({ request }) => request.mode === "navigate",
+    workbox.precaching.createHandlerBoundToURL(INDEX_CACHE_ENTRY),
   );
-
-  self.addEventListener('fetch', (event) => {
-    event.respondWith(
-      caches.match(event.request).then((response) => {
-        return response || fetch(event.request).catch(
-          () => caches.match(INDEX_CACHE_ENTRY)
-        );
-      })
-    );
-  });
 }
 
 SPASpecificHacks();
-
-
