@@ -99,7 +99,7 @@ export const createPageRevisionTransform = (
         // When running in GitHub pages, all requests get prepended with 'khulasah-plus/'
         // and for some these URLs additionally get a `/` prepended.
         // So here the '.' ensures that the right URL is cached!
-        url: config.path === "" ? "." : `./${config.path}`,
+        url: config.path === "" ? "." : `/khulasah-plus/${config.path}`,
         revision: revision,
       };
     });
