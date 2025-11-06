@@ -2,6 +2,7 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
+import sitemap from "vite-sitemap";
 import { pageConfigs } from "./src/pages/page-config.ts";
 import { createPageRevisionTransform } from "./vite-dynamic-import-config.ts";
 import { prepareDevServiceWorker } from "./vite-local-dev.ts";
@@ -59,6 +60,14 @@ export default defineConfig(({ mode }) => {
         devOptions: {
           enabled: true,
         },
+      }),
+      sitemap({
+        base: "https://adehad.github.io/khulasah-plus/",
+        urls: [
+          ...new Set(
+            pageConfigs.map((page) => `/${page.path}`).filter(Boolean),
+          ),
+        ],
       }),
     ],
   };
