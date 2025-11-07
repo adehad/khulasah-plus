@@ -13,7 +13,7 @@ export class BorderFrame extends LitElement {
       position: relative;
       inset: 0;
       width: 100%;
-      height: calc(100vh - env(titlebar-area-height, 30px) - 12px);
+      height: calc(var(--inner-height) - env(titlebar-area-height, 30px) - 12px);
       top: calc(env(titlebar-area-height, 30px) + 12px); /* Adjust for header height */
       border-style: solid;
       border-width: 33px;
@@ -41,6 +41,26 @@ export class BorderFrame extends LitElement {
       }
     }
   `;
+
+  connectedCallback() {
+    super.connectedCallback();
+    this.updateInnerHeight();
+    window.addEventListener("resize", this.updateInnerHeight);
+  }
+
+  disconnectedCallback() {
+    super.disconnectedCallback();
+    window.removeEventListener("resize", this.updateInnerHeight);
+  }
+
+  private updateInnerHeight = () => {
+    /* While I would like to use `height: stretch;` it didn't change nicely with
+      window resize for some reason, this method worked more reliably.
+
+      Why this? Mobile address bars affect the height but are not reflected in 100vh.
+    */
+    this.style.setProperty("--inner-height", `${window.innerHeight}px`);
+  };
 
   render() {
     return html`<slot></slot>`; // Renders whatever is placed inside <border-frame>
