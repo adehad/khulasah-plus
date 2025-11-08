@@ -20,6 +20,8 @@ export const wird = [
         translation:
           "‘Lord, I take refuge with You from the goadings of the satans; I seek refuge with You, Lord, so that they may not come near me.’ (3 times)",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "﴿ أَفَحَسِبْتُمْ أَنَّمَا خَلَقْنَـٰكُمْ عَبَثًا وَأَنَّكُمْ إِلَيْنَا لَا تُرْجَعُونَ ۝ فَتَعَـٰلَى ٱللَّهُ ٱلْمَلِكُ ٱلْحَقُّ ۖ لَآ إِلَـٰهَ إِلَّا هُوَ رَبُّ ٱلْعَرْشِ ٱلْكَرِيمِ ۝ وَمَن يَدْعُ مَعَ ٱللَّهِ إِلَـٰهًا ءَاخَرَ لَا بُرْهَـٰنَ لَهُۥ بِهِۦ فَإِنَّمَا حِسَابُهُۥ عِندَ رَبِّهِۦٓ ۚ إِنَّهُۥ لَا يُفْلِحُ ٱلْكَـٰفِرُونَ ۝ وَقُل رَّبِّ ٱغْفِرْ وَٱرْحَمْ وَأَنتَ خَيْرُ ٱلرَّٰحِمِينَ ﴾",
@@ -28,6 +30,8 @@ export const wird = [
         translation:
           "Did you think We had created you in vain, and that you would not be brought back to Us? Exalted be God, the true King, there is no god but Him, the Lord of the Glorious Throne! Whoever prays to another god alongside Him—he has no proof of this—will face his reckoning with his Lord. Those who reject the truth will not prosper. Say, ‘Lord, forgive and have mercy: You are the most merciful of all.’",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "﴿ فَسُبْحَـٰنَ ٱللَّهِ حِينَ تُمْسُونَ وَحِينَ تُصْبِحُونَ ۝ وَلَهُ ٱلْحَمْدُ فِى ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ وَعَشِيًّا وَحِينَ تُظْهِرُونَ ۝ يُخْرِجُ ٱلْحَىَّ مِنَ ٱلْمَيِّتِ وَيُخْرِجُ ٱلْمَيِّتَ مِنَ ٱلْحَىِّ وَيُحْىِ ٱلْأَرْضَ بَعْدَ مَوْتِهَا ۚ وَكَذَٰلِكَ تُخْرَجُونَ ﴾",
@@ -36,6 +40,8 @@ export const wird = [
         translation:
           "So celebrate God’s glory in the evening, in the morning—praise is due to Him in the heavens and the earth—in the late afternoon, and at midday. He brings the living out of the dead and the dead out of the living. He gives life to the earth after death, and you will be brought out in the same way.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic: "أَعُوذُ بِٱللَّهِ ٱلسَّمِيعِ ٱلْعَلِيمِ مِنَ ٱلشَّيْطَانِ ٱلرَّجِيم (3)",
         translit:
@@ -43,6 +49,8 @@ export const wird = [
         translation:
           "I seek refuge in Allah, the All-Hearing, the All-Knowing, from the rejected Devil. (3 times)",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "﴿ لَوْ أَنزَلْنَا هَـٰذَا ٱلْقُرْءَانَ عَلَىٰ جَبَلٍ لَّرَأَيْتَهُۥ خَـٰشِعًا مُّتَصَدِّعًا مِّنْ خَشْيَةِ ٱللَّهِ ۚ وَتِلْكَ ٱلْأَمْثَـٰلُ نَضْرِبُهَا لِلنَّاسِ لَعَلَّهُمْ يَتَفَكَّرُونَ ۝ هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَـٰهَ إِلَّا هُوَ ۖ عَـٰلِمُ ٱلْغَيْبِ وَٱلشَّهَـٰدَةِ ۖ هُوَ ٱلرَّحْمَـٰنُ ٱلرَّحِيمُ ۝ هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَـٰمُ ٱلْمُؤْمِنُ ٱلْمُهَيْمِنُ ٱلْعَزِيزُ ٱلْجَبَّارُ ٱلْمُتَكَبِّرُ ۚ سُبْحَـٰنَ ٱللَّهِ عَمَّا يُشْرِكُونَ ۝ هُوَ ٱللَّهُ ٱلْخَـٰلِقُ ٱلْبَارِئُ ٱلْمُصَوِّرُ ۖ لَهُ ٱلْأَسْمَآءُ ٱلْحُسْنَىٰ ۚ يُسَبِّحُ لَهُۥ مَا فِى ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ ﴾",
@@ -51,6 +59,8 @@ export const wird = [
         translation:
           "If We had sent this Qur’an down on a mountain, you would have seen it humbled and split apart in its awe of God: We offer people such illustrations so that they may reflect. He is God: there is no god other than Him. It is He who knows what is hidden as well as what is in the open, He is the Lord of Mercy, the Giver of Mercy. He is God: there is no god other than Him, the Controller, the Holy One, Source of Peace, Granter of Security, Guardian over all, the Almighty, the Compeller, the Truly Great; God is far above anything they consider to be His partner. He is God: the Creator, the Originator, the Shaper. The best names belong to Him. Everything in the heavens and earth glorifies Him: He is the Almighty, the Wise.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "﴿ سَلَـٰمٌ عَلَىٰ نُوحٍ فِى ٱلْعَـٰلَمِينَ ۝ إِنَّا كَذَٰلِكَ نَجْزِى ٱلْمُحْسِنِينَ ۝ إِنَّهُۥ مِنْ عِبَادِنَا ٱلْمُؤْمِنِينَ ﴾",
@@ -59,6 +69,8 @@ export const wird = [
         translation:
           "‘Peace be upon Noah among all the nations!’ This is how We reward those who do good: he was truly one of Our faithful servants.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic: "أَعُوذُ بِكَلِمَاتِ ٱللَّهِ ٱلتَّامَّاتِ مِنْ شَرِّ مَا خَلَق (3)",
         translit:
@@ -66,6 +78,8 @@ export const wird = [
         translation:
           "I take refuge in the complete words of Allah from the evil in what He has created. (3 times)",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "بِسْمِ ٱللَّهِ ٱلَّذِي لَا يَضُرُّ مَعَ ٱسْمِهِ شَيْءٌ فِي ٱلْأَرْضِ وَلَا فِي ٱلسَّمَاءِ وَهُوَ ٱلسَّمِيعُ ٱلْعَلِيم (3)",
@@ -74,6 +88,8 @@ export const wird = [
         translation:
           "In the Name of Allah, with whose Name nothing on earth or in heaven can harm, and He is the All-Hearing, the All-Knowing. (3 times)",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "ٱللَّهُمَّ إِنِّي أَصْبَحْتُ مِنْكَ فِي نِعْمَةٍ وَعَافِيَةٍ وَسَتْرٍ فَأَتْمِمْ نِعْمَتَكَ عَلَيَّ وَعَافِيَتَكَ وَسَتْرَكَ فِي ٱلدُّنْيَا وَٱلْآخِرَة (3)",
@@ -82,6 +98,8 @@ export const wird = [
         translation:
           "O Allah! As morning comes upon me, I dwell in Your favor, well-being and protection; so complete Your favor upon me, Your well-being, and Your protection, in this world and the next. (3 times)",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "ٱللَّهُمَّ إِنِّي أَصْبَحْتُ أُشْهِدُكَ وَأُشْهِدُ حَمَلَةَ عَرْشِكَ وَمَلَائِكَتَكَ وَجَمِيعَ خَلْقِكَ أَنَّكَ أَنْتَ ٱللَّهُ لَا إِلَهَ إِلَّا أَنْتَ وَحْدَكَ لَا شَرِيكَ لَكَ وَأَنَّ سَيِّدَنَا مُحَمَّدًا عَبْدُكَ وَرَسُولُك (4)",
@@ -90,6 +108,8 @@ export const wird = [
         translation:
           "O Allah! As morning comes upon me, I bear witness before You, the Bearers of Your Throne, Your angels, and all Your creation—that You are Allah, there is no god but You, alone with no partners, and that our master Muhammad is Your slave and messenger. (4 times)",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic: "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ حَمْدًا يُوَافِي نِعَمَهُ وَيُكَافِئُ مَزِيدَه (3)",
         translit:
@@ -97,6 +117,8 @@ export const wird = [
         translation:
           "Praise belongs to Allah, Lord of the Worlds—praise that is adequate to His favors and equal to His increase. (3 times)",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "آمَنْتُ بِٱللَّهِ ٱلْعَظِيمِ وَكَفَرْتُ بِٱلْجِبْتِ وَٱلطَّاغُوتِ وَٱسْتَمْسَكْتُ بِٱلْعُرْوَةِ ٱلْوُثْقَىٰ لَا ٱنفِصَامَ لَهَا وَٱللَّهُ سَمِيعٌ عَلِيمٌ (3)",
@@ -105,6 +127,8 @@ export const wird = [
         translation:
           "I believe in Allah the Almighty, and I denounce all idols and false gods, and I grasp the firmest handhold that never breaks, and Allah is All-Hearing, All-Knowing. (3 times)",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "رَضِيتُ بِٱللَّهِ رَبًّا وَبِٱلْإِسْلَامِ دِينًا وَبِسَيِّدِنَا مُحَمَّدٍ صَلَّى ٱللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ نَبِيًّا وَرَسُولًا (3)",
@@ -113,6 +137,8 @@ export const wird = [
         translation:
           "I am content with Allah as Lord, with Islam as religion, and with our master Muhammad (Allah’s peace and blessings be upon him and his family) as Prophet and Messenger. (3 times)",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic: "حَسْبِىَ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيم (7)",
         translit:
@@ -120,6 +146,8 @@ export const wird = [
         translation:
           "Allah is enough for me: there is no god but Him; I put my trust in Him; He is Lord of the Mighty Throne. (7 times)",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic: "ٱللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَآلِهِ وَصَحْبِهِ وَسَلِّمْ (10)",
         translit:
@@ -127,6 +155,8 @@ export const wird = [
         translation:
           "O Allah, send blessings upon our master Muhammad, his Family and Companions, and grant them peace. (10 times)",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic: "ٱللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فُجَاءَةِ ٱلْخَيْرِ وَأَعُوذُ بِكَ مِنْ فُجَاءَةِ ٱلشَّرِّ",
         translit:
@@ -134,6 +164,8 @@ export const wird = [
         translation:
           "O Allah! I ask You for sudden good and seek Your protection from sudden evil.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "ٱللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ خَلَقْتَنِي، وَأَنَا عَبْدُكَ وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا ٱسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ وَأَبُوءُ بِذَنْبِي فَٱغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ ٱلذُّنُوبَ إِلَّا أَنْتَ",
@@ -142,6 +174,8 @@ export const wird = [
         translation:
           "O Allah! You are my Lord, there is no god but You, You created me and I am Your slave. I uphold Your pledge and promise as well as I can; I seek Your protection against the evil that I have done; I acknowledge Your favors upon me and I acknowledge my sin, so forgive me, for none forgives sin except You.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic: "ٱللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ عَلَيْكَ تَوَكَّلْتُ وَأَنْتَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيم",
         translit:
@@ -149,6 +183,8 @@ export const wird = [
         translation:
           "O Allah! You are my Lord, there is no god but You. Upon You I rely, and You are the Lord of the Glorious Throne.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "مَا شَاءَ ٱللَّهُ كَانَ وَمَا لَمْ يَشَأْ لَمْ يَكُنْ وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّهِ ٱلْعَلِيِّ ٱلْعَظِيم",
@@ -157,6 +193,8 @@ export const wird = [
         translation:
           "Whatever Allah wills is, and what He does not will is not; and there is no power or ability except by Allah, the Most High, the Almighty.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic: "أَعْلَمُ أَنَّ ٱللَّهَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ وَأَنَّ ٱللَّهَ قَدْ أَحَاطَ بِكُلِّ شَيْءٍ عِلْمًا",
         translit:
@@ -164,6 +202,8 @@ export const wird = [
         translation:
           "I know that Allah has power over all things and that Allah encompasses all things in His knowledge.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "ٱللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي وَمِنْ شَرِّ كُلِّ دَابَّةٍ أَنْتَ آخِذٌ بِنَاصِيَتِهَا إِنَّ رَبِّى عَلَىٰ صِرَٰطٍ مُّسْتَقِيم",
@@ -172,6 +212,8 @@ export const wird = [
         translation:
           "O Allah! I seek Your protection from the evil of my own self and from the evil of every creature on earth You have taken by the forelock. My Lord’s way is straight.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ، وَمِنْ عَذَابِكَ أَسْتَجِيرُ، أَصْلِح لِي شَأْنِي كُلَّهُ، وَلَا تَكِلْنِي إِلَى نَفْسِي وَلَا إِلَى أَحَدٍ مِنْ خَلْقِكَ طَرْفَةَ عَيْن",
@@ -180,6 +222,8 @@ export const wird = [
         translation:
           "O Ever-Living, O Sustainer! I  seek help through Your Mercy and  protection from Your Punishment. Rectify all my affairs and do not entrust me to myself or to any of Your creation for even the blink of an eye.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "ٱللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ ٱلْهَمِّ وَٱلحَزَنِ، وَأَعُوذُ بِكَ مِنَ ٱلْعَجْزِ وَٱلْكَسَلِ، وَأَعُوذُ بِكَ مِنَ ٱلْجُبْنِ وَٱلْبُخْلِ، وَأَعُوذُ بِكَ مِنْ غَلَبَةِ ٱلدَّينِ وَقَهْرِ ٱلرِّجَالِ",
@@ -188,12 +232,16 @@ export const wird = [
         translation:
           "O Allah! I seek Your protection from sorrow and grief, from incapacity and sloth, from cowardice and miserliness, and I seek Your protection from overwhelming debt and the tyranny of men.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic: "ٱللَّهُمَّ إِنِّي أَسْأَلُكَ ٱلْعَافِيَةَ فِي ٱلدُّنْيَا وَٱلْآخِرَة",
         translit: "Allāhumma innī asʾaluk al-ʿāfiyata fīd-dunyā wa al-ākhīrah.",
         translation:
           "O Allah! I ask You for well-being in this world and the hereafter.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "ٱللَّهُمَّ إِنِّي أَسْأَلُكَ ٱلْعَفْوَ وَٱلْعَافِيَةَ وَٱلْمُعَافَاةَ ٱلدَّائِمَةَ فِي دِينِي وَدُنْيَايَ وَأَهْلِي وَمَالِي",
@@ -202,11 +250,15 @@ export const wird = [
         translation:
           "O Allah! I ask You for pardoning, well-being, and constant safety in my religion, worldly life, family, and possessions.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic: "ٱللَّهُمَّ اسْتُرْ عَوْرَاتِيِ وَآمِنْ رَوْعَاتِي",
         translit: "Allāhumma ustur ʿawrātī wa āmin rawʿātī.",
         translation: "O Allah! Cover my shame and calm my fears.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "ٱللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ وَمِنْ خَلْفِي وَعَنْ يَمِينِي وَعَنْ شِمَالِي وَمِنْ فَوْقِي، وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي",
@@ -215,6 +267,8 @@ export const wird = [
         translation:
           "O Allah! Protect me from [the evil] in front of me and behind me, on my right and my left, and from above me—and I take refuge in Your Greatness from the unexpected harm from below me.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "ٱللَّهُمَّ أَنْتَ خَلَقْتَنِي وَأَنْتَ تَهْدِينِي وَأَنْتَ تُطْعِمُنِي وَأَنْتَ تَسْقِينِي وَأَنْتَ تُمِيتُنِي وَأَنْتَ تُحْيِينِي وَأَنْتَ عَلَى كُلِّ شَيْءٍ قَدِير",
@@ -223,6 +277,8 @@ export const wird = [
         translation:
           "O Allah! You created me and You guide me, and You feed me and provide me with drink, and You cause me to die and You give me life, and You have power over all things.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "أَصْبَحْنَا عَلَى فِطْرَةِ ٱلْإِسْلَامِ وَعَلَى كَلِمَةِ ٱلْإِخْلَاصِ وَعَلَى دِينِ نَبِيِّنَا مُحَمَّدٍ صَلَّى ٱللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ وَعَلَى مِلَّةِ أَبِينَا إِبْرَٰهِيمَ حَنِيفًا مُسْلِمًا وَمَا كَانَ مِنَ ٱلْمُشْرِكِينَ",
@@ -231,6 +287,8 @@ export const wird = [
         translation:
           "We have risen this morning on the original pattern of Islam, upon the Word of Sincerity, on the religion of our Prophet Muhammad (Allah’s blessings and peace be upon him and his family), and upon the confession of Ibrāhīm, who was upright, a Muslim, and not an idolator.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "ٱللَّهُمَّ بِكَ أَصْبَحْنَا وَبِكَ أَمْسَيْنَا وَبِكَ نَحْيَا وَبِكَ نَمُوتُ وَعَلَيْكَ نَتَوَكَّلُ وَإِلَيْكَ ٱلنُّشُور",
@@ -239,6 +297,8 @@ export const wird = [
         translation:
           "O Allah! By You we live to morning, and by You we live to evening, and by You we live and by You we die, and upon You we rely, and to You is the Resurrection.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic: "أَصْبَحْنَا وَأَصْبَحَ ٱلْمُلْكُ لِلَّهِ وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِين",
         translit:
@@ -246,6 +306,8 @@ export const wird = [
         translation:
           "Morning has risen upon us and all sovereignty is Allah’s, and all praise belongs to Allah, Lord of the Worlds.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic: "ٱللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ هَذَا ٱلْيَوْمِ فَتْحَهُ وَنَصْرَهُ وَنُورَهُ وَبَرَكَتَهُ وَهُدَاهُ",
         translit:
@@ -253,6 +315,8 @@ export const wird = [
         translation:
           "O Allah! I ask You for the good of this day, its openings, victories, lights, blessings, and right-guidance.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "ٱللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ هَذَا ٱلْيَوْمِ وَخَيْرَ مَا فِيهِ وَخَيْرَ مَا قَبْلَهُ وَخَيْرَ مَا بَعْدَهُ وَأَعُوذُ بِكَ مِنْ شَرِّ هَذَا ٱلْيَوْمِ وَشَرِّ مَا فِيهِ وَشَرِّ مَا قَبْلَهُ وَشَرِّ مَا بَعْدَهُ",
@@ -261,6 +325,8 @@ export const wird = [
         translation:
           "O Allah! I ask You for the good of this day and the best of what is in it, and the best of what came before it and the best of what comes after it;  and I seek refuge in You from the evil of this day and the worst of what is in it, and the worst of what came before it and the worst of what comes after it.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "ٱللَّهُمَّ مَا أَصْبَحَ بِي مِنْ نِعْمَةٍ أَوْ بِأَحَدٍ مِنْ خَلْقِكَ فَمِنْكَ وَحْدَكَ لَا شَرِيكَ لَكَ فَلَكَ ٱلْحَمْدُ وَلَكَ ٱلشُّكْرُ عَلَى ذَلِكَ",
@@ -269,6 +335,8 @@ export const wird = [
         translation:
           "O Allah! Whatever favors I, or any of Your creatures, received this morning, they come only from You; You have no partners, so to You belongs all praise and to You belongs all thanks.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "سُبْحَـٰنَ ٱللَّهِ وَبِحَمْدِهِ عَدَدَ خَلْقِهِ وَرِضَى نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ (3)",
@@ -277,6 +345,8 @@ export const wird = [
         translation:
           "Transcendent is Allah and praise belongs to Him—equal to the number of His creation, the degree of His good pleasure, the weight of His Throne, and the number of His words. (3 times)",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "سُبْحَـٰنَ ٱللَّهِ ٱلْعَظِيمِ وَبِحَمْدِهِ عَدَدَ خَلْقِهِ وَرِضَى نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ (3)",
@@ -285,6 +355,8 @@ export const wird = [
         translation:
           "Transcendent is Allah the Almighty, and praise belongs to Him— equal to the number of His creation, the degree of His good pleasure, the weight of His Throne, and the number of His words. (3 times)",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "سُبْحَـٰنَ ٱللَّهِ عَدَدَ مَا خَلَقَ فِي ٱلسَّمَاءِ، سُبْحَـٰنَ ٱللَّهِ عَدَدَ مَا خَلَقَ فِي ٱلْأَرْضِ، سُبْحَـٰنَ ٱللَّهِ عَدَدَ مَا بَيْنَ ذَلِك، سُبْحَـٰنَ ٱللَّهِ عَدَدَ مَا هُوَ خَالِقٌ",
@@ -293,6 +365,8 @@ export const wird = [
         translation:
           "“Transcendent is Allah” equal to what He created in the heavens; “transcendent is Allah” equal to what He created on earth; “transcendent is Allah” equal to what is between them both; “transcendent is Allah” equal to whatever He creates.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "ٱلْحَمْدُ لِلَّهِ عَدَدَ مَا خَلَقَ فِي ٱلسَّمَاءِ، ٱلْحَمْدُ لِلَّهِ عَدَدَ مَا خَلَقَ فِي ٱلْأَرْضِ، ٱلْحَمْدُ لِلَّهِ عَدَدَ مَا بَيْنَ ذَلِك، ٱلْحَمْدُ لِلَّهِ عَدَدَ مَا هُوَ خَالِقٌ",
@@ -301,6 +375,8 @@ export const wird = [
         translation:
           "“All praise belongs to Allah” equal to what He created in the heavens; “all praise belongs to Allah” equal to what He created on earth; “all praise belongs to Allah” equal to what is between them both; “all praise belongs to Allah” equal to whatever He creates.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "لَآ إِلَـٰهَ إِلَّا ٱللَّهُ عَدَدَ مَا خَلَقَ فِي ٱلسَّمَاءِ، لَآ إِلَـٰهَ إِلَّا ٱللَّهُ عَدَدَ مَا خَلَقَ فِي ٱلْأَرْضِ، لَآ إِلَـٰهَ إِلَّا ٱللَّهُ عَدَدَ مَا بَيْنَ ذَلِك، لَآ إِلَـٰهَ إِلَّا ٱللَّهُ عَدَدَ مَا هُوَ خَالِقٌ",
@@ -309,6 +385,8 @@ export const wird = [
         translation:
           "“There is no god except Allah” equal to what He created in the heavens; “there is no god except Allah” equal to what He created on earth; “there is no god except Allah” equal to what is between them both; “there is no god except Allah” equal to whatever He creates.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "ٱللَّهُ أَكْبَرُ عَدَدَ مَا خَلَقَ فِي ٱلسَّمَاءِ، ٱللَّهُ أَكْبَرُ عَدَدَ مَا خَلَقَ فِي ٱلْأَرْضِ، ٱللَّهُ أَكْبَرُ عَدَدَ مَا بَيْنَ ذَلِك، ٱللَّهُ أَكْبَرُ عَدَدَ مَا هُوَ خَالِقٌ",
@@ -317,6 +395,8 @@ export const wird = [
         translation:
           "“Allah is Greater” equal to what He created in the heavens; “Allah is Greater” equal to what He created on earth; “Allah is Greater” equal to what is between them both; “Allah is Greater” equal to whatever He creates.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّهِ ٱلْعَلِيِّ ٱلْعَظِيمِ عَدَدَ مَا خَلَقَ فِي ٱلسَّمَاءِ، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّهِ ٱلْعَلِيِّ ٱلْعَظِيمِ عَدَدَ مَا خَلَقَ فِي ٱلْأَرْضِ، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّهِ ٱلْعَلِيِّ ٱلْعَظِيمِ عَدَدَ مَا بَيْنَ ذَلِك، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّهِ ٱلْعَلِيِّ ٱلْعَظِيمِ عَدَدَ مَا هُوَ خَالِقٌ",
@@ -325,6 +405,8 @@ export const wird = [
         translation:
           "“There is no power or ability except by Allah, the Most High, the Almighty” equal to what He created in the heavens; “There is no power or ability except by Allah, the Most High, the Almighty” equal to what He created on earth; “There is no power or ability except by Allah, the Most High, the Almighty” equal to what is between them both; “There is no power or ability except by Allah, the Most High, the Almighty” equal to whatever He creates.",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "لَآ إِلَـٰهَ إِلَّا ٱللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ ٱلْمُلْكُ وَلَهُ ٱلْحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ عَدَدَ كُلِّ ذَرَّةٍ أَلْفَ مَرَّة (3)",
@@ -333,6 +415,8 @@ export const wird = [
         translation:
           "“There is no god except Allah, One without partner, all control and praise belong to Him, He gives life and death, and He has power over all things”—equal to every atom one thousand times over. (3 times)",
       }),
+    ]),
+    new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
           "ٱللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ مِفْتَاحِ بَابِ رَحْمَةِ ٱللَّهِ عَدَدَ مَا فِي عِلْمِ ٱللَّهِ صَلَاةً وَسَلَامًا دَائِمَيْنِ بِدَوَامِ مُلْكِ ٱللَّهِ وَعَلَى آلِهِ وَصَحْبِهِ عَدَدَ كُلِّ ذَرَّةٍ أَلْفَ مَرَّة (3)",
