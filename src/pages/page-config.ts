@@ -26,6 +26,16 @@ export const pageConfigs: PageConfig[] = [
     contentImportPath: "mawlids-shimmering-light",
   },
   {
+    path: "khulasah/after-fajr",
+    title: "After Fajr",
+    contentImportPath: "khulasah-after-fajr-index",
+  },
+  {
+    path: "khulasah/after-fajr/wird-al-latif",
+    title: "Wird al Latif",
+    contentImportPath: "khulasah-after-fajr-wird-latif",
+  },
+  {
     path: "khulasah/after-asr",
     title: "After Asr",
     contentImportPath: "khulasah-after-asr-index",

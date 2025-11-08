@@ -15,7 +15,7 @@ const theKhulasahContent = [
   }),
   new NavModel({
     title: "After Fajr",
-    href: "/",
+    href: "khulasah/after-fajr",
   }),
   new NavModel({
     title: "Duha/Ishraq",
