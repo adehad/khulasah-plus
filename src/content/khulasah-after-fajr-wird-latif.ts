@@ -1,16 +1,16 @@
-import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
+import { ikhlas } from "@/content/shared/quran";
+import {
+  DhikrEntryModel,
+  DhikrModel,
+  QuranEntryModel,
+  QuranModel,
+  WirdModel,
+} from "@/models/recitation";
 
 export const wird = [
   new WirdModel("Wird al Latif", [
+    ikhlas("", true),
     new DhikrModel("", [
-      new DhikrEntryModel({
-        arabic:
-          "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ ﴿ قُلْ هُوَ ٱللَّهُ أَحَدٌ ۝ ٱللَّهُ ٱلصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ ﴾ (3)",
-        translit:
-          "Bismillāhir raḥmānir raḥīm. Qul HuwaLlāhu aḥad. Allāhus-Ṣamad. Lam yalid wa lam yūlad. Wa lam yakun lahu kufuwan aḥad. (3x)",
-        translation:
-          "In the Name of God, the Most Compassionate, the Ever-Merciful. Say, ‘He is God the One, God the eternally Besought. He begot no one nor was He begotten. No one is comparable to Him.’",
-      }),
       new DhikrEntryModel({
         arabic:
           "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ ﴿ قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ ۝ مِن شَرِّ مَا خَلَقَ ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ۝ وَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ ﴾ (3)",
