@@ -18,10 +18,9 @@ export class Quran extends BaseRecitation {
         margin-bottom: 1em;
       }
 
-      .arabic {
-        font-family: 'Uthmanic Hafs', serif;
-        font-size: 2.2em;
-        text-align: right;
+      .basmallah {
+        font-family: 'Amiri', 'Uthmanic Hafs', serif;
+        font-size: calc(var(--arabic-font-size)*0.7);
       }
     `,
   ];
@@ -31,9 +30,18 @@ export class Quran extends BaseRecitation {
     const lastVerse =
       this.recitation.entries[this.recitation.entries.length - 1]?.verse;
 
+    const instruction = this.recitation.instruction
+      ? html`<p class="instruction">${this.recitation.instruction}</p>`
+      : "";
+
+    const basmallah = this.recitation.basmallah
+      ? html`<p class="arabic basmallah">﷽</p>`
+      : "";
+
     return html`
       <div class="quran-container">
-        <p class="instruction">${this.recitation.instruction}</p>
+        ${instruction}
+        ${basmallah}
         ${this.recitation.entries.map(
           (entry, i) =>
             html`<kp-mushaf-entry

@@ -194,6 +194,7 @@ export class WirdModel extends BaseRecitationModel {
  * @param {number} surah - The surah number.
  * @param {QuranEntryModel[]} entries - The entries for the recitation.
  * @param {string} [instruction] - Optional instruction for the recitation.
+ * @param {boolean} [basmallah] - Optional basmallah for the recitation. Default false.
  *
  * @method render
  * Renders the recitation using the <kp-mushaf> custom element.
@@ -201,13 +202,17 @@ export class WirdModel extends BaseRecitationModel {
  * @returns {TemplateResult} The rendered HTML template for the recitation.
  */
 export class QuranModel extends BaseRecitationModel {
+  basmallah: boolean;
+
   constructor(
     public title: string,
     public surah: number,
     public entries: QuranEntryModel[],
     instruction?: string,
+    basmallah?: boolean,
   ) {
     super(title, instruction);
+    this.basmallah = basmallah ?? false;
   }
 
   render() {

@@ -1,5 +1,9 @@
 # Arabic Fonts
 
+# Amiri
+https://gwfh.mranftl.com/fonts/amiri?subsets=arabic
+
+
 ## Scheherazade New
 https://gwfh.mranftl.com/fonts/scheherazade-new?subsets=arabic,latin
 
