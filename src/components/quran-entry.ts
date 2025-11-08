@@ -8,6 +8,7 @@ import { textStyles } from "@/styles/shared-styles.ts";
 export class MushafEntry extends LitElement {
   @property({ type: Boolean }) openingBrace!: boolean;
   @property({ type: Boolean }) closingBrace!: boolean;
+  @property({ type: String }) repeatText!: string;
   @property({ type: Object }) entry!: QuranEntryModel;
 
   static styles = [
@@ -27,7 +28,7 @@ export class MushafEntry extends LitElement {
       position: absolute;
       overflow: hidden;
       /* Align the number to be inside the verse bracket */
-      transform: translateX(+23%) translateY(8%) scale(0.4);
+      transform: translateX(+25%) translateY(+10%) scale(0.4);
       text-align: center;
       width: 3ch;
       font-family: 'Amiri', serif; /* Transform is font specific */
@@ -46,9 +47,14 @@ export class MushafEntry extends LitElement {
             ۝
           </div>
           <span class="arabic verse-bracket">${this.closingBrace ? "﴾" : ""}</span>
+          <span class="arabic verse-bracket">${this.repeatText ?? ""}</span>
         </div>
-        <div class="translit">${this.entry.translit}</div>
-        <div class="translation">${this.entry.translation}</div>
+        <div class="translit">${this.entry.translit}
+          <span class="translit">${this.repeatText ?? ""}</span>
+        </div>
+        <div class="translation">${this.entry.translation}
+          <span class="translation">${this.repeatText ?? ""}</span>
+        </div>
       </div>
     `;
   }

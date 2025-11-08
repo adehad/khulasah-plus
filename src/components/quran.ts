@@ -38,6 +38,9 @@ export class Quran extends BaseRecitation {
       ? html`<p class="arabic basmallah">﷽</p>`
       : "";
 
+    const repeatText =
+      this.recitation.repeat > 1 ? ` (x${this.recitation.repeat})` : "";
+
     return html`
       <div class="quran-container">
         ${instruction}
@@ -47,7 +50,8 @@ export class Quran extends BaseRecitation {
             html`<kp-mushaf-entry
                   .entry=${entry}
                   .openingBrace=${i === 0}
-                  .closingBrace=${i === this.recitation.entries.length - 1}>
+                  .closingBrace=${i === this.recitation.entries.length - 1}
+                  .repeatText=${i === this.recitation.entries.length - 1 ? repeatText : ""}>
                 </kp-mushaf-entry>`,
         )}
         <kp-footnote type="quran">Surah ${this.recitation.title} (${this.recitation.surah}):${firstVerse}-${lastVerse}</kp-footnote>

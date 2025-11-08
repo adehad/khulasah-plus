@@ -203,6 +203,7 @@ export class WirdModel extends BaseRecitationModel {
  */
 export class QuranModel extends BaseRecitationModel {
   basmallah: boolean;
+  repeat: number;
 
   constructor(
     public title: string,
@@ -210,9 +211,11 @@ export class QuranModel extends BaseRecitationModel {
     public entries: QuranEntryModel[],
     instruction?: string,
     basmallah?: boolean,
+    repeat?: number,
   ) {
     super(title, instruction);
     this.basmallah = basmallah ?? false;
+    this.repeat = repeat ?? 1;
   }
 
   render() {

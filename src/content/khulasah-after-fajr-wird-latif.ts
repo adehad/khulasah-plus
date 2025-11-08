@@ -1,4 +1,4 @@
-import { ikhlas } from "@/content/shared/quran";
+import { falaq, ikhlas, nas } from "@/content/shared/quran";
 import {
   DhikrEntryModel,
   DhikrModel,
@@ -9,24 +9,10 @@ import {
 
 export const wird = [
   new WirdModel("Wird al Latif", [
-    ikhlas("", true),
+    ikhlas(3),
+    falaq(3),
+    nas(3),
     new DhikrModel("", [
-      new DhikrEntryModel({
-        arabic:
-          "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ ﴿ قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ ۝ مِن شَرِّ مَا خَلَقَ ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ۝ وَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ ﴾ (3)",
-        translit:
-          "Bismillāhir raḥmānir raḥīm. Qul aʿūdhu bi rabb il-falaq. Min sharri mā khalaq. Wa min sharri ghāsiqin idhā waqab. Wa min sharri in-naffathāti fil ʿuqad. Wa min sharri ḥāsidin idhā ḥasad. (3x)",
-        translation:
-          "In the Name of God, the Most Compassionate, the Ever-Merciful. Say, ‘I take refuge with the Lord of daybreak against the harm in what He has created, the harm in the night when darkness gathers, the harm in witches when they blow on knots, the harm in the envier when he envies.’",
-      }),
-      new DhikrEntryModel({
-        arabic:
-          "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ ﴿ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ۝ مَلِكِ ٱلنَّاسِ ۝ إِلَـٰهِ ٱلنَّاسِ ۝ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ۝ ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ ۝ مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ ﴾ (3)",
-        translit:
-          "Bismillāhir raḥmānir raḥīm. Qul aʿūdhu bi rabb in-nās. Malik in-nās. Ilāh in-nās. Min sharril waswāsil khannās. Al-ladhī yuwaswisu fī ṣudūr in-nās. Min aljinnati wan-nās. (3x)",
-        translation:
-          "In the Name of God, the Most Compassionate, the Ever-Merciful. Say, ‘I seek refuge with the Lord of people, the King of people, the God of people, against the harm of the slinking whisperer—who whispers into the hearts of people—whether they be jinn or people.’",
-      }),
       new DhikrEntryModel({
         arabic: "رَبِّ أَعُوذُ بِكَ مِنْ هَمَزَٰتِ ٱلشَّيَـٰطِينِ وَأَعُوذُ بِكَ رَبِّ أَن يَحْضُرُونِ (3)",
         translit:
