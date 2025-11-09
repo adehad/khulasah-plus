@@ -28,7 +28,7 @@ export class MushafEntry extends LitElement {
       position: absolute;
       overflow: hidden;
       /* Align the number to be inside the verse bracket */
-      transform: translateX(+25%) translateY(+10%) scale(0.4);
+      transform: translateX(+25%) translateY(-21%) scale(0.4);
       text-align: center;
       width: 3ch;
       font-family: 'Amiri', serif; /* Transform is font specific */
