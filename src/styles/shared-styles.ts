@@ -19,6 +19,7 @@ export const textStyles = css`
   .arabic {
     font-family: "Uthmanic Hafs Punctuation", var(--preferred-arabic-font-family), "Scheherazade New", "Uthmanic Hafs", serif;
     direction: rtl;
+    line-height: 1.7em;
     font-size: var(--arabic-font-size);
     display: var(--show-arabic, block);
   }
