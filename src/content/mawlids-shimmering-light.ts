@@ -255,7 +255,7 @@ const shimmeringLight = [
           entries: [
             new QuranEntryModel({
               arabic:
-                "﴿ لَقَدْ جَآءَكُمْ رَسُولٌ مِّنْ أَنفُسِكُمْ عَزِيزٌ عَلَيْهِ مَا عَنِتُّمْ حَرِيصٌ عَلَيْكُم بِٱلْمُؤْمِنِينَ رَءُوفٌ رَّحِيمٌ ۝  فإِن تَوَلَّوۡاْ فَقُلْ حَسْبِىَ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَهُوَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيمِ ﴾",
+                "﴿ لَقَدْ جَآءَكُمْ رَسُولٌ مِّنْ أَنفُسِكُمْ عَزِيزٌ عَلَيْهِ مَا عَنِتُّمْ حَرِيصٌ عَلَيْكُم بِٱلْمُؤْمِنِينَ رَءُوفٌ رَّحِيمٌ ۝  فإِن تَوَلَّوۡاْ فَقُلْ حَسْبِىَ ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَهُوَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيمِ ﴾",
               translit:
                 "﴿ laqad jāʾakum rasūlun min anfusikum ʿazīzun ʿalayhi mā ʿanittum ḥarīṣun ʿalaykum bi-l-muʾminīna raʾūfun raḥīm ۝ fa-in tawallaw fa-qul ḥasbiyallāhu lā ilāha illā huwa ʿalayhi tawakkaltu wa-huwa rabbu l-ʿarshi l-ʿaẓīm ﴾ ",
               translation:
@@ -2252,13 +2252,13 @@ const shimmeringLight = [
         new QasidaVerseModel({
           entries: [
             new QasidaEntryModel({
-              arabic: "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+              arabic: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
               translit: "bismi-llāhi r-raḥmāni r-raḥīm",
               translation:
                 "In the name of Allah, Most Compassionate, Ever-Merciful",
             }),
             new QasidaEntryModel({
-              arabic: "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
+              arabic: "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
               translit: "al-ḥamdu li-llāhi rabbi l-ʿālamīn",
               translation: "Praise be to Allah, Lord of the Worlds.",
             }),
@@ -2610,7 +2610,7 @@ const shimmeringLight = [
           entries: [
             new QasidaEntryModel({
               arabic:
-                "﴿ سُبْحَـٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ ۝ وَسَلَـٰمٌ عَلَى ٱلْمُرْسَلِينَ ۝ وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ ﴾",
+                "﴿ سُبْحَٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ ۝ وَسَلَٰمٌ عَلَى ٱلْمُرْسَلِينَ ۝ وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ ﴾",
               translit:
                 "subḥāna rabbika rabbi l-ʿizzati ʿammā yaṣifūn ۝ wa-salāmun ʿalá l-mursalīn ۝ wa-l-ḥamdu li-llāhi rabbi l-ʿālamīn",
               translation:

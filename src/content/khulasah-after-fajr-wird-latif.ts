@@ -14,7 +14,7 @@ export const wird = [
     nas(3),
     new DhikrModel("", [
       new DhikrEntryModel({
-        arabic: "رَبِّ أَعُوذُ بِكَ مِنْ هَمَزَٰتِ ٱلشَّيَـٰطِينِ وَأَعُوذُ بِكَ رَبِّ أَن يَحْضُرُونِ",
+        arabic: "رَبِّ أَعُوذُ بِكَ مِنْ هَمَزَٰتِ ٱلشَّيَٰطِينِ وَأَعُوذُ بِكَ رَبِّ أَن يَحْضُرُونِ",
         translit:
           "Rabbī ʿaudhu bika min hamāzat ash-shayaṭīni wa ʿaudhu bika Rabbī an yaḥdurūn.",
         translation:
@@ -27,7 +27,7 @@ export const wird = [
       23,
       [
         new QuranEntryModel({
-          arabic: "أَفَحَسِبْتُمْ أَنَّمَا خَلَقْنَـٰكُمْ عَبَثًا وَأَنَّكُمْ إِلَيْنَا لَا تُرْجَعُونَ",
+          arabic: "أَفَحَسِبْتُمْ أَنَّمَا خَلَقْنَٰكُمْ عَبَثًا وَأَنَّكُمْ إِلَيْنَا لَا تُرْجَعُونَ",
           translit:
             "Afaḥasibtum annamā khalaqnākum ʿabathan wa annakum ilaynā lā turjaʿūn.",
           translation:
@@ -35,7 +35,7 @@ export const wird = [
           verse: 115,
         }),
         new QuranEntryModel({
-          arabic: "فَتَعَـٰلَى ٱللَّهُ ٱلْمَلِكُ ٱلْحَقُّ ۖ لَآ إِلَـٰهَ إِلَّا هُوَ رَبُّ ٱلْعَرْشِ ٱلْكَرِيمِ",
+          arabic: "فَتَعَٰلَى ٱللَّهُ ٱلْمَلِكُ ٱلْحَقُّ ۖ لَآ إِلَٰهَ إِلَّا هُوَ رَبُّ ٱلْعَرْشِ ٱلْكَرِيمِ",
           translit:
             "Fa taʿālā Allāh ul-Malik ul-Ḥaqq, lā ilāha illā Huwa Rabb ul-ʿArsh il-Karīm.",
           translation:
@@ -221,7 +221,7 @@ export const wird = [
     ]),
     new DhikrModel("", [
       new DhikrEntryModel({
-        arabic: "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ حَمْدًا يُوَافِي نِعَمَهُ وَيُكَافِئُ مَزِيدَه",
+        arabic: "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ حَمْدًا يُوَافِي نِعَمَهُ وَيُكَافِئُ مَزِيدَه",
         translit:
           "Al-ḥamdu lillāhi Rabb il-ʿālamīn, ḥamdan yuwāfī niʿamahu wa yukāfiʾu mazīdah.",
         translation:
@@ -253,7 +253,7 @@ export const wird = [
     ]),
     new DhikrModel("", [
       new DhikrEntryModel({
-        arabic: "حَسْبِىَ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيم",
+        arabic: "حَسْبِىَ ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيم",
         translit:
           "Ḥasbī Allāhu lā ilāha illā Huwa ʿalayhi tawakkaltu wa Huwa Rabb ul-ʿarsh il-ʿaẓīm.",
         translation:
@@ -415,7 +415,7 @@ export const wird = [
     ]),
     new DhikrModel("", [
       new DhikrEntryModel({
-        arabic: "أَصْبَحْنَا وَأَصْبَحَ ٱلْمُلْكُ لِلَّهِ وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِين",
+        arabic: "أَصْبَحْنَا وَأَصْبَحَ ٱلْمُلْكُ لِلَّهِ وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِين",
         translit:
           "Aṣbaḥnā wa aṣbaḥ al-mulku lillāhi, wal-ḥamdu lillāhi Rabb ilʿālamīn.",
         translation:
@@ -453,7 +453,7 @@ export const wird = [
     ]),
     new DhikrModel("", [
       new DhikrEntryModel({
-        arabic: "سُبْحَـٰنَ ٱللَّهِ وَبِحَمْدِهِ عَدَدَ خَلْقِهِ وَرِضَى نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ",
+        arabic: "سُبْحَٰنَ ٱللَّهِ وَبِحَمْدِهِ عَدَدَ خَلْقِهِ وَرِضَى نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ",
         translit:
           "Subḥān Allāhi wa bi-ḥamdihi ʿadada khalqihi wa ridāʾ nafsihi wa zinata ʿarshihi wa midāda kalimātih.",
         translation:
@@ -464,7 +464,7 @@ export const wird = [
     new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
-          "سُبْحَـٰنَ ٱللَّهِ ٱلْعَظِيمِ وَبِحَمْدِهِ عَدَدَ خَلْقِهِ وَرِضَى نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ",
+          "سُبْحَٰنَ ٱللَّهِ ٱلْعَظِيمِ وَبِحَمْدِهِ عَدَدَ خَلْقِهِ وَرِضَى نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ",
         translit:
           "Subḥān Allāhi al-ʿAẓīmi wa bi-ḥamdihi ʿadada khalqihi wa ridāʾ nafsihi wa zinata ʿarshihi wa midāda kalimātih.",
         translation:
@@ -475,7 +475,7 @@ export const wird = [
     new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
-          "سُبْحَـٰنَ ٱللَّهِ عَدَدَ مَا خَلَقَ فِي ٱلسَّمَاءِ، سُبْحَـٰنَ ٱللَّهِ عَدَدَ مَا خَلَقَ فِي ٱلْأَرْضِ، سُبْحَـٰنَ ٱللَّهِ عَدَدَ مَا بَيْنَ ذَلِك، سُبْحَـٰنَ ٱللَّهِ عَدَدَ مَا هُوَ خَالِقٌ",
+          "سُبْحَٰنَ ٱللَّهِ عَدَدَ مَا خَلَقَ فِي ٱلسَّمَاءِ، سُبْحَٰنَ ٱللَّهِ عَدَدَ مَا خَلَقَ فِي ٱلْأَرْضِ، سُبْحَٰنَ ٱللَّهِ عَدَدَ مَا بَيْنَ ذَلِك، سُبْحَٰنَ ٱللَّهِ عَدَدَ مَا هُوَ خَالِقٌ",
         translit:
           "Subḥān Allāhi ʿadada mā khalaqa fīs-samāʾ, subḥān Allāhi ʿadada mā khalaqa fil-arḍ, subḥān Allāhi ʿadada mā bayna dhālik, subḥān Allāhi ʿadada mā Huwa khāliq.",
         translation:
@@ -495,7 +495,7 @@ export const wird = [
     new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
-          "لَآ إِلَـٰهَ إِلَّا ٱللَّهُ عَدَدَ مَا خَلَقَ فِي ٱلسَّمَاءِ، لَآ إِلَـٰهَ إِلَّا ٱللَّهُ عَدَدَ مَا خَلَقَ فِي ٱلْأَرْضِ، لَآ إِلَـٰهَ إِلَّا ٱللَّهُ عَدَدَ مَا بَيْنَ ذَلِك، لَآ إِلَـٰهَ إِلَّا ٱللَّهُ عَدَدَ مَا هُوَ خَالِقٌ",
+          "لَآ إِلَٰهَ إِلَّا ٱللَّهُ عَدَدَ مَا خَلَقَ فِي ٱلسَّمَاءِ، لَآ إِلَٰهَ إِلَّا ٱللَّهُ عَدَدَ مَا خَلَقَ فِي ٱلْأَرْضِ، لَآ إِلَٰهَ إِلَّا ٱللَّهُ عَدَدَ مَا بَيْنَ ذَلِك، لَآ إِلَٰهَ إِلَّا ٱللَّهُ عَدَدَ مَا هُوَ خَالِقٌ",
         translit:
           "Lā ilāha illā Allāhu ʿadada mā khalaqa fis-samāʾ, lā ilāha illā Allāhu ʿadada mā khalaqa fil-arḍ, lā ilāha illā Allāhu ʿadada mā bayna dhālik, lā ilāha illā Allāhu ʿadada mā Huwa khāliq.",
         translation:
@@ -525,7 +525,7 @@ export const wird = [
     new DhikrModel("", [
       new DhikrEntryModel({
         arabic:
-          "لَآ إِلَـٰهَ إِلَّا ٱللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ ٱلْمُلْكُ وَلَهُ ٱلْحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ عَدَدَ كُلِّ ذَرَّةٍ أَلْفَ مَرَّة",
+          "لَآ إِلَٰهَ إِلَّا ٱللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ ٱلْمُلْكُ وَلَهُ ٱلْحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ عَدَدَ كُلِّ ذَرَّةٍ أَلْفَ مَرَّة",
         translit:
           "Lā ilāha illāLlāhu waḥdahu lā sharīka lahu, lahul-mulku wa lahul-ḥamdu, yuḥyī wa yumītu wa Huwa ʿalā kulli shayyʾin qadīr, ʿadada kulli dharratin alfa marrah.",
         translation:

@@ -23,3 +23,11 @@ repos:
         types_or: [text, json, markdown]
         args: [--excluded-chars, (ﷺ|﴿|﴾)]
         files: ^src/content/
+  - repo: local
+    hooks:
+    -   id: normalize-arabic-chars
+        name: Normalize Arabic Characters
+        entry: bun run scripts/normalize-arabic.ts
+        language: node
+        types: [ts]
+        files: ^src/content/
