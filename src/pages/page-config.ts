@@ -45,5 +45,15 @@ export const pageConfigs: PageConfig[] = [
     title: "Hizb Al Bahr",
     contentImportPath: "khulasah-after-asr-hizb-al-bahr",
   },
+  {
+    path: "khulasah/maghrib",
+    title: "Maghrib (Before or After)",
+    contentImportPath: "khulasah-maghrib-index",
+  },
+  {
+    path: "khulasah/maghrib/ratib-al-haddad",
+    title: "Ratib Al-Haddad",
+    contentImportPath: "khulasah-maghrib-ratib-al-haddad",
+  },
   // Add more page configurations here
 ];

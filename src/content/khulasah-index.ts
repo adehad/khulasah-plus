@@ -31,7 +31,7 @@ const theKhulasahContent = [
   }),
   new NavModel({
     title: "Maghrib",
-    href: "/",
+    href: "khulasah/maghrib",
   }),
   new NavModel({
     title: "After Isha",

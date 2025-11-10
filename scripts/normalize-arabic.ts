@@ -9,13 +9,8 @@ import { promises as fs } from "fs";
 // Keys are what to find, values are what to replace with.
 // Using unicode escape sequences for clarity and to avoid editor/encoding issues.
 const transformationMap: Record<string, string> = {
-  // Replace Tatweel (ـ) followed by Superscript Alef (ٰ) with just Superscript Alef (ٰ).
-  // This removes the unnecessary elongating character before the superscript alef.
-  "\u0640\u0670": "\u0670", // ـٰ -> ٰ
-
-  // Replace the standard Arabic Sukun (ْ) with the Quranic recitation variant
-  // (ۡ - Small High Dotless Head of Khah).
-  // '\u0652': '\u06E1', // ْ -> ۡ
+  // Replace Tatweel (ـ) with nothin.
+  "\u0640": "", // 'ـ'->''
 };
 
 async function normalizeFile(filePath: string) {
