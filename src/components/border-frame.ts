@@ -48,6 +48,10 @@ export class BorderFrame extends LitElement {
     window.addEventListener("resize", this.updateInnerHeight);
   }
 
+  firstUpdated() {
+    this.updateInnerHeight();
+  }
+
   disconnectedCallback() {
     super.disconnectedCallback();
     window.removeEventListener("resize", this.updateInnerHeight);
