@@ -13,7 +13,7 @@ export class BorderFrame extends LitElement {
       position: relative;
       inset: 0;
       width: 100%;
-      height: calc(var(--inner-height) - env(titlebar-area-height, 30px) - 12px);
+      height: calc(var(--inner-height, 100dvh) - env(titlebar-area-height, 30px) - 12px);
       top: calc(env(titlebar-area-height, 30px) + 12px); /* Adjust for header height */
       border-style: solid;
       border-width: 33px;
