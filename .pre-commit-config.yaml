@@ -23,6 +23,11 @@ repos:
         types_or: [text, json, ts, markdown]
         args: [--excluded-chars, (ﷺ|﴿|﴾)]
         files: ^src/content/
+        exclude: |
+            (?x)^(
+                src/content/shared/quran.ts|
+                src/content/mawlids-shimmering-light.ts|
+            )$
   - repo: local
     hooks:
     -   id: normalize-arabic-chars
@@ -31,3 +36,8 @@ repos:
         language: node
         types: [ts]
         files: ^src/content/
+        exclude: |
+            (?x)^(
+                src/content/shared/quran.ts|
+                src/content/mawlids-shimmering-light.ts|
+            )$

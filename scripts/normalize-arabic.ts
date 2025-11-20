@@ -9,8 +9,11 @@ import { promises as fs } from "fs";
 // Keys are what to find, values are what to replace with.
 // Using unicode escape sequences for clarity and to avoid editor/encoding issues.
 const transformationMap: Record<string, string> = {
-  // Replace Tatweel (ـ) with nothin.
-  "\u0640": "", // 'ـ'->''
+  // Replace Tatweel (ـ) followed by Superscript Alef (ٰ) with just Superscript Alef (ٰ).
+  "\u0640\u0670": "\u0670",
+
+  // Replace Tatweel (ـ) followed by Nun (نِ) with just Nun (نِ).
+  "\u0640\u0646": "\u0646",
 };
 
 async function normalizeFile(filePath: string) {
