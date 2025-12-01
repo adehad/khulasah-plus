@@ -26,6 +26,8 @@ repos:
         exclude: |
             (?x)^(
                 src/content/shared/quran.ts|
+                src/content/shared/quran-yasin.ts|
+                src/content/shared/quran-waqiah.ts|
                 src/content/mawlids-shimmering-light.ts|
             )$
   - repo: local

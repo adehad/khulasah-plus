@@ -1,3 +1,5 @@
+import { quran as waqiah_source } from "@/content/shared/quran-waqiah";
+import { quran as yasin_source } from "@/content/shared/quran-yasin";
 import { QuranEntryModel, QuranModel } from "@/models/recitation";
 
 export function fatihah(
@@ -245,6 +247,36 @@ export function nas(
         verse: 6,
       }),
     ],
+    instruction,
+    basmallah,
+    repeat,
+  );
+}
+
+export function yasin(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel(
+    yasin_source.title,
+    yasin_source.surah,
+    yasin_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  );
+}
+
+export function waqiah(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel(
+    waqiah_source.title,
+    waqiah_source.surah,
+    waqiah_source.entries,
     instruction,
     basmallah,
     repeat,
