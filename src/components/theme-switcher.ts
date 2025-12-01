@@ -1,15 +1,23 @@
 import { css, html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
+import { storage, type ThemeValue } from "@/utils/storage";
 
 @customElement("theme-switcher")
 export class ThemeSwitcher extends LitElement {
   @state()
-  private theme: "light" | "dark" | "auto" = "auto";
+  private theme: ThemeValue = "auto";
 
   @state()
   private prefersDark = window.matchMedia(
     "(prefers-color-scheme: dark)",
   ).matches;
+
+  // Store reference for cleanup
+  private _mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+  private _mediaQueryHandler = (e: MediaQueryListEvent) => {
+    this.prefersDark = e.matches;
+    this.applyTheme();
+  };
 
   static styles = css`
     .theme-toggle-button {
@@ -53,23 +61,15 @@ export class ThemeSwitcher extends LitElement {
 
   connectedCallback() {
     super.connectedCallback();
-    const storedTheme = localStorage.getItem("theme") as
-      | "light"
-      | "dark"
-      | "auto"
-      | null;
-    if (storedTheme) {
-      this.setTheme(storedTheme);
-    } else {
-      this.setTheme(this.theme);
-    }
+    const storedTheme = storage.get("theme");
+    this.setTheme(storedTheme);
 
-    window
-      .matchMedia("(prefers-color-scheme: dark)")
-      .addEventListener("change", (e) => {
-        this.prefersDark = e.matches;
-        this.applyTheme();
-      });
+    this._mediaQuery.addEventListener("change", this._mediaQueryHandler);
+  }
+
+  disconnectedCallback() {
+    this._mediaQuery.removeEventListener("change", this._mediaQueryHandler);
+    super.disconnectedCallback();
   }
 
   applyTheme() {
@@ -90,11 +90,11 @@ export class ThemeSwitcher extends LitElement {
     document.documentElement.classList.toggle("sl-theme-light", !useDark);
   }
 
-  setTheme(theme: "light" | "dark" | "auto") {
+  setTheme(theme: ThemeValue) {
     this.theme = theme;
     this.classList.remove("light", "dark", "auto");
     this.classList.add(theme);
-    localStorage.setItem("theme", theme);
+    storage.set("theme", theme);
     this.applyTheme();
     this.dispatchEvent(
       new CustomEvent("theme-change", {
@@ -107,14 +107,13 @@ export class ThemeSwitcher extends LitElement {
 
   toggleTheme() {
     const currentTheme = this.theme;
-    const newTheme =
-      {
-        auto: "light",
-        light: "dark",
-        dark: "auto",
-      }[currentTheme] || "auto";
-
-    this.setTheme(newTheme as "light" | "dark" | "auto");
+    const themeOrder: Record<ThemeValue, ThemeValue> = {
+      auto: "light",
+      light: "dark",
+      dark: "auto",
+    };
+    const newTheme = themeOrder[currentTheme];
+    this.setTheme(newTheme);
   }
 
   updated(changedProperties: Map<string, unknown>) {

@@ -7,6 +7,7 @@ import "@/styles/global.css";
 import { resolveRouterPath, router } from "@/router";
 import "@/components/settings-menu";
 import "./components/border-frame.ts"; // <-- New line inserted here
+import { storage } from "@/utils/storage";
 
 /* We have to import all components here for stuff to work */
 import "@/components/dhikr.ts";
@@ -171,7 +172,7 @@ export class AppIndex extends LitElement {
   }
 
   loadSettings() {
-    const settings = JSON.parse(localStorage.getItem("settings") || "{}");
+    const settings = storage.get("settings");
     for (const [key, value] of Object.entries(settings)) {
       this.updateStyles(key, value);
     }

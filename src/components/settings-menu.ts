@@ -6,14 +6,9 @@ import type SlRange from "@shoelace-style/shoelace/dist/components/range/range.j
 import "@shoelace-style/shoelace/dist/components/range/range.js";
 import type SlSwitch from "@shoelace-style/shoelace/dist/components/switch/switch.js";
 import "@shoelace-style/shoelace/dist/components/switch/switch.js";
+import { storage, type SettingsModel } from "@/utils/storage";
 
-export type SettingName =
-  | "arabicFontSize"
-  | "translationFontSize"
-  | "transliterationFontSize"
-  | "showArabic"
-  | "showTranslation"
-  | "showTransliteration";
+export type SettingName = keyof SettingsModel;
 
 export class SettingsChangeEvent extends CustomEvent<{
   name: SettingName;
@@ -92,25 +87,17 @@ export class SettingsMenu extends LitElement {
   }
 
   loadSettings() {
-    const settings = JSON.parse(localStorage.getItem("settings") || "{}");
-    this.arabicFontSize = settings.arabicFontSize || 2;
-    this.translationFontSize = settings.translationFontSize || 1;
-    this.transliterationFontSize = settings.transliterationFontSize || 1;
-    this.showArabic =
-      settings.showArabic === undefined ? true : settings.showArabic;
-    this.showTranslation =
-      settings.showTranslation === undefined ? true : settings.showTranslation;
-    this.showTransliteration =
-      settings.showTransliteration === undefined
-        ? true
-        : settings.showTransliteration;
+    const settings = storage.get("settings");
+    this.arabicFontSize = settings.arabicFontSize;
+    this.translationFontSize = settings.translationFontSize;
+    this.transliterationFontSize = settings.transliterationFontSize;
+    this.showArabic = settings.showArabic;
+    this.showTranslation = settings.showTranslation;
+    this.showTransliteration = settings.showTransliteration;
   }
 
-  // biome-ignore lint/suspicious/noExplicitAny: setting can be any JSON-serializable
-  saveSetting(name: SettingName, value: any) {
-    const settings = JSON.parse(localStorage.getItem("settings") || "{}");
-    settings[name] = value;
-    localStorage.setItem("settings", JSON.stringify(settings));
+  saveSetting<K extends SettingName>(name: K, value: SettingsModel[K]) {
+    storage.update("settings", (s) => ({ ...s, [name]: value }));
     this.dispatchEvent(new SettingsChangeEvent({ name, value }));
   }
 
