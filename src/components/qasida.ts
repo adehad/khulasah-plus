@@ -18,6 +18,7 @@ import {
 import "@/components/qasida.ts";
 import "@/components/qasida-verse.ts";
 import "@/components/qasida-entry.ts";
+import "@/components/sticky-button.ts";
 import type { TemplateResult } from "lit";
 import { textStyles } from "@/styles/shared-styles.ts";
 
@@ -29,6 +30,7 @@ export class Qasida extends BaseRecitation {
   private _activeChorusId: string | null = null;
 
   static styles = [
+    ...BaseRecitation.styles,
     textStyles,
     css`
     .qasida-container {
@@ -57,32 +59,6 @@ export class Qasida extends BaseRecitation {
 
     .verses > kp-qasida-entry:only-child {
       flex-basis: 100%; // When only a single item in the column, take all the space
-    }
-
-    button.sticky {
-      position: sticky;
-      width: 4ch;
-      text-align: center;
-      border-radius: 4px;
-      padding: 0.3rem 1ch;
-      font-size: 0.9rem;
-      cursor: pointer;
-      z-index: 10;
-    }
-
-    button.sticky.verse-num {
-      top: 4rem;
-      right: 0;
-      background: var(--sl-color-primary-400);
-      border-color: var(--sl-color-primary-400);
-    }
-
-    button.sticky.chapter-num {
-      top: 1rem;
-      background: var(--sl-color-primary-300);
-      border-color: var(--sl-color-primary-300);
-      padding: 0.5rem 1ch;
-      font-weight: bold;
     }
 
     .chorus-toggle-button {
@@ -148,53 +124,11 @@ export class Qasida extends BaseRecitation {
     `,
   ];
 
-  firstUpdated() {
-    window.addEventListener("hashchange", () => this.handleHashChange());
-  }
-
   updated(changedProperties: Map<string | symbol, unknown>) {
     if (changedProperties.has("qasida")) {
       this.handleHashChange();
       this.updateToc();
     }
-  }
-
-  disconnectedCallback() {
-    window.removeEventListener("hashchange", () => this.handleHashChange());
-    super.disconnectedCallback();
-  }
-
-  handleHashChange() {
-    queueMicrotask(() => {
-      const hash = window.location.hash;
-      if (hash) {
-        const elementId = hash.substring(1);
-        const element = this.renderRoot.querySelector(`#${elementId}`);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
-      }
-    });
-  }
-
-  setWindowHash(hash: string) {
-    window.location.hash = hash;
-  }
-
-  private updateToc() {
-    queueMicrotask(() => {
-      const headers = this.renderRoot.querySelectorAll("h1, h2, h3");
-      const tocItems = Array.from(headers).map((header) => {
-        return { text: header.textContent || "", id: header.id };
-      });
-
-      const event = new CustomEvent("toc-updated", {
-        detail: { tocItems },
-        bubbles: true,
-        composed: true,
-      });
-      this.dispatchEvent(event);
-    });
   }
 
   private toggleChorus(verseId: string) {
@@ -215,7 +149,11 @@ export class Qasida extends BaseRecitation {
       const chapterId = prefix ? `${prefix}-${index + 1}` : `${index + 1}`;
       const fullChapterId = `chapter-${chapterId}`;
       return html`
-        <button class="sticky chapter-num" @click=${() => this.setWindowHash(fullChapterId)}>${index + 1}</button>
+        <kp-sticky-button
+          label=${index + 1}
+          elementId=${fullChapterId}
+          variant="chapter"
+        ></kp-sticky-button>
           <h1 class="chapter-header" id="${fullChapterId}">${chapter.title}</h1>
             ${chapter.entries.map((chapterOrVerse, i) =>
               this.renderEntry(chapterOrVerse, i, chapterId),
@@ -248,7 +186,11 @@ export class Qasida extends BaseRecitation {
         `;
       } else {
         return html`
-          <button class="sticky verse-num" @click=${() => this.setWindowHash(verseId)}>${index + 1}</button>
+          <kp-sticky-button
+            label=${index + 1}
+            elementId=${verseId}
+            variant="verse"
+          ></kp-sticky-button>
           <div class="verses" id="${verseId}">
             ${verse.entries.map(
               (verseEntry) =>
