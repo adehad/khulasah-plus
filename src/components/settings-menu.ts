@@ -132,7 +132,7 @@ export class SettingsMenu extends LitElement {
               min="1"
               max="5"
               step="0.1"
-              .value=${this.arabicFontSize}
+              value=${this.arabicFontSize}
               @sl-change=${(e: Event) => this.saveSetting("arabicFontSize", (e.target as SlRange).value)}
             ></sl-range>
           </div>
@@ -143,7 +143,7 @@ export class SettingsMenu extends LitElement {
               min="0.5"
               max="2"
               step="0.1"
-              .value=${this.translationFontSize}
+              value=${this.translationFontSize}
               @sl-change=${(e: Event) => this.saveSetting("translationFontSize", (e.target as SlRange).value)}
             ></sl-range>
           </div>
@@ -154,7 +154,7 @@ export class SettingsMenu extends LitElement {
               min="0.5"
               max="2"
               step="0.1"
-              .value=${this.transliterationFontSize}
+              value=${this.transliterationFontSize}
               @sl-change=${(e: Event) => this.saveSetting("transliterationFontSize", (e.target as SlRange).value)}
             ></sl-range>
           </div>
