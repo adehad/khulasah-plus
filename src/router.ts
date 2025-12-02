@@ -1,7 +1,6 @@
 // This file is generated based on page-config.ts and page-renderer.ts
 // Do not modify this file directly.
 
-import { lazy } from "@thepassle/app-tools/router/plugins/lazy.js";
 import { Router } from "@thepassle/app-tools/router.js";
 import { html } from "lit";
 
@@ -11,7 +10,7 @@ if (!(globalThis as any).URLPattern) {
 }
 
 import { pageConfigs } from "./pages/page-config.ts";
-import "./components/page-renderer.ts"; // Ensure page-renderer is registered
+import "./components/page-renderer.ts";
 
 const baseURL: string = import.meta.env.BASE_URL;
 const isDev: boolean = import.meta.env.BASE_URL === "/";
@@ -21,7 +20,6 @@ export const router = new Router({
   routes: [
     ...pageConfigs.map((config) => ({
       path: resolveRouterPath(config.path),
-      plugins: [lazy(() => import("./components/page-renderer.js"))],
       title: config.title,
       render: () =>
         html`<page-renderer contentImportPath="${config.contentImportPath}"></page-renderer>`,
