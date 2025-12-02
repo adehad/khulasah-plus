@@ -3,7 +3,7 @@
  * This may manifest itself in the Quranic entries and then that would imply the
  * entries need to be copied from the source document again.
  */
-import { promises as fs } from "fs";
+import { promises as fs } from "node:fs";
 
 // Map of characters/sequences to be replaced.
 // Keys are what to find, values are what to replace with.
