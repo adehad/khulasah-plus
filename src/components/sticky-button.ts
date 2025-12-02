@@ -2,6 +2,7 @@ import { css, html, LitElement } from "lit";
 import { customElement, property, query, state } from "lit/decorators.js";
 import "@shoelace-style/shoelace/dist/components/tooltip/tooltip.js";
 import type SlTooltip from "@shoelace-style/shoelace/dist/components/tooltip/tooltip.js";
+import { LifecycleRegistry } from "@/utils/storage";
 
 export type StickyButtonVariant = "chapter" | "verse" | "entry";
 
@@ -9,10 +10,15 @@ export type StickyButtonVariant = "chapter" | "verse" | "entry";
 export class StickyButton extends LitElement {
   @property({ type: String }) label: string | number = "";
   @property({ type: String }) elementId = "";
-  @property({ type: String, reflect: true }) variant: StickyButtonVariant = "verse";
+  @property({ type: String, reflect: true }) variant: StickyButtonVariant =
+    "verse";
 
   @state() private _tooltipContent = "Copy link";
   @query("sl-tooltip") private _tooltip!: SlTooltip;
+
+  // Registry for lifecycle management (setup/cleanup pairs)
+  private _lifecycle = new LifecycleRegistry<"tooltipTimer">();
+  private _timerId: number | undefined;
 
   static styles = css`
     :host {
@@ -57,6 +63,11 @@ export class StickyButton extends LitElement {
     return `${window.location.origin}${window.location.pathname}#${this.elementId}`;
   }
 
+  disconnectedCallback() {
+    this._lifecycle.cleanupAll();
+    super.disconnectedCallback();
+  }
+
   private async handleClick() {
     // Set the hash for navigation
     window.location.hash = this.elementId;
@@ -64,18 +75,20 @@ export class StickyButton extends LitElement {
     try {
       await navigator.clipboard.writeText(this.getFullUrl());
       this._tooltipContent = "Copied!";
-      // Auto-dismiss after 1.5 seconds
-      setTimeout(() => {
-        this._tooltip?.hide();
-        this._tooltipContent = "Copy link";
-      }, 1500);
     } catch {
       this._tooltipContent = "Failed to copy";
-      setTimeout(() => {
-        this._tooltip?.hide();
-        this._tooltipContent = "Copy link";
-      }, 1500);
     }
+
+    // Auto-dismiss after 1.5 seconds - re-register runs cleanup first if exists
+    this._lifecycle.register("tooltipTimer", {
+      setup: () => {
+        this._timerId = window.setTimeout(() => {
+          this._tooltip?.hide();
+          this._tooltipContent = "Copy link";
+        }, 1500);
+      },
+      cleanup: () => clearTimeout(this._timerId),
+    });
   }
 
   render() {

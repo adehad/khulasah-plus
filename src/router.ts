@@ -41,7 +41,7 @@ export function resolveRouterPath(unresolvedPath?: string): string {
     const resolvedPath = path.startsWith("/") ? path : `/${path}`;
     return resolvedPath;
   }
-  var resolvedPath = baseURL;
+  let resolvedPath = baseURL;
   if (unresolvedPath) {
     resolvedPath = `${resolvedPath}/${unresolvedPath}`;
   }

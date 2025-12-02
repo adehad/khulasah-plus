@@ -6,7 +6,7 @@ import type SlRange from "@shoelace-style/shoelace/dist/components/range/range.j
 import "@shoelace-style/shoelace/dist/components/range/range.js";
 import type SlSwitch from "@shoelace-style/shoelace/dist/components/switch/switch.js";
 import "@shoelace-style/shoelace/dist/components/switch/switch.js";
-import { storage, type SettingsModel } from "@/utils/storage";
+import { type SettingsModel, storage } from "@/utils/storage";
 
 export type SettingName = keyof SettingsModel;
 

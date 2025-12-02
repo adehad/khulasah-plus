@@ -1,7 +1,8 @@
 import { css, LitElement } from "lit";
+import { LifecycleRegistry } from "@/utils/storage";
 
 export class BaseRecitation extends LitElement {
-  private boundHandleHashChange = () => this.handleHashChange();
+  private _lifecycle = new LifecycleRegistry<"hashChange">();
 
   static styles = [
     css`
@@ -42,11 +43,15 @@ export class BaseRecitation extends LitElement {
   ];
 
   firstUpdated() {
-    window.addEventListener("hashchange", this.boundHandleHashChange);
+    const handler = () => this.handleHashChange();
+    this._lifecycle.register("hashChange", {
+      setup: () => window.addEventListener("hashchange", handler),
+      cleanup: () => window.removeEventListener("hashchange", handler),
+    });
   }
 
   disconnectedCallback() {
-    window.removeEventListener("hashchange", this.boundHandleHashChange);
+    this._lifecycle.cleanupAll();
     super.disconnectedCallback();
   }
 

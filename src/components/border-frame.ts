@@ -1,10 +1,13 @@
 import { css, html, LitElement } from "lit";
-import { customElement, property } from "lit/decorators.js"; // Import 'property'
+import { customElement, property } from "lit/decorators.js";
+import { LifecycleRegistry } from "@/utils/storage";
 
 @customElement("border-frame")
 export class BorderFrame extends LitElement {
   @property({ type: Boolean })
   putBorderToBackground = false;
+
+  private _lifecycle = new LifecycleRegistry<"resize">();
 
   static styles = css`
     :host {
@@ -45,7 +48,11 @@ export class BorderFrame extends LitElement {
   connectedCallback() {
     super.connectedCallback();
     this.updateInnerHeight();
-    window.addEventListener("resize", this.updateInnerHeight);
+    this._lifecycle.register("resize", {
+      setup: () => window.addEventListener("resize", this.updateInnerHeight),
+      cleanup: () =>
+        window.removeEventListener("resize", this.updateInnerHeight),
+    });
   }
 
   firstUpdated() {
@@ -53,8 +60,8 @@ export class BorderFrame extends LitElement {
   }
 
   disconnectedCallback() {
+    this._lifecycle.cleanupAll();
     super.disconnectedCallback();
-    window.removeEventListener("resize", this.updateInnerHeight);
   }
 
   private updateInnerHeight = () => {

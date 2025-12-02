@@ -2,6 +2,7 @@ import type { Router as RouterEvent } from "@thepassle/app-tools/router.js";
 import { css, html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
 import { resolveRouterPath, router } from "@/router";
+import { LifecycleRegistry } from "@/utils/storage";
 
 import "@shoelace-style/shoelace/dist/components/button/button.js";
 import "@shoelace-style/shoelace/dist/components/breadcrumb/breadcrumb.js";
@@ -23,6 +24,8 @@ export class AppHeader extends LitElement {
 
   @state()
   private _previousPath: string | undefined;
+
+  private _lifecycle = new LifecycleRegistry<"routeChange" | "tocUpdate">();
 
   static styles = css`
     header {
@@ -79,8 +82,19 @@ export class AppHeader extends LitElement {
 
   connectedCallback() {
     super.connectedCallback();
-    router.addEventListener("route-changed", this.handleRouteChange);
-    window.addEventListener("toc-updated", this.handleTocUpdate);
+    this._lifecycle.register("routeChange", {
+      setup: () =>
+        router.addEventListener("route-changed", this.handleRouteChange),
+      cleanup: () =>
+        router.removeEventListener("route-changed", this.handleRouteChange),
+    });
+
+    this._lifecycle.register("tocUpdate", {
+      setup: () => window.addEventListener("toc-updated", this.handleTocUpdate),
+      cleanup: () =>
+        window.removeEventListener("toc-updated", this.handleTocUpdate),
+    });
+
     queueMicrotask(() => {
       this.generateBreadcrumbs(router.url);
       this._previousPath = router.url.pathname;
@@ -88,9 +102,8 @@ export class AppHeader extends LitElement {
   }
 
   disconnectedCallback() {
+    this._lifecycle.cleanupAll();
     super.disconnectedCallback();
-    router.removeEventListener("route-changed", this.handleRouteChange);
-    window.removeEventListener("toc-updated", this.handleTocUpdate);
   }
 
   private handleTocUpdate = (event: Event) => {

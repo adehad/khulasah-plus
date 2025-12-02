@@ -1,6 +1,6 @@
 import { css, html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
-import { storage, type ThemeValue } from "@/utils/storage";
+import { LifecycleRegistry, storage, type ThemeValue } from "@/utils/storage";
 
 @customElement("theme-switcher")
 export class ThemeSwitcher extends LitElement {
@@ -12,12 +12,8 @@ export class ThemeSwitcher extends LitElement {
     "(prefers-color-scheme: dark)",
   ).matches;
 
-  // Store reference for cleanup
-  private _mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-  private _mediaQueryHandler = (e: MediaQueryListEvent) => {
-    this.prefersDark = e.matches;
-    this.applyTheme();
-  };
+  // Registry for lifecycle management (setup/cleanup pairs)
+  private _lifecycle = new LifecycleRegistry<"mediaQuery">();
 
   static styles = css`
     .theme-toggle-button {
@@ -64,11 +60,20 @@ export class ThemeSwitcher extends LitElement {
     const storedTheme = storage.get("theme");
     this.setTheme(storedTheme);
 
-    this._mediaQuery.addEventListener("change", this._mediaQueryHandler);
+    // Register media query listener for system theme changes
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    const handler = (e: MediaQueryListEvent) => {
+      this.prefersDark = e.matches;
+      this.applyTheme();
+    };
+    this._lifecycle.register("mediaQuery", {
+      setup: () => mediaQuery.addEventListener("change", handler),
+      cleanup: () => mediaQuery.removeEventListener("change", handler),
+    });
   }
 
   disconnectedCallback() {
-    this._mediaQuery.removeEventListener("change", this._mediaQueryHandler);
+    this._lifecycle.cleanupAll();
     super.disconnectedCallback();
   }
 

@@ -7,7 +7,7 @@ import "@/styles/global.css";
 import { resolveRouterPath, router } from "@/router";
 import "@/components/settings-menu";
 import "./components/border-frame.ts"; // <-- New line inserted here
-import { storage } from "@/utils/storage";
+import { LifecycleRegistry, storage } from "@/utils/storage";
 
 /* We have to import all components here for stuff to work */
 import "@/components/dhikr.ts";
@@ -33,6 +33,9 @@ export class AppIndex extends LitElement {
 
   @state()
   private putBorderToBackground = false;
+
+  // Registry for lifecycle management (setup/cleanup pairs)
+  private _lifecycle = new LifecycleRegistry<"themeObserver">();
 
   static styles = [
     css`
@@ -137,19 +140,28 @@ export class AppIndex extends LitElement {
    */
   private setupTheme() {
     const observer = new MutationObserver((mutations) => {
-      mutations.forEach((mutation) => {
+      for (const mutation of mutations) {
         if (
           mutation.type === "attributes" &&
           mutation.attributeName === "class"
         ) {
           this.applyTheme();
         }
-      });
+      }
     });
 
-    observer.observe(document.documentElement, { attributes: true });
+    this._lifecycle.register("themeObserver", {
+      setup: () =>
+        observer.observe(document.documentElement, { attributes: true }),
+      cleanup: () => observer.disconnect(),
+    });
 
     this.applyTheme();
+  }
+
+  disconnectedCallback() {
+    this._lifecycle.cleanupAll();
+    super.disconnectedCallback();
   }
 
   /**
