@@ -15,7 +15,7 @@ export const afterFajrContent = [
   }),
   new NavModel({
     title: "Surah Yasin",
-    href: "/",
+    href: "khulasah/after-fajr/surah-yasin",
   }),
   new NavModel({
     title: "Dua after Surah Yasin",

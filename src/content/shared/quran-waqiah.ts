@@ -578,3 +578,5 @@ export const quran = new QuranModel("Waqi'ah", 56, [
     verse: 96,
   }),
 ]);
+
+export default quran;

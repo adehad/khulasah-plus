@@ -3,7 +3,7 @@ import { NavModel } from "@/models/nav";
 export const afterAsrContent = [
   new NavModel({
     title: "Sūrah al-Wāqi‛ah",
-    href: "/",
+    href: "khulasah/after-asr/surah-al-waqiah",
   }),
   new NavModel({
     title: "Supplication after Sūrah al-Wāqi‛ah",
