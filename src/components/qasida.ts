@@ -154,14 +154,17 @@ export class Qasida extends BaseRecitation {
       const chapter = entry;
       const chapterId = prefix ? `${prefix}-${index + 1}` : `${index + 1}`;
       const fullChapterId = `chapter-${chapterId}`;
-      // Note: ID is set on kp-sticky-button via its willUpdate, not on the h1
+      // Note: ID is set on BOTH
+      //  kp-sticky-button (via its willUpdate) [for copy to clipboard when clicking numbers]
+      //  <h1> [for TOC naviation]
+      // Technicallly the browser will only navigate to the first, but that is fine.
       return html`
         <kp-sticky-button
           label=${index + 1}
           elementId=${fullChapterId}
           variant="chapter"
         ></kp-sticky-button>
-          <h1 class="chapter-header">${chapter.title}</h1>
+          <h1 id="${fullChapterId}" class="chapter-header">${chapter.title}</h1>
             ${chapter.entries.map((chapterOrVerse, i) =>
               this.renderEntry(chapterOrVerse, i, chapterId),
             )}
