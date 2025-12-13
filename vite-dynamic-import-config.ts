@@ -37,6 +37,7 @@ import type { PageConfig } from "./src/pages/page-config";
 
 export const createPageRevisionTransform = (
   pageConfigs: PageConfig[],
+  baseURL = "/",
 ): ManifestTransform => {
   return async (entries) => {
     const manifest = JSON.parse(
@@ -95,11 +96,13 @@ export const createPageRevisionTransform = (
         return null;
       }
 
+      // Normalize base URL to have trailing slash for consistent path joining
+      const normalizedBase = baseURL.endsWith("/") ? baseURL : `${baseURL}/`;
+
       return {
-        // When running in GitHub pages, all requests get prepended with 'khulasah-plus/'
-        // and for some these URLs additionally get a `/` prepended.
-        // So here the '.' ensures that the right URL is cached!
-        url: config.path === "" ? "." : `/khulasah-plus/${config.path}`,
+        // For the home route (empty path), use "." for relative resolution.
+        // For other routes, join the base URL with the path.
+        url: config.path === "" ? "." : `${normalizedBase}${config.path}`,
         revision: revision,
       };
     });

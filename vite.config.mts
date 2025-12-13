@@ -26,8 +26,23 @@ export default defineConfig(({ mode }) => {
     prepareDevServiceWorker(workboxVersion);
   }
 
+  // Base URL: "/" in dev, can be overridden via CLI --base flag in production
+  // Parse the --base flag from CLI args the same way Vite does internally
+  const baseArgIndex = process.argv.findIndex(
+    (arg) => arg.startsWith("--base=") || arg === "--base",
+  );
+  let base = "/";
+  if (baseArgIndex !== -1) {
+    const arg = process.argv[baseArgIndex];
+    if (arg.startsWith("--base=")) {
+      base = arg.slice("--base=".length);
+    } else if (process.argv[baseArgIndex + 1]) {
+      base = process.argv[baseArgIndex + 1];
+    }
+  }
+
   return {
-    base: "/",
+    base: base,
     resolve: {
       alias: {
         "@": resolve(__dirname, "src"),
@@ -53,7 +68,13 @@ export default defineConfig(({ mode }) => {
           swDest: "dist/sw.js",
           globDirectory: "dist",
           globPatterns: ["**/*.{html,js,css,json,png,ico,svg,woff,woff2}"],
-          manifestTransforms: [createPageRevisionTransform(pageConfigs)],
+          manifestTransforms: [createPageRevisionTransform(pageConfigs, base)],
+          // Fix double slashes in precache URLs caused by Vite normalizing base to have trailing slash.
+          // When base="/khulasah-plus/" and file paths are joined, we can get "//".
+          // This prefix replacement normalizes those double slashes to single slashes.
+          modifyURLPrefix: {
+            "//": "/",
+          },
         },
         injectRegister: false,
         manifest: false,

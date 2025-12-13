@@ -19,7 +19,11 @@ console.log(`Rewriting paths for repository: ${repoName}`);
 const preBuildFiles = [
   {
     path: "index.html",
-    replacements: [{ old: "manifest.json", new: `/${repoName}/manifest.json` }],
+    replacements: [
+      // Setting <base href> makes all relative URLs resolve correctly,
+      // so we don't need to rewrite individual paths
+      { old: '<base href="/"', new: `<base href="/${repoName}/"` },
+    ],
   },
   {
     path: "public/manifest.json",
