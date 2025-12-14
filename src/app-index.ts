@@ -21,6 +21,7 @@ import "@shoelace-style/shoelace/dist/components/dialog/dialog.js";
 import "@shoelace-style/shoelace/dist/components/icon/icon.js";
 import "@shoelace-style/shoelace/dist/components/range/range.js";
 import "@shoelace-style/shoelace/dist/components/switch/switch.js";
+import "@/components/search-button";
 
 /* end magic imports */
 
@@ -215,6 +216,7 @@ export class AppIndex extends LitElement {
     );
     return html`
       <app-header @border-state-change=${this.handleBorderStateChange}>
+        <kp-search-button slot="actions"></kp-search-button>
         <settings-menu
           slot="actions"
           @settings-change=${(e: SettingsChangeEvent) => this.updateStyles(e.detail.name, e.detail.value)}

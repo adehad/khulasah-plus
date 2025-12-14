@@ -1,5 +1,6 @@
 # temporary dev service worker
 /public/sw.dev.js
+/public/search-index.json
 
 .DS_Store
 node_modules
