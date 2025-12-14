@@ -1,5 +1,6 @@
 import { css, html, LitElement, type PropertyValues } from "lit";
 import { customElement, property, query, state } from "lit/decorators.js";
+import { resolveRouterPath } from "@/router";
 import { type SearchResult, searchService } from "@/services/search-service";
 
 import "@shoelace-style/shoelace/dist/components/dialog/dialog.js";
@@ -287,7 +288,8 @@ export class SearchModal extends LitElement {
     // Use text fragment for automatic highlighting and scrolling
     // Text fragments only work with user-initiated navigation (real <a> click)
     const textFragment = encodeURIComponent(this.searchQuery);
-    const url = `/${result.document.id}#:~:text=${textFragment}`;
+    const basePath = resolveRouterPath(`/${result.document.id}`);
+    const url = `${basePath}#:~:text=${textFragment}`;
 
     // Create and click a real <a> element to trigger user-initiated navigation
     // This is required because text fragments don't work with programmatic navigation
@@ -316,7 +318,11 @@ export class SearchModal extends LitElement {
     const { snippet, highlightStart, highlightEnd } = result;
 
     // If no valid highlight positions, return plain snippet
-    if (highlightStart <= 0 || highlightEnd <= highlightStart || highlightEnd > snippet.length) {
+    if (
+      highlightStart <= 0 ||
+      highlightEnd <= highlightStart ||
+      highlightEnd > snippet.length
+    ) {
       return snippet;
     }
 
@@ -362,7 +368,7 @@ export class SearchModal extends LitElement {
                       (result, index) => html`
                       <a
                         class="result-item ${index === this.selectedIndex ? "selected" : ""}"
-                        href="/${result.document.id}"
+                        href="${resolveRouterPath(`/${result.document.id}`)}"
                         @click=${(e: Event) => this.handleResultClick(result, e)}
                         @mouseenter=${() => this.handleResultHover(index)}
                       >

@@ -338,8 +338,7 @@ class SearchService {
     }
 
     // For Arabic and translit, normalize the full text first, then map positions back
-    const normalize =
-      field === "arabic" ? normalizeArabic : normalizeTranslit;
+    const normalize = field === "arabic" ? normalizeArabic : normalizeTranslit;
 
     const normalizedQuery = normalize(query);
     const normalizedText = normalize(originalText);
