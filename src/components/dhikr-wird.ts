@@ -4,7 +4,7 @@ import { customElement, property } from "lit/decorators.js";
 import { BaseRecitation } from "@/components/base-recitation";
 import { DhikrModel, QuranModel, type WirdModel } from "@/models/recitation.ts";
 import "@/components/dhikr.ts";
-import "@/components/sticky-button.ts";
+import { StickyButton } from "@/components/sticky-button.ts";
 import "@/components/quran.ts";
 import { textStyles } from "@/styles/shared-styles.ts";
 
@@ -14,16 +14,36 @@ export class Wird extends BaseRecitation {
 
   static styles = [...BaseRecitation.styles, textStyles];
 
-  updated(changedProperties: Map<string | symbol, unknown>) {
+  async updated(changedProperties: Map<string | symbol, unknown>) {
     if (changedProperties.has("recitation")) {
+      // Wait for this component's update to complete
+      await this.updateComplete;
+
+      // Wait for all child sticky buttons to finish their updates (setting IDs)
+      await StickyButton.waitForElementIds(this.renderRoot);
+
       this.handleHashChange();
       this.updateToc();
     }
   }
 
+  /**
+   * Converts a wird title to a URL-safe slug.
+   * @example "Wird al Latif" → "wird-al-latif"
+   * @example "Hizb al-Bahr" → "hizb-al-bahr"
+   */
+  private slugify(text: string): string {
+    return text
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/(^-|-$)/g, "");
+  }
+
   renderEntry(entry: DhikrModel | QuranModel, index: number): TemplateResult {
     const entry_num = index + 1;
-    const elementId = `${entry_num}`;
+    const wirdSlug = this.slugify(this.recitation.title);
+    const elementId = `${wirdSlug}-${entry_num}`;
+
     if (entry instanceof DhikrModel) {
       return html`
         <kp-sticky-button

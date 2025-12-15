@@ -18,8 +18,8 @@ import {
 import "@/components/qasida.ts";
 import "@/components/qasida-verse.ts";
 import "@/components/qasida-entry.ts";
-import "@/components/sticky-button.ts";
 import type { TemplateResult } from "lit";
+import { StickyButton } from "@/components/sticky-button.ts";
 import { textStyles } from "@/styles/shared-styles.ts";
 
 @customElement("kp-qasida")
@@ -124,8 +124,14 @@ export class Qasida extends BaseRecitation {
     `,
   ];
 
-  updated(changedProperties: Map<string | symbol, unknown>) {
+  async updated(changedProperties: Map<string | symbol, unknown>) {
     if (changedProperties.has("qasida")) {
+      // Wait for this component's update to complete
+      await this.updateComplete;
+
+      // Wait for all child sticky buttons to finish their updates (setting IDs)
+      await StickyButton.waitForElementIds(this.renderRoot);
+
       this.handleHashChange();
       this.updateToc();
     }
@@ -148,13 +154,14 @@ export class Qasida extends BaseRecitation {
       const chapter = entry;
       const chapterId = prefix ? `${prefix}-${index + 1}` : `${index + 1}`;
       const fullChapterId = `chapter-${chapterId}`;
+      // Note: ID is set on kp-sticky-button via its willUpdate, not on the h1
       return html`
         <kp-sticky-button
           label=${index + 1}
           elementId=${fullChapterId}
           variant="chapter"
         ></kp-sticky-button>
-          <h1 class="chapter-header" id="${fullChapterId}">${chapter.title}</h1>
+          <h1 class="chapter-header">${chapter.title}</h1>
             ${chapter.entries.map((chapterOrVerse, i) =>
               this.renderEntry(chapterOrVerse, i, chapterId),
             )}
@@ -185,13 +192,14 @@ export class Qasida extends BaseRecitation {
           </div>
         `;
       } else {
+        // Note: ID is set on kp-sticky-button via its willUpdate, not on the div
         return html`
           <kp-sticky-button
             label=${index + 1}
             elementId=${verseId}
             variant="verse"
           ></kp-sticky-button>
-          <div class="verses" id="${verseId}">
+          <div class="verses">
             ${verse.entries.map(
               (verseEntry) =>
                 html`<kp-qasida-entry .entry=${verseEntry}></kp-qasida-entry>`,

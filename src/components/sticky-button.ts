@@ -13,6 +13,27 @@ export class StickyButton extends LitElement {
   @property({ type: String, reflect: true }) variant: StickyButtonVariant =
     "verse";
 
+  willUpdate(changedProperties: Map<string, unknown>) {
+    if (changedProperties.has("elementId") && this.elementId) {
+      this.id = this.elementId; // set the expected `id` parameter for HTML
+    }
+  }
+
+  /**
+   * Waits for all sticky buttons within a render root to complete their updates.
+   * This ensures element IDs are set before navigation/scrolling occurs.
+   *
+   * @param renderRoot - The render root to search for sticky buttons (shadow root, document, or element)
+   */
+  static async waitForElementIds(renderRoot: ParentNode): Promise<void> {
+    const stickyButtons = renderRoot.querySelectorAll("kp-sticky-button");
+    await Promise.all(
+      Array.from(stickyButtons).map(
+        (btn) => (btn as LitElement).updateComplete,
+      ),
+    );
+  }
+
   @state() private _tooltipContent = "Copy link";
   @query("sl-tooltip") private _tooltip!: SlTooltip;
 

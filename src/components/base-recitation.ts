@@ -55,11 +55,40 @@ export class BaseRecitation extends LitElement {
     super.disconnectedCallback();
   }
 
+  /**
+   * Extracts the element ID from a URL hash, handling text fragment directive syntax.
+   *
+   * URL format: #elementId:~:text=searchterm
+   * - The :~: delimiter separates element ID from text fragment
+   * - Browser handles text fragment natively; we only scroll to element ID
+   *
+   * @example
+   * "#wird-31" → "wird-31"
+   * "#wird-31:~:text=bismillah" → "wird-31"
+   * "#:~:text=searchterm" → "" (no element ID)
+   */
+  protected extractElementIdFromHash(hash: string): string {
+    if (!hash || hash.length <= 1) return "";
+
+    // Remove leading #
+    const fragment = hash.substring(1);
+
+    // Check for text fragment delimiter :~:
+    const delimiterIndex = fragment.indexOf(":~:");
+    if (delimiterIndex !== -1) {
+      // Return only the element ID portion (before the delimiter)
+      return fragment.substring(0, delimiterIndex);
+    }
+
+    return fragment;
+  }
+
   handleHashChange() {
     queueMicrotask(() => {
       const hash = window.location.hash;
-      if (hash) {
-        const elementId = hash.substring(1);
+      const elementId = this.extractElementIdFromHash(hash);
+
+      if (elementId) {
         const element = this.renderRoot.querySelector(`#${elementId}`);
         if (element) {
           element.scrollIntoView({ behavior: "smooth" });
