@@ -26,22 +26,26 @@ export class DhikrEntryModel implements RecitationEntry {
   translit: string;
   translation: string;
   repeat: number;
+  enableCounter?: boolean;
 
   constructor({
     arabic,
     translit,
     translation,
     repeat = 1,
+    enableCounter,
   }: {
     arabic: string;
     translit: string;
     translation: string;
     repeat?: number;
+    enableCounter?: boolean;
   }) {
     this.arabic = arabic;
     this.translit = translit;
     this.translation = translation;
     this.repeat = repeat;
+    this.enableCounter = enableCounter;
   }
 }
 

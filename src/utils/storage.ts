@@ -5,6 +5,8 @@
  * with automatic fallback to defaults when storage is unavailable (e.g., incognito mode).
  */
 
+import { slugify } from "@/utils/string";
+
 // ============================================================================
 // Lifecycle Registry - Manages setup/cleanup pairs for observers, listeners, timers
 // ============================================================================
@@ -139,6 +141,27 @@ export class LifecycleRegistry<K extends string> {
 export interface StorageSchema {
   settings: SettingsModel;
   theme: ThemeValue;
+  dhikrCounters: Record<string, number>;
+}
+
+/**
+ * Creates a storage key for a dhikr counter based on page location and entry indices.
+ * Key format: "{page-slug}-{wirdEntryIndex}-{dhikrIndex}"
+ *
+ * @param wirdEntryIndex - Position of the DhikrModel within the WirdModel (0-indexed)
+ * @param dhikrIndex - Position of the DhikrEntryModel within the DhikrModel (0-indexed)
+ *
+ * @example
+ * // On page /blessed-occasions/rajab-istighfar with wirdEntryIndex=0, dhikrIndex=0
+ * // Returns: "blessed-occasions-rajab-istighfar-0-0"
+ */
+export function makeDhikrCounterKey(
+  wirdEntryIndex: number,
+  dhikrIndex: number,
+): string {
+  const pathname = window.location.pathname;
+  const pageSlug = slugify(pathname) || "home";
+  return `${pageSlug}-${wirdEntryIndex}-${dhikrIndex}`;
 }
 
 /**
@@ -171,6 +194,7 @@ const storageDefaults: StorageSchema = {
     showTransliteration: true,
   },
   theme: "auto",
+  dhikrCounters: {},
 };
 
 /**

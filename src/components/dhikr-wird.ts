@@ -38,7 +38,9 @@ export class Wird extends BaseRecitation {
 
   renderEntry(entry: DhikrModel | QuranModel, index: number): TemplateResult {
     const entry_num = index + 1;
-    const wirdSlug = this.recitation.title ? slugify(this.recitation.title) : `${index}`;
+    const wirdSlug = this.recitation.title
+      ? slugify(this.recitation.title)
+      : `${index}`;
     const elementId = `${wirdSlug}-${entry_num}`;
 
     if (entry instanceof DhikrModel) {
@@ -48,9 +50,14 @@ export class Wird extends BaseRecitation {
           elementId=${elementId}
           variant="entry"
         ></kp-sticky-button>
-        <kp-dhikr id="${elementId}" .recitation=${entry}></kp-dhikr>
+        <kp-dhikr
+          id="${elementId}"
+          .recitation=${entry}
+          .wirdEntryIndex=${index}
+        ></kp-dhikr>
       `;
-    } else if (entry instanceof QuranModel) {
+    }
+    if (entry instanceof QuranModel) {
       return html`
         <kp-sticky-button
           label=${entry_num}
@@ -60,7 +67,7 @@ export class Wird extends BaseRecitation {
         <kp-mushaf id="${elementId}" .recitation=${entry}></kp-mushaf>
       `;
     }
-    throw new Error(`Unhandled entry type`); // 'entry'
+    throw new Error("Unhandled entry type");
   }
 
   render() {

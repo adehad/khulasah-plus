@@ -9,6 +9,9 @@ import { textStyles } from "@/styles/shared-styles.ts";
 export class Dhikr extends BaseRecitation {
   @property({ type: Object }) recitation!: DhikrModel;
 
+  /** Position of this DhikrModel within the parent WirdModel (0-indexed) */
+  @property({ type: Number }) wirdEntryIndex = 0;
+
   static styles = [textStyles];
 
   render() {
@@ -18,7 +21,15 @@ export class Dhikr extends BaseRecitation {
     return html`
       <div class="dhikr-container">
         ${instruction}
-        ${this.recitation.entries?.map((dhikrEntry) => html`<kp-dhikr-entry .entry=${dhikrEntry}></kp-dhikr-entry>`)}
+        ${this.recitation.entries?.map(
+          (dhikrEntry, dhikrIndex) => html`
+            <kp-dhikr-entry
+              .entry=${dhikrEntry}
+              .dhikrIndex=${dhikrIndex}
+              .wirdEntryIndex=${this.wirdEntryIndex}
+            ></kp-dhikr-entry>
+          `,
+        )}
       </div>
     `;
   }
