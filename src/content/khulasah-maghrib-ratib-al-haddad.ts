@@ -9,7 +9,7 @@ import {
 import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export const wird = [
-  new WirdModel("Wird", [
+  new WirdModel("Ratib Imam Al-Haddad", [
     new DhikrModel("", [
       new DhikrEntryModel({
         arabic: "الفَاتِحَة إِلَى حَضْرَةِ النَّبِيِّ مُحَمَّدٍ صَلَّى ٱللَّهُ عَلَيهِ وَسَلَّم",
