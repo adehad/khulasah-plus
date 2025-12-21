@@ -34,7 +34,7 @@ repos:
     hooks:
     -   id: normalize-arabic-chars
         name: Normalize Arabic Characters
-        entry: bun run scripts/normalize-arabic.ts
+        entry: npx tsx scripts/normalize-arabic.ts
         language: node
         types: [ts]
         files: ^src/content/
