@@ -4,13 +4,14 @@ import { BaseRecitation } from "@/components/base-recitation";
 import type { DhikrModel } from "@/models/recitation.ts";
 import "@/components/dhikr-entry.ts";
 import { textStyles } from "@/styles/shared-styles.ts";
+import { makeDhikrCounterKey } from "@/utils/storage.ts";
 
 @customElement("kp-dhikr")
 export class Dhikr extends BaseRecitation {
   @property({ type: Object }) recitation!: DhikrModel;
 
-  /** Position of this DhikrModel within the parent WirdModel (0-indexed) */
-  @property({ type: Number }) wirdEntryIndex = 0;
+  /** Element ID from the parent sticky button, used for unique storage keys */
+  @property({ type: String }) elementId = "";
 
   static styles = [textStyles];
 
@@ -25,8 +26,7 @@ export class Dhikr extends BaseRecitation {
           (dhikrEntry, dhikrIndex) => html`
             <kp-dhikr-entry
               .entry=${dhikrEntry}
-              .dhikrIndex=${dhikrIndex}
-              .wirdEntryIndex=${this.wirdEntryIndex}
+              .storageKey=${makeDhikrCounterKey(this.elementId, dhikrIndex)}
             ></kp-dhikr-entry>
           `,
         )}

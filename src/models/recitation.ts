@@ -137,6 +137,47 @@ export abstract class BaseRecitationModel {
 }
 
 /**
+ * A collapsible wrapper for grouping recitation content.
+ *
+ * Renders as a button (styled like NavButton) that toggles visibility of its children.
+ * Useful for optional sections or logically grouping content on a single page.
+ *
+ * @extends BaseRecitationModel
+ *
+ * @property {BaseRecitationModel[]} entries - The content to show when expanded.
+ * @property {boolean} startExpanded - Whether to start in expanded state (default: false).
+ *
+ * @example
+ * new ExpandModel({
+ *   title: "Optional Istighfar",
+ *   entries: [new DhikrModel(...)],
+ *   startExpanded: false,
+ * })
+ */
+export class ExpandModel extends BaseRecitationModel {
+  entries: BaseRecitationModel[];
+  startExpanded: boolean;
+
+  constructor({
+    title,
+    entries,
+    startExpanded = false,
+  }: {
+    title: string;
+    entries: BaseRecitationModel[];
+    startExpanded?: boolean;
+  }) {
+    super(title, "");
+    this.entries = entries;
+    this.startExpanded = startExpanded;
+  }
+
+  render(): TemplateResult {
+    return html`<kp-expand .model=${this}></kp-expand>`;
+  }
+}
+
+/**
  * Represents a model for a Dhikr recitation, extending the BaseRecitationModel.
  *
  * @extends BaseRecitationModel
@@ -170,7 +211,7 @@ export class DhikrModel extends BaseRecitationModel {
 export class WirdModel extends BaseRecitationModel {
   constructor(
     title: string,
-    public entries: (DhikrModel | QuranModel)[],
+    public entries: (DhikrModel | QuranModel | ExpandModel)[],
     instruction?: string,
   ) {
     super(title, instruction);
@@ -235,7 +276,7 @@ export class QuranModel extends BaseRecitationModel {
  */
 export class QasidaChapterModel extends BaseRecitationModel {
   number: number;
-  entries: (QasidaVerseModel | QasidaChapterModel)[];
+  entries: (QasidaVerseModel | QasidaChapterModel | ExpandModel)[];
 
   constructor({
     number,
@@ -245,7 +286,7 @@ export class QasidaChapterModel extends BaseRecitationModel {
   }: {
     number: number;
     title: string;
-    entries: (QasidaVerseModel | QasidaChapterModel)[];
+    entries: (QasidaVerseModel | QasidaChapterModel | ExpandModel)[];
     instruction?: string;
   }) {
     super(title, instruction);
@@ -282,7 +323,7 @@ export class QasidaChapterModel extends BaseRecitationModel {
 export class QasidaModel extends BaseRecitationModel {
   constructor(
     public title: string,
-    public entries: (QasidaVerseModel | QasidaChapterModel)[],
+    public entries: (QasidaVerseModel | QasidaChapterModel | ExpandModel)[],
     instruction?: string,
   ) {
     super(title, instruction);

@@ -2,7 +2,6 @@ import { css, html, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
 import type { DhikrEntryModel } from "@/models/recitation.ts";
 import { textStyles } from "@/styles/shared-styles.ts";
-import { makeDhikrCounterKey } from "@/utils/storage.ts";
 import "@/components/dhikr-counter.ts";
 
 const COUNTER_THRESHOLD = 50;
@@ -11,11 +10,8 @@ const COUNTER_THRESHOLD = 50;
 export class DhikrEntry extends LitElement {
   @property({ type: Object }) entry!: DhikrEntryModel;
 
-  /** Position of this dhikr within its parent DhikrModel (0-indexed) */
-  @property({ type: Number }) dhikrIndex = 0;
-
-  /** Position of the parent DhikrModel within the WirdModel (0-indexed) */
-  @property({ type: Number }) wirdEntryIndex = 0;
+  /** Storage key for persisting dhikr counter state, computed by parent component */
+  @property({ type: String }) storageKey = "";
 
   static styles = [
     textStyles,
@@ -46,7 +42,7 @@ export class DhikrEntry extends LitElement {
             ? html`
               <kp-dhikr-counter
                 .target=${this.entry.repeat}
-                .storageKey=${makeDhikrCounterKey(this.wirdEntryIndex, this.dhikrIndex)}
+                .storageKey=${this.storageKey}
               ></kp-dhikr-counter>
             `
             : ""

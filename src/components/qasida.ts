@@ -11,10 +11,12 @@ import { css, html } from "lit";
 import { customElement, property, state } from "lit/decorators.js";
 import { BaseRecitation } from "@/components/base-recitation";
 import {
+  ExpandModel,
   QasidaChapterModel,
   type QasidaModel,
   QasidaVerseModel,
 } from "@/models/recitation.ts";
+import "@/components/expand.ts";
 import "@/components/qasida.ts";
 import "@/components/qasida-verse.ts";
 import "@/components/qasida-entry.ts";
@@ -146,10 +148,23 @@ export class Qasida extends BaseRecitation {
   }
 
   renderEntry(
-    entry: QasidaChapterModel | QasidaVerseModel,
+    entry: QasidaChapterModel | QasidaVerseModel | ExpandModel,
     index: number,
     prefix: string,
   ): TemplateResult {
+    if (entry instanceof ExpandModel) {
+      const expandId = prefix
+        ? `expand-${prefix}-${index + 1}`
+        : `expand-${index + 1}`;
+      return html`
+        <kp-sticky-button
+          label=${index + 1}
+          elementId=${expandId}
+          variant="verse"
+        ></kp-sticky-button>
+        <kp-expand id="${expandId}" .model=${entry}></kp-expand>
+      `;
+    }
     if (entry instanceof QasidaChapterModel) {
       const chapter = entry;
       const chapterId = prefix ? `${prefix}-${index + 1}` : `${index + 1}`;

@@ -145,23 +145,22 @@ export interface StorageSchema {
 }
 
 /**
- * Creates a storage key for a dhikr counter based on page location and entry indices.
- * Key format: "{page-slug}-{wirdEntryIndex}-{dhikrIndex}"
+ * Creates a storage key for a dhikr counter based on page location and element ID.
+ * Key format: "{page-slug}-{elementId}-{dhikrIndex}"
  *
- * @param wirdEntryIndex - Position of the DhikrModel within the WirdModel (0-indexed)
- * @param dhikrIndex - Position of the DhikrEntryModel within the DhikrModel (0-indexed)
+ * @param elementId - The sticky button's elementId (e.g., "rajab-1447-1")
+ * @param dhikrIndex - Position of the DhikrEntryModel within its parent DhikrModel (0-indexed)
  *
  * @example
- * // On page /blessed-occasions/rajab-istighfar with wirdEntryIndex=0, dhikrIndex=0
- * // Returns: "blessed-occasions-rajab-istighfar-0-0"
+ * // Returns: "blessed-occasions-rajab-istighfar-rajab-1447-1-0"
  */
 export function makeDhikrCounterKey(
-  wirdEntryIndex: number,
+  elementId: string,
   dhikrIndex: number,
 ): string {
   const pathname = window.location.pathname;
   const pageSlug = slugify(pathname) || "home";
-  return `${pageSlug}-${wirdEntryIndex}-${dhikrIndex}`;
+  return `${pageSlug}-${elementId}-${dhikrIndex}`;
 }
 
 /**

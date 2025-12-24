@@ -2,8 +2,14 @@ import type { TemplateResult } from "lit";
 import { css, html } from "lit";
 import { customElement, property } from "lit/decorators.js";
 import { BaseRecitation } from "@/components/base-recitation";
-import { DhikrModel, QuranModel, type WirdModel } from "@/models/recitation.ts";
+import {
+  DhikrModel,
+  ExpandModel,
+  QuranModel,
+  type WirdModel,
+} from "@/models/recitation.ts";
 import "@/components/dhikr.ts";
+import "@/components/expand.ts";
 import { StickyButton } from "@/components/sticky-button.ts";
 import "@/components/quran.ts";
 import { textStyles } from "@/styles/shared-styles.ts";
@@ -36,7 +42,10 @@ export class Wird extends BaseRecitation {
     }
   }
 
-  renderEntry(entry: DhikrModel | QuranModel, index: number): TemplateResult {
+  renderEntry(
+    entry: DhikrModel | QuranModel | ExpandModel,
+    index: number,
+  ): TemplateResult {
     const entry_num = index + 1;
     const wirdSlug = this.recitation.title
       ? slugify(this.recitation.title)
@@ -53,7 +62,7 @@ export class Wird extends BaseRecitation {
         <kp-dhikr
           id="${elementId}"
           .recitation=${entry}
-          .wirdEntryIndex=${index}
+          .elementId=${elementId}
         ></kp-dhikr>
       `;
     }
@@ -67,7 +76,19 @@ export class Wird extends BaseRecitation {
         <kp-mushaf id="${elementId}" .recitation=${entry}></kp-mushaf>
       `;
     }
-    throw new Error("Unhandled entry type");
+    if (entry instanceof ExpandModel) {
+      return html`
+        <kp-sticky-button
+          label=${entry_num}
+          elementId=${elementId}
+          variant="entry"
+        ></kp-sticky-button>
+        <kp-expand id="${elementId}" .model=${entry}></kp-expand>
+      `;
+    }
+    throw new Error(
+      `Unhandled entry type: ${(entry as object).constructor.name}`,
+    );
   }
 
   render() {
