@@ -194,13 +194,18 @@ export class ExpandModel extends BaseRecitationModel {
  * @returns {TemplateResult} The rendered kp-dhikr element with the recitation data.
  */
 export class DhikrModel extends BaseRecitationModel {
+  /** Number of times to repeat the entire dhikr (all entries together) */
+  repeat: number;
+
   constructor(
     instruction?: string,
     public entries?: DhikrEntryModel[],
     title?: string,
+    repeat?: number,
   ) {
     super(title ?? "", instruction);
     this.entries = entries ?? [];
+    this.repeat = repeat ?? 1;
   }
 
   render() {

@@ -146,21 +146,24 @@ export interface StorageSchema {
 
 /**
  * Creates a storage key for a dhikr counter based on page location and element ID.
- * Key format: "{page-slug}-{elementId}-{dhikrIndex}"
+ * Key format: "{page-slug}-{elementId}" or "{page-slug}-{elementId}-{suffix}"
  *
  * @param elementId - The sticky button's elementId (e.g., "rajab-1447-1")
- * @param dhikrIndex - Position of the DhikrEntryModel within its parent DhikrModel (0-indexed)
+ * @param suffix - Optional suffix to distinguish multiple counters within the same element.
+ *                 Typically the dhikrIndex (0-indexed position within DhikrModel.entries).
  *
  * @example
- * // Returns: "blessed-occasions-rajab-istighfar-rajab-1447-1-0"
+ * // Without suffix (model-level counter): "blessed-occasions-rajab-istighfar-rajab-1447-1"
+ * // With dhikrIndex suffix: "blessed-occasions-rajab-istighfar-rajab-1447-1-0"
  */
 export function makeDhikrCounterKey(
   elementId: string,
-  dhikrIndex: number,
+  suffix?: number,
 ): string {
   const pathname = window.location.pathname;
   const pageSlug = slugify(pathname) || "home";
-  return `${pageSlug}-${elementId}-${dhikrIndex}`;
+  const base = `${pageSlug}-${elementId}`;
+  return suffix !== undefined ? `${base}-${suffix}` : base;
 }
 
 /**
