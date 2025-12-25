@@ -7,11 +7,10 @@ export function fatihah(
   instruction: string = "",
   basmallah: boolean = true,
 ) {
-  return new QuranModel(
-    "Fatihah",
-    1,
-
-    [
+  return new QuranModel({
+    title: "Fatihah",
+    surah: 1,
+    entries: [
       new QuranEntryModel({
         arabic: "ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ ",
         translit: "Alḥamdulillāhi rabbil ‛ālamīn.",
@@ -54,18 +53,18 @@ export function fatihah(
     ],
     instruction,
     basmallah,
-    repeat,
-  );
+    repeat: repeat,
+  });
 }
 
 export function baqarah_ayat_al_kursi(
   repeat: number = 1,
   instruction: string = "",
 ) {
-  return new QuranModel(
-    "Al-Baqarah",
-    2,
-    [
+  return new QuranModel({
+    title: "Al-Baqarah",
+    surah: 2,
+    entries: [
       new QuranEntryModel({
         arabic:
           "ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡحَيُّ ٱلۡقَيُّومُۚ لَا تَأۡخُذُهُۥ سِنَةٞ وَلَا نَوۡمٞۚ لَّهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَمَا فِي ٱلۡأَرۡضِۗ مَن ذَا ٱلَّذِي يَشۡفَعُ عِندَهُۥٓ إِلَّا بِإِذۡنِهِۦۚ يَعۡلَمُ مَا بَيۡنَ أَيۡدِيهِمۡ وَمَا خَلۡفَهُمۡۖ وَلَا يُحِيطُونَ بِشَيۡءٖ مِّنۡ عِلۡمِهِۦٓ إِلَّا بِمَا شَآءَۚ وَسِعَ كُرۡسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَۖ وَلَا يَـُٔودُهُۥ حِفۡظُهُمَاۚ وَهُوَ ٱلۡعَلِيُّ ٱلۡعَظِيمُ ",
@@ -77,19 +76,19 @@ export function baqarah_ayat_al_kursi(
       }),
     ],
     instruction,
-    false,
-    repeat,
-  );
+    basmallah: false,
+    repeat: repeat,
+  });
 }
 
 export function baqarah_amana_rasul(
   repeat: number = 1,
   instruction: string = "",
 ) {
-  return new QuranModel(
-    "Al-Baqarah",
-    2,
-    [
+  return new QuranModel({
+    title: "Al-Baqarah",
+    surah: 2,
+    entries: [
       new QuranEntryModel({
         arabic:
           "ءَامَنَ ٱلرَّسُولُ بِمَآ أُنزِلَ إِلَيۡهِ مِن رَّبِّهِۦ وَٱلۡمُؤۡمِنُونَۚ كُلٌّ ءَامَنَ بِٱللَّهِ وَمَلَٰٓئِكَتِهِۦ وَكُتُبِهِۦ وَرُسُلِهِۦ لَا نُفَرِّقُ بَيۡنَ أَحَدٖ مِّن رُّسُلِهِۦۚ وَقَالُواْ سَمِعۡنَا وَأَطَعۡنَاۖ غُفۡرَانَكَ رَبَّنَا وَإِلَيۡكَ ٱلۡمَصِيرُ",
@@ -110,9 +109,9 @@ export function baqarah_amana_rasul(
       }),
     ],
     instruction,
-    false,
-    repeat,
-  );
+    basmallah: false,
+    repeat: repeat,
+  });
 }
 
 export function ikhlas(
@@ -120,10 +119,10 @@ export function ikhlas(
   instruction: string = "",
   basmallah: boolean = true,
 ) {
-  return new QuranModel(
-    "Ikhlas",
-    112,
-    [
+  return new QuranModel({
+    title: "Ikhlas",
+    surah: 112,
+    entries: [
       new QuranEntryModel({
         arabic: "قُلۡ هُوَ ٱللَّهُ أَحَدٌ ",
         translit: "Qul HuwaLlāhu aḥad.",
@@ -151,8 +150,8 @@ export function ikhlas(
     ],
     instruction,
     basmallah,
-    repeat,
-  );
+    repeat: repeat,
+  });
 }
 
 export function falaq(
@@ -160,10 +159,10 @@ export function falaq(
   instruction: string = "",
   basmallah: boolean = true,
 ) {
-  return new QuranModel(
-    "Falaq",
-    113,
-    [
+  return new QuranModel({
+    title: "Falaq",
+    surah: 113,
+    entries: [
       new QuranEntryModel({
         arabic: "قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ",
         translit: "Qul aʿūdhu bi rabb il-falaq.",
@@ -197,8 +196,8 @@ export function falaq(
     ],
     instruction,
     basmallah,
-    repeat,
-  );
+    repeat: repeat,
+  });
 }
 
 export function nas(
@@ -206,10 +205,10 @@ export function nas(
   instruction: string = "",
   basmallah: boolean = true,
 ) {
-  return new QuranModel(
-    "Nas",
-    114,
-    [
+  return new QuranModel({
+    title: "Nas",
+    surah: 114,
+    entries: [
       new QuranEntryModel({
         arabic: "قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ ",
         translit: "Qul aʿūdhu bi rabb in-nās.",
@@ -249,8 +248,8 @@ export function nas(
     ],
     instruction,
     basmallah,
-    repeat,
-  );
+    repeat: repeat,
+  });
 }
 
 export function yasin(
@@ -258,14 +257,14 @@ export function yasin(
   instruction: string = "",
   basmallah: boolean = true,
 ) {
-  return new QuranModel(
-    yasin_source.title,
-    yasin_source.surah,
-    yasin_source.entries,
-    instruction,
-    basmallah,
-    repeat,
-  );
+  return new QuranModel({
+    title: yasin_source.title,
+    surah: yasin_source.surah,
+    entries: yasin_source.entries,
+    instruction: instruction,
+    basmallah: basmallah,
+    repeat: repeat,
+  });
 }
 
 export function waqiah(
@@ -273,12 +272,12 @@ export function waqiah(
   instruction: string = "",
   basmallah: boolean = true,
 ) {
-  return new QuranModel(
-    waqiah_source.title,
-    waqiah_source.surah,
-    waqiah_source.entries,
-    instruction,
-    basmallah,
-    repeat,
-  );
+  return new QuranModel({
+    title: waqiah_source.title,
+    surah: waqiah_source.surah,
+    entries: waqiah_source.entries,
+    instruction: instruction,
+    basmallah: basmallah,
+    repeat: repeat,
+  });
 }

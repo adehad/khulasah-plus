@@ -196,16 +196,22 @@ export class ExpandModel extends BaseRecitationModel {
 export class DhikrModel extends BaseRecitationModel {
   /** Number of times to repeat the entire dhikr (all entries together) */
   repeat: number;
+  entries: DhikrEntryModel[];
 
-  constructor(
-    instruction?: string,
-    public entries?: DhikrEntryModel[],
-    title?: string,
-    repeat?: number,
-  ) {
+  constructor({
+    entries,
+    instruction,
+    title,
+    repeat = 1,
+  }: {
+    entries?: DhikrEntryModel[];
+    instruction?: string;
+    title?: string;
+    repeat?: number;
+  }) {
     super(title ?? "", instruction);
     this.entries = entries ?? [];
-    this.repeat = repeat ?? 1;
+    this.repeat = repeat;
   }
 
   render() {
@@ -214,12 +220,19 @@ export class DhikrModel extends BaseRecitationModel {
 }
 
 export class WirdModel extends BaseRecitationModel {
-  constructor(
-    title: string,
-    public entries: (DhikrModel | QuranModel | ExpandModel)[],
-    instruction?: string,
-  ) {
+  entries: (DhikrModel | QuranModel | ExpandModel)[];
+
+  constructor({
+    title,
+    entries,
+    instruction,
+  }: {
+    title: string;
+    entries: (DhikrModel | QuranModel | ExpandModel)[];
+    instruction?: string;
+  }) {
     super(title, instruction);
+    this.entries = entries;
   }
 
   render() {
@@ -252,20 +265,31 @@ export class WirdModel extends BaseRecitationModel {
  * @returns {TemplateResult} The rendered HTML template for the recitation.
  */
 export class QuranModel extends BaseRecitationModel {
+  surah: number;
+  entries: QuranEntryModel[];
   basmallah: boolean;
   repeat: number;
 
-  constructor(
-    public title: string,
-    public surah: number,
-    public entries: QuranEntryModel[],
-    instruction?: string,
-    basmallah?: boolean,
-    repeat?: number,
-  ) {
+  constructor({
+    title,
+    surah,
+    entries,
+    instruction,
+    basmallah = false,
+    repeat = 1,
+  }: {
+    title: string;
+    surah: number;
+    entries: QuranEntryModel[];
+    instruction?: string;
+    basmallah?: boolean;
+    repeat?: number;
+  }) {
     super(title, instruction);
-    this.basmallah = basmallah ?? false;
-    this.repeat = repeat ?? 1;
+    this.surah = surah;
+    this.entries = entries;
+    this.basmallah = basmallah;
+    this.repeat = repeat;
   }
 
   render() {
@@ -326,12 +350,19 @@ export class QasidaChapterModel extends BaseRecitationModel {
  * @returns {TemplateResult} The rendered HTML template for the recitation.
  */
 export class QasidaModel extends BaseRecitationModel {
-  constructor(
-    public title: string,
-    public entries: (QasidaVerseModel | QasidaChapterModel | ExpandModel)[],
-    instruction?: string,
-  ) {
+  entries: (QasidaVerseModel | QasidaChapterModel | ExpandModel)[];
+
+  constructor({
+    title,
+    entries,
+    instruction,
+  }: {
+    title: string;
+    entries: (QasidaVerseModel | QasidaChapterModel | ExpandModel)[];
+    instruction?: string;
+  }) {
     super(title, instruction);
+    this.entries = entries;
   }
 
   render() {
