@@ -1,6 +1,54 @@
-import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
+import {
+  DhikrEntryModel,
+  DhikrModel,
+  ExpandModel,
+  WirdModel,
+} from "@/models/recitation";
 
 export default [
+  new ExpandModel({
+    title: "Rajab 1447",
+    entries: [
+      new WirdModel({
+        title: "Rajab 1447",
+        entries: [
+          new DhikrModel({
+            instruction:
+              "Habib Umar bin Hafiz (may Allah protect him and benefit us by him) encourages us to seek Allah’s forgiveness frequently during the month of Rajab, and he recommends reciting this prayer 3,000 times during the month:",
+            entries: [
+              new DhikrEntryModel({
+                arabic: "اللَّهُمَّ إِنَّا نَسْتَغْفِرُكَ وَنَتُوبُ إِلَيْكَ",
+                translit: "Allāhumma innā nastaghfiruka wa natūbu ilayka, ",
+                translation:
+                  "O Allah, we seek Your forgiveness and turn back to You in repentance.",
+              }),
+              new DhikrEntryModel({
+                arabic: " اللَّهُمَّ أَنْتَ الْغِيَاثُ لَنَا وَلِلْمُسْلِمِين",
+                translit: "Allāhumma antal-ghiyāthu lanā wa lil-muslimīn,",
+                translation:
+                  " O Allah, You are the only one who comes to our aid and the aid of every Muslim,",
+              }),
+              new DhikrEntryModel({
+                arabic: "فَصَلِّ وَسَلِّمْ عَلَى عَبْدِكَ وَحَبِيبِكَ سَيِّدِنَا مُحَمَّدٍ وَآلِهِ وَصَحْبِهِ",
+                translit:
+                  "fa-ṣalli wa sallim ʿalā ʿabdika wa ḥabībika sayyidinā Muḥammadin wa ālihi wa ṣaḥbihi.",
+                translation:
+                  "so bestow prayers and peace upon Your servant and beloved, our master Muhammad, and upon his Family and Companions.",
+              }),
+              new DhikrEntryModel({
+                arabic: ". وَاغْفِرْ لَنَا وَأَغِثْنَا وَالْمُسْلِمِينَ، يَا أَكْرَمَ الْأَكْرَمِين",
+                translit:
+                  "Wa-ghfir lanā wa aghithnā wal-muslimīn, yā akramal-akramīn.",
+                translation:
+                  "Forgive us, and come to our aid and the aid of all Muslims. You are the most generous of all.",
+              }),
+            ],
+            repeat: 3000,
+          }),
+        ],
+      }),
+    ],
+  }),
   new WirdModel({
     title: "Post-Isha Rajab Istighfar",
     entries: [
