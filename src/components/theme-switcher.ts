@@ -1,5 +1,6 @@
 import { css, html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
+import { circleButtonStyles } from "@/styles/shared-styles";
 import { LifecycleRegistry, storage, type ThemeValue } from "@/utils/storage";
 
 @customElement("theme-switcher")
@@ -15,45 +16,23 @@ export class ThemeSwitcher extends LitElement {
   // Registry for lifecycle management (setup/cleanup pairs)
   private _lifecycle = new LifecycleRegistry<"mediaQuery">();
 
-  static styles = css`
-    .theme-toggle-button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 2.5rem;
-      height: 2.5rem;
-      border-radius: 50%;
-      border: 1px solid transparent;
-      background-color: transparent;
-      cursor: pointer;
-      transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-    }
+  static styles = [
+    circleButtonStyles,
+    css`
+      /* Hide all icons by default */
+      .circle-btn .icon {
+        display: none;
+      }
 
-    .theme-toggle-button:hover {
-      background-color: var(--sl-color-primary-100);
-      border-color: var(--sl-color-primary-300);
-    }
-
-    .theme-toggle-button svg {
-      width: 1.5rem;
-      height: 1.5rem;
-      fill: currentColor;
-      color: var(--sl-color-primary-500);
-    }
-
-    /* Hide all icons by default */
-    .theme-toggle-button .icon {
-      display: none;
-    }
-
-    /* Show the correct icon based on the theme */
-    :host(.light) .icon-sun,
-    :host(.dark) .icon-moon,
-    :host(.auto[data-prefers-dark]) .icon-moon-with-sun,
-    :host(.auto:not([data-prefers-dark])) .icon-sun-with-moon {
-      display: block;
-    }
-  `;
+      /* Show the correct icon based on the theme */
+      :host(.light) .icon-sun,
+      :host(.dark) .icon-moon,
+      :host(.auto[data-prefers-dark]) .icon-moon-with-sun,
+      :host(.auto:not([data-prefers-dark])) .icon-sun-with-moon {
+        display: block;
+      }
+    `,
+  ];
 
   connectedCallback() {
     super.connectedCallback();
@@ -130,7 +109,7 @@ export class ThemeSwitcher extends LitElement {
   render() {
     return html`
       <button
-        class="theme-toggle-button"
+        class="circle-btn"
         @click=${this.toggleTheme}
         aria-label="Toggle theme"
       >
