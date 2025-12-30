@@ -1,3 +1,6 @@
+ci:
+  skip: [normalize-arabic-chars]
+
 repos:
   - repo: https://github.com/biomejs/pre-commit
     rev: "v2.3.5"
@@ -34,7 +37,7 @@ repos:
     hooks:
     -   id: normalize-arabic-chars
         name: Normalize Arabic Characters
-        entry: npx tsx scripts/normalize-arabic.ts
+        entry: bun scripts/normalize-arabic.ts
         language: node
         types: [ts]
         files: ^src/content/
