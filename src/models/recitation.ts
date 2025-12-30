@@ -2,6 +2,20 @@ import type { TemplateResult } from "lit";
 import { html } from "lit";
 
 /**
+ * Configuration for audio playback associated with a recitation.
+ */
+export interface AudioConfig {
+  /** URL to the audio file (typically OPUS format) */
+  url: string;
+  /** Optional title for the audio (falls back to filename if not provided) */
+  title?: string;
+  /** Start playback from this time in seconds */
+  startTime?: number;
+  /** Pause playback when reaching this time in seconds */
+  endTime?: number;
+}
+
+/**
  * Represents a single recitation entry containing the original Arabic text,
  * its transliteration, and its translation.
  *
@@ -221,18 +235,22 @@ export class DhikrModel extends BaseRecitationModel {
 
 export class WirdModel extends BaseRecitationModel {
   entries: (DhikrModel | QuranModel | ExpandModel)[];
+  audio?: AudioConfig;
 
   constructor({
     title,
     entries,
     instruction,
+    audio,
   }: {
     title: string;
     entries: (DhikrModel | QuranModel | ExpandModel)[];
     instruction?: string;
+    audio?: AudioConfig;
   }) {
     super(title, instruction);
     this.entries = entries;
+    this.audio = audio;
   }
 
   render() {
@@ -351,18 +369,22 @@ export class QasidaChapterModel extends BaseRecitationModel {
  */
 export class QasidaModel extends BaseRecitationModel {
   entries: (QasidaVerseModel | QasidaChapterModel | ExpandModel)[];
+  audio?: AudioConfig;
 
   constructor({
     title,
     entries,
     instruction,
+    audio,
   }: {
     title: string;
     entries: (QasidaVerseModel | QasidaChapterModel | ExpandModel)[];
     instruction?: string;
+    audio?: AudioConfig;
   }) {
     super(title, instruction);
     this.entries = entries;
+    this.audio = audio;
   }
 
   render() {

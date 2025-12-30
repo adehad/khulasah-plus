@@ -1,18 +1,22 @@
 import type { TemplateResult } from "lit";
 import { css, html } from "lit";
 import { customElement, property } from "lit/decorators.js";
+
+import "@shoelace-style/shoelace/dist/components/icon-button/icon-button.js";
+
 import { BaseRecitation } from "@/components/base-recitation";
+import "@/components/dhikr.ts";
+import "@/components/expand.ts";
+import "@/components/quran.ts";
+import { StickyButton } from "@/components/sticky-button.ts";
 import {
   DhikrModel,
   ExpandModel,
   QuranModel,
   type WirdModel,
 } from "@/models/recitation.ts";
-import "@/components/dhikr.ts";
-import "@/components/expand.ts";
-import { StickyButton } from "@/components/sticky-button.ts";
-import "@/components/quran.ts";
-import { textStyles } from "@/styles/shared-styles.ts";
+import { audioPlayerService } from "@/services/audio-player-service";
+import { circleButtonStyles, textStyles } from "@/styles/shared-styles.ts";
 import { slugify } from "@/utils/string.ts";
 
 @customElement("kp-wird")
@@ -22,10 +26,18 @@ export class Wird extends BaseRecitation {
   static styles = [
     ...BaseRecitation.styles,
     textStyles,
+    circleButtonStyles,
     css`
-    .wird-title {
-      text-align: center;
-    }
+      .wird-title {
+        text-align: center;
+      }
+
+      .wird-title-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+      }
     `,
   ];
 
@@ -91,17 +103,42 @@ export class Wird extends BaseRecitation {
     );
   }
 
+  private _handlePlayAudio(): void {
+    if (this.recitation.audio) {
+      audioPlayerService.play(this.recitation.audio);
+    }
+  }
+
   render() {
     const instruction = this.recitation.instruction
       ? html`<p class="instruction">${this.recitation.instruction}</p>`
       : "";
     const titleId = this.recitation.title ? slugify(this.recitation.title) : "";
-    const title = this.recitation.title
-      ? html`<h1 id="${titleId}" class="wird-title">${this.recitation.title}</h1>`
+    const hasAudio = !!this.recitation.audio?.url;
+
+    const titleContent = this.recitation.title
+      ? html`
+          <div class="wird-title-row">
+            <h1 id="${titleId}" class="wird-title">${this.recitation.title}</h1>
+            ${
+              hasAudio
+                ? html`
+                  <sl-icon-button
+                    class="circle-btn"
+                    name="play-circle"
+                    label="Play audio"
+                    @click=${this._handlePlayAudio}
+                  ></sl-icon-button>
+                `
+                : ""
+            }
+          </div>
+        `
       : "";
+
     return html`
       <div class="wird-container">
-        ${title}
+        ${titleContent}
         ${instruction}
         ${this.recitation.entries.map((entry, i) => this.renderEntry(entry, i))}
       </div>

@@ -21,10 +21,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@mediabunny/mp3-encoder": "^1.27.2",
     "@shoelace-style/shoelace": "^2.20.1",
     "@thepassle/app-tools": "^0.9.13",
     "flexsearch": "^0.8.212",
+    "idb": "^8.0.3",
     "lit": "^3.3.1",
+    "mediabunny": "^1.27.2",
     "urlpattern-polyfill": "^10.1.0",
     "workbox-build": "^7.3.0",
     "workbox-core": "^7.3.0",

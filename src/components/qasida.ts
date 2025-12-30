@@ -7,22 +7,26 @@ For the sticky elements to work correctly we need:
 all at the same level.
 
 */
+import type { TemplateResult } from "lit";
 import { css, html } from "lit";
 import { customElement, property, state } from "lit/decorators.js";
+
+import "@shoelace-style/shoelace/dist/components/icon-button/icon-button.js";
+
 import { BaseRecitation } from "@/components/base-recitation";
+import "@/components/expand.ts";
+import "@/components/qasida-entry.ts";
+import "@/components/qasida-verse.ts";
+import "@/components/qasida.ts";
+import { StickyButton } from "@/components/sticky-button.ts";
 import {
   ExpandModel,
   QasidaChapterModel,
   type QasidaModel,
   QasidaVerseModel,
 } from "@/models/recitation.ts";
-import "@/components/expand.ts";
-import "@/components/qasida.ts";
-import "@/components/qasida-verse.ts";
-import "@/components/qasida-entry.ts";
-import type { TemplateResult } from "lit";
-import { StickyButton } from "@/components/sticky-button.ts";
-import { textStyles } from "@/styles/shared-styles.ts";
+import { audioPlayerService } from "@/services/audio-player-service";
+import { circleButtonStyles, textStyles } from "@/styles/shared-styles.ts";
 
 @customElement("kp-qasida")
 export class Qasida extends BaseRecitation {
@@ -34,6 +38,7 @@ export class Qasida extends BaseRecitation {
   static styles = [
     ...BaseRecitation.styles,
     textStyles,
+    circleButtonStyles,
     css`
     .qasida-container {
         width: 100%;
@@ -109,6 +114,19 @@ export class Qasida extends BaseRecitation {
 
       .chorus {
         background-color: hsla(0, 0%, 78%, 50%);
+      }
+
+      .qasida-title-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .qasida-title {
+        text-align: center;
+        margin: 0;
       }
     `,
     css`
@@ -229,10 +247,39 @@ export class Qasida extends BaseRecitation {
     throw new Error(`Unhandled entry type`); // 'entry'
   }
 
+  private _handlePlayAudio(): void {
+    if (this.qasida.audio) {
+      audioPlayerService.play(this.qasida.audio);
+    }
+  }
+
   render() {
+    const hasAudio = !!this.qasida.audio?.url;
+
+    const headerContent = this.qasida.title
+      ? html`
+          <div class="qasida-title-row">
+            <h1 class="qasida-title">${this.qasida.title}</h1>
+            ${
+              hasAudio
+                ? html`
+                  <sl-icon-button
+                    class="circle-btn"
+                    name="play-circle"
+                    label="Play audio"
+                    @click=${this._handlePlayAudio}
+                  ></sl-icon-button>
+                `
+                : ""
+            }
+          </div>
+        `
+      : "";
+
     return html`
       <div class="qasida-container">
-      ${this.qasida.entries.map((entry, i) => this.renderEntry(entry, i, ""))}
+        ${headerContent}
+        ${this.qasida.entries.map((entry, i) => this.renderEntry(entry, i, ""))}
       </div>
     `;
   }

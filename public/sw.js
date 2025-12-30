@@ -12,6 +12,31 @@ self.addEventListener("activate", (event) => {
 });
 // End Service Worker Take over
 
+// Cache audio files from CDN with streaming support
+const AUDIO_CDN_PATTERNS = [/\.opus$/i, /\.mp3$/i, /\.ogg$/i];
+
+workbox.routing.registerRoute(
+  ({ url, request }) => {
+    // Check if this is an audio request
+    if (request.destination === "audio") return true;
+    // Check URL patterns for audio files
+    return AUDIO_CDN_PATTERNS.some((pattern) => pattern.test(url.href));
+  },
+  new workbox.strategies.CacheFirst({
+    cacheName: "audio-cache",
+    plugins: [
+      new workbox.cacheableResponse.CacheableResponsePlugin({
+        statuses: [0, 200, 206], // Include partial content for range requests
+      }),
+      new workbox.rangeRequests.RangeRequestsPlugin(),
+      new workbox.expiration.ExpirationPlugin({
+        maxEntries: 50,
+        maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
+      }),
+    ],
+  }),
+);
+
 // Cache shoelace assets
 workbox.routing.registerRoute(
   ({ url }) =>

@@ -11,6 +11,10 @@ import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 export const wird = [
   new WirdModel({
     title: "Ratib Imam Al-Haddad",
+    audio: {
+      url: "https://cdn.jsdelivr.net/gh/adehad/khulasah-plus-cdn@main/audio/khulasah-maghrib-ratib-al-haddad.opus",
+      title: "Ratib al Imam Al Haddad",
+    },
     entries: [
       new DhikrModel({
         entries: [

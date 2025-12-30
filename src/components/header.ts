@@ -12,6 +12,8 @@ import "@shoelace-style/shoelace/dist/components/menu/menu.js";
 import "@shoelace-style/shoelace/dist/components/menu-item/menu-item.js";
 import "@shoelace-style/shoelace/dist/components/icon/icon.js";
 import "@shoelace-style/shoelace/dist/components/icon-button/icon-button.js";
+
+import "@/components/audio-player-bar";
 import "@/components/theme-switcher";
 
 @customElement("app-header")
@@ -30,6 +32,7 @@ export class AppHeader extends LitElement {
   static styles = css`
     header {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       background: var(--app-color-primary);
@@ -39,9 +42,15 @@ export class AppHeader extends LitElement {
       position: fixed;
       left: env(titlebar-area-x, 0);
       top: env(titlebar-area-y, 0);
-      height: env(titlebar-area-height, 30px);
+      min-height: env(titlebar-area-height, 30px);
       width: env(titlebar-area-width, 100%);
       -webkit-app-region: drag;
+      z-index: 100;
+    }
+
+    kp-audio-player {
+      width: 100%;
+      flex-shrink: 0;
     }
 
     header h1 {
@@ -257,6 +266,7 @@ export class AppHeader extends LitElement {
           <slot name="actions"></slot>
           <theme-switcher></theme-switcher>
         </div>
+        <kp-audio-player></kp-audio-player>
       </header>
     `;
   }
