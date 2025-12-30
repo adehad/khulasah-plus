@@ -1,6 +1,7 @@
 {
   "name": "khulasah-plus",
   "version": "0.0.1",
+  "packageManager": "bun@1.2.23",
   "description": "A starter kit for building PWAs!",
   "main": "index.js",
   "scripts": {
