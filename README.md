@@ -1,35 +1,27 @@
-# PWA Starter
+# Khulasah+
 
-[**Straight to Full Documentation**](https://docs.pwabuilder.com/#/starter/quick-start)
+An open-source Progressive Web App for the Cream of Remembrance (Khulasah), a Ba'Alawi tariqa compiled collection of daily adhkar (remembrances) and awrad (litanies).
 
-The PWABuilder pwa-starter is our opinionated, best practices, production tested starter that we use to build all of our PWAs, including [PWABuilder itself](https://blog.pwabuilder.com/posts/introducing-the-brand-new-pwa-builder/)! The pwa-starter is a starter codebase, just like create-react-app or the Angular CLI can generate, that uses the PWABuilder team&#39;s preferred front-end tech stack. We also have a CLI tool to allow you to create a PWA template from the command line.
+## Developer
 
-## Jump Right In
+```bash
+bun install
+bun run dev
+bun run build:prod
+```
 
-Install the PWABuilder CLI:
+---
 
-`npm i -g @pwabuilder/cli`
+This project was bootstrapped from [PWABuilder's pwa-starter](https://docs.pwabuilder.com/#/starter/quick-start).
 
-And create a new app with this command:
+### Requirements
 
-`pwa create`
+- [Bun](https://bun.sh)
+- [Pre-commit](https://pre-commit.com)
 
-And start your app locally with:
+### Project Structure
 
-`pwa start`
-
-And that's it! Good luck on your Progressive Web App adventure!
-
-## More Info
-
-[![Get started with the pwa-starter!](https://img.youtube.com/vi/u3pWKpmic_k/0.jpg)](https://www.youtube.com/watch?v=u3pWKpmic_k)
-
-With it you get an app that:
-- Has no build system to set up and no boilerplate code to add. Everything is included out of the box.
-- Has a Service Worker system using [Workbox](https://developers.google.com/web/tools/workbox/)
-- Scores close to 100 on Lighthouse out of the box
-- Has everything needed to be installable in the browser
-- Is ready to be package for the app stores using [PWABuilder](https://www.pwabuilder.com)
-- Uses the [Azure Static Web Apps CLI](https://azure.github.io/static-web-apps-cli) which enables emulating your production environment locally, and gets you ready for deploying to Azure Static Web Apps!
-
-and all with just a few button clicks 😊.
+- `src/content/` -  adhkar, awrad, qasaid, etc.
+- `src/content/shared/` - Shared references (Quranic references taken from Hafs published by the [King Fahd Complex for the Printing of the Holy Qur'an](https://qurancomplex.gov.sa/))
+- `src/pages/` - Page components and routing configuration
+- `scripts/` - Build and content processing scripts
