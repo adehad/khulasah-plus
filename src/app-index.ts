@@ -1,28 +1,26 @@
 import { css, html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
 
-// import "@/pages/app-home";
-import "@/components/header";
-import "@/styles/global.css";
 import { resolveRouterPath, router } from "@/router";
-import "@/components/settings-menu";
-import "./components/border-frame.ts"; // <-- New line inserted here
 import { LifecycleRegistry, storage } from "@/utils/storage";
 
 /* We have to import all components here for stuff to work */
+import "@/components/border-frame.ts";
 import "@/components/dhikr.ts";
+import "@/components/header";
+import "@/components/nav-button.ts";
 import "@/components/quran.ts";
+import "@/components/search-button";
 import "@/components/settings-menu";
 import "@/components/theme-switcher";
-import "@shoelace-style/shoelace/dist/components/card/card.js";
+import "@/styles/global.css";
+/* shoelace specific components used */
 import "@shoelace-style/shoelace/dist/components/button/button.js";
-import "@/components/nav-button.ts";
+import "@shoelace-style/shoelace/dist/components/card/card.js";
 import "@shoelace-style/shoelace/dist/components/dialog/dialog.js";
 import "@shoelace-style/shoelace/dist/components/icon/icon.js";
 import "@shoelace-style/shoelace/dist/components/range/range.js";
 import "@shoelace-style/shoelace/dist/components/switch/switch.js";
-import "@/components/search-button";
-
 /* end magic imports */
 
 import type { SettingsChangeEvent } from "@/components/settings-menu";
@@ -40,6 +38,12 @@ export class AppIndex extends LitElement {
 
   static styles = [
     css`
+      :host {
+        display: flex;
+        flex-direction: column;
+        height: 100dvh;
+      }
+
       main {
         display: block;
         position: absolute;

@@ -1,23 +1,19 @@
 import { css, html, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
-import { LifecycleRegistry } from "@/utils/storage";
 
 @customElement("border-frame")
 export class BorderFrame extends LitElement {
   @property({ type: Boolean })
   putBorderToBackground = false;
 
-  private _lifecycle = new LifecycleRegistry<"resize">();
-
   static styles = css`
     :host {
       overflow: hidden;
       display: block;
       position: relative;
-      inset: 0;
       width: 100%;
-      height: calc(var(--inner-height, 100dvh) - env(titlebar-area-height, 30px) - 12px);
-      top: calc(env(titlebar-area-height, 30px) + 12px); /* Adjust for header height */
+      flex: 1;
+      min-height: 0; /* Allow flex item to shrink below content size */
       border-style: solid;
       border-width: 33px;
       border-image-source: var(--border-img); /* In order to ensure the asset has its path resolved, we need to pass in the source after resolution */
@@ -44,34 +40,6 @@ export class BorderFrame extends LitElement {
       }
     }
   `;
-
-  connectedCallback() {
-    super.connectedCallback();
-    this.updateInnerHeight();
-    this._lifecycle.register("resize", {
-      setup: () => window.addEventListener("resize", this.updateInnerHeight),
-      cleanup: () =>
-        window.removeEventListener("resize", this.updateInnerHeight),
-    });
-  }
-
-  firstUpdated() {
-    this.updateInnerHeight();
-  }
-
-  disconnectedCallback() {
-    this._lifecycle.cleanupAll();
-    super.disconnectedCallback();
-  }
-
-  private updateInnerHeight = () => {
-    /* While I would like to use `height: stretch;` it didn't change nicely with
-      window resize for some reason, this method worked more reliably.
-
-      Why this? Mobile address bars affect the height but are not reflected in 100vh.
-    */
-    this.style.setProperty("--inner-height", `${window.innerHeight}px`);
-  };
 
   render() {
     return html`<slot></slot>`; // Renders whatever is placed inside <border-frame>

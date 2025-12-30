@@ -1,3 +1,11 @@
+/**
+ * Application header component with dynamic breadcrumbs, TOC dropdown, and audio player.
+ *
+ * Uses position: sticky so it naturally takes space in the document flow,
+ * allowing the header to grow when content wraps (e.g., expanded audio player)
+ * without requiring JavaScript height calculations.
+ */
+
 import type { Router as RouterEvent } from "@thepassle/app-tools/router.js";
 import { css, html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
@@ -18,12 +26,21 @@ import "@/components/theme-switcher";
 
 @customElement("app-header")
 export class AppHeader extends LitElement {
+  /** Breadcrumb trail derived from current route path for navigation context */
   @state()
   private _breadcrumbs: Array<{ text: string; href: string }> = [];
 
+  /**
+   * Table of contents items populated by page content via "toc-updated" events.
+   * Enables quick in-page navigation for long content pages.
+   */
   @state()
   private _tocItems: Array<{ text: string; id: string }> = [];
 
+  /**
+   * Tracks previous pathname to distinguish full route changes from hash changes.
+   * Hash changes (same path, different anchor) should preserve TOC items.
+   */
   @state()
   private _previousPath: string | undefined;
 
@@ -37,20 +54,32 @@ export class AppHeader extends LitElement {
       align-items: center;
       background: var(--app-color-primary);
       padding: 12px;
-      padding-top: 4px;
-
-      position: fixed;
-      left: env(titlebar-area-x, 0);
-      top: env(titlebar-area-y, 0);
+      padding-top: calc(4px + env(titlebar-area-y, 0));
+      padding-bottom: 0px;
       min-height: env(titlebar-area-height, 30px);
-      width: env(titlebar-area-width, 100%);
       -webkit-app-region: drag;
       z-index: 100;
+      position: sticky;
+      top: 0;
+      flex-shrink: 0;
+    }
+
+    .header-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      -webkit-app-region: no-drag;
     }
 
     kp-audio-player {
-      width: 100%;
       flex-shrink: 0;
+    }
+
+    /* When audio player is expanded, it takes full width on its own row */
+    kp-audio-player:not([collapsed]) {
+      width: 100%;
+      order: 1;
     }
 
     header h1 {
@@ -71,11 +100,23 @@ export class AppHeader extends LitElement {
       gap: 8px;
     }
 
-    .theme-switcher-container {
-      display: flex;
-      gap: 10px;
-      padding-right: 15px;
-      -webkit-app-region: no-drag; /* Allow interaction with the theme switcher */
+    /* Center items when header wraps on narrow screens */
+    @media (max-width: 420px) {
+      header {
+        justify-content: center;
+        gap: 0.5rem;
+      }
+
+      sl-breadcrumb {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .header-actions {
+        width: 100dvw;
+        justify-content: center;
+      }
     }
 
     sl-breadcrumb {
@@ -115,11 +156,21 @@ export class AppHeader extends LitElement {
     super.disconnectedCallback();
   }
 
+  /**
+   * Receives TOC items from page content components via custom event.
+   * Pages dispatch "toc-updated" with their section headers for
+   * in-page navigation from the header dropdown.
+   */
   private handleTocUpdate = (event: Event) => {
     const customEvent = event as CustomEvent;
     this._tocItems = customEvent.detail.tocItems;
   };
 
+  /**
+   * Handles route changes to update breadcrumbs and clear TOC.
+   * Distinguishes between full route changes (clear TOC, rebuild breadcrumbs)
+   * and hash-only changes (keep TOC for in-page navigation).
+   */
   private handleRouteChange = (event: Event) => {
     const routeEvent = event as unknown as RouterEvent;
     const newUrl = routeEvent.context?.url;
@@ -262,11 +313,11 @@ export class AppHeader extends LitElement {
           }
         </sl-breadcrumb>
 
-        <div class="theme-switcher-container">
+        <div class="header-actions">
           <slot name="actions"></slot>
           <theme-switcher></theme-switcher>
+          <kp-audio-player></kp-audio-player>
         </div>
-        <kp-audio-player></kp-audio-player>
       </header>
     `;
   }

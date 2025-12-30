@@ -1,3 +1,14 @@
+/**
+ * Settings dialog component for display preferences and audio cache management.
+ *
+ * Display settings control text visibility and font sizing for Arabic,
+ * transliteration, and translation content. Changes are persisted to
+ * localStorage and propagate to app-index via custom events.
+ *
+ * Audio cache management provides visibility into IndexedDB-stored offline
+ * audio files with sortable columns, individual deletion, and bulk clear.
+ */
+
 import type SlRange from "@shoelace-style/shoelace/dist/components/range/range.js";
 import type SlSwitch from "@shoelace-style/shoelace/dist/components/switch/switch.js";
 import { css, html, LitElement } from "lit";
@@ -16,6 +27,10 @@ import { type SettingsModel, storage } from "@/utils/storage";
 
 export type SettingName = keyof SettingsModel;
 
+/**
+ * Custom event dispatched when a setting value changes.
+ * Bubbles up to app-index which translates settings to CSS custom properties.
+ */
 export class SettingsChangeEvent extends CustomEvent<{
   name: SettingName;
   // biome-ignore lint/suspicious/noExplicitAny: setting can be any JSON-serializable
@@ -36,6 +51,11 @@ interface TextSetting {
   max: number;
 }
 
+/**
+ * Configuration for the three text display settings.
+ * Arabic has a larger max font size since it's typically the primary display.
+ * Transliteration/translation have smaller ranges as supplementary text.
+ */
 const TEXT_SETTINGS: readonly TextSetting[] = [
   { key: "arabic", label: "Arabic", min: 1, max: 5 },
   { key: "transliteration", label: "Transliteration", min: 0.5, max: 2 },
@@ -47,27 +67,45 @@ type SortDirection = "asc" | "desc";
 
 @customElement("settings-menu")
 export class SettingsMenu extends LitElement {
+  /** Controls sl-dialog visibility */
   @state()
   private isDialogOpen = false;
 
+  /**
+   * Cached audio files loaded from IndexedDB when dialog opens.
+   * Reloaded after each delete/clear operation to reflect changes.
+   */
   @state()
   private _cachedAudioFiles: CachedAudio[] = [];
 
+  /**
+   * Pre-computed total size displayed in cache summary.
+   * Calculated separately from file list using memory-efficient cursor.
+   */
   @state()
   private _totalCacheSize = 0;
 
+  /** Shows loading state while fetching cache data from IndexedDB */
   @state()
   private _isLoadingCache = false;
 
+  /** Displays error message if IndexedDB operations fail */
   @state()
   private _cacheError: string | null = null;
 
+  /** Current sort column for cache table - defaults to date (most recent first) */
   @state()
   private _sortColumn: SortColumn = "cachedAt";
 
+  /** Sort direction - date defaults desc (newest first), others default asc */
   @state()
   private _sortDirection: SortDirection = "desc";
 
+  /**
+   * Display setting properties mirror localStorage values.
+   * Properties (vs state) allow parent binding, though currently
+   * only used internally. Loaded from storage on connectedCallback.
+   */
   @property({ type: Number })
   arabicFontSize = 2;
 
@@ -221,11 +259,21 @@ export class SettingsMenu extends LitElement {
     this.showTransliteration = settings.showTransliteration;
   }
 
+  /**
+   * Persists setting to storage and notifies parent components.
+   * Storage handles localStorage serialization; the event allows
+   * app-index to immediately update CSS custom properties.
+   */
   saveSetting<K extends SettingName>(name: K, value: SettingsModel[K]) {
     storage.update("settings", (s) => ({ ...s, [name]: value }));
     this.dispatchEvent(new SettingsChangeEvent({ name, value }));
   }
 
+  /**
+   * Notifies app-index when dialog opens/closes.
+   * Pushes border-frame to background during dialog display
+   * so the decorative border doesn't overlap the modal.
+   */
   emitBorderStateChange(isBackground: boolean) {
     const event = new CustomEvent("border-state-change", {
       bubbles: true,
@@ -242,6 +290,10 @@ export class SettingsMenu extends LitElement {
     }
   }
 
+  /**
+   * Loads cached audio metadata from IndexedDB for display in the cache table.
+   * Fetches both the file list (for display) and total size (for summary).
+   */
   private async _loadCachedAudio(): Promise<void> {
     this._isLoadingCache = true;
     this._cacheError = null;
@@ -291,6 +343,11 @@ export class SettingsMenu extends LitElement {
     return new Date(timestamp).toLocaleDateString();
   }
 
+  /**
+   * Toggles sort direction or changes sort column.
+   * Date column defaults to descending (newest first);
+   * other columns default to ascending (A-Z, smallest first).
+   */
   private _toggleSort(column: SortColumn): void {
     if (this._sortColumn === column) {
       this._sortDirection = this._sortDirection === "asc" ? "desc" : "asc";
@@ -300,6 +357,10 @@ export class SettingsMenu extends LitElement {
     }
   }
 
+  /**
+   * Returns cached files sorted by current column and direction.
+   * Creates a new array to avoid mutating the source data.
+   */
   private get _sortedCacheFiles(): CachedAudio[] {
     return [...this._cachedAudioFiles].sort((a, b) => {
       const dir = this._sortDirection === "asc" ? 1 : -1;
@@ -390,15 +451,30 @@ export class SettingsMenu extends LitElement {
     `;
   }
 
+  /**
+   * Handles keyboard activation of sortable column headers.
+   * Enables Enter/Space to toggle sort for accessibility.
+   */
+  private _handleHeaderKeydown(e: KeyboardEvent, column: SortColumn): void {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      this._toggleSort(column);
+    }
+  }
+
   private _renderCacheTableHeader(column: SortColumn, label: string) {
     const isActive = this._sortColumn === column;
     return html`
       <span
         class="cache-header ${isActive ? "active" : ""}"
+        tabindex="0"
+        role="button"
+        aria-label="Sort by ${label}"
         @click=${() => this._toggleSort(column)}
+        @keydown=${(e: KeyboardEvent) => this._handleHeaderKeydown(e, column)}
       >
         ${label}
-        <span>${this._getSortIndicator(column)}</span>
+        <span aria-hidden="true">${this._getSortIndicator(column)}</span>
       </span>
     `;
   }

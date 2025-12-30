@@ -172,54 +172,39 @@ export class AudioPlayerBar extends LitElement {
       transition: width 0.3s ease, padding 0.3s ease, margin 0.3s ease;
     }
 
-    .close-btn,
-    .title,
-    .progress-container,
-    .actions,
-    sl-dropdown {
-      transition: opacity 0.2s ease, max-width 0.3s ease;
-      overflow: hidden;
-    }
-
-    /* Collapsed state */
-    .player-collapsed {
-      flex-direction: row;
-      padding: 0.25rem 0.5rem;
-      gap: 0.5rem;
-      width: fit-content;
-      margin-left: auto;
-    }
-
-    .player-collapsed .close-btn,
-    .player-collapsed .title,
-    .player-collapsed .actions,
-    .player-collapsed sl-dropdown {
-      opacity: 0;
-      max-width: 0;
-      pointer-events: none;
-    }
-
-    .player-collapsed .progress-container {
-      opacity: 0;
-      max-height: 0;
-      padding: 0;
-      pointer-events: none;
-    }
-
-    .player-collapsed .play-pause-btn {
-      margin-right: 15px;
-    }
-
-    .player-collapsed .time {
-      font-size: var(--sl-font-size-small);
-    }
-
     .collapse-btn {
       transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
       transform: rotateZ(-90deg);
     }
 
-    .collapse-btn.collapsed {
+    /* Collapsed state */
+    :host([collapsed]) .player-container {
+      flex-direction: row;
+      padding: 0.25rem 0.5rem;
+      gap: 0.5rem;
+      width: fit-content;
+      margin: 0;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    :host([collapsed]) .player-row {
+      gap: 0.5rem;
+    }
+
+    :host([collapsed]) .close-btn,
+    :host([collapsed]) .title,
+    :host([collapsed]) .actions,
+    :host([collapsed]) sl-dropdown,
+    :host([collapsed]) .progress-container {
+      display: none;
+    }
+
+    :host([collapsed]) .time {
+      font-size: var(--sl-font-size-small);
+    }
+
+    :host([collapsed]) .collapse-btn {
       transform: rotateZ(90deg);
     }
 
@@ -323,6 +308,7 @@ export class AudioPlayerBar extends LitElement {
    */
   private _toggleCollapse(): void {
     this._isCollapsed = !this._isCollapsed;
+    this.toggleAttribute("collapsed", this._isCollapsed);
   }
 
   /**
@@ -333,7 +319,10 @@ export class AudioPlayerBar extends LitElement {
   private _handleSeek(e: MouseEvent): void {
     const target = e.currentTarget as HTMLElement;
     const rect = target.getBoundingClientRect();
-    const percent = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+    const percent = Math.max(
+      0,
+      Math.min(1, (e.clientX - rect.left) / rect.width),
+    );
 
     const config = this._state.config;
     const startTime = config?.startTime ?? 0;
@@ -445,12 +434,8 @@ export class AudioPlayerBar extends LitElement {
     const progress = duration > 0 ? (current / duration) * 100 : 0;
     const title = this._getTitle();
 
-    const containerClasses = this._isCollapsed
-      ? "player-container player-collapsed"
-      : "player-container";
-
     return html`
-      <div class="${containerClasses}">
+      <div class="player-container">
         <div class="player-row">
           <sl-icon-button
             class="close-btn"
@@ -460,7 +445,7 @@ export class AudioPlayerBar extends LitElement {
           ></sl-icon-button>
 
           <sl-icon-button
-            class="collapse-btn ${this._isCollapsed ? "collapsed" : ""}"
+            class="collapse-btn"
             name="chevron-double-down"
             label=${this._isCollapsed ? "Expand player" : "Collapse player"}
             @click=${this._toggleCollapse}
@@ -477,7 +462,7 @@ export class AudioPlayerBar extends LitElement {
               ? html`<sl-spinner></sl-spinner>`
               : html`
                 <sl-icon-button
-                class="play-pause-btn ${this._isCollapsed ? "collapsed" : ""}"
+                  class="play-pause-btn"
                   name=${this._state.isPlaying ? "pause-fill" : "play-fill"}
                   label=${this._state.isPlaying ? "Pause" : "Play"}
                   @click=${this._handlePlayPause}
