@@ -27,6 +27,24 @@ export class SettingsChangeEvent extends CustomEvent<{
   }
 }
 
+type TextSettingKey = "arabic" | "translation" | "transliteration";
+
+interface TextSetting {
+  key: TextSettingKey;
+  label: string;
+  min: number;
+  max: number;
+}
+
+const TEXT_SETTINGS: readonly TextSetting[] = [
+  { key: "arabic", label: "Arabic", min: 1, max: 5 },
+  { key: "transliteration", label: "Transliteration", min: 0.5, max: 2 },
+  { key: "translation", label: "Translation", min: 0.5, max: 2 },
+] as const;
+
+type SortColumn = "title" | "size" | "cachedAt";
+type SortDirection = "asc" | "desc";
+
 @customElement("settings-menu")
 export class SettingsMenu extends LitElement {
   @state()
@@ -40,6 +58,15 @@ export class SettingsMenu extends LitElement {
 
   @state()
   private _isLoadingCache = false;
+
+  @state()
+  private _cacheError: string | null = null;
+
+  @state()
+  private _sortColumn: SortColumn = "cachedAt";
+
+  @state()
+  private _sortDirection: SortDirection = "desc";
 
   @property({ type: Number })
   arabicFontSize = 2;
@@ -62,20 +89,51 @@ export class SettingsMenu extends LitElement {
   static styles = [
     circleButtonStyles,
     css`
+      sl-dialog::part(panel) {
+        width: 90dvw;
+      }
+
+      @media (min-width: 768px) {
+        sl-dialog::part(panel) {
+          width: 60dvw;
+          max-width: 600px;
+        }
+      }
+
       .settings-container {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 1.5rem;
       }
 
-      .setting {
-        display: flex;
+      /* Display Settings Grid */
+      .display-settings {
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        gap: 0.75rem 1rem;
         align-items: center;
-        justify-content: space-between;
       }
 
+      .settings-header {
+        font-size: 0.7rem;
+        color: var(--sl-color-neutral-500);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        text-align: center;
+      }
+
+      .setting-label {
+        font-weight: 500;
+      }
+
+      sl-range[disabled] {
+        opacity: 0.4;
+        pointer-events: none;
+      }
+
+      /* Audio Cache Section */
       .audio-cache-section h3 {
-        margin: 0 0 0.5rem 0;
+        margin: 0 0 0.75rem 0;
         font-size: 1rem;
       }
 
@@ -86,48 +144,64 @@ export class SettingsMenu extends LitElement {
       }
 
       .cache-summary {
-        margin: 0 0 0.5rem 0;
+        margin: 0 0 0.75rem 0;
         font-size: 0.875rem;
         color: var(--sl-color-neutral-600);
       }
 
-      .cached-files-list {
-        list-style: none;
-        padding: 0;
-        margin: 0 0 1rem 0;
+      /* Cache Table Grid */
+      .cache-table {
+        display: grid;
+        grid-template-columns: 1fr auto auto auto;
+        gap: 0.5rem 1rem;
+        align-items: center;
         max-height: 200px;
         overflow-y: auto;
+        margin-bottom: 1rem;
       }
 
-      .cached-file {
+      .cache-header {
+        font-weight: 600;
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--sl-color-neutral-600);
+        cursor: pointer;
+        user-select: none;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        padding: 0.5rem;
-        border-bottom: 1px solid var(--sl-color-neutral-200);
+        gap: 0.25rem;
       }
 
-      .cached-file:last-child {
-        border-bottom: none;
+      .cache-header:hover {
+        color: var(--sl-color-primary-600);
       }
 
-      .file-info {
-        display: flex;
-        flex-direction: column;
-        min-width: 0;
-        flex: 1;
+      .cache-header.active {
+        color: var(--sl-color-primary-700);
       }
 
-      .file-title {
-        font-weight: 500;
+      .cache-cell {
+        font-size: 0.875rem;
+      }
+
+      .cache-cell.title {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        font-weight: 500;
       }
 
-      .file-meta {
-        font-size: 0.75rem;
-        color: var(--sl-color-neutral-500);
+      .cache-cell.size,
+      .cache-cell.date {
+        color: var(--sl-color-neutral-600);
+        white-space: nowrap;
+      }
+
+      .cache-error {
+        color: var(--sl-color-danger-600);
+        margin: 0;
+        font-size: 0.875rem;
       }
     `,
   ];
@@ -170,11 +244,13 @@ export class SettingsMenu extends LitElement {
 
   private async _loadCachedAudio(): Promise<void> {
     this._isLoadingCache = true;
+    this._cacheError = null;
     try {
       this._cachedAudioFiles = await audioCache.getAll();
       this._totalCacheSize = await audioCache.getTotalSize();
     } catch (err) {
       console.error("Failed to load cached audio:", err);
+      this._cacheError = "Failed to load cached audio files.";
       this._cachedAudioFiles = [];
       this._totalCacheSize = 0;
     } finally {
@@ -215,91 +291,136 @@ export class SettingsMenu extends LitElement {
     return new Date(timestamp).toLocaleDateString();
   }
 
+  private _toggleSort(column: SortColumn): void {
+    if (this._sortColumn === column) {
+      this._sortDirection = this._sortDirection === "asc" ? "desc" : "asc";
+    } else {
+      this._sortColumn = column;
+      this._sortDirection = column === "cachedAt" ? "desc" : "asc";
+    }
+  }
+
+  private get _sortedCacheFiles(): CachedAudio[] {
+    return [...this._cachedAudioFiles].sort((a, b) => {
+      const dir = this._sortDirection === "asc" ? 1 : -1;
+      if (this._sortColumn === "title")
+        return dir * a.title.localeCompare(b.title);
+      if (this._sortColumn === "size") return dir * (a.size - b.size);
+      return dir * (a.cachedAt - b.cachedAt);
+    });
+  }
+
+  private _getSortIndicator(column: SortColumn): string {
+    if (this._sortColumn !== column) return "";
+    return this._sortDirection === "asc" ? "▲" : "▼";
+  }
+
+  private _getShowValue(key: TextSettingKey): boolean {
+    const map = {
+      arabic: this.showArabic,
+      translation: this.showTranslation,
+      transliteration: this.showTransliteration,
+    };
+    return map[key];
+  }
+
+  private _getFontSizeValue(key: TextSettingKey): number {
+    const map = {
+      arabic: this.arabicFontSize,
+      translation: this.translationFontSize,
+      transliteration: this.transliterationFontSize,
+    };
+    return map[key];
+  }
+
+  private _getShowSettingName(key: TextSettingKey): SettingName {
+    const map: Record<TextSettingKey, SettingName> = {
+      arabic: "showArabic",
+      translation: "showTranslation",
+      transliteration: "showTransliteration",
+    };
+    return map[key];
+  }
+
+  private _getFontSizeSettingName(key: TextSettingKey): SettingName {
+    const map: Record<TextSettingKey, SettingName> = {
+      arabic: "arabicFontSize",
+      translation: "translationFontSize",
+      transliteration: "transliterationFontSize",
+    };
+    return map[key];
+  }
+
   private _renderDisplaySettings() {
     return html`
-      <div class="setting">
-        <label for="arabic-font-size">Arabic Font Size</label>
-        <sl-range
-          id="arabic-font-size"
-          min="1"
-          max="5"
-          step="0.1"
-          value=${this.arabicFontSize}
-          @sl-change=${(e: Event) => this.saveSetting("arabicFontSize", (e.target as SlRange).value)}
-        ></sl-range>
-      </div>
-      <div class="setting">
-        <label for="translation-font-size">Translation Font Size</label>
-        <sl-range
-          id="translation-font-size"
-          min="0.5"
-          max="2"
-          step="0.1"
-          value=${this.translationFontSize}
-          @sl-change=${(e: Event) => this.saveSetting("translationFontSize", (e.target as SlRange).value)}
-        ></sl-range>
-      </div>
-      <div class="setting">
-        <label for="transliteration-font-size">Transliteration Font Size</label>
-        <sl-range
-          id="transliteration-font-size"
-          min="0.5"
-          max="2"
-          step="0.1"
-          value=${this.transliterationFontSize}
-          @sl-change=${(e: Event) => this.saveSetting("transliterationFontSize", (e.target as SlRange).value)}
-        ></sl-range>
-      </div>
-      <div class="setting">
-        <label for="show-arabic">Show Arabic</label>
-        <sl-switch
-          id="show-arabic"
-          ?checked=${this.showArabic}
-          @sl-change=${(e: Event) => this.saveSetting("showArabic", (e.target as SlSwitch).checked)}
-        ></sl-switch>
-      </div>
-      <div class="setting">
-        <label for="show-translation">Show Translation</label>
-        <sl-switch
-          id="show-translation"
-          ?checked=${this.showTranslation}
-          @sl-change=${(e: Event) => this.saveSetting("showTranslation", (e.target as SlSwitch).checked)}
-        ></sl-switch>
-      </div>
-      <div class="setting">
-        <label for="show-transliteration">Show Transliteration</label>
-        <sl-switch
-          id="show-transliteration"
-          ?checked=${this.showTransliteration}
-          @sl-change=${(e: Event) => this.saveSetting("showTransliteration", (e.target as SlSwitch).checked)}
-        ></sl-switch>
+      <div class="display-settings">
+        <!-- Header row -->
+        <span></span>
+        <span class="settings-header">Show</span>
+        <span class="settings-header">Font Size</span>
+
+        <!-- Setting rows -->
+        ${TEXT_SETTINGS.map((setting) => {
+          const isVisible = this._getShowValue(setting.key);
+          return html`
+            <span class="setting-label">${setting.label}</span>
+            <sl-switch
+              ?checked=${isVisible}
+              @sl-change=${(e: Event) =>
+                this.saveSetting(
+                  this._getShowSettingName(setting.key),
+                  (e.target as SlSwitch).checked,
+                )}
+            ></sl-switch>
+            <sl-range
+              min=${setting.min}
+              max=${setting.max}
+              step="0.1"
+              value=${this._getFontSizeValue(setting.key)}
+              ?disabled=${!isVisible}
+              @sl-change=${(e: Event) =>
+                this.saveSetting(
+                  this._getFontSizeSettingName(setting.key),
+                  (e.target as SlRange).value,
+                )}
+            ></sl-range>
+          `;
+        })}
       </div>
     `;
   }
 
-  private _renderCachedFileItem(file: CachedAudio) {
+  private _renderCacheTableHeader(column: SortColumn, label: string) {
+    const isActive = this._sortColumn === column;
     return html`
-      <li class="cached-file">
-        <span class="file-info">
-          <span class="file-title">${file.title}</span>
-          <span class="file-meta">
-            ${this._formatBytes(file.size)} - ${this._formatDate(file.cachedAt)}
-          </span>
-        </span>
-        <sl-button
-          size="small"
-          variant="danger"
-          @click=${() => this._deleteAudioFile(file.url)}
-        >
-          Delete
-        </sl-button>
-      </li>
+      <span
+        class="cache-header ${isActive ? "active" : ""}"
+        @click=${() => this._toggleSort(column)}
+      >
+        ${label}
+        <span>${this._getSortIndicator(column)}</span>
+      </span>
+    `;
+  }
+
+  private _renderCacheTableRow(file: CachedAudio) {
+    return html`
+      <span class="cache-cell title">${file.title}</span>
+      <span class="cache-cell size">${this._formatBytes(file.size)}</span>
+      <span class="cache-cell date">${this._formatDate(file.cachedAt)}</span>
+      <sl-button size="small" variant="danger" @click=${() => this._deleteAudioFile(file.url)}>
+        Delete
+      </sl-button>
     `;
   }
 
   private _renderAudioCacheManager() {
     if (this._isLoadingCache) {
       return html`<p>Loading...</p>`;
+    }
+
+    if (this._cacheError) {
+      return html`<p class="cache-error">${this._cacheError}</p>`;
     }
 
     if (this._cachedAudioFiles.length === 0) {
@@ -311,9 +432,16 @@ export class SettingsMenu extends LitElement {
         ${this._cachedAudioFiles.length} file(s) cached
         (${this._formatBytes(this._totalCacheSize)} total)
       </p>
-      <ul class="cached-files-list">
-        ${this._cachedAudioFiles.map((file) => this._renderCachedFileItem(file))}
-      </ul>
+      <div class="cache-table">
+        <!-- Header row -->
+        ${this._renderCacheTableHeader("title", "Name")}
+        ${this._renderCacheTableHeader("size", "Size")}
+        ${this._renderCacheTableHeader("cachedAt", "Date")}
+        <span></span>
+
+        <!-- Data rows -->
+        ${this._sortedCacheFiles.map((file) => this._renderCacheTableRow(file))}
+      </div>
       <sl-button variant="danger" outline @click=${this._clearAllAudio}>
         Clear All Cached Audio
       </sl-button>
