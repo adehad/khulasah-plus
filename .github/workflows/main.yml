@@ -33,6 +33,12 @@ jobs:
       - name: Install Dependencies
         run: bun install
 
+      # Run only normalize-arabic-chars hook (skipped in pre-commit.ci because it requires bun)
+      - name: Run normalize-arabic-chars
+        uses: pre-commit/action@v3.0.1
+        with:
+          extra_args: normalize-arabic-chars --all-files
+
       - name: Run Path Rewriting Script
         run: bun run scripts/rewrite-paths.ts ${{ github.event.repository.name }}
 
