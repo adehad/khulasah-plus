@@ -3,16 +3,17 @@
  *
  * Display settings control text visibility and font sizing for Arabic,
  * transliteration, and translation content. Changes are persisted to
- * localStorage and propagate to app-index via custom events.
+ * localStorage and propagate via Lit Context to update CSS custom properties.
  *
  * Audio cache management provides visibility into IndexedDB-stored offline
  * audio files with sortable columns, individual deletion, and bulk clear.
  */
 
+import { consume } from "@lit/context";
 import type SlRange from "@shoelace-style/shoelace/dist/components/range/range.js";
 import type SlSwitch from "@shoelace-style/shoelace/dist/components/switch/switch.js";
 import { css, html, LitElement } from "lit";
-import { customElement, property, state } from "lit/decorators.js";
+import { customElement, state } from "lit/decorators.js";
 
 import "@shoelace-style/shoelace/dist/components/button/button.js";
 import "@shoelace-style/shoelace/dist/components/dialog/dialog.js";
@@ -21,26 +22,16 @@ import "@shoelace-style/shoelace/dist/components/icon/icon.js";
 import "@shoelace-style/shoelace/dist/components/range/range.js";
 import "@shoelace-style/shoelace/dist/components/switch/switch.js";
 
+import {
+  type SettingsUpdater,
+  settingsContext,
+  settingsUpdaterContext,
+} from "@/context/settings-context";
 import { audioCache, type CachedAudio } from "@/services/audio-cache";
 import { circleButtonStyles } from "@/styles/shared-styles";
-import { type SettingsModel, storage } from "@/utils/storage";
+import type { SettingsModel } from "@/utils/storage";
 
-export type SettingName = keyof SettingsModel;
-
-/**
- * Custom event dispatched when a setting value changes.
- * Bubbles up to app-index which translates settings to CSS custom properties.
- */
-export class SettingsChangeEvent extends CustomEvent<{
-  name: SettingName;
-  // biome-ignore lint/suspicious/noExplicitAny: setting can be any JSON-serializable
-  value: any;
-}> {
-  // biome-ignore lint/suspicious/noExplicitAny: setting can be any JSON-serializable
-  constructor(detail: { name: SettingName; value: any }) {
-    super("settings-change", { detail, bubbles: true, composed: true });
-  }
-}
+type SettingName = keyof SettingsModel;
 
 type TextSettingKey = "arabic" | "translation" | "transliteration";
 
@@ -102,27 +93,20 @@ export class SettingsMenu extends LitElement {
   private _sortDirection: SortDirection = "desc";
 
   /**
-   * Display setting properties mirror localStorage values.
-   * Properties (vs state) allow parent binding, though currently
-   * only used internally. Loaded from storage on connectedCallback.
+   * Reactive settings from app-index context. The `subscribe: true` option
+   * triggers re-renders when the provider updates _settings, enabling
+   * real-time UI updates without manual event handling.
    */
-  @property({ type: Number })
-  arabicFontSize = 2;
+  @consume({ context: settingsContext, subscribe: true })
+  private _settings!: SettingsModel;
 
-  @property({ type: Number })
-  translationFontSize = 1;
-
-  @property({ type: Number })
-  transliterationFontSize = 1;
-
-  @property({ type: Boolean })
-  showArabic = true;
-
-  @property({ type: Boolean })
-  showTranslation = true;
-
-  @property({ type: Boolean })
-  showTransliteration = true;
+  /**
+   * Settings updater from app-index context. Using context for the updater
+   * (rather than dispatching events) provides type safety and removes the
+   * need for manual event listener wiring in parent components.
+   */
+  @consume({ context: settingsUpdaterContext })
+  private _updateSetting!: SettingsUpdater;
 
   static styles = [
     circleButtonStyles,
@@ -244,31 +228,6 @@ export class SettingsMenu extends LitElement {
     `,
   ];
 
-  connectedCallback() {
-    super.connectedCallback();
-    this.loadSettings();
-  }
-
-  loadSettings() {
-    const settings = storage.get("settings");
-    this.arabicFontSize = settings.arabicFontSize;
-    this.translationFontSize = settings.translationFontSize;
-    this.transliterationFontSize = settings.transliterationFontSize;
-    this.showArabic = settings.showArabic;
-    this.showTranslation = settings.showTranslation;
-    this.showTransliteration = settings.showTransliteration;
-  }
-
-  /**
-   * Persists setting to storage and notifies parent components.
-   * Storage handles localStorage serialization; the event allows
-   * app-index to immediately update CSS custom properties.
-   */
-  saveSetting<K extends SettingName>(name: K, value: SettingsModel[K]) {
-    storage.update("settings", (s) => ({ ...s, [name]: value }));
-    this.dispatchEvent(new SettingsChangeEvent({ name, value }));
-  }
-
   openDialog(toOpen: boolean) {
     this.isDialogOpen = toOpen;
     if (toOpen) {
@@ -364,18 +323,18 @@ export class SettingsMenu extends LitElement {
 
   private _getShowValue(key: TextSettingKey): boolean {
     const map = {
-      arabic: this.showArabic,
-      translation: this.showTranslation,
-      transliteration: this.showTransliteration,
+      arabic: this._settings.showArabic,
+      translation: this._settings.showTranslation,
+      transliteration: this._settings.showTransliteration,
     };
     return map[key];
   }
 
   private _getFontSizeValue(key: TextSettingKey): number {
     const map = {
-      arabic: this.arabicFontSize,
-      translation: this.translationFontSize,
-      transliteration: this.transliterationFontSize,
+      arabic: this._settings.arabicFontSize,
+      translation: this._settings.translationFontSize,
+      transliteration: this._settings.transliterationFontSize,
     };
     return map[key];
   }
@@ -414,7 +373,7 @@ export class SettingsMenu extends LitElement {
             <sl-switch
               ?checked=${isVisible}
               @sl-change=${(e: Event) =>
-                this.saveSetting(
+                this._updateSetting(
                   this._getShowSettingName(setting.key),
                   (e.target as SlSwitch).checked,
                 )}
@@ -426,7 +385,7 @@ export class SettingsMenu extends LitElement {
               value=${this._getFontSizeValue(setting.key)}
               ?disabled=${!isVisible}
               @sl-change=${(e: Event) =>
-                this.saveSetting(
+                this._updateSetting(
                   this._getFontSizeSettingName(setting.key),
                   (e.target as SlRange).value,
                 )}
