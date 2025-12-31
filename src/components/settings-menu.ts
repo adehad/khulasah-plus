@@ -269,20 +269,6 @@ export class SettingsMenu extends LitElement {
     this.dispatchEvent(new SettingsChangeEvent({ name, value }));
   }
 
-  /**
-   * Notifies app-index when dialog opens/closes.
-   * Pushes border-frame to background during dialog display
-   * so the decorative border doesn't overlap the modal.
-   */
-  emitBorderStateChange(isBackground: boolean) {
-    const event = new CustomEvent("border-state-change", {
-      bubbles: true,
-      composed: true,
-      detail: { background: isBackground },
-    });
-    this.dispatchEvent(event);
-  }
-
   openDialog(toOpen: boolean) {
     this.isDialogOpen = toOpen;
     if (toOpen) {
@@ -532,11 +518,7 @@ export class SettingsMenu extends LitElement {
 
       <sl-dialog
         ?open=${this.isDialogOpen}
-        @sl-show=${() => this.emitBorderStateChange(true)}
-        @sl-hide=${() => {
-          this.openDialog(false);
-          this.emitBorderStateChange(false);
-        }}
+        @sl-hide=${() => this.openDialog(false)}
         label="Settings"
       >
         <div class="settings-container">

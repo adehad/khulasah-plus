@@ -1,3 +1,8 @@
+/**
+ * Root application component that orchestrates theme management, routing, and layout.
+ *
+ */
+
 import { css, html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
 
@@ -5,7 +10,6 @@ import { resolveRouterPath, router } from "@/router";
 import { LifecycleRegistry, storage } from "@/utils/storage";
 
 /* We have to import all components here for stuff to work */
-import "@/components/border-frame.ts";
 import "@/components/dhikr.ts";
 import "@/components/header";
 import "@/components/nav-button.ts";
@@ -27,11 +31,12 @@ import type { SettingsChangeEvent } from "@/components/settings-menu";
 
 @customElement("app-index")
 export class AppIndex extends LitElement {
+  /**
+   * Tracks dark theme state for conditional styling (e.g., border inversion).
+   * Updated by MutationObserver watching document.documentElement class changes.
+   */
   @state()
   private isDarkTheme = false;
-
-  @state()
-  private putBorderToBackground = false;
 
   // Registry for lifecycle management (setup/cleanup pairs)
   private _lifecycle = new LifecycleRegistry<"themeObserver">();
@@ -46,14 +51,20 @@ export class AppIndex extends LitElement {
 
       main {
         display: block;
-        position: absolute;
-        inset: 0;
-        height: 100%; /* Fill the height of border-frame */
+        flex: 1;
+        min-height: 0; /* Allow flex item to shrink below content size */
         overflow-y: auto; /* Enable vertical scrolling for main content */
         box-sizing: border-box; /* Include padding in the element's total width and height */
-        padding: 5px; /* Add padding to account for the border-frame's border-width */
-        pointer-events: auto; /* Ensure main content is interactive */
+
+
+        /* Decorative border - scales with viewport, capped at 33px */
+        border-style: solid;
+        border-width: clamp(15px, 5vw, 33px);
+        border-image-source: url("/assets/images/ornamental-border-simplified.png");
+        border-image-slice: 20% 20%;
+        border-image-repeat: round;
       }
+
     `,
     css`
       @media print {
@@ -61,19 +72,18 @@ export class AppIndex extends LitElement {
           display: none !important;
         }
 
-        main {
-          position: static !important;
+        :host {
+          /* allow the border to span all pages */
+          display: block !important;
           height: auto !important;
+        }
+
+        main {
           overflow-y: visible !important;
-          padding: 0 !important;
         }
       }
     `,
   ];
-
-  handleBorderStateChange(e: CustomEvent) {
-    this.putBorderToBackground = e.detail.background;
-  }
 
   firstUpdated() {
     this.handleProtocol();
@@ -127,6 +137,11 @@ export class AppIndex extends LitElement {
     }
   }
 
+  /**
+   * Sets up route change listener with View Transitions API support.
+   * Uses startViewTransition when available for smooth page transitions,
+   * falls back to immediate update for browsers without support.
+   */
   private setupRouter() {
     router.addEventListener("route-changed", () => {
       if ("startViewTransition" in document) {
@@ -188,6 +203,10 @@ export class AppIndex extends LitElement {
     darkTheme.media = isDark ? "all" : "not all";
   }
 
+  /**
+   * Loads persisted settings from storage and applies them as CSS custom properties.
+   * Called once on initial load to restore user preferences.
+   */
   loadSettings() {
     const settings = storage.get("settings");
     for (const [key, value] of Object.entries(settings)) {
@@ -195,6 +214,17 @@ export class AppIndex extends LitElement {
     }
   }
 
+  /**
+   * Translates setting names/values into CSS custom properties on :root.
+   *
+   * Naming conventions:
+   * - Boolean "showX" → "--show-x: block|none" (controls visibility)
+   * - Number "xFontSize" → "--x-font-size: Nrem" (controls text sizing)
+   * - Other values → "--name: value" (passthrough)
+   *
+   * This indirection allows components to use CSS variables for reactive styling
+   * without needing JavaScript property binding.
+   */
   // biome-ignore lint/suspicious/noExplicitAny: TODO to make interface more restricted.
   updateStyles(name: string, value: any) {
     const root = document.documentElement;
@@ -214,26 +244,18 @@ export class AppIndex extends LitElement {
   }
 
   render() {
-    const invertStyle = this.isDarkTheme ? "filter: invert(1);" : "";
-    const borderImageURL = resolveRouterPath(
-      "assets/images/ornamental-border-simplified.png",
-    );
+    const invertStyle = this.isDarkTheme ? "filter: invert(1)" : "";
     return html`
-      <app-header @border-state-change=${this.handleBorderStateChange}>
+      <app-header>
         <kp-search-button slot="actions"></kp-search-button>
         <settings-menu
           slot="actions"
           @settings-change=${(e: SettingsChangeEvent) => this.updateStyles(e.detail.name, e.detail.value)}
         ></settings-menu>
       </app-header>
-      <border-frame
-          style="${invertStyle} --border-img: url(${borderImageURL})"
-          ?dark-theme=${this.isDarkTheme}
-          ?put-border-to-background=${this.putBorderToBackground}>
-        <main style=${invertStyle}>
-          ${router.render()}
-        </main>
-      </border-frame>
+      <main style=${invertStyle}>
+        ${router.render()}
+      </main>
     `;
   }
 }
