@@ -3,11 +3,23 @@
  *
  */
 
+import { provide } from "@lit/context";
 import { css, html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
 
+import {
+  applySettingsToCSS,
+  applySingleSettingToCSS,
+  type SettingsUpdater,
+  settingsContext,
+  settingsUpdaterContext,
+} from "@/context/settings-context";
 import { resolveRouterPath, router } from "@/router";
-import { LifecycleRegistry, storage } from "@/utils/storage";
+import {
+  LifecycleRegistry,
+  type SettingsModel,
+  storage,
+} from "@/utils/storage";
 
 /* We have to import all components here for stuff to work */
 import "@/components/dhikr.ts";
@@ -27,8 +39,6 @@ import "@shoelace-style/shoelace/dist/components/range/range.js";
 import "@shoelace-style/shoelace/dist/components/switch/switch.js";
 /* end magic imports */
 
-import type { SettingsChangeEvent } from "@/components/settings-menu";
-
 @customElement("app-index")
 export class AppIndex extends LitElement {
   /**
@@ -37,6 +47,37 @@ export class AppIndex extends LitElement {
    */
   @state()
   private isDarkTheme = false;
+
+  /**
+   * Root-level settings state. Using @provide makes this available to all
+   * descendants via @consume without prop drilling through intermediate components.
+   *
+   * Merges defaults with persisted data to ensure backward compatibility when
+   * new settings are added - prevents undefined values for newly added properties.
+   */
+  @provide({ context: settingsContext })
+  @state()
+  private _settings: SettingsModel = {
+    ...storage.getDefault("settings"),
+    ...storage.get("settings"),
+  };
+
+  /**
+   * Centralized settings updater that handles the three concerns atomically:
+   * 1. Persist to localStorage (source of truth for page reloads)
+   * 2. Update reactive state (triggers Context propagation to consumers)
+   * 3. Apply to CSS (immediate visual feedback)
+   *
+   * Providing this as a separate context maintains unidirectional data flow -
+   * consumers can't accidentally mutate _settings directly.
+   */
+  @provide({ context: settingsUpdaterContext })
+  // Used by child components via @consume - appears unused here but is consumed by settings-menu
+  protected _updateSetting: SettingsUpdater = (key, value) => {
+    storage.update("settings", (s) => ({ ...s, [key]: value }));
+    this._settings = { ...this._settings, [key]: value };
+    applySingleSettingToCSS(key, value);
+  };
 
   // Registry for lifecycle management (setup/cleanup pairs)
   private _lifecycle = new LifecycleRegistry<"themeObserver">();
@@ -204,43 +245,11 @@ export class AppIndex extends LitElement {
   }
 
   /**
-   * Loads persisted settings from storage and applies them as CSS custom properties.
-   * Called once on initial load to restore user preferences.
+   * Applies persisted settings as CSS custom properties on initial load.
+   * Uses the type-safe CSS mapping to sync :root variables with stored preferences.
    */
-  loadSettings() {
-    const settings = storage.get("settings");
-    for (const [key, value] of Object.entries(settings)) {
-      this.updateStyles(key, value);
-    }
-  }
-
-  /**
-   * Translates setting names/values into CSS custom properties on :root.
-   *
-   * Naming conventions:
-   * - Boolean "showX" → "--show-x: block|none" (controls visibility)
-   * - Number "xFontSize" → "--x-font-size: Nrem" (controls text sizing)
-   * - Other values → "--name: value" (passthrough)
-   *
-   * This indirection allows components to use CSS variables for reactive styling
-   * without needing JavaScript property binding.
-   */
-  // biome-ignore lint/suspicious/noExplicitAny: TODO to make interface more restricted.
-  updateStyles(name: string, value: any) {
-    const root = document.documentElement;
-    if (typeof value === "boolean") {
-      root.style.setProperty(
-        `--show-${name.replace("show", "").toLowerCase()}`,
-        value ? "block" : "none",
-      );
-    } else if (name.includes("FontSize")) {
-      root.style.setProperty(
-        `--${name.replace("FontSize", "-font-size").toLowerCase()}`,
-        `${value}rem`,
-      );
-    } else {
-      root.style.setProperty(`--${name}`, value);
-    }
+  private loadSettings() {
+    applySettingsToCSS(this._settings);
   }
 
   render() {
@@ -248,10 +257,7 @@ export class AppIndex extends LitElement {
     return html`
       <app-header>
         <kp-search-button slot="actions"></kp-search-button>
-        <settings-menu
-          slot="actions"
-          @settings-change=${(e: SettingsChangeEvent) => this.updateStyles(e.detail.name, e.detail.value)}
-        ></settings-menu>
+        <settings-menu slot="actions"></settings-menu>
       </app-header>
       <main style=${invertStyle}>
         ${router.render()}
