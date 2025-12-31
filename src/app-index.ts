@@ -42,13 +42,6 @@ import "@shoelace-style/shoelace/dist/components/switch/switch.js";
 @customElement("app-index")
 export class AppIndex extends LitElement {
   /**
-   * Tracks dark theme state for conditional styling (e.g., border inversion).
-   * Updated by MutationObserver watching document.documentElement class changes.
-   */
-  @state()
-  private isDarkTheme = false;
-
-  /**
    * Root-level settings state. Using @provide makes this available to all
    * descendants via @consume without prop drilling through intermediate components.
    *
@@ -101,11 +94,10 @@ export class AppIndex extends LitElement {
         /* Decorative border - scales with viewport, capped at 33px */
         border-style: solid;
         border-width: clamp(15px, 5vw, 33px);
-        border-image-source: url("/assets/images/ornamental-border-simplified.png");
+        border-image-source: var(--border-image);
         border-image-slice: 20% 20%;
         border-image-repeat: round;
       }
-
     `,
     css`
       @media print {
@@ -226,14 +218,19 @@ export class AppIndex extends LitElement {
   }
 
   /**
-   *  Activates the appropriate theme stylesheet.
-   *
-   * It reads the <html> class, updates internal state, and toggles the CSS's
-   * <link> tag media attributes to enable/disable themes.
+   * Syncs component theme state with document theme class.
+   * Sets border image path and toggles shoelace stylesheets.
    */
   private applyTheme() {
     const isDark = document.documentElement.classList.contains("sl-theme-dark");
-    this.isDarkTheme = isDark;
+
+    const borderImage = isDark
+      ? "assets/images/ornamental-border-simplified-dark.png"
+      : "assets/images/ornamental-border-simplified.png";
+    this.style.setProperty(
+      "--border-image",
+      `url("${resolveRouterPath(borderImage)}")`,
+    );
 
     const lightTheme = document.querySelector(
       "#light-theme",
@@ -253,15 +250,12 @@ export class AppIndex extends LitElement {
   }
 
   render() {
-    const invertStyle = this.isDarkTheme ? "filter: invert(1)" : "";
     return html`
       <app-header>
         <kp-search-button slot="actions"></kp-search-button>
         <settings-menu slot="actions"></settings-menu>
       </app-header>
-      <main style=${invertStyle}>
-        ${router.render()}
-      </main>
+      <main>${router.render()}</main>
     `;
   }
 }
