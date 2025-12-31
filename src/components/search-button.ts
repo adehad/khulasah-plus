@@ -66,23 +66,12 @@ export class SearchButton extends LitElement {
     }
   };
 
-  private emitBorderStateChange(isBackground: boolean) {
-    const event = new CustomEvent("border-state-change", {
-      bubbles: true,
-      composed: true,
-      detail: { background: isBackground },
-    });
-    this.dispatchEvent(event);
-  }
-
   private openModal() {
     this.isModalOpen = true;
-    this.emitBorderStateChange(true);
   }
 
   private closeModal() {
     this.isModalOpen = false;
-    this.emitBorderStateChange(false);
   }
 
   render() {

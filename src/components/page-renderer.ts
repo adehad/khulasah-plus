@@ -6,7 +6,6 @@ import "@/components/dhikr-wird";
 import "@/components/dhikr.ts";
 import "@/components/quran.ts";
 import "@/components/settings-menu";
-import "@/components/border-frame";
 import "@/components/theme-switcher";
 import "@shoelace-style/shoelace/dist/components/card/card.js";
 import "@shoelace-style/shoelace/dist/components/button/button.js";

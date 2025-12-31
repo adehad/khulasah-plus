@@ -225,23 +225,6 @@ export class AppHeader extends LitElement {
     this._breadcrumbs = breadcrumbs;
   }
 
-  private handleShow() {
-    this.emitBorderStateChange(true);
-  }
-
-  private handleHide() {
-    this.emitBorderStateChange(false);
-  }
-
-  private emitBorderStateChange(isBackground: boolean) {
-    const event = new CustomEvent("border-state-change", {
-      bubbles: true,
-      composed: true,
-      detail: { background: isBackground },
-    });
-    this.dispatchEvent(event);
-  }
-
   private _handleTocItemClick(id: string) {
     window.location.hash = id;
   }
@@ -269,7 +252,7 @@ export class AppHeader extends LitElement {
             intermediateCrumbs.length > 0
               ? html`
             <sl-breadcrumb-item>
-              <sl-dropdown @sl-show=${this.handleShow} @sl-hide=${this.handleHide}>
+              <sl-dropdown>
                 <sl-button slot="trigger" size="small" caret>
                   ${intermediateCrumbs.length}
                 </sl-button>
@@ -294,7 +277,7 @@ export class AppHeader extends LitElement {
               ${
                 this._tocItems.length > 0
                   ? html`
-                  <sl-dropdown @sl-show=${this.handleShow} @sl-hide=${this.handleHide}>
+                  <sl-dropdown>
                     <sl-icon-button name="chevron-double-down" slot="trigger" style="transform: translateY(0.2rem);"></sl-icon-button>
                     <sl-menu>
                       ${this._tocItems.map(
