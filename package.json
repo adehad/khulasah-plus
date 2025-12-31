@@ -11,7 +11,7 @@
     "deploy": "npx @azure/static-web-apps-cli login --no-use-keychain && npx @azure/static-web-apps-cli deploy",
     "build:search": "bun scripts/build-search-index.ts",
     "build": "bun run build:search && tsc && vite build --mode development",
-    "build:prod": "bun run build:search && tsc && vite build",
+    "build:prod": "bun run build:search && tsc && vite build && bun scripts/google-site-verification.ts",
     "start": "bun run dev",
     "start-remote": "vite --host",
     "lint": "biome lint",
