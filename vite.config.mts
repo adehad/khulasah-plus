@@ -83,7 +83,10 @@ export default defineConfig(({ mode }) => {
         },
       }),
       sitemap({
-        base: "https://adehad.github.io/khulasah-plus/",
+        base:
+          base === "/"
+            ? "https://khulasah-plus.adehad.workers.dev/"
+            : "https://adehad.github.io/khulasah-plus/",
         urls: [
           ...new Set(
             pageConfigs.map((page) => `/${page.path}`).filter(Boolean),
