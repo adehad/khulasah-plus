@@ -184,9 +184,9 @@ const shoelaceCDN = `https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@${sho
   </script>
 
   <!-- Register service worker (injectRegister: false means we must do it manually) -->
-  <script is:inline>
+  <script is:inline define:vars={{ isDev: import.meta.env.DEV }}>
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("/sw.js");
+      navigator.serviceWorker.register(isDev ? "/sw.dev.js" : "/sw.js");
     }
   </script>
 </body>
