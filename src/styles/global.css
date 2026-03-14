@@ -1,5 +1,10 @@
 @import url("./preflight.css");
 
+/* Hide custom elements until their JS registers them to prevent FOUCE */
+:not(:defined) {
+  visibility: hidden;
+}
+
 @font-face {
   font-family: "Amiri";
   src: url("/fonts/amiri-v30-arabic-regular.woff2") format("woff2");

@@ -43,6 +43,7 @@ export default defineConfig({
     },
     define: {
       __WORKBOX_VERSION__: getVersion("workbox-build"),
+      __SHOELACE_VERSION__: getVersion("@shoelace-style/shoelace"),
     },
   },
 });

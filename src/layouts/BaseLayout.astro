@@ -109,6 +109,16 @@ const shoelaceCDN = `https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@${sho
           darkLink.media = "not all";
         }
 
+        // Preload the active theme CSS so it starts downloading immediately
+        var themeUrl = isDark
+          ? shoelaceCDN + "/dist/themes/dark.css"
+          : shoelaceCDN + "/dist/themes/light.css";
+        var preload = document.createElement("link");
+        preload.rel = "preload";
+        preload.as = "style";
+        preload.href = themeUrl;
+        document.head.appendChild(preload);
+
         // Set decorative border image based on theme
         var borderImage = isDark
           ? "/assets/images/ornamental-border-simplified-dark.png"
@@ -171,6 +181,13 @@ const shoelaceCDN = `https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@${sho
     import "@/scripts/chorus-toggle";
     import "@/scripts/hash-navigation";
     import "@/scripts/toc";
+  </script>
+
+  <!-- Register service worker (injectRegister: false means we must do it manually) -->
+  <script is:inline>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/sw.js");
+    }
   </script>
 </body>
 </html>
