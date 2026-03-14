@@ -2,8 +2,17 @@ importScripts(
   `https://storage.googleapis.com/workbox-cdn/releases/${__WORKBOX_VERSION__}/workbox-sw.js`,
 );
 
-// Register Service Worker Take over
-self.addEventListener("install", () => {
+// Register Service Worker Take over — warm Shoelace theme CSS cache on install
+self.addEventListener("install", (event) => {
+  const cdn = `https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@${__SHOELACE_VERSION__}`;
+  event.waitUntil(
+    caches.open("shoelace-assets").then(async (cache) => {
+      await Promise.allSettled([
+        cache.add(`${cdn}/dist/themes/light.css`),
+        cache.add(`${cdn}/dist/themes/dark.css`),
+      ]);
+    }),
+  );
   self.skipWaiting();
 });
 
