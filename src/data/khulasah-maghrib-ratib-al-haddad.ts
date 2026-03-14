@@ -5,7 +5,7 @@ import {
   fatihah,
   ikhlas,
   nas,
-} from "@/content/shared/quran";
+} from "@/data/shared/quran";
 import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export const wird = [

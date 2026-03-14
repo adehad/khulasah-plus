@@ -8,7 +8,7 @@ import {
   Encoder,
   type EnrichedDocumentSearchResults,
 } from "flexsearch";
-import { resolveRouterPath } from "@/router";
+import { resolveBasePath } from "@/utils/paths";
 import { hasTashkeel, normalizeArabic } from "@/utils/arabic-normalize";
 import { normalizeTranslit } from "@/utils/search-normalize";
 
@@ -109,7 +109,7 @@ class SearchService {
    */
   private async loadIndex(): Promise<void> {
     try {
-      const response = await fetch(resolveRouterPath("/search-index.json"));
+      const response = await fetch(resolveBasePath("/search-index.json"));
       if (!response.ok) {
         throw new Error(`Failed to load search index: ${response.status}`);
       }

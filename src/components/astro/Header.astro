@@ -1,0 +1,146 @@
+---
+import { pageConfigs } from "@/config/page-config";
+
+interface Props {
+  pagePath: string;
+}
+
+const { pagePath } = Astro.props;
+
+// Build a lookup map: path → title
+const pathTitleMap = new Map(pageConfigs.map((c) => [c.path, c.title]));
+
+interface Breadcrumb {
+  text: string;
+  href: string;
+}
+
+function buildBreadcrumbs(currentPath: string): Breadcrumb[] {
+  const homeTitle = pathTitleMap.get("") ?? "Home";
+  const crumbs: Breadcrumb[] = [{ text: homeTitle, href: "/" }];
+
+  if (!currentPath) return crumbs;
+
+  const segments = currentPath.split("/").filter(Boolean);
+  let accumulated = "";
+
+  for (const segment of segments) {
+    accumulated += (accumulated ? "/" : "") + segment;
+    const title = pathTitleMap.get(accumulated);
+    if (title) {
+      crumbs.push({ text: title, href: `/${accumulated}/` });
+    }
+  }
+
+  return crumbs;
+}
+
+const breadcrumbs = buildBreadcrumbs(pagePath);
+const isHome = !pagePath;
+const homeCrumb = breadcrumbs[0];
+const currentCrumb = breadcrumbs.length > 1 ? breadcrumbs[breadcrumbs.length - 1] : null;
+const intermediateCrumbs = breadcrumbs.slice(1, breadcrumbs.length - 1);
+---
+
+<header>
+  <sl-breadcrumb>
+    <sl-breadcrumb-item href={isHome ? "#" : homeCrumb.href}>
+      <sl-icon name="house" style="font-size: 1.2rem; transform: translateY(0.2rem);"></sl-icon>
+    </sl-breadcrumb-item>
+
+    {intermediateCrumbs.length > 0 && (
+      <sl-breadcrumb-item>
+        <sl-dropdown>
+          <sl-button slot="trigger" size="small" caret>{intermediateCrumbs.length}</sl-button>
+          <sl-menu>
+            {intermediateCrumbs.map(crumb => (
+              <a href={crumb.href}><sl-menu-item>{crumb.text}</sl-menu-item></a>
+            ))}
+          </sl-menu>
+        </sl-dropdown>
+      </sl-breadcrumb-item>
+    )}
+
+    {currentCrumb && (
+      <sl-breadcrumb-item>
+        {currentCrumb.text}
+        <sl-dropdown id="toc-dropdown" style="display: none;">
+          <sl-icon-button name="chevron-double-down" slot="trigger" style="transform: translateY(0.2rem);"></sl-icon-button>
+          <sl-menu id="toc-menu"></sl-menu>
+        </sl-dropdown>
+      </sl-breadcrumb-item>
+    )}
+  </sl-breadcrumb>
+
+  <div class="header-actions">
+    <kp-search-button></kp-search-button>
+    <settings-menu></settings-menu>
+    <theme-switcher></theme-switcher>
+  </div>
+
+  <kp-audio-player></kp-audio-player>
+</header>
+
+<style>
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--sl-color-neutral-0);
+    padding: 12px;
+    padding-top: calc(4px + env(titlebar-area-y, 0));
+    padding-bottom: 0px;
+    min-height: env(titlebar-area-height, 30px);
+    -webkit-app-region: drag;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    flex-shrink: 0;
+  }
+
+  .header-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    -webkit-app-region: no-drag;
+  }
+
+  kp-audio-player {
+    flex-shrink: 0;
+  }
+
+  kp-audio-player:not([collapsed]) {
+    width: 100%;
+    order: 1;
+  }
+
+  sl-breadcrumb {
+    -webkit-app-region: no-drag;
+  }
+
+  /* Style links inside dropdown menu items */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  @media (max-width: 420px) {
+    header {
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    sl-breadcrumb {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .header-actions {
+      width: 100dvw;
+      justify-content: center;
+    }
+  }
+</style>

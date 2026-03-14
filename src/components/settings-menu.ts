@@ -3,13 +3,13 @@
  *
  * Display settings control text visibility and font sizing for Arabic,
  * transliteration, and translation content. Changes are persisted to
- * localStorage and propagate via Lit Context to update CSS custom properties.
+ * localStorage and applied directly to CSS custom properties via
+ * applySingleSettingToCSS().
  *
  * Audio cache management provides visibility into IndexedDB-stored offline
  * audio files with sortable columns, individual deletion, and bulk clear.
  */
 
-import { consume } from "@lit/context";
 import type SlRange from "@shoelace-style/shoelace/dist/components/range/range.js";
 import type SlSwitch from "@shoelace-style/shoelace/dist/components/switch/switch.js";
 import { css, html, LitElement } from "lit";
@@ -22,14 +22,10 @@ import "@shoelace-style/shoelace/dist/components/icon/icon.js";
 import "@shoelace-style/shoelace/dist/components/range/range.js";
 import "@shoelace-style/shoelace/dist/components/switch/switch.js";
 
-import {
-  type SettingsUpdater,
-  settingsContext,
-  settingsUpdaterContext,
-} from "@/context/settings-context";
+import { applySingleSettingToCSS } from "@/context/settings-context";
 import { audioCache, type CachedAudio } from "@/services/audio-cache";
 import { circleButtonStyles } from "@/styles/shared-styles";
-import type { SettingsModel } from "@/utils/storage";
+import { storage, type SettingsModel } from "@/utils/storage";
 
 type SettingName = keyof SettingsModel;
 
@@ -92,21 +88,8 @@ export class SettingsMenu extends LitElement {
   @state()
   private _sortDirection: SortDirection = "desc";
 
-  /**
-   * Reactive settings from app-index context. The `subscribe: true` option
-   * triggers re-renders when the provider updates _settings, enabling
-   * real-time UI updates without manual event handling.
-   */
-  @consume({ context: settingsContext, subscribe: true })
-  private _settings!: SettingsModel;
-
-  /**
-   * Settings updater from app-index context. Using context for the updater
-   * (rather than dispatching events) provides type safety and removes the
-   * need for manual event listener wiring in parent components.
-   */
-  @consume({ context: settingsUpdaterContext })
-  private _updateSetting!: SettingsUpdater;
+  @state()
+  private _settings: SettingsModel = storage.get("settings");
 
   static styles = [
     circleButtonStyles,
@@ -227,6 +210,15 @@ export class SettingsMenu extends LitElement {
       }
     `,
   ];
+
+  private _updateSetting<K extends keyof SettingsModel>(
+    key: K,
+    value: SettingsModel[K],
+  ): void {
+    this._settings = { ...this._settings, [key]: value };
+    storage.set("settings", this._settings);
+    applySingleSettingToCSS(key, value);
+  }
 
   openDialog(toOpen: boolean) {
     this.isDialogOpen = toOpen;

@@ -1,0 +1,42 @@
+---
+import type { QuranModel } from "@/models/recitation";
+import QuranEntry from "./QuranEntry.astro";
+
+interface Props {
+  model: QuranModel;
+  index: number;
+  elementId?: string;
+}
+
+const { model, index, elementId: providedId } = Astro.props;
+const elementId = providedId ?? `${index + 1}`;
+
+const firstVerse = model.entries[0]?.verse;
+const lastVerse = model.entries[model.entries.length - 1]?.verse;
+const repeatText = model.repeat > 1 ? ` (x${model.repeat})` : "";
+const verseRange = firstVerse != null ? `:${firstVerse}-${lastVerse}` : "";
+---
+
+<div class="quran-container" id={elementId}>
+  {model.instruction && <p class="instruction">{model.instruction}</p>}
+  {model.basmallah && <p class="arabic basmallah">&#xFDFD;</p>}
+  {model.entries.map((entry, i) => (
+    <QuranEntry
+      entry={entry}
+      openingBrace={i === 0}
+      closingBrace={i === model.entries.length - 1}
+      repeatText={i === model.entries.length - 1 ? repeatText : ""}
+    />
+  ))}
+  <kp-footnote type="quran">
+    Surah {model.title} ({model.surah}){verseRange}
+  </kp-footnote>
+</div>
+
+<style>
+  .basmallah {
+    font-family: 'Amiri', 'Uthmanic Hafs', serif;
+    font-size: calc(var(--arabic-font-size) * 0.7);
+  }
+
+</style>

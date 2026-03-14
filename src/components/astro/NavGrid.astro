@@ -1,0 +1,34 @@
+---
+import type { BaseRecitationModel } from "@/models/recitation";
+import { resolveBasePath } from "@/utils/paths";
+
+interface Props {
+  item: BaseRecitationModel;
+}
+
+const { item } = Astro.props;
+const href = (item as any).href as string;
+---
+
+<a class="nav-button" href={resolveBasePath(`/${href}`)}>
+  {item.title}
+</a>
+
+<style>
+  .nav-button {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--sl-color-primary-100);
+    color: var(--sl-color-neutral-950);
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 8px;
+    transition: background-color 0.2s;
+  }
+
+  .nav-button:hover {
+    background-color: var(--sl-color-primary-200);
+  }
+</style>

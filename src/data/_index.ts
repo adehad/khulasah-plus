@@ -1,4 +1,3 @@
-import "@/components/nav-button";
 import { NavModel } from "@/models/nav";
 
 const homeContent = [

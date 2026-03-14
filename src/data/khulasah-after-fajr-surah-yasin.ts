@@ -1,4 +1,4 @@
-import { yasin } from "@/content/shared/quran";
+import { yasin } from "@/data/shared/quran";
 import { WirdModel } from "@/models/recitation";
 
 export default [

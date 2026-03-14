@@ -1,0 +1,99 @@
+---
+import {
+  type WirdModel,
+  DhikrModel,
+  QuranModel,
+  ExpandModel,
+} from "@/models/recitation";
+import DhikrSection from "./DhikrSection.astro";
+import QuranSection from "./QuranSection.astro";
+import ExpandSection from "./ExpandSection.astro";
+import { slugify } from "@/utils/string";
+
+interface Props {
+  model: WirdModel;
+  index: number;
+  pagePath: string;
+}
+
+const { model, index, pagePath } = Astro.props;
+const wirdSlug = model.title ? slugify(model.title) : `${index}`;
+const titleId = model.title ? slugify(model.title) : "";
+const hasAudio = !!model.audio?.url;
+---
+
+<div class="wird-container">
+  {model.title && (
+    <div class="wird-title-row">
+      <h1 id={titleId} class="wird-title">{model.title}</h1>
+      {hasAudio && (
+        <sl-icon-button
+          class="circle-btn audio-play-btn"
+          name="play-circle"
+          label="Play audio"
+          data-audio-url={model.audio!.url}
+          data-audio-title={model.audio!.title ?? model.title}
+        ></sl-icon-button>
+      )}
+    </div>
+  )}
+
+  {model.instruction && <p class="instruction">{model.instruction}</p>}
+
+  {model.entries.map((entry, i) => {
+    const entryNum = i + 1;
+    const elementId = `${wirdSlug}-${entryNum}`;
+
+    if (entry instanceof DhikrModel) {
+      return (
+        <Fragment>
+          <kp-sticky-button label={entryNum} elementId={elementId} variant="entry"></kp-sticky-button>
+          <DhikrSection model={entry} index={i} pagePath={pagePath} elementId={elementId} />
+        </Fragment>
+      );
+    }
+    if (entry instanceof QuranModel) {
+      return (
+        <Fragment>
+          <kp-sticky-button label={entryNum} elementId={elementId} variant="entry"></kp-sticky-button>
+          <QuranSection model={entry} index={i} elementId={elementId} />
+        </Fragment>
+      );
+    }
+    if (entry instanceof ExpandModel) {
+      return (
+        <Fragment>
+          <kp-sticky-button label={entryNum} elementId={elementId} variant="entry"></kp-sticky-button>
+          <div id={elementId}>
+            <ExpandSection model={entry} index={i} pagePath={pagePath} />
+          </div>
+        </Fragment>
+      );
+    }
+    return null;
+  })}
+</div>
+
+<style>
+  .wird-container {
+    width: 100%;
+  }
+
+  .wird-title {
+    text-align: center;
+  }
+
+  .wird-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+
+  .circle-btn {
+    font-size: 1.5rem;
+    color: var(--sl-color-primary-500);
+    transition: background-color 0.2s ease-in-out;
+  }
+</style>

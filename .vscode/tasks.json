@@ -4,7 +4,7 @@
     {
       "label": "bun run dev-task",
       "type": "npm",
-      "script": "dev-task",
+      "script": "dev",
       "isBackground": true,
       "problemMatcher": {
         "owner": "custom",

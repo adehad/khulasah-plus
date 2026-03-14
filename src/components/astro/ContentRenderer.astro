@@ -1,0 +1,50 @@
+---
+import {
+  type BaseRecitationModel,
+  DhikrModel,
+  QuranModel,
+  WirdModel,
+  QasidaModel,
+  ExpandModel,
+} from "@/models/recitation";
+import DhikrSection from "./DhikrSection.astro";
+import QuranSection from "./QuranSection.astro";
+import WirdSection from "./WirdSection.astro";
+import QasidaSection from "./QasidaSection.astro";
+import NavGrid from "./NavGrid.astro";
+import ExpandSection from "./ExpandSection.astro";
+
+interface Props {
+  items: BaseRecitationModel[];
+  pagePath: string;
+}
+
+const { items, pagePath } = Astro.props;
+
+// NavModel is identified by having an 'href' property
+function isNavModel(item: BaseRecitationModel): boolean {
+  return "href" in item;
+}
+---
+
+{items.map((item, index) => {
+  if (item instanceof WirdModel) {
+    return <WirdSection model={item} index={index} pagePath={pagePath} />;
+  }
+  if (item instanceof QasidaModel) {
+    return <QasidaSection model={item} index={index} pagePath={pagePath} />;
+  }
+  if (item instanceof DhikrModel) {
+    return <DhikrSection model={item} index={index} pagePath={pagePath} />;
+  }
+  if (item instanceof QuranModel) {
+    return <QuranSection model={item} index={index} />;
+  }
+  if (item instanceof ExpandModel) {
+    return <ExpandSection model={item} index={index} pagePath={pagePath} />;
+  }
+  if (isNavModel(item)) {
+    return <NavGrid item={item} />;
+  }
+  return null;
+})}

@@ -1,0 +1,38 @@
+---
+import { pageConfigs } from "@/config/page-config";
+import { contentModules } from "@/config/content-loader";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import ContentRenderer from "@/components/astro/ContentRenderer.astro";
+import type { BaseRecitationModel } from "@/models/recitation";
+
+export function getStaticPaths() {
+  return pageConfigs
+    .filter((config) => {
+      if (!contentModules.has(config.contentImportPath)) {
+        console.warn(`Skipping "${config.path}" — content file missing: ${config.contentImportPath}.ts`);
+        return false;
+      }
+      return true;
+    })
+    .map((config) => ({
+      params: { slug: config.path || undefined },
+      props: {
+        title: config.title,
+        content: contentModules.get(config.contentImportPath)!,
+        path: config.path,
+      },
+    }));
+}
+
+interface Props {
+  title: string;
+  content: BaseRecitationModel[];
+  path: string;
+}
+
+const { title, content, path } = Astro.props;
+---
+
+<BaseLayout title={title} pagePath={path}>
+  <ContentRenderer items={content} pagePath={path} />
+</BaseLayout>

@@ -1,0 +1,48 @@
+---
+import type { QuranEntryModel } from "@/models/recitation";
+
+interface Props {
+  entry: QuranEntryModel;
+  openingBrace: boolean;
+  closingBrace: boolean;
+  repeatText: string;
+}
+
+const { entry, openingBrace, closingBrace, repeatText } = Astro.props;
+---
+
+<div class="entry">
+  <div class="arabic">
+    <span class="arabic verse-bracket">{openingBrace ? "\uFD3F" : ""}</span>
+    {entry.arabic}
+    <span class="arabic verse-bracket">
+      <span class="arabic verse-number">{entry.verse}</span>
+      ۝
+    </span>
+    <span class="arabic verse-bracket">{closingBrace ? "\uFD3E" : ""}</span>
+    <span class="arabic verse-bracket">{repeatText}</span>
+  </div>
+  <div class="translit">{entry.translit}{repeatText}</div>
+  <div class="translation">{entry.translation}{repeatText}</div>
+</div>
+
+<style>
+  .entry {
+    margin-bottom: 1em;
+  }
+
+  .verse-bracket {
+    display: inline-block;
+    position: relative;
+    line-height: 0.8em;
+  }
+
+  .verse-number {
+    position: absolute;
+    overflow: hidden;
+    transform: translateX(+25%) translateY(-21%) scale(0.4);
+    text-align: center;
+    width: 3ch;
+    font-family: "Amiri", serif;
+  }
+</style>
