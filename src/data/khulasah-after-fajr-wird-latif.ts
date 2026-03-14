@@ -1,4 +1,4 @@
-import { falaq, ikhlas, nas } from "@/content/shared/quran";
+import { falaq, ikhlas, nas } from "@/data/shared/quran";
 import {
   DhikrEntryModel,
   DhikrModel,

@@ -72,6 +72,14 @@ export class ThemeSwitcher extends LitElement {
 
     document.documentElement.classList.toggle("sl-theme-dark", useDark);
     document.documentElement.classList.toggle("sl-theme-light", !useDark);
+
+    const borderImage = useDark
+      ? "/assets/images/ornamental-border-simplified-dark.png"
+      : "/assets/images/ornamental-border-simplified.png";
+    document.documentElement.style.setProperty(
+      "--border-image",
+      `url("${borderImage}")`,
+    );
   }
 
   setTheme(theme: ThemeValue) {

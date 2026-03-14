@@ -1,7 +1,7 @@
 import { css, html, LitElement, type PropertyValues } from "lit";
 import { customElement, property, query, state } from "lit/decorators.js";
-import { resolveRouterPath } from "@/router";
 import { type SearchResult, searchService } from "@/services/search-service";
+import { resolveBasePath } from "@/utils/paths";
 
 import "@shoelace-style/shoelace/dist/components/dialog/dialog.js";
 import "@shoelace-style/shoelace/dist/components/input/input.js";
@@ -282,23 +282,32 @@ export class SearchModal extends LitElement {
     selected?.scrollIntoView({ block: "nearest", behavior: "smooth" });
   }
 
-  private navigateToResult(result: SearchResult) {
-    this.handleDialogHide();
-
-    // Use text fragment for automatic highlighting and scrolling
-    // Text fragments only work with user-initiated navigation (real <a> click)
-    const textFragment = encodeURIComponent(this.searchQuery);
-    const basePath = resolveRouterPath(`/${result.document.id}`);
-    const url = `${basePath}#:~:text=${textFragment}`;
-
-    // Create and click a real <a> element to trigger user-initiated navigation
-    // This is required because text fragments don't work with programmatic navigation
-    const link = document.createElement("a");
-    link.href = url;
-    link.click();
+  private buildResultUrl(result: SearchResult, query: string): string {
+    const basePath = resolveBasePath(`/${result.document.id}`);
+    const trimmed = query.trim();
+    if (!trimmed) return basePath;
+    return `${basePath}#:~:text=${encodeURIComponent(trimmed)}`;
   }
 
-  private handleResultClick(result: SearchResult, e: Event) {
+  private navigateToResult(result: SearchResult) {
+    // Capture query before closing dialog (handleDialogHide resets searchQuery)
+    const url = this.buildResultUrl(result, this.searchQuery);
+    this.open = false;
+
+    // Text fragments only work with user-initiated navigation (real <a> click).
+    // Create, attach, and click a real <a> element to trigger it.
+    const link = document.createElement("a");
+    link.href = url;
+    link.style.display = "none";
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }
+
+  private handleResultClick(result: SearchResult, e: MouseEvent) {
+    // Allow native browser behavior for modifier-key clicks (open in new tab, etc.)
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0)
+      return;
     e.preventDefault();
     this.navigateToResult(result);
   }
@@ -368,8 +377,8 @@ export class SearchModal extends LitElement {
                       (result, index) => html`
                       <a
                         class="result-item ${index === this.selectedIndex ? "selected" : ""}"
-                        href="${resolveRouterPath(`/${result.document.id}`)}"
-                        @click=${(e: Event) => this.handleResultClick(result, e)}
+                        href="${this.buildResultUrl(result, this.searchQuery)}"
+                        @click=${(e: MouseEvent) => this.handleResultClick(result, e)}
                         @mouseenter=${() => this.handleResultHover(index)}
                       >
                         <div class="result-title">

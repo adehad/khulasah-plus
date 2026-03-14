@@ -5,6 +5,7 @@
     "ms-edgedevtools.vscode-edge-devtools",
     "PWABuilder.pwa-studio",
     "runem.lit-plugin",
-    "biomejs.biome"
+    "biomejs.biome",
+    "astro-build.astro-vscode"
   ]
 }

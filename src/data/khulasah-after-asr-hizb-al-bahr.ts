@@ -1,4 +1,4 @@
-import { baqarah_ayat_al_kursi } from "@/content/shared/quran";
+import { baqarah_ayat_al_kursi } from "@/data/shared/quran";
 import {
   DhikrEntryModel,
   DhikrModel,

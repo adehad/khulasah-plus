@@ -2,35 +2,31 @@
   "name": "khulasah-plus",
   "version": "0.0.1",
   "packageManager": "bun@1.2.23",
-  "description": "A starter kit for building PWAs!",
+  "description": "Khulasah Plus — PWA for Islamic recitations, adhkar, and daily practices.",
   "main": "index.js",
   "scripts": {
-    "dev-server": "vite --open",
-    "dev": "bun run dev-server",
-    "dev-task": "vite",
-    "deploy": "npx @azure/static-web-apps-cli login --no-use-keychain && npx @azure/static-web-apps-cli deploy",
+    "dev": "astro dev",
     "build:search": "bun scripts/build-search-index.ts",
-    "build": "bun run build:search && tsc && vite build --mode development",
-    "build:prod": "bun run build:search && tsc && vite build && bun scripts/google-site-verification.ts",
+    "build": "bun run build:search && astro build",
+    "build:prod": "bun run build:search && astro build && bun scripts/google-site-verification.ts",
     "start": "bun run dev",
-    "start-remote": "vite --host",
     "lint": "biome lint",
     "format": "biome format --write",
     "generate-pwa-assets": "pwa-assets-generator",
-    "preview": "vite preview"
+    "preview": "astro preview"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.1",
     "@lit/context": "^1.1.6",
     "@mediabunny/mp3-encoder": "^1.27.2",
     "@shoelace-style/shoelace": "^2.20.1",
-    "@thepassle/app-tools": "^0.9.13",
+    "astro": "^6.0.4",
     "flexsearch": "^0.8.212",
     "idb": "^8.0.3",
     "lit": "^3.3.1",
     "mediabunny": "^1.27.2",
-    "urlpattern-polyfill": "^10.1.0",
     "workbox-build": "^7.3.0",
     "workbox-core": "^7.3.0",
     "workbox-precaching": "^7.3.0"
@@ -39,9 +35,7 @@
     "@biomejs/biome": "2.1.2",
     "@types/node": "^24.3.0",
     "@vite-pwa/assets-generator": "^1.0.1",
-    "typescript": "^5.8.3",
-    "vite": "^5.4.19",
-    "vite-plugin-pwa": "^0.20.5",
-    "vite-sitemap": "^1.17.0"
+    "@vite-pwa/astro": "^1.2.0",
+    "typescript": "^5.8.3"
   }
 }

@@ -9,7 +9,7 @@
       "request": "launch",
       "name": "Run PWA",
       "webRoot": "${workspaceFolder}/",
-      "runtimeArgs": ["--app=http://localhost:5173"],
+      "runtimeArgs": ["--app=http://localhost:4321"],
       "sourceMapPathOverrides": {
         "../../src": "${workspaceFolder}/src",
         "../../src/*": "${workspaceFolder}/src/*"

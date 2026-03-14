@@ -1,6 +1,6 @@
 import { css, html, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
-import { resolveRouterPath } from "@/router";
+import { resolveBasePath } from "@/utils/paths";
 import { styles } from "@/styles/shared-styles";
 
 @customElement("nav-button")
@@ -39,7 +39,7 @@ export class NavButton extends LitElement {
 
   render() {
     return html`
-      <sl-button href="${resolveRouterPath(this.href)}">
+      <sl-button href="${resolveBasePath(this.href)}">
         <slot></slot>
       </sl-button>
     `;

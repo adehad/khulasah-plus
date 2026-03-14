@@ -1,0 +1,176 @@
+---
+import Header from "@/components/astro/Header.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+  pagePath: string;
+}
+
+const { title, description = "Islamic recitations, adhkar, and daily practices", pagePath } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+
+// Read Shoelace version from installed package at build time
+import { readFileSync } from "node:fs";
+import { resolve } from "node:path";
+const shoelacePkgPath = resolve(process.cwd(), "node_modules/@shoelace-style/shoelace/package.json");
+const shoelaceVersion = JSON.parse(readFileSync(shoelacePkgPath, "utf-8")).version;
+const shoelaceCDN = `https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@${shoelaceVersion}`;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" crossorigin="anonymous" href="https://cdn.jsdelivr.net">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+
+  <title>{title} | Khulasah Plus</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={canonicalURL} />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content={`${title} | Khulasah Plus`} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={canonicalURL} />
+  <meta property="og:type" content="website" />
+
+  <!-- Theme -->
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#181818" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f3f3f3" />
+
+  <!-- Apple PWA -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Khulasah Plus" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <!-- Icons -->
+  <link rel="icon" href="/assets/icons/favicon.ico" sizes="48x48">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon-180x180.png">
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="/manifest.json" />
+
+  <!-- Shoelace themes (managed by theme-switcher script) -->
+  <link id="light-theme" rel="stylesheet" href={`${shoelaceCDN}/dist/themes/light.css`} media="not all">
+  <link id="dark-theme" rel="stylesheet" href={`${shoelaceCDN}/dist/themes/dark.css`} media="not all">
+
+  <!-- Global styles -->
+  <style is:global>
+    @import "../styles/global.css";
+  </style>
+
+  <!--
+    Inline settings + theme initialization script.
+    Runs before first paint to apply persisted user preferences (font sizes, show/hide, theme).
+    This prevents flash of unstyled content.
+  -->
+  <script is:inline define:vars={{ shoelaceCDN }}>
+    (function() {
+      // Apply persisted settings as CSS custom properties
+      try {
+        const raw = localStorage.getItem("settings");
+        if (raw) {
+          const settings = JSON.parse(raw);
+          const root = document.documentElement;
+          const map = {
+            arabicFontSize: ["--arabic-font-size", (v) => v + "rem"],
+            translationFontSize: ["--translation-font-size", (v) => v + "rem"],
+            transliterationFontSize: ["--transliteration-font-size", (v) => v + "rem"],
+            showArabic: ["--show-arabic", (v) => v ? "block" : "none"],
+            showTranslation: ["--show-translation", (v) => v ? "block" : "none"],
+            showTransliteration: ["--show-transliteration", (v) => v ? "block" : "none"],
+          };
+          for (const [key, [cssVar, transform]] of Object.entries(map)) {
+            if (key in settings) {
+              root.style.setProperty(cssVar, transform(settings[key]));
+            }
+          }
+        }
+      } catch {}
+
+      // Apply persisted theme
+      try {
+        const theme = JSON.parse(localStorage.getItem("theme") || '"auto"');
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const isDark = theme === "dark" || (theme === "auto" && prefersDark);
+
+        const lightLink = document.getElementById("light-theme");
+        const darkLink = document.getElementById("dark-theme");
+        if (isDark) {
+          document.documentElement.classList.add("sl-theme-dark");
+          darkLink.media = "";
+          lightLink.media = "not all";
+        } else {
+          document.documentElement.classList.add("sl-theme-light");
+          lightLink.media = "";
+          darkLink.media = "not all";
+        }
+
+        // Set decorative border image based on theme
+        var borderImage = isDark
+          ? "/assets/images/ornamental-border-simplified-dark.png"
+          : "/assets/images/ornamental-border-simplified.png";
+        document.documentElement.style.setProperty(
+          "--border-image",
+          'url("' + borderImage + '")'
+        );
+      } catch {
+        // Default to light
+        document.getElementById("light-theme").media = "";
+      }
+
+      // Set Shoelace base path for icons
+      window.__SHOELACE_CDN__ = shoelaceCDN;
+    })();
+  </script>
+
+  <!-- Protocol URL handler — supports web+khulasahplus:// deep links via manifest.json -->
+  <script is:inline>
+    (function() {
+      var protocolUrl = new URL(window.location.href).searchParams.get("url");
+      if (protocolUrl) {
+        try {
+          var path = new URL(protocolUrl).pathname.substring(1);
+          if (path) window.location.replace("/" + path);
+        } catch (e) {
+          console.error("Invalid protocol URL:", protocolUrl, e);
+        }
+      }
+    })();
+  </script>
+
+  <!-- Shoelace base path setup (must run before any Shoelace components) -->
+  <script>
+    import { setBasePath } from "@shoelace-style/shoelace/dist/utilities/base-path.js";
+    setBasePath((window as any).__SHOELACE_CDN__ + "/cdn/");
+  </script>
+</head>
+
+<body>
+  <Header pagePath={pagePath} />
+
+  <main>
+    <slot />
+  </main>
+
+  <!-- Interactive Lit web components (loaded client-side) -->
+  <script>
+    import "@/components/theme-switcher";
+    import "@/components/settings-menu";
+    import "@/components/audio-player-bar";
+    import "@/components/search-button";
+    import "@/components/dhikr-counter";
+    import "@/components/sticky-button";
+    import "@/components/footnote";
+    import "@shoelace-style/shoelace/dist/components/breadcrumb/breadcrumb.js";
+    import "@shoelace-style/shoelace/dist/components/breadcrumb-item/breadcrumb-item.js";
+    import "@/scripts/audio-buttons";
+    import "@/scripts/chorus-toggle";
+    import "@/scripts/hash-navigation";
+    import "@/scripts/toc";
+  </script>
+</body>
+</html>

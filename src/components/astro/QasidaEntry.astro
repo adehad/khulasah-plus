@@ -1,0 +1,35 @@
+---
+import { type QasidaEntryModel, QuranEntryModel } from "@/models/recitation";
+
+interface Props {
+  entry: QasidaEntryModel;
+}
+
+const { entry } = Astro.props;
+const extraClass = entry instanceof QuranEntryModel ? "quran" : "";
+---
+
+<div class="qasida-entry">
+  <div class={`arabic ${extraClass}`}>{entry.arabic}</div>
+  <div class="translit">{entry.translit}</div>
+  <div class="translation">{entry.translation}</div>
+</div>
+
+<style>
+  .qasida-entry {
+    margin-bottom: 1em;
+    text-align: center;
+    flex: 1 1 100%;
+    box-sizing: border-box;
+  }
+
+  @container (width > 600px) {
+    .qasida-entry {
+      flex: 0 1 48%;
+    }
+
+    .qasida-entry:only-child {
+      flex-basis: 100%;
+    }
+  }
+</style>

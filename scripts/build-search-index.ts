@@ -40,7 +40,7 @@ import type {
   WirdModel,
 } from "../src/models/recitation.ts";
 // Import page configurations
-import { pageConfigs } from "../src/pages/page-config.ts";
+import { pageConfigs } from "../src/config/page-config.ts";
 
 // Import normalization utilities
 import { normalizeArabic } from "../src/utils/arabic-normalize.ts";
@@ -311,7 +311,7 @@ async function buildSearchIndex() {
       }
 
       // Dynamically import the content module
-      const contentPath = `../src/content/${config.contentImportPath}.ts`;
+      const contentPath = `../src/data/${config.contentImportPath}.ts`;
       const contentModule = await import(contentPath);
       const content = contentModule.default || contentModule.wird || [];
 

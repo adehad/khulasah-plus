@@ -1,0 +1,63 @@
+---
+import type { ExpandModel } from "@/models/recitation";
+import ContentRenderer from "./ContentRenderer.astro";
+
+interface Props {
+  model: ExpandModel;
+  index: number;
+  pagePath: string;
+}
+
+const { model, index, pagePath } = Astro.props;
+---
+
+<details class="expand" open={model.startExpanded || undefined}>
+  <summary class="expand-button">
+    {model.title}
+    <sl-icon class="chevron" name="chevron-down"></sl-icon>
+  </summary>
+  <div class="expand-content">
+    <ContentRenderer items={model.entries} pagePath={pagePath} />
+  </div>
+</details>
+
+<style>
+  .expand {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .expand-button {
+    width: 100%;
+    border: none;
+    background-color: var(--sl-color-primary-100);
+    color: var(--sl-color-neutral-950);
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+    list-style: none;
+  }
+
+  .expand-button:hover {
+    background-color: var(--sl-color-primary-200);
+  }
+
+  .expand-button::-webkit-details-marker {
+    display: none;
+  }
+
+  .chevron {
+    transition: transform 0.2s ease;
+  }
+
+  details[open] .chevron {
+    transform: rotate(180deg);
+  }
+</style>

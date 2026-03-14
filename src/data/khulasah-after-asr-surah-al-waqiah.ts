@@ -1,4 +1,4 @@
-import { waqiah } from "@/content/shared/quran";
+import { waqiah } from "@/data/shared/quran";
 import { WirdModel } from "@/models/recitation";
 
 export default [

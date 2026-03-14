@@ -1,5 +1,5 @@
-import { quran as waqiah_source } from "@/content/shared/quran-waqiah";
-import { quran as yasin_source } from "@/content/shared/quran-yasin";
+import { quran as waqiah_source } from "@/data/shared/quran-waqiah";
+import { quran as yasin_source } from "@/data/shared/quran-yasin";
 import { QuranEntryModel, QuranModel } from "@/models/recitation";
 
 export function fatihah(

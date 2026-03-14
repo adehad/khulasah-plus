@@ -1,0 +1,48 @@
+---
+import type { DhikrModel } from "@/models/recitation";
+import DhikrEntry from "./DhikrEntry.astro";
+import { slugify } from "@/utils/string";
+
+interface Props {
+  model: DhikrModel;
+  index: number;
+  pagePath: string;
+  elementId?: string;
+}
+
+const { model, index, pagePath, elementId: providedId } = Astro.props;
+
+const COUNTER_THRESHOLD = 50;
+const modelRepeat = model.repeat ?? 1;
+const showModelCounter = modelRepeat > COUNTER_THRESHOLD;
+const showModelRepeatText = modelRepeat > 1;
+
+const elementId = providedId ?? `${index + 1}`;
+const pageSlug = slugify(pagePath) || "home";
+const makeKey = (suffix?: number) => {
+  const base = `${pageSlug}-${elementId}`;
+  return suffix !== undefined ? `${base}-${suffix}` : base;
+};
+---
+
+<div class="dhikr-container" id={elementId}>
+  {model.instruction && <p class="instruction">{model.instruction}</p>}
+  {showModelRepeatText && <p class="instruction dhikr-repeat">(Repeat the following x{modelRepeat})</p>}
+  {model.entries?.map((entry, i) => (
+    <DhikrEntry entry={entry} storageKey={makeKey(i)} />
+  ))}
+  {showModelCounter && (
+    <kp-dhikr-counter
+      target={modelRepeat}
+      storagekey={makeKey()}
+    ></kp-dhikr-counter>
+  )}
+</div>
+
+<style>
+  .dhikr-repeat {
+    text-align: center;
+    margin-top: 0.5em;
+    font-style: italic;
+  }
+</style>

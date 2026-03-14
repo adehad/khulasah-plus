@@ -1,0 +1,196 @@
+---
+import {
+  type QasidaModel,
+  QasidaChapterModel,
+  QasidaVerseModel,
+  ExpandModel,
+} from "@/models/recitation";
+import QasidaEntry from "./QasidaEntry.astro";
+import ExpandSection from "./ExpandSection.astro";
+
+interface Props {
+  model: QasidaModel;
+  index: number;
+  pagePath: string;
+}
+
+const { model, pagePath } = Astro.props;
+const hasAudio = !!model.audio?.url;
+---
+
+<div class="qasida-container" style="container-type: inline-size;">
+  {model.title && (
+    <div class="qasida-title-row">
+      <h1 class="qasida-title">{model.title}</h1>
+      {hasAudio && (
+        <sl-icon-button
+          class="circle-btn audio-play-btn"
+          name="play-circle"
+          label="Play audio"
+          data-audio-url={model.audio!.url}
+          data-audio-title={model.audio!.title ?? model.title}
+        ></sl-icon-button>
+      )}
+    </div>
+  )}
+
+  {model.entries.map((entry, i) => {
+    if (entry instanceof ExpandModel) {
+      const expandId = `expand-${i + 1}`;
+      return (
+        <div id={expandId}>
+          <ExpandSection model={entry} index={i} pagePath={pagePath} />
+        </div>
+      );
+    }
+    if (entry instanceof QasidaChapterModel) {
+      const chapterId = `chapter-${i + 1}`;
+      return (
+        <Fragment>
+          <kp-sticky-button label={i + 1} elementId={chapterId} variant="chapter"></kp-sticky-button>
+          <h1 id={chapterId} class="chapter-header">{entry.title}</h1>
+          {entry.entries.map((chapterEntry, j) => {
+            if (chapterEntry instanceof QasidaVerseModel) {
+              const verseId = `verse-${i + 1}-${j + 1}`;
+              if (chapterEntry.chorus) {
+                return (
+                  <Fragment>
+                    <button class="chorus-toggle-button" data-chorus-target={verseId}>Chorus</button>
+                    <div class="verses sticky-chorus" id={verseId}>
+                      {chapterEntry.entries.map((ve) => <QasidaEntry entry={ve} />)}
+                    </div>
+                  </Fragment>
+                );
+              }
+              return (
+                <Fragment>
+                  <kp-sticky-button label={j + 1} elementId={verseId} variant="verse"></kp-sticky-button>
+                  <div class="verses" id={verseId}>
+                    {chapterEntry.entries.map((ve) => <QasidaEntry entry={ve} />)}
+                  </div>
+                </Fragment>
+              );
+            }
+            if (chapterEntry instanceof ExpandModel) {
+              return <ExpandSection model={chapterEntry} index={j} pagePath={pagePath} />;
+            }
+            throw new Error(`QasidaSection: unhandled chapter entry type "${chapterEntry?.constructor?.name}"`);
+          })}
+        </Fragment>
+      );
+    }
+    if (entry instanceof QasidaVerseModel) {
+      const verseId = `verse-${i + 1}`;
+      if (entry.chorus) {
+        return (
+          <Fragment>
+            <button class="chorus-toggle-button" data-chorus-target={verseId}>Chorus</button>
+            <div class="verses sticky-chorus" id={verseId}>
+              {entry.entries.map((ve) => <QasidaEntry entry={ve} />)}
+            </div>
+          </Fragment>
+        );
+      }
+      return (
+        <Fragment>
+          <kp-sticky-button label={i + 1} elementId={verseId} variant="verse"></kp-sticky-button>
+          <div class="verses" id={verseId}>
+            {entry.entries.map((ve) => <QasidaEntry entry={ve} />)}
+          </div>
+        </Fragment>
+      );
+    }
+    throw new Error(`QasidaSection: unhandled entry type "${entry?.constructor?.name}"`);
+  })}
+</div>
+
+<style>
+  .qasida-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .qasida-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .qasida-title {
+    text-align: center;
+    margin: 0;
+  }
+
+  .chapter-header {
+    text-align: center;
+  }
+
+  .verses {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chorus-toggle-button {
+    position: sticky;
+    top: 7rem;
+    width: 4ch;
+    writing-mode: sideways-rl;
+    padding: 8px 5px;
+    border-radius: 5px 15px 15px 5px;
+    z-index: 11;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    background-color: var(--sl-color-primary-700);
+    color: var(--sl-color-primary-50);
+    border: none;
+  }
+
+  .sticky-chorus {
+    transition: max-height 0.5s ease-out;
+    background-color: hsl(from var(--sl-color-primary-700) h s l / 90%);
+    color: var(--sl-color-primary-50);
+    top: 30px;
+    z-index: 9;
+    flex-basis: 100% !important;
+  }
+
+  .sticky-chorus.is-active {
+    position: sticky;
+    max-height: 70vh;
+    overflow-y: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    animation: slideIn 0.4s ease-out forwards;
+    padding: 20px;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0.8;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .circle-btn {
+    font-size: 1.5rem;
+    color: var(--sl-color-primary-500);
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  @container (width > 600px) {
+    .verses {
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+</style>

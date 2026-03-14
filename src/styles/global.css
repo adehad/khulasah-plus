@@ -57,8 +57,46 @@ body {
   font-family: var(--font-family);
   padding: 0;
   margin: 0;
-
   height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  background-color: var(--sl-color-neutral-0);
+  color: var(--sl-color-neutral-950);
+}
+
+/* Restore heading styles stripped by Tailwind preflight */
+h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+main {
+  display: block;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  box-sizing: border-box;
+
+  /* Decorative border - scales with viewport, capped at 33px */
+  border-style: solid;
+  border-width: clamp(15px, 5vw, 33px);
+  border-image-source: var(--border-image);
+  border-image-slice: 20% 20%;
+  border-image-repeat: round;
 }
 
 .arabic {
@@ -66,6 +104,7 @@ body {
     "Uthmanic Hafs Punctuation", var(--preferred-arabic-font-family),
     "Scheherazade New", "Uthmanic Hafs", serif;
   direction: rtl;
+  line-height: 1.7em;
   font-size: var(--arabic-font-size);
   display: var(--show-arabic, block);
 }
@@ -78,11 +117,34 @@ body {
 .translation {
   font-size: var(--translation-font-size);
   display: var(--show-translation, block);
+  font-weight: bold;
 }
 
 .translit {
   font-size: var(--transliteration-font-size);
   display: var(--show-transliteration, block);
+  font-style: italic;
+}
+
+.instruction {
+  font-size: var(--translation-font-size);
+  font-style: italic;
+  color: var(--sl-color-primary-500);
+}
+
+@media print {
+  header {
+    display: none !important;
+  }
+
+  body {
+    display: block !important;
+    height: auto !important;
+  }
+
+  main {
+    overflow-y: visible !important;
+  }
 }
 
 /* Shoelace Specific Theme Override */
@@ -104,6 +166,13 @@ body {
   --sl-color-primary-800: rgb(68 94 92);
   --sl-color-primary-900: rgb(48 67 65);
   --sl-color-primary-950: rgb(30 41 40);
+
+  /* Neutral overrides — defined locally so they work before Shoelace CDN loads */
+  --sl-color-neutral-0: hsl(0 0% 100%);
+  --sl-color-neutral-50: hsl(240 5.9% 96%);
+  --sl-color-neutral-900: hsl(240 7.3% 15%);
+  --sl-color-neutral-950: hsl(240 7.3% 8%);
+  --sl-color-neutral-1000: hsl(0 0% 0%);
 }
 
 :host,
@@ -119,5 +188,12 @@ body {
   --sl-color-primary-200: rgb(68 94 92);
   --sl-color-primary-100: rgb(48 67 65);
   --sl-color-primary-50: rgb(30 41 40);
+
+  /* Neutral overrides — inverted for dark mode */
+  --sl-color-neutral-0: hsl(240 5.9% 11%);
+  --sl-color-neutral-50: hsl(240 5.1% 15%);
+  --sl-color-neutral-900: hsl(0 0% 85%);
+  --sl-color-neutral-950: hsl(0 0% 95%);
+  --sl-color-neutral-1000: hsl(0 0% 100%);
 }
 /* End Shoelace Specific Theme Override */

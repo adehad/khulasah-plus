@@ -1,0 +1,30 @@
+---
+import type { DhikrEntryModel } from "@/models/recitation";
+
+interface Props {
+  entry: DhikrEntryModel;
+  storageKey: string;
+}
+
+const { entry, storageKey } = Astro.props;
+const repeatText = entry.repeat > 1 ? ` (x${entry.repeat})` : "";
+const COUNTER_THRESHOLD = 50;
+const showCounter = entry.repeat > COUNTER_THRESHOLD || entry.enableCounter === true;
+---
+
+<div class="entry">
+  <div class="arabic">{entry.arabic}{repeatText}</div>
+  <div class="translit">{entry.translit}{repeatText}</div>
+  <div class="translation">{entry.translation}{repeatText}</div>
+  {
+    showCounter && (
+      <kp-dhikr-counter target={entry.repeat} storagekey={storageKey} />
+    )
+  }
+</div>
+
+<style>
+  .entry {
+    margin-bottom: 1em;
+  }
+</style>

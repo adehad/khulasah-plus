@@ -21,7 +21,7 @@ This project was bootstrapped from [PWABuilder's pwa-starter](https://docs.pwabu
 
 ### Project Structure
 
-- `src/content/` -  adhkar, awrad, qasaid, etc.
-- `src/content/shared/` - Shared references (Quranic references taken from Hafs published by the [King Fahd Complex for the Printing of the Holy Qur'an](https://qurancomplex.gov.sa/))
+- `src/data/` -  adhkar, awrad, qasaid, etc.
+- `src/data/shared/` - Shared references (Quranic references taken from Hafs published by the [King Fahd Complex for the Printing of the Holy Qur'an](https://qurancomplex.gov.sa/))
 - `src/pages/` - Page components and routing configuration
 - `scripts/` - Build and content processing scripts

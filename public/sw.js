@@ -61,12 +61,15 @@ workbox.routing.registerRoute(
 
 workbox.precaching.precacheAndRoute(self.__WB_MANIFEST || []);
 
-function SPASpecificHacks() {
-  INDEX_CACHE_ENTRY = "index.html";
-  workbox.routing.registerRoute(
-    ({ request }) => request.mode === "navigate",
-    workbox.precaching.createHandlerBoundToURL(INDEX_CACHE_ENTRY),
-  );
-}
-
-SPASpecificHacks();
+// For SSG: serve cached HTML pages on navigation requests via precache
+workbox.routing.registerRoute(
+  ({ request }) => request.mode === "navigate",
+  new workbox.strategies.NetworkFirst({
+    cacheName: "pages",
+    plugins: [
+      new workbox.cacheableResponse.CacheableResponsePlugin({
+        statuses: [0, 200],
+      }),
+    ],
+  }),
+);
