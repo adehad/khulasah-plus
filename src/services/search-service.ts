@@ -8,8 +8,8 @@ import {
   Encoder,
   type EnrichedDocumentSearchResults,
 } from "flexsearch";
-import { resolveBasePath } from "@/utils/paths";
 import { hasTashkeel, normalizeArabic } from "@/utils/arabic-normalize";
+import { resolveBasePath } from "@/utils/paths";
 import { normalizeTranslit } from "@/utils/search-normalize";
 
 /**

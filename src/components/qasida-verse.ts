@@ -21,9 +21,9 @@ export class QasidaChapter extends LitElement {
     const className = this.verses.chorus ? "chorus" : "verses";
     return html`
       <div class=${className}>
-        ${this.verses.entries.map((entry) => {
-          html`<kp-qasida-entry .entry=${entry}></kp-qasida-entry>`;
-        })}
+        ${this.verses.entries.map(
+          (entry) => html`<kp-qasida-entry .entry=${entry}></kp-qasida-entry>`,
+        )}
       </div>
     `;
   }

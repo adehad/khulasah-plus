@@ -9,7 +9,8 @@ interface Props {
 const { entry, storageKey } = Astro.props;
 const repeatText = entry.repeat > 1 ? ` (x${entry.repeat})` : "";
 const COUNTER_THRESHOLD = 50;
-const showCounter = entry.repeat > COUNTER_THRESHOLD || entry.enableCounter === true;
+const showCounter =
+  entry.repeat > COUNTER_THRESHOLD || entry.enableCounter === true;
 ---
 
 <div class="entry">

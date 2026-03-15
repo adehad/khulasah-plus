@@ -1,14 +1,14 @@
 ---
 import {
-  type WirdModel,
   DhikrModel,
-  QuranModel,
   ExpandModel,
+  QuranModel,
+  type WirdModel,
 } from "@/models/recitation";
-import DhikrSection from "./DhikrSection.astro";
-import QuranSection from "./QuranSection.astro";
-import ExpandSection from "./ExpandSection.astro";
 import { slugify } from "@/utils/string";
+import DhikrSection from "./DhikrSection.astro";
+import ExpandSection from "./ExpandSection.astro";
+import QuranSection from "./QuranSection.astro";
 
 interface Props {
   model: WirdModel;

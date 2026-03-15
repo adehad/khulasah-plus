@@ -139,15 +139,19 @@ main {
 
 @media print {
   header {
+    /* biome-ignore lint/complexity/noImportantStyles: print styles must override all specificity */
     display: none !important;
   }
 
   body {
+    /* biome-ignore lint/complexity/noImportantStyles: print styles must override all specificity */
     display: block !important;
+    /* biome-ignore lint/complexity/noImportantStyles: print styles must override all specificity */
     height: auto !important;
   }
 
   main {
+    /* biome-ignore lint/complexity/noImportantStyles: print styles must override all specificity */
     overflow-y: visible !important;
   }
 }

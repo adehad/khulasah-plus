@@ -1,12 +1,12 @@
 ---
 import {
-  type QasidaModel,
-  QasidaChapterModel,
-  QasidaVerseModel,
   ExpandModel,
+  QasidaChapterModel,
+  type QasidaModel,
+  QasidaVerseModel,
 } from "@/models/recitation";
-import QasidaEntry from "./QasidaEntry.astro";
 import ExpandSection from "./ExpandSection.astro";
+import QasidaEntry from "./QasidaEntry.astro";
 
 interface Props {
   model: QasidaModel;
@@ -156,7 +156,8 @@ const hasAudio = !!model.audio?.url;
     color: var(--sl-color-primary-50);
     top: 30px;
     z-index: 9;
-    flex-basis: 100% !important;
+    /* biome-ignore lint/complexity/noImportantStyles: overrides flex-basis set by parent grid */
+    flex-basis: 100% !important; /* Take full width when active */
   }
 
   .sticky-chorus.is-active {

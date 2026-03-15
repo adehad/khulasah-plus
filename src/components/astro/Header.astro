@@ -38,7 +38,8 @@ function buildBreadcrumbs(currentPath: string): Breadcrumb[] {
 const breadcrumbs = buildBreadcrumbs(pagePath);
 const isHome = !pagePath;
 const homeCrumb = breadcrumbs[0];
-const currentCrumb = breadcrumbs.length > 1 ? breadcrumbs[breadcrumbs.length - 1] : null;
+const currentCrumb =
+  breadcrumbs.length > 1 ? breadcrumbs[breadcrumbs.length - 1] : null;
 const intermediateCrumbs = breadcrumbs.slice(1, breadcrumbs.length - 1);
 ---
 

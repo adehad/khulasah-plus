@@ -1,15 +1,17 @@
 ---
-import { pageConfigs } from "@/config/page-config";
-import { contentModules } from "@/config/content-loader";
-import BaseLayout from "@/layouts/BaseLayout.astro";
 import ContentRenderer from "@/components/astro/ContentRenderer.astro";
+import { contentModules } from "@/config/content-loader";
+import { pageConfigs } from "@/config/page-config";
+import BaseLayout from "@/layouts/BaseLayout.astro";
 import type { BaseRecitationModel } from "@/models/recitation";
 
 export function getStaticPaths() {
   return pageConfigs
     .filter((config) => {
       if (!contentModules.has(config.contentImportPath)) {
-        console.warn(`Skipping "${config.path}" — content file missing: ${config.contentImportPath}.ts`);
+        console.warn(
+          `Skipping "${config.path}" — content file missing: ${config.contentImportPath}.ts`,
+        );
         return false;
       }
       return true;
@@ -18,6 +20,7 @@ export function getStaticPaths() {
       params: { slug: config.path || undefined },
       props: {
         title: config.title,
+        // biome-ignore lint/style/noNonNullAssertion: existence verified by filter above
         content: contentModules.get(config.contentImportPath)!,
         path: config.path,
       },

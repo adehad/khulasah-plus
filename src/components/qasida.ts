@@ -89,6 +89,7 @@ export class Qasida extends BaseRecitation {
         color: var(--sl-color-primary-50);
         top: 30px;
         z-index: 9;
+        /* biome-ignore lint/complexity/noImportantStyles: overrides flex-basis set by parent grid */
         flex-basis: 100% !important; /* Take full width when active */
       }
 
