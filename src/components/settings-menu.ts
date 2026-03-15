@@ -25,7 +25,7 @@ import "@shoelace-style/shoelace/dist/components/switch/switch.js";
 import { applySingleSettingToCSS } from "@/context/settings-context";
 import { audioCache, type CachedAudio } from "@/services/audio-cache";
 import { circleButtonStyles } from "@/styles/shared-styles";
-import { storage, type SettingsModel } from "@/utils/storage";
+import { type SettingsModel, storage } from "@/utils/storage";
 
 type SettingName = keyof SettingsModel;
 

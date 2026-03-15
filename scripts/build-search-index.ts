@@ -10,21 +10,23 @@ import { resolve } from "node:path";
 if (typeof globalThis.window === "undefined") {
   globalThis.document = {
     title: "",
-    // @ts-ignore
+    // @ts-expect-error
     startViewTransition: (cb: () => void) => cb(),
   };
   globalThis.window = {
-    // @ts-ignore
+    // @ts-expect-error
     location: { href: "http://localhost" },
     addEventListener: () => {},
     removeEventListener: () => {},
     dispatchEvent: () => true,
-    // @ts-ignore
+    // @ts-expect-error
     history: { pushState: () => {}, replaceState: () => {} },
     document: globalThis.document,
   };
 }
 
+// Import page configurations
+import { pageConfigs } from "../src/config/page-config.ts";
 // Import model types
 import type {
   BaseRecitationModel,
@@ -39,8 +41,6 @@ import type {
   RecitationEntry,
   WirdModel,
 } from "../src/models/recitation.ts";
-// Import page configurations
-import { pageConfigs } from "../src/config/page-config.ts";
 
 // Import normalization utilities
 import { normalizeArabic } from "../src/utils/arabic-normalize.ts";

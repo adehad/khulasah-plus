@@ -2,17 +2,17 @@
 import {
   type BaseRecitationModel,
   DhikrModel,
+  ExpandModel,
+  QasidaModel,
   QuranModel,
   WirdModel,
-  QasidaModel,
-  ExpandModel,
 } from "@/models/recitation";
 import DhikrSection from "./DhikrSection.astro";
+import ExpandSection from "./ExpandSection.astro";
+import NavGrid from "./NavGrid.astro";
+import QasidaSection from "./QasidaSection.astro";
 import QuranSection from "./QuranSection.astro";
 import WirdSection from "./WirdSection.astro";
-import QasidaSection from "./QasidaSection.astro";
-import NavGrid from "./NavGrid.astro";
-import ExpandSection from "./ExpandSection.astro";
 
 interface Props {
   items: BaseRecitationModel[];

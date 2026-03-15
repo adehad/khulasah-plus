@@ -7,15 +7,26 @@ interface Props {
   pagePath: string;
 }
 
-const { title, description = "Islamic recitations, adhkar, and daily practices", pagePath } = Astro.props;
+const {
+  title,
+  description = "Islamic recitations, adhkar, and daily practices",
+  pagePath,
+} = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
 // Read Shoelace version from installed package at build time
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
-const shoelacePkgPath = resolve(process.cwd(), "node_modules/@shoelace-style/shoelace/package.json");
-const shoelaceVersion = JSON.parse(readFileSync(shoelacePkgPath, "utf-8")).version;
+
+const shoelacePkgPath = resolve(
+  process.cwd(),
+  "node_modules/@shoelace-style/shoelace/package.json",
+);
+const shoelaceVersion = JSON.parse(
+  readFileSync(shoelacePkgPath, "utf-8"),
+).version;
 const shoelaceCDN = `https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@${shoelaceVersion}`;
+const baseURL = import.meta.env.BASE_URL;
 ---
 
 <!DOCTYPE html>
@@ -47,11 +58,11 @@ const shoelaceCDN = `https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@${sho
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
   <!-- Icons -->
-  <link rel="icon" href="/assets/icons/favicon.ico" sizes="48x48">
-  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon-180x180.png">
+  <link rel="icon" href={`${baseURL}assets/icons/favicon.ico`} sizes="48x48">
+  <link rel="apple-touch-icon" href={`${baseURL}assets/icons/apple-touch-icon-180x180.png`}>
 
   <!-- PWA Manifest -->
-  <link rel="manifest" href="/manifest.json" />
+  <link rel="manifest" href={`${baseURL}manifest.json`} />
 
   <!-- Shoelace themes (managed by theme-switcher script) -->
   <link id="light-theme" rel="stylesheet" href={`${shoelaceCDN}/dist/themes/light.css`} media="not all">
@@ -67,7 +78,7 @@ const shoelaceCDN = `https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@${sho
     Runs before first paint to apply persisted user preferences (font sizes, show/hide, theme).
     This prevents flash of unstyled content.
   -->
-  <script is:inline define:vars={{ shoelaceCDN }}>
+  <script is:inline define:vars={{ shoelaceCDN, baseURL }}>
     (function() {
       // Apply persisted settings as CSS custom properties
       try {
@@ -121,8 +132,8 @@ const shoelaceCDN = `https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@${sho
 
         // Set decorative border image based on theme
         var borderImage = isDark
-          ? "/assets/images/ornamental-border-simplified-dark.png"
-          : "/assets/images/ornamental-border-simplified.png";
+          ? baseURL + "assets/images/ornamental-border-simplified-dark.png"
+          : baseURL + "assets/images/ornamental-border-simplified.png";
         document.documentElement.style.setProperty(
           "--border-image",
           'url("' + borderImage + '")'
@@ -184,9 +195,9 @@ const shoelaceCDN = `https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@${sho
   </script>
 
   <!-- Register service worker (injectRegister: false means we must do it manually) -->
-  <script is:inline define:vars={{ isDev: import.meta.env.DEV }}>
+  <script is:inline define:vars={{ isDev: import.meta.env.DEV, baseURL }}>
     if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register(isDev ? "/sw.dev.js" : "/sw.js");
+      navigator.serviceWorker.register(baseURL + (isDev ? "sw.dev.js" : "sw.js"));
     }
   </script>
 </body>

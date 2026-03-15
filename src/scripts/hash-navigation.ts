@@ -9,7 +9,13 @@ function extractElementId(hash: string): string {
   const fragment = hash.substring(1);
   // Strip text fragment directive (:~:text=...)
   const delimiterIndex = fragment.indexOf(":~:");
-  return delimiterIndex !== -1 ? fragment.substring(0, delimiterIndex) : fragment;
+  const raw =
+    delimiterIndex !== -1 ? fragment.substring(0, delimiterIndex) : fragment;
+  try {
+    return decodeURIComponent(raw);
+  } catch {
+    return raw;
+  }
 }
 
 function navigateToHash() {

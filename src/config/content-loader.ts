@@ -3,7 +3,7 @@ import type { BaseRecitationModel } from "@/models/recitation";
 // Vite resolves import.meta.glob statically at build time
 const modules = import.meta.glob<{ default: BaseRecitationModel[] }>(
   "../data/*.ts",
-  { eager: true }
+  { eager: true },
 );
 
 // Normalize keys from "../data/foo.ts" to "foo"
