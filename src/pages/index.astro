@@ -1,0 +1,16 @@
+---
+import ContentRenderer from "@/components/astro/ContentRenderer.astro";
+import { contentModules } from "@/config/content-loader";
+import { pageConfigs } from "@/config/page-config";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+
+const homeConfig = pageConfigs.find((c) => c.path === "");
+const title = homeConfig?.title ?? "Home";
+const description = homeConfig?.description;
+// biome-ignore lint/style/noNonNullAssertion: home page content always exists
+const content = contentModules.get(homeConfig!.contentImportPath)!;
+---
+
+<BaseLayout title={title} description={description} pagePath="">
+  <ContentRenderer items={content} pagePath="" />
+</BaseLayout>
