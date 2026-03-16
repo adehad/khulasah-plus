@@ -1,5 +1,6 @@
 ---
 import Header from "@/components/astro/Header.astro";
+import { SETTINGS_CSS_MAP } from "@/config/settings-css-map";
 
 interface Props {
   title: string;
@@ -78,27 +79,19 @@ const baseURL = import.meta.env.BASE_URL;
     Runs before first paint to apply persisted user preferences (font sizes, show/hide, theme).
     This prevents flash of unstyled content.
   -->
-  <script is:inline define:vars={{ shoelaceCDN, baseURL }}>
+  <script is:inline define:vars={{ settingsMap: SETTINGS_CSS_MAP, shoelaceCDN, baseURL }}>
     (function() {
       // Apply persisted settings as CSS custom properties.
-      // NOTE: This map duplicates SETTINGS_CSS_MAP in src/context/settings-context.ts.
-      // Keep both in sync when adding or changing settings.
+      // settingsMap is injected from src/config/settings-css-map.ts via define:vars.
       try {
         const raw = localStorage.getItem("settings");
         if (raw) {
           const settings = JSON.parse(raw);
           const root = document.documentElement;
-          const map = {
-            arabicFontSize: ["--arabic-font-size", (v) => v + "rem"],
-            translationFontSize: ["--translation-font-size", (v) => v + "rem"],
-            transliterationFontSize: ["--transliteration-font-size", (v) => v + "rem"],
-            showArabic: ["--show-arabic", (v) => v ? "block" : "none"],
-            showTranslation: ["--show-translation", (v) => v ? "block" : "none"],
-            showTransliteration: ["--show-transliteration", (v) => v ? "block" : "none"],
-          };
-          for (const [key, [cssVar, transform]] of Object.entries(map)) {
+          for (const [key, { cssVar, transform }] of Object.entries(settingsMap)) {
             if (key in settings) {
-              root.style.setProperty(cssVar, transform(settings[key]));
+              const v = settings[key];
+              root.style.setProperty(cssVar, transform === "rem" ? v + "rem" : (v ? "block" : "none"));
             }
           }
         }
