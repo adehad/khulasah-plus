@@ -2,6 +2,8 @@ export interface PageConfig {
   path: string;
   title: string;
   contentImportPath: string;
+  /** Per-page meta description for SEO. Falls back to site-wide default in BaseLayout. */
+  description?: string;
 }
 
 export const pageConfigs: PageConfig[] = [
@@ -9,11 +11,15 @@ export const pageConfigs: PageConfig[] = [
     path: "",
     title: "Home",
     contentImportPath: "_index",
+    description:
+      "Islamic recitations, adhkar, and daily practices — Khulasah, Mawlids, Salawat, and more.",
   },
   {
     path: "khulasah",
     title: "Khulasah",
     contentImportPath: "khulasah-index",
+    description:
+      "Daily adhkar and awrad organized by prayer time — Fajr, Dhuhr, Asr, Maghrib, Isha, and more.",
   },
   {
     path: "khulasah/introduction",
@@ -328,6 +334,8 @@ export const pageConfigs: PageConfig[] = [
     path: "mawlids",
     title: "Mawlids",
     contentImportPath: "mawlids-index",
+    description:
+      "Mawlid recitations celebrating the birth of the Prophet Muhammad ﷺ.",
   },
   {
     path: "mawlids/shimmering",
@@ -373,6 +381,8 @@ export const pageConfigs: PageConfig[] = [
     path: "blessed-occasions",
     title: "Blessed Occasions",
     contentImportPath: "blessed-occasions-index",
+    description:
+      "Supplications and adhkar for blessed occasions — Rajab, Sha'ban, Dhul-Hijjah, and more.",
   },
   {
     path: "blessed-occasions/dua-new-year-begins",

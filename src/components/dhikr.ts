@@ -1,13 +1,14 @@
 import { css, html } from "lit";
 import { customElement, property } from "lit/decorators.js";
 import { BaseRecitation } from "@/components/base-recitation";
-import type { DhikrModel } from "@/models/recitation.ts";
+import {
+  DHIKR_COUNTER_THRESHOLD,
+  type DhikrModel,
+} from "@/models/recitation.ts";
 import "@/components/dhikr-entry.ts";
 import "@/components/dhikr-counter.ts";
 import { textStyles } from "@/styles/shared-styles.ts";
 import { makeDhikrCounterKey } from "@/utils/storage.ts";
-
-const COUNTER_THRESHOLD = 50;
 
 @customElement("kp-dhikr")
 export class Dhikr extends BaseRecitation {
@@ -33,7 +34,7 @@ export class Dhikr extends BaseRecitation {
       : "";
 
     const modelRepeat = this.recitation.repeat ?? 1;
-    const showModelCounter = modelRepeat > COUNTER_THRESHOLD;
+    const showModelCounter = modelRepeat > DHIKR_COUNTER_THRESHOLD;
     const showModelRepeatText = modelRepeat > 1;
 
     return html`

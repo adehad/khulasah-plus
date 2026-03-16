@@ -80,7 +80,9 @@ const baseURL = import.meta.env.BASE_URL;
   -->
   <script is:inline define:vars={{ shoelaceCDN, baseURL }}>
     (function() {
-      // Apply persisted settings as CSS custom properties
+      // Apply persisted settings as CSS custom properties.
+      // NOTE: This map duplicates SETTINGS_CSS_MAP in src/context/settings-context.ts.
+      // Keep both in sync when adding or changing settings.
       try {
         const raw = localStorage.getItem("settings");
         if (raw) {

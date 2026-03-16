@@ -1,16 +1,15 @@
 ---
-import type { BaseRecitationModel } from "@/models/recitation";
+import type { NavModel } from "@/models/nav";
 import { resolveBasePath } from "@/utils/paths";
 
 interface Props {
-  item: BaseRecitationModel;
+  item: NavModel;
 }
 
 const { item } = Astro.props;
-const href = (item as unknown as { href: string }).href;
 ---
 
-<a class="nav-button" href={resolveBasePath(`/${href}`)}>
+<a class="nav-button" href={resolveBasePath(`/${item.href}`)}>
   {item.title}
 </a>
 

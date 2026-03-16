@@ -15,6 +15,9 @@ export interface AudioConfig {
   endTime?: number;
 }
 
+/** Repeat count above which a dhikr counter widget is shown instead of just text */
+export const DHIKR_COUNTER_THRESHOLD = 50;
+
 /**
  * Represents a single recitation entry containing the original Arabic text,
  * its transliteration, and its translation.

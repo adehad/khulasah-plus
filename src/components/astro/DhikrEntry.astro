@@ -1,5 +1,8 @@
 ---
-import type { DhikrEntryModel } from "@/models/recitation";
+import {
+  DHIKR_COUNTER_THRESHOLD,
+  type DhikrEntryModel,
+} from "@/models/recitation";
 
 interface Props {
   entry: DhikrEntryModel;
@@ -8,9 +11,8 @@ interface Props {
 
 const { entry, storageKey } = Astro.props;
 const repeatText = entry.repeat > 1 ? ` (x${entry.repeat})` : "";
-const COUNTER_THRESHOLD = 50;
 const showCounter =
-  entry.repeat > COUNTER_THRESHOLD || entry.enableCounter === true;
+  entry.repeat > DHIKR_COUNTER_THRESHOLD || entry.enableCounter === true;
 ---
 
 <div class="entry">

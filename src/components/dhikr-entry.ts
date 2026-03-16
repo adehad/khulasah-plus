@@ -1,10 +1,11 @@
 import { css, html, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
-import type { DhikrEntryModel } from "@/models/recitation.ts";
+import {
+  DHIKR_COUNTER_THRESHOLD,
+  type DhikrEntryModel,
+} from "@/models/recitation.ts";
 import { textStyles } from "@/styles/shared-styles.ts";
 import "@/components/dhikr-counter.ts";
-
-const COUNTER_THRESHOLD = 50;
 
 @customElement("kp-dhikr-entry")
 export class DhikrEntry extends LitElement {
@@ -24,7 +25,8 @@ export class DhikrEntry extends LitElement {
 
   private _shouldShowCounter(): boolean {
     return (
-      this.entry.repeat > COUNTER_THRESHOLD || this.entry.enableCounter === true
+      this.entry.repeat > DHIKR_COUNTER_THRESHOLD ||
+      this.entry.enableCounter === true
     );
   }
 

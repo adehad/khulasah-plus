@@ -68,17 +68,6 @@ workbox.routing.registerRoute(
 // This is your Service Worker, you can put any of your custom Service Worker
 // code in this file, above the `precacheAndRoute` line.
 
+// All HTML pages are included in __WB_MANIFEST via globPatterns.
+// precacheAndRoute handles navigation requests automatically (including /path → /path/index.html).
 workbox.precaching.precacheAndRoute(self.__WB_MANIFEST || []);
-
-// For SSG: serve cached HTML pages on navigation requests via precache
-workbox.routing.registerRoute(
-  ({ request }) => request.mode === "navigate",
-  new workbox.strategies.NetworkFirst({
-    cacheName: "pages",
-    plugins: [
-      new workbox.cacheableResponse.CacheableResponsePlugin({
-        statuses: [0, 200],
-      }),
-    ],
-  }),
-);

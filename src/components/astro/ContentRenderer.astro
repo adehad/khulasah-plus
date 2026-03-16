@@ -1,4 +1,5 @@
 ---
+import { NavModel } from "@/models/nav";
 import {
   type BaseRecitationModel,
   DhikrModel,
@@ -20,11 +21,6 @@ interface Props {
 }
 
 const { items, pagePath } = Astro.props;
-
-// NavModel is identified by having an 'href' property
-function isNavModel(item: BaseRecitationModel): boolean {
-  return "href" in item;
-}
 ---
 
 {items.map((item, index) => {
@@ -43,7 +39,7 @@ function isNavModel(item: BaseRecitationModel): boolean {
   if (item instanceof ExpandModel) {
     return <ExpandSection model={item} index={index} pagePath={pagePath} />;
   }
-  if (isNavModel(item)) {
+  if (item instanceof NavModel) {
     return <NavGrid item={item} />;
   }
   return null;
