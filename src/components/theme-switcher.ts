@@ -1,7 +1,6 @@
 import { css, html, LitElement } from "lit";
 import { customElement, state } from "lit/decorators.js";
 import { circleButtonStyles } from "@/styles/shared-styles";
-import { resolveBasePath } from "@/utils/paths";
 import { LifecycleRegistry, storage, type ThemeValue } from "@/utils/storage";
 
 @customElement("theme-switcher")
@@ -73,14 +72,6 @@ export class ThemeSwitcher extends LitElement {
 
     document.documentElement.classList.toggle("sl-theme-dark", useDark);
     document.documentElement.classList.toggle("sl-theme-light", !useDark);
-
-    const borderImage = useDark
-      ? resolveBasePath("/assets/images/ornamental-border-simplified-dark.png")
-      : resolveBasePath("/assets/images/ornamental-border-simplified.png");
-    document.documentElement.style.setProperty(
-      "--border-image",
-      `url("${borderImage}")`,
-    );
   }
 
   setTheme(theme: ThemeValue) {
