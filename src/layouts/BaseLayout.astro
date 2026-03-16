@@ -125,14 +125,15 @@ const baseURL = import.meta.env.BASE_URL;
         preload.href = themeUrl;
         document.head.appendChild(preload);
 
-        // Set decorative border image based on theme
-        var borderImage = isDark
+        // Preload the active border image so it's ready when CSS requests it
+        var borderSrc = isDark
           ? baseURL + "assets/images/ornamental-border-simplified-dark.png"
           : baseURL + "assets/images/ornamental-border-simplified.png";
-        document.documentElement.style.setProperty(
-          "--border-image",
-          'url("' + borderImage + '")'
-        );
+        var borderPreload = document.createElement("link");
+        borderPreload.rel = "preload";
+        borderPreload.as = "image";
+        borderPreload.href = borderSrc;
+        document.head.appendChild(borderPreload);
       } catch {
         // Default to light
         document.getElementById("light-theme").media = "";

@@ -99,9 +99,16 @@ main {
   /* Decorative border - scales with viewport, capped at 33px */
   border-style: solid;
   border-width: clamp(15px, 5vw, 33px);
-  border-image-source: var(--border-image);
   border-image-slice: 20% 20%;
   border-image-repeat: round;
+}
+
+.sl-theme-light main {
+  border-image-source: url("/assets/images/ornamental-border-simplified.png");
+}
+
+.sl-theme-dark main {
+  border-image-source: url("/assets/images/ornamental-border-simplified-dark.png");
 }
 
 .arabic {
