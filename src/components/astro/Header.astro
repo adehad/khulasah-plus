@@ -1,5 +1,6 @@
 ---
 import { pageConfigs } from "@/config/page-config";
+import InlineIcon from "./InlineIcon.astro";
 
 interface Props {
   pagePath: string;
@@ -44,13 +45,14 @@ const intermediateCrumbs = breadcrumbs.slice(1, breadcrumbs.length - 1);
 ---
 
 <header>
-  <sl-breadcrumb>
-    <sl-breadcrumb-item href={isHome ? "#" : homeCrumb.href}>
-      <sl-icon name="house" style="font-size: 1.2rem; transform: translateY(0.2rem);"></sl-icon>
-    </sl-breadcrumb-item>
+  <nav aria-label="Breadcrumb" class="breadcrumb">
+    <a href={isHome ? "#" : homeCrumb.href} class="breadcrumb-link">
+      <InlineIcon name="house" size="1.2rem" label="Home" />
+    </a>
 
     {intermediateCrumbs.length > 0 && (
-      <sl-breadcrumb-item>
+      <>
+        <span class="separator" aria-hidden="true">/</span>
         <sl-dropdown>
           <sl-button slot="trigger" size="small" caret>{intermediateCrumbs.length}</sl-button>
           <sl-menu>
@@ -59,19 +61,22 @@ const intermediateCrumbs = breadcrumbs.slice(1, breadcrumbs.length - 1);
             ))}
           </sl-menu>
         </sl-dropdown>
-      </sl-breadcrumb-item>
+      </>
     )}
 
     {currentCrumb && (
-      <sl-breadcrumb-item>
-        {currentCrumb.text}
+      <>
+        <span class="separator" aria-hidden="true">/</span>
+        <span class="breadcrumb-current">{currentCrumb.text}</span>
         <sl-dropdown id="toc-dropdown" style="display: none;">
-          <sl-icon-button name="chevron-double-down" slot="trigger" style="transform: translateY(0.2rem);"></sl-icon-button>
+          <button slot="trigger" class="toc-trigger">
+            <InlineIcon name="chevron-double-down" size="1rem" label="Table of contents" />
+          </button>
           <sl-menu id="toc-menu"></sl-menu>
         </sl-dropdown>
-      </sl-breadcrumb-item>
+      </>
     )}
-  </sl-breadcrumb>
+  </nav>
 
   <div class="header-actions">
     <kp-search-button></kp-search-button>
@@ -100,6 +105,50 @@ const intermediateCrumbs = breadcrumbs.slice(1, breadcrumbs.length - 1);
     flex-shrink: 0;
   }
 
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: var(--sl-font-size-small);
+    -webkit-app-region: no-drag;
+  }
+
+  .breadcrumb-link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--sl-color-neutral-600);
+    text-decoration: none;
+  }
+
+  .breadcrumb-link:hover {
+    color: var(--sl-color-primary-600);
+  }
+
+  .separator {
+    color: var(--sl-color-neutral-500);
+    user-select: none;
+  }
+
+  .breadcrumb-current {
+    color: var(--sl-color-neutral-950);
+    font-weight: var(--sl-font-weight-semibold);
+  }
+
+  .toc-trigger {
+    display: inline-flex;
+    align-items: center;
+    background: none;
+    border: none;
+    padding: 0.25rem;
+    cursor: pointer;
+    color: var(--sl-color-neutral-600);
+    transform: translateY(0.15rem);
+  }
+
+  .toc-trigger:hover {
+    color: var(--sl-color-primary-600);
+  }
+
   .header-actions {
     display: flex;
     flex-wrap: wrap;
@@ -117,10 +166,6 @@ const intermediateCrumbs = breadcrumbs.slice(1, breadcrumbs.length - 1);
     order: 1;
   }
 
-  sl-breadcrumb {
-    -webkit-app-region: no-drag;
-  }
-
   /* Style links inside dropdown menu items */
   a {
     text-decoration: none;
@@ -133,7 +178,7 @@ const intermediateCrumbs = breadcrumbs.slice(1, breadcrumbs.length - 1);
       gap: 0.5rem;
     }
 
-    sl-breadcrumb {
+    .breadcrumb {
       width: 100%;
       display: flex;
       justify-content: center;

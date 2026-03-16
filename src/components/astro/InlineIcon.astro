@@ -1,0 +1,60 @@
+---
+/**
+ * Inline SVG icons rendered at build time to avoid FOUC.
+ *
+ * Shoelace's <sl-icon> fetches SVGs from a CDN at runtime, which causes a
+ * flash of unstyled/missing content — especially noticeable in the sticky
+ * header where icons pop in after the page is already painted.
+ *
+ * This component embeds the same Bootstrap Icons SVGs directly into the HTML
+ * at build time, so they render instantly with zero JavaScript dependency.
+ * Use this for icons in static Astro components (header, expand sections, etc.)
+ * where immediate rendering matters. Interactive Lit components can continue
+ * using <sl-icon> since they are already hidden via :not(:defined).
+ *
+ * SVG paths are sourced from Bootstrap Icons (https://icons.getbootstrap.com),
+ * which is the default icon library used by Shoelace.
+ */
+
+interface Props {
+  name: keyof typeof ICONS;
+  size?: string;
+  label?: string;
+  class?: string;
+  style?: string;
+}
+
+const ICONS = {
+  house: `<path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"/>`,
+
+  "chevron-double-down": `<path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/><path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>`,
+
+  "chevron-down": `<path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>`,
+} as const;
+
+const { name, size = "1em", label, class: className, style } = Astro.props;
+const paths = ICONS[name];
+const ariaAttrs = label
+  ? { role: "img", "aria-label": label }
+  : { "aria-hidden": "true" };
+---
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width={size}
+  height={size}
+  fill="currentColor"
+  viewBox="0 0 16 16"
+  class:list={["inline-icon", className]}
+  style={style}
+  {...ariaAttrs}
+  set:html={paths}
+/>
+
+<style>
+  .inline-icon {
+    display: inline-block;
+    vertical-align: -0.125em;
+    flex-shrink: 0;
+  }
+</style>
