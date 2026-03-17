@@ -14,7 +14,8 @@ interface Props {
   pagePath: string;
 }
 
-const { model, pagePath } = Astro.props;
+const { model, index, pagePath } = Astro.props;
+const prefix = `q${index + 1}`;
 const hasAudio = !!model.audio?.url;
 ---
 
@@ -36,7 +37,7 @@ const hasAudio = !!model.audio?.url;
 
   {model.entries.map((entry, i) => {
     if (entry instanceof ExpandModel) {
-      const expandId = `expand-${i + 1}`;
+      const expandId = `${prefix}-expand-${i + 1}`;
       return (
         <div id={expandId}>
           <ExpandSection model={entry} index={i} pagePath={pagePath} />
@@ -44,14 +45,14 @@ const hasAudio = !!model.audio?.url;
       );
     }
     if (entry instanceof QasidaChapterModel) {
-      const chapterId = `chapter-${i + 1}`;
+      const chapterId = `${prefix}-chapter-${i + 1}`;
       return (
         <Fragment>
           <kp-sticky-button label={i + 1} elementId={chapterId} variant="chapter"></kp-sticky-button>
           <h1 id={chapterId} class="chapter-header">{entry.title}</h1>
           {entry.entries.map((chapterEntry, j) => {
             if (chapterEntry instanceof QasidaVerseModel) {
-              const verseId = `verse-${i + 1}-${j + 1}`;
+              const verseId = `${prefix}-verse-${i + 1}-${j + 1}`;
               if (chapterEntry.chorus) {
                 return (
                   <Fragment>
@@ -80,7 +81,7 @@ const hasAudio = !!model.audio?.url;
       );
     }
     if (entry instanceof QasidaVerseModel) {
-      const verseId = `verse-${i + 1}`;
+      const verseId = `${prefix}-verse-${i + 1}`;
       if (entry.chorus) {
         return (
           <Fragment>
