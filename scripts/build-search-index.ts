@@ -6,10 +6,16 @@
 import { existsSync, mkdirSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
 
-// Polyfill browser globals for Node.js environment (required by router)
+// Polyfill browser globals for Node.js environment (required by lit-html and router)
 if (typeof globalThis.window === "undefined") {
   globalThis.document = {
     title: "",
+    // @ts-expect-error - minimal polyfill for lit-html
+    createTreeWalker: () => ({ nextNode: () => null }),
+    // @ts-expect-error
+    createComment: () => ({}),
+    // @ts-expect-error
+    createTextNode: () => ({}),
     // @ts-expect-error
     startViewTransition: (cb: () => void) => cb(),
   };
@@ -300,51 +306,66 @@ async function buildSearchIndex() {
 
   const documents: SearchDocument[] = [];
   let successCount = 0;
-  let errorCount = 0;
+  let skippedCount = 0;
+  const errors: { path: string; error: unknown }[] = [];
 
   for (const config of pageConfigs) {
+    // Skip index pages that just have navigation
+    if (config.contentImportPath.endsWith("-index")) {
+      console.log(`  Skipping index page: ${config.path}`);
+      continue;
+    }
+
+    // Dynamically import the content module
+    const contentPath = `../src/data/${config.contentImportPath}.ts`;
+    let contentModule: Record<string, unknown>;
     try {
-      // Skip index pages that just have navigation
-      if (config.contentImportPath.endsWith("-index")) {
-        console.log(`  Skipping index page: ${config.path}`);
-        continue;
-      }
-
-      // Dynamically import the content module
-      const contentPath = `../src/data/${config.contentImportPath}.ts`;
-      const contentModule = await import(contentPath);
-      const content = contentModule.default || contentModule.wird || [];
-
-      if (!Array.isArray(content) || content.length === 0) {
-        console.log(`  No content found for: ${config.path}`);
-        continue;
-      }
-
-      // Extract text from content
-      const extracted = extractContentText(content);
-
-      // Create search document
-      const translitText = extracted.translit.join(" ");
-      const doc: SearchDocument = {
-        id: config.path || "/",
-        title: config.title,
-        arabicOriginal: extracted.arabic.join(" "),
-        arabic: normalizeArabic(extracted.arabic.join(" ")),
-        translitOriginal: translitText,
-        translit: normalizeTranslit(translitText),
-        translation: extracted.translation.join(" "),
-        contentType: extracted.contentType,
-      };
-
-      // Only add if there's actual searchable content
-      if (doc.arabic || doc.translit || doc.translation) {
-        documents.push(doc);
-        successCount++;
-        console.log(`  Indexed: ${config.path} (${extracted.contentType})`);
-      }
+      contentModule = await import(contentPath);
     } catch (error) {
-      errorCount++;
-      console.error(`  Error processing ${config.path}:`, error);
+      const message =
+        error instanceof Error
+          ? error.message
+          : String((error as { message?: string }).message ?? error);
+      if (message.includes("Cannot find module")) {
+        skippedCount++;
+        console.log(`  Skipping unmigrated: ${config.path}`);
+        continue;
+      }
+      errors.push({ path: config.path, error });
+      console.error(`  ERROR ${config.path}:`, error);
+      continue;
+    }
+
+    const content = (contentModule.default ||
+      contentModule.wird ||
+      []) as BaseRecitationModel[];
+
+    if (!Array.isArray(content) || content.length === 0) {
+      console.log(`  No content found for: ${config.path}`);
+      continue;
+    }
+
+    // Extract text from content
+    const extracted = extractContentText(content);
+
+    // Create search document
+    const translitText = extracted.translit.join(" ");
+    const doc: SearchDocument = {
+      id: config.path,
+      title: config.title,
+      arabicOriginal: extracted.arabic.join(" "),
+      arabic: normalizeArabic(extracted.arabic.join(" ")),
+      translitOriginal: translitText,
+      translit: normalizeTranslit(translitText),
+      translation: extracted.translation.join(" "),
+      contentType: extracted.contentType,
+    };
+
+    // Only add if there's actual searchable content
+    if (doc.arabic || doc.translit || doc.translation) {
+      documents.push(doc);
+      successCount++;
+      console.log(`  Indexed: ${config.path} (${extracted.contentType})`);
     }
   }
 
@@ -359,14 +380,25 @@ async function buildSearchIndex() {
   writeFileSync(outputPath, JSON.stringify(documents, null, 2));
 
   console.log("\nSearch index build complete!");
-  console.log(`  Total pages processed: ${pageConfigs.length}`);
   console.log(`  Successfully indexed: ${successCount}`);
-  console.log(`  Errors: ${errorCount}`);
+  console.log(`  Skipped (unmigrated): ${skippedCount}`);
+  console.log(`  Errors: ${errors.length}`);
   console.log(`  Output: ${outputPath}`);
   console.log(
     `  Index size: ${(JSON.stringify(documents).length / 1024).toFixed(2)} KB`,
   );
+
+  if (errors.length > 0) {
+    console.error(`\nBuild failed with ${errors.length} error(s):`);
+    for (const { path, error } of errors) {
+      console.error(`  - ${path}: ${error}`);
+    }
+    process.exit(1);
+  }
 }
 
 // Run the build
-buildSearchIndex().catch(console.error);
+buildSearchIndex().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});
