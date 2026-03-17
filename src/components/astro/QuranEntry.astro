@@ -12,7 +12,7 @@ const { entry, openingBrace, closingBrace, repeatText } = Astro.props;
 ---
 
 <div class="entry">
-  <div class="arabic">
+  <div class="arabic" dir="rtl" lang="ar">
     <span class="arabic verse-bracket">{openingBrace ? "\uFD3F" : ""}</span>
     {entry.arabic}
     <span class="arabic verse-bracket">

@@ -2,15 +2,15 @@
 import { type QasidaEntryModel, QuranEntryModel } from "@/models/recitation";
 
 interface Props {
-  entry: QasidaEntryModel;
+  entry: QasidaEntryModel | QuranEntryModel;
 }
 
 const { entry } = Astro.props;
-const extraClass = entry instanceof QuranEntryModel ? "quran" : "";
+const isQuran = entry instanceof QuranEntryModel;
 ---
 
 <div class="qasida-entry">
-  <div class={`arabic ${extraClass}`}>{entry.arabic}</div>
+  <div class:list={["arabic", { quran: isQuran }]} dir="rtl" lang="ar">{entry.arabic}</div>
   <div class="translit">{entry.translit}</div>
   <div class="translation">{entry.translation}</div>
 </div>
