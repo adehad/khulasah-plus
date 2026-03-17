@@ -169,9 +169,11 @@ const baseURL = import.meta.env.BASE_URL;
 <body>
   <Header pagePath={pagePath} />
 
-  <main>
-    <slot />
-  </main>
+  <div class="content-border">
+    <main>
+      <slot />
+    </main>
+  </div>
 
   <!-- Interactive Lit web components (loaded client-side) -->
   <script>
