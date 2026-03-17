@@ -1,6 +1,3 @@
-import type { TemplateResult } from "lit";
-import { html } from "lit";
-
 /**
  * Configuration for audio playback associated with a recitation.
  */
@@ -117,14 +114,14 @@ export class QasidaEntryModel implements RecitationEntry {
 }
 
 export class QasidaVerseModel {
-  entries: QasidaEntryModel[];
+  entries: (QasidaEntryModel | QuranEntryModel)[];
   chorus: boolean;
 
   constructor({
     entries,
     chorus = false,
   }: {
-    entries: QasidaEntryModel[];
+    entries: (QasidaEntryModel | QuranEntryModel)[];
     chorus?: boolean;
   }) {
     this.entries = entries;
@@ -133,30 +130,23 @@ export class QasidaVerseModel {
 }
 
 /**
- * Abstract base class for recitation models.
+ * Base class for recitation models.
  *
  * Represents a generic recitation item, such as a dhikr or a Quran recitation.
  *
- * @abstract
- * @property type - The type of recitation, either 'dhikr' or 'quran'.
  * @property title - The title of the recitation.
  * @property instruction - Optional instructions for the recitation.
- *
- * @method render - Abstract method to render the recitation as a TemplateResult.
  */
 export abstract class BaseRecitationModel {
   constructor(
     public title: string,
     public instruction?: string,
   ) {}
-
-  abstract render(): TemplateResult;
 }
 
 /**
  * A collapsible wrapper for grouping recitation content.
  *
- * Renders as a button (styled like NavButton) that toggles visibility of its children.
  * Useful for optional sections or logically grouping content on a single page.
  *
  * @extends BaseRecitationModel
@@ -188,27 +178,14 @@ export class ExpandModel extends BaseRecitationModel {
     this.entries = entries;
     this.startExpanded = startExpanded;
   }
-
-  render(): TemplateResult {
-    return html`<kp-expand .model=${this}></kp-expand>`;
-  }
 }
 
 /**
- * Represents a model for a Dhikr recitation, extending the BaseRecitationModel.
+ * Represents a model for a Dhikr recitation.
  *
  * @extends BaseRecitationModel
  *
  * @property {DhikrEntryModel[]} entries - The list of Dhikr entries associated with this model.
- *
- * @constructor
- * @param {string} title - The title of the Dhikr recitation.
- * @param {DhikrEntryModel[]} entries - The entries that make up the Dhikr recitation.
- * @param {string} [instruction] - Optional instructions for the recitation.
- *
- * @method render
- * Renders the Dhikr recitation as a custom element.
- * @returns {TemplateResult} The rendered kp-dhikr element with the recitation data.
  */
 export class DhikrModel extends BaseRecitationModel {
   /** Number of times to repeat the entire dhikr (all entries together) */
@@ -229,10 +206,6 @@ export class DhikrModel extends BaseRecitationModel {
     super(title ?? "", instruction);
     this.entries = entries ?? [];
     this.repeat = repeat;
-  }
-
-  render() {
-    return html`<kp-dhikr .recitation=${this}></kp-dhikr>`;
   }
 }
 
@@ -255,35 +228,16 @@ export class WirdModel extends BaseRecitationModel {
     this.entries = entries;
     this.audio = audio;
   }
-
-  render() {
-    return html`<kp-wird .recitation=${this}></kp-wird>`;
-  }
 }
 
 /**
- * Represents a Quran recitation model, extending the BaseRecitationModel.
- *
- * @remarks
- * This model is used to encapsulate the details of a Quran recitation,
- * including its title, surah number, and associated entries.
+ * Represents a Quran recitation model.
  *
  * @extends BaseRecitationModel
  *
  * @property {string} title - The title of the recitation.
  * @property {number} surah - The surah number associated with the recitation.
  * @property {QuranEntryModel[]} entries - The list of Quran entry models.
- *
- * @param {string} title - The title of the recitation.
- * @param {number} surah - The surah number.
- * @param {QuranEntryModel[]} entries - The entries for the recitation.
- * @param {string} [instruction] - Optional instruction for the recitation.
- * @param {boolean} [basmallah] - Optional basmallah for the recitation. Default false.
- *
- * @method render
- * Renders the recitation using the <kp-mushaf> custom element.
- *
- * @returns {TemplateResult} The rendered HTML template for the recitation.
  */
 export class QuranModel extends BaseRecitationModel {
   surah: number;
@@ -312,17 +266,12 @@ export class QuranModel extends BaseRecitationModel {
     this.basmallah = basmallah;
     this.repeat = repeat;
   }
-
-  render() {
-    return html`<kp-mushaf .recitation=${this}></kp-mushaf>`;
-  }
 }
 
 /**
- * Represents a single entry of Quran recitation, including the Arabic text,
- * its transliteration, translation, and verse number.
+ * Represents a chapter within a Qasida.
  *
- * @implements {RecitationEntry}
+ * @extends BaseRecitationModel
  */
 export class QasidaChapterModel extends BaseRecitationModel {
   number: number;
@@ -343,32 +292,15 @@ export class QasidaChapterModel extends BaseRecitationModel {
     this.number = number;
     this.entries = entries;
   }
-
-  render() {
-    return html`<kp-qasida-chapter .entries=${this}></kp-qasida-chapter>`;
-  }
 }
 
 /**
- * Represents a Qasida recitation model, extending the BaseRecitationModel.
- *
- * @remarks
- * This model is used to encapsulate the details of a Qasida recitation,
- * including its title and associated entries.
+ * Represents a Qasida recitation model.
  *
  * @extends BaseRecitationModel
  *
  * @property {string} title - The title of the recitation.
- * @property {(QasidaChapterModel | QasidaVerseModel)[]} entries - The list of Qasida entry models.
- *
- * @param {string} title - The title of the recitation.
- * @param {(QasidaChapterModel | QasidaVerseModel)[]} entries - The entries for the recitation.
- * @param {string} [instruction] - Optional instruction for the recitation.
- *
- * @method render
- * Renders the recitation using the <kp-qasida> custom element.
- *
- * @returns {TemplateResult} The rendered HTML template for the recitation.
+ * @property {(QasidaChapterModel | QasidaVerseModel | ExpandModel)[]} entries - The list of Qasida entry models.
  */
 export class QasidaModel extends BaseRecitationModel {
   entries: (QasidaVerseModel | QasidaChapterModel | ExpandModel)[];
@@ -388,9 +320,5 @@ export class QasidaModel extends BaseRecitationModel {
     super(title, instruction);
     this.entries = entries;
     this.audio = audio;
-  }
-
-  render() {
-    return html`<kp-qasida .qasida=${this}></kp-qasida>`;
   }
 }
