@@ -1,5 +1,6 @@
 ---
 import { pageConfigs } from "@/config/page-config";
+import { resolveBasePath } from "@/utils/paths";
 import InlineIcon from "./InlineIcon.astro";
 
 interface Props {
@@ -18,7 +19,9 @@ interface Breadcrumb {
 
 function buildBreadcrumbs(currentPath: string): Breadcrumb[] {
   const homeTitle = pathTitleMap.get("") ?? "Home";
-  const crumbs: Breadcrumb[] = [{ text: homeTitle, href: "/" }];
+  const crumbs: Breadcrumb[] = [
+    { text: homeTitle, href: resolveBasePath("/") },
+  ];
 
   if (!currentPath) return crumbs;
 
@@ -29,7 +32,7 @@ function buildBreadcrumbs(currentPath: string): Breadcrumb[] {
     accumulated += (accumulated ? "/" : "") + segment;
     const title = pathTitleMap.get(accumulated);
     if (title) {
-      crumbs.push({ text: title, href: `/${accumulated}/` });
+      crumbs.push({ text: title, href: resolveBasePath(`/${accumulated}/`) });
     }
   }
 
