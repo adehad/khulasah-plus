@@ -55,6 +55,7 @@
   --show-arabic: block;
   --show-translation: block;
   --show-transliteration: block;
+  --border-inset: clamp(15px, 5vw, 33px);
 }
 
 html,
@@ -89,25 +90,41 @@ h3 {
   font-weight: 600;
 }
 
-main {
-  display: block;
+.content-border {
   flex: 1;
   min-height: 0;
+  position: relative;
+  /* Insets main so its scroll area sits entirely inside the border overlay,
+     prevent overlap between content elements and the border */
+  padding: var(--border-inset);
+  box-sizing: border-box;
+}
+
+main {
+  display: block;
+  height: 100%;
   overflow-y: auto;
   box-sizing: border-box;
+}
 
-  /* Decorative border - scales with viewport, capped at 33px */
+/* Decorative border overlay — does not consume layout space */
+.content-border::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 50;
   border-style: solid;
-  border-width: clamp(15px, 5vw, 33px);
+  border-width: var(--border-inset);
   border-image-slice: 20% 20%;
   border-image-repeat: round;
 }
 
-.sl-theme-light main {
+.sl-theme-light .content-border::after {
   border-image-source: url("/assets/images/ornamental-border-simplified.png");
 }
 
-.sl-theme-dark main {
+.sl-theme-dark .content-border::after {
   border-image-source: url("/assets/images/ornamental-border-simplified-dark.png");
 }
 
@@ -123,7 +140,8 @@ main {
 
 .quran {
   font-family: "Uthmanic Hafs", "Scheherazade New", serif;
-  font-size: calc(var(--arabic-font-size) * 1.1); /* Font is a bit smaller */
+  font-size: calc(var(--arabic-font-size) * 1.1);
+  /* Font is a bit smaller */
 }
 
 .translation {
@@ -161,6 +179,11 @@ main {
     /* biome-ignore lint/complexity/noImportantStyles: print styles must override all specificity */
     overflow-y: visible !important;
   }
+
+  .content-border::after {
+    /* biome-ignore lint/complexity/noImportantStyles: print styles must override all specificity */
+    display: none !important;
+  }
 }
 
 /* Shoelace Specific Theme Override */
@@ -168,6 +191,7 @@ main {
 :host {
   --sl-input-font-family: var(--font-family);
 }
+
 :root,
 :host,
 .sl-theme-light {
@@ -212,4 +236,5 @@ main {
   --sl-color-neutral-950: hsl(0 0% 95%);
   --sl-color-neutral-1000: hsl(0 0% 100%);
 }
+
 /* End Shoelace Specific Theme Override */
