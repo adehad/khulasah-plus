@@ -67,8 +67,11 @@ export class ThemeSwitcher extends LitElement {
     const lightLink = document.getElementById("light-theme") as HTMLLinkElement;
     const darkLink = document.getElementById("dark-theme") as HTMLLinkElement;
 
-    lightLink.disabled = useDark; // when dark, disable the light CSS
-    darkLink.disabled = !useDark; // when dark, enable the dark CSS
+    // Toggle Shoelace CDN theme stylesheets via media attribute.
+    // Must match the inline script in BaseLayout (which also uses media="not all" to block).
+    // Using .disabled would NOT work here — it doesn't clear the media="not all" set at page load.
+    lightLink.media = useDark ? "not all" : "";
+    darkLink.media = useDark ? "" : "not all";
 
     document.documentElement.classList.toggle("sl-theme-dark", useDark);
     document.documentElement.classList.toggle("sl-theme-light", !useDark);
