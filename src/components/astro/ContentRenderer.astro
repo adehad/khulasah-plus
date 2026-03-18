@@ -1,7 +1,7 @@
 ---
+import type { ContentModel } from "@/config/content-loader";
 import { NavModel } from "@/models/nav";
 import {
-  type BaseRecitationModel,
   DhikrModel,
   ExpandModel,
   QasidaModel,
@@ -16,7 +16,7 @@ import QuranSection from "./QuranSection.astro";
 import WirdSection from "./WirdSection.astro";
 
 interface Props {
-  items: BaseRecitationModel[];
+  items: ContentModel[];
   pagePath: string;
 }
 
@@ -42,5 +42,5 @@ const { items, pagePath } = Astro.props;
   if (item instanceof NavModel) {
     return <NavGrid item={item} />;
   }
-  return null;
+  throw new Error(`ContentRenderer: unhandled model type "${item?.constructor?.name}"`);
 })}

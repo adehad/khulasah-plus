@@ -1,9 +1,9 @@
 ---
 import ContentRenderer from "@/components/astro/ContentRenderer.astro";
+import type { ContentModel } from "@/config/content-loader";
 import { contentModules } from "@/config/content-loader";
 import { pageConfigs } from "@/config/page-config";
 import BaseLayout from "@/layouts/BaseLayout.astro";
-import type { BaseRecitationModel } from "@/models/recitation";
 
 export function getStaticPaths() {
   return pageConfigs
@@ -33,7 +33,7 @@ export function getStaticPaths() {
 interface Props {
   title: string;
   description?: string;
-  content: BaseRecitationModel[];
+  content: ContentModel[];
   path: string;
 }
 

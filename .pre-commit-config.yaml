@@ -25,13 +25,13 @@ repos:
         language: python
         types_or: [text, json, ts, markdown]
         args: [--excluded-chars, (ﷺ|﴿|﴾)]
-        files: ^src/content/
+        files: ^src/data/
         exclude: |
             (?x)^(
-                src/content/shared/quran.ts|
-                src/content/shared/quran-yasin.ts|
-                src/content/shared/quran-waqiah.ts|
-                src/content/mawlids-shimmering-light.ts|
+                src/data/shared/quran.ts|
+                src/data/shared/quran-yasin.ts|
+                src/data/shared/quran-waqiah.ts|
+                src/data/mawlids-shimmering-light.ts|
             )$
   - repo: local
     hooks:
@@ -40,10 +40,9 @@ repos:
         entry: bun scripts/normalize-arabic.ts
         language: node
         types: [ts]
-        files: ^src/content/
+        files: ^src/data/
         exclude: |
             (?x)^(
-                src/utils/arabic-normalize.ts|
-                src/content/shared/quran.ts|
-                src/content/mawlids-shimmering-light.ts|
+                src/data/shared/quran.ts|
+                src/data/mawlids-shimmering-light.ts|
             )$
