@@ -1,7 +1,6 @@
 /**
- * Path resolution utility for constructing URLs relative to the base URL.
+ * Resolves a path relative to the configured base URL.
  * Works in both Astro server-side and client-side code.
- * Replaces the SPA router's resolveRouterPath for static site navigation.
  */
 export function resolveBasePath(unresolvedPath?: string): string {
   const rawBaseURL: string = import.meta.env.BASE_URL;

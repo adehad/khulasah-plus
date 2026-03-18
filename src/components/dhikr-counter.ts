@@ -4,7 +4,7 @@ import "@shoelace-style/shoelace/dist/components/dialog/dialog.js";
 import "@shoelace-style/shoelace/dist/components/button/button.js";
 import "@shoelace-style/shoelace/dist/components/input/input.js";
 import type SlInput from "@shoelace-style/shoelace/dist/components/input/input.js";
-import { storage } from "@/utils/storage";
+import { makeDhikrCounterKey, storage } from "@/utils/storage";
 
 /**
  * Interactive counter component for tracking dhikr repetitions.
@@ -15,8 +15,15 @@ export class DhikrCounter extends LitElement {
   /** Target number of repetitions for this dhikr */
   @property({ type: Number }) target = 0;
 
-  /** Unique key for persisting this counter's value in localStorage */
+  /**
+   * Element-level key suffix passed from the Astro template.
+   * Typically the elementId, or "{elementId}-{dhikrIndex}" for per-entry counters.
+   */
   @property({ type: String }) storageKey = "";
+
+  private get _fullStorageKey(): string {
+    return makeDhikrCounterKey(this.storageKey);
+  }
 
   /** User's current count progress toward the target */
   @state() private _userCount = 0;
@@ -150,13 +157,13 @@ export class DhikrCounter extends LitElement {
 
   private _loadUserCountFromStorage() {
     const counters = storage.get("dhikrCounters");
-    this._userCount = counters[this.storageKey] ?? 0;
+    this._userCount = counters[this._fullStorageKey] ?? 0;
   }
 
   private _saveUserCountToStorage() {
     storage.update("dhikrCounters", (counters) => ({
       ...counters,
-      [this.storageKey]: this._userCount,
+      [this._fullStorageKey]: this._userCount,
     }));
   }
 
