@@ -131,6 +131,30 @@ export class LifecycleRegistry<K extends string> {
 }
 
 // ============================================================================
+// Storage Key Builders
+// ============================================================================
+
+/**
+ * Creates a storage key for a dhikr counter scoped to the current page.
+ * Uses the runtime pathname so keys stay unique across deployments regardless of BASE_URL.
+ *
+ * Key format: "{page-slug}-{suffix}"
+ *
+ * @param suffix - Element-level identifier, typically the elementId or "{elementId}-{dhikrIndex}"
+ *
+ * @example
+ * // Page /khulasah/after-fajr/wird-al-latif, suffix "wird-al-latif-3":
+ * // → "khulasah-after-fajr-wird-al-latif-wird-al-latif-3"
+ *
+ * // With dhikrIndex: suffix "wird-al-latif-3-0":
+ * // → "khulasah-after-fajr-wird-al-latif-wird-al-latif-3-0"
+ */
+export function makeDhikrCounterKey(suffix: string): string {
+  const pageSlug = slugify(window.location.pathname) || "home";
+  return `${pageSlug}-${suffix}`;
+}
+
+// ============================================================================
 // Type-Safe Storage
 // ============================================================================
 
@@ -142,28 +166,6 @@ export interface StorageSchema {
   settings: SettingsModel;
   theme: ThemeValue;
   dhikrCounters: Record<string, number>;
-}
-
-/**
- * Creates a storage key for a dhikr counter based on page location and element ID.
- * Key format: "{page-slug}-{elementId}" or "{page-slug}-{elementId}-{suffix}"
- *
- * @param elementId - The sticky button's elementId (e.g., "rajab-1447-1")
- * @param suffix - Optional suffix to distinguish multiple counters within the same element.
- *                 Typically the dhikrIndex (0-indexed position within DhikrModel.entries).
- *
- * @example
- * // Without suffix (model-level counter): "blessed-occasions-rajab-istighfar-rajab-1447-1"
- * // With dhikrIndex suffix: "blessed-occasions-rajab-istighfar-rajab-1447-1-0"
- */
-export function makeDhikrCounterKey(
-  elementId: string,
-  suffix?: number,
-): string {
-  const pathname = window.location.pathname;
-  const pageSlug = slugify(pathname) || "home";
-  const base = `${pageSlug}-${elementId}`;
-  return suffix !== undefined ? `${base}-${suffix}` : base;
 }
 
 /**

@@ -48,7 +48,7 @@ const hasAudio = !!model.audio?.url;
       return (
         <Fragment>
           <kp-sticky-button label={entryNum} elementId={elementId} variant="entry"></kp-sticky-button>
-          <DhikrSection model={entry} index={i} pagePath={pagePath} elementId={elementId} />
+          <DhikrSection model={entry} index={i} elementId={elementId} />
         </Fragment>
       );
     }
