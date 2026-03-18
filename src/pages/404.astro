@@ -1,0 +1,29 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { resolveBasePath } from "@/utils/paths";
+---
+
+<BaseLayout title="Page Not Found" pagePath="">
+  <div class="not-found">
+    <h1>Page Not Found</h1>
+    <p>The page you're looking for doesn't exist.</p>
+    <a href={resolveBasePath("/")}>Return Home</a>
+  </div>
+</BaseLayout>
+
+<style>
+  .not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .not-found a {
+    color: var(--sl-color-primary-500);
+    text-decoration: underline;
+  }
+</style>
