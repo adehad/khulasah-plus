@@ -10,8 +10,8 @@
     "build": "bun run build:search && astro build",
     "build:prod": "bun run build:search && astro build && bun scripts/google-site-verification.ts",
     "start": "bun run dev",
-    "lint": "biome lint",
-    "format": "biome format --write",
+    "lint": "biome check",
+    "format": "biome check --write",
     "generate-pwa-assets": "pwa-assets-generator",
     "preview": "astro preview"
   },
