@@ -1,0 +1,173 @@
+import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
+
+export default [
+  new WirdModel({
+    title: "Wird",
+    entries: [
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ.\nالحَمْدُ لِلَّهِ رَبِّ العَالَمِينَ",
+            translit: "Alḥamdu liLlāhi rabbil ʿālamīn",
+            translation: "Praise belongs to Allah",
+          }),
+          new DhikrEntryModel({
+            arabic: "حَسْبِيَ اللَّهُ وَنِعْمَ الوَكِيلُ",
+            translit:
+              "ḥasbiyAllāhu wa niʿmal wakīl wa lā ḥawla wa lā quwwata illā biLlahil ʿaliyyi alʿaẓim. Allāhumma inni abraʾu min ḥawlī wa quwwatī ilā ḥawlika wa quwwatika.\nAllāhumma innī ataqarrabu ilayka biṣṣalāti ʿala sayyidinā Muḥammadin ʿabdika wa nabiyyika wa rasūlika sayyidil mursalīna ṣallAllāhu taʿālā wasallama ʿalayhi waʿalayhim ajmaʿīna imtithālan li amrika wa taṣdīqan lahu wa maḥabbatan fīhi washawqan ilayhi wataʿẓīman liqadrihi walikawnihi ṣallAllahu ʿalayhi wasallama ahlan lidhalika fataqabbalhā minnī bifaḍlika wajʿalnī min ʿibadikaṣ ṣāliḥīna wawaffiqnī liqirāʾatihā ʿalād dawāmi bijāhihi ʿindaka waṣallAllāhu ʿalā sayyidinā Muḥammadin wa ālihi waṣaḥbihi ajmaʿīn.",
+            translation:
+              "the Lord of the Worlds. Allah is enough for me and the best Protector. There is no power nor strength except by Allah",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا باللَّهِ العَلِيِّ العَظِيمِ. اللَّهُمَّ إِنِّي أَبْرَأُ مِنْ حَوْلِي وَقُوَّتِي إِلَى حَوْلِكَ وَقُوَّتِكَ. اللَّهُمَّ إِنِّي أَتَقَرَّبُ إِلَيْكَ بِالصَّلَاةِ عَلَى سَيِّدِنَا مُحَمَّدٍ",
+            translit: "",
+            translation: "the High",
+          }),
+          new DhikrEntryModel({
+            arabic: "عَبْدِكَ وَنَبِيِّكَ وَرَسُولِكَ سَيِّدِ المُرْسَلِينَ",
+            translit: "",
+            translation: "the Immense. O Allah",
+          }),
+          new DhikrEntryModel({
+            arabic: "صَلَّى اللَّهُ تَعَالَى وَسَلَّمَ عَلَيْهِ وَعَلَيْهِمْ أَجْمَعِينَ",
+            translit: "",
+            translation:
+              "I relinquish my power and strength in favour of Your power and Your strength. O Allah",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "امْتِثَالًا لِأَمْرِكَ وَتَصْدِيقًا لَهُ وَمَحَبَّةً فِيهِ وَشَوْقًا إِلَيْهِ وَتَعْظِيمًا لِقَدْرِهِ",
+            translit: "",
+            translation:
+              "I draw near to You by the prayer on Sayyidina Muhammad",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَلِكَوْنِهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ أَهْلًا لِذَلِكَ",
+            translit: "",
+            translation: "Your slave",
+          }),
+          new DhikrEntryModel({
+            arabic: "فَتَقَبَّلْهَا مِنِّي بِفَضْلِكَ",
+            translit: "",
+            translation: "Prophet and Messenger",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَاجْعَلْنِي مِنْ عِبَادِكَ الصَّالِحِينَ",
+            translit: "",
+            translation: "the Master of the Messengers",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَوَفِّقْنِي لِقِرَاءَتِهَا عَلَى الدَّوَامِ بِجَاهِهِ عِنْدَكَ",
+            translit: "",
+            translation:
+              "may Allah Almighty bless him and grant him and all of them peace. I do so in obedience to Your command",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَصَلَّى اللَّهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَآلِهِ وَصَحْبِهِ أَجْمَعِينَ.",
+            translit: "",
+            translation:
+              "affirming him, loving him, yearning for him and respecting his worth and the fact that he, may Allah bless him and grant him peace, is worthy of that. Accept it from me by Your grace and make me one of Your righteous slaves. By his rank with You, give me success in reading it (Dala'il Al Khayrat) continuously. May Allah bless Sayyidina Muhammad and his family and all his Companions.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "أَسْتَغْفِرُ اللَّهَ العَظِيمَ (3)",
+            translit: "AstaghfiruLlāha alʿaẓīm (3).",
+            translation: "I ask Allah for forgiveness (3).",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "سُبْحَانَ اللَّهِ",
+            translit: "SubḥānAllāhi",
+            translation: "Glory be to Allah",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالحَمْدُ لِلَّهِ",
+            translit: "walḥamduliLlāhi",
+            translation:
+              "Praise be to Allah. There is no god except Allah. Allah is the Greatest. There is no power nor strength except by Allah the Lofty",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَلَا إِلَهَ إِلَّا اللَّهُ",
+            translit: "wa lā ilaha illAllāhu",
+            translation: "the Great.",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَاللَّهُ أَكْبَرُ",
+            translit: "wAllāhu akbaru",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا باللَّهِ العَلِيِّ العَظِيم (3)",
+            translit:
+              "wa lā hawla wa lā quwwata illa biLlahil ʿaliyyil ʿaẓīm (3).",
+            translation: "",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "حَسْبِيَ اللَّهُ وَنِعْمَ الوَكِيلُ (3)",
+            translit: "ḤasbiyAllāhu wa niʿmal wakīl (3).",
+            translation: "Allah suffices me and he is the best Protector.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic:
+              "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ. بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ. ﴿قُلْ هُوَ اللَّهُ أَحَدٌ . اللَّهُ الصَّمَدُ . لَمْ يَلِدْ وَلَمْ يُولَدْ . وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌ\n﴾(3)",
+            translit:
+              "Aʿūdhu biLlāhi minash shayṭānir rajīm. BismiLlāhir raḥmānir raḥīm. Qul huwaLlāhu aḥad. Allāhuṣ ṣamad. Lam yalid walam yūlad. Walam yakullahu kufuwan aḥad. (3)",
+            translation:
+              "I seek refuge in Allah from the accursed Satan. In the name of Allah, Most Gracious, Most Merciful. Say: He is Allah, the One and Only; Allah, the Eternal, Absolute; He begetteth not, nor is He begotten; And there is none like unto Him. (3 times)",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic:
+              "بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ ﴿قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ . مِن شَرِّ مَا خَلَقَ . وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ . وَمِن شَرِّ النَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ . وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ\n ﴾\nبِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ\n ﴿قُلْ أَعُوذُ بِرَبِّ النَّاسِ . مَلِكِ النَّاسِ . إِلَـٰهِ النَّاسِ . مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ . الَّذِى يُوَسْوِسُ فِى صُدُورِ النَّاسِ . مِنَ الْجِنَّةِ وَالنَّاسِ\n﴾",
+            translit:
+              "BismiLlāhir raḥmānir raḥīm. Qul aʿūdhu birabbil falaq. Min sharri mā khalaq. Wa min sharri ghāsiqin idha waqab. Wa min sharrin naffāthāti fīl ʿuqad. Wamin sharri ḥāsidin idhā ḥasad.BismiLlāhir raḥmānir raḥīm.Qul aʿūdhu birabbin nās. Malikin nās. Ilāhin nās. Min sharril waswāsil khannās. Alladhī yuwaswisu fī ṣudurin nās. Minal jinnati wannās.",
+            translation:
+              "In the name of Allah, Most Gracious, Most Merciful.Say: I seek refuge with the Lord of the Dawn. From the mischief of created things; From the mischief of Darkness as it overspreads; From the mischief of those who practise secret arts; And from the mischief of the envious one as he practises envy. In the name of Allah, Most Gracious, Most Merciful.Say: I seek refuge with the Lord and Cherisher of Mankind. The King of Mankind, the God of Mankind - from the evil of the sneaking whisperer, who whispers into the hearts of Mankind, among Jinns and among men.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic:
+              "﴿بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ . الْحَمْدُ لِلَّهِ رَبِّ الْعَـٰلَمِينَ . الرَّحْمَـٰنِ ٱلرَّحِيمِ . مَـٰلِكِ يَوْمِ الدِّينِ . إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ . اهْدِنَا الصِّرَٰطَ الْمُسْتَقِيمَ . صِرَٰطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّآلِّينَ\n ﴾",
+            translit:
+              "BismiLlāhir raḥmānir raḥīm. Alḥamdu liLlāhi rabbil ʿālamīn. Arraḥmānir raḥīm. Māliki yawmid dīn. Iyyāka naʿbudu wa iyyāka nastaʿīn. Ihdināṣ ṣirāṭal mustaqīm. Ṣirāṭal ladhīna anʿamta ʿalayhim ghayril maghḍūbi ʿalayhim walāḍ ḍāllīn.",
+            translation:
+              "In the name of Allah, Most Gracious, Most Merciful. Praise be to Allah, the Cherisher and Sustainer of the worlds; Most Gracious, Most Merciful; Master of the Day of Judgment. Thee do we worship, and Thine aid we seek. Show us the straight way, the way of those on whom Thou hast bestowed Thy Grace, those whose (portion) is not wrath, and who go not astray.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic:
+              "بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ  ﴿\nالٓمٓ . ذَٰلِكَ الْكِتَـٰبُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِّلْمُتَّقِينَ . الَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ وَيُقِيمُونَ الصَّلَوٰةَ وَمِمَّا رَزَقْنَـٰهُمْ يُنفِقُونَ . وَالَّذِينَ يُؤْمِنُونَ بِمَآ أُنزِلَ إِلَيْكَ وَمَآ أُنزِلَ مِن قَبْلِكَ وَبِالْآخِرَةِ هُمْ يُوقِنُونَ . أُوْلَـٰٓئِكَ عَلَىٰ هُدًى مِّن رَّبِّهِمْ ۖ وَأُوْلَـٰٓئِكَ هُمُ الْمُفْلِحُونَ\n ﴾",
+            translit:
+              "BismiLlāhir raḥmānir raḥīm.Alif Lām Mīm. Dhālikal kitābu lā raybai fīh hudan lilmuttaqīn. Alladhīna yuʾminūna bilghaybi wayuqīmūnaṣ ṣalāta wamimmā razaqnāhum yunfiqūn. Walladhīna yuʾminūna bimā ʾunzila ilayka wamā ʾunzila min qablika wa bilākhirati hum yūqinūn. Ūlāʾika ʿalā hudam mir rabbihim wa ūlāʾika humul mufliḥūn.",
+            translation:
+              "In the name of Allah, Most Gracious, Most Merciful. Alif. Lam. Meem. This is the Book; In it is guidance sure, without doubt, to those who fear Allah; Who believe in the Unseen, are steadfast in prayer, and spend out of what We have provided for them; And who believe in the Revelation sent to thee, and sent before thy time, and have the assurance of the Hereafter. They are on true guidance, from their Lord, and it is these who will prosper.",
+          }),
+        ],
+      }),
+    ],
+  }),
+];

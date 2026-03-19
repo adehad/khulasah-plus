@@ -1,0 +1,1787 @@
+import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
+
+export default [
+  new WirdModel({
+    title: "Wird",
+    entries: [
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ مَنْ سَبَّحَكَ وَقَدَّسَكَ",
+            translit:
+              "Wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadada man sabbaḥaka wa qaddasaka",
+            translation:
+              "[I ask You] to bless him and his family in quantity as great as whoever glorifies You",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَسَجَدَ لَكَ وَعَظَّمَكَ",
+            translit: "wa sajada laka",
+            translation: "celebrates You",
+          }),
+          new DhikrEntryModel({
+            arabic: "مِنْ يَوْمِ خَلَقْتَ الدُّنْيَا إِلَى يَوْمِ القِيَامَةِ فِي كُلِّ يَوْمٍ أَلْفَ مَرَّةٍ",
+            translit:
+              "wa ʿaẓẓamaka min yawma khalaqtad dunyā ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
+            translation: "prostrates to You and exalts You",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ كُلِّ سَنَةٍ خَلَقْتَهُمْ فِيهَا",
+            translit:
+              "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadada kulli sanatin khalaqtahum fīhā",
+            translation:
+              "from the day You created the world until the Day of Resurrection - times a thousand",
+          }),
+          new DhikrEntryModel({
+            arabic: "مِنْ يَوْمِ خَلَقْتَ الدُّنْيَا إِلَى يَوْمِ القِيَامَةِ فِي كُلِّ يَوْمٍ أَلْفَ مَرَّةٍ",
+            translit:
+              "min yawmin khalaqtad dunyā ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
+            translation:
+              "every day. Bless him and his family in quantity as great as the number of years in which You created them",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ السَّحَابِ الجَارِيَةِ",
+            translit:
+              "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadadas saḥābil jāriyati",
+            translation:
+              "from the day You created the world until the Day of Resurrection - times a thousand",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ الرِّيَاحِ الذَّارِيةِ",
+            translit:
+              "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadadar riyāḥidh dhāriyati",
+            translation:
+              "every day. Bless him and his family in quantity as great as the billowing clouds. Bless him and his family in quantity as great as the driving winds",
+          }),
+          new DhikrEntryModel({
+            arabic: "مِنْ يَوْمِ خَلَقْتَ الدُّنْيَا إِلَى يَوْمِ القِيَامَةِ فِي كُلِّ يَوْمٍ أَلْفَ مَرَّةٍ",
+            translit:
+              "min yawmi khalaqta dunyā ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
+            translation:
+              "from the day You created the world until the Day of Resurrection - times a thousand",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ مَا هَبَّتِ الرِّيَاحُ عَلَيْهِ",
+            translit:
+              "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadada mā habbatir riyāḥu ʿalayhi",
+            translation:
+              "every day. Bless him and his family in quantity as great as what the winds blow upon and move of branches",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَحَرَّكَتْهُ مِنَ الأَغْصَانِ وَالأَشْجَارِ",
+            translit: "wa ḥarrakat-hu minal aghsāni wal ashjāri",
+            translation: "trees",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالأَوْرَاقِ وَالثِّمَارِ وَالأَزْهَارِ",
+            translit: "wal awrāqi wath thimāri wal azhāri",
+            translation: "leaves",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَعَدَدَ مَا خَلَقْتَ عَلَى قَرَارِ أَرْضِكَ وَمَا بَيْنَ سَمَاوَاتِكَ",
+            translit:
+              "wa ʿadada ma khalaqta ʿalā qarāri arḍika wamā bayna samāwātika",
+            translation: "fruits and flowers",
+          }),
+          new DhikrEntryModel({
+            arabic: "مِنْ يَوْمِ خَلَقْتَ الدُّنْيَا إِلَى يَوْمِ القِيَامَةِ فِي كُلِّ يَوْمٍ أَلْفَ مَرَّةٍ",
+            translit:
+              "min yawmi khalaqtad dunyā ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
+            translation:
+              "and in quantity as great as what You created on the ground of Your earth and what is between Your heavens",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ أَمْوَاجِ بِحَارِكَ",
+            translit:
+              "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadada amwāji biḥārika",
+            translation:
+              "from the day You created the world until the Day of Resurrection - times a thousand",
+          }),
+          new DhikrEntryModel({
+            arabic: "مِنْ يَوْمِ خَلَقْتَ الدُّنْيَا إِلَى يَوْمِ القِيَامَةِ فِي كُلِّ يَوْمٍ أَلْفَ مَرَّةٍ",
+            translit:
+              "min yawmi khalaqtad dunyā ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
+            translation:
+              "every day. Bless him and his family in quantity as great as the waves of Your seas",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ الرَّمْلِ وَالحَصَى وَكُلِّ حَجَرٍ وَمَدَرٍ خَلَقْتَهُ فِي مَشَارِقِ الأَرْضِ وَمَغَارِبِهَا",
+            translit:
+              "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadadar ramli wal ḥaṣa wa kulli ḥajarin wa madarin khalaqtahu fī mashāriqil arḍi wa maghāribihā",
+            translation:
+              "from the day You created the earth until the Day of Resurrection - times a thousand",
+          }),
+          new DhikrEntryModel({
+            arabic: "سَهْلِهَا وَجِبَالِهَا وَأَوْدِيَتِهَا",
+            translit: "sahlihā wa jibālihā wa awdiyatihā",
+            translation:
+              "every day. Bless him and his family in quantity as great as the sand",
+          }),
+          new DhikrEntryModel({
+            arabic: "مِنْ يَوْمِ خَلَقْتَ الدُّنْيَا إِلَى يَوْمِ القِيَامَةِ فِي كُلِّ يَوْمٍ أَلْفَ مَرَّةٍ",
+            translit:
+              "min yawmi khalaqtad dunyā ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
+            translation:
+              "the pebbles and every stone and the clay of Your creation in the eastern and western parts of the earth",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ نَبَاتِ الأَرْضِ فِي قِبْلَتِهَا وَجَوْفِهَا",
+            translit:
+              "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadadan nabātil arḍi fī qiblatihā wa jawfīhā",
+            translation: "its plains",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَشَرْقِهَا وَغَرْبِهَا",
+            translit: "wa sharqihā wa gharbihā",
+            translation: "mountains and valleys",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَسَهْلِهَا وَجِبَالِهَا",
+            translit: "wa sahlihā wa jibālihā",
+            translation:
+              "from the Day You created the earth until the Day of Resurrection - times a thousand",
+          }),
+          new DhikrEntryModel({
+            arabic: "مِنْ شَجَرٍ وَثَمَرٍ وَأَوْرَاقٍ وَزَرْعٍ وَجَمِيعِ مَا أَخْرَجَتْ",
+            translit:
+              "min shajarin wa thimari wa awrāqin wa zarʿin wa jamīʿi mā akhrajat",
+            translation:
+              "every day. Bless him and his family in quantity as great as the plants of the earth in the north and south",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَمَا يَخْرُجُ مِنْهَا مِنْ نَبَاتِهَا وَبَرَكَاتِهَا مِنْ يَوْمِ خَلَقْتَ الدُّنْيَا إِلَى يَوْمِ القِيَامَةِ فِي كُلِّ يَوْمٍ أَلْفَ مَرَّةٍ",
+            translit: "wa mā yakhruju minhā min nabātihā wabarakātihā",
+            translation: "east and west",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ مَا خَلَقْتَ مِنَ الإِنْسِ وَالجِنِّ وَالشَّيَاطِينِ",
+            translit:
+              "min yawmi khlaqtad dunyā ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
+            translation: "the mountains",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَمَا أَنْتَ خَالِقُهُ مِنْهُمْ إِلَى يَوْمِ القِيَامَةِ فِي كُلِّ يَوْمٍ أَلْفَ مَرَّةٍ",
+            translit:
+              "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadada mā khalaqta minal insi waljinni wash shayāṭīni",
+            translation: "the plains",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ كُلِّ شَعْرَةٍ فِي أَبْدَانِهِمْ وَوُجُوهِهِمْ وَعَلَى رُؤُوسِهِمْ",
+            translit:
+              "wamā anta khāliquhu minhum ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
+            translation: "the trees",
+          }),
+          new DhikrEntryModel({
+            arabic: "مُنْذُ خَلَقْتَ الدُّنْيَا إِلَى يَوْمِ القِيَامَةِ فِي كُلِّ يَوْمٍ أَلْفَ مَرَّةٍ",
+            translit:
+              "wa an tuṣalli alayhi wa ʿalā ālihi ʿadada kulli shʿaratin fī abdānihim wawujūhihim waʿalā ruʾūsihim",
+            translation: "the fruit",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ أَنْفَاسِهِمْ وَأَلْفَاظِهِمْ وَأَلْحَاظِهِمْ",
+            translit:
+              "mundhu khalaqtad dunyā ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
+            translation: "the leaves",
+          }),
+          new DhikrEntryModel({
+            arabic: "مِنْ يَوْمِ خَلَقْتَ الدُّنْيَا إِلَى يَوْمِ القِيَامَةِ فِي كُلِّ يَوْمٍ أَلْفَ مَرَّةٍ",
+            translit:
+              "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadada anfasihim wa alfāẓihim wa alḥāẓihim",
+            translation:
+              "the crops and all that You bring forth and what You do not bring forth",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ طَيَرَانِ الجِنِّ وَخَفَقَانِ الإِنْسِ",
+            translit:
+              "min yawmi khlaqtad dunyā ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
+            translation: "of its plants and blessings",
+          }),
+          new DhikrEntryModel({
+            arabic: "مِنْ يَوْمِ خَلَقْتَ الدُّنْيَا إِلَى يَوْمِ القِيَامَةِ فِي كُلِّ يَوْمٍ أَلْفَ مَرَّةٍ",
+            translit:
+              "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadada ṭayaranil jinni wa khafaqānil insi",
+            translation:
+              "from the day You created the world until the Day of Resurrection - times a thousand",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ كُلِّ بَهِيمَةٍ خَلَقْتَهَا عَلَى أَرْضِكَ صَغِيرَةً وَكَبِيرَةً",
+            translit:
+              "min yawmi khlaqtad dunyā ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
+            translation:
+              "every day. Bless him and his family in quantity as great as what you created of men",
+          }),
+          new DhikrEntryModel({
+            arabic: "فِي مَشَارِقِ الأَرْضِ وَمَغَارِبِهَا",
+            translit:
+              "wa ‘an tuṣalli ʿalayhi wa ʿalā ālihi ʿadada kulli bahīmatin khalaqtaha ʿalā arḍika ṣaghīratan wa kabīratan",
+            translation: "jinn",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "مِمَّا عُلِمَ وَمِمَّا لَا يَعْلَمُ عِلْمَهُ إِلَّا أَنْتَ مِنْ يَوْمِ خَلَقْتَ الدُّنْيَا إِلَى يَوْمِ القِيَامَةِ فِي كُلِّ يَوْمٍ أَلْفَ مَرَّةٍ",
+            translit:
+              "fī mashāriqil arḍi wa maghāribihā mimmā ʿulima wa mimmā lā yaʿlamu ʿilmihu illā anta min yawmi khalaqtad dunyā ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
+            translation: "shaytans",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ مَنْ صَلَّى عَلَيْهِ",
+            translit:
+              "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadada man ṣalla ʿalayhi",
+            translation:
+              "and what You will create of them until the Day of Resurrection - times a thousand",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَعَدَدَ مَنْ لَمْ يُصَلِّ عَلَيْهِ",
+            translit:
+              "wa ʿadada man lam yuṣalli ʿalayhi wa ʿadada man yuṣalli ʿalayhi ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
+            translation:
+              "every day. Bless him and his family in quantity as great as every hair on their bodies",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَعَدَدَ مَنْ يُصَلِّي عَلَيْهِ إِلَى يَوْمِ القِيَامَةِ فِي كُلِّ يَوْمٍ أَلْفَ مَرَّةٍ",
+            translit:
+              "wa an tuṣalli ʿalayhi wa ʿalā ālihi adadal aḥyāʾi wal amwāti wa ʿadada mā khalaqta min ḥītānin wa ṭayrin wa namlin wa naḥlin wa ḥasharāt",
+            translation: "their faces",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ الأَحْيَاءِ وَالأَمْوَاتِ",
+            translit:
+              "wa an tuṣalli ʿalayhi wa ʿalā ālihi fīl layli idhā yaghshā wan nahāri idhā tajallā",
+            translation:
+              "and heads since You created the world until the Day of Resurrection - times a thousand",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَعَدَدَ مَا خَلَقْتَ مِنْ حِيتَانٍ وَطَيْرٍ وَنَمْلٍ وَنَحْلٍ وَحَشَرَاتٍ",
+            translit:
+              "wa an tuṣalli ʿalayhi wa ʿalā ālihi fīl ākhirati wal ūlā",
+            translation:
+              "every day. Bless him and his family in quantity as great as their breaths",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ فِي اللَّيْلِ إِذَا يَغْشَى وَالنَّهَارِ إِذَا تَجَلَّى",
+            translit:
+              "wa an tuṣalli ʿalayhi wa ʿalā ālihi mundhu kāna fīl mahdi ṣabiyyan",
+            translation:
+              "phrases and glances from the day You created the world until the Day of Resurrection - times a thousand",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ فِي الآخِرَةِ وَالأُولَى",
+            translit: "ilā an ṣāra kahlan mahdiyyan",
+            translation:
+              "every day. Bless him and his family in quantity as great as the number of the flights of the jinn",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ مُنْذُ كَانَ فِي المَهْدِ صَبِيًّا",
+            translit: "faqabaḍtahu ilayka ʿadlan marḍiyyan",
+            translation:
+              "and every human heartbeat from the day You created the world until the Day of Resurrection - times a thousand",
+          }),
+          new DhikrEntryModel({
+            arabic: "إِلَى أَنْ صَارَ كَهْلًا مَهْدِيًّا",
+            translit: "litabʿathahu shafīʿa",
+            translation:
+              "every day. Bless him and his family in quantity as great as the animals You created on Your earth",
+          }),
+          new DhikrEntryModel({
+            arabic: "فَقَبَضْتَهُ إِلَيْكَ عَدْلًا مَرْضِيًّا",
+            translit:
+              "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadada khalqika wa riḍa nafsika wa zinata ʿarshika wa midāda kalimātika",
+            translation: "both small and large",
+          }),
+          new DhikrEntryModel({
+            arabic: "لِتَبْعَثَهُ شَفِيعًا",
+            translit:
+              "wa an tuʾṭiyahul wasīlata wal faḍīlata wad darajatar rafīʿata",
+            translation:
+              "in the eastern parts of the earth and the western parts",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ خَلْقِكَ وَرِضَي نَفْسِكَ وَزِنَةَ عَرْشِكَ وَمِدَادَ كَلِمَاتِكَ",
+            translit: "wal ḥawḍal mawrūda",
+            translation:
+              "those which are known and those which are only known by You",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تُعْطِيَهُ الوَسِيلَةَ وَالفَضِيلَةَ",
+            translit: "wal maqāmal maḥmūda",
+            translation:
+              "from the day You created the world until the Day of Resurrection - times a thousand",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالدَّرَجَةَ الرَّفِيعَةَ",
+            translit: "wal ʿizzal mamdūda",
+            translation:
+              "every day. Bless him and his family in quantity as great as whoever blessed him",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالحَوْضَ المَوْرُودَ",
+            translit: "wa an tuʿaẓẓima burhānahu",
+            translation:
+              "and in quantity as great as whoever did not bless him",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالمَقَامَ المَحْمُودَ",
+            translit: "wa an tusharrifa bunyānahu",
+            translation:
+              "and in quantity as great as whoever will bless him until the Day of Resurrection - times a thousand",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالعِزَّ المَمْدُودَ",
+            translit: "wa an tarfaʿa makānahu",
+            translation:
+              "every day. Bless him and his family in quantity as great as the living and the dead",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تُعَظِّمَ بُرْهَانَهُ",
+            translit: "wa an tastaʿmilanā ya mawlānā bisunnatihi",
+            translation: "and in quantity as great as what You created of fish",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تُشَرِّفَ بُنْيَانَهُ",
+            translit: "wa an tumītanā ʿalā millatihi",
+            translation: "birds",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تَرْفَعَ مَكَانَهُ",
+            translit: "wa an taḥshuranā fī zumratihi wa taḥta liwaʾihi",
+            translation: "bees",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تَسْتَعْمِلَنَا يَا مَوْلَانَا بِسُنَّتِهِ",
+            translit: "wa an tajʿalanā min rufaqāʾihi",
+            translation:
+              "ants and insects. Bless him and his family in the night when it darkens",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تُمِيتَنَا عَلَى مِلَّتِهِ",
+            translit: "wa an tūridana ḥawḍahu",
+            translation:
+              "and the day when it brightens. Bless him and his family in the Last World and the First. Bless him and his family in quantity as great as the time from when he was a baby in the cradle until he became a mature",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تَحْشُرَنَا فِي زُمْرَتِهِ",
+            translit: "wa an tasqīna bikaʾsihi",
+            translation:
+              "middle-aged man when You took him to You as one who was pleasing and equitable so that You could raise him up as an intercessor. Bless him and his family in quantity as great as Your creation",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَتَحْتَ لِوَائِهِ",
+            translit: "wa an tanfaʿanā bi maḥabbatihi",
+            translation: "Your pleasure",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تَجْعَلَنَا مِنْ رُفَقَائِهِ",
+            translit: "wa an tatūba ʿalaynā",
+            translation: "the weight of Your Throne",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تُورِدَنَا حَوْضَهُ",
+            translit:
+              "wa an tuʿāfiyanā min jamīʿil balāʾi wal balwāʾi wal fitani",
+            translation:
+              "and the ink of Your words. Give him the means of mediation",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَن تَسْقِيَنَا بِكَأْسِهِ",
+            translit: "mā ẓahara minhā wamā baṭana",
+            translation: "excellence",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تَنْفَعَنَا بِمَحَبَّتِهِ",
+            translit:
+              "wa an tarḥamanā wa an taʿfuwa ʿannā wa taghfirlanā wa lijamīʿil muʾminīna wal muʾmināti wal muslimīna wal muslimātil aḥyāʾi minhum wal amwāt",
+            translation: "high rank and the visited wellspring",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تَتُوبَ عَلَيْنَا",
+            translit: "wal ḥamdu liLlahi rabbil ʿālamīna",
+            translation:
+              "the Praiseworthy Station and ample might. And exalt his proof",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تُعَافِيَنَا مِنْ جَمِيعِ البَلَاءِ وَالبَلْوَاءِ وَالفِتَنِ",
+            translit: "wa huwa ḥasbi wa niʿmal wakīl",
+            translation: "honour his stature",
+          }),
+          new DhikrEntryModel({
+            arabic: "مَا ظَهَرَ مِنْهَا وَمَا بَطَنَ",
+            translit: "wa lā ḥawla wa lā quwwata illā biLlahil ʿaliyyil ʿaẓīm.",
+            translation: "and elevate his station",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تَرْحَمَنَا",
+            translit: "",
+            translation: "and O Lord",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْ تَعْفُوَ عَنَّا وَتَغْفِرَ لَنَا",
+            translit: "",
+            translation: "make us act by his sunnah",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَلِجَمِيعِ المُؤْمِنِينَ وَالمُؤْمِنَاتِ",
+            translit: "",
+            translation:
+              "and complete our lives as members of his community. Gather us in his company",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالمُسْلِمِينَ وَالمُسْلِمَاتِ",
+            translit: "",
+            translation: "under his banner",
+          }),
+          new DhikrEntryModel({
+            arabic: "الأَحْيَاءِ مِنْهُمْ وَالأَمْوَاتِ",
+            translit: "",
+            translation: "make us among his companions",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالحَمْدُ لِلَّهِ رَبِّ العَالَمِينَ",
+            translit: "",
+            translation: "bring us to his wellspring",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَهُوَ حَسْبِي وَنِعْمَ الوَكِيلُ",
+            translit: "",
+            translation: "let us drink from his cup",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَلا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ العَلِيِّ العَظِيمِ.",
+            translit: "",
+            translation:
+              "and let us benefit through his love. O Allah turn to us, remove from us all trials, afflictions and temptations - whether outward or hidden. Have mercy on us, pardon us, and forgive us and all the believers, men and women; and the Muslims, men and women, the living and the passed. Praise be to Allah, Lord of the Worlds. He is enough for me and the best of Guardians, and there is no power nor strength except with Allah, the Most High, the Greatest.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic:
+              "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ مَا سَجَعَتِ الحَمَائِمُ",
+            translit:
+              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin mā sajaʿatil ḥamāʾimu",
+            translation:
+              "O Allah, bless Sayyidina Muhammad and the family of Sayyidina Muhammad as long as the pigeons coo",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَحَمَتِ الحَوَائِمُ",
+            translit: "wa ḥamatil ḥawāʾimu",
+            translation: "thirsty animals circle water",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَسَرَحَتِ البَهَائِمُ",
+            translit: "wa saraḥatil bahāʾimu",
+            translation: "wild beasts roam",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَنَفَعَتِ التَّمَائِمُ",
+            translit: "wa nafaʿatit tamāʾimu",
+            translation: "amulets have benefit",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَشُدَّتِ العَمَائِمُ",
+            translit: "wa shuddatil ʿamāʾimu",
+            translation: "turbans are wound",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَنَمَتِ النَّوَائِمُ.",
+            translit: "wa namatin nawāʾim.",
+            translation: "and those who sleep, sleep.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic:
+              "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ مَا أَبْلَجَ الإِصْبَاحُ",
+            translit:
+              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin mā ablajal iṣbāḥu",
+            translation:
+              "O Allah, bless Sayyidina Muhammad and the family of Sayyidina Muhammad as long as morning is bright",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَهَبَّتِ الرِّيَاحُ",
+            translit: "wahabbatir riyāḥu",
+            translation: "winds blow",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَدَبَّتِ الأَشْبَاحُ",
+            translit: "wa dabbatil ashbāḥu",
+            translation: "shade spreads",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَتَعَاقَبَ الغُدُوُّ وَالرَّوَاحُ",
+            translit: "wa taʿāqabal ghuduwwu warrawāḥu",
+            translation: "mornings and evenings alternate",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَتُقُلِّدَتِ الصِّفَاحُ",
+            translit: "wa tuqullidatiṣ ṣifāḥu",
+            translation: "armour is donned",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَاعْتُقِلَتِ الرِّمَاحُ",
+            translit: "waʿtuqilatir rimāḥu",
+            translation: "spears are held",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَصَحَّتِ الأَجْسَادُ وَالأَرْوَاحُ.",
+            translit: "wa ṣaḥḥatil ajsādu wal arwāḥ.",
+            translation: "and bodies and souls are sound.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic:
+              "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ مَا دَارَتِ الأَفْلَاكُ",
+            translit:
+              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin mā dāratil aflāku",
+            translation: "O Allah",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَدَجَتِ الأَحْلَاكُ",
+            translit: "wa dajjatil aḥlāku",
+            translation:
+              "bless Sayyidina Muhammad and the family of Sayyidina Muhammad as long as the spheres revolve",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَسَبَّحَتِ الأَمْلَاكُ.",
+            translit: "wa sabbaḥatil amlāk.",
+            translation: "darkness is black and the angels glorify [You].",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic:
+              "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى سَيِّدِنَا إِبْرَاهِيمَ، وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى سَيِّدِنَا إِبْرَاهِيمَ فِي العَالَمِينَ إِنَّكَ حَمِيدٌ مَّجِيدٌ.",
+            translit:
+              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin kamā ṣallayta ʿalā sayyidinā Ibrāhīma, wa bārik ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin kamā bārakta ʿalā sayyidinā Ibrāhīma fīl ʿālamīna innaka ḥamīdun majīd.",
+            translation:
+              "O Allah, bless Sayyidina Muhammad and the family of Sayyidina Muhammad as You blessed Sayyidina Ibrahim. Sanctify Sayyidina Muhammad and the family of Sayyidina Muhammad as You sanctified Sayyidina Ibrahim in the worlds. You are Praiseworthy, Glorious.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ مَا طَلَعَتِ الشَّمْسُ",
+            translit:
+              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin mā ṭalaʿatish shamsu",
+            translation:
+              "O Allah, bless Sayyidina Muhammad and the family of Sayyidina Muhammad as long as the sun rises",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَمَا صُلِّيَتِ الخَمْسُ",
+            translit: "wa mā ṣulliyatil khamsu",
+            translation: "the five prayers are prayed",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَمَا تَأَلَّقَ بَرْقٌ",
+            translit: "wa mā taʿallaqa barqun",
+            translation: "lightening flashes",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَتَدَفَّقَ وَدْقٌ",
+            translit: "wa tadaffaqa wadqun",
+            translation: "violent rain pours down",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَمَا سَبَّحَ رَعْدٌ.",
+            translit: "wa mā sabbaḥa raʿd.",
+            translation: "and thunder glorifies [You].",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic:
+              "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ مِلْءَ السَّمَاوَاتِ وَالأَرْضِ وَمِلْءَ مَا بَيْنَهُمَا، وَمِلْءَ مَا شِئْتَ مِنْ شَيْءٍ بَعْدُ.",
+            translit:
+              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin milʾas samāwāti wal arḍi, wa milʾa mā baynahumā, wa milʾa māshiʾta min shayʾin baʿd.",
+            translation:
+              "O Allah, bless Sayyidina Muhammad and the family of Sayyidina Muhammad to the extent of the heavens and earth and what is between them, and to the extent of whatever You wish after that.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "اللَّهُمَّ كَمَا قَامَ بِأَعْبَاءِ الرِّسَالَةِ",
+            translit: "Allāhumma kamā qāma bi aʿbāʾir riṣālati",
+            translation:
+              "O Allah, just as he undertook the burden of the Message",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَاسْتَنْقَذَ الخَلْقَ مِنَ الجَهَالَةِ",
+            translit: "wastanqadhal khalqa minal jahālati",
+            translation: "saved creation from ignorance",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَجَاهَدَ أَهْلَ الكُفْرِ وَالضَّلَالَةِ",
+            translit: "wa jāhada ahlukufri waḍḍalālati",
+            translation:
+              "carried out jihad against the people of kufr and misguidance",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَدَعَا إِلَى تَوْحِيدِكَ",
+            translit:
+              "wa daʿā ilā tawḥīdik wa qāsash shadāʾida fī irshādi ʿabidāka",
+            translation: "called to Your tawhid",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَقَاسَى الشَّدَائِدَ فِي إِرْشَادِ عَبِيدِكَ",
+            translit: "faʿaṭihil Allāhumma suʾlahu",
+            translation:
+              "and endured hardships in guiding Your slaves. Give him",
+          }),
+          new DhikrEntryModel({
+            arabic: "فَأَعْطِهِ اللَّهُمَّ سُوْلَهُ",
+            translit: "wa balligh-hu maʾmūlahu",
+            translation: "O Allah",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَبَلِّغْهُ مَأْمُولَهُ",
+            translit: "wa āṭihil faḍīlata wal wasīlata wad darajatar rafīʿata",
+            translation: "what he asks for",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَآتِهِ الفَضِيلَةَ وَالوَسِيلَةَ وَالدَّرَجَةَ الرَّفِيعَةَ",
+            translit: "wabʿath-hul maqāmal maḥmūdalladhi waʿadtahu",
+            translation: "let him reach his desire",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَابْعَثْهُ المَقَامَ المَحْمُودَ الَّذِي وَعَدْتَهُ",
+            translit: "innaka lā tukhliful mīʿād.",
+            translation: "give him the right of intercession",
+          }),
+          new DhikrEntryModel({
+            arabic: "إِنَّكَ لَا تُخْلِفُ المِيعَادَ.",
+            translit: "",
+            translation:
+              "excellence and superior rank. Raise him up to the Praiseworthy Station that You promised him. Indeed You do not fail to fulfill Your promise.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "اللَّهُمَّ وَاجْعَلْنَا مِنَ المُتَّبِعِينَ لِشَرِيعَتِهِ",
+            translit: "Allāhumma wajʿalna minal muttabiʿīna lisharīʿatihi",
+            translation: "O Allah",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالمُتَّصِفِينَ بِمَحَبَّتِهِ",
+            translit:
+              "wal muttaṣifīna bi maḥabbatihil muhtadīna bi hadyihi wa sīratihi",
+            translation: "make us among those who follow his Shari'a",
+          }),
+          new DhikrEntryModel({
+            arabic: "المُهْتَدِينَ بِهَدْيِهِ وَسِيرَتِهِ",
+            translit: "wa tawaffanā ʿalā sunnatihi",
+            translation: "who are distinguished by their love of him",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَتَوَفَّنَا عَلَى سُنَّتِهِ",
+            translit: "walā taḥrimna faḍla shafāʿatihi",
+            translation:
+              "who are guided by his guidance and example. Let us die as followers of his sunnah. Do not forbid us the favour of his intercession",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَلا تَحْرِمْنَا فَضْلَ شَفَاعَتِهِ",
+            translit: "waḥshurnā fī atbāʾihil ghurril muḥajjalīna",
+            translation: "but gather us among his glorious",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَاحْشُرْنَا فِي أَتْبَاعِهِ الغُرِّ المُحَجَّلِينَ",
+            translit: "wa ashyāʾihis sābiqīna",
+            translation: "radiant followers",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَشْيَاعِهِ السَّابِقِينَ",
+            translit: "wa aṣ-ḥābil yamīni",
+            translation: "his party of forerunners",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَصْحَابِ اليَمِينِ",
+            translit: "yā arḥamar raḥimīn.",
+            translation: "and the companions of the right",
+          }),
+          new DhikrEntryModel({
+            arabic: "يَا أَرْحَمَ الرَّاحِمِينَ.",
+            translit: "",
+            translation: "O Most Merciful of the Merciful.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "اللَّهُمَّ صَلِّ عَلَى مَلَائِكَتِكَ وَالمُقَرَّبِينَ",
+            translit: "Allāhumma ṣalli ʿalā malāʾikatika wal muqarrabīna",
+            translation: "O Allah, bless Your angels and those who are near",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَعَلَى أَنْبِيَائِكَ وَالمُرْسَلِينَ",
+            translit: "wa ʿalā anbiyāʾika wal mursalīna",
+            translation: "Your Prophets and Messengers",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَعَلَى أَهْلِ طَاعَتِكَ أَجْمَعِينَ",
+            translit: "wa ʿalā ahli ṭāʿatika ajmaʿīna",
+            translation: "and all who obey You. By our prayers upon them",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَاجْعَلْنَا بِالصَّلَاةِ عَلَيْهِمْ مِنَ المَرْحُومِينَ.",
+            translit: "wajʿalna biṣṣalāti ʿalayhim minal marḥūmīn.",
+            translation: "make us amongst those to whom mercy is shown.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ المَبْعُوثِ مِنْ تِهَامَةَ",
+            translit:
+              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadinil mabʿūthi min tihāmata",
+            translation:
+              "O Allah, bless Sayyidina Muhammad who was sent from Tihama",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالآمِرِ بِالْمَعْرُوفِ وَالاسْتِقَامَةِ",
+            translit: "wal āmiri bil maʿrūfi wal istiqāmati",
+            translation: "commanding the good and the upright",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالشَّفِيعِ لِأَهْلِ الذُّنُوبِ فِي عَرَصَاتِ القِيَامَةِ.",
+            translit: "wa shafīʿi liʾahlidh dhunūbi fī ʿaraṣātil qiyāmah.",
+            translation:
+              "the intercessor for the people of sins in the courtyards of the Resurrection.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "اللَّهُمَّ أَبْلِغْ عَنَّا نَبِيَّنَا وَشَفِيعَنَا وَحَبِيبَنَا أَفْضَلَ الصَّلَاةِ وَالتَّسْلِيمِ",
+            translit:
+              "Allāhumma abligh ʿannā nabiyyanā wa shafīʿana wa ḥabībanā afḍalaṣ ṣalāti wat taslīmi",
+            translation:
+              "O Allah, convey the best of blessings and peace from us to our Prophet",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَابْعَثْهُ المَقَامَ المَحْمُودَ الكَرِيمَ",
+            translit: "wabʿath-hul maqāmal maḥmūdal karīma",
+            translation: "our intercessor",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَآتِهِ الفَضِيلَةَ وَالوَسِيلَةَ",
+            translit: "wa āṭihil faḍīlata wal wasīlata",
+            translation: "our beloved. Raise him up to the praiseworthy",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالدَّرَجَةَ الرَّفِيعَةَ الَّتِي وَعَدْتَهُ فِي المَوْقِفِ العَظِيمِ",
+            translit:
+              "wad darajatar rafīaʿtallati wa ʿadtahu fīl mawqifil ʿaẓīm",
+            translation: "noble station",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَصَلِّ اللَّهُمَّ عَلَيهِ صَلَاةً دَائِمَةً مُتَّصِلَةً تَتَوَالَى وَتَدُومُ.",
+            translit:
+              "wa ṣalliLlāhumma ʿalayhi ṣalātan dāʾimatan muttaṣilatan tatawāla wa tadūm.",
+            translation:
+              "and grant him the means of mediation, excellence, and the superior rank that You promised him in the mighty place of standing, and, O Allah, bless him with a continuous blessing that lasts and never ceases.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "اللَّهُمَّ صَلِّ عَلَيْهِ وَعَلَى آلِهِ مَا لَاحَ بَارِقٌ",
+            translit: "Allāhumma ṣalli ʿalayhi wa ʿalā ālihi mā lāḥa bāriqun",
+            translation: "O Allah",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَذَرَّ شَارِقٌ",
+            translit: "wa dharra shāriqun",
+            translation:
+              "bless him and his family as long as lightning flashes",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَوَقَبَ غَاسِقٌ",
+            translit: "wa waqaba ghāsiqun",
+            translation: "light spreads from the east",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَانْهَمَرَ وَادِقٌ.\n وَصَلِّ عَلَيْهِ وَعَلَى آلِهِ مِلْءَ اللُّوحِ وَالفَضَاءِ",
+            translit: "wanhamara wādiqun",
+            translation:
+              "darkness gathers and rain pours down. And bless him and his family to the extent of the atmosphere of the planets",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَمِثْلَ نُجُومِ السَّمَاءِ",
+            translit:
+              "wa ṣalli ʿalayhi wa ʿalā ālihi milʾal lūḥi wal faḍāʾi wa mithla nujūmis samāʾi",
+            translation: "and the breadth of Space",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَعَدَدَ القَطْرِ وَالحَصَى",
+            translit: "wa ʿadadal qaṭri wal ḥaṣa",
+            translation: "and the stars of the sky",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَصَلِّ عَلَيْهِ وَعَلَى آلِهِ صَلَاةً لَا تُعَدُّ وَلَا تُحْصَى.",
+            translit:
+              "wa ṣalli ʿalayhi wa ʿalā ālihi ṣalātan lā tuʿaddu wa lā tuḥṣa.",
+            translation:
+              "and in quantity as great as the drops of rain and pebbles. And bless him and his family with a blessing that is countless and immeasurable.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "اللَّهُمَّ صَلِّ عَلَيْهِ زِنَةَ عَرْشِكَ",
+            translit: "Allāhumma ṣalli ʿalayhi zinata ʿarshika",
+            translation: "O Allah",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَمَبْلَغَ رِضَاكَ",
+            translit: "wa mablagha riḍāka",
+            translation: "bless him by the weight of Your Throne",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَمِدَادَ كَلِمَاتِكَ",
+            translit: "wa midāda kalimātika",
+            translation: "the scope of Your pleasure",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَمُنْتَهَى رَحْمَتِكَ.",
+            translit: "wa muntahā raḥmatika.",
+            translation:
+              "the ink of Your words and the boundlessness of Your mercy.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "اللَّهُمَّ صَلِّ عَلَيْهِ وَعَلَى آلِهِ وَأَزْوَاجِهِ وَذُرِّيَّتِهِ",
+            translit:
+              "Allāhumma ṣalli ʿalayhi wa ʿalā ālihi wa azwājihi wa dhurriyyatihi",
+            translation: "O Allah bless him and his family",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ وَأَزْوَاجِهِ وَذُرِّيَّتِهِ",
+            translit:
+              "wa bārik ʿalayhi wa ʿalā ālihi wa azwājihi wa dhurriyyatihi",
+            translation: "his wives and his progeny. Sanctify him",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "كَمَا صَلَّيْتَ وَبَارَكْتَ عَلَى سَيِّدِنَا إِبْرَاهِيمَ وَعَلَى آلِ سَيِّدِنَا إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَّجِيدٌ",
+            translit:
+              "kamā ṣallayta wa bārakta ʿalā sayyidinā Ibrāhīma wa ʿalā āli sayyidinā Ibrāhīma innaka ḥamīdun majīdun",
+            translation: "his family",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَجَازِهِ عَنَّا أَفْضَلَ مَا جَازَيْتَ نَبِيًّا عَنْ أُمَّتِهِ",
+            translit: "wajāzihi ʿannā afḍala mā jāzayta nabiyyan ʿan ummatihi",
+            translation:
+              "his wives and progeny as You sanctified Sayyidina Ibrahim and the family of Sayyidina Ibrahim. You are Praiseworthy",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَاجْعَلْنَا مِنَ المُهْتَدِينَ بِمِنْهَاجِ شَرِيعَتِهِ",
+            translit: "wajʿalnā minal muhtadīna bi minhāji sharīʿatihi",
+            translation:
+              "Glorious. Reward him on behalf of us with the best of that with which You have recompensed a Prophet from his community. And make us among those guided by the path of his Shari'ah. Guide us by his guidance. Let us die as members of his community. Gather us among the faithful in his company on the Day of the Greatest Terror. And let us die with love of him and love of his family",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَاهْدِنَا بِهَدْيِهِ",
+            translit: "wahdinā bihadyihi",
+            translation: "Companions and descendants.",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَتَوَفَّنَا عَلَى مِلَّتِهِ",
+            translit: "wa tawaffanā ʿalā millatihi",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَاحْشُرْنَا يَوْمَ الفَزَعِ الأَكْبَرِ مِنَ الآمِنِينَ فِي زُمْرَتِهِ",
+            translit:
+              "waḥshurnā yawmal fazaʾil akbari minal āminīna fī zumratihi",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَمِتْنَا عَلَى حُبِّهِ وَحُبِّ آلِهِ وَأَصْحَابِهِ وَذُرِّيَّتِهِ.",
+            translit:
+              "wa amitnā ʿalā ḥubbihi wa ḥubbi ālihi wa aṣḥābihi wa dhurriyatihi.",
+            translation: "",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ أَفْضَلِ أَنْبِيَائِكَ",
+            translit:
+              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin afḍali anbiyāʾika",
+            translation: "O Allah bless Sayyidina Muhammad",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَكْرَمِ أَصْفِيَائِكَ",
+            translit: "wa akrami aṣfiyāʾika",
+            translation: "the best of Your Prophets",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَإِمَامِ أَوْلِيَائِكَ",
+            translit: "wa imami awliyāʾika",
+            translation: "most noble of Your pure friends",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَخَاتَمِ أَنْبِيَائِكَ",
+            translit: "wa khatimi anbiyāʾika",
+            translation: "Imam of Your Awliya'",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَحَبِيبِ رَبِّ العَالَمِينَ",
+            translit: "wa ḥabībi rabbil ʿālamīn",
+            translation: "the Seal of Your Prophets",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَشَهِيدِ المُرْسَلِينَ",
+            translit: "wa shahīdil mursalīn",
+            translation: "the beloved of the Lord of the Worlds",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَشَفِيعِ المُذْنِبِينَ",
+            translit: "wa shafīʿil mudhnibīn",
+            translation: "the witness of the Messengers",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَسَيِّدِ وَلَدِ آدَمَ أَجْمَعِينَ",
+            translit:
+              "wa sayyidi waladi Ādama ajmaʿīnal marfūʿidh dhikri fīl malāʾikatil muqarrabīnal bashhīrin nadhīris sirājil munīriṣ ṣādiqil amīnil ḥaqqil mubīnir raʿūfur raḥīmil hādi ilāṣ ṣirātil musṭaqīmilladhī ātaytahu sabʿan minal mathāni wal Qurāʾnil ʿaẓīm",
+            translation: "the intercessor for the sinners",
+          }),
+          new DhikrEntryModel({
+            arabic: "المَرْفُوعِ الذِّكْرِ فِي المَلَائِكَةِ المُقَرَّبِينَ",
+            translit: "nabiyyir raḥmah",
+            translation:
+              "the master of all of the sons of Adam; he whose mention is raised among those who are close [to Him]",
+          }),
+          new DhikrEntryModel({
+            arabic: "البَشِيرِ النَّذِيرِ",
+            translit: "wa hādil ummati",
+            translation: "the bringer of good tidings",
+          }),
+          new DhikrEntryModel({
+            arabic: "السِّرَاجِ المُنِيرِ",
+            translit: "awwali man tanshaqqu ʿanhul arḍu",
+            translation: "the warner",
+          }),
+          new DhikrEntryModel({
+            arabic: "الصَّادِقِ الأَمِينِ",
+            translit:
+              "wa yadkhulul jannatal muʿayyadi bisayyidinā Jibrīla wa sayyidinā Mikāʿīl",
+            translation: "the light-giving lamp",
+          }),
+          new DhikrEntryModel({
+            arabic: "الحَقِّ المُبِينِ",
+            translit: "almubashshari bihi fīttawrāti wal injīl",
+            translation: "the truthful trustworthy one",
+          }),
+          new DhikrEntryModel({
+            arabic: "الرَّؤُوفِ الرَّحِيمِ",
+            translit: "almuṣṭafā almujtabā almuntakhabi abil Qāsimi",
+            translation: "the clear truth",
+          }),
+          new DhikrEntryModel({
+            arabic: "الهَادِي إِلَى الصِّرَاطِ المُسْتَقِيمِ",
+            translit:
+              "sayyidinā Muhammadin ibni ʿAbdil Allahi ibni ʿAbdil Muṭṭalib ibni Hāshim.",
+            translation: "the compassionate",
+          }),
+          new DhikrEntryModel({
+            arabic: "الَّذِي آتَيْتَهُ سَبْعًا مِنَ المَثَانِي وَالقُرْآنَ العَظِيمَ",
+            translit: "",
+            translation: "the merciful",
+          }),
+          new DhikrEntryModel({
+            arabic: "نَبِيِّ الرَّحْمَةِ",
+            translit: "",
+            translation:
+              "the guide to the Straight Path; to whom You gave the Seven Mathani and the Mighty Qur'an; the Prophet of Mercy",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَهَادِي الأُمَّةِ",
+            translit: "",
+            translation:
+              "the Guide of the Community; for whom the earth will split asunder",
+          }),
+          new DhikrEntryModel({
+            arabic: "أَوَّلِ مَنْ تَنْشَقُّ عَنْهُ الأَرْضُ وَيَدْخُلُ الجَنَّةَ",
+            translit: "",
+            translation:
+              "and he will be the first to enter the Garden; he who was supported by Sayyidina Jibril and Sayyidina Mika'il; news of whom was given in the Torah and Gospel; the Chosen",
+          }),
+          new DhikrEntryModel({
+            arabic: "المُؤَيَّدِ بِسَيِّدِنَا جِبْرِيلَ وَسَيِّدِنَا مِيكَائِيلَ",
+            translit: "",
+            translation: "the Selected",
+          }),
+          new DhikrEntryModel({
+            arabic: "المُبَشَّرِ بِهِ فِي التَّوْرَاةِ وَالإِنْجِيلِ",
+            translit: "",
+            translation: "the Elect",
+          }),
+          new DhikrEntryModel({
+            arabic: "المُصْطَفَى المُجْتَبَى",
+            translit: "",
+            translation:
+              "Abu'l-Qasim Muhammad ibn 'Abdullah ibn 'Abdul-Muttalib ibn Hashim.",
+          }),
+          new DhikrEntryModel({
+            arabic: "المُنْتَخَبِ أَبِي القَاسِمِ",
+            translit: "",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "سَيِّدِنَا مُحَمَّدِ بْنِ عَبْدِ اللَّهِ بْنِ عَبْدِ المُطَّلِبِ بْنِ هَاشِمٍ.",
+            translit: "",
+            translation: "",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "اللَّهُمَّ صَلِّ عَلَى مَلَائِكَتِكَ وَالمُقَرَّبِينَ",
+            translit:
+              "Allāhumma ṣalli ʿalā malāʾikatika wal muqarrabīnalladhina yusabbiḥūnal layla wan nahāra lā yafturūn",
+            translation: "O Allah, bless the angels and those who are close",
+          }),
+          new DhikrEntryModel({
+            arabic: "الَّذِينَ \n﴿\nيُسَبِّحُونَ الَّيْلَ وَالنَّهَارَ لَا يَفْتُرُونَ\n﴾",
+            translit:
+              "wa lā yaʿṣūnAllaha mā amarahum wa yafʿalūna mā yuʾmarūn.",
+            translation:
+              "who glorify night and day and do not slacken nor disobey Allah in what He has commanded them",
+          }),
+          new DhikrEntryModel({
+            arabic: "﴿\n لَّا يَعْصُونَ اللَّهَ مَآ أَمَرَهُمْ وَيَفْعَلُونَ مَا يُؤْمَرُونَ\n﴾.",
+            translit: "",
+            translation: "and do as they are commanded.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "اللَّهُمَّ وَكَمَا اصْطَفَيْتَهُمْ سُفَرَاءَ إِلَى رُسُلِكَ",
+            translit: "Allāhumma wa kamāṣṭafaytahum sufarāʾa ilā rusulika",
+            translation:
+              "O Allah as You chose them as ambassadors to Your Messengers",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأُمَنَاءَ عَلَى وَحْيِكَ",
+            translit: "wa umanāʾa ʿalā waḥyika",
+            translation: "guardians of Your revelation",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَشُهَدَاءَ عَلَى خَلْقِكَ",
+            translit: "wa shuhadāʾa alā khalqika",
+            translation:
+              "and witnesses over Your creation. You rent the folds of Your veils for them",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَخَرَقْتَ لَهُمْ كُنُفَ حُجُبِكَ",
+            translit: "wa kharaqta lahum kunufa ḥujubika",
+            translation: "revealed to them the hidden portion of Your Unseen",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَطْلَعْتَهُمْ عَلَى مَكْنُونِ غَيْبِكَ",
+            translit: "wa aṭlaʿtahum ʿalā maknūni ghaybika",
+            translation:
+              "chose the treasure of Your Garden and the bearers of Your Throne from among them",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَاخْتَرْتَ مِنْهُمْ خَزَنَةً لِجَنَّتِكَ",
+            translit: "wakhtarta minhum khazanatan li jannatika",
+            translation: "made them among the utmost of Your soldiers",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَحَمَلَةً لِعَرْشِكَ",
+            translit: "wa ḥamalatan liʿarshika",
+            translation: "preferred them over mankind",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَجَعَلْتَهُمْ مِنْ أَكْثَرِ جُنُودِكَ",
+            translit: "wa jaʿaltahum min akthari junūdika",
+            translation: "made them to dwell in the highest heavens",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَفَضَّلْتَهُمْ عَلَى الوَرَى",
+            translit: "wa faḍḍaltahum ʿalal warā",
+            translation: "preserved them from disobedience and baseness",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَسْكَنْتَهُمُ السَّمَاوَاتِ العُلَى",
+            translit: "wa askantahumus samāwātil ʿulā",
+            translation: "and made them pure of shortcomings and imperfections",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَنَزَّهْتَهُمْ عَنِ المَعَاصِي وَالدَّنَاءَاتِ",
+            translit: "wa nazzahtahum ʿanil maʿāṣi waddanāʿāti",
+            translation:
+              "so bless them with a constant prayer by which they are increased in bounty",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَقَدَّسْتَهُمْ عَنِ النَّقَائِصِ وَالآفَاتِ",
+            translit: "wa qaddastahum ʿanin naqāʾiṣi wal āfāti",
+            translation: "and as a means of their asking forgiveness for us.",
+          }),
+          new DhikrEntryModel({
+            arabic: "فَصَلِّ عَلَيْهِمْ صَلَاةً دَائِمَةً تَزِيدُهُمْ بِهَا فَضْلًا",
+            translit:
+              "faṣalli ʿalayhim ṣalātan dāʾimatan tazīduhum bihā faḍlan",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَتَجْعَلُنَا لِاسْتِغْفَارِهِمْ بِهَا أَهْلًا.",
+            translit: "wa tajʿalunā liʾistighfārihim bihā ahla.",
+            translation: "",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "اللَّهُمَّ صَلِّ عَلَى جَمِيعِ أَنْبِيَائِكَ وَرُسُلِكَ الَّذِينَ شَرَحْتَ صُدُورَهُمْ",
+            translit:
+              "Allāhumma wa ṣalli ʿalā jamīʿi anbiyāʾika wa rusulikalladhina sharaḥta ṣudūrahum",
+            translation: "O Allah",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَوْدَعْتَهُمْ حِكْمَتَكَ",
+            translit: "wa awdaʿtahum ḥikmataka",
+            translation:
+              "bless all Your Prophets and Messengers whose hearts You expanded",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَطَوَّقْتَهُمْ نُبُوَّتَكَ",
+            translit: "wa ṭawwaqtahum nubuwwataka",
+            translation: "to whom You gave Your wisdom",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْزَلْتَ عَلَيْهِمْ كُتُبَكَ",
+            translit: "wa anzalta ʿalayhim kutubaka",
+            translation: "empowered with Your prophethood",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَهَدَيْتَ بِهِمْ خَلْقَكَ",
+            translit: "wa hadayta bihim khalqaka",
+            translation: "to whom You revealed Your Books",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَدَعَوا إِلَى تَوْحِيدِكَ",
+            translit: "wa daʿaw ilā tawḥīdika",
+            translation: "by whom You guided Your creation",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَشَوَّقُوا إِلَى وَعْدِكَ",
+            translit: "wa shawwaqū ilā waʿdika",
+            translation: "who called to Your tawhid",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَخَوَّفُوا مِنْ وَعِيدِكَ",
+            translit: "wa khawwafū min waʿīdika",
+            translation: "who yearned for Your promise and feared Your Threat",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَرْشَدُوا إِلَى سَبِيلِكَ",
+            translit: "wa arshadū ilā sabīlika",
+            translation: "who guided to Your path",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَقَامُوا بِحُجَّتِكَ وَدَلِيلِكَ",
+            translit: "wa qāmū bi ḥujjatika wa dalīlika",
+            translation:
+              "who established Your proof and evidence. Grant them peace",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَسَلِّمِ اللَّهُمَّ عَلَيْهِمْ تَسْلِيمًا",
+            translit: "wa ṣallimiLlāhumma ʿalayhim taslīma",
+            translation: "O Allah",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَهَبْ لَنَا بِالصَّلَاةِ عَلَيْهِمْ أَجْرًا عَظِيمًا.",
+            translit: "wahab lanā bisṣalāti alayhim ajran ʿaẓīma.",
+            translation:
+              "and give us a tremendous reward for our prayer on them.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic:
+              "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ صَلَاةً دَائِمَةً مَقْبُولَةً تُؤَدِّي بِهَا عَنَّا حَقَّهُ العَظِيمَ.",
+            translit:
+              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin ṣalātan dāʾimatan maqbūlatan tuʾaddi bihā ʿannā ḥaqqahul ʿaẓīm.",
+            translation:
+              "O Allah, bless Sayyidina Muhammad and the family of Sayyidina Muhammad with a constant, accepted blessing, by which the glorious right that is due him is fulfilled.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ صَاحِبِ الحُسْنِ وَالجَمَالِ",
+            translit:
+              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin ṣāḥibil ḥusni wal jamāli",
+            translation: "O Allah bless Sayyidina Muhammad",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالبَهْجَةِ وَالكَمَالِ",
+            translit: "wal bahjati wal kamāli",
+            translation: "the possessor of goodness",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالبَهَاءِ وَالنُّورِ",
+            translit: "wal bahāʾi wan nūri",
+            translation: "beauty",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالوِلْدَانِ وَالحُورِ",
+            translit: "wal wildāni wal ḥūri",
+            translation: "splendour",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالغُرَفِ وَالقُصُورِ",
+            translit: "wal ghurafi wal quṣūri",
+            translation: "perfection",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَاللِّسَانِ الشَّكُورِ",
+            translit: "wal lisānish shakūri",
+            translation: "radiance",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالقَلْبِ المَشْكُورِ",
+            translit: "wal qalbil mashkūri",
+            translation: "light",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالعَلَمِ المَشْهُورِ",
+            translit: "walʿilmil mashhūri",
+            translation: "Wildan and Hoor",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالجَيْشِ المَنْصُورِ",
+            translit: "wal jayshil manṣūri",
+            translation: "chambers and castles",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالبَنِينَ وَالبَنَاتِ",
+            translit: "wal banīna wal banāti",
+            translation: "the thankful tongue",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالأَزْوَاجِ الطَّاهِرَاتِ",
+            translit: "wal azwājiṭ ṭāhirāti",
+            translation: "the thankful heart",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالعُلُوِّ عَلَى الدَّرَجَاتِ",
+            translit: "wal ʿuluwwi ʿalad darajāti",
+            translation: "the famous knowledge",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالزَّمْزَمِ وَالمَقَامِ",
+            translit: "waz zamzami wal maqāmi",
+            translation: "the victorious army",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالمَشْعَرِ الحَرَامِ",
+            translit: "wal mashʿaril ḥarāmi",
+            translation: "sons and daughters",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَاجْتِنَابِ الآثَامِ",
+            translit: "wajtinābil āthāmi",
+            translation: "pure wives. Possessor of the exalted ranks",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَتَرْبِيَةِ الأَيْتَامِ",
+            translit: "wa tarbiyatil aytāmi",
+            translation: "Zamzam",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالحَجِّ وَتِلَاوَةِ القُرْآنِ",
+            translit: "wal ḥajji wa tilāwatil Qurʾāni",
+            translation: "the Maqam",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَتَسْبِيحِ الرَّحْمَـٰنِ",
+            translit: "wa tasbīḥir raḥmāni",
+            translation: "Mash'ar Al-Haram",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَصِيَامِ رَمَضَانَ",
+            translit: "waṣiyāmi ramaḍāna",
+            translation: "avoidance of sins",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَاللِّوَاءِ المَعْقُودِ",
+            translit: "wal liwaʾil maʿqūdi",
+            translation: "rearing of orphans",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالكَرَمِ وَالجُودِ",
+            translit: "wal karami wal jūdi",
+            translation: "the Hajj",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالوَفَاءِ بِالْعُهُودِ",
+            translit: "wal wafāʾi bil ʿuhūdi",
+            translation: "recitation of the Qur'an",
+          }),
+          new DhikrEntryModel({
+            arabic: "صَاحِبِ الرَّغْبَةِ وَالتَّرغِيبِ",
+            translit: "ṣāḥibil raghbati wattarghībi",
+            translation: "glorification of the All-Merciful",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالبَغْلَةِ وَالنَّجِيبِ",
+            translit: "wal baghlati wan najībi",
+            translation: "fasting Ramadan",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالحَوْضِ وَالقَضِيبِ",
+            translit:
+              "wal ḥawḍi wal qaḍibin nabiyyil awwābin nāṭiqi biṣṣawābil manʿūti fīl kitābin nabiyyi ʿabdiLlahin nabiyyi kanziLlahin nabiyyi ḥujjatiLlahin nabiyyi man aṭāʿahu faqad aṭāʿAllaha",
+            translation: "the banner",
+          }),
+          new DhikrEntryModel({
+            arabic: "النَّبِيِّ الأَوَّابِ",
+            translit:
+              "wa man ʿaṣāhu faqad ʿaṣAllahan nabiyyil ʿArabiyyil Qurashiyyiz Zamzamiyyil Makkiyyit Tihamiyyi",
+            translation: "nobility and generosity; fidelity to covenants",
+          }),
+          new DhikrEntryModel({
+            arabic: "النَّاطِقِ بِالصَّوَابِ",
+            translit: "ṣāḥibil wajhil jamīli",
+            translation: "the possessor of desire and stimulation of desire",
+          }),
+          new DhikrEntryModel({
+            arabic: "المَنْعُوتِ فِي الكِتَابِ",
+            translit: "waṭṭarafil kaḥīli",
+            translation: "the owner of the she-mule and the noble she-camel",
+          }),
+          new DhikrEntryModel({
+            arabic: "النَّبِيِّ عَبْدِ اللَّهِ",
+            translit: "wal khaddil asīli",
+            translation: "owner of the wellspring and the staff",
+          }),
+          new DhikrEntryModel({
+            arabic: "النَّبِيِّ كَنْزِ اللَّهِ",
+            translit: "wal Kawthari was Salsabīli",
+            translation: "the frequently repenting Prophet",
+          }),
+          new DhikrEntryModel({
+            arabic: "النَّبِيِّ حُجَّةِ اللَّهِ",
+            translit: "qāhiril muḍāddīna",
+            translation: "articulating right conduct described in the Book",
+          }),
+          new DhikrEntryModel({
+            arabic: "النَّبِيِّ مَنْ أَطَاعَهُ فَقَدْ أَطَاعَ اللَّهَ وَمَنْ عَصَاهُ فَقَدْ عَصَى اللَّهَ",
+            translit: "mubīdil kāfirīna",
+            translation: "the Prophet - the slave of Allah",
+          }),
+          new DhikrEntryModel({
+            arabic: "النَّبِيِّ العَرَبِيِّ",
+            translit: "wa qātilil mushrikīna",
+            translation: "the Prophet - the treasure of Allah",
+          }),
+          new DhikrEntryModel({
+            arabic: "القُرَشِيِّ الزَّمْزَمِيِّ",
+            translit: "qāʾidil ghurril muḥajjalīna ilā jannātin naʿīmi",
+            translation:
+              "the Prophet - the proof of Allah; the Prophet - such that whoever obeys him has obeyed Allah",
+          }),
+          new DhikrEntryModel({
+            arabic: "المَكِّيِّ التِّهَامِيِّ",
+            translit: "wa jiwāril karīmi",
+            translation:
+              "and whoever disobeys him has disobeyed Allah. The Arabian",
+          }),
+          new DhikrEntryModel({
+            arabic: "صَاحِبِ الوَجْهِ الجَمِيلِ",
+            translit:
+              "ṣāḥibi sayyidinā Jibrīla ʿalayhis salāmu wa Rasūli Rabbil ʿālamīna",
+            translation: "Qurayshi Prophet of Zamzam",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالطَّرْفِ الكَحِيلِ",
+            translit: "wa shafīʿil mudhnibīna",
+            translation: "Makka",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالخَدِّ الأَسِيلِ",
+            translit: "wa ghāyatil ghamāmi",
+            translation: "and Tihama; the possessor of the beautiful face",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالكَوْثَرِ وَالسَّلْسَبِيلِ",
+            translit: "wa miṣbāḥiẓ ẓalāmi",
+            translation: "the kohled eye and smooth cheek",
+          }),
+          new DhikrEntryModel({
+            arabic: "قَاهِرِ المُضَادِّينَ",
+            translit: "wa qamarit tamāmi",
+            translation: "and Kawthar and Salsabil",
+          }),
+          new DhikrEntryModel({
+            arabic: "مُبِيدِ الكَافِرِينَ",
+            translit:
+              "ṣallAllahu ʿalayhi wa ʿalā ālihil muṣṭafayna min aṭ-hari jibillatin",
+            translation: "the conqueror of adversaries",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَقَاتِلِ المُشْرِكِينَ",
+            translit: "ṣalātan dāʾimatan ʿalal abadi ghayra muḍmaḥillatin",
+            translation: "destroyer of the unbelievers",
+          }),
+          new DhikrEntryModel({
+            arabic: "قَائِدِ الغُرِّ المُحَجَّلِينَ",
+            translit:
+              "ṣallAllahu ʿalayhi wa ʿalā ālihi ṣalātan yatajaddadu bihā ḥubūruhu",
+            translation: "slayer of the idolaters",
+          }),
+          new DhikrEntryModel({
+            arabic: "إِلَى جَنَّاتِ النَّعِيمِ",
+            translit:
+              "wa yusharrafu bihā fīl mīʾādi baʿthuhu wa nushūruhu faṣallAllahu ʿalayhi wa ʿalā ālihil anjumiṭ ṭawāliʿi",
+            translation: "the leader of the radiant",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَجِوَارِ الكَرِيمِ",
+            translit: "ṣalātan tajūdu ʿalayhim ajwadal ghuyūthil hawāmiʿi",
+            translation:
+              "glorious ones to the Gardens of bliss and the proximity of the Noble",
+          }),
+          new DhikrEntryModel({
+            arabic: "صَاحِبِ سَيِّدِنَا جِبْرِيلَ عَلَيْهِ السَّلَامُ",
+            translit: "arsalahu min arjaḥil ʿarabi mīzānan",
+            translation: "the companion of Sayyidina Jibril",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَرَسُولِ رَبِّ العَالَمِينَ",
+            translit: "wa awḍaḥiha bayānan",
+            translation: "peace be upon him",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَشَفِيعِ المُذْنِبِينَ",
+            translit: "wa afṣāḥihā lisānan",
+            translation: "the Messenger of the Lord of the Worlds",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَغَايَةِ الغَمَامِ",
+            translit: "wa ashmakhihā īmānan",
+            translation:
+              "the intercessor of wrongdoers even if they reach the clouds",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَمِصْبَاحِ الظَّلَامِ",
+            translit: "wa aʿlāhā maqāman",
+            translation: "the lamp of the darkness",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَقَمَرِ التَّمَامِ",
+            translit: "wa aḥlāhā kalāman",
+            translation: "the full moon",
+          }),
+          new DhikrEntryModel({
+            arabic: "صَلَّى اللَّهُ عَلَيْهِ وَعَلَى آلِهِ المُصْطَفَينَ مِنْ أَطْهَرِ جِبِلَّةٍ",
+            translit: "wa awfāhā dhimāman",
+            translation: "may Allah bless him and his family",
+          }),
+          new DhikrEntryModel({
+            arabic: "صَلَاةً دَائِمَةً عَلَي الأَبَدِ غَيْرَ مُضْمَحِلَّةٍ",
+            translit: "wa aṣfāhā raghāman",
+            translation:
+              "chosen from the purest nature with a constant prayer for eternity without diminishing. May Allah bless him and his family by which his state of delight is renewed",
+          }),
+          new DhikrEntryModel({
+            arabic: "صَلَّى اللَّهُ عَلَيْهِ وَعَلَى آلِهِ صَلَاةً يَتَجَدَّدُ بِهَا حُبُورُهُ",
+            translit: "fa awḍaḥaṭ ṭarīqata",
+            translation:
+              "and by which his raising and gathering are honoured through the Promise. Bless him and his family",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَيُشَرَّفُ بِهَا فِي المِيعَادِ بَعْثُهُ وَنُشُورُهُ",
+            translit: "wa naṣaḥal khalīqata",
+            translation: "the ascendant stars",
+          }),
+          new DhikrEntryModel({
+            arabic: "فَصَلَّى اللَّهُ عَلَيْهِ وَعَلَى آلِهِ الأَنْجُمِ الطَّوَالِعِ",
+            translit: "wa shaharal Islāma",
+            translation:
+              "with a prayer that bestows generously on them the best of abundant rains. He sent him from the most rational of the Arabs",
+          }),
+          new DhikrEntryModel({
+            arabic: "صَلَاةً تَجُودُ عَلَيْهِمْ أَجْوَدَ الغُيُوثِ الهَوَامِعِ",
+            translit: "wa kassaral aṣnāma",
+            translation: "the clearest in proof",
+          }),
+          new DhikrEntryModel({
+            arabic: "أَرْسَلَهُ مِنْ أَرْجَحِ العَرَبِ مِيزَانًا",
+            translit: "wa aẓharal aḥkāma wa ḥaẓaral ḥarāma wa ʿamma bil inʿāmi",
+            translation: "most eloquent of tongue",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَوْضَحِهَا بَيَانًا",
+            translit:
+              "ṣallAllahu ʿalayhi wa ʿalā ālihi fī kullimaḥfilin wa maqāmin afḍalaṣ ṣalāti wassalāmi",
+            translation: "loftiest in faith",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَفْصَحِهَا لِسَانًا",
+            translit: "ṣallAllahu ʿalayhi wa ʿalā ālihi ʿawdan wa badʾan",
+            translation: "highest in station",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَشْمَخِهَا إِيمَانًا",
+            translit: "ṣalātan takūnu dhakhīratan wa wirdan",
+            translation: "sweetest in words",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَعْلَاهَا مَقَامًا",
+            translit:
+              "ṣallAllahu ʿalayhi wa ʿalā ālihi ṣalātan tāmmatan zākiyatan",
+            translation: "most complete in fulfilling rights",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَحْلَاهَا كَلَامًا",
+            translit:
+              "wa ṣallAllahu ʿalayhi wa ʿalā ālihi ṣalātan yatbaʿuhā rawḥun wa rayḥānun",
+            translation: "and purest in aversion. He made the path clear",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَوْفَاهَا ذِمَامًا",
+            translit: "wa yaʿqubuhā maghfiratun wa riḍwān",
+            translation: "counselled creation",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَصْفَاهَا رَغَامًا",
+            translit: "wa ṣallAllahu ʿalā afḍali man ṭāba minhun nijāru",
+            translation: "made Islam known",
+          }),
+          new DhikrEntryModel({
+            arabic: "فَأَوْضَحَ الطَّرِيقَةَ",
+            translit: "wa samā bihil fakhāru",
+            translation: "broke the idols",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَنَصَحَ الخَلِيقَةَ",
+            translit: "wastanārat binūri jabīnihil aqmāru",
+            translation: "manifested judgments",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَشَهَرَ الإِسْلَامَ",
+            translit: "wa taḍāʾalat ʿinda jūdi yamīnihil ghamāʾimu wal biḥār",
+            translation: "forbade haram",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَكَسَرَ الأَصْنَامَ",
+            translit:
+              "sayyidinā wa nabiyyīnā Muḥammadinilladhi bibāhiri āyātihi aḍāʾatil anjādu wal aghwāru",
+            translation:
+              "and spread blessings. May Allah bless him and his family in every assembly and station with the best of blessings and peace",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَظْهَرَ الأَحْكَامَ",
+            translit: "wa bimuʿjizāti āyātihi naṭaqal kitābu",
+            translation: "and bless him and his family over and over again",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَحَظَرَ الحَرَامَ",
+            translit: "wa tawātaratil akhbāru",
+            translation:
+              "with a blessing that is treasure and a Wird. May Allah bless him and his family with a complete pure prayer. May Allah bless him and his family with a blessing followed by a gentle wind of relief and the aroma of sweet basil",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَعَمَّ بِالإِنْعَامِ",
+            translit:
+              "ṣallAllahu ʿalayhi wa ʿalā ālihi wa aṣḥabihi alladhīna hajarū linuṣratihi",
+            translation:
+              "followed by pardon and pleasure. May Allah bless the best one whose source is good and glory is exalted",
+          }),
+          new DhikrEntryModel({
+            arabic: "صَلَّى اللَّهُ عَلَيْهِ وَعَلَى آلِهِ فِي كُلِّ مَحْفِلٍ وَمَقَامٍ",
+            translit:
+              "wa naṣarūhu fī hijratihi faniʿmal muhājirūna wa niʿmal anṣār",
+            translation:
+              "and by the light of whose brow the moons are illuminated",
+          }),
+          new DhikrEntryModel({
+            arabic: "أَفْضَلَ الصَّلَاةِ وَالسَّلَامِ",
+            translit:
+              "ṣalātan nāmiyatan dāʾimatan mā sajaʿat fī aykihal aṭyāru",
+            translation:
+              "and the clouds and seas seem small next to the generosity of his right hand",
+          }),
+          new DhikrEntryModel({
+            arabic: "صَلَّى اللَّهُ عَلَيْهِ وَعَلَى آلِهِ عَوْدًا وَبَدْءًا",
+            translit: "wa hamaʿat biwablihād dīmatul midrāru",
+            translation: "Sayyidina Muhammad",
+          }),
+          new DhikrEntryModel({
+            arabic: "صَلَاةً تَكُونُ ذَخِيرَةً وَوِرْدًا",
+            translit: "ḍāʿafAllahu ʿalayhi dāʾima ṣalawātih.",
+            translation:
+              "our Prophet. By the radiance of whose signs the ravines and highlands were given light",
+          }),
+          new DhikrEntryModel({
+            arabic: "صَلَّى اللَّهُ عَلَيْهِ وَعَلَى آلِهِ صَلَاةً تَامَّةً زَاكِيَةً",
+            translit: "",
+            translation:
+              "and by the miracles of his signs the Book was articulated and transmissions descended. May Allah bless him and his family and companions who emigrated to help him",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَصَلَّى اللَّهُ عَلَيْهِ وَعَلَى آلِهِ صَلَاةً يَتْبَعُهَا رَوْحٌ وَرَيْحَانٌ",
+            translit: "",
+            translation:
+              "and those who aided him in his Hijrah. How excellent are the Muhajirun and the Ansar. Bless him with a constant",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَيَعْقُبُهَا مَغْفِرَةٌ وَرِضْوَانٌ",
+            translit: "",
+            translation:
+              "growing blessing as long as birds coo in their nests and abundant rains pour down their replenishment",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَصَلَّى اللَّهُ عَلَى أَفْضَلِ مَنْ طَابَ مِنْهُ النِّجَارُ",
+            translit: "",
+            translation:
+              "and may Allah constantly multiply the blessings on him.",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَسَمَا بِهِ الفَخَارُ",
+            translit: "",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَاسْتَنَارَتْ بِنُورِ جَبِينِهِ الأَقْمَارُ",
+            translit: "",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَتَضَاءَلَتْ عِنْدَ جُودِ يَمِينِهِ الغَمَائِمُ وَالبِحَارُ",
+            translit: "",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "سَيِّدِنَا وَنَبِيِّنَا مُحَمَّدٍ الَّذِي بِبَاهِرِ آيَاتِهِ أَضَاءَتِ الأَنْجَادُ وَالأَغْوَارُ",
+            translit: "",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَبِمُعْجِزَاتِ آيَاتِهِ نَطَقَ الكِتَابُ وَتَوَاتَرَتِ الأَخْبَارُ",
+            translit: "",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "صَلَّى اللَّهُ عَلَيْهِ وَعَلَى آلِهِ وَأَصْحَابِهِ الَّذِينَ هَاجَرُوا لِنُصْرَتِهِ",
+            translit: "",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَنَصَرُوهُ فِي هِجْرَتِهِ",
+            translit: "",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "فَنِعْمَ المُهَاجِرُونَ وَنِعْمَ الأَنْصَارُ",
+            translit: "",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "صَلَاةً نَامِيَةً دَائِمَةً مَا سَجَعَتْ فِي أَيْكِهَا الأَطْيَارُ",
+            translit: "",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَهَمَعَتْ بِوَبْلِهَا الدِّيمَةُ المِدْرَارُ",
+            translit: "",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "ضَاعَفَ اللَّهُ عَلَيْهِ دَائِمَ صَلَوَاتِهِ.",
+            translit: "",
+            translation: "",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic:
+              "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ الطَّيِّبِينَ الكِرَامِ، صَلَاةً مَوْصُولَةً دَائِمَةَ الاتِّصَالِ بِدَوَامِ ذِي الجَلَالِ وَالإِكْرَامِ.",
+            translit:
+              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā ālihiṭ ṭaiyyibīnal kirāmi, ṣalātan mawṣūlatan dāʾimatal ittiṣāli bidawāmi dhil jalāli wal ikrām.",
+            translation:
+              "O Allah, bless Sayyidina Muhammad and his good and noble family, with constant, continuous blessings lasting as long as the Master of Majesty and Nobility.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ الَّذِي هُوَ قُطْبُ الجَلَالَةِ",
+            translit:
+              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin alladhi huwa quṭbul jalālati",
+            translation: "O Allah",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَشَمْسُ النُّبُوَّةِ وَالرِّسَالَةِ",
+            translit: "wa shamsun nubuwwati war risālati",
+            translation: "bless Sayyidina Muhammad",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالهَادِي مِنَ الضَّلَالَةِ",
+            translit: "wal hādi minaḍ ḍalālati",
+            translation: "he is the Qutb of Majesty",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَالمُنْقِذُ مِنَ الجَهَالَةِ",
+            translit: "wal munqidhu minal jahālati",
+            translation: "the sun of prophethood and the message",
+          }),
+          new DhikrEntryModel({
+            arabic: "صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ صَلَاةً دَائِمَةَ الاتِّصَالِ وَالتَّوَالِي",
+            translit:
+              "ṣallAllahu ʿalayhi wasṣallama ṣalātan dāʾimatal ittiṣāli wattawālī",
+            translation: "the Guide from error",
+          }),
+          new DhikrEntryModel({
+            arabic: "مُتَعَاقِبَةً بِتَعَاقُبِ الأَيَّامِ وَاللَّيَالِي.",
+            translit: "mutaʿāqibatan bitaʿāqubil ayyami wallayāli.",
+            translation:
+              "and the one who delivers from ignorance. May Allah bless him and grant him peace with a constant and continuous blessing that proceeds with the endless succession of days and nights.",
+          }),
+        ],
+      }),
+    ],
+  }),
+];
