@@ -9,28 +9,27 @@ export default [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ خَيْرِ مَا تَعْلَمُ",
             translit: "Allāhumma inni asʾalukal min khayri mā taʿlamu",
-            translation: "O Allah",
+            translation: "O Allah, I ask You for the good of what You know",
           }),
           new DhikrEntryModel({
             arabic: "وَأَعُوذُ بِكَ مِنْ شَرِّ مَا تَعْلَمُ",
             translit: "wa aʿūdhubika min sharri mā taʿlamu",
-            translation: "I ask You for the good of what You know",
-          }),
-          new DhikrEntryModel({
-            arabic: "وَأَسْتَغْفِرُكَ مِنْ كُلِّ مَا تَعْلَمُ",
-            translit: "wa astaghfiruka min kulli mā taʿlamu",
             translation:
               "and I take refuge with You from the evil of what You know",
           }),
           new DhikrEntryModel({
+            arabic: "وَأَسْتَغْفِرُكَ مِنْ كُلِّ مَا تَعْلَمُ",
+            translit: "wa astaghfiruka min kulli mā taʿlamu",
+            translation: "and I ask Your forgiveness for all of what You know.",
+          }),
+          new DhikrEntryModel({
             arabic: "إِنَّكَ تَعْلَمُ وَلَا نَعْلَمُ",
             translit: "innaka taʿlamu walā naʿlamu wa anta ʿallāmul ghuyūb.",
-            translation:
-              "and I ask Your forgiveness for all of what You know. You know and we do not know",
+            translation: "You know and we do not know",
           }),
           new DhikrEntryModel({
             arabic: "وَأَنْتَ عَلَّامُ الغُيُوبِ.",
-            translit: "",
+            translit: "wa anta ʿallāmul ghuyūb.",
             translation: "and You are the Knower of the Unseen.",
           }),
         ],
@@ -52,18 +51,19 @@ export default [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ اجْعَلْنِي مِنْكَ فِي عِيَاذٍ مَنِيعٍ",
             translit: "Allāhumma jʿalnī minka fī ʿiyādhin manīʿin",
-            translation: "O Allah",
+            translation:
+              "O Allah, place me in a well-fortified refuge of Yours",
           }),
           new DhikrEntryModel({
             arabic: "وَحِرْزٍ حَصِينٍ",
             translit: "wa ḥirzin ḥaṣīnin",
-            translation: "place me in a well-fortified refuge of Yours",
+            translation: "and a secure retreat",
           }),
           new DhikrEntryModel({
             arabic: "مِنْ جَمِيعِ خَلْقِكَ حَتَّى تُبَلِّغَنِي أَجَلِي مُعَافَى.",
             translit: "min jamīʿi khalqika ḥatta tuballighanī ajāli muʿāffa.",
             translation:
-              "and a secure retreat from all of Your creation until I reach my appointed end.",
+              "from all of Your creation until I reach my appointed end.",
           }),
         ],
       }),
@@ -75,13 +75,14 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin ʿadada man ṣalla ʿalayhi",
             translation:
-              "O Allah, bless Sayyidina Muhammad and the family of Sayyidina Muhammad in quantity as great as whoever blesses him.",
+              "O Allah, bless Our Master Muhammad and the family of Our Master Muhammad in quantity as great as whoever blesses him.",
           }),
           new DhikrEntryModel({
             arabic: "وَصَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ عَدَدَ مَنْ لَمْ يُصَلِّ عَلَيْهِ",
             translit:
               "wa ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin ʿadada man lam yuṣalli ʿalayhi",
-            translation: "And",
+            translation:
+              "And bless Our Master Muhammad and the family of Our Master Muhammad in quantity as great as whoever does not bless him.",
           }),
           new DhikrEntryModel({
             arabic:
@@ -89,13 +90,14 @@ export default [
             translit:
               "wa ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin kamā tanbaghīṣ ṣalatu ʿalayhi",
             translation:
-              "bless Sayyidina Muhammad and the family of Sayyidina Muhammad in quantity as great as whoever does not bless him.",
+              "bless Our Master Muhammad and the family of Our Master Muhammad in quantity as great as whoever does not bless him.",
           }),
           new DhikrEntryModel({
             arabic: "وَصَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا تَجِبُ الصَّلَاةُ عَلَيْهِ",
             translit:
               "wa ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin kamā tajibuṣ ṣalātu ʿalayhi",
-            translation: "And",
+            translation:
+              "and bless Our Master Muhammad and the family of Our Master Muhammad as the prayer on him is required.",
           }),
           new DhikrEntryModel({
             arabic:
@@ -103,7 +105,7 @@ export default [
             translit:
               "wa ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin kamā amarta an yuṣalla ʿalayhi",
             translation:
-              "bless Sayyidina Muhammad and the family of Sayyidina Muhammad as the prayer on him requires.",
+              "bless Our Master Muhammad and the family of Our Master Muhammad as the prayer on him requires.",
           }),
           new DhikrEntryModel({
             arabic:
@@ -111,13 +113,13 @@ export default [
             translit:
               "wa ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin alladhi nūruhu min nūril anwāri wa ashraqa bi shuʿāʿi sirrihil asrār.",
             translation:
-              "Bless Sayyidina Muhammad and the family of Sayyidina Muhammad as the prayer on him is necessary.",
+              "Bless Our Master Muhammad and the family of Our Master Muhammad as the prayer on him is necessary.",
           }),
           new DhikrEntryModel({
             arabic: "وَأَشْرَقَ بِشُعَاعِ سِرِّهِ الأَسْرَارُ.",
-            translit: "",
+            translit: "wa ashraqa bi shuʿāʿi sirrihil asrār.",
             translation:
-              "And bless Sayyidina Muhammad and the family of Sayyidina Muhammad as You commanded that he be blessed. Bless Sayyidina Muhammad and the family of Sayyidina Muhammad whose light is from the Light of Lights, and through whom the radiance of his secrets, illuminates all secrets.",
+              "and the radiance of his secrets illuminates all secrets.",
           }),
         ],
       }),
@@ -129,63 +131,68 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin wa ʿalā ahli baytihil abrāri ajmaʿīn.",
             translation:
-              "O Allah, bless Sayyidina Muhammad and the family of Sayyidina Muhammad and the Ahl Al-Bayt, the righteous ones.",
+              "O Allah, bless Our Master Muhammad and the family of Our Master Muhammad and the Ahl Al-Bayt, the righteous ones.",
           }),
         ],
       }),
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ بَحْرِ أَنْوَارِكَ",
+            arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ",
             translit:
-              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā ālihi baḥri anwārika",
-            translation: "O Allah, bless Sayyidina Muhammad and his family",
+              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā ālihi ",
+            translation: "O Allah, bless Our Master Muhammad and his family",
+          }),
+          new DhikrEntryModel({
+            arabic: " بَحْرِ أَنْوَارِكَ",
+            translit: "baḥri anwārika",
+            translation: "the Sea of Your Lights",
           }),
           new DhikrEntryModel({
             arabic: "وَمَعْدِنِ أَسْرَارِكَ",
             translit: "wa maʿdini asrārika",
-            translation: "the Sea of Your lights",
+            translation: "the Mine of Your secrets",
           }),
           new DhikrEntryModel({
             arabic: "وَلِسَانِ حُجَّتِكَ",
             translit: "wa lisāni ḥujjatika",
-            translation: "the Treasury of Your mysteries",
+            translation: "the Tongue of Your proof",
           }),
           new DhikrEntryModel({
             arabic: "وَعَرُوسِ مَمْلَكَتِكَ",
             translit: "wa ʿarūsi mamlakatika",
-            translation: "the Tongue of Your proof",
+            translation: "the Bride of Your kingdom",
           }),
           new DhikrEntryModel({
             arabic: "وَإِمَامِ حَضْرَتِكَ",
             translit: "wa imāmi ḥaḍratika",
-            translation: "the Bridegroom of Your kingdom",
+            translation: "the Imam of Your presence",
           }),
           new DhikrEntryModel({
             arabic: "وَخَاتِمِ أَنْبِيَائِكَ",
             translit: "wa khātimi anbiyāʾika",
-            translation: "the Imam of Your presence",
+            translation: "and the Seal of Your Prophets",
           }),
           new DhikrEntryModel({
             arabic: "صَلَاةً تَدُومُ بِدَوَامِكَ",
             translit: "ṣalātan tadūmu bidawāmika",
-            translation: "and the Seal of Your Prophets",
+            translation: "a prayer that endures with Your eternity",
           }),
           new DhikrEntryModel({
             arabic: "وَتَبْقَى بِبَقَائِكَ",
             translit: "wa tabqa bibaqāʾika",
-            translation:
-              "with a perpetual blessing that pleases You and satisfies him",
+            translation: "and remains with Your everlasting existence",
           }),
           new DhikrEntryModel({
             arabic: "صَلَاةً تُرْضِيكَ وَتُرْضِيهِ",
             translit: "ṣalātan turḍīka wa turḍīhi",
-            translation: "and by which You are pleased with us",
+            translation: "a prayer that pleases You and pleases him",
           }),
           new DhikrEntryModel({
             arabic: "وَتَرْضَى بِهَا عَنَّا يَا أَرْحَمَ الرَّاحِمِينَ.",
             translit: "wa tarḍa bihā ʿanna yā arḥamar raḥimīn.",
-            translation: "O Lord of the Worlds.",
+            translation:
+              "and be pleased with it for us, O Most Merciful of the merciful.",
           }),
         ],
       }),
@@ -194,7 +201,7 @@ export default [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ رَبَّ الحِلِّ وَالحَرَامِ",
             translit: "Allāhumma rabbal ḥilli wal ḥarām",
-            translation: "O Allah",
+            translation: "O Allah, Lord of the lawful and unlawful",
           }),
           new DhikrEntryModel({
             arabic: "وَرَبَّ المَشْعَرِ الحَرَامِ",
@@ -272,7 +279,7 @@ export default [
               "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الأُمِّيِّ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى سَيِّدِنَا إِبْرَاهِيمَ",
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadinin nabiyyil ummiyyi wa ʿalā āli sayyidinā Muḥammadin kamā ṣallayta ʿalā sayyidinā Ibrāhīma",
-            translation: "O Allah, bless Sayyidina Muhammad",
+            translation: "O Allah, bless Our Master Muhammad",
           }),
           new DhikrEntryModel({
             arabic: "إِنَّكَ حَمِيدٌ مَجِيدٌ",
@@ -285,7 +292,7 @@ export default [
             translit:
               "wa bārik ʿalā sayyidinā Muḥammadinin nabiyyil ummiyyi kamā bārakta ʿalā sayyidinā Ibrāhīma innaka ḥamīdun majīd.",
             translation:
-              "and the family of Sayyidina Muhammad as you blessed Sayyidina Ibrahim. You are Praiseworthy, Glorious. Sanctify Sayyidina Muhammad, the Unlettered Prophet, as You sanctified Sayyidina Ibrahim. You are Praiseworthy, Glorious.",
+              "and the family of Our Master Muhammad as you blessed Sayyidina Ibrahim. You are Praiseworthy, Glorious. Sanctify Our Master Muhammad, the Unlettered Prophet, as You sanctified Sayyidina Ibrahim. You are Praiseworthy, Glorious.",
           }),
         ],
       }),
@@ -297,7 +304,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin ʿadada ma aḥāṭa bihi ʿilmuka",
             translation:
-              "O Allah bless Sayyidina Muhammad and the family of Sayyidina Muhammad in quantity as great as what Your knowledge encompasses",
+              "O Allah bless Our Master Muhammad and the family of Our Master Muhammad in quantity as great as what Your knowledge encompasses",
           }),
           new DhikrEntryModel({
             arabic: "وَجَرَى بِهِ قَلَمُكَ",
@@ -355,29 +362,28 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin ʿadada mā aḥāṭa bihi ʿilmuka",
             translation:
-              "O Allah, bless Sayyidina Muhammad and the family of Sayyidina Muhammad in quantity as great as what Your knowledge encompasses",
+              "O Allah, bless Our Master Muhammad and the family of Our Master Muhammad in quantity as great as what Your knowledge encompasses",
           }),
           new DhikrEntryModel({
             arabic: "وَأَحْصَاهُ كِتَابُكَ",
-            translit: "wa aḥṣāhu kitābuka wa shahidat bihi malāʾikatuka",
+            translit: "wa aḥṣāhu kitābuka",
             translation: "and what Your Book enumerates",
           }),
           new DhikrEntryModel({
             arabic: "وَشَهِدَتْ بِهِ مَلَائِكَتُكَ",
-            translit: "warḍa an aṣḥābihi",
-            translation:
-              "and what Your angels witness. And be pleased with his companions",
+            translit: "wa shahidat bihi malāʾikatuka",
+            translation: "and what Your angels witness.",
           }),
           new DhikrEntryModel({
             arabic: "وَارْضَ عَنْ أَصْحَابِهِ",
-            translit: "warḥam ummatahu innaka ḥamīdun majīd.",
-            translation:
-              "and show mercy to his community. You are Praiseworthy",
+            translit: "warḍa an aṣḥābihi",
+            translation: " And be pleased with his companions",
           }),
           new DhikrEntryModel({
             arabic: "وَارْحَمْ أُمَّتَهُ إِنَّكَ حَمِيدٌ مَجِيدٌ.",
-            translit: "",
-            translation: "Glorious.",
+            translit: "warḥam ummatahu innaka ḥamīdun majīd.",
+            translation:
+              "and show mercy to his community. You are Praiseworthy, Glorious.",
           }),
         ],
       }),
@@ -389,7 +395,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin wa ʿalā jamīʿi aṣ-ḥābi sayyidinā Muḥammad.",
             translation:
-              "O Allah, bless Sayyidina Muhammad and the family of Sayyidina Muhammad, and all the Companions of Sayyidina Muhammad.",
+              "O Allah, bless Our Master Muhammad and the family of Our Master Muhammad, and all the Companions of Our Master Muhammad.",
           }),
         ],
       }),
@@ -401,7 +407,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin kamā ṣallayta ʿalā sayyidinā Ibrāhīma wa bārik ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin kamā bārakta ʿalā sayyidinā Ibrāhīma wa ʿalā āli sayyidinā Ibrāhīma fīl ʿālamina innaka ḥamīdun majīd.",
             translation:
-              "O Allah, bless Sayyidina Muhammad and the family of Sayyidina Muhammad as You blessed Sayyidina Ibrahim. And sanctify Sayyidina Muhammad and the family of Sayyidina Muhammad as you sanctified Sayyidina Ibrahim and the family of Sayyidina Ibrahim in the worlds. You are Praiseworthy, Glorious.",
+              "O Allah, bless Our Master Muhammad and the family of Our Master Muhammad as You blessed Sayyidina Ibrahim. And sanctify Our Master Muhammad and the family of Our Master Muhammad as you sanctified Sayyidina Ibrahim and the family of Sayyidina Ibrahim in the worlds. You are Praiseworthy, Glorious.",
           }),
         ],
       }),
@@ -452,9 +458,10 @@ export default [
           new DhikrEntryModel({
             arabic:
               "فَاجْعَلْنَا مِنَ المُحِبِّينَ المَحْبُوبِينَ المُقَرَّبِينَ العَاشِقِينَ لَكَ يَا اللَّهُ يَا اللَّهُ يَا اللَّهُ يَا اللَّهُ يَا اللَّهُ يَا اللَّهُ يَا اللَّهُ يَا اللَّهُ يَا وَدُودُ.",
-            translit: "",
+            translit:
+              "fajʿalnā minal muḥibbīnal maḥbūbīnal muqarrabīnal ʿāshiqīna laka yā Allāhu yā Allāhu yā Allāhu yā Allāhu yā Allāhu yā Allāhu yā Allāhu yā Allāhu yā wadūd.",
             translation:
-              "and by what was truly under Your Throne before You created the heavens and the sound of thunder. Since You are an infinite God known by tawhid, place us among Your beloved lovers who are brought near, full of ardent love for You, O Allah, O Allah, O Allah, O Allah, O Allah, O Allah, O Allah, O Allah, O Wadood.",
+              "so place us among those who love You and are loved, who are brought near, and are passionate lovers of You, O Allah, O Allah, O Allah, O Allah, O Allah, O Allah, O Allah, O Allah, O Loving One.",
           }),
         ],
       }),
@@ -466,7 +473,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā wa mawlānā Muḥammadin ʿadada mā aḥāṭa bihi ʿilmuka.",
             translation:
-              "O Allah, bless Sayyidina, Mawlana Muhammad and the family of Sayyidina Muhammad in quantity as great as what Your knowledge encompasses.",
+              "O Allah, bless Sayyidina, Mawlana Muhammad and the family of Our Master Muhammad in quantity as great as what Your knowledge encompasses.",
           }),
         ],
       }),
@@ -836,7 +843,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā man huwa fissamāʾi maḥmūdun wa fīl arḍi Muḥammadun.",
             translation:
-              "O Allah, bless the one who is our praiseworthy Master in the heaven and Sayyidina Muhammad on the earth.",
+              "O Allah, bless the one who is our praiseworthy Master in the heaven and Our Master Muhammad on the earth.",
           }),
         ],
       }),
@@ -1580,8 +1587,8 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "ابتداء الربع الثاني",
-            translit: "",
-            translation: "",
+            translit: "Ibtidāʾu ar-Rubʿ ath-Thānī",
+            translation: "Beginning of the Second Quarter",
           }),
         ],
       }),
@@ -1653,8 +1660,8 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "وَفُجَاءَةِ النِّقْمَةِ.",
-            translit: "",
-            translation: "",
+            translit: "wa fujāʾatil niqmah.",
+            translation: "and from sudden punishment.",
           }),
         ],
       }),
@@ -1666,7 +1673,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa sallim ʿalayhi wajzihi ʿannā mā huwa ahluhu ḥabībuka (3).",
             translation:
-              "O Allah, bless Sayyidina Muhammad and grant him peace, and reward him on our behalf with what he is worthy of as Your beloved. (3 times)",
+              "O Allah, bless Our Master Muhammad and grant him peace, and reward him on our behalf with what he is worthy of as Your beloved. (3 times)",
           }),
         ],
       }),
@@ -1690,7 +1697,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin kamā ṣallayta wa raḥimta wa bārakta ʿalā sayyidinā Ibrāhīma wa ʿalā āli sayyidinā Ibrahima fīl ʿālamīna innaka ḥamīdun majīd,ʿadada khalqika wa riḍāʾa nafsika wa zinata ʿarshika wa midāda kalimātika.",
             translation:
-              "O Allah, bless Sayyidina Muhammad and the family of Sayyidina Muhammad as You blessed, showed mercy and gave blessings to Sayyidina Ibrahim and the family of Sayyidina Ibrahim in the worlds. You are Praiseworthy, Glorious. [Bless him] in quantity as great as Your creation and Your good pleasure, and the weight of Your Throne and the amount of Your words.",
+              "O Allah, bless Our Master Muhammad and the family of Our Master Muhammad as You blessed, showed mercy and gave blessings to Sayyidina Ibrahim and the family of Sayyidina Ibrahim in the worlds. You are Praiseworthy, Glorious. [Bless him] in quantity as great as Your creation and Your good pleasure, and the weight of Your Throne and the amount of Your words.",
           }),
         ],
       }),
@@ -1701,7 +1708,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin ʿadada man ṣalla ʿalayhi.",
             translation:
-              "O Allah, bless Sayyidina Muhammad in quantity as great as those who bless him.",
+              "O Allah, bless Our Master Muhammad in quantity as great as those who bless him.",
           }),
         ],
       }),
@@ -1712,7 +1719,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin ʿadada man lam yuṣalli ʿalayhi.",
             translation:
-              "O Allah, bless Sayyidina Muhammad in quantity as great as those who do not bless him.",
+              "O Allah, bless Our Master Muhammad in quantity as great as those who do not bless him.",
           }),
         ],
       }),
@@ -1723,7 +1730,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin ʿadada mā ṣulliya ʿalayhi.",
             translation:
-              "O Allah, bless Sayyidina Muhammad in quantity as many times as he has been blessed.",
+              "O Allah, bless Our Master Muhammad in quantity as many times as he has been blessed.",
           }),
         ],
       }),
@@ -1734,7 +1741,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin aḍʿāfa mā ṣulliya ʿalayhi.",
             translation:
-              "O Allah, bless Sayyidina Muhammad, amplifying all the blessings upon him.",
+              "O Allah, bless Our Master Muhammad, amplifying all the blessings upon him.",
           }),
         ],
       }),
@@ -1744,7 +1751,7 @@ export default [
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ كَمَا هُوَ أَهْلُهُ.",
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin kamā huwa ahluhu.",
-            translation: "O Allah, bless Sayyidina Muhammad as he deserves.",
+            translation: "O Allah, bless Our Master Muhammad as he deserves.",
           }),
         ],
       }),
@@ -1755,7 +1762,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin kamā tuḥibbu wa tarḍā lahu.",
             translation:
-              "O Allah, bless Sayyidina Muhammad as You love him and are pleased with him.",
+              "O Allah, bless Our Master Muhammad as You love him and are pleased with him.",
           }),
         ],
       }),

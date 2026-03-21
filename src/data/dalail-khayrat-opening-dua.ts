@@ -8,66 +8,74 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ.\nالحَمْدُ لِلَّهِ رَبِّ العَالَمِينَ",
-            translit: "Alḥamdu liLlāhi rabbil ʿālamīn",
-            translation: "Praise belongs to Allah",
+            translit:
+              "BismiLlāhir raḥmānir raḥīm. Alḥamdu liLlāhi rabbil ʿālamīn",
+            translation:
+              "In the name of Allah, Most Gracious, Most Merciful. Praise be to Allah, Lord of the Worlds.",
           }),
           new DhikrEntryModel({
             arabic: "حَسْبِيَ اللَّهُ وَنِعْمَ الوَكِيلُ",
-            translit:
-              "ḥasbiyAllāhu wa niʿmal wakīl wa lā ḥawla wa lā quwwata illā biLlahil ʿaliyyi alʿaẓim. Allāhumma inni abraʾu min ḥawlī wa quwwatī ilā ḥawlika wa quwwatika.\nAllāhumma innī ataqarrabu ilayka biṣṣalāti ʿala sayyidinā Muḥammadin ʿabdika wa nabiyyika wa rasūlika sayyidil mursalīna ṣallAllāhu taʿālā wasallama ʿalayhi waʿalayhim ajmaʿīna imtithālan li amrika wa taṣdīqan lahu wa maḥabbatan fīhi washawqan ilayhi wataʿẓīman liqadrihi walikawnihi ṣallAllahu ʿalayhi wasallama ahlan lidhalika fataqabbalhā minnī bifaḍlika wajʿalnī min ʿibadikaṣ ṣāliḥīna wawaffiqnī liqirāʾatihā ʿalād dawāmi bijāhihi ʿindaka waṣallAllāhu ʿalā sayyidinā Muḥammadin wa ālihi waṣaḥbihi ajmaʿīn.",
+            translit: "Ḥasbiyallāhu wa niʿmul wakīl",
             translation:
-              "the Lord of the Worlds. Allah is enough for me and the best Protector. There is no power nor strength except by Allah",
+              "Allah is enough for me, and He is the best Protector.",
           }),
           new DhikrEntryModel({
             arabic:
               "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا باللَّهِ العَلِيِّ العَظِيمِ. اللَّهُمَّ إِنِّي أَبْرَأُ مِنْ حَوْلِي وَقُوَّتِي إِلَى حَوْلِكَ وَقُوَّتِكَ. اللَّهُمَّ إِنِّي أَتَقَرَّبُ إِلَيْكَ بِالصَّلَاةِ عَلَى سَيِّدِنَا مُحَمَّدٍ",
-            translit: "",
-            translation: "the High",
+            translit:
+              "Wa lā ḥawla wa lā quwwata illā biLlāhil ʿaliyyil ʿaẓīm. Allāhumma innī abraʾu min ḥawlī wa quwwatī ilā ḥawlika wa quwwatika. Allāhumma innī ataqarrabu ilayka biṣṣalāti ʿalā sayyidinā Muḥammadin",
+            translation:
+              "There is no power nor strength except by Allah, the Lofty, the Immense. O Allah, I disown my power and strength and resort to Your power and strength. O Allah, I draw near to You through asking for blessings upon our Master Muhammad",
           }),
           new DhikrEntryModel({
             arabic: "عَبْدِكَ وَنَبِيِّكَ وَرَسُولِكَ سَيِّدِ المُرْسَلِينَ",
-            translit: "",
-            translation: "the Immense. O Allah",
+            translit: "ʿabdika wa nabiyyika wa rasūlika sayyidil mursalīn",
+            translation:
+              "Your slave, Your Prophet, and Your Messenger, the Master of the Messengers",
           }),
           new DhikrEntryModel({
             arabic: "صَلَّى اللَّهُ تَعَالَى وَسَلَّمَ عَلَيْهِ وَعَلَيْهِمْ أَجْمَعِينَ",
-            translit: "",
+            translit: "Ṣallallāhu taʿālā wasallama ʿalayhi waʿalayhim ajmaʿīn",
             translation:
-              "I relinquish my power and strength in favour of Your power and Your strength. O Allah",
+              "May Allah Almighty bless him and grant him and all of them peace.",
           }),
           new DhikrEntryModel({
             arabic:
               "امْتِثَالًا لِأَمْرِكَ وَتَصْدِيقًا لَهُ وَمَحَبَّةً فِيهِ وَشَوْقًا إِلَيْهِ وَتَعْظِيمًا لِقَدْرِهِ",
-            translit: "",
+            translit:
+              "Imtithālan li amrika wa taṣdīqan lahu wa maḥabbatan fīhi wa shawqan ilayhi wa taʿẓīman liqadrihi",
             translation:
-              "I draw near to You by the prayer on Sayyidina Muhammad",
+              "In obedience to Your command, affirming him, loving him, yearning for him, and respecting his worth",
           }),
           new DhikrEntryModel({
             arabic: "وَلِكَوْنِهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ أَهْلًا لِذَلِكَ",
-            translit: "",
-            translation: "Your slave",
+            translit:
+              "Wa likawnihi ṣallallāhu ʿalayhi wasallama ahlan lidhalika",
+            translation:
+              "And because he, may Allah bless him and grant him peace, is worthy of that.",
           }),
           new DhikrEntryModel({
             arabic: "فَتَقَبَّلْهَا مِنِّي بِفَضْلِكَ",
-            translit: "",
-            translation: "Prophet and Messenger",
+            translit: "Fataqabbalhā minnī bifaḍlika",
+            translation: "Accept it from me by Your grace.",
           }),
           new DhikrEntryModel({
             arabic: "وَاجْعَلْنِي مِنْ عِبَادِكَ الصَّالِحِينَ",
-            translit: "",
-            translation: "the Master of the Messengers",
+            translit: "Wajʿalnī min ʿibādika aṣ-ṣāliḥīn",
+            translation: "And make me one of Your righteous slaves.",
           }),
           new DhikrEntryModel({
             arabic: "وَوَفِّقْنِي لِقِرَاءَتِهَا عَلَى الدَّوَامِ بِجَاهِهِ عِنْدَكَ",
-            translit: "",
+            translit: "Wa waffiqnī liqirāʾatihā ʿalad dāwāmi bijāhihi ʿindaka",
             translation:
-              "may Allah Almighty bless him and grant him and all of them peace. I do so in obedience to Your command",
+              "And grant me success in reading it continuously by his rank with You.",
           }),
           new DhikrEntryModel({
             arabic: "وَصَلَّى اللَّهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَآلِهِ وَصَحْبِهِ أَجْمَعِينَ.",
-            translit: "",
+            translit:
+              "Wa ṣallallāhu ʿalā sayyidinā Muḥammadin wa ālihi wa ṣaḥbihi ajmaʿīn.",
             translation:
-              "affirming him, loving him, yearning for him and respecting his worth and the fact that he, may Allah bless him and grant him peace, is worthy of that. Accept it from me by Your grace and make me one of Your righteous slaves. By his rank with You, give me success in reading it (Dala'il Al Khayrat) continuously. May Allah bless Sayyidina Muhammad and his family and all his Companions.",
+              "May Allah bless Our Master Muhammad and his family and all his Companions.",
           }),
         ],
       }),
@@ -89,25 +97,25 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "وَالحَمْدُ لِلَّهِ",
-            translit: "walḥamduliLlāhi",
-            translation:
-              "Praise be to Allah. There is no god except Allah. Allah is the Greatest. There is no power nor strength except by Allah the Lofty",
+            translit: "Walḥamdu liLlāhi",
+            translation: "And praise be to Allah.",
           }),
           new DhikrEntryModel({
             arabic: "وَلَا إِلَهَ إِلَّا اللَّهُ",
-            translit: "wa lā ilaha illAllāhu",
-            translation: "the Great.",
+            translit: "Wa lā ilāha illallāh",
+            translation: "There is no god except Allah.",
           }),
           new DhikrEntryModel({
             arabic: "وَاللَّهُ أَكْبَرُ",
-            translit: "wAllāhu akbaru",
-            translation: "",
+            translit: "Wallāhu akbar",
+            translation: "Allah is the Greatest.",
           }),
           new DhikrEntryModel({
             arabic: "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا باللَّهِ العَلِيِّ العَظِيم (3)",
             translit:
-              "wa lā hawla wa lā quwwata illa biLlahil ʿaliyyil ʿaẓīm (3).",
-            translation: "",
+              "Wa lā ḥawla wa lā quwwata illā biLlāhil ʿaliyyil ʿaẓīm (3).",
+            translation:
+              "There is no power nor strength except by Allah the Lofty, the Immense (3 times).",
           }),
         ],
       }),

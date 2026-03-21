@@ -12,44 +12,42 @@ export default [
             translit:
               "Allāhumma innī nawaytu biṣṣalāti ʿalān nabiyyi ṣallAllāhu ʿalayhi wasallama",
             translation:
-              "O Allah! I intend to ask for blessings upon on the Prophet sallAllahu alayhi wasallam",
+              "O Allah! I intend to ask for blessings upon on the Prophet may Allah bless him and grant him peace",
           }),
           new DhikrEntryModel({
             arabic: "امْتِثَالًا لِأَمْرِكَ",
-            translit:
-              "imtithālan li amrika wa taṣdīqan linabiyyika sayyidinā Muḥammadin ṣallAllāhu ʿalayhi wasallama",
-            translation:
-              "in obedience to Your command and with faith in Your Prophet",
+            translit: "Imtithālan li amrika",
+            translation: "In obedience to Your command",
           }),
           new DhikrEntryModel({
             arabic: "وَتَصْدِيقًا لِنَبِيِّكَ سَيِّدِنَا مُحَمَّدٍ صَلَّى اللَّهُ عَليْهِ وَسَلَّمَ",
-            translit: "wa maḥabbatan fīhi",
+            translit:
+              "Wa taṣdīqan linabiyyika sayyidinā Muḥammadin ṣallallāhu ʿalayhi wasallam",
             translation:
-              "Sayyidina Muhammad sallAllahu alayhi wasallam. [I do so] with love for him and yearning for him",
+              "And affirming faith in Your Prophet, Our Master Muhammad, may Allah bless him and grant him peace",
           }),
           new DhikrEntryModel({
             arabic: "وَمَحَبَّةً فِيهِ",
-            translit: "wa shawqan ilayhi",
-            translation:
-              "and exalting his rank as he merits. So accept it from me by Your favour and benevolence",
+            translit: "Wa maḥabbatan fīh",
+            translation: "And with love for him",
           }),
           new DhikrEntryModel({
             arabic: "وَشَوْقًا إِلَيْهِ",
-            translit: "wa taʿẓīman liqadrihi wa likawnihi ahlan lidhalika",
-            translation:
-              "and remove the veil of neglect from my heart and make me one of Your righteous slaves.",
+            translit: "Wa shawqan ilayh",
+            translation: "And with yearning for him",
           }),
           new DhikrEntryModel({
             arabic: "وَتَعْظِيمًا لِقَدْرِهِ",
-            translit: "fataqabbalhā minnī bifaḍlika wa iḥsānika",
-            translation: "",
+            translit: "Wa taʿẓīman liqadrihi",
+            translation: "And with exalting his rank",
           }),
           new DhikrEntryModel({
             arabic:
               "وَلِكَوْنِهِ أَهْلًا لِذَلِكَ. فَتَقَبَّلْهَا مِنِّي بِفَضْلِكَ وَإِحْسَانِكَ. وَأَزِلْ حِجَابَ الغَفْلَةِ عَنْ قَلْبِي وَاجْعَلْنِي مِنْ عِبَادِكَ الصَّالِحِينَ.",
             translit:
-              "wa ʾazil ḥijābal ghaflati ʿan qalbī wajʿalnī min ʿibādikaṣ ṣāliḥīn.",
-            translation: "",
+              "Wa likawnihi ahlan lidhalika. Fataqabbalhā minnī bifaḍlika wa iḥsānika. Wa azil ḥijābal ghaflati ʿan qalbī wajʿalnī min ʿibādikaṣ ṣāliḥīn.",
+            translation:
+              "And because he is worthy of that. So accept it from me by Your grace and benevolence. And remove the veil of neglect from my heart and make me one of Your righteous slaves.",
           }),
         ],
       }),
@@ -90,7 +88,7 @@ export default [
             translit:
               "Wa asʾaluka riḍāka wariḍāhu yā rabbal ʿālamīna maʿal ʿāfiyatid dāʾimati wal mawti ʿalāl kitābi was sunnati wal jamāʿati wa kalimatayyish shahādati ʿalā taḥqīqihā min ghayri tabdīlin wa lā taghyīrin, waghfirlī mārtakabtuhu bifaḍlika wajūdika wakaramika yā arḥamar rāḥimīna, wa ṣallAllāhu ʿalā sayyidinā Muḥammadin khātimin nabiyyīna wa imāmil mursalīna wa ʿalā ālihi waṣaḥbihi ajmaʿīna wasalāmun ʿalāl mursalīna walḥamdu liLlāhi rabbil ʿālamīn.",
             translation:
-              "I ask You for Your pleasure, and his gratification, O Lord of the Worlds, and perpetual well-being, and a death in obedience to The Book and the Sunnah, with fulfillment of my shahadah without alteration. Forgive me, by Your favour, bounty and generosity, for what I have done, O Most Merciful of the merciful. May Allah bless Sayyidina Muhammad, the Seal of the Prophets and Imam of the Messengers, and his family and all his Companions, and grant them peace. Peace be upon the Messengers, and praise be to Allah, the Lord of the Worlds.",
+              "I ask You for Your pleasure, and his gratification, O Lord of the Worlds, and perpetual well-being, and a death in obedience to The Book and the Sunnah, with fulfillment of my shahadah without alteration. Forgive me, by Your favour, bounty and generosity, for what I have done, O Most Merciful of the merciful. May Allah bless Our Master Muhammad, the Seal of the Prophets and Imam of the Messengers, and his family and all his Companions, and grant them peace. Peace be upon the Messengers, and praise be to Allah, the Lord of the Worlds.",
           }),
         ],
       }),

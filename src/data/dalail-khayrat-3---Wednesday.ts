@@ -11,7 +11,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā rūḥi sayyidinā Muḥammadin fil arwāḥi",
             translation:
-              "O Allah, bless the soul of Sayyidina Muhammad among the souls",
+              "O Allah, bless the soul of Our Master Muhammad among the souls",
           }),
           new DhikrEntryModel({
             arabic: "وَعَلَى جَسَدِهِ فِي الأَجْسَادِ",
@@ -37,7 +37,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin kullamā dhakarahudh dhākirūn.",
             translation:
-              "O Allah, bless Sayyidina Muhammad as many times as he is mentioned by those who do dhikr.",
+              "O Allah, bless Our Master Muhammad as many times as he is mentioned by those who do dhikr.",
           }),
         ],
       }),
@@ -48,7 +48,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin kullamā ghafala ʿan dhikrihil ghāfilūn.",
             translation:
-              "O Allah, bless Sayyidina Muhammad as many times as the heedless neglect his mention.",
+              "O Allah, bless Our Master Muhammad as many times as the heedless neglect his mention.",
           }),
         ],
       }),
@@ -59,7 +59,7 @@ export default [
               "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الأُمِّيِّ وَأَزْوَاجِهِ أُمَّهَاتِ المُؤْمِنِينَ",
             translit:
               "Allāhumma ṣalli wa ṣallim ʿalā sayyidinā Muḥammadin nabiyyil ummiyyi wa azwājihi ummahātil muʾminīna",
-            translation: "O Allah, bless Sayyidina Muhammad",
+            translation: "O Allah, bless Our Master Muhammad",
           }),
           new DhikrEntryModel({
             arabic: "وَذُرِّيَّتِهِ وَأَهْلِ بَيْتِهِ",
@@ -86,7 +86,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin ʿadada ma aḥāṭa bihi ʿilmuka",
             translation:
-              "O Allah, bless Sayyidina Muhammad in quantity as great as what Your knowledge encompasses and what Your Book contains",
+              "O Allah, bless Our Master Muhammad in quantity as great as what Your knowledge encompasses and what Your Book contains",
           }),
           new DhikrEntryModel({
             arabic: "وَأَحْصَاهُ كِتَابُكَ",
@@ -96,38 +96,38 @@ export default [
           new DhikrEntryModel({
             arabic: "صَلَاةً تَكُونُ لَهُ رِضَاءً",
             translit: "ṣalātan takūnu lahu riḍāʾan",
-            translation: "and give him the means of mediation and virtue",
+            translation: "a blessing that pleases You and rewards him",
           }),
           new DhikrEntryModel({
             arabic: "وَلِحَقِّهِ أَدَاءً",
             translit: "wa liḥaqqihi adāʾan",
-            translation: "and high degree",
+            translation: "in fulfillment of his right",
           }),
           new DhikrEntryModel({
             arabic: "وَأَعْطِهِ الوَسِيلَةَ وَالفَضِيلَةَ",
             translit: "wa aʿṭihil wasīlata wal faḍīlata",
-            translation: "and raise him",
+            translation: "and give him the means of mediation and virtue",
           }),
           new DhikrEntryModel({
             arabic: "وَالدَّرَجَةَ الرَّفِيعَةَ",
-            translit:
-              "waddarajatir rafīʿah. Wabʿath-hu Allāhummal maqāmal maḥmūd alladhī waʿadtahu",
-            translation: "O Allah",
+            translit: "waddarajatir rafīʿah",
+            translation: "and high degree",
           }),
           new DhikrEntryModel({
             arabic: "وَابْعَثْهُ اللَّهُمَّ المَقَامَ المَحْمُودَ الَّذِي وَعَدْتَهُ",
-            translit: "wajzihi ʿannā mā huwa ahluhu",
-            translation: "to the praiseworthy station which You promised him",
+            translit: "wa ibʿathhu Allāhummal maqāmal maḥmūd alladhī waʿadtahu",
+            translation:
+              "and raise him to the praiseworthy station which You promised him",
           }),
           new DhikrEntryModel({
             arabic: "وَاجْزِهِ عَنَّا مَا هُوَ أَهْلُهُ",
-            translit:
-              "wa ʿalā jamīʿi ikhwānihi minan nabiyyīna waṣṣiddīqīna wash shuhadāʾi waṣṣāliḥīn.",
-            translation: "and reward him with what he deserves on our behalf",
+            translit: "wajzihi ʿannā mā huwa ahluhu",
+            translation: "and reward him on our behalf as he deserves",
           }),
           new DhikrEntryModel({
             arabic: "وَعَلَى جَمِيعِ إِخْوَانِهِ مِنَ النَّبِيِّينَ وَالصِّدِّيقِينَ وَالشُّهَدَاءِ وَالصَّالِحِينَ.",
-            translit: "",
+            translit:
+              "wa ʿalā jamīʿi ikhwānihi minan nabiyyīna waṣṣiddīqīna wash shuhadāʾi waṣṣāliḥīn.",
             translation:
               "and bless all of his brothers, the Prophets and the truthful ones, the martyrs and the righteous.",
           }),
@@ -140,7 +140,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa anzilhul munzalal muqarraba yawmal qiyāmah.",
             translation:
-              "O Allah, bless Sayyidina Muhammad and assign him the nearest abode on the Day of Rising.",
+              "O Allah, bless Our Master Muhammad and assign him the nearest abode on the Day of Rising.",
           }),
         ],
       }),
@@ -149,7 +149,7 @@ export default [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ.",
             translit: "Allāhumma ṣalli ʿalā sayyidinā Muḥammad.",
-            translation: "O Allah, bless Sayyidina Muhammad.",
+            translation: "O Allah, bless Our Master Muhammad.",
           }),
         ],
       }),
@@ -170,21 +170,21 @@ export default [
             translit:
               "Allāhumma aʿṭi lisayyidinā Muḥammadin afḍala mā saʾalaka li nafsihi",
             translation:
-              "O Allah, give Sayyidina Muhammad the best of what he asked for himself",
+              "O Allah, give Our Master Muhammad the best of what he asked for himself",
           }),
           new DhikrEntryModel({
             arabic: "وَأَعْطِ لِسَيِّدِنَا مُحَمَّدٍ أَفْضَلَ مَا سَأَلَكَ لَهُ أَحَدٌ مِنْ خَلْقِكَ",
             translit:
               "wa aʿṭi lisayyidinā Muḥammadin afḍala mā saʾalaka lahu aḥadun min khalqika",
             translation:
-              "and give Sayyidina Muhammad the best of what any of Your creation has ever asked for him",
+              "and give Our Master Muhammad the best of what any of Your creation has ever asked for him",
           }),
           new DhikrEntryModel({
             arabic: "وَأَعْطِ لِسَيِّدِنَا مُحَمَّدٍ أَفْضَلَ مَا أَنْتَ مَسْئُولٌ لَهُ إِلَى يَوْمِ القِيَامَةِ.",
             translit:
               "wa aʿṭi lisayyidinā Muḥammadin afḍala mā anta masʾūlun lahu ilā yawmil qiyāmah.",
             translation:
-              "and give Sayyidina Muhammad the best of what is asked of You for him until the Day of Resurrection.",
+              "and give Our Master Muhammad the best of what is asked of You for him until the Day of Resurrection.",
           }),
         ],
       }),
@@ -195,18 +195,19 @@ export default [
               "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَسَيِّدِنَا آدَمَ وَسَيِّدِنَا نُوحٍ وَسَيِّدِنَا إِبْرَاهِيمَ وَسَيِّدِنَا مُوسَى وَسَيِّدِنَا عِيسَى",
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa sayyidinā Ādama wa sayyidinā Nūḥin wa sayyidinā Ibrāhīma wa sayyidinā Mūsā wa sayyidinā ʿĪsā",
-            translation: "O Allah, bless Sayyidina Muhammad",
+            translation:
+              "O Allah, bless Our Master Muhammad and Sayyidina Adam and Sayyidina Nuh and Sayyidina Ibrahim and Sayyidina Musa and Sayyidina 'Isa",
           }),
           new DhikrEntryModel({
             arabic: "وَمَا بَيْنَهُمْ مِنَ النَّبِيِّينَ وَالمُرْسَلِينَ",
             translit: "wa mā baynahum minan nabiyyīna wal mursalīna",
-            translation: "and Sayyidina Adam",
+            translation: "and the Prophets and Messengers between them",
           }),
           new DhikrEntryModel({
             arabic: "صَلَوَاتُ اللَّهِ وَسَلَامُهُ عَلَيْهِمْ أَجْمَعِينَ (3)",
             translit: "ṣalawātuLlahi wa salāmuhu ʿalayhim ajmaʿīn (3).",
             translation:
-              "and Sayyidina Nuh, and Sayyidina Ibrahim, and Sayyidina Musa and Sayyidina 'Isa, and the Prophets and Messengers between them, may the blessing of Allah and his peace be upon all of them (3 times).",
+              "may the blessing of Allah and his peace be upon all of them (3 times).",
           }),
         ],
       }),
@@ -234,7 +235,8 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "وَاجْزِهِمَا اللَّهُمَّ أَفْضَلَ مَا جَازَيْتَ بِهِ أَبًا وَأُمًّا عَنْ وَلَدَيْهِمَا.",
-            translit: "",
+            translit:
+              "wajzihimā Allāhumma afḍala mā jāzayta bihi aban wa umman ʿan waladayhimā.",
             translation:
               "and reward them, O Allah, with the best of what you reward a mother and father through their offspring.",
           }),
@@ -244,31 +246,32 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا جِبْرِيلَ وَسَيِّدِنَا مِيكَائِيلَ",
-            translit: "Allāhumma ṣalli ʿalā sayyidinā Jibrīla",
-            translation: "O Allah, bless Sayyidina Jibril",
+            translit:
+              "Allāhumma ṣalli ʿalā sayyidinā Jibrīla wa sayyidinā Mīkāʾīla",
+            translation:
+              "O Allah, bless Sayyidina Jibril and Sayyidina Mika'il",
           }),
           new DhikrEntryModel({
             arabic: "وَسَيِّدِنَا إِسْرَافِيلَ وَسَيِّدِنَا عَزْرَائِيلَ",
-            translit: "wa sayyidinā Mīkāʾīla",
-            translation: "and Sayyidina Mika'il",
+            translit: "wa sayyidinā Isrāfīla wa sayyidinā ʿAzrāʾīla",
+            translation: "and Sayyidina Israfil and Sayyidina 'Azara'il",
           }),
           new DhikrEntryModel({
             arabic: "وَحَمَلَةِ العَرْشِ وَعَلَى المَلَائِكَةِ وَالمُقَرَّبِينَ",
-            translit: "wa sayyidinā Isrāfīla",
+            translit: "wa ḥamalatil ʿarshi wa ʿalāl malāʾikati wal muqarrabina",
             translation:
-              "and Sayyidina Israfil and Sayyidina 'Azara'il and the bearers of the Throne",
+              "and the bearers of the Throne and upon the angels and those brought near",
           }),
           new DhikrEntryModel({
             arabic: "وَعَلَى جَمِيعِ الأَنْبِيَاءِ وَالمُرْسَلِينَ",
-            translit: "wa sayyidinā ʿAzrāʾīla",
-            translation: "and the angels",
+            translit: "wa ʿalā jamīʿil anbiyāʾi wal mursalīna",
+            translation: "and all the Prophets and Messengers",
           }),
           new DhikrEntryModel({
             arabic: "صَلَوَاتُ اللَّهِ وَسَلَامُهُ عَلَيْهِمْ أَجْمَعِينَ (3)",
-            translit:
-              "wa ḥamalatil ʿarshi wa ʿalāl malāʾikati wal muqarrabina, wa ʿalā jamīʿil anbiyāʾi wal mursalīna, ṣalawātuLlahi wa salāmuhu ʿalayhim ajmaʿīn (3).",
+            translit: "ṣalawātuLlahi wa salāmuhu ʿalayhim ajmaʿīn (3).",
             translation:
-              "and those brought near [to Allah], and all the Prophets and Messengers, may the peace and blessings of Allah be upon all of them (3 times).",
+              "may the peace and blessings of Allah be upon all of them (3 times).",
           }),
         ],
       }),
@@ -279,7 +282,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin ʿadada mā ʿālimta",
             translation:
-              "O Allah, bless Sayyidina Muhammad in quantity as great as Your knowledge encompasses",
+              "O Allah, bless Our Master Muhammad in quantity as great as Your knowledge encompasses",
           }),
           new DhikrEntryModel({
             arabic: "وَمِلْءَ مَا عَلِمْتَ",
@@ -293,7 +296,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "وَمِدَادَ كَلِمَاتِكَ.",
-            translit: "",
+            translit: "wa midāda kalimātika.",
             translation: "and the extent of Your words.",
           }),
         ],
@@ -305,7 +308,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin ṣalātan mawṣūlatan bil mazīd.",
             translation:
-              "O Allah, bless Sayyidina Muhammad with blessings that are continuously increasing.",
+              "O Allah, bless Our Master Muhammad with blessings that are continuously increasing.",
           }),
         ],
       }),
@@ -317,7 +320,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin ṣalātan lā tanqaṭiʿu abadal ābādi wa lā tabīd.",
             translation:
-              "O Allah, bless Sayyidina Muhammad with a blessing which will never be interrupted, nor diminished.",
+              "O Allah, bless Our Master Muhammad with a blessing which will never be interrupted, nor diminished.",
           }),
         ],
       }),
@@ -327,14 +330,14 @@ export default [
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ صَلَاتَكَ الَّتِي صَلَّيْتَ عَلَيْهِ",
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin ṣalātakallati ṣallayta ʿalayhi",
-            translation: "O Allah",
+            translation: "O Allah, bless Our Master Muhammad with as many blessings as You have already bestowed upon him",
           }),
           new DhikrEntryModel({
             arabic: "وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ سَلَامَكَ الَّذِي سَلَّمْتَ عَلَيْهِ",
             translit:
               "wa ṣallim ʿalā sayyidinā Muḥammadin salāmakalladhi ṣallamta ʿalayhi",
             translation:
-              "bless Sayyidina Muhammad with as many blessings as You have already bestowed upon him. And grant peace to Sayyidina Muhammad with as much peace as You have already granted him",
+              "bless Our Master Muhammad with as many blessings as You have already bestowed upon him. And grant peace to Our Master Muhammad with as much peace as You have already granted him",
           }),
           new DhikrEntryModel({
             arabic: "وَاجْزِهِ عَنَّا مَا هُوَ أَهْلُهُ.",
@@ -349,13 +352,13 @@ export default [
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ صَلَاةً تُرْضِيكَ وَتُرْضِيهِ",
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin ṣalātan turḍīka wa turḍīhi",
-            translation: "O Allah",
+            translation: "O Allah, bless Our Master Muhammad with a blessing that pleases You and him",
           }),
           new DhikrEntryModel({
             arabic: "وَتَرْضَى بِهَا عَنَّا",
             translit: "wa tarḍa bihā ʿannā",
             translation:
-              "bless Sayyidina Muhammad with a blessing that pleases You and him",
+              "bless Our Master Muhammad with a blessing that pleases You and him",
           }),
           new DhikrEntryModel({
             arabic: "وَاجْزِهِ عَنَّا مَا هُوَ أَهْلُهُ.",
@@ -372,7 +375,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin baḥri anwārika",
             translation:
-              "O Allah, bless Sayyidina Muhammad - the Sea of Your lights",
+              "O Allah, bless Our Master Muhammad - the Sea of Your lights",
           }),
           new DhikrEntryModel({
             arabic: "وَمَعْدِنِ أَسْرَارِكَ",
@@ -452,14 +455,14 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "صَلَاةً تُرْضِيكَ وَتُرْضِيهِ",
-            translit: "",
-            translation:
-              "that exemplify Your knowledge - blessings that please You and him and by which You are pleased with us",
+            translit: "ṣalātan turḍīka wa turḍīh",
+            translation: "blessings that please You and him",
           }),
           new DhikrEntryModel({
             arabic: "وَتَرْضَى بِهَا عَنَّا يَا رَبَّ العَالَمِينَ.",
-            translit: "",
-            translation: "O Lord of the Worlds.",
+            translit: "wa tarḍā bihā ʿannā yā rabbal ʿālamīn.",
+            translation:
+              "and by which You are pleased with us, O Lord of the Worlds.",
           }),
         ],
       }),
@@ -471,7 +474,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin ʿadada mā fī ʿilmiLlāhi ṣalātan dāʿimatan bidawāmi mulkiLlāh.",
             translation:
-              "O Allah, bless Sayyidina Muhammad to the extent of the knowledge of Allah, with a continuous blessing lasting forever, as the kingdom of Allah.",
+              "O Allah, bless Our Master Muhammad to the extent of the knowledge of Allah, with a continuous blessing lasting forever, as the kingdom of Allah.",
           }),
         ],
       }),
@@ -482,7 +485,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin kamā ṣallayta ʿalā sayyidinā Ibrāhīma",
             translation:
-              "O Allah, bless Sayyidina Muhammad as you blessed Sayyidina Ibrahim. And sanctify Sayyidina Muhammad and the family of Sayyidina Muhammad as You sanctified the family of Sayyidina Ibrahim in the worlds. You are Praiseworthy",
+              "O Allah, bless Our Master Muhammad as you blessed Sayyidina Ibrahim. And sanctify Our Master Muhammad and the family of Our Master Muhammad as You sanctified the family of Sayyidina Ibrahim in the worlds. You are Praiseworthy",
           }),
           new DhikrEntryModel({
             arabic:
@@ -490,7 +493,7 @@ export default [
             translit:
               "wa bārik ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin kamā bārakta ʿalā āli sayyidinā Ibrāhīma fil ʿālamina innaka ḥamīdun majīd",
             translation:
-              "Glorious. [Bless Sayyidina Muhammad] in quantity as great as what is encompassed by Your great and good pleasure",
+              "Glorious. [Bless Our Master Muhammad] in quantity as great as what is encompassed by Your great and good pleasure",
           }),
           new DhikrEntryModel({
             arabic: "عَدَدَ خَلْقِكَ وَرِضَي نَفْسِكَ وَزِنَةَ عَرْشِكَ وَمِدَادَ كَلِمَاتِكَ",
@@ -552,7 +555,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin ʿalā qadri ḥubbika fīhi.",
             translation:
-              "O Allah, bless Sayyidina Muhammad to the degree of Your love for him.",
+              "O Allah, bless Our Master Muhammad to the degree of Your love for him.",
           }),
         ],
       }),
@@ -563,7 +566,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin ʿalā qadri ʿināyatika bihi.",
             translation:
-              "O Allah, bless Sayyidina Muhammad to the scope of Your solicitude for him.",
+              "O Allah, bless Our Master Muhammad to the scope of Your solicitude for him.",
           }),
         ],
       }),
@@ -574,7 +577,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin ḥaqqa qadrihi wa miqdārihi.",
             translation:
-              "O Allah, bless Sayyidina Muhammad in accordance with his rank and worthiness.",
+              "O Allah, bless Our Master Muhammad in accordance with his rank and worthiness.",
           }),
         ],
       }),
@@ -586,7 +589,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin ṣalātan tunjinā bihā min jamīʿil ahwāli wal āfāt",
             translation:
-              "O Allah, bless Sayyidina Muhammad with a blessing by which we are saved from all terrors and afflictions",
+              "O Allah, bless Our Master Muhammad with a blessing by which we are saved from all terrors and afflictions",
           }),
           new DhikrEntryModel({
             arabic: "وَتَقْضِي لَنَا بِهَا جَمِيعَ الحَاجَاتِ",
@@ -624,7 +627,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin ṣalātar riḍāʾi, warḍa ʿan aṣ-ḥābihi riḍāʾar riḍā.",
             translation:
-              "O Allah, bless Sayyidina Muhammad with a blessing of acceptance and be pleased with his companions with the pleasure of acceptance.",
+              "O Allah, bless Our Master Muhammad with a blessing of acceptance and be pleased with his companions with the pleasure of acceptance.",
           }),
         ],
       }),
@@ -634,12 +637,12 @@ export default [
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ السَّابِقِ لِلْخَلْقِ نُورُهُ",
             translit:
               "Allahuma ṣalli ʿalā sayyidinā Muḥammadinis sābiqi lil khalqi nūruhu",
-            translation: "O Allah",
+            translation: "O Allah, bless Our Master Muhammad whose light preceded all creation",
           }),
           new DhikrEntryModel({
             arabic: "وَرَحْمَةٌ لِلْعَالَمِينَ ظُهُورُهُ",
             translit: "wa raḥmatun lil ʿālamina ẓuhūruhu",
-            translation: "bless Sayyidina Muhammad",
+            translation: "bless Our Master Muhammad",
           }),
           new DhikrEntryModel({
             arabic: "عَدَدَ مَنْ مَضَى مِنْ خَلْقِكَ وَمَنْ بَقِيَ",
@@ -670,20 +673,19 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "صَلَاةً دَائِمَةً بِدَوَامِكَ",
-            translit: "wa ṣallim tasliman mithla dhālika.",
-            translation: "end",
+            translit: "ṣalātan dāʾimatan bidawāmika",
+            translation:
+              "with a blessing that is continuous and lasting as Your existence",
           }),
           new DhikrEntryModel({
             arabic: "وَعَلَى آلِهِ وَصَحْبِهِ",
-            translit: "",
-            translation:
-              "nor expiration. A constant blessing which lasts as long as You",
+            translit: "wa ʿalā ālihi wa ṣaḥbihi",
+            translation: "and upon his family and companions",
           }),
           new DhikrEntryModel({
             arabic: "وَسَلِّمْ تَسْلِيمًا مِثْلَ ذَلِكَ.",
-            translit: "",
-            translation:
-              "and bless his family and his companions and grant them peace to that degree.",
+            translit: "wa ṣallim tasliman mithla dhālika.",
+            translation: "and grant them peace to that degree.",
           }),
         ],
       }),
@@ -693,13 +695,13 @@ export default [
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ الَّذِي مَلَأْتَ قَلْبَهُ مِنْ جَلَالِكَ",
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadinil ladhī malaʾta qalbahu min jalālika",
-            translation: "O Allah",
+            translation: "O Allah, bless Our Master Muhammad whose heart You filled with Your majesty",
           }),
           new DhikrEntryModel({
             arabic: "وَعَيْنَهُ مِنْ جَمَالِكَ",
             translit: "wa ʿaynuhu minn jamālika",
             translation:
-              "bless Sayyidina Muhammad whose heart You filled with Your majesty",
+              "bless Our Master Muhammad whose heart You filled with Your majesty",
           }),
           new DhikrEntryModel({
             arabic: "فَأَصْبَحَ فَرِحًا مُؤَيَّدًا مَنْصُورًا",
@@ -799,8 +801,8 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "ابتداء الثلث الثاني",
-            translit: "",
-            translation: "",
+            translit: "Ibtidāʾ ath-Thuluths ath-Thānī",
+            translation: "Beginning of the Second Third",
           }),
         ],
       }),
@@ -811,7 +813,7 @@ export default [
               "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ أَكْرَمِ خَلْقِكَ",
             translit:
               "Allāhumma ṣalli wa ṣallim wa bārik ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin akrami khalqika",
-            translation: "O Allah",
+            translation: "O Allah, bless, grant peace, and send blessings upon Our Master Muhammad and the family of Our Master Muhammad, the most noble of Your creation",
           }),
           new DhikrEntryModel({
             arabic: "وَسِرَاجِ أُفُقِكَ",
@@ -823,7 +825,7 @@ export default [
             translit:
               "wa afḍali qāʾimin biḥakkikal mabʿūthi bitaysīrika wa rifqika",
             translation:
-              "grant peace and blessing to Sayyidina Muhammad and the family of Sayyidina Muhammad",
+              "grant peace and blessing to Our Master Muhammad and the family of Our Master Muhammad",
           }),
           new DhikrEntryModel({
             arabic: "المَبْعُوثِ بِتَيْسِيرِكَ وَرِفْقِكَ",
@@ -837,9 +839,8 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "وَتَلُوحُ عَلَى الأَكْوَانِ أَنْوَارُهَا.",
-            translit: "",
-            translation:
-              "the best of those who carry out Your Truth. [He was] dispatched through Your enabling support and tenderness with a blessing that proceeds repeatedy and shines its lights upon all the universes.",
+            translit: "wa talūḥu ʿalāl akwāni anwāruhā.",
+            translation: "and its lights shine upon all the universes.",
           }),
         ],
       }),
@@ -851,7 +852,7 @@ export default [
             translit:
               "Allāhumma ṣalli wa ṣallim wa bārik ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin afḍali mamdūḥin biqawlika",
             translation:
-              "O Allah, grant peace and blessings to Sayyidina Muhammad and the family of Sayyidina Muhammad",
+              "O Allah, grant peace and blessings to Our Master Muhammad and the family of Our Master Muhammad",
           }),
           new DhikrEntryModel({
             arabic: "وَأَشْرَفِ دَاعٍ لِلِاعْتِصَامِ بِحَبْلِكَ",
@@ -885,7 +886,7 @@ export default [
             translit:
               "Allāhumma ṣalli wa ṣallim wa bārik ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin akramil kuramāʾi min ʿibādika",
             translation:
-              "O Allah, bless and grant peace and blessings to Sayyidina Muhammad and the family of Sayyidina Muhammad",
+              "O Allah, bless and grant peace and blessings to Our Master Muhammad and the family of Our Master Muhammad",
           }),
           new DhikrEntryModel({
             arabic: "وَأَشْرَفِ المُنَادِينَ لِطُرُقِ رَشَادِكَ",
@@ -919,7 +920,7 @@ export default [
             translit:
               "Allāhumma ṣalli wa ṣallim wa bārik ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadinir rafīʿi maqāmuhul wājibi taʿẓīmuhu waḥtirāmuhu",
             translation:
-              "O Allah, grant peace and blessings to Sayyidina Muhammad and the family of Sayyidina Muhammad",
+              "O Allah, grant peace and blessings to Our Master Muhammad and the family of Our Master Muhammad",
           }),
           new DhikrEntryModel({
             arabic: "الوَاجِبِ تَعْظِيمُهُ وَاحْتِرَامُهُ",
@@ -939,7 +940,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "وَلَا تَنْحَصِرُ عَدَدًا.",
-            translit: "",
+            translit: "wa lā tanḥasiru ʿadadad.",
             translation: "and is never encompassed by number.",
           }),
         ],
@@ -952,7 +953,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin kamā ṣallayta ʿalā sayyidinā Ibrāhīma wa ʿalā āli sayyidinā Ibrāhīma fil ʿālamina innaka ḥamīdun majīd",
             translation:
-              "O Allah, grant peace and blessings to Sayyidina Muhammad and the family of Sayyidina Muhammad as You blessed Sayyidina Ibrahim and the family of Sayyidina Ibrahim in the worlds. You are Praiseworthy",
+              "O Allah, grant peace and blessings to Our Master Muhammad and the family of Our Master Muhammad as You blessed Sayyidina Ibrahim and the family of Sayyidina Ibrahim in the worlds. You are Praiseworthy",
           }),
           new DhikrEntryModel({
             arabic:
@@ -960,7 +961,7 @@ export default [
             translit:
               "wa ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin kullamā dhakarahudh dhākirūna",
             translation:
-              "Glorious. And bless and grant peace and blessings on Sayyidina Muhammad and the family of Sayyidina Muhammad when ever he is mentioned by those who do dhikr",
+              "Glorious. And bless and grant peace and blessings on Our Master Muhammad and the family of Our Master Muhammad when ever he is mentioned by those who do dhikr",
           }),
           new DhikrEntryModel({
             arabic: "وَغَفَلَ عَنْ ذِكْرِهِ الغَافِلُونَ.",
@@ -976,12 +977,12 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin",
             translation:
-              "O Allah, grant peace and blessings to Sayyidina Muhammad and the family of Sayyidina Muhammad. And show mercy to Sayyidina Muhammad and the family of Sayyidina Muhammad. And sanctify Sayyidina Muhammad",
+              "O Allah, grant peace and blessings to Our Master Muhammad and the family of Our Master Muhammad. And show mercy to Our Master Muhammad and the family of Our Master Muhammad. And sanctify Our Master Muhammad",
           }),
           new DhikrEntryModel({
             arabic: "وَارْحَمْ سَيِّدَنَا مُحَمَّدًا وَآلَ سَيِّدِنَا مُحَمَّدٍ",
             translit: "warḥam Muḥammadan wa āla sayyidinā Muḥammadin",
-            translation: "and the family of Sayyidina Muhammad",
+            translation: "and the family of Our Master Muhammad",
           }),
           new DhikrEntryModel({
             arabic: "وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ",
@@ -1007,7 +1008,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin nabiyyil ummiyyiṭ ṭahiril muṭahhari wa ʿalā ālihi wa sallim.",
             translation:
-              "O Allah, bless, and grant peace and blessings to Sayyidina Muhammad, the Unlettered Prophet, the pure and made pure, and upon his family, and grant them peace.",
+              "O Allah, bless, and grant peace and blessings to Our Master Muhammad, the Unlettered Prophet, the pure and made pure, and upon his family, and grant them peace.",
           }),
         ],
       }),
@@ -1082,7 +1083,7 @@ export default [
             arabic: "وَأَفْضَلُ الصَّلَاةِ وَالتَّسْلِيمِ",
             translit: "wa shafīʿil khalāʾiqi fil mīʿādi",
             translation:
-              "with a constant blessing which continues as long as the waves collide in the seas and hajjis from every deep ravine perform tawaf of the Ka'bah. May the best of blessings and peace be upon Sayyidina Muhammad",
+              "with a constant blessing which continues as long as the waves collide in the seas and hajjis from every deep ravine perform tawaf of the Ka'bah. May the best of blessings and peace be upon Our Master Muhammad",
           }),
           new DhikrEntryModel({
             arabic: "عَلَى سَيِّدِنَا مُحَمَّدٍ رَسُولِهِ الكَرِيمِ",
@@ -1438,288 +1439,295 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "أَصْدَقِ قَائِلٍ",
-            translit: "wa aʿẓamihim maḥallan",
-            translation: "",
+            translit: "aṣdaqi qāʾilin",
+            translation: "the most truthful speaker",
           }),
           new DhikrEntryModel({
             arabic: "أَنْجَحِ شَافِعٍ",
-            translit: "wa akmalihim mahāsinan wa faḍlan",
-            translation: "",
+            translit: "anjaḥi shāfiʿin",
+            translation: "the most successful intercessor",
           }),
           new DhikrEntryModel({
             arabic: "أَفْضَلِ مُشَفَّعٍ",
-            translit: "wa afḍalil anbiyāʾi darajatan",
-            translation: "",
+            translit: "afḍali mushaffaʿin",
+            translation: "the best of those whose intercession is accepted",
           }),
           new DhikrEntryModel({
             arabic: "الأَمِينِ فِيمَا اسْتُوْدِعَ",
-            translit: "wa akmalihim sharīʿatan",
-            translation: "",
+            translit: "al-amīni fīmās tūdiʿa",
+            translation: "the trustworthy in what was entrusted",
           }),
           new DhikrEntryModel({
             arabic: "الصَّادِقِ فِيمَا بَلَّغَ",
-            translit: "wa ashrafil anbiyāʾi niṣāban",
-            translation: "",
+            translit: "aṣ-ṣādiqi fīmā ballagha",
+            translation: "the truthful in what he conveyed",
           }),
           new DhikrEntryModel({
             arabic: "الصَّادِعِ بِأَمْرِ رَبِّهِ",
-            translit: "wa abyanihim bayānan wa khiṭāban",
-            translation: "",
+            translit: "aṣ-ṣādiʿi bi amri rabbihi",
+            translation: "the proclaimer of his Lord's command",
           }),
           new DhikrEntryModel({
             arabic: "المُضْطَلِعِ بِمَا حُمِّلَ",
-            translit: "wa afḍalihim mawlidan wa muhājiran wa ʿitratan",
-            translation: "",
+            translit: "al-muḍṭaliʿi bimā ḥummila",
+            translation: "the one who bore what was placed upon him",
           }),
           new DhikrEntryModel({
             arabic: "أَقْرَبِ رُسُلِ اللَّهِ إِلَى اللَّهِ وَسِيلَةً",
-            translit: "wa aṣ-ḥāban",
-            translation: "",
+            translit: "aqrabi rusulillāhi ilallāhi wasīlatan",
+            translation:
+              "the nearest of Allah's messengers to Allah as a means",
           }),
           new DhikrEntryModel({
             arabic: "وَأَعْظَمِهِمْ غَدًا عِنْدَ اللَّهِ مَنْزِلَةً وَفَضِيلَةً",
-            translit: "wa akramin nāsi arūmatan",
-            translation: "",
+            translit: "wa aʿẓamihim ghadan ʿindallāhi manzilatan wa faḍīlatan",
+            translation:
+              "the greatest of them tomorrow before Allah in rank and distinction",
           }),
           new DhikrEntryModel({
             arabic: "وَأَكْرَمِ أَنْبِيَاءِ اللَّهِ الكِرَامِ الصَّفْوَةِ عَلَى اللَّهِ",
-            translit: "wa ashrafihim jurthūmatan",
-            translation: "",
+            translit: "wa akrami anbiyāʾillāhil kirāmiṣ-ṣafwati ʿalallāhi",
+            translation:
+              "the most noble of Allah's honoured chosen Prophets before Allah",
           }),
           new DhikrEntryModel({
             arabic: "وَأَحَبِّهِمْ إِلَى اللَّهِ",
-            translit: "wa khayrihim nafsan",
-            translation: "",
+            translit: "wa aḥabbihim ilallāhi",
+            translation: "the most beloved of them to Allah",
           }),
           new DhikrEntryModel({
             arabic: "وَأَقْرَبِهِمْ زُلْفَى لَدَى اللَّهِ",
-            translit: "wa aṭharihim qalban",
-            translation: "",
+            translit: "wa aqrabihim zulfā ladallāhi",
+            translation: "the nearest of them in closeness before Allah",
           }),
           new DhikrEntryModel({
             arabic: "وَأَكْرَمِ الخَلْقِ عَلَى اللَّهِ",
-            translit: "wa aṣdaqihim qawlan",
-            translation: "",
+            translit: "wa akramil khalqi ʿalallāhi",
+            translation: "the most noble of creation before Allah",
           }),
           new DhikrEntryModel({
             arabic: "وَأَحْظَاهُمْ وَأَرْضَاهُمْ لَدَى اللَّهِ",
-            translit: "wa azkāhum fīʿlan",
-            translation: "",
+            translit: "wa aḥẓāhum wa arḍāhum ladallāhi",
+            translation:
+              "the most fortunate of them and the most pleasing before Allah",
           }),
           new DhikrEntryModel({
             arabic: "وَأَعْلَى النَّاسِ قَدْرًا",
-            translit: "wa athbatihim aṣlan",
-            translation: "",
+            translit: "wa aʿlan-nāsi qadran",
+            translation: "the highest of people in rank",
           }),
           new DhikrEntryModel({
             arabic: "وَأَعْظَمِهِمْ مَحَلًّا",
-            translit: "wa awfāhum ʿahdan",
-            translation: "",
+            translit: "wa aʿẓamihim maḥallan",
+            translation: "the greatest of them in station",
           }),
           new DhikrEntryModel({
             arabic: "وَأَكْمَلِهِمْ مَحَاسِنًا وَفَضْلًا",
-            translit: "wa amkanihim majdan",
-            translation: "",
+            translit: "wa akmalihim maḥāsinan wa faḍlan",
+            translation: "the most perfect of them in virtues and bounty",
           }),
           new DhikrEntryModel({
             arabic: "وَأَفْضَلِ الأَنْبِيَاءِ دَرَجَةً",
-            translit: "wa akramihim ṭabʿan",
-            translation: "",
+            translit: "wa afḍalil anbiyāʾi darajatan",
+            translation: "the best of the Prophets in degree",
           }),
           new DhikrEntryModel({
             arabic: "وَأَكْمَلِهِمْ شَرِيعَةً",
-            translit: "wa aḥsanihim ṣunʿan wa aṭyabihim farʿan",
-            translation: "",
+            translit: "wa akmalihim sharīʿatan",
+            translation: "the most complete of them in the Shari'a",
           }),
           new DhikrEntryModel({
             arabic: "وَأَشْرَفِ الأَنْبِيَاءِ نِصَابًا",
-            translit: "wa aktharihim ṭāʿatan wa samʿan",
-            translation: "",
+            translit: "wa ashrafil anbiyāʾi niṣāban",
+            translation: "the most noble of the Prophets in lineage",
           }),
           new DhikrEntryModel({
             arabic: "وَأَبْيَنِهِمْ بَيَانًا وَخِطَابًا",
-            translit: "wa aʿlāhum maqāman",
-            translation: "",
+            translit: "wa abyanihim bayānan wa khiṭāban",
+            translation: "the clearest of them in expression and speech",
           }),
           new DhikrEntryModel({
             arabic: "وَأَفْضَلِهِمْ مَوْلِدًا وَمُهَاجَرًا وَعِتْرَةً وَأَصْحَابًا",
-            translit: "wa aḥlāhum kalāman",
-            translation: "",
+            translit:
+              "wa afḍalihim mawlidan wa muhājaran wa ʿitratan wa aṣḥāban",
+            translation:
+              "the best of them in birthplace, emigration, family and companions",
           }),
           new DhikrEntryModel({
             arabic: "وَأَكْرَمِ النَّاسِ أَرُومَةً",
-            translit: "wa azkāhum salāman",
-            translation: "",
+            translit: "wa akramin-nāsi arūmatan",
+            translation: "the most noble of people in origin",
           }),
           new DhikrEntryModel({
             arabic: "وَأَشْرَفِهِمْ جُرْثُومَةً",
-            translit: "wa ajālihim qadran",
-            translation: "",
+            translit: "wa ashrafihim jurthūmatan",
+            translation: "the most honourable of them in stock",
           }),
           new DhikrEntryModel({
             arabic: "وَخَيْرِهِمْ نَفْسًا",
-            translit: "wa aʿẓamihim fakhran",
-            translation: "",
+            translit: "wa khayriḥim nafsan",
+            translation: "the best of them in self",
           }),
           new DhikrEntryModel({
             arabic: "وَأَطْهَرِهِمْ قَلْبًا",
-            translit: "wa asnāhum fakhran",
-            translation: "",
+            translit: "wa aṭharihim qalban",
+            translation: "the purest of them in heart",
           }),
           new DhikrEntryModel({
             arabic: "وَأَصْدَقِهِمْ قَوْلًا",
-            translit: "wa arfaʿihim fil malaʾil aʿla dhikran",
-            translation: "",
+            translit: "wa aṣdaqihim qawlan",
+            translation: "the most truthful of them in speech",
           }),
           new DhikrEntryModel({
             arabic: "وَأَزْكَاهُمْ فِعْلًا",
-            translit: "wa awfāhum ʿahdan",
-            translation: "",
+            translit: "wa azkāhum fiʿlan",
+            translation: "the purest of them in action",
           }),
           new DhikrEntryModel({
             arabic: "وَأَثْبَتِهِمْ أَصْلًا",
-            translit: "wa aṣdaqihim waʿdan",
-            translation: "",
+            translit: "wa athbatihim aṣlan",
+            translation: "the firmest of them in root",
           }),
           new DhikrEntryModel({
             arabic: "وَأَوْفَاهُمْ عَهْدًا",
-            translit: "wa aktharihim shukran",
-            translation: "",
+            translit: "wa awfāhum ʿahdan",
+            translation: "the most faithful of them to their covenant",
           }),
           new DhikrEntryModel({
             arabic: "وَأَمْكَنِهِمْ مَجْدًا",
-            translit: "wa aʿlāhum amran",
-            translation: "",
+            translit: "wa amkanihim majdan",
+            translation: "the most established of them in glory",
           }),
           new DhikrEntryModel({
             arabic: "وَأَكْرَمِهِمْ طَبْعًا",
-            translit: "wa ajmālihim ṣabran",
-            translation: "",
+            translit: "wa akramihim ṭabʿan",
+            translation: "the most noble of them in nature",
           }),
           new DhikrEntryModel({
             arabic: "وَأَحْسَنِهِمْ صُنْعًا",
-            translit: "wa aḥsanihim khayran",
-            translation: "",
+            translit: "wa aḥsanihim ṣunʿan",
+            translation: "the best of them in deed",
           }),
           new DhikrEntryModel({
             arabic: "وَأَطْيَبِهِمْ فَرْعًا",
-            translit: "wa aqrabihim yusran",
-            translation: "",
+            translit: "wa aṭyabihim farʿan",
+            translation: "the most excellent of them in branch",
           }),
           new DhikrEntryModel({
             arabic: "وَأَكْثَرِهِمْ طَاعَةً وَسَمْعًا",
-            translit: "wa abʿadihim makānan",
-            translation: "",
+            translit: "wa aktharihim ṭāʿatan wa samʿan",
+            translation: "the most abundant of them in obedience and hearing",
           }),
           new DhikrEntryModel({
             arabic: "وَأَعْلَاهُمْ مَقَامًا",
-            translit: "wa aʿzamihim shaʾnan",
-            translation: "",
+            translit: "wa aʿlāhum maqāman",
+            translation: "the highest of them in station",
           }),
           new DhikrEntryModel({
             arabic: "وَأَحْلَاهُمْ كَلَامًا",
-            translit: "wa athbatihim burhānan",
-            translation: "",
+            translit: "wa aḥlāhum kalāman",
+            translation: "the sweetest of them in speech",
           }),
           new DhikrEntryModel({
             arabic: "وَأَزْكَاهُمْ سَلَامًا",
-            translit: "wa arjaḥihim mīzānan",
-            translation: "",
+            translit: "wa azkāhum salāman",
+            translation: "the purest of them in peace",
           }),
           new DhikrEntryModel({
             arabic: "وَأَجَلِّهِمْ قَدْرًا",
-            translit: "wa awwālihim īmānan",
-            translation: "",
+            translit: "wa ajallihim qadran",
+            translation: "the most majestic of them in worth",
           }),
           new DhikrEntryModel({
             arabic: "وَأَعْظَمِهِمْ فَخْرًا",
-            translit: "wa awḍaḥihim bayānan",
-            translation: "",
+            translit: "wa aʿẓamihim fakhran",
+            translation: "the greatest of them in glory",
           }),
           new DhikrEntryModel({
             arabic: "وَأَسْنَاهُمْ فَخْرًا",
-            translit: "wa afṣaḥihim lisānan",
-            translation: "",
+            translit: "wa asnāhum fakhran",
+            translation: "the most radiant of them in glory",
           }),
           new DhikrEntryModel({
             arabic: "وَأَرْفَعِهِمْ فِي المَلَإِ الأَعْلَى ذِكْرًا",
-            translit: "wa aẓharihim sulṭāna.",
-            translation: "",
+            translit: "wa arfaʿihim fil malāʾil aʿlā dhikran",
+            translation:
+              "the highest of them in mention in the Highest Assembly",
           }),
           new DhikrEntryModel({
             arabic: "وَأَوْفَاهُمْ عَهْدًا",
-            translit: "",
-            translation: "",
+            translit: "wa awfāhum ʿahdan",
+            translation: "the most faithful with their covenant",
           }),
           new DhikrEntryModel({
             arabic: "وَأَصْدَقِهِمْ وَعْدًا",
-            translit: "",
-            translation: "",
+            translit: "wa aṣdaqihim waʿdan",
+            translation: "the most truthful in their promise",
           }),
           new DhikrEntryModel({
             arabic: "وَأَكْثَرِهِمْ شُكْرًا",
-            translit: "",
-            translation: "",
+            translit: "wa akthariḥum shukran",
+            translation: "the most grateful",
           }),
           new DhikrEntryModel({
             arabic: "وَأَعْلَاهُمْ أَمْرًا",
-            translit: "",
-            translation: "",
+            translit: "wa aʿlāhum amran",
+            translation: "the highest in rank",
           }),
           new DhikrEntryModel({
             arabic: "وَأَجْمَلِهِمْ صَبْرًا",
-            translit: "",
-            translation: "",
+            translit: "wa ajmalihim sabran",
+            translation: "the most beautiful in patience",
           }),
           new DhikrEntryModel({
             arabic: "وَأَحْسَنِهِمْ خَيْرًا",
-            translit: "",
-            translation: "",
+            translit: "wa aḥsanihim khayran",
+            translation: "the best in doing good",
           }),
           new DhikrEntryModel({
             arabic: "وَأَقْرَبِهِمْ يُسْرًا",
-            translit: "",
-            translation: "",
+            translit: "wa aqrabihim yusran",
+            translation: "the closest in ease",
           }),
           new DhikrEntryModel({
             arabic: "وَأَبْعَدِهِمْ مَكَانًا",
-            translit: "",
-            translation: "",
+            translit: "wa abʿadihim makānan",
+            translation: "the most distant in place",
           }),
           new DhikrEntryModel({
             arabic: "وَأَعْظَمِهِمْ شَاْنًا",
-            translit: "",
-            translation: "",
+            translit: "wa aʿẓamihim shānan",
+            translation: "the greatest in status",
           }),
           new DhikrEntryModel({
             arabic: "وَأَثْبَتِهِمْ بُرْهَانًا",
-            translit: "",
-            translation: "",
+            translit: "wa athbatihim burhānan",
+            translation: "the firmest in proof",
           }),
           new DhikrEntryModel({
             arabic: "وَأَرْجَحِهِمْ مِيزَانًا",
-            translit: "",
-            translation: "",
+            translit: "wa arjaḥihim mīzānan",
+            translation: "the weightiest in scales",
           }),
           new DhikrEntryModel({
             arabic: "وَأَوَّلِهِمْ إِيمَانًا",
-            translit: "",
-            translation: "",
+            translit: "wa awwalihim īmānan",
+            translation: "the first in faith",
           }),
           new DhikrEntryModel({
             arabic: "وَأَوْضَحِهِمْ بَيَانًا",
-            translit: "",
-            translation: "",
+            translit: "wa awḍaḥihim bayānan",
+            translation: "the clearest in expression",
           }),
           new DhikrEntryModel({
             arabic: "وَأَفْصَحِهِمْ لِسَانًا",
-            translit: "",
-            translation: "",
+            translit: "wa afṣaḥihim lisānan",
+            translation: "the most eloquent in tongue",
           }),
           new DhikrEntryModel({
             arabic: "وَأَظْهَرِهِمْ سُلْطَانًا.",
-            translit: "",
-            translation: "",
+            translit: "wa aẓharihim sulṭānan.",
+            translation: "the most mighty in authority.",
           }),
         ],
       }),

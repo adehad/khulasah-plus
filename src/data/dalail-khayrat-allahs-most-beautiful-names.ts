@@ -116,7 +116,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "البَارِئُ جَلَّ جَلَالُهُ",
-            translit: "Al-Bāri’ jalla jalāluhu.",
+            translit: "Al-Bāriʾ jalla jalāluhu.",
             translation: "The Originator, He is exalted!",
           }),
         ],
@@ -278,7 +278,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّطِيفُ جَلَّ جَلَالُهُ",
-            translit: "Al-Latīf jalla jalāluhu.",
+            translit: "Al-Laṭīf jalla jalāluhu.",
             translation: "The Subtle, He is exalted!",
           }),
         ],
@@ -332,7 +332,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "العَلِيُّ جَلَّ جَلَالُهُ",
-            translit: "Al-‘Aliyy jalla jalāluhu.",
+            translit: "Al-ʿAliyy jalla jalāluhu.",
             translation: "The High, He is exalted!",
           }),
         ],
@@ -368,7 +368,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "الحَسِيبُ جَلَّ جَلَالُهُ",
-            translit: "Al-Hasīb jalla jalāluhu.",
+            translit: "Al-Ḥasīb jalla jalāluhu.",
             translation: "The Reckoner, He is exalted!",
           }),
         ],
@@ -413,7 +413,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "الوَاسِعُ جَلَّ جَلَالُهُ",
-            translit: "Al-Wāsi’ jalla jalāluhu.",
+            translit: "Al-Wāsiʿ jalla jalāluhu.",
             translation: "The Vast, He is exalted!",
           }),
         ],
@@ -683,7 +683,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "البَاطِنُ جَلَّ جَلَالُهُ",
-            translit: "Al-Bātin jalla jalāluhu.",
+            translit: "Al-Bāṭin jalla jalāluhu.",
             translation: "The Hidden, He is exalted!",
           }),
         ],
@@ -701,7 +701,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "المُتَعَالِ جَلَّ جَلَالُهُ",
-            translit: "Al-Mutaʿali jalla jalāluhu.",
+            translit: "Al-Mutaʿālī jalla jalāluhu.",
             translation: "The Self-Exalted, He is exalted!",
           }),
         ],
@@ -737,7 +737,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "العَفُوُّ جَلَّ جَلَالُهُ",
-            translit: "Al-‘Afuww jalla jalāluhu.",
+            translit: "Al-ʿAfuww jalla jalāluhu.",
             translation: "The Pardoner, He is exalted!",
           }),
         ],
@@ -746,7 +746,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "الرَّؤوفُ جَلَّ جَلَالُهُ",
-            translit: "Ar-Ra’ūf jalla jalāluhu.",
+            translit: "Ar-Raʾūf jalla jalāluhu.",
             translation: "The Compassionate, He is exalted!",
           }),
         ],
@@ -764,7 +764,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "ذُو الجَلَالِ وَالإِكْرَامِ جَلَّ جَلَالُهُ",
-            translit: "Dhul-Jalāli Wal ʾikrām jalla jalāluhu.",
+            translit: "Dhul-Jalāli Wal-Ikrām jalla jalāluhu.",
             translation: "Lord of Majesty and Honour, He is exalted!",
           }),
         ],
@@ -773,7 +773,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "المُقْسِطُ جَلَّ جَلَالُهُ",
-            translit: "Al-Muqsit jalla jalāluhu.",
+            translit: "Al-Muqsiṭ jalla jalāluhu.",
             translation: "The Equitable, He is exalted!",
           }),
         ],
@@ -782,7 +782,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "الجَامِعُ جَلَّ جَلَالُهُ",
-            translit: "Al-Jāmi’ jalla jalāluhu.",
+            translit: "Al-Jāmiʿ jalla jalāluhu.",
             translation: "The Gatherer, He is exalted!",
           }),
         ],
@@ -809,7 +809,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "المَانِعُ جَلَّ جَلَالُهُ",
-            translit: "Al-Māni’ jalla jalāluhu.",
+            translit: "Al-Māniʿ jalla jalāluhu.",
             translation: "The Withholder, He is exalted!",
           }),
         ],
@@ -827,7 +827,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "النَّافِعُ جَلَّ جَلَالُهُ",
-            translit: "An-Nāfi’ jalla jalāluhu.",
+            translit: "An-Nāfiʿ jalla jalāluhu.",
             translation: "The Benefactor, He is exalted!",
           }),
         ],
@@ -945,7 +945,7 @@ export default [
             arabic: "وَبِتَوْحِيدِهِ ابْتَهَجَ المُوَحِّدُونَ. هَدَى أَهْلَ طَاعَتِهِ إِلَى صِرَاطٍ مُسْتَقِيمٍ",
             translit: "",
             translation:
-              'without end. Sons are not ascribed to Him. The passage of time does not exhaust Him nor do the years weaken Him. All of creation is subject to His grandeur. His command is the kaf and nun ["kun" - Be]. The sincere are familiar with the remembrance of Him and their eyes delight in His proximity. The people of tawhid are gratified by His oneness. He guides the obedient to Him onto a straight path',
+              'without end. Sons are not ascribed to Him. The passage of time does not exhaust Him nor do the years weaken Him. All of creation is subject to His grandeur. His command is the kaf and nun ["kun" - Be]. The sincere are familiar with the remembrance of Him and their eyes delight in His proximity. The people of tawhid are gratified by His oneness. He guides the obedient to Him onto a straight path',
           }),
           new DhikrEntryModel({
             arabic: "وَأَبَاحَ أَهْلَ مَحَبَّتِهِ جَنَّاتِ النَّعِيمِ",
@@ -964,7 +964,7 @@ export default [
               "وَيَرَى حَرَكَاتِ أَرْجُلِ النَّمْلِ فِي جُنْحِ اللَّيْلِ البَهِيمِ. يُسَبِّحُهُ الطَّائِرُ فِي وَكْرِهِ",
             translit: "",
             translation:
-              'out of generosity and forbearance. "There is nothing like Him and He is the All-Hearing',
+              'out of generosity and forbearance. "There is nothing like Him and He is the All-Hearing',
           }),
           new DhikrEntryModel({
             arabic: "وَيُمَجِّدُهُ الوَحْشُ فِي قَفْرِهِ",
@@ -1027,7 +1027,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic:
-              "يَفْعَلُ اللَّهُ مَا يَشَاءُ بِقُدْرَتِهِ وَيَحْكُمُ مَا يُرِيدُ بِعِزَّتِهِ. يَا حَيُّ يَا قَيُّومُ يَا بَدِيعَ السَّمَاوَاتِ وَالأَرْضِ",
+              "يَفْعَلُ اللَّهُ مَا يَشَاءُ بِقُدْرَتِهِ وَيَحْكُمُ مَا يُرِيدُ بِعِزَّتِهِ. يَا حَيُّ يَا قَيُّومُ يَا بَدِيعَ السَّمَاوَاتِ وَالأَرْضِ",
             translit: "",
             translation: "Forgive us",
           }),
@@ -1046,11 +1046,11 @@ export default [
             arabic: "وَمِنْ عَذَابِكَ نَسْتَجِيرُ",
             translit: "",
             translation:
-              "the Immense. Glory be to You. We cannot number Your praises as You praise Yourself. Your Face is majestic and Your honour exalted. Allah does whatever He wishes by His power and judges what He wills by His might. Ya Hayy. Ya Qayyum. O Originator of the heavens and the earth. O Lord of Majesty and Honour! There is no god but You. We seek help by Your mercy. We seek protection from Your punishment. O You Who help those who ask for help. There is no god but You. By the honour of Sayyidina Muhammad sallAllahu alayhi wasallam give us succour and show us mercy. May the mercy of Allah and His blessings be upon you",
+              "the Immense. Glory be to You. We cannot number Your praises as You praise Yourself. Your Face is majestic and Your honour exalted. Allah does whatever He wishes by His power and judges what He wills by His might. Ya Hayy. Ya Qayyum. O Originator of the heavens and the earth. O Lord of Majesty and Honour! There is no god but You. We seek help by Your mercy. We seek protection from Your punishment. O You Who help those who ask for help. There is no god but You. By the honour of Our Master Muhammad may Allah bless him and grant him peace give us succour and show us mercy. May the mercy of Allah and His blessings be upon you",
           }),
           new DhikrEntryModel({
             arabic:
-              "يَا غِيَاثَ المُسْتَغِيثِينَ لَا إِلَهَ إِلَّا أَنْتَ بِجَاهِ سَيِّدِنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ أَغِثْنَا وَارْحَمْنَا. رَحْمَةُ اللَّهِ وَبَرَكَاتُهُ عَلَيْكُمْ أَهْلَ البَيْتِ إِنَّهُ حَمِيدٌ مَجِيدٌ: \n\n\t\n\t\t﴿\n\t\t\nإِنَّمَا يُرِيدُ اللَّهُ لِيُذْهِبَ عَنكُمُ الرِّجْسَ أَهْلَ الْبَيْتِ وَيُطَهِّرَكُمْ تَطْهِيرًا\n\t\t\n\t\t\t\t\n\t\t\t\t﴾ \n\t\t;\n\t\t\n\t﴿إِنَّ اللَّهَ وَمَلَـٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَـٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا﴾\n .",
+              "يَا غِيَاثَ المُسْتَغِيثِينَ لَا إِلَهَ إِلَّا أَنْتَ بِجَاهِ سَيِّدِنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ أَغِثْنَا وَارْحَمْنَا. رَحْمَةُ اللَّهِ وَبَرَكَاتُهُ عَلَيْكُمْ أَهْلَ البَيْتِ إِنَّهُ حَمِيدٌ مَجِيدٌ: \n\n\t\n\t\t﴿\n\t\t\nإِنَّمَا يُرِيدُ اللَّهُ لِيُذْهِبَ عَنكُمُ الرِّجْسَ أَهْلَ الْبَيْتِ وَيُطَهِّرَكُمْ تَطْهِيرًا\n\t\t\n\t\t\t\t\n\t\t\t\t﴾ \n\t\t;\n\t\t\n\t﴿إِنَّ اللَّهَ وَمَلَـٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَـٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا﴾\n .",
             translit: "",
             translation:
               "People of the House. He is Praiseworthy, Glorious. Allah desires to remove all impurity from you, People of the House, and to purify you completely. Allah and His angels call down blessings on the Prophet. O you who believe, call down blessings on him and ask for complete peace and safety for him.",
@@ -1065,7 +1065,7 @@ export default [
             translit:
               "Allāhumma ṣalli afḍala ṣalātin ʿalā asʿadi makhlūqātika Sayyidinā Muḥammadin wa ʿalā ʾālihi wa ṣaḥbihi wa sallim ʿadada maʿlūmātika wa midāda kalimātika kullamā dhakarakadh dhākirūna wa ghafala ʿan dhikrihil ghāfilūn.",
             translation:
-              "O Allah, send the best blessings to the happiest of Your creatures, Sayyidina Muhammad and on his family and Companions and grant him peace - in number as great as what You know, and the ink (that writes) Your words when those who remember You, remember; and those who neglect You, neglect.",
+              "O Allah, send the best blessings to the happiest of Your creatures, Our Master Muhammad and on his family and Companions and grant him peace - in number as great as what You know, and the ink (that writes) Your words when those who remember You, remember; and those who neglect You, neglect.",
           }),
         ],
       }),
