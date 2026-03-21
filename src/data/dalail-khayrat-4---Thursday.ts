@@ -1222,8 +1222,8 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "ابتداء الربع الثالث",
-            translit: "",
-            translation: "",
+            translit: "Ibtidāʾur Rubʿ ith Thālith",
+            translation: "Beginning of the Third Quarter",
           }),
         ],
       }),

@@ -899,103 +899,107 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "الَّذِي تَقَدَّسَتْ عَنِ الأَشْبَاهِ ذَاتُهُ",
-            translit:
-              "Alladhī taqaddasat ʿanil ashbāhi dhātuhu watanazzahat ʿan mushābahatil amthāli ṣifātuhu wāḥidun lā min qillatin wamawjūdun lā min ʿillatin",
-            translation:
-              "His Essence is pure beyond any likeness and His Attributes are exalted beyond any resemblance to any similarities. He is One",
+            translit: "Alladhī taqaddasat ʿanil ashbāhi dhātuhu",
+            translation: "His Essence is pure beyond any likeness",
           }),
           new DhikrEntryModel({
             arabic:
               "وَتَنَزَّهَتْ عَنْ مُشَابَهَةِ الأَمْثَالِ صِفَاتُهُ. وَاحِدٌ لَا مِنْ قِلَّةٍ وَمَوْجُودٌ لَا مِنْ عِلَّةٍ. بِالبِرِّ مَعْرُوفٌ وَبِالإِحْسَانِ مَوْصُوفٌ. مَعْرُوفٌ بِلَا غَايَةٍ وَمَوْصُوفٌ بِلَا نِهَايَةٍ. أَوَّلٌ بِلَا ابْتِدَاءٍ",
             translit:
-              "bilbirri maʿrūfun wabil iḥsāni mawṣūfun maʿrūfun bilā ghāyatin wa mawṣūfun bilā nihāyatin awwalun bilāb tidāʾin wa ākhirun bilāntihāʾin lā yunsabu ilayhil banūna walā yufnīhi tadāwulul awqāti walā tūhinuhus sinūna kullul makhlūqāti qahru ʿaẓamatihi wa amruhu bilkāfi wan nūni bidhikrihi anisal mukhliṣūna wa biruʾyatihi taqarrul ʿuyūnu wa bitawḥīdihibtahajal muwaḥḥidūna hadā ahla ṭāʿatihi ilā ṣirāṭim mustaqīmin wa abāḥa ahla maḥabbatihi jannātin naʿīmi wa ʿalima ʿadada anfāsi makhlūqātihi biʿilmihil qadīmi wa yarā ḥarakāti arjulin namli fī junḥil laylil bahīmu yusabbiḥuhuṭ ṭāʾiru fī wakrihi wa yumajjiduhul waḥshu fī qafrihi muḥīṭun biʿamalil ʿabdi sirrihi wajahrihi wa kafīlun lilmuʾminīna bitaʾyīdihi wa naṣrihi wa taṭmaʾinnul qulūbul wajilatu bidhikrihi wa kashfi ḍurrihi wa min āyātihi an taqūmas samāʾu wal arḍu bi amrihi aḥāṭa bikulli shayʾin ʿilman wa ghafara dhunubal mudhnibīna karaman waḥ ilman laysa kamithlihi shayʾun wa huwas samīʿul baṣīr.",
-            translation: "not among any one or thing",
+              "watanazzahat ʿan mushābahatil amthāli ṣifātuhu wāḥidun lā min qillatin wamawjūdun lā min ʿillatin bilbirri maʿrūfun wabil iḥsāni mawṣūfun maʿrūfun bilā ghāyatin wa mawṣūfun bilā nihāyatin awwalun bilāb tidāʾin",
+            translation:
+              "and His Attributes are exalted beyond any resemblance to any similarities. He is One, not among any one or thing, and Exists, but is not begotten. He is acclaimed for kindness, and renowned for giving the best of generosity, and this attribution is boundless. He is First",
           }),
           new DhikrEntryModel({
             arabic: "وَآخِرٌ بِلَا انْتِهَاءٍ. لَا يُنْسَبُ إِلَيْهِ البَنُونَ",
-            translit: "",
-            translation: "and Exists",
+            translit: "wa ākhirun bilāntihāʾin lā yunsabu ilayhil banūna",
+            translation: "without beginning, and Last, without end. Sons are not ascribed to Him.",
           }),
           new DhikrEntryModel({
             arabic: "وَلَا يُفْنِيهِ تَدَاوُلُ الأَوْقَاتِ",
-            translit: "",
-            translation: "but is not begotten. He is acclaimed for kindness",
+            translit: "walā yufnīhi tadāwulul awqāti",
+            translation: "The passage of time does not exhaust Him",
           }),
           new DhikrEntryModel({
             arabic: "وَلَا تُوهِنُهُ السِّنُونَ",
-            translit: "",
-            translation: "and renowned for giving the best of generosity",
+            translit: "walā tūhinuhus sinūna",
+            translation: "nor do the years weaken Him.",
           }),
           new DhikrEntryModel({
             arabic: "كُلُّ المَخْلُوقَاتِ قَهْرُ عَظَمَتِهِ",
-            translit: "",
-            translation: "and this attribution is boundless. He is First",
+            translit: "kullul makhlūqāti qahru ʿaẓamatihi",
+            translation: "All of creation is subject to His grandeur.",
           }),
           new DhikrEntryModel({
             arabic: "وَأَمْرُهُ بِالكَافِ وَالنُّونِ. بِذِكْرِهِ أَنِسَ المُخْلِصُون",
-            translit: "",
-            translation: "without beginning",
+            translit: "wa amruhu bilkāfi wan nūni bidhikrihi anisal mukhliṣūna",
+            translation:
+              'His command is the kaf and nun ["kun" - Be]. The sincere are familiar with the remembrance of Him',
           }),
           new DhikrEntryModel({
             arabic: "وَبِرُؤْيَتِهِ تَقَرُّ العُيُونُ",
-            translit: "",
-            translation: "and Last",
+            translit: "wa biruʾyatihi taqarrul ʿuyūnu",
+            translation: "and their eyes delight in His proximity.",
           }),
           new DhikrEntryModel({
             arabic: "وَبِتَوْحِيدِهِ ابْتَهَجَ المُوَحِّدُونَ. هَدَى أَهْلَ طَاعَتِهِ إِلَى صِرَاطٍ مُسْتَقِيمٍ",
-            translit: "",
+            translit:
+              "wa bitawḥīdihibtahajal muwaḥḥidūna hadā ahla ṭāʿatihi ilā ṣirāṭim mustaqīmin",
             translation:
-              'without end. Sons are not ascribed to Him. The passage of time does not exhaust Him nor do the years weaken Him. All of creation is subject to His grandeur. His command is the kaf and nun ["kun" - Be]. The sincere are familiar with the remembrance of Him and their eyes delight in His proximity. The people of tawhid are gratified by His oneness. He guides the obedient to Him onto a straight path',
+              "The people of tawhid are gratified by His oneness. He guides the obedient to Him onto a straight path,",
           }),
           new DhikrEntryModel({
             arabic: "وَأَبَاحَ أَهْلَ مَحَبَّتِهِ جَنَّاتِ النَّعِيمِ",
-            translit: "",
+            translit: "wa abāḥa ahla maḥabbatihi jannātin naʿīmi",
             translation:
-              "and He bestows the people of His love to have the Gardens of Bliss. He knows the number of the breaths of His creatures by His eternal knowledge. He sees the movements of the feet of ants in the dark night. The birds glorify Him in their nests and wild animals celebrate His glory in the wilderness. He has full knowledge of the actions of His slave",
+              "and He bestows the people of His love to have the Gardens of Bliss.",
           }),
           new DhikrEntryModel({
             arabic: "وَعَلِمَ عَدَدَ أَنْفَاسِ مَخْلُوقَاتِهِ بِعِلْمِهِ القَدِيمِ",
-            translit: "",
+            translit: "wa ʿalima ʿadada anfāsi makhlūqātihi biʿilmihil qadīmi",
             translation:
-              "both in secret and public. He guarantees the believers His support and help. Fearful hearts are put at rest by remembrance of Him and by it harm is removed. Among His signs is that heaven and earth are sustained by His command. His knowledge encompasses everything. He forgives the wrong actions of those who commit them",
+              "He knows the number of the breaths of His creatures by His eternal knowledge.",
           }),
           new DhikrEntryModel({
             arabic:
               "وَيَرَى حَرَكَاتِ أَرْجُلِ النَّمْلِ فِي جُنْحِ اللَّيْلِ البَهِيمِ. يُسَبِّحُهُ الطَّائِرُ فِي وَكْرِهِ",
-            translit: "",
+            translit:
+              "wa yarā ḥarakāti arjulin namli fī junḥil laylil bahīmu yusabbiḥuhuṭ ṭāʾiru fī wakrihi",
             translation:
-              'out of generosity and forbearance. "There is nothing like Him and He is the All-Hearing',
+              "He sees the movements of the feet of ants in the dark night. The birds glorify Him in their nests",
           }),
           new DhikrEntryModel({
             arabic: "وَيُمَجِّدُهُ الوَحْشُ فِي قَفْرِهِ",
-            translit: "",
-            translation: 'All-Seeing."',
+            translit: "wa yumajjiduhul waḥshu fī qafrihi",
+            translation: "and wild animals celebrate His glory in the wilderness.",
           }),
           new DhikrEntryModel({
             arabic: "مُحِيطٌ بِعَمَلِ العَبْدِ سِرِّهِ وَجَهْرِهِ",
-            translit: "",
-            translation: "",
+            translit: "muḥīṭun biʿamalil ʿabdi sirrihi wajahrihi",
+            translation: "He has full knowledge of the actions of His slave, both in secret and public.",
           }),
           new DhikrEntryModel({
             arabic: "وَكَفِيلٌ لِلمُؤْمِنِينَ بِتَأيِيدِهِ وَنَصْرِهِ",
-            translit: "",
-            translation: "",
+            translit: "wa kafīlun lilmuʾminīna bitaʾyīdihi wa naṣrihi",
+            translation: "He guarantees the believers His support and help.",
           }),
           new DhikrEntryModel({
             arabic: "وَتَطْمَئِنُّ القُلُوبُ الوَجِلَةُ بِذِكْرِهِ وَكَشْفِ ضُرِّهِ",
-            translit: "",
-            translation: "",
+            translit: "wa taṭmaʾinnul qulūbul wajilatu bidhikrihi wa kashfi ḍurrihi",
+            translation: "Fearful hearts are put at rest by remembrance of Him and by it harm is removed.",
           }),
           new DhikrEntryModel({
             arabic: "﴿\nوَمِنْ ءَايَـٰتِهِۦٓ أَنْ تَقُومَ السَّمَآءُ وَالْأَرْضُ بِأَمْرِهِ \n ﴾",
-            translit: "",
-            translation: "",
+            translit: "wa min āyātihi an taqūmas samāʾu wal arḍu bi amrihi",
+            translation: "Among His signs is that heaven and earth are sustained by His command.",
           }),
           new DhikrEntryModel({
             arabic:
               "أَحَاطَ بِكُلِّ شَيْءٍ عِلْمًا وَغَفَرَ ذُنُوبَ الْمُذْنِبِينَ كَرَمًا وَحِلْمًا\n\n ﴿\n\nلَيْسَ كَمِثْلِهِۦ شَىْءٌ ۖ وَهُوَ السَّمِيعُ الْبَصِيرُ\n\n ﴾\n.",
-            translit: "",
-            translation: "",
+            translit:
+              "aḥāṭa bikulli shayʾin ʿilman wa ghafara dhunubal mudhnibīna karaman waḥ ilman laysa kamithlihi shayʾun wa huwas samīʿul baṣīr.",
+            translation:
+              "His knowledge encompasses everything. He forgives the wrong actions of those who commit them, out of generosity and forbearance. \"There is nothing like Him and He is the All-Hearing, All-Seeing.\"",
           }),
         ],
       }),
@@ -1005,55 +1009,58 @@ export default [
             arabic:
               "اللَّهُمَّ\nاكْفِنَا السُّوءَ بِمَا شِئْتَ وَكَيْفَ شِئْتَ إِنَّكَ عَلَى مَا تَشَاءُ قَدِيرٌ (3)\n.\n\t\t\t\t\nيَا نِعْمَ المَوْلَى وَيَا نِعْمَ النَّصِيرُ",
             translit:
-              "Allāhummakfinās sūʾa bimā shiʾta wa kayfa shiʾta innaka ʿalā mā tashāʾu qadīrun (3) yā niʿmal mawlā wa yā niʿman naṣīr ghufrānaka rabbanā wa ilaykal maṣīr wā lā ḥawla wā lā quwwata illā biLlahil ʿaliyyil ʿaẓīm. Subḥānaka lā nuḥṣī thanāʾan ʿalayka ʾanta kamāthnayta ʿalā nafsika jalla wajhuka waʿazza jāhuka yafʿaluLlāhu mā yashāʾu biqudratihi wa yaḥkumu mā yurīdu biʿizzatihi. Yā ḥayyu yā qayyūm yā badīʿas samāwāti wal arḍi yā dhāl jalāli wal ikrāmi lā ilāha illā anta biraḥmatika nastaghīthu wa min ʿadhabika nastajīru yā ghayyāthal mustaghīthīna lā ilāha illā anta bijāhi sayyidinā Muḥammadin ṣallAllāhu ʿalayhi wasallama aghithnā warḥamnā. RaḥmatuLlāhi wa barakātuhu ʿalaykum ahlal bayti innahu ḥamīdun majīdun:  innamā yurīduLlāhu liyudh-hiba ʿankumur rijsa ahlal bayti wa yuṭahhirakum taṭhīran; innaLlāha wamalāʾikatahu yuṣallūna ʿalān nabiyyi yā ayyuhāl ladhīna āmanū ṣallū ʿalayhi wasallimū taslīman.",
-            translation: "O Allah! Save us from the evils decreed",
+              "Allāhummakfinās sūʾa bimā shiʾta wa kayfa shiʾta innaka ʿalā mā tashāʾu qadīrun (3) yā niʿmal mawlā wa yā niʿman naṣīr",
+            translation:
+              "O Allah! Save us from the evils decreed, for indeed, You bring to fruition whatever You will (3 times). O best Protector, O Best Helper",
           }),
           new DhikrEntryModel({
             arabic: "غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ المَصِيرُ",
-            translit: "",
-            translation: "for indeed",
+            translit: "ghufrānaka rabbanā wa ilaykal maṣīr",
+            translation: "Forgive us, our Lord. The ultimate end is to You.",
           }),
           new DhikrEntryModel({
             arabic:
               "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا باللَّهِ العَلِيِّ العَظِيمِ. سُبْحَانَكَ لَا نُحْصِي ثَنَاءً عَلَيْكَ أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ",
-            translit: "",
+            translit:
+              "wā lā ḥawla wā lā quwwata illā biLlahil ʿaliyyil ʿaẓīm. Subḥānaka lā nuḥṣī thanāʾan ʿalayka ʾanta kamāthnayta ʿalā nafsika",
             translation:
-              "You bring to fruition whatever You will (3 times). O best Protector",
+              "There is no power nor strength except by Allah, the High, the Immense. Glory be to You. We cannot number Your praises as You praise Yourself.",
           }),
           new DhikrEntryModel({
             arabic: "جَلَّ وَجْهُكَ وَعَزَّ جَاهُكَ",
-            translit: "",
-            translation: "O Best Helper",
+            translit: "jalla wajhuka waʿazza jāhuka",
+            translation: "Your Face is majestic and Your honour exalted.",
           }),
           new DhikrEntryModel({
             arabic:
               "يَفْعَلُ اللَّهُ مَا يَشَاءُ بِقُدْرَتِهِ وَيَحْكُمُ مَا يُرِيدُ بِعِزَّتِهِ. يَا حَيُّ يَا قَيُّومُ يَا بَدِيعَ السَّمَاوَاتِ وَالأَرْضِ",
-            translit: "",
-            translation: "Forgive us",
+            translit:
+              "yafʿaluLlāhu mā yashāʾu biqudratihi wa yaḥkumu mā yurīdu biʿizzatihi. Yā ḥayyu yā qayyūm yā badīʿas samāwāti wal arḍi",
+            translation:
+              "Allah does whatever He wishes by His power and judges what He wills by His might. Ya Hayy. Ya Qayyum. O Originator of the heavens and the earth.",
           }),
           new DhikrEntryModel({
             arabic: "يَا ذَا الجَلَالِ وَالإِكْرَامِ",
-            translit: "",
-            translation:
-              "our Lord. The ultimate end is to You. There is no power nor strength except by Allah",
+            translit: "yā dhāl jalāli wal ikrāmi",
+            translation: "O Lord of Majesty and Honour!",
           }),
           new DhikrEntryModel({
             arabic: "لَا إِلَهَ إِلَّا أَنْتَ بِرَحْمَتِكَ نَسْتَغِيثُ",
-            translit: "",
-            translation: "the High",
+            translit: "lā ilāha illā anta biraḥmatika nastaghīthu",
+            translation: "There is no god but You. We seek help by Your mercy.",
           }),
           new DhikrEntryModel({
             arabic: "وَمِنْ عَذَابِكَ نَسْتَجِيرُ",
-            translit: "",
-            translation:
-              "the Immense. Glory be to You. We cannot number Your praises as You praise Yourself. Your Face is majestic and Your honour exalted. Allah does whatever He wishes by His power and judges what He wills by His might. Ya Hayy. Ya Qayyum. O Originator of the heavens and the earth. O Lord of Majesty and Honour! There is no god but You. We seek help by Your mercy. We seek protection from Your punishment. O You Who help those who ask for help. There is no god but You. By the honour of Our Master Muhammad may Allah bless him and grant him peace give us succour and show us mercy. May the mercy of Allah and His blessings be upon you",
+            translit: "wa min ʿadhabika nastajīru",
+            translation: "We seek protection from Your punishment.",
           }),
           new DhikrEntryModel({
             arabic:
               "يَا غِيَاثَ المُسْتَغِيثِينَ لَا إِلَهَ إِلَّا أَنْتَ بِجَاهِ سَيِّدِنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ أَغِثْنَا وَارْحَمْنَا. رَحْمَةُ اللَّهِ وَبَرَكَاتُهُ عَلَيْكُمْ أَهْلَ البَيْتِ إِنَّهُ حَمِيدٌ مَجِيدٌ: \n\n\t\n\t\t﴿\n\t\t\nإِنَّمَا يُرِيدُ اللَّهُ لِيُذْهِبَ عَنكُمُ الرِّجْسَ أَهْلَ الْبَيْتِ وَيُطَهِّرَكُمْ تَطْهِيرًا\n\t\t\n\t\t\t\t\n\t\t\t\t﴾ \n\t\t;\n\t\t\n\t﴿إِنَّ اللَّهَ وَمَلَـٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَـٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا﴾\n .",
-            translit: "",
+            translit:
+              "yā ghayyāthal mustaghīthīna lā ilāha illā anta bijāhi sayyidinā Muḥammadin ṣallAllāhu ʿalayhi wasallama aghithnā warḥamnā. RaḥmatuLlāhi wa barakātuhu ʿalaykum ahlal bayti innahu ḥamīdun majīdun: innamā yurīduLlāhu liyudh-hiba ʿankumur rijsa ahlal bayti wa yuṭahhirakum taṭhīran; innaLlāha wamalāʾikatahu yuṣallūna ʿalān nabiyyi yā ayyuhāl ladhīna āmanū ṣallū ʿalayhi wasallimū taslīman.",
             translation:
-              "People of the House. He is Praiseworthy, Glorious. Allah desires to remove all impurity from you, People of the House, and to purify you completely. Allah and His angels call down blessings on the Prophet. O you who believe, call down blessings on him and ask for complete peace and safety for him.",
+              "O You Who help those who ask for help. There is no god but You. By the honour of Our Master Muhammad may Allah bless him and grant him peace give us succour and show us mercy. May the mercy of Allah and His blessings be upon you, People of the House. He is Praiseworthy, Glorious. Allah desires to remove all impurity from you, People of the House, and to purify you completely. Allah and His angels call down blessings on the Prophet. O you who believe, call down blessings on him and ask for complete peace and safety for him.",
           }),
         ],
       }),

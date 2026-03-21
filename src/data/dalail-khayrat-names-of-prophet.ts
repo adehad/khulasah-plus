@@ -9,7 +9,7 @@ export default [
           new DhikrEntryModel({
             arabic:
               "﴿إِنَّ اللَّهَ وَمَلَـٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَـٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا﴾",
-            translit: "",
+            translit: "InnaLlāha wa malāʾikatahu yuṣallūna ʿalan nabiyyi yā ayyuhalladhīna āmanū ṣallū ʿalayhi wa sallimū taslīmā",
             translation:
               "Allah and His angels send blessings on the Prophet. O you who believe! Call down blessings on him and salute him with a worthy salutation",
           }),
