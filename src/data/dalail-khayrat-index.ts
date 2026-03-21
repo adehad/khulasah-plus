@@ -45,6 +45,14 @@ export const dalailKhayratContent = [
     title: "Allah's Most Beautiful Names",
     href: "salawat-compilations/dalail-khayrat/allahs-most-beautiful-names",
   }),
+  new NavModel({
+    title: "Names of The Prophet ﷺ",
+    href: "salawat-compilations/dalail-khayrat/names-of-prophet",
+  }),
+  new NavModel({
+    title: "Dua of Completion",
+    href: "salawat-compilations/dalail-khayrat/dua-of-completion",
+  }),
 ];
 
 export default dalailKhayratContent;
