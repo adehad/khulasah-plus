@@ -2043,21 +2043,21 @@ export default [
             arabic:
               "اللَّهُمَّ \n\nيَا رَبِّ بِجَاهِ نَبِيِّكَ المُصْطَفَى وَرَسُولِكَ المُرْتَضَى طَهِّرْ قُلُوبَنَا مِنْ كُلِّ وَصْفٍ يُبَاعِدُنَا عَنْ مُشَاهَدَتِكَ وَمَحَبَّتِكَ",
             translit:
-              "Allāhumma yā rabbi bijāhi nabiyyikal muṣṭafā wa rasulikal murtaḍā ṭahhir qulūbanā min kulli waṣfin yubāʿidunā ʿan mushāhadatika wa maḥabbatika wa amitnā ʿalās sunnati wal jamāʿati wash shawqi ʾilā liqāʾika yā dhāl jalāli walʾikrāmi wa ṣallAllāhu ʿalā sayyidinā Muhammadin wa ʿalā ʾālihi wa ṣaḥbihi wa sallama taslīman wal ḥamdu liLlāhi rabbil ʿālamīna.",
+              "Allāhumma yā rabbi bijāhi nabiyyikal muṣṭafā wa rasūlikal murtaḍā ṭahhir qulūbanā min kulli waṣfin yubāʿidunā ʿan mushāhadatika wa maḥabbatik",
             translation:
-              "O Allah, O Lord, by the honour of Your chosen Prophet",
+              "O Allah, O Lord, by the honour of Your chosen Prophet and your approved Messenger, purify our hearts from every description which keeps us far from Your contemplation and love",
           }),
           new DhikrEntryModel({
             arabic: "وَأَمِتْنَا عَلَى السُّنَّةِ وَالجَمَاعَةِ وَالشَّوْقِ إِلَى لِقَائِكَ",
-            translit: "",
-            translation: "and your approved Messenger",
+            translit: "wa amitnā ʿalas sunnati wal jamāʿati wash shawqi ilā liqāʾik",
+            translation: "And have us pass away following his sunnah and in his community, longing to meet You",
           }),
           new DhikrEntryModel({
             arabic:
               "يَا ذَا الجَلَالِ وَالإِكْرَامِ. وَصَلَّى اللَّهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ تَسْلِيمًا. والحَمْدُ لِلَّهِ رَبِّ العَالَمِينَ.",
-            translit: "",
+            translit: "yā dhal jalāli wal ikrām. wa ṣallaLlāhu ʿalā sayyidinā Muḥammadin wa ʿalā ālihi wa ṣaḥbihi wa sallama taslīmā. wal ḥamdu liLlāhi rabbil ʿālamīn.",
             translation:
-              "purify our hearts from every description which keeps us far from Your contemplation and love. And have us pass away following his sunnah and in his community, longing to meet You, O Lord of Majesty and Honour. May Allah bless Our Master: Muhammad, and his family and Companions and grant them peace. Praise belongs to Allah, the Lord of the worlds.",
+              "O Lord of Majesty and Honour. May Allah bless Our Master Muhammad, and his family and Companions and grant them peace. Praise belongs to Allah, the Lord of the worlds.",
           }),
         ],
       }),

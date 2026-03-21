@@ -1073,14 +1073,12 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "الَّذِينَ \n﴿\nيُسَبِّحُونَ الَّيْلَ وَالنَّهَارَ لَا يَفْتُرُونَ\n﴾",
-            translit:
-              "wa lā yaʿṣūnAllaha mā amarahum wa yafʿalūna mā yuʾmarūn.",
-            translation:
-              "who glorify night and day and do not slacken nor disobey Allah in what He has commanded them",
+            translit: "alladhīna yusabbiḥūnal layla wan nahāra lā yafturūn",
+            translation: "who glorify night and day and do not slacken",
           }),
           new DhikrEntryModel({
             arabic: "﴿\n لَّا يَعْصُونَ اللَّهَ مَآ أَمَرَهُمْ وَيَفْعَلُونَ مَا يُؤْمَرُونَ\n﴾.",
-            translit: "",
+            translit: "lā yaʿṣūnaLlāha mā amarahum wa yafʿalūna mā yuʾmarūn.",
             translation: "and do as they are commanded.",
           }),
         ],
