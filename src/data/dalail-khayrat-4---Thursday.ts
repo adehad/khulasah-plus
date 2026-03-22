@@ -450,7 +450,7 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({
+      new DhikrModel({ repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ صَلَاةً تُكْرِمُ بِهَا مَثْوَاهُ",
@@ -471,7 +471,7 @@ export default [
               "and by it You give him what he desires and what pleases him on the Day of Resurrection.",
           }),
           new DhikrEntryModel({
-            arabic: "هَذِهِ الصَّلَاةُ تَعْظِيمًا لِحَقِّكَ يَا سَيِّدَنَا مُحَمَّدُ (3)",
+            arabic: "هَذِهِ الصَّلَاةُ تَعْظِيمًا لِحَقِّكَ يَا سَيِّدَنَا مُحَمَّدُ",
             translit:
               "hādhihiṣ ṣalātu taʿẓīman liḥaqqika yā sayyidanā Muḥammad (3).",
             translation:
@@ -479,7 +479,7 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({
+      new DhikrModel({ repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ حَاءِ الرَّحْمَةِ",
@@ -541,7 +541,7 @@ export default [
             translation: "without end, as only You know",
           }),
           new DhikrEntryModel({
-            arabic: "إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ (3)",
+            arabic: "إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
             translit: "innaka ʿalā kulli shayʾin qadīr.",
             translation:
               "without end, as only You know, for You have power over all things. (3 times)",

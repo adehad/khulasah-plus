@@ -79,16 +79,16 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({
+      new DhikrModel({ repeat: 3,
         entries: [
           new DhikrEntryModel({
-            arabic: "أَسْتَغْفِرُ اللَّهَ العَظِيمَ (3)",
-            translit: "AstaghfiruLlāha alʿaẓīm (3).",
-            translation: "I ask Allah for forgiveness (3).",
+            arabic: "أَسْتَغْفِرُ اللَّهَ العَظِيمَ",
+            translit: "AstaghfiruLlāha alʿaẓīm.",
+            translation: "I ask Allah for forgiveness.",
           }),
         ],
       }),
-      new DhikrModel({
+      new DhikrModel({ repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "سُبْحَانَ اللَّهِ",
@@ -111,7 +111,7 @@ export default [
             translation: "Allah is the Greatest.",
           }),
           new DhikrEntryModel({
-            arabic: "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا باللَّهِ العَلِيِّ العَظِيم (3)",
+            arabic: "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا باللَّهِ العَلِيِّ العَظِيم",
             translit:
               "Wa lā ḥawla wa lā quwwata illā biLlāhil ʿaliyyil ʿaẓīm (3).",
             translation:
@@ -119,11 +119,11 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({
+      new DhikrModel({ repeat: 3,
         entries: [
           new DhikrEntryModel({
-            arabic: "حَسْبِيَ اللَّهُ وَنِعْمَ الوَكِيلُ (3)",
-            translit: "ḤasbiyAllāhu wa niʿmal wakīl (3).",
+            arabic: "حَسْبِيَ اللَّهُ وَنِعْمَ الوَكِيلُ",
+            translit: "ḤasbiyAllāhu wa niʿmal wakīl.",
             translation: "Allah suffices me and he is the best Protector.",
           }),
         ],

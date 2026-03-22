@@ -278,7 +278,7 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({
+      new DhikrModel({ repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِ الأَبْرَارِ",
@@ -291,7 +291,7 @@ export default [
             translation: "and the adornment of the good Messengers",
           }),
           new DhikrEntryModel({
-            arabic: "وَأَكْرَمِ مَنْ أَظْلَمَ عَلَيْهِ اللَّيْلُ وَأَشْرَقَ عَلَيْهِ النَّهَارُ (3)",
+            arabic: "وَأَكْرَمِ مَنْ أَظْلَمَ عَلَيْهِ اللَّيْلُ وَأَشْرَقَ عَلَيْهِ النَّهَارُ",
             translit:
               "wa akrami man aẓlama ʿalayhil laylu wa ashraqa ʿalayhin nahār.",
             translation:

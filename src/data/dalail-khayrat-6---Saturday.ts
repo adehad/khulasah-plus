@@ -931,7 +931,7 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({
+      new DhikrModel({ repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ أَفْرِدْنِي لِمَا خَلَقْتَنِي لَهُ",
@@ -951,8 +951,8 @@ export default [
             translation: "and do not deprive me when I entreat You",
           }),
           new DhikrEntryModel({
-            arabic: "وَلَا تُعَذِّبْنِي وَأَنَا أَسْتَغْفِرُكَ (3)",
-            translit: "wa lā tuʿadh-dhibnī wa anā astaghfiruka.(3)",
+            arabic: "وَلَا تُعَذِّبْنِي وَأَنَا أَسْتَغْفِرُكَ",
+            translit: "wa lā tuʿadh-dhibnī wa anā astaghfiruka.",
             translation:
               "and do not punish me when I seek Your forgiveness. (3 times)",
           }),
@@ -969,7 +969,7 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({
+      new DhikrModel({ repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ إِنِّي أَسْأَلُكَ وَأَتَوَجَّهُ إِلَيْكَ بِحَبِيبِكَ المُصْطَفَى عِنْدَكَ",
@@ -997,8 +997,8 @@ export default [
             translation: "O most blessed pure Messenger",
           }),
           new DhikrEntryModel({
-            arabic: "اللَّهُمَّ شَفِّعْهُ فِينَا بِجَاهِهِ عِنْدَكَ (3)",
-            translit: "Allāhumma shaffiʿhu fīnā bijāhihi ʿindak. (3)",
+            arabic: "اللَّهُمَّ شَفِّعْهُ فِينَا بِجَاهِهِ عِنْدَكَ",
+            translit: "Allāhumma shaffiʿhu fīnā bijāhihi ʿindak.",
             translation:
               "O Allah, grant him intercession for us by his rank with You. (3 times)",
           }),

@@ -188,7 +188,7 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({
+      new DhikrModel({ repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic:
@@ -204,8 +204,8 @@ export default [
             translation: "and the Prophets and Messengers between them",
           }),
           new DhikrEntryModel({
-            arabic: "صَلَوَاتُ اللَّهِ وَسَلَامُهُ عَلَيْهِمْ أَجْمَعِينَ (3)",
-            translit: "ṣalawātuLlahi wa salāmuhu ʿalayhim ajmaʿīn (3).",
+            arabic: "صَلَوَاتُ اللَّهِ وَسَلَامُهُ عَلَيْهِمْ أَجْمَعِينَ",
+            translit: "ṣalawātuLlahi wa salāmuhu ʿalayhim ajmaʿīn.",
             translation:
               "may the blessing of Allah and his peace be upon all of them (3 times).",
           }),
@@ -242,7 +242,7 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({
+      new DhikrModel({ repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا جِبْرِيلَ وَسَيِّدِنَا مِيكَائِيلَ",
@@ -268,8 +268,8 @@ export default [
             translation: "and all the Prophets and Messengers",
           }),
           new DhikrEntryModel({
-            arabic: "صَلَوَاتُ اللَّهِ وَسَلَامُهُ عَلَيْهِمْ أَجْمَعِينَ (3)",
-            translit: "ṣalawātuLlahi wa salāmuhu ʿalayhim ajmaʿīn (3).",
+            arabic: "صَلَوَاتُ اللَّهِ وَسَلَامُهُ عَلَيْهِمْ أَجْمَعِينَ",
+            translit: "ṣalawātuLlahi wa salāmuhu ʿalayhim ajmaʿīn.",
             translation:
               "may the peace and blessings of Allah be upon all of them (3 times).",
           }),
