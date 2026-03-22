@@ -8,8 +8,9 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "﴿إِنَّ اللَّهَ وَمَلَـٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَـٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا﴾",
-            translit: "InnaLlāha wa malāʾikatahu yuṣallūna ʿalan nabiyyi yā ayyuhalladhīna āmanū ṣallū ʿalayhi wa sallimū taslīmā",
+              "﴿إِنَّ اللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا﴾",
+            translit:
+              "InnaLlāha wa malāʾikatahu yuṣallūna ʿalan nabiyyi yā ayyuhalladhīna āmanū ṣallū ʿalayhi wa sallimū taslīmā",
             translation:
               "Allah and His angels send blessings on the Prophet. O you who believe! Call down blessings on him and salute him with a worthy salutation",
           }),
@@ -1224,7 +1225,7 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic: "سَيِّدُنَا خَلِيلُ الرَّحْمَـٰنِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمْ",
+            arabic: "سَيِّدُنَا خَلِيلُ الرَّحْمَٰنِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمْ",
             translit: "Sayyidunā Khalīlul Raḥmān ṣallAllāhu ʿalayhi wasallam.",
             translation:
               "Our Master: Friend of the All-Merciful may Allah bless him and grant him peace.",
@@ -2049,13 +2050,16 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "وَأَمِتْنَا عَلَى السُّنَّةِ وَالجَمَاعَةِ وَالشَّوْقِ إِلَى لِقَائِكَ",
-            translit: "wa amitnā ʿalas sunnati wal jamāʿati wash shawqi ilā liqāʾik",
-            translation: "And have us pass away following his sunnah and in his community, longing to meet You",
+            translit:
+              "wa amitnā ʿalas sunnati wal jamāʿati wash shawqi ilā liqāʾik",
+            translation:
+              "And have us pass away following his sunnah and in his community, longing to meet You",
           }),
           new DhikrEntryModel({
             arabic:
               "يَا ذَا الجَلَالِ وَالإِكْرَامِ. وَصَلَّى اللَّهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ تَسْلِيمًا. والحَمْدُ لِلَّهِ رَبِّ العَالَمِينَ.",
-            translit: "yā dhal jalāli wal ikrām. wa ṣallaLlāhu ʿalā sayyidinā Muḥammadin wa ʿalā ālihi wa ṣaḥbihi wa sallama taslīmā. wal ḥamdu liLlāhi rabbil ʿālamīn.",
+            translit:
+              "yā dhal jalāli wal ikrām. wa ṣallaLlāhu ʿalā sayyidinā Muḥammadin wa ʿalā ālihi wa ṣaḥbihi wa sallama taslīmā. wal ḥamdu liLlāhi rabbil ʿālamīn.",
             translation:
               "O Lord of Majesty and Honour. May Allah bless Our Master Muhammad, and his family and Companions and grant them peace. Praise belongs to Allah, the Lord of the worlds.",
           }),

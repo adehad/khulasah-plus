@@ -10,7 +10,8 @@ export default [
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الزَّاهِدِ",
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin nabiyyiz zāhidi",
-            translation: "O Allah, bless Our Master Muhammad, the ascetic Prophet",
+            translation:
+              "O Allah, bless Our Master Muhammad, the ascetic Prophet",
           }),
           new DhikrEntryModel({
             arabic: "رَسُولِ المَلِكِ الصَّمَدِ الوَاحِدِ",
@@ -278,7 +279,8 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({ repeat: 3,
+      new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِ الأَبْرَارِ",
@@ -619,8 +621,10 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "الَّذِي \n\n﴿\n\n\nلَمْ يَلِدْ وَلَمْ يُولَدْ . وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌ\n﴾",
-            translit: "alladhī lam yalid wa lam yūlad wa lam yakun lahu kufuwan aḥad",
-            translation: "who did not beget nor was He begotten, and there is none equal to Him",
+            translit:
+              "alladhī lam yalid wa lam yūlad wa lam yakun lahu kufuwan aḥad",
+            translation:
+              "who did not beget nor was He begotten, and there is none equal to Him",
           }),
           new DhikrEntryModel({
             arabic: "يَا هُوَ يَا مَنْ لَّا هُوَ إِلَّا هُوَ",
@@ -663,7 +667,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "اللَّهُمَّ فَاطِرَ السَّمَاوَاتِ وَالأَرْضِ عَالِمَ الغَيْبِ وَالشَّهَادَةِ الرَّحْمَـٰنَ الرَّحِيمَ",
+              "اللَّهُمَّ فَاطِرَ السَّمَاوَاتِ وَالأَرْضِ عَالِمَ الغَيْبِ وَالشَّهَادَةِ الرَّحْمَٰنَ الرَّحِيمَ",
             translit:
               "Allāhumma fāṭiras samāwāti wal arḍi ʿālimal ghaybi wash shahādatir raḥmānar raḥīm",
             translation:
@@ -672,7 +676,8 @@ export default [
           new DhikrEntryModel({
             arabic: "الحَيَّ القَيُّومَ الدَّيَّانَ الحَنَّانَ المَنَّانَ",
             translit: "al ḥayyal qayyūmad dayyānal ḥannānal mannān",
-            translation: "the Living, the Self-Sustaining, the Judge, the Loving, the Generous",
+            translation:
+              "the Living, the Self-Sustaining, the Judge, the Loving, the Generous",
           }),
           new DhikrEntryModel({
             arabic: "البَاعِثَ الوَارِثَ",
@@ -712,7 +717,8 @@ export default [
             arabic: "فَأَسْأَلُكَ اللَّهُمَّ أَنْ تَمْحُوَ مِنْ قَلْبِي كُلَّ شَيْءٍ تَكْرَهُهُ",
             translit:
               "Fa asʾalukaLlāhumma an tamḥū min qalbī kulli shayʾin takrahuhu",
-            translation: "So I ask You, O Allah, to efface everything You dislike from my heart",
+            translation:
+              "So I ask You, O Allah, to efface everything You dislike from my heart",
           }),
           new DhikrEntryModel({
             arabic: "وَأَنْ تَحْشُوَ قَلْبِي مِنْ خَشْيَتِكَ",
@@ -796,7 +802,8 @@ export default [
             arabic: "وَصَلَّى اللَّهُ عَلَى سَيِّدِنَا مُحَمَّدٍ خَاتَمِ النَّبِيِّينَ",
             translit:
               "wa ṣallAllāhu ʿalā sayyidinā Muḥammadin khātamin nabiyyīna",
-            translation: "and may Allah bless Our Master Muhammad, the Seal of the Prophets",
+            translation:
+              "and may Allah bless Our Master Muhammad, the Seal of the Prophets",
           }),
           new DhikrEntryModel({
             arabic: "وَإِمَامِ المُرْسَلِينَ",

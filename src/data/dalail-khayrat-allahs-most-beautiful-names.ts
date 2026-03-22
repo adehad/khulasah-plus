@@ -16,7 +16,7 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic: "الرَّحْمَـٰنُ جَلَّ جَلَالُهُ",
+            arabic: "الرَّحْمَٰنُ جَلَّ جَلَالُهُ",
             translit: "Ar-Rahmān jalla jalāluhu.",
             translation: "The Merciful, He is exalted!",
           }),
@@ -52,7 +52,7 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic: "السَّلَـٰمُ جَلَّ جَلَالُهُ",
+            arabic: "السَّلَٰمُ جَلَّ جَلَالُهُ",
             translit: "As-Salām jalla jalāluhu.",
             translation: "The Source of Peace, He is exalted!",
           }),
@@ -106,7 +106,7 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic: "الخَـٰلِقُ جَلَّ جَلَالُهُ",
+            arabic: "الخَٰلِقُ جَلَّ جَلَالُهُ",
             translit: "Al-Khāliq jalla jalāluhu.",
             translation: "The Creator, He is exalted!",
           }),
@@ -913,7 +913,8 @@ export default [
           new DhikrEntryModel({
             arabic: "وَآخِرٌ بِلَا انْتِهَاءٍ. لَا يُنْسَبُ إِلَيْهِ البَنُونَ",
             translit: "wa ākhirun bilāntihāʾin lā yunsabu ilayhil banūna",
-            translation: "without beginning, and Last, without end. Sons are not ascribed to Him.",
+            translation:
+              "without beginning, and Last, without end. Sons are not ascribed to Him.",
           }),
           new DhikrEntryModel({
             arabic: "وَلَا يُفْنِيهِ تَدَاوُلُ الأَوْقَاتِ",
@@ -971,12 +972,14 @@ export default [
           new DhikrEntryModel({
             arabic: "وَيُمَجِّدُهُ الوَحْشُ فِي قَفْرِهِ",
             translit: "wa yumajjiduhul waḥshu fī qafrihi",
-            translation: "and wild animals celebrate His glory in the wilderness.",
+            translation:
+              "and wild animals celebrate His glory in the wilderness.",
           }),
           new DhikrEntryModel({
             arabic: "مُحِيطٌ بِعَمَلِ العَبْدِ سِرِّهِ وَجَهْرِهِ",
             translit: "muḥīṭun biʿamalil ʿabdi sirrihi wajahrihi",
-            translation: "He has full knowledge of the actions of His slave, both in secret and public.",
+            translation:
+              "He has full knowledge of the actions of His slave, both in secret and public.",
           }),
           new DhikrEntryModel({
             arabic: "وَكَفِيلٌ لِلمُؤْمِنِينَ بِتَأيِيدِهِ وَنَصْرِهِ",
@@ -985,13 +988,16 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "وَتَطْمَئِنُّ القُلُوبُ الوَجِلَةُ بِذِكْرِهِ وَكَشْفِ ضُرِّهِ",
-            translit: "wa taṭmaʾinnul qulūbul wajilatu bidhikrihi wa kashfi ḍurrihi",
-            translation: "Fearful hearts are put at rest by remembrance of Him and by it harm is removed.",
+            translit:
+              "wa taṭmaʾinnul qulūbul wajilatu bidhikrihi wa kashfi ḍurrihi",
+            translation:
+              "Fearful hearts are put at rest by remembrance of Him and by it harm is removed.",
           }),
           new DhikrEntryModel({
-            arabic: "﴿\nوَمِنْ ءَايَـٰتِهِۦٓ أَنْ تَقُومَ السَّمَآءُ وَالْأَرْضُ بِأَمْرِهِ \n ﴾",
+            arabic: "﴿\nوَمِنْ ءَايَٰتِهِۦٓ أَنْ تَقُومَ السَّمَآءُ وَالْأَرْضُ بِأَمْرِهِ \n ﴾",
             translit: "wa min āyātihi an taqūmas samāʾu wal arḍu bi amrihi",
-            translation: "Among His signs is that heaven and earth are sustained by His command.",
+            translation:
+              "Among His signs is that heaven and earth are sustained by His command.",
           }),
           new DhikrEntryModel({
             arabic:
@@ -999,7 +1005,7 @@ export default [
             translit:
               "aḥāṭa bikulli shayʾin ʿilman wa ghafara dhunubal mudhnibīna karaman waḥ ilman laysa kamithlihi shayʾun wa huwas samīʿul baṣīr.",
             translation:
-              "His knowledge encompasses everything. He forgives the wrong actions of those who commit them, out of generosity and forbearance. \"There is nothing like Him and He is the All-Hearing, All-Seeing.\"",
+              'His knowledge encompasses everything. He forgives the wrong actions of those who commit them, out of generosity and forbearance. "There is nothing like Him and He is the All-Hearing, All-Seeing."',
           }),
         ],
       }),
@@ -1056,7 +1062,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic:
-              "يَا غِيَاثَ المُسْتَغِيثِينَ لَا إِلَهَ إِلَّا أَنْتَ بِجَاهِ سَيِّدِنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ أَغِثْنَا وَارْحَمْنَا. رَحْمَةُ اللَّهِ وَبَرَكَاتُهُ عَلَيْكُمْ أَهْلَ البَيْتِ إِنَّهُ حَمِيدٌ مَجِيدٌ: \n\n\t\n\t\t﴿\n\t\t\nإِنَّمَا يُرِيدُ اللَّهُ لِيُذْهِبَ عَنكُمُ الرِّجْسَ أَهْلَ الْبَيْتِ وَيُطَهِّرَكُمْ تَطْهِيرًا\n\t\t\n\t\t\t\t\n\t\t\t\t﴾ \n\t\t;\n\t\t\n\t﴿إِنَّ اللَّهَ وَمَلَـٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَـٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا﴾\n .",
+              "يَا غِيَاثَ المُسْتَغِيثِينَ لَا إِلَهَ إِلَّا أَنْتَ بِجَاهِ سَيِّدِنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ أَغِثْنَا وَارْحَمْنَا. رَحْمَةُ اللَّهِ وَبَرَكَاتُهُ عَلَيْكُمْ أَهْلَ البَيْتِ إِنَّهُ حَمِيدٌ مَجِيدٌ: \n\n\t\n\t\t﴿\n\t\t\nإِنَّمَا يُرِيدُ اللَّهُ لِيُذْهِبَ عَنكُمُ الرِّجْسَ أَهْلَ الْبَيْتِ وَيُطَهِّرَكُمْ تَطْهِيرًا\n\t\t\n\t\t\t\t\n\t\t\t\t﴾ \n\t\t;\n\t\t\n\t﴿إِنَّ اللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا﴾\n .",
             translit:
               "yā ghayyāthal mustaghīthīna lā ilāha illā anta bijāhi sayyidinā Muḥammadin ṣallAllāhu ʿalayhi wasallama aghithnā warḥamnā. RaḥmatuLlāhi wa barakātuhu ʿalaykum ahlal bayti innahu ḥamīdun majīdun: innamā yurīduLlāhu liyudh-hiba ʿankumur rijsa ahlal bayti wa yuṭahhirakum taṭhīran; innaLlāha wamalāʾikatahu yuṣallūna ʿalān nabiyyi yā ayyuhāl ladhīna āmanū ṣallū ʿalayhi wasallimū taslīman.",
             translation:

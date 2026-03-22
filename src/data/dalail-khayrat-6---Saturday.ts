@@ -931,7 +931,8 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({ repeat: 3,
+      new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ أَفْرِدْنِي لِمَا خَلَقْتَنِي لَهُ",
@@ -969,7 +970,8 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({ repeat: 3,
+      new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ إِنِّي أَسْأَلُكَ وَأَتَوَجَّهُ إِلَيْكَ بِحَبِيبِكَ المُصْطَفَى عِنْدَكَ",
@@ -1103,7 +1105,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic:
-              "﴿\nلَّآ إِلَـٰهَ إِلَّآ أَنتَ سُبْحَـٰنَكَ إِنِّى كُنتُ مِنَ الظَّـٰلِمِينَ\n﴾.\n\n أَسْأَلُكَ بِمَا حَمَلَ كُرْسِيُّكَ مِنْ عَظَمَتِكَ",
+              "﴿\nلَّآ إِلَٰهَ إِلَّآ أَنتَ سُبْحَٰنَكَ إِنِّى كُنتُ مِنَ الظَّٰلِمِينَ\n﴾.\n\n أَسْأَلُكَ بِمَا حَمَلَ كُرْسِيُّكَ مِنْ عَظَمَتِكَ",
             translit:
               "lā ilāha illā anta subḥānaka innī kuntu minaẓ ẓālimīna. Asʾaluka bimā ḥamala kursiyyuka min ʿaẓamatika",
             translation:

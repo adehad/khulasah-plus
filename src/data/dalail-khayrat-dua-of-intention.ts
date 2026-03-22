@@ -8,7 +8,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ.\nاللَّهُمَّ إِنِّي نَوَيْتُ بِالصَّلَاةِ عَلَى النَّبِيِّ صَلَّى اللَّهُ عَليْهِ وَسَلَّمَ",
+              "بِسْمِ اللَّـهِ الرَّحْمَٰنِ الرَّحِيمِ.\nاللَّهُمَّ إِنِّي نَوَيْتُ بِالصَّلَاةِ عَلَى النَّبِيِّ صَلَّى اللَّهُ عَليْهِ وَسَلَّمَ",
             translit:
               "Allāhumma innī nawaytu biṣṣalāti ʿalān nabiyyi ṣallAllāhu ʿalayhi wasallama",
             translation:

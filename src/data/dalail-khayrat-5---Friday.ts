@@ -24,7 +24,8 @@ export default [
             arabic: "وَبِالأَسْمَاءِ الَّتِي دَعَاكَ بِهَا سَيِّدُنَا هُودٌ عَلَيْهِ السَّلَامُ",
             translit:
               "wa bil asmāʾillatī daʿāka bihā sayyidunā Hūdun ʿalayhi salām",
-            translation: "and by the names with which Our Master Hud (peace be upon him) called You",
+            translation:
+              "and by the names with which Our Master Hud (peace be upon him) called You",
           }),
           new DhikrEntryModel({
             arabic: "وَبِالأَسْمَاءِ الَّتِي دَعَاكَ بِهَا سَيِّدُنَا إِبْرَاهِيمُ عَلَيْهِ السَّلَامُ",
@@ -37,67 +38,78 @@ export default [
             arabic: "وَبِالأَسْمَاءِ الَّتِي دَعَاكَ بِهَا سَيِّدُنَا صَالِحٌ عَلَيْهِ السَّلَامُ",
             translit:
               "wa bil asmāʾillatī daʿāka bihā sayyidunā Ṣāliḥun ʿalayhi salām",
-            translation: "and by the names with which Our Master Salih (peace be upon him) called You",
+            translation:
+              "and by the names with which Our Master Salih (peace be upon him) called You",
           }),
           new DhikrEntryModel({
             arabic: "وَبِالأَسْمَاءِ الَّتِي دَعَاكَ بِهَا سَيِّدُنَا يُونُسُ عَلَيْهِ السَّلَامُ",
             translit:
               "wa bil asmāʾillatī daʿāka bihā sayyidunā Yūnusu ʿalayhi salām",
-            translation: "and by the names with which Our Master Yunus (peace be upon him) called You",
+            translation:
+              "and by the names with which Our Master Yunus (peace be upon him) called You",
           }),
           new DhikrEntryModel({
             arabic: "وَبِالأَسْمَاءِ الَّتِي دَعَاكَ بِهَا سَيِّدُنَا أَيُّوبُ عَلَيْهِ السَّلَامُ",
             translit:
               "wa bil asmāʾillatī daʿāka bihā sayyidunā Ayyūbu ʿalayhi salām",
-            translation: "and by the names with which Our Master Ayyub (peace be upon him) called You",
+            translation:
+              "and by the names with which Our Master Ayyub (peace be upon him) called You",
           }),
           new DhikrEntryModel({
             arabic: "وَبِالأَسْمَاءِ الَّتِي دَعَاكَ بِهَا سَيِّدُنَا يَعْقُوبُ عَلَيْهِ السَّلَامُ",
             translit:
               "wa bil asmāʾillatī daʿāka bihā sayyidunā  Yaʿqūbu ʿalayhi salām",
-            translation: "and by the names with which Our Master Ya'qub (peace be upon him) called You",
+            translation:
+              "and by the names with which Our Master Ya'qub (peace be upon him) called You",
           }),
           new DhikrEntryModel({
             arabic: "وَبِالأَسْمَاءِ الَّتِي دَعَاكَ بِهَا سَيِّدُنَا يُوسُفُ عَلَيْهِ السَّلَامُ",
             translit:
               "wa bil asmāʾillatī daʿāka bihā sayyidunā Yūsufu ʿalayhi salām",
-            translation: "and by the names with which Our Master Yusuf (peace be upon him) called You",
+            translation:
+              "and by the names with which Our Master Yusuf (peace be upon him) called You",
           }),
           new DhikrEntryModel({
             arabic: "وَبِالأَسْمَاءِ الَّتِي دَعَاكَ بِهَا سَيِّدُنَا مُوسَى عَلَيْهِ السَّلَامُ",
             translit:
               "wa bil asmāʾillatī daʿāka bihā sayyidunā Mūsā ʿalayhi salām",
-            translation: "and by the names with which Our Master Musa (peace be upon him) called You",
+            translation:
+              "and by the names with which Our Master Musa (peace be upon him) called You",
           }),
           new DhikrEntryModel({
             arabic: "وَبِالأَسْمَاءِ الَّتِي دَعَاكَ بِهَا سَيِّدُنَا هَارُونُ عَلَيْهِ السَّلَامُ",
             translit:
               "wa bil asmāʾillatī daʿāka bihā sayyidunā Harūnu ʿalayhi salām",
-            translation: "and by the names with which Our Master Harun (peace be upon him) called You",
+            translation:
+              "and by the names with which Our Master Harun (peace be upon him) called You",
           }),
           new DhikrEntryModel({
             arabic: "وَبِالأَسْمَاءِ الَّتِي دَعَاكَ بِهَا سَيِّدُنَا شُعَيْبٌ عَلَيْهِ السَّلَامُ",
             translit:
               "wa bil asmāʾillatī daʿāka bihā sayyidunā Shuʿaybun ʿalayhi salām",
-            translation: "and by the names with which Our Master Shu'ayb (peace be upon him) called You",
+            translation:
+              "and by the names with which Our Master Shu'ayb (peace be upon him) called You",
           }),
           new DhikrEntryModel({
             arabic: "وَبِالأَسْمَاءِ الَّتِي دَعَاكَ بِهَا سَيِّدُنَا إِسْمَاعِيلُ عَلَيْهِ السَّلَامُ",
             translit:
               "wa bil asmāʾillatī daʿāka bihā sayyidunā Ismāʿīlu ʿalayhi salām",
-            translation: "and by the names with which Our Master Isma'il (peace be upon him) called You",
+            translation:
+              "and by the names with which Our Master Isma'il (peace be upon him) called You",
           }),
           new DhikrEntryModel({
             arabic: "وَبِالأَسْمَاءِ الَّتِي دَعَاكَ بِهَا سَيِّدُنَا دَاوُودُ عَلَيْهِ السَّلَامُ",
             translit:
               "wa bil asmāʾillatī daʿāka bihā sayyidunā Dāwūdu ʿalayhi salām",
-            translation: "and by the names with which Our Master Dawud (peace be upon him) called You",
+            translation:
+              "and by the names with which Our Master Dawud (peace be upon him) called You",
           }),
           new DhikrEntryModel({
             arabic: "وَبِالأَسْمَاءِ الَّتِي دَعَاكَ بِهَا سَيِّدُنَا سُلَيْمَانُ عَلَيْهِ السَّلَامُ",
             translit:
               "wa bil asmāʾillatī daʿāka bihā sayyidunā Sulaymānu ʿalayhi salām",
-            translation: "and by the names with which Our Master Sulayman (peace be upon him) called You",
+            translation:
+              "and by the names with which Our Master Sulayman (peace be upon him) called You",
           }),
           new DhikrEntryModel({
             arabic: "وَبِالأَسْمَاءِ الَّتِي دَعَاكَ بِهَا سَيِّدُنَا زَكَرِيَّا عَلَيْهِ السَّلَامُ",
@@ -830,7 +842,8 @@ export default [
               "اللَّهُمَّ وَأَسْأَلُكَ بِأَسْمَائِكَ الَّتِي دَعَوْتُكَ بِهَا أَنْ تُصَلِّيَ عَلَى سَيِّدِنَا مُحَمَّدٍ عَدَدَ مَا وَصَفْتُ",
             translit:
               "Allāhumma wa asʾaluka bi asmāʾikallatī daʿawtuka bihā an tuṣallī ʿalā sayyidinā Muḥammadin ʿadada mā waṣaftu",
-            translation: "I ask You by Your Names by which I called on You, to bless Sayyidina Muhammad in quantity as great as what I have described",
+            translation:
+              "I ask You by Your Names by which I called on You, to bless Sayyidina Muhammad in quantity as great as what I have described",
           }),
           new DhikrEntryModel({
             arabic: "وَمِمَّا لَا يَعْلَمُ عِلْمَهُ إِلَّا أَنْتَ",
@@ -996,7 +1009,8 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "وَأَسْأَلُكَ بِاسْمِكَ الَّذِي وَضَعْتَهُ عَلَى اللَّيْلِ فَأَظْلَمَ",
-            translit: "wa asʾaluka bismikalladhī wa ḍaʿtahu ʿalal layli fa aẓlama",
+            translit:
+              "wa asʾaluka bismikalladhī wa ḍaʿtahu ʿalal layli fa aẓlama",
             translation:
               "I ask You by the name which You placed over the night so that it darkens",
           }),
@@ -1227,7 +1241,8 @@ export default [
           new DhikrEntryModel({
             arabic: "وَجَمِيعِ مَا خَلَقْتَ فِي قَرَارِ الحِفْظِ",
             translit: "wa jamīʿi mā khalaqta fī qarāril ḥifẓi",
-            translation: 	"and all that You created in the abode of preservation",
+            translation:
+              "and all that You created in the abode of preservation",
           }),
           new DhikrEntryModel({
             arabic: "مِنْ يَوْمِ خَلَقْتَ الدُّنْيَا إِلَى يَوْمِ القِيَامَةِ.",
@@ -1463,7 +1478,7 @@ export default [
           new DhikrEntryModel({
             arabic: "مَا شَاءَ اللَّهُ",
             translit: "māshāʾAllāh.",
-            translation: 	"Whatever Allah wills",
+            translation: "Whatever Allah wills",
           }),
           new DhikrEntryModel({
             arabic: "لَا قُوَّةَ إِلَّا باللَّهِ العَلِيِّ العَظِيمِ.",

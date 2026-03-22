@@ -59,7 +59,8 @@ export default [
               "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الأُمِّيِّ وَأَزْوَاجِهِ أُمَّهَاتِ المُؤْمِنِينَ",
             translit:
               "Allāhumma ṣalli wa ṣallim ʿalā sayyidinā Muḥammadin nabiyyil ummiyyi wa azwājihi ummahātil muʾminīna",
-            translation: "O Allah, bless and grant peace and blessings to Our Master Muhammad the Unlettered Prophet and his wives the mothers of the believers",
+            translation:
+              "O Allah, bless and grant peace and blessings to Our Master Muhammad the Unlettered Prophet and his wives the mothers of the believers",
           }),
           new DhikrEntryModel({
             arabic: "وَذُرِّيَّتِهِ وَأَهْلِ بَيْتِهِ",
@@ -74,8 +75,7 @@ export default [
           new DhikrEntryModel({
             arabic: "وَلَا يَنْقَطِعُ مَدَدُهُمَا.",
             translit: "wa lā yanqaṭiʿu madaduhumā.",
-            translation:
-              "and that is never interrupted.",
+            translation: "and that is never interrupted.",
           }),
         ],
       }),
@@ -188,7 +188,8 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({ repeat: 3,
+      new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic:
@@ -222,14 +223,12 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "صَلَاةَ مَلَائِكَتِكَ",
-            translit:
-              "ṣalātan malāʾikatika",
+            translit: "ṣalātan malāʾikatika",
             translation: "with the blessing of the angels",
           }),
           new DhikrEntryModel({
             arabic: "وَأَعْطِهِمَا مِنَ الرِّضْوَانِ حَتَّى تُرْضِيَهُمَا",
-            translit:
-              "wa aʿṭihimā minar riḍwāni ḥatta turḍiyahumā",
+            translit: "wa aʿṭihimā minar riḍwāni ḥatta turḍiyahumā",
             translation:
               "and give them Your divine grace in as much as You are pleased with them",
           }),
@@ -242,7 +241,8 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({ repeat: 3,
+      new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا جِبْرِيلَ وَسَيِّدِنَا مِيكَائِيلَ",
@@ -949,7 +949,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَي سَيِّدِنَا إِبرَاﻫِيمَ وَعَلَى آلِ سَيِّدِنَا إِبرَاهِيمَ فِي العَالَمينَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
+              "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَي سَيِّدِنَا إِبرَاهِيمَ وَعَلَى آلِ سَيِّدِنَا إِبرَاهِيمَ فِي العَالَمينَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin kamā ṣallayta ʿalā sayyidinā Ibrāhīma wa ʿalā āli sayyidinā Ibrāhīma fil ʿālamina innaka ḥamīdun majīd",
             translation:

@@ -7,7 +7,7 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic: "بِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ.\nالحَمْدُ لِلَّهِ رَبِّ العَالَمِينَ",
+            arabic: "بِسْمِ اللَّـهِ الرَّحْمَٰنِ الرَّحِيمِ.\nالحَمْدُ لِلَّهِ رَبِّ العَالَمِينَ",
             translit:
               "BismiLlāhir raḥmānir raḥīm. Alḥamdu liLlāhi rabbil ʿālamīn",
             translation:
@@ -79,7 +79,8 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({ repeat: 3,
+      new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "أَسْتَغْفِرُ اللَّهَ العَظِيمَ",
@@ -88,7 +89,8 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({ repeat: 3,
+      new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "سُبْحَانَ اللَّهِ",
@@ -119,7 +121,8 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({ repeat: 3,
+      new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "حَسْبِيَ اللَّهُ وَنِعْمَ الوَكِيلُ",
@@ -132,7 +135,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ. بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ. ﴿قُلْ هُوَ اللَّهُ أَحَدٌ . اللَّهُ الصَّمَدُ . لَمْ يَلِدْ وَلَمْ يُولَدْ . وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌ\n﴾(3)",
+              "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ. بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ. ﴿قُلْ هُوَ اللَّهُ أَحَدٌ . اللَّهُ الصَّمَدُ . لَمْ يَلِدْ وَلَمْ يُولَدْ . وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌ\n﴾(3)",
             translit:
               "Aʿūdhu biLlāhi minash shayṭānir rajīm. BismiLlāhir raḥmānir raḥīm. Qul huwaLlāhu aḥad. Allāhuṣ ṣamad. Lam yalid walam yūlad. Walam yakullahu kufuwan aḥad. (3)",
             translation:
@@ -144,7 +147,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ ﴿قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ . مِن شَرِّ مَا خَلَقَ . وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ . وَمِن شَرِّ النَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ . وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ\n ﴾\nبِسْمِ اللَّـهِ الرَّحْمَـٰنِ الرَّحِيمِ\n ﴿قُلْ أَعُوذُ بِرَبِّ النَّاسِ . مَلِكِ النَّاسِ . إِلَـٰهِ النَّاسِ . مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ . الَّذِى يُوَسْوِسُ فِى صُدُورِ النَّاسِ . مِنَ الْجِنَّةِ وَالنَّاسِ\n﴾",
+              "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ﴿قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ . مِن شَرِّ مَا خَلَقَ . وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ . وَمِن شَرِّ النَّفَّٰثَٰتِ فِى ٱلْعُقَدِ . وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ\n ﴾\nبِسْمِ اللَّـهِ الرَّحْمَٰنِ الرَّحِيمِ\n ﴿قُلْ أَعُوذُ بِرَبِّ النَّاسِ . مَلِكِ النَّاسِ . إِلَٰهِ النَّاسِ . مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ . الَّذِى يُوَسْوِسُ فِى صُدُورِ النَّاسِ . مِنَ الْجِنَّةِ وَالنَّاسِ\n﴾",
             translit:
               "BismiLlāhir raḥmānir raḥīm. Qul aʿūdhu birabbil falaq. Min sharri mā khalaq. Wa min sharri ghāsiqin idha waqab. Wa min sharrin naffāthāti fīl ʿuqad. Wamin sharri ḥāsidin idhā ḥasad.BismiLlāhir raḥmānir raḥīm.Qul aʿūdhu birabbin nās. Malikin nās. Ilāhin nās. Min sharril waswāsil khannās. Alladhī yuwaswisu fī ṣudurin nās. Minal jinnati wannās.",
             translation:
@@ -156,7 +159,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "﴿بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ . الْحَمْدُ لِلَّهِ رَبِّ الْعَـٰلَمِينَ . الرَّحْمَـٰنِ ٱلرَّحِيمِ . مَـٰلِكِ يَوْمِ الدِّينِ . إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ . اهْدِنَا الصِّرَٰطَ الْمُسْتَقِيمَ . صِرَٰطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّآلِّينَ\n ﴾",
+              "﴿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ . الْحَمْدُ لِلَّهِ رَبِّ الْعَٰلَمِينَ . الرَّحْمَٰنِ ٱلرَّحِيمِ . مَٰلِكِ يَوْمِ الدِّينِ . إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ . اهْدِنَا الصِّرَٰطَ الْمُسْتَقِيمَ . صِرَٰطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّآلِّينَ\n ﴾",
             translit:
               "BismiLlāhir raḥmānir raḥīm. Alḥamdu liLlāhi rabbil ʿālamīn. Arraḥmānir raḥīm. Māliki yawmid dīn. Iyyāka naʿbudu wa iyyāka nastaʿīn. Ihdināṣ ṣirāṭal mustaqīm. Ṣirāṭal ladhīna anʿamta ʿalayhim ghayril maghḍūbi ʿalayhim walāḍ ḍāllīn.",
             translation:
@@ -168,7 +171,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ  ﴿\nالٓمٓ . ذَٰلِكَ الْكِتَـٰبُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِّلْمُتَّقِينَ . الَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ وَيُقِيمُونَ الصَّلَوٰةَ وَمِمَّا رَزَقْنَـٰهُمْ يُنفِقُونَ . وَالَّذِينَ يُؤْمِنُونَ بِمَآ أُنزِلَ إِلَيْكَ وَمَآ أُنزِلَ مِن قَبْلِكَ وَبِالْآخِرَةِ هُمْ يُوقِنُونَ . أُوْلَـٰٓئِكَ عَلَىٰ هُدًى مِّن رَّبِّهِمْ ۖ وَأُوْلَـٰٓئِكَ هُمُ الْمُفْلِحُونَ\n ﴾",
+              "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ  ﴿\nالٓمٓ . ذَٰلِكَ الْكِتَٰبُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِّلْمُتَّقِينَ . الَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ وَيُقِيمُونَ الصَّلَوٰةَ وَمِمَّا رَزَقْنَٰهُمْ يُنفِقُونَ . وَالَّذِينَ يُؤْمِنُونَ بِمَآ أُنزِلَ إِلَيْكَ وَمَآ أُنزِلَ مِن قَبْلِكَ وَبِالْآخِرَةِ هُمْ يُوقِنُونَ . أُوْلَٰٓئِكَ عَلَىٰ هُدًى مِّن رَّبِّهِمْ ۖ وَأُوْلَٰٓئِكَ هُمُ الْمُفْلِحُونَ\n ﴾",
             translit:
               "BismiLlāhir raḥmānir raḥīm.Alif Lām Mīm. Dhālikal kitābu lā raybai fīh hudan lilmuttaqīn. Alladhīna yuʾminūna bilghaybi wayuqīmūnaṣ ṣalāta wamimmā razaqnāhum yunfiqūn. Walladhīna yuʾminūna bimā ʾunzila ilayka wamā ʾunzila min qablika wa bilākhirati hum yūqinūn. Ūlāʾika ʿalā hudam mir rabbihim wa ūlāʾika humul mufliḥūn.",
             translation:

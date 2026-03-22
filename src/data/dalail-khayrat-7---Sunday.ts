@@ -788,7 +788,8 @@ export default [
             arabic: "وَالدَّرَجَةَ الرَّفِيعَةَ الَّتِي وَعَدْتَهُ فِي المَوْقِفِ العَظِيمِ",
             translit:
               "wad darajatar rafīaʿtallati wa ʿadtahu fīl mawqifil ʿaẓīm",
-            translation: "and the high rank that You promised him at the Great Gathering",
+            translation:
+              "and the high rank that You promised him at the Great Gathering",
           }),
           new DhikrEntryModel({
             arabic: "وَصَلِّ اللَّهُمَّ عَلَيهِ صَلَاةً دَائِمَةً مُتَّصِلَةً تَتَوَالَى وَتَدُومُ.",
@@ -936,7 +937,8 @@ export default [
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ أَفْضَلِ أَنْبِيَائِكَ",
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin afḍali anbiyāʾika",
-            translation: "O Allah bless Our Master Muhammad, the best of Your Prophets",
+            translation:
+              "O Allah bless Our Master Muhammad, the best of Your Prophets",
           }),
           new DhikrEntryModel({
             arabic: "وَأَكْرَمِ أَصْفِيَائِكَ",
@@ -1330,7 +1332,7 @@ export default [
             translation: "the Hajj and recitation of the Qur'an",
           }),
           new DhikrEntryModel({
-            arabic: "وَتَسْبِيحِ الرَّحْمَـٰنِ",
+            arabic: "وَتَسْبِيحِ الرَّحْمَٰنِ",
             translit: "wa tasbīḥir raḥmāni",
             translation: "glorification of the All-Merciful",
           }),

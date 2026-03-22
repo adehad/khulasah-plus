@@ -450,7 +450,8 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({ repeat: 3,
+      new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ صَلَاةً تُكْرِمُ بِهَا مَثْوَاهُ",
@@ -479,7 +480,8 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({ repeat: 3,
+      new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ حَاءِ الرَّحْمَةِ",
@@ -528,7 +530,8 @@ export default [
           new DhikrEntryModel({
             arabic: "صَلَاةً دَائِمَةً بِدَوَامِكَ",
             translit: "ṣalātan dāʾimatan bidawāmika",
-            translation: "with a constant blessing lasting as long as You endure",
+            translation:
+              "with a constant blessing lasting as long as You endure",
           }),
           new DhikrEntryModel({
             arabic: "بَاقِيَةً بِبَقَائِكَ",
@@ -867,7 +870,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic:
-              "وَقُلْتَ وَقَوْلُكَ الحَقُّ:﴿  \n\n\nإِنَّ اللَّهَ وَمَلَـٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَـٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا\n\n ﴾",
+              "وَقُلْتَ وَقَوْلُكَ الحَقُّ:﴿  \n\n\nإِنَّ اللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا\n\n ﴾",
             translit:
               "wa qulta waqawlukal ḥaqq: inna Allāha wa malāʾikatahu yuṣallūna ʿalan nabiyyi yā ayyuhalladhīna āmanū ṣallū ʿalayhi wa sallimū taslīmā",
             translation:
@@ -1205,7 +1208,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic:
-              "مَعَ المُنْعَمِ عَلَيْهِمْ \n﴿\n\nمِّنَ النَّبِيِّيـنَ وَالصِّدِّيقِينَ وَالشُّهَدَآءِ وَالصَّـٰلِحِينَ ۚ وَحَسُنَ أُوْلَـٰٓئِكَ رَفِيقًا\n﴾",
+              "مَعَ المُنْعَمِ عَلَيْهِمْ \n﴿\n\nمِّنَ النَّبِيِّينَ وَالصِّدِّيقِينَ وَالشُّهَدَآءِ وَالصَّٰلِحِينَ ۚ وَحَسُنَ أُوْلَٰٓئِكَ رَفِيقًا\n﴾",
             translit:
               "maʿal munʿami ʿalayhim minan nabiyyīna waṣ ṣiddiqīna wash shuhadāʾi waṣ ṣāliḥīna wa ḥasuna ulāʾika rafīqan",
             translation:
@@ -1475,7 +1478,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic:
-              "الأَحْيَاءِ مِنْهُمْ وَالأَمْوَاتِ وَ﴿اغْفِرْ لَنَا وَلِإِخْوَٰنِنَا الَّذِينَ سَبَقُونَا بِالْإِيمَـٰنِ وَلَا تَجْعَلْ فِى قُلُوبِنَا غِلًّا لِّلَّذِينَ ءَامَنُواْ رَبَّنَآ إِنَّكَ رَؤُوفٌ رَّحِيمٌ\n\n\n﴾.",
+              "الأَحْيَاءِ مِنْهُمْ وَالأَمْوَاتِ وَ﴿اغْفِرْ لَنَا وَلِإِخْوَٰنِنَا الَّذِينَ سَبَقُونَا بِالْإِيمَٰنِ وَلَا تَجْعَلْ فِى قُلُوبِنَا غِلًّا لِّلَّذِينَ ءَامَنُواْ رَبَّنَآ إِنَّكَ رَؤُوفٌ رَّحِيمٌ\n\n\n﴾.",
             translit:
               "alʾaḥyāʾi minhum wal amwāti, waghfīrlanā wa li ikhwānalladhīna sabaqūna bil īmani walā tajʿal fī qulūbinā ghillan lilladhīna āmanū. Rabbanā innaka raʾūfun raḥīm.",
             translation:
@@ -1623,7 +1626,8 @@ export default [
           new DhikrEntryModel({
             arabic: "وَبَهَائِكَ وَقُدْرَتِكَ وَسُلْطَانِكَ",
             translit: "wa bahāʾika wa qudratika wa sulṭānika",
-            translation: "and by Your splendour, Your power, and Your authority",
+            translation:
+              "and by Your splendour, Your power, and Your authority",
           }),
           new DhikrEntryModel({
             arabic:

@@ -7,7 +7,7 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic: "بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ",
+            arabic: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
             translit: "BismiLlāhir Raḥmānir Raḥīm.",
             translation:
               "In the Name of Allah, the Most Beneficent, Most Merciful",
@@ -379,7 +379,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic:
-              "﴿ إِنَّ اللَّهَ وَمَلَـٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَـٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا  ﴾",
+              "﴿ إِنَّ اللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا  ﴾",
             translit:
               "InnAllaha wa malāʾikatahu yuṣallūna ʿalan nabiyyi yā ayyuhalladhīna āmanū ṣallū ʿalayhi wa sallimū taslīman.",
             translation:
