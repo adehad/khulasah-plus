@@ -968,14 +968,14 @@ export default [
             arabic: "عَدَدَ مَا أَمْطَرَتِ السَّمَاءُ مُنْذُ بَنَيْتَهَا",
             translit: "ʿadada mā amṭaratis samāʾu mundhu banaytahā",
             translation:
-              "s much as all the rain that has fallen from the sky since the time it was established.",
+              "As much as all the rain that has fallen from the sky since the time it was established.",
           }),
           new DhikrEntryModel({
             arabic: "وَصَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَدَدَ مَا أَنبَتَتِ الأَرْضُ مُنْذُ دَحَوْتَهَا",
             translit:
               "wa ṣalli ʿalā sayyidinā Muḥammadin ʿadada mā anbatatil arḍu mundhu daḥawtahā",
             translation:
-              "a Bless Our Master Muhammad in quantity as great as all the plants the earth has brought forth since the time it was spread out.",
+              "And bless Our Master Muhammad in quantity as great as all the plants the earth has brought forth since the time it was spread out.",
           }),
           new DhikrEntryModel({
             arabic: "وَصَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَدَدَ النُّجُومِ فِي السَّمَاءِ فَإِنَّكَ أَحْصَيْتَهَا",

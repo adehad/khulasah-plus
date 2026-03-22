@@ -70,7 +70,7 @@ export default [
             arabic: "وَنُورًا عَلَى نُورِهِ الَّذِي مِنْهُ خَلَقْتَهُ",
             translit: "wa nūran ʿalā nūrihil ladhī minhu khalaqtahu",
             translation:
-              "and give him a light beyond his light from which You created. Elevate his station among the stations of the Messengers",
+              "and give him a light beyond his light from which You created",
           }),
           new DhikrEntryModel({
             arabic: "وَأَعْلِ مَقَامَهُ فِي مَقَامَاتِ المُرْسَلِينَ وَدَرَجَتَهُ فِي دَرَجَاتِ النَّبِيِّينَ.",

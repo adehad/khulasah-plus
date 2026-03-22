@@ -90,7 +90,7 @@ export default [
             translit:
               "wa ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin kamā tanbaghīṣ ṣalatu ʿalayhi",
             translation:
-              "bless Our Master Muhammad and the family of Our Master Muhammad in quantity as great as whoever does not bless him.",
+              "And bless Our Master Muhammad and the family of Our Master Muhammad as the prayer upon him befits.",
           }),
           new DhikrEntryModel({
             arabic: "وَصَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا تَجِبُ الصَّلَاةُ عَلَيْهِ",
@@ -420,7 +420,7 @@ export default [
           new DhikrEntryModel({
             arabic: "لَكَ يَا سَيِّدِي بِغَيْرِ جُحُودٍ",
             translit: "laka yā sayyidī bighayri juḥūd",
-            translation: "O my Master",
+            translation: "to You, O my Master, without denial",
           }),
           new DhikrEntryModel({
             arabic: "وَبِكَ يَا اللَّهُ يَا جَلِيلُ فَلَا شَيْءَ يُدَانِيكَ فِي غَلِيظِ العُهُودِ",

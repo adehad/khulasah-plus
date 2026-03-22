@@ -528,17 +528,17 @@ export default [
           new DhikrEntryModel({
             arabic: "صَلَاةً دَائِمَةً بِدَوَامِكَ",
             translit: "ṣalātan dāʾimatan bidawāmika",
-            translation: "with a constant prayer",
+            translation: "with a constant blessing lasting as long as You endure",
           }),
           new DhikrEntryModel({
             arabic: "بَاقِيَةً بِبَقَائِكَ",
             translit: "bāqiyatan bibaqāʾika",
-            translation: "lasting as long as You",
+            translation: "remaining as long as You remain",
           }),
           new DhikrEntryModel({
             arabic: "لَا مُنْتَهَى لَهَا دُونَ عِلْمِكَ",
             translit: "lā muntahā lahā dūna ʿilmika",
-            translation: "remaining as long as You remain",
+            translation: "without end, as only You know",
           }),
           new DhikrEntryModel({
             arabic: "إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ (3)",
@@ -909,7 +909,7 @@ export default [
           new DhikrEntryModel({
             arabic: "وَنَبِيِّكَ وَصَفِيِّكَ",
             translit: "wa nabiyyika wa ṣafiyyika",
-            translation: "and Your Prophet and sincere friend",
+            translation: "and Your Prophet and chosen one",
           }),
           new DhikrEntryModel({
             arabic: "وَخِيرَتِكَ مِنْ خَلْقِكَ",
@@ -1529,12 +1529,12 @@ export default [
           new DhikrEntryModel({
             arabic: "طَيِّبًا مُبَارَكًا فِيهِ",
             translit: "ṭayyiban mubārakan fīhi",
-            translation: "pleasant",
+            translation: "pleasant, blessed",
           }),
           new DhikrEntryModel({
             arabic: "جَزِيلًا جَمِيلًا",
             translit: "jazīlan jamīlan",
-            translation: "blessed, abundant, beautiful",
+            translation: "abundant, beautiful",
           }),
           new DhikrEntryModel({
             arabic: "دَائِمًا بِدَوَامِ مُلْكِ اللَّهِ.",
@@ -1623,7 +1623,7 @@ export default [
           new DhikrEntryModel({
             arabic: "وَبَهَائِكَ وَقُدْرَتِكَ وَسُلْطَانِكَ",
             translit: "wa bahāʾika wa qudratika wa sulṭānika",
-            translation: "majesty",
+            translation: "and by Your splendour, Your power, and Your authority",
           }),
           new DhikrEntryModel({
             arabic:
@@ -1692,7 +1692,7 @@ export default [
           new DhikrEntryModel({
             arabic: "وَعَلَى المَلَائِكَةِ المُقَرَّبِينَ",
             translit: "wa ʿalal malāʾikatil muqarrabīna",
-            translation: "peace be upon him and on the near angels",
+            translation: "and on the near angels",
           }),
           new DhikrEntryModel({
             arabic: "وَأَسْأَلُكَ اللَّهُمَّ بِالأَسْمَاءِ المَكْتُوبَةِ حَوْلَ العَرْشِ",

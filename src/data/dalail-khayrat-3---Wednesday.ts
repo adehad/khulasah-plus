@@ -59,23 +59,23 @@ export default [
               "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الأُمِّيِّ وَأَزْوَاجِهِ أُمَّهَاتِ المُؤْمِنِينَ",
             translit:
               "Allāhumma ṣalli wa ṣallim ʿalā sayyidinā Muḥammadin nabiyyil ummiyyi wa azwājihi ummahātil muʾminīna",
-            translation: "O Allah, bless Our Master Muhammad",
+            translation: "O Allah, bless and grant peace and blessings to Our Master Muhammad the Unlettered Prophet and his wives the mothers of the believers",
           }),
           new DhikrEntryModel({
             arabic: "وَذُرِّيَّتِهِ وَأَهْلِ بَيْتِهِ",
             translit: "wa dhurriyyatihi wa ahli baytihi",
-            translation: "the Unlettered Prophet and his wives",
+            translation: "and his offspring and the Ahl Al-Bayt",
           }),
           new DhikrEntryModel({
             arabic: "صَلَاةً وَسَلَامًا لَا يُحْصَى عَدَدُهُمَا",
             translit: "ṣalātan wa salāman lā yuḥṣa ʿadadahumā",
-            translation: "the mothers of the believers",
+            translation: "with a blessing and peace that cannot be counted",
           }),
           new DhikrEntryModel({
             arabic: "وَلَا يَنْقَطِعُ مَدَدُهُمَا.",
             translit: "wa lā yanqaṭiʿu madaduhumā.",
             translation:
-              "and his offspring and the Ahl Al-Bayt, with a blessing and peace that cannot be counted and that is never interrupted.",
+              "and that is never interrupted.",
           }),
         ],
       }),
@@ -91,12 +91,12 @@ export default [
           new DhikrEntryModel({
             arabic: "وَأَحْصَاهُ كِتَابُكَ",
             translit: "wa aḥṣāhu kitābuka",
-            translation: "with a blessing that pleases You and rewards him",
+            translation: "and what Your Book recorded it",
           }),
           new DhikrEntryModel({
             arabic: "صَلَاةً تَكُونُ لَهُ رِضَاءً",
             translit: "ṣalātan takūnu lahu riḍāʾan",
-            translation: "a blessing that pleases You and rewards him",
+            translation: "with a blessing that pleases You and rewards him",
           }),
           new DhikrEntryModel({
             arabic: "وَلِحَقِّهِ أَدَاءً",
@@ -223,13 +223,13 @@ export default [
           new DhikrEntryModel({
             arabic: "صَلَاةَ مَلَائِكَتِكَ",
             translit:
-              "ṣalātan malāʾikatika wa aʿṭihimā minar riḍwāni ḥatta turḍiyahumā",
+              "ṣalātan malāʾikatika",
             translation: "with the blessing of the angels",
           }),
           new DhikrEntryModel({
             arabic: "وَأَعْطِهِمَا مِنَ الرِّضْوَانِ حَتَّى تُرْضِيَهُمَا",
             translit:
-              "wajzihimā Allāhumma afḍala mā jāzayta bihi aban wa umman ʿan waladayhimā.",
+              "wa aʿṭihimā minar riḍwāni ḥatta turḍiyahumā",
             translation:
               "and give them Your divine grace in as much as You are pleased with them",
           }),
@@ -291,7 +291,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "وَزِنَةَ مَا عَلِمْتَ",
-            translit: "wa zinata mā ʿalimta wa midāda kalimātika.",
+            translit: "wa zinata mā ʿalimta",
             translation: "the measure of all You know",
           }),
           new DhikrEntryModel({

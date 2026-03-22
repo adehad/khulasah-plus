@@ -10,24 +10,24 @@ export default [
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الزَّاهِدِ",
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin nabiyyiz zāhidi",
-            translation: "O Allah, bless Our Master Muhammad",
+            translation: "O Allah, bless Our Master Muhammad, the ascetic Prophet",
           }),
           new DhikrEntryModel({
             arabic: "رَسُولِ المَلِكِ الصَّمَدِ الوَاحِدِ",
             translit: "rasūlil malikiṣ ṣamadil wāḥidi",
-            translation: "the ascetic Prophet",
+            translation: "the Messenger of the Eternal, Unique King",
           }),
           new DhikrEntryModel({
             arabic: "صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ صَلَاةً دَائِمَةً إِلَي مُنْتَهَى الآبَادِ",
             translit:
               "ṣallAllahu ʿalayhi wasṣallama ṣalātan dāʾimatan ilā muntahal ābādi",
-            translation: "the Messenger of the Eternal King",
+            translation:
+              "May Allah bless him and grant him peace with a blessing lasting until the end of eternity",
           }),
           new DhikrEntryModel({
             arabic: "بِلَا انْقِطَاعٍ وَلَا نَفَادٍ",
             translit: "bilan qiṭāʾin wa lā nafādin",
-            translation:
-              "the One. May Allah bless him and grant him peace with a blessing lasting until the end of eternity without interruption or depletion",
+            translation: "without interruption or depletion",
           }),
           new DhikrEntryModel({
             arabic: "صَلَاةً تُنْجِينَا بِهَا مِنْ حَرِّ جَهَنَّمَ وَبِئْسَ المِهَادُ.",
