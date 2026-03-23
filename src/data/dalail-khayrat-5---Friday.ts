@@ -843,7 +843,7 @@ export default [
             translit:
               "Allāhumma wa asʾaluka bi asmāʾikallatī daʿawtuka bihā an tuṣallī ʿalā sayyidinā Muḥammadin ʿadada mā waṣaftu",
             translation:
-              "I ask You by Your Names by which I called on You, to bless Sayyidina Muhammad in quantity as great as what I have described",
+              "I ask You by Your Names by which I called on You, to bless Our Master Muhammad in quantity as great as what I have described",
           }),
           new DhikrEntryModel({
             arabic: "وَمِمَّا لَا يَعْلَمُ عِلْمَهُ إِلَّا أَنْتَ",

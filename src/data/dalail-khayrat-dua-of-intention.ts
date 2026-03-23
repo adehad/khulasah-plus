@@ -84,11 +84,27 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "وَأَسْأَلُكَ رِضَاكَ وَرِضَاهُ يَا رَبَّ العَالَمِينَ مَعَ العَافِيَةِ الدَّائِمَةِ وَالمَوْتِ عَلَى الكِتَابِ وَالسُّنَّةِ وَالجَمَاعَةِ وَكَلِمَتَيْ الشَّهَادَةِ عَلَى تَحْقِيقِهَا مِنْ غَيْرِ تَبْدِيلٍ وَلَا تَغْيِيرٍ. \nوَاغْفِرْ لِي مَا ارْتَكَبْتُهُ بِفَضْلِكَ وَجُودِكَ وَكَرَمِكَ يَا أَرْحَمَ الرَّاحِمِينَ. \nوَصَلَّى اللَّهُ عَلَى سَيِّدِنَا مُحَمَّدٍ خَاتِمِ النَّبِيِّينَ وَإِمَامِ المُرْسَلِينَ وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِينَ وَسَلَامٌ عَلَى المُرْسَلِينَ وَالحَمْدُ لِلَّهِ رَبِّ العَالَمِينَ.",
+              "وَأَسْأَلُكَ رِضَاكَ وَرِضَاهُ يَا رَبَّ العَالَمِينَ مَعَ العَافِيَةِ الدَّائِمَةِ وَالمَوْتِ عَلَى الكِتَابِ وَالسُّنَّةِ وَالجَمَاعَةِ وَكَلِمَتَيْ الشَّهَادَةِ عَلَى تَحْقِيقِهَا مِنْ غَيْرِ تَبْدِيلٍ وَلَا تَغْيِيرٍ.",
             translit:
-              "Wa asʾaluka riḍāka wariḍāhu yā rabbal ʿālamīna maʿal ʿāfiyatid dāʾimati wal mawti ʿalāl kitābi was sunnati wal jamāʿati wa kalimatayyish shahādati ʿalā taḥqīqihā min ghayri tabdīlin wa lā taghyīrin, waghfirlī mārtakabtuhu bifaḍlika wajūdika wakaramika yā arḥamar rāḥimīna, wa ṣallAllāhu ʿalā sayyidinā Muḥammadin khātimin nabiyyīna wa imāmil mursalīna wa ʿalā ālihi waṣaḥbihi ajmaʿīna wasalāmun ʿalāl mursalīna walḥamdu liLlāhi rabbil ʿālamīn.",
+              "Wa asʾaluka riḍāka wariḍāhu yā rabbal ʿālamīna maʿal ʿāfiyatid dāʾimati wal mawti ʿalāl kitābi was sunnati wal jamāʿati wa kalimatayyish shahādati ʿalā taḥqīqihā min ghayri tabdīlin wa lā taghyīrin.",
             translation:
-              "I ask You for Your pleasure, and his gratification, O Lord of the Worlds, and perpetual well-being, and a death in obedience to The Book and the Sunnah, with fulfillment of my shahadah without alteration. Forgive me, by Your favour, bounty and generosity, for what I have done, O Most Merciful of the merciful. May Allah bless Our Master Muhammad, the Seal of the Prophets and Imam of the Messengers, and his family and all his Companions, and grant them peace. Peace be upon the Messengers, and praise be to Allah, the Lord of the Worlds.",
+              "I ask You for Your pleasure, and his gratification, O Lord of the Worlds, and perpetual well-being, and a death in obedience to The Book and the Sunnah, with fulfillment of my shahadah without alteration.",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَاغْفِرْ لِي مَا ارْتَكَبْتُهُ بِفَضْلِكَ وَجُودِكَ وَكَرَمِكَ يَا أَرْحَمَ الرَّاحِمِينَ.",
+            translit:
+              "Waghfirlī mārtakabtuhu bifaḍlika wajūdika wakaramika yā arḥamar rāḥimīn.",
+            translation:
+              "Forgive me, by Your favour, bounty and generosity, for what I have done, O Most Merciful of the merciful.",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَصَلَّى اللَّهُ عَلَى سَيِّدِنَا مُحَمَّدٍ خَاتِمِ النَّبِيِّينَ وَإِمَامِ المُرْسَلِينَ وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِينَ وَسَلَامٌ عَلَى المُرْسَلِينَ وَالحَمْدُ لِلَّهِ رَبِّ العَالَمِينَ.",
+            translit:
+              "Wa ṣallAllāhu ʿalā sayyidinā Muḥammadin khātimin nabiyyīna wa imāmil mursalīna wa ʿalā ālihi waṣaḥbihi ajmaʿīna wasalāmun ʿalāl mursalīna walḥamdu liLlāhi rabbil ʿālamīn.",
+            translation:
+              "May Allah bless Our Master Muhammad, the Seal of the Prophets and Imam of the Messengers, and his family and all his Companions, and grant them peace. Peace be upon the Messengers, and praise be to Allah, the Lord of the Worlds.",
           }),
         ],
       }),

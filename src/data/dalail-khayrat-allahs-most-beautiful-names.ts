@@ -903,12 +903,32 @@ export default [
             translation: "His Essence is pure beyond any likeness",
           }),
           new DhikrEntryModel({
-            arabic:
-              "وَتَنَزَّهَتْ عَنْ مُشَابَهَةِ الأَمْثَالِ صِفَاتُهُ. وَاحِدٌ لَا مِنْ قِلَّةٍ وَمَوْجُودٌ لَا مِنْ عِلَّةٍ. بِالبِرِّ مَعْرُوفٌ وَبِالإِحْسَانِ مَوْصُوفٌ. مَعْرُوفٌ بِلَا غَايَةٍ وَمَوْصُوفٌ بِلَا نِهَايَةٍ. أَوَّلٌ بِلَا ابْتِدَاءٍ",
-            translit:
-              "watanazzahat ʿan mushābahatil amthāli ṣifātuhu wāḥidun lā min qillatin wamawjūdun lā min ʿillatin bilbirri maʿrūfun wabil iḥsāni mawṣūfun maʿrūfun bilā ghāyatin wa mawṣūfun bilā nihāyatin awwalun bilāb tidāʾin",
+            arabic: "وَتَنَزَّهَتْ عَنْ مُشَابَهَةِ الأَمْثَالِ صِفَاتُهُ",
+            translit: "watanazzahat ʿan mushābahatil amthāli ṣifātuhu",
             translation:
-              "and His Attributes are exalted beyond any resemblance to any similarities. He is One, not among any one or thing, and Exists, but is not begotten. He is acclaimed for kindness, and renowned for giving the best of generosity, and this attribution is boundless. He is First",
+              "His Attributes are exalted beyond any resemblance to any similarities.",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَاحِدٌ لَا مِنْ قِلَّةٍ وَمَوْجُودٌ لَا مِنْ عِلَّةٍ",
+            translit: "wāḥidun lā min qillatin wamawjūdun lā min ʿillatin",
+            translation:
+              "He is One, not among any one or thing, and Exists, but is not begotten.",
+          }),
+          new DhikrEntryModel({
+            arabic: "بِالبِرِّ مَعْرُوفٌ وَبِالإِحْسَانِ مَوْصُوفٌ",
+            translit: "bilbirri maʿrūfun wabil iḥsāni mawṣūfun",
+            translation:
+              "He is acclaimed for kindness, and renowned for giving the best of generosity.",
+          }),
+          new DhikrEntryModel({
+            arabic: "مَعْرُوفٌ بِلَا غَايَةٍ وَمَوْصُوفٌ بِلَا نِهَايَةٍ",
+            translit: "maʿrūfun bilā ghāyatin wa mawṣūfun bilā nihāyatin",
+            translation: "This attribution is boundless.",
+          }),
+          new DhikrEntryModel({
+            arabic: "أَوَّلٌ بِلَا ابْتِدَاءٍ",
+            translit: "awwalun bilāb tidāʾin",
+            translation: "He is First, without beginning.",
           }),
           new DhikrEntryModel({
             arabic: "وَآخِرٌ بِلَا انْتِهَاءٍ. لَا يُنْسَبُ إِلَيْهِ البَنُونَ",
@@ -1063,11 +1083,27 @@ export default [
           }),
           new DhikrEntryModel({
             arabic:
-              "يَا غِيَاثَ المُسْتَغِيثِينَ لَا إِلَهَ إِلَّا أَنْتَ بِجَاهِ سَيِّدِنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ أَغِثْنَا وَارْحَمْنَا. رَحْمَةُ اللَّهِ وَبَرَكَاتُهُ عَلَيْكُمْ أَهْلَ البَيْتِ إِنَّهُ حَمِيدٌ مَجِيدٌ: \n\n\t\n\t\t﴿\n\t\t\nإِنَّمَا يُرِيدُ اللَّهُ لِيُذْهِبَ عَنكُمُ الرِّجْسَ أَهْلَ الْبَيْتِ وَيُطَهِّرَكُمْ تَطْهِيرًا\n\t\t\n\t\t\t\t\n\t\t\t\t﴾ \n\t\t;\n\t\t\n\t﴿إِنَّ اللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا﴾\n .",
+              "يَا غِيَاثَ المُسْتَغِيثِينَ لَا إِلَهَ إِلَّا أَنْتَ بِجَاهِ سَيِّدِنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ أَغِثْنَا وَارْحَمْنَا.",
             translit:
-              "yā ghayyāthal mustaghīthīna lā ilāha illā anta bijāhi sayyidinā Muḥammadin ṣallAllāhu ʿalayhi wasallama aghithnā warḥamnā. RaḥmatuLlāhi wa barakātuhu ʿalaykum ahlal bayti innahu ḥamīdun majīdun: innamā yurīduLlāhu liyudh-hiba ʿankumur rijsa ahlal bayti wa yuṭahhirakum taṭhīran; innaLlāha wamalāʾikatahu yuṣallūna ʿalān nabiyyi yā ayyuhāl ladhīna āmanū ṣallū ʿalayhi wasallimū taslīman.",
+              "yā ghayyāthal mustaghīthīna lā ilāha illā anta bijāhi sayyidinā Muḥammadin ṣallAllāhu ʿalayhi wasallama aghithnā warḥamnā.",
             translation:
-              "O You Who help those who ask for help. There is no god but You. By the honour of Our Master Muhammad may Allah bless him and grant him peace give us succour and show us mercy. May the mercy of Allah and His blessings be upon you, People of the House. He is Praiseworthy, Glorious. Allah desires to remove all impurity from you, People of the House, and to purify you completely. Allah and His angels call down blessings on the Prophet. O you who believe, call down blessings on him and ask for complete peace and safety for him.",
+              "O You Who help those who ask for help. There is no god but You. By the honour of Our Master Muhammad, may Allah bless him and grant him peace, give us succour and show us mercy.",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "رَحْمَةُ اللَّهِ وَبَرَكَاتُهُ عَلَيْكُمْ أَهْلَ البَيْتِ إِنَّهُ حَمِيدٌ مَجِيدٌ: ﴿إِنَّمَا يُرِيدُ اللَّهُ لِيُذْهِبَ عَنكُمُ الرِّجْسَ أَهْلَ الْبَيْتِ وَيُطَهِّرَكُمْ تَطْهِيرًا﴾",
+            translit:
+              "RaḥmatuLlāhi wa barakātuhu ʿalaykum ahlal bayti innahu ḥamīdun majīdun: innamā yurīduLlāhu liyudh-hiba ʿankumur rijsa ahlal bayti wa yuṭahhirakum taṭhīran.",
+            translation:
+              "May the mercy of Allah and His blessings be upon you, People of the House. He is Praiseworthy, Glorious. Allah desires to remove all impurity from you, People of the House, and to purify you completely.",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "﴿إِنَّ اللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا﴾",
+            translit:
+              "innaLlāha wamalāʾikatahu yuṣallūna ʿalān nabiyyi yā ayyuhāl ladhīna āmanū ṣallū ʿalayhi wasallimū taslīman.",
+            translation:
+              "Allah and His angels call down blessings on the Prophet. O you who believe, call down blessings on him and ask for complete peace and safety for him.",
           }),
         ],
       }),
@@ -1075,11 +1111,18 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "اللَّهُمَّ \n\n صَلِّ أَفْضَلَ صَلَاةٍ عَلَى أَسْعَدِ مَخْلُوقَاتِكَ سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ عَدَدَ مَعْلُومَاتِكَ وَمِدَادَ كَلِمَاتِكَ كُلَّمَا ذَكَرَكَ الذَّاكِرُونَ وَغَفَلَ عَنْ \nذِكْرِهِ الْغَافِلُونَ.",
+              "اللَّهُمَّ صَلِّ أَفْضَلَ صَلَاةٍ عَلَى أَسْعَدِ مَخْلُوقَاتِكَ سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ عَدَدَ مَعْلُومَاتِكَ وَمِدَادَ كَلِمَاتِكَ",
             translit:
-              "Allāhumma ṣalli afḍala ṣalātin ʿalā asʿadi makhlūqātika Sayyidinā Muḥammadin wa ʿalā ʾālihi wa ṣaḥbihi wa sallim ʿadada maʿlūmātika wa midāda kalimātika kullamā dhakarakadh dhākirūna wa ghafala ʿan dhikrihil ghāfilūn.",
+              "Allāhumma ṣalli afḍala ṣalātin ʿalā asʿadi makhlūqātika Sayyidinā Muḥammadin wa ʿalā ʾālihi wa ṣaḥbihi wa sallim ʿadada maʿlūmātika wa midāda kalimātika",
             translation:
-              "O Allah, send the best blessings to the happiest of Your creatures, Our Master Muhammad and on his family and Companions and grant him peace - in number as great as what You know, and the ink (that writes) Your words when those who remember You, remember; and those who neglect You, neglect.",
+              "O Allah, send the best blessings to the happiest of Your creatures, Our Master Muhammad and on his family and Companions and grant him peace - in number as great as what You know, and the ink (that writes) Your words",
+          }),
+          new DhikrEntryModel({
+            arabic: "كُلَّمَا ذَكَرَكَ الذَّاكِرُونَ وَغَفَلَ عَنْ ذِكْرِهِ الْغَافِلُونَ.",
+            translit:
+              "kullamā dhakarakadh dhākirūna wa ghafala ʿan dhikrihil ghāfilūn.",
+            translation:
+              "when those who remember You, remember; and those who neglect You, neglect.",
           }),
         ],
       }),
