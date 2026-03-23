@@ -2,7 +2,7 @@ import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
-    title: "Wird",
+    title: "Dalāʾil al-Khayrāt - Opening Duʿāʾ",
     entries: [
       new DhikrModel({
         entries: [
