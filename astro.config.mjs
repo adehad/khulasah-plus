@@ -68,5 +68,20 @@ export default defineConfig({
       __WORKBOX_VERSION__: JSON.stringify(WORKBOX_VERSION),
       __SHOELACE_VERSION__: JSON.stringify(SHOELACE_VERSION),
     },
+    plugins: [
+      {
+        name: "reload-data-files",
+        handleHotUpdate({ file, server }) {
+          if (file.replace(/\\/g, "/").includes("/src/data/")) {
+            // hot-reloading when the content files changes does not re-render the DOM
+            // as it is cached, this forces a full restart server.restart()
+            // which forces Astro to re-run getStaticPaths()
+            // and re-evaluate all import.meta.glob calls from scratch.
+            server.restart();
+            return [];
+          }
+        },
+      },
+    ],
   },
 });

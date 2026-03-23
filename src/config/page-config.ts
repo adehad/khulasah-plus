@@ -526,6 +526,16 @@ export const pageConfigs: PageConfig[] = [
     contentImportPath: "dalail-khayrat-allahs-most-beautiful-names",
   },
   {
+    path: "salawat-compilations/dalail-khayrat/names-of-prophet",
+    title: "Names of The Prophet ﷺ",
+    contentImportPath: "dalail-khayrat-names-of-prophet",
+  },
+  {
+    path: "salawat-compilations/dalail-khayrat/dua-of-completion",
+    title: "Dua of Completion",
+    contentImportPath: "dalail-khayrat-dua-of-completion",
+  },
+  {
     path: "salawat-compilations/majma-al-lataif",
     title: "Majma al-Lata'if al-Arshiyyah",
     contentImportPath: "salawat-compilations-majma-al-lataif-index",
