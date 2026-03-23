@@ -91,8 +91,7 @@ export default [
               "I ask You for Your pleasure, and his gratification, O Lord of the Worlds, and perpetual well-being, and a death in obedience to The Book and the Sunnah, with fulfillment of my shahadah without alteration.",
           }),
           new DhikrEntryModel({
-            arabic:
-              "وَاغْفِرْ لِي مَا ارْتَكَبْتُهُ بِفَضْلِكَ وَجُودِكَ وَكَرَمِكَ يَا أَرْحَمَ الرَّاحِمِينَ.",
+            arabic: "وَاغْفِرْ لِي مَا ارْتَكَبْتُهُ بِفَضْلِكَ وَجُودِكَ وَكَرَمِكَ يَا أَرْحَمَ الرَّاحِمِينَ.",
             translit:
               "Waghfirlī mārtakabtuhu bifaḍlika wajūdika wakaramika yā arḥamar rāḥimīn.",
             translation:
