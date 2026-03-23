@@ -24,7 +24,7 @@ export default [
             translit:
               "Allāhumma ṣalli wa sallim wa bārik ʿalā man ashraful asmāʾi sayyidunā Muḥammadun ṣallAllāhu ʿalayhi wasallam.",
             translation:
-              "O Allah, bless, grant peace and sactify the one with the noblest of names, Our Master: Muhammad, may Allah bless him and grant him peace.",
+              "O Allah, bless, grant peace and sanctify the one with the noblest of names, Our Master: Muhammad, may Allah bless him and grant him peace.",
           }),
         ],
       }),

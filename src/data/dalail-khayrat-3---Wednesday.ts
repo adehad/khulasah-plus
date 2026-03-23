@@ -86,12 +86,12 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin ʿadada ma aḥāṭa bihi ʿilmuka",
             translation:
-              "O Allah, bless Our Master Muhammad in quantity as great as what Your knowledge encompasses and what Your Book contains",
+              "O Allah, bless Our Master Muhammad in quantity as great as what Your knowledge encompasses",
           }),
           new DhikrEntryModel({
             arabic: "وَأَحْصَاهُ كِتَابُكَ",
             translit: "wa aḥṣāhu kitābuka",
-            translation: "and what Your Book recorded it",
+            translation: "and what Your Book has enumerated",
           }),
           new DhikrEntryModel({
             arabic: "صَلَاةً تَكُونُ لَهُ رِضَاءً",
@@ -714,7 +714,7 @@ export default [
             arabic: "وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ تَسْلِيمًا",
             translit: "wa ʿalā ālihi wa ṣaḥbihi wa sallim tasliman",
             translation:
-              "affirmed and victorious. And bless his family and companions and grant them peace",
+              "And bless his family and companions and grant them peace",
           }),
           new DhikrEntryModel({
             arabic: "وَالحَمْدُ لِلَّهِ عَلَى ذَلِكَ.",

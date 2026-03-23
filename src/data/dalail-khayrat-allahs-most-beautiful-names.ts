@@ -934,7 +934,7 @@ export default [
             arabic: "وَآخِرٌ بِلَا انْتِهَاءٍ. لَا يُنْسَبُ إِلَيْهِ البَنُونَ",
             translit: "wa ākhirun bilāntihāʾin lā yunsabu ilayhil banūna",
             translation:
-              "without beginning, and Last, without end. Sons are not ascribed to Him.",
+              "And Last, without end. Sons are not ascribed to Him.",
           }),
           new DhikrEntryModel({
             arabic: "وَلَا يُفْنِيهِ تَدَاوُلُ الأَوْقَاتِ",

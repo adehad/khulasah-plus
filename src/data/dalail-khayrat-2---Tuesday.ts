@@ -24,7 +24,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "إِنَّكَ تَعْلَمُ وَلَا نَعْلَمُ",
-            translit: "innaka taʿlamu walā naʿlamu wa anta ʿallāmul ghuyūb.",
+            translit: "innaka taʿlamu walā naʿlamu",
             translation: "You know and we do not know",
           }),
           new DhikrEntryModel({
@@ -592,7 +592,7 @@ export default [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا وَمَوْلَانَا مُحَمَّدٍ عَدَدَ دَوَابِّ القِفَارِ.",
             translit:
-              "Allāhumma ṣalli ʿalā sayyidinā wa mawlānā Muhammmadin ʿadada dawābbil qifār.",
+              "Allāhumma ṣalli ʿalā sayyidinā wa mawlānā Muhammadin ʿadada dawābbil qifār.",
             translation:
               "O Allah, bless Our Master, Mawlana Muhammad in quantity as great as the beasts of the wastelands.",
           }),

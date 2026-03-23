@@ -45,18 +45,18 @@ export default [
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الأُمِّيِّ وَعَلَى آلِهِ وَسَلِّمْ",
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muhammadin nabiyyil ummiyyi wa ʿalā ālihi wa ṣallim",
-            translation: "O Allah, bless Our Master Muhammad",
+            translation:
+              "O Allah, bless Our Master Muhammad, the unlettered Prophet, and his family, and grant them peace",
           }),
           new DhikrEntryModel({
             arabic: "صَلَاةً لَا يُحْصَى لَهَا عَدَدٌ",
             translit: "ṣalātan lā yuḥṣa lahā ʿadadun",
-            translation: "the unlettered Prophet",
+            translation: "with a blessing that cannot be counted in number",
           }),
           new DhikrEntryModel({
             arabic: "وَلَا يُعَدُّ لَهَا مَدَدٌ.",
             translit: "wa lā yuʿaddu lahā madad.",
-            translation:
-              "and his family, and grant them peace with a blessing that cannot be counted in number nor scale.",
+            translation: "nor scale.",
           }),
         ],
       }),

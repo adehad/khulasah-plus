@@ -540,7 +540,7 @@ export default [
             arabic:
               "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ عَدَدَ نَبَاتِ الأَرْضِ مِنْ قِبْلَتِهَا وَشَرْقِهَا وَغَرْبِهَا",
             translit:
-              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin nabiyyi ʿadada nabātil arḍi min qiblatihā wa sharqihā wa gharbihā wa sahlihā wa jibālihā wa awdiyatihā wa ashjārihā wa thimārihā wa awrāqiha wa zurūʿiha wa jamīʿi mā yakhruju min nabātiha wa barakātiha min yawmi khalaqtad dunyā ilā yawmil qiyāmati fī kulli yawmin alfa marrah.",
+              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin nabiyyi ʿadada nabātil arḍi min qiblatihā wa sharqihā wa gharbihā",
             translation:
               "O Allah, bless Our Master Muhammad in quantity as great as the plants of the earth from its qibla",
           }),
@@ -1167,23 +1167,24 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin ʿadada ṣufūfil malāʾikati wa tasbīḥihim wa taqdīsihim",
             translation:
-              "O Allah, bless Our Master Muhammad and the family of Our Master Muhammad in quantity as great as the ranks of the angels",
+              "O Allah, bless Our Master Muhammad and the family of Our Master Muhammad in quantity as great as the ranks of the angels and their glorification and sanctification of You",
           }),
           new DhikrEntryModel({
             arabic: "وَتَحْمِيدِهِمْ وَتَمْجِيدِهِمْ",
             translit: "wa taḥmīdihim wa tamjīdihim",
-            translation: "their glorification of You",
+            translation: "and their praise and exaltation of You",
           }),
           new DhikrEntryModel({
             arabic: "وَتَكْبِيرِهِمْ وَتَهْلِيلِهِمْ",
             translit: "wa takbīrihim wa taḥlīlihim",
-            translation: "declaring Your holiness",
+            translation:
+              'and their saying "Allahu Akbar" and "La Ilaha Illa Allah"',
           }),
           new DhikrEntryModel({
             arabic: "مِنْ يَوْمِ خَلَقْتَ الدُّنْيَا إِلَى يَوْمِ القِيَامَةِ.",
             translit: "min yawmi khalaqtad dunyā ilā yawmil qiyāmah.",
             translation:
-              'praising You, exalting You, and saying "Allahu Akbar" and "La Ilaha Illa Allah" from the day You created the world until the Day of Resurrection.',
+              "from the day You created the world until the Day of Resurrection.",
           }),
         ],
       }),
@@ -1195,7 +1196,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin ʿadadas saḥābil jāriyati",
             translation:
-              "O Allah, bless our Our Master Muhammad and the family of Our Master Muhammad in every rolling cloud and sweeping wind from the day You created this world until the Day of Resurrection.",
+              "O Allah, bless Our Master Muhammad and the family of Our Master Muhammad in quantity as great as every rolling cloud",
           }),
           new DhikrEntryModel({
             arabic: "وَالرِّيَاحِ الذَّارِيَةِ",
@@ -1354,7 +1355,7 @@ export default [
             arabic:
               "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ عَدَدَ الأَحْيَاءِ وَالأَمْوَاتِ.",
             translit:
-              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin ʿadada alahyāʾi wal amwāt.",
+              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin ʿadada alahyāʾi wal amwāt.",
             translation:
               "O Allah, bless Our Master Muhammad and the family of Our Master Muhammad in quantity as great as the living and the dead.",
           }),
@@ -1366,7 +1367,7 @@ export default [
             arabic:
               "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ عَدَدَ مَا أَظْلَمَ عَلَيْهِ اللَّيْلُ وَأَشْرَقَ عَلَيْهِ النَّهَارُ، مِنْ يَوْمِ خَلَقْتَ الدُّنْيَا إِلَى يَوْمِ القِيَامَةِ.",
             translit:
-              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin ʿadada ma aẓlama ʿalayhil laylu wa ashraqa ʿalayhin naharu, min yawmi khalaqtad dunyā ilā yawmil qiyāmah.",
+              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin ʿadada ma aẓlama ʿalayhil laylu wa ashraqa ʿalayhin naharu, min yawmi khalaqtad dunyā ilā yawmil qiyāmah.",
             translation:
               "O Allah, bless Our Master Muhammad and the family of Our Master Muhammad in quantity as great as what the night darkens and upon what the day shines, from the day You created the world until the Day of Resurrection.",
           }),
@@ -1378,7 +1379,7 @@ export default [
             arabic:
               "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ عَدَدَ مَنْ يَمْشِي عَلَى رِجْلَيْنِ",
             translit:
-              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin ʿadada man yamshi ala rijlayni",
+              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin ʿadada man yamshi ala rijlayni",
             translation:
               "O Allah, bless Our Master Muhammad and the family of Our Master Muhammad in quantity as great as all the beings that walk on two legs",
           }),
@@ -1403,7 +1404,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin ʿadada man ṣalla ʿalayhi minal jinni wal insi wal malāʾikati, min yawmi khalaqtad dunyā ilā yawmil qiyāmah.",
             translation:
-              "O Allah, bless Our Master Muhammad and the family of Our Master Muhammad in quantity as great as whoever blesses him from jinn, men, and angels from the day You created the world until the Day of Resurrection.",
+              "O Allah, bless Our Master Muhammad in quantity as great as whoever blesses him from jinn, men, and angels from the day You created the world until the Day of Resurrection.",
           }),
         ],
       }),
@@ -1414,7 +1415,7 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin ʿadada man lam yuṣalli ʿalayhi.",
             translation:
-              "O Allah, bless Our Master Muhammad and the family of Our Master Muhammad in quantity as great as whoever does not bless him.",
+              "O Allah, bless Our Master Muhammad in quantity as great as whoever does not bless him.",
           }),
         ],
       }),

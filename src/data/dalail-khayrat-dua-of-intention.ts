@@ -12,7 +12,7 @@ export default [
             translit:
               "Allāhumma innī nawaytu biṣṣalāti ʿalān nabiyyi ṣallAllāhu ʿalayhi wasallama",
             translation:
-              "O Allah! I intend to ask for blessings upon on the Prophet may Allah bless him and grant him peace",
+              "O Allah! I intend to ask for blessings upon the Prophet may Allah bless him and grant him peace",
           }),
           new DhikrEntryModel({
             arabic: "امْتِثَالًا لِأَمْرِكَ",

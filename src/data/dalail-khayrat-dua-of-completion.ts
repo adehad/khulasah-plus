@@ -161,7 +161,7 @@ export default [
           new DhikrEntryModel({
             arabic: "وَلَا تُفَرِّقْ بَيْنَنَا وَبَيْنَهُ حَتَّى تُدْخِلَنَا مُدْخَلَهُ",
             translit:
-              "wa lā tufarriq baynanā wa baynahu ḥattā tudkhilanā madkhalaḥ",
+              "wa lā tufarriq baynanā wa baynahu ḥattā tudkhilanā madkhala",
             translation:
               "and do not separate us from him until You admit us through his entrance",
           }),

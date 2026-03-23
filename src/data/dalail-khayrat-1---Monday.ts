@@ -66,7 +66,7 @@ export default [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الأُمِّيِّ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ.",
             translit:
-              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin nabiyyil ummiyyi wa ʿalā āli Our Master Muḥammad.",
+              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin nabiyyil ummiyyi wa ʿalā āli sayyidinā Muḥammad.",
             translation:
               "O Allah, bless Our Master Muhammad, the Unlettered Prophet, and the family of Our Master Muhammad.",
           }),
@@ -929,14 +929,13 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "وَعَلَى أَهْلِ بَيْتِهِ",
-            translit: "wa ʿalā ahli baytihi wa ʿitratihiṭ ṭāhirina",
-            translation:
-              "And bless the People of his House and his pure family,",
+            translit: "wa ʿalā ahli baytihi",
+            translation: "And bless the People of his House",
           }),
           new DhikrEntryModel({
             arabic: "وَعِتْرَتِهِ الطَّاهِرِينَ وَسَلَّمَ تَسْلِيمًا.",
-            translit: "wa sallama taslimā.",
-            translation: "and grant them peace.",
+            translit: "wa ʿitratihiṭ ṭāhirīna wa sallama taslīmā.",
+            translation: "and his pure family, and grant them peace.",
           }),
         ],
       }),

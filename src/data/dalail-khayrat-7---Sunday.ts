@@ -51,27 +51,26 @@ export default [
             translit:
               "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadadar riyāḥidh dhāriyati",
             translation:
-              "from the day You created the world until the Day of Resurrection - times a thousand",
+              "every day. Bless him and his family in quantity as great as the driving winds",
           }),
           new DhikrEntryModel({
             arabic: "مِنْ يَوْمِ خَلَقْتَ الدُّنْيَا إِلَى يَوْمِ القِيَامَةِ فِي كُلِّ يَوْمٍ أَلْفَ مَرَّةٍ",
             translit:
               "min yawmi khalaqtad dunyā ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
             translation:
-              "every day. Bless him and his family in quantity as great as the driving winds",
+              "from the day You created the world until the Day of Resurrection - times a thousand",
           }),
           new DhikrEntryModel({
             arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ مَا هَبَّتِ الرِّيَاحُ عَلَيْهِ",
             translit:
               "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadada mā habbatir riyāḥu ʿalayhi",
             translation:
-              "from the day You created the world until the Day of Resurrection - times a thousand",
+              "every day. Bless him and his family in quantity as great as what the winds blow upon it",
           }),
           new DhikrEntryModel({
             arabic: "وَحَرَّكَتْهُ مِنَ الأَغْصَانِ وَالأَشْجَارِ",
             translit: "wa ḥarrakat-hu minal aghsāni wal ashjāri",
-            translation:
-              "every day. Bless him and his family in quantity as great as what the winds blow upon it and move of branches and trees",
+            translation: "and moved of branches and trees",
           }),
           new DhikrEntryModel({
             arabic: "وَالأَوْرَاقِ وَالثِّمَارِ وَالأَزْهَارِ",
@@ -1069,8 +1068,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى مَلَائِكَتِكَ وَالمُقَرَّبِينَ",
-            translit:
-              "Allāhumma ṣalli ʿalā malāʾikatika wal muqarrabīnalladhina yusabbiḥūnal layla wan nahāra lā yafturūn",
+            translit: "Allāhumma ṣalli ʿalā malāʾikatika wal muqarrabīn",
             translation: "O Allah, bless the angels and those who are close",
           }),
           new DhikrEntryModel({
