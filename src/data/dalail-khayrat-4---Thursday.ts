@@ -1622,7 +1622,8 @@ export default [
             arabic: "وَبِمَا حَمَلَ كُرْسِيُّكَ مِنْ عَظَمَتِكَ وَجَلَالِكَ وَجَمَالِكَ",
             translit:
               "wa bimā ḥamala kursiyyuka min ʿaẓamatika wa jalālika wa jamālika",
-            translation: "by what carries Your Footstool of Your sublimity",
+            translation:
+              "and by what Your Footstool carries of Your sublimity, Your majesty, and Your beauty",
           }),
           new DhikrEntryModel({
             arabic: "وَبَهَائِكَ وَقُدْرَتِكَ وَسُلْطَانِكَ",
@@ -1636,7 +1637,7 @@ export default [
             translit:
               "wa biḥaqqi asmāʾikal makhzūnatil maknūnatillatī lam yaṭṭaliʿ ʿalayhā aḥadun min khalqika.",
             translation:
-              "beauty, radiance, power and might, and by the right of Your hidden, treasured Names of which none of Your creation has knowledge.",
+              "and by the right of Your hidden, treasured Names of which none of Your creation has knowledge.",
           }),
         ],
       }),
@@ -1690,9 +1691,9 @@ export default [
           new DhikrEntryModel({
             arabic: "وَبِالأَسْمَاءِ المَكْتُوبَةِ فِي جَبْهَةِ سَيِّدِنَا جِبْرِيلَ عَلَيْهِ السَّلَامُ",
             translit:
-              "wa bil asmāʾil maktūbati fī jabhati sayyidanā Jibrīla ʿalayhis salamu",
+              "wa bil asmāʾil maktūbati fī jabhati sayyidanā Jibrīla ʿalayhis salāmu",
             translation:
-              "and by the names written on the brow of Our Master Jibril",
+              "and by the names written on the brow of Our Master Jibril, peace be upon him",
           }),
           new DhikrEntryModel({
             arabic: "وَعَلَى المَلَائِكَةِ المُقَرَّبِينَ",
