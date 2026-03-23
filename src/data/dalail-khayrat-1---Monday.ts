@@ -277,7 +277,7 @@ export default [
           new DhikrEntryModel({
             arabic: "وَمُنِيرَاتِ الإِسْلَامِ",
             translit: "wa munīratil islāmi",
-            translation: "and the lights of Islam. ",
+            translation: "and the lights of Islam.",
           }),
           new DhikrEntryModel({
             arabic: "فَهُوَ أَمِينُكَ المَأْمُونُ",
@@ -292,7 +292,7 @@ export default [
           new DhikrEntryModel({
             arabic: "وَشَهِيدُكَ يَوْمَ الدِّينِ",
             translit: "wa shahīduka yawmaddini",
-            translation: "and Your witness on the Day of Resurrection. ",
+            translation: "and Your witness on the Day of Resurrection.",
           }),
           new DhikrEntryModel({
             arabic: "وَبَعِيثُكَ نِعْمَةً",
@@ -310,8 +310,8 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ افْسَحْ لَهُ فِي عَدْنِكَ",
-            translit: "Allāhummafsaḥ lahu fī ʿadnika  ",
-            translation: "O Allah, expand a space for him in Your Paradise ",
+            translit: "Allāhummafsaḥ lahu fī ʿadnika",
+            translation: "O Allah, expand a space for him in Your Paradise",
           }),
           new DhikrEntryModel({
             arabic: "وَاجْزِهِ مُضَاعَفَاتِ الخَيْرِ مِن فَضْلِكَ مُهَنَّئَاتٍ لَهُ غَيْرَ مُكَدَّرَاتٍ",
@@ -355,7 +355,7 @@ export default [
             arabic: "وَاجْزِهِ مِنِ ابْتِعَاثِكَ لَهُ مَقْبُولَ الشَّهَادَةِ",
             translit: "wajzihi minibtiʿāthika lahu maqbūlash shahādati",
             translation:
-              "and reward him with Your approval so his testimony is accepted ",
+              "and reward him with Your approval so his testimony is accepted",
           }),
           new DhikrEntryModel({
             arabic: "وَمَرْضِيَّ المَقَالَةِ",
@@ -379,7 +379,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic:
-              "﴿ إِنَّ اللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا  ﴾",
+              "﴿ إِنَّ اللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا ﴾",
             translit:
               "InnAllaha wa malāʾikatahu yuṣallūna ʿalan nabiyyi yā ayyuhalladhīna āmanū ṣallū ʿalayhi wa sallimū taslīman.",
             translation:
@@ -430,7 +430,7 @@ export default [
           new DhikrEntryModel({
             arabic: "وَإِمَامِ المُتَّقِينَ",
             translit: "wa imāmil muttaqīna",
-            translation: "the Imam of the Godfearing ",
+            translation: "the Imam of the Godfearing",
           }),
           new DhikrEntryModel({
             arabic: "وَرَسُولِ رَبِّ العَالَمِينَ",
@@ -444,7 +444,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "الدَّاعِي إِلَيْكَ بِإِذْنِكَ",
-            translit: "addāʿī ilayka bi idhnikas ",
+            translit: "addāʿī ilayka bi idhnikas",
             translation: "the one who calls to You with Your permission",
           }),
           new DhikrEntryModel({
@@ -466,7 +466,7 @@ export default [
             translit:
               "Allāhumma ajʿal ṣalawātika wa barakātika wa raḥmataka ʿalā sayyidil mursālīna",
             translation:
-              "O Allah, bestow Your blessings, barakah and mercy on the Master of the Messengers ",
+              "O Allah, bestow Your blessings, barakah and mercy on the Master of the Messengers",
           }),
           new DhikrEntryModel({
             arabic: "وَإِمَامِ المُتَّقِينَ",
@@ -764,7 +764,7 @@ export default [
           new DhikrEntryModel({
             arabic: "وَارْزُقْنِي صُحْبَتَهُ",
             translit: "war zuqnī ṣuḥbtahu",
-            translation: "and grant me his company.  ",
+            translation: "and grant me his company.",
           }),
           new DhikrEntryModel({
             arabic: "وَتَوَفَّنِي عَلَى مِلَّتِهِ",
@@ -833,7 +833,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "وَآتِهِ سُؤْلَهُ فِي الآخِرَةِ وَالأُولَى",
-            translit: "wa ātihi suʾlahu fīl ākhirati wal ūlā ",
+            translit: "wa ātihi suʾlahu fīl ākhirati wal ūlā",
             translation:
               "and give him what he asks for in the Next World and the First (World)",
           }),
@@ -876,7 +876,7 @@ export default [
             arabic: "وَسَيِّدِنَا مُوسَى كَلِيمِكَ وَنَجِيِّكَ",
             translit: "wa sayyidinā Mūsā kalīmika wa najiyyika",
             translation:
-              "and to Our Master Musa, Your confidant to whom You spoke (directly) ",
+              "and to Our Master Musa, Your confidant to whom You spoke (directly)",
           }),
           new DhikrEntryModel({
             arabic: "وَسَيِّدِنَا عِيسَى رُوحِكَ وَكَلِمَتِكَ",
@@ -962,7 +962,7 @@ export default [
           new DhikrEntryModel({
             arabic: "وَجَمِيعِ عِبَادِ اللَّهِ الصَّالِحِينَ",
             translit: "wa jamīʿi ʿibādiLlāhiṣ ṣāliḥīn",
-            translation: "and all the righteous servants of Allah ",
+            translation: "and all the righteous servants of Allah",
           }),
           new DhikrEntryModel({
             arabic: "عَدَدَ مَا أَمْطَرَتِ السَّمَاءُ مُنْذُ بَنَيْتَهَا",
@@ -982,14 +982,14 @@ export default [
             translit:
               "wa ṣalli ʿalā sayyidinā Muḥammadin ʿadadan nujūmi fīssamāʾi fa innaka aḥṣaytaha",
             translation:
-              " Bless Our Master Muhammad in quantity as great as the stars in the sky for it is You who can count them. ",
+              " Bless Our Master Muhammad in quantity as great as the stars in the sky for it is You who can count them.",
           }),
           new DhikrEntryModel({
             arabic: "وَصَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَدَدَ مَا تَنَفَّسَتِ الأَرْوَاحُ مُنْذُ خَلَقْتَهَا",
             translit:
               "wa ṣalli ʿalā sayyidinā Muḥammadin ʿadada ma tanaffasatil arwāḥu mundhu khalaqtahā",
             translation:
-              "And bless Our Master Muhammad in quantity as great as the breaths that are breathed by souls since You created them. ",
+              "And bless Our Master Muhammad in quantity as great as the breaths that are breathed by souls since You created them.",
           }),
           new DhikrEntryModel({
             arabic: "وَصَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَدَدَ مَا خَلَقْتَ وَمَا تَخْلُقُ",
@@ -1104,7 +1104,7 @@ export default [
           new DhikrEntryModel({
             arabic: "مِنْ أَهْلِ أَرْضِكَ وَسَمَائِكَ",
             translit: "min ahli arḍika wa samāʾika",
-            translation: "from the people of Your earth and Your heaven ",
+            translation: "from the people of Your earth and Your heaven",
           }),
           new DhikrEntryModel({
             arabic: "عَدَدَ خَلْقِكَ وَرِضَاءَ نَفْسِكَ وَزِنَةَ عَرْشِكَ وَمِدَادَ كَلِمَاتِكَ وَمُنْتَهَى عِلْمِكَ",
@@ -1188,7 +1188,7 @@ export default [
           new DhikrEntryModel({
             arabic: "وَحَفِظَ عَهْدَهُ وَذِمَّتَهُ",
             translit: "wa ḥafiẓa ʿahdahu wa dhimmatahu",
-            translation: "preserve his covenant and sanctity. ",
+            translation: "preserve his covenant and sanctity.",
           }),
           new DhikrEntryModel({
             arabic: "وَنَصَرَ حِزْبَهُ وَدَعْوَتَهُ",
@@ -1204,7 +1204,7 @@ export default [
           new DhikrEntryModel({
             arabic: "وَوَافَى زُمْرَتَهُ",
             translit: "wa wāfā zumratahu",
-            translation: "And grant that we may die in his company ",
+            translation: "And grant that we may die in his company",
           }),
           new DhikrEntryModel({
             arabic: "وَلَمْ يُخَالِفْ سَبِيلَهُ وَسُنَّتَهُ.",
@@ -1276,7 +1276,7 @@ export default [
           new DhikrEntryModel({
             arabic: "وَالتَّرْكَ لِسَيِّئِ مَا تَعْلَمُ",
             translit: "wattarka lisayyiʾi mā taʿlamu",
-            translation: "and to let me avoid the evil that You know. ",
+            translation: "and to let me avoid the evil that You know.",
           }),
           new DhikrEntryModel({
             arabic:

@@ -58,7 +58,7 @@ export default [
           new DhikrEntryModel({
             arabic: "وَبِالأَسْمَاءِ الَّتِي دَعَاكَ بِهَا سَيِّدُنَا يَعْقُوبُ عَلَيْهِ السَّلَامُ",
             translit:
-              "wa bil asmāʾillatī daʿāka bihā sayyidunā  Yaʿqūbu ʿalayhi salām",
+              "wa bil asmāʾillatī daʿāka bihā sayyidunā Yaʿqūbu ʿalayhi salām",
             translation:
               "and by the names with which Our Master Ya'qub (peace be upon him) called You",
           }),

@@ -115,9 +115,9 @@ export default [
           new DhikrEntryModel({
             arabic: "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا باللَّهِ العَلِيِّ العَظِيم",
             translit:
-              "Wa lā ḥawla wa lā quwwata illā biLlāhil ʿaliyyil ʿaẓīm (3).",
+              "Wa lā ḥawla wa lā quwwata illā biLlāhil ʿaliyyil ʿaẓīm .",
             translation:
-              "There is no power nor strength except by Allah the Lofty, the Immense (3 times).",
+              "There is no power nor strength except by Allah the Lofty, the Immense .",
           }),
         ],
       }),
@@ -135,11 +135,11 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ. بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ. ﴿قُلْ هُوَ اللَّهُ أَحَدٌ . اللَّهُ الصَّمَدُ . لَمْ يَلِدْ وَلَمْ يُولَدْ . وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌ\n﴾(3)",
+              "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ. بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ. ﴿قُلْ هُوَ اللَّهُ أَحَدٌ . اللَّهُ الصَّمَدُ . لَمْ يَلِدْ وَلَمْ يُولَدْ . وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌ\n﴾",
             translit:
-              "Aʿūdhu biLlāhi minash shayṭānir rajīm. BismiLlāhir raḥmānir raḥīm. Qul huwaLlāhu aḥad. Allāhuṣ ṣamad. Lam yalid walam yūlad. Walam yakullahu kufuwan aḥad. (3)",
+              "Aʿūdhu biLlāhi minash shayṭānir rajīm. BismiLlāhir raḥmānir raḥīm. Qul huwaLlāhu aḥad. Allāhuṣ ṣamad. Lam yalid walam yūlad. Walam yakullahu kufuwan aḥad.",
             translation:
-              "I seek refuge in Allah from the accursed Satan. In the name of Allah, Most Gracious, Most Merciful. Say: He is Allah, the One and Only; Allah, the Eternal, Absolute; He begetteth not, nor is He begotten; And there is none like unto Him. (3 times)",
+              "I seek refuge in Allah from the accursed Satan. In the name of Allah, Most Gracious, Most Merciful. Say: He is Allah, the One and Only; Allah, the Eternal, Absolute; He begetteth not, nor is He begotten; And there is none like unto Him.",
           }),
         ],
       }),
@@ -171,7 +171,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ  ﴿\nالٓمٓ . ذَٰلِكَ الْكِتَٰبُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِّلْمُتَّقِينَ . الَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ وَيُقِيمُونَ الصَّلَوٰةَ وَمِمَّا رَزَقْنَٰهُمْ يُنفِقُونَ . وَالَّذِينَ يُؤْمِنُونَ بِمَآ أُنزِلَ إِلَيْكَ وَمَآ أُنزِلَ مِن قَبْلِكَ وَبِالْآخِرَةِ هُمْ يُوقِنُونَ . أُوْلَٰٓئِكَ عَلَىٰ هُدًى مِّن رَّبِّهِمْ ۖ وَأُوْلَٰٓئِكَ هُمُ الْمُفْلِحُونَ\n ﴾",
+              "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ﴿\nالٓمٓ . ذَٰلِكَ الْكِتَٰبُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِّلْمُتَّقِينَ . الَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ وَيُقِيمُونَ الصَّلَوٰةَ وَمِمَّا رَزَقْنَٰهُمْ يُنفِقُونَ . وَالَّذِينَ يُؤْمِنُونَ بِمَآ أُنزِلَ إِلَيْكَ وَمَآ أُنزِلَ مِن قَبْلِكَ وَبِالْآخِرَةِ هُمْ يُوقِنُونَ . أُوْلَٰٓئِكَ عَلَىٰ هُدًى مِّن رَّبِّهِمْ ۖ وَأُوْلَٰٓئِكَ هُمُ الْمُفْلِحُونَ\n ﴾",
             translit:
               "BismiLlāhir raḥmānir raḥīm.Alif Lām Mīm. Dhālikal kitābu lā raybai fīh hudan lilmuttaqīn. Alladhīna yuʾminūna bilghaybi wayuqīmūnaṣ ṣalāta wamimmā razaqnāhum yunfiqūn. Walladhīna yuʾminūna bimā ʾunzila ilayka wamā ʾunzila min qablika wa bilākhirati hum yūqinūn. Ūlāʾika ʿalā hudam mir rabbihim wa ūlāʾika humul mufliḥūn.",
             translation:

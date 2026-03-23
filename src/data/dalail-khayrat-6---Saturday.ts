@@ -954,8 +954,7 @@ export default [
           new DhikrEntryModel({
             arabic: "وَلَا تُعَذِّبْنِي وَأَنَا أَسْتَغْفِرُكَ",
             translit: "wa lā tuʿadh-dhibnī wa anā astaghfiruka.",
-            translation:
-              "and do not punish me when I seek Your forgiveness. (3 times)",
+            translation: "and do not punish me when I seek Your forgiveness.",
           }),
         ],
       }),
@@ -1002,7 +1001,7 @@ export default [
             arabic: "اللَّهُمَّ شَفِّعْهُ فِينَا بِجَاهِهِ عِنْدَكَ",
             translit: "Allāhumma shaffiʿhu fīnā bijāhihi ʿindak.",
             translation:
-              "O Allah, grant him intercession for us by his rank with You. (3 times)",
+              "O Allah, grant him intercession for us by his rank with You.",
           }),
         ],
       }),

@@ -297,7 +297,7 @@ export default [
             translit:
               "wa akrami man aẓlama ʿalayhil laylu wa ashraqa ʿalayhin nahār.",
             translation:
-              "and the noblest ever to have been cloaked in darkness or bathed in the light of day. (3 times)",
+              "and the noblest ever to have been cloaked in darkness or bathed in the light of day.",
           }),
         ],
       }),

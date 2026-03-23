@@ -1010,14 +1010,15 @@ export default [
         ],
       }),
       new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic:
-              "اللَّهُمَّ\nاكْفِنَا السُّوءَ بِمَا شِئْتَ وَكَيْفَ شِئْتَ إِنَّكَ عَلَى مَا تَشَاءُ قَدِيرٌ (3)\n.\n\t\t\t\t\nيَا نِعْمَ المَوْلَى وَيَا نِعْمَ النَّصِيرُ",
+              "اللَّهُمَّ\nاكْفِنَا السُّوءَ بِمَا شِئْتَ وَكَيْفَ شِئْتَ إِنَّكَ عَلَى مَا تَشَاءُ قَدِيرٌ \n.\n\t\t\t\t\nيَا نِعْمَ المَوْلَى وَيَا نِعْمَ النَّصِيرُ",
             translit:
-              "Allāhummakfinās sūʾa bimā shiʾta wa kayfa shiʾta innaka ʿalā mā tashāʾu qadīrun (3) yā niʿmal mawlā wa yā niʿman naṣīr",
+              "Allāhummakfinās sūʾa bimā shiʾta wa kayfa shiʾta innaka ʿalā mā tashāʾu qadīrun yā niʿmal mawlā wa yā niʿman naṣīr",
             translation:
-              "O Allah! Save us from the evils decreed, for indeed, You bring to fruition whatever You will (3 times). O best Protector, O Best Helper",
+              "O Allah! Save us from the evils decreed, for indeed, You bring to fruition whatever You will . O best Protector, O Best Helper",
           }),
           new DhikrEntryModel({
             arabic: "غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ المَصِيرُ",

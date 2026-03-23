@@ -20,7 +20,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى مَنْ أَشْرَفُ الأَسْمَاءِ سَيِّدُنَا مُحَمَّدٌ  صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمْ",
+              "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى مَنْ أَشْرَفُ الأَسْمَاءِ سَيِّدُنَا مُحَمَّدٌ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمْ",
             translit:
               "Allāhumma ṣalli wa sallim wa bārik ʿalā man ashraful asmāʾi sayyidunā Muḥammadun ṣallAllāhu ʿalayhi wasallam.",
             translation:
@@ -132,7 +132,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "سَيِّدُنَا طَاهِرٌ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمْ",
-            translit: "Sayyidunā  Ṭāhir ṣallAllāhu ʿalayhi wasallam.",
+            translit: "Sayyidunā Ṭāhir ṣallAllāhu ʿalayhi wasallam.",
             translation:
               "Our Master: Pure may Allah bless him and grant him peace.",
           }),
@@ -252,7 +252,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "سَيِّدُنَا رَسُولُ الرَّاحَةِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمْ",
-            translit: "Sayyidunā  Rasūlul Rāḥah ṣallAllāhu ʿalayhi wasallam.",
+            translit: "Sayyidunā Rasūlul Rāḥah ṣallAllāhu ʿalayhi wasallam.",
             translation:
               "Our Master: Messenger of Rest may Allah bless him and grant him peace.",
           }),

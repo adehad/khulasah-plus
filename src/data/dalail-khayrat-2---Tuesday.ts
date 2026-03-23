@@ -139,8 +139,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ",
-            translit:
-              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā ālihi ",
+            translit: "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā ālihi",
             translation: "O Allah, bless Our Master Muhammad and his family",
           }),
           new DhikrEntryModel({
@@ -560,7 +559,7 @@ export default [
             arabic:
               "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا وَمَوْلَانَا مُحَمَّدٍ عَدَدَ مَا غَفَلَ عَنْ ذِكْرِهِ الغَافِلُونَ.",
             translit:
-              "Allāhumma ṣalli ʿalā  sayyidinā wa mawlānā Muḥammadin ʿadada mā ghafala ʿan dhikrihil ghāfilūn.",
+              "Allāhumma ṣalli ʿalā sayyidinā wa mawlānā Muḥammadin ʿadada mā ghafala ʿan dhikrihil ghāfilūn.",
             translation:
               "O Allah, bless Our Master, Mawlana Muhammad as many times as the heedless neglect his mention.",
           }),
@@ -1664,26 +1663,28 @@ export default [
         ],
       }),
       new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic:
-              "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَسَلِّمْ عَلَيْهِ، وَاجْزِهِ عَنَّا مَا هُوَ أَهْلُهُ حَبِيبُكَ (3)",
+              "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَسَلِّمْ عَلَيْهِ، وَاجْزِهِ عَنَّا مَا هُوَ أَهْلُهُ حَبِيبُكَ",
             translit:
-              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa sallim ʿalayhi wajzihi ʿannā mā huwa ahluhu ḥabībuka (3).",
+              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa sallim ʿalayhi wajzihi ʿannā mā huwa ahluhu ḥabībuka .",
             translation:
-              "O Allah, bless Our Master Muhammad and grant him peace, and reward him on our behalf with what he is worthy of as Your beloved. (3 times)",
+              "O Allah, bless Our Master Muhammad and grant him peace, and reward him on our behalf with what he is worthy of as Your beloved.",
           }),
         ],
       }),
       new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic:
-              "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا إِبْرَاهِيمَ وَسَلِّمْ عَلَيْهِ، وَاجْزِهِ عَنَّا مَا هُوَ أَهْلُهُ خَلِيلُكَ (3)",
+              "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا إِبْرَاهِيمَ وَسَلِّمْ عَلَيْهِ، وَاجْزِهِ عَنَّا مَا هُوَ أَهْلُهُ خَلِيلُكَ",
             translit:
-              "Allāhumma ṣalli ʿalā sayyidinā Ibrāhīma wa ṣallim ʿalayhi wajhzihi ʿanna ma huwa ahluhu khalilūka (3).",
+              "Allāhumma ṣalli ʿalā sayyidinā Ibrāhīma wa ṣallim ʿalayhi wajhzihi ʿanna ma huwa ahluhu khalilūka .",
             translation:
-              "O Allah, bless Our Master Ibrahim and grant him peace, and reward him on our behalf with what he is worthy of as Your friend. (3 times)",
+              "O Allah, bless Our Master Ibrahim and grant him peace, and reward him on our behalf with what he is worthy of as Your friend.",
           }),
         ],
       }),

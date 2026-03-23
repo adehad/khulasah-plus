@@ -208,7 +208,7 @@ export default [
             arabic: "صَلَوَاتُ اللَّهِ وَسَلَامُهُ عَلَيْهِمْ أَجْمَعِينَ",
             translit: "ṣalawātuLlahi wa salāmuhu ʿalayhim ajmaʿīn.",
             translation:
-              "may the blessing of Allah and his peace be upon all of them (3 times).",
+              "may the blessing of Allah and his peace be upon all of them .",
           }),
         ],
       }),
@@ -271,7 +271,7 @@ export default [
             arabic: "صَلَوَاتُ اللَّهِ وَسَلَامُهُ عَلَيْهِمْ أَجْمَعِينَ",
             translit: "ṣalawātuLlahi wa salāmuhu ʿalayhim ajmaʿīn.",
             translation:
-              "may the peace and blessings of Allah be upon all of them (3 times).",
+              "may the peace and blessings of Allah be upon all of them .",
           }),
         ],
       }),

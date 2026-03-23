@@ -474,9 +474,9 @@ export default [
           new DhikrEntryModel({
             arabic: "هَذِهِ الصَّلَاةُ تَعْظِيمًا لِحَقِّكَ يَا سَيِّدَنَا مُحَمَّدُ",
             translit:
-              "hādhihiṣ ṣalātu taʿẓīman liḥaqqika yā sayyidanā Muḥammad (3).",
+              "hādhihiṣ ṣalātu taʿẓīman liḥaqqika yā sayyidanā Muḥammad .",
             translation:
-              "This prayer exalts what is due to you, O Our Master Muhammad. (3 times)",
+              "This prayer exalts what is due to you, O Our Master Muhammad.",
           }),
         ],
       }),
@@ -547,7 +547,7 @@ export default [
             arabic: "إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
             translit: "innaka ʿalā kulli shayʾin qadīr.",
             translation:
-              "without end, as only You know, for You have power over all things. (3 times)",
+              "without end, as only You know, for You have power over all things.",
           }),
         ],
       }),
@@ -870,7 +870,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic:
-              "وَقُلْتَ وَقَوْلُكَ الحَقُّ:﴿  \n\n\nإِنَّ اللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا\n\n ﴾",
+              "وَقُلْتَ وَقَوْلُكَ الحَقُّ:﴿ \n\n\nإِنَّ اللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا\n\n ﴾",
             translit:
               "wa qulta waqawlukal ḥaqq: inna Allāha wa malāʾikatahu yuṣallūna ʿalan nabiyyi yā ayyuhalladhīna āmanū ṣallū ʿalayhi wa sallimū taslīmā",
             translation:
@@ -1589,14 +1589,15 @@ export default [
         ],
       }),
       new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic:
-              "اللَّهُمَّ إنِّي أَسْأَلُكَ العَفْوَ وَالعَافِيَةَ فِي الدِّينِ وَالدُّنْيَا وَالآخِرَةِ (3). اللَّهُمَّ اسْتُرْنَا بِسِتْرِكَ الجَمِيلِ (3)",
+              "اللَّهُمَّ إنِّي أَسْأَلُكَ العَفْوَ وَالعَافِيَةَ فِي الدِّينِ وَالدُّنْيَا وَالآخِرَةِ . اللَّهُمَّ اسْتُرْنَا بِسِتْرِكَ الجَمِيلِ",
             translit:
-              "Allāhumma innī asʾalukal ʿafwa wal ʿāfīyata fīddīni wad dunyā wal ākhirah (3). Allāhummasturnā bisitrikal jamīl (3).",
+              "Allāhumma innī asʾalukal ʿafwa wal ʿāfīyata fīddīni wad dunyā wal ākhirah . Allāhummasturnā bisitrikal jamīl .",
             translation:
-              "O Allah, I ask you for pardon and welfare in the deen, in this world and in the hereafter. (3 times) O Allah, veil us from wrong actions with Your beautiful veil. (3 times)",
+              "O Allah, I ask you for pardon and welfare in the deen, in this world and in the hereafter. O Allah, veil us from wrong actions with Your beautiful veil.",
           }),
         ],
       }),
