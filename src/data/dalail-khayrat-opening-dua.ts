@@ -1,3 +1,11 @@
+import {
+  baqarah_opening_1to5,
+  falaq,
+  fatihah,
+  ikhlas,
+  nas,
+  taawwudh,
+} from "@/data/shared/quran";
 import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
@@ -131,54 +139,12 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic:
-              "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ. بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ. ﴿قُلْ هُوَ اللَّهُ أَحَدٌ . اللَّهُ الصَّمَدُ . لَمْ يَلِدْ وَلَمْ يُولَدْ . وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌ\n﴾",
-            translit:
-              "Aʿūdhu biLlāhi minash shayṭānir rajīm. BismiLlāhir raḥmānir raḥīm. Qul huwaLlāhu aḥad. Allāhuṣ ṣamad. Lam yalid walam yūlad. Walam yakullahu kufuwan aḥad.",
-            translation:
-              "I seek refuge in Allah from the accursed Satan. In the name of Allah, Most Gracious, Most Merciful. Say: He is Allah, the One and Only; Allah, the Eternal, Absolute; He begetteth not, nor is He begotten; And there is none like unto Him.",
-          }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic:
-              "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ﴿قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ . مِن شَرِّ مَا خَلَقَ . وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ . وَمِن شَرِّ النَّفَّٰثَٰتِ فِى ٱلْعُقَدِ . وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ\n ﴾\nبِسْمِ اللَّـهِ الرَّحْمَٰنِ الرَّحِيمِ\n ﴿قُلْ أَعُوذُ بِرَبِّ النَّاسِ . مَلِكِ النَّاسِ . إِلَٰهِ النَّاسِ . مِن شَرِّ الْوَسْوَاسِ الْخَنَّاسِ . الَّذِى يُوَسْوِسُ فِى صُدُورِ النَّاسِ . مِنَ الْجِنَّةِ وَالنَّاسِ\n﴾",
-            translit:
-              "BismiLlāhir raḥmānir raḥīm. Qul aʿūdhu birabbil falaq. Min sharri mā khalaq. Wa min sharri ghāsiqin idha waqab. Wa min sharrin naffāthāti fīl ʿuqad. Wamin sharri ḥāsidin idhā ḥasad.BismiLlāhir raḥmānir raḥīm.Qul aʿūdhu birabbin nās. Malikin nās. Ilāhin nās. Min sharril waswāsil khannās. Alladhī yuwaswisu fī ṣudurin nās. Minal jinnati wannās.",
-            translation:
-              "In the name of Allah, Most Gracious, Most Merciful.Say: I seek refuge with the Lord of the Dawn. From the mischief of created things; From the mischief of Darkness as it overspreads; From the mischief of those who practise secret arts; And from the mischief of the envious one as he practises envy. In the name of Allah, Most Gracious, Most Merciful.Say: I seek refuge with the Lord and Cherisher of Mankind. The King of Mankind, the God of Mankind - from the evil of the sneaking whisperer, who whispers into the hearts of Mankind, among Jinns and among men.",
-          }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic:
-              "﴿بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ . الْحَمْدُ لِلَّهِ رَبِّ الْعَٰلَمِينَ . الرَّحْمَٰنِ ٱلرَّحِيمِ . مَٰلِكِ يَوْمِ الدِّينِ . إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ . اهْدِنَا الصِّرَٰطَ الْمُسْتَقِيمَ . صِرَٰطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّآلِّينَ\n ﴾",
-            translit:
-              "BismiLlāhir raḥmānir raḥīm. Alḥamdu liLlāhi rabbil ʿālamīn. Arraḥmānir raḥīm. Māliki yawmid dīn. Iyyāka naʿbudu wa iyyāka nastaʿīn. Ihdināṣ ṣirāṭal mustaqīm. Ṣirāṭal ladhīna anʿamta ʿalayhim ghayril maghḍūbi ʿalayhim walāḍ ḍāllīn.",
-            translation:
-              "In the name of Allah, Most Gracious, Most Merciful. Praise be to Allah, the Cherisher and Sustainer of the worlds; Most Gracious, Most Merciful; Master of the Day of Judgment. Thee do we worship, and Thine aid we seek. Show us the straight way, the way of those on whom Thou hast bestowed Thy Grace, those whose (portion) is not wrath, and who go not astray.",
-          }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic:
-              "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ﴿\nالٓمٓ . ذَٰلِكَ الْكِتَٰبُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِّلْمُتَّقِينَ . الَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ وَيُقِيمُونَ الصَّلَوٰةَ وَمِمَّا رَزَقْنَٰهُمْ يُنفِقُونَ . وَالَّذِينَ يُؤْمِنُونَ بِمَآ أُنزِلَ إِلَيْكَ وَمَآ أُنزِلَ مِن قَبْلِكَ وَبِالْآخِرَةِ هُمْ يُوقِنُونَ . أُوْلَٰٓئِكَ عَلَىٰ هُدًى مِّن رَّبِّهِمْ ۖ وَأُوْلَٰٓئِكَ هُمُ الْمُفْلِحُونَ\n ﴾",
-            translit:
-              "BismiLlāhir raḥmānir raḥīm.Alif Lām Mīm. Dhālikal kitābu lā raybai fīh hudan lilmuttaqīn. Alladhīna yuʾminūna bilghaybi wayuqīmūnaṣ ṣalāta wamimmā razaqnāhum yunfiqūn. Walladhīna yuʾminūna bimā ʾunzila ilayka wamā ʾunzila min qablika wa bilākhirati hum yūqinūn. Ūlāʾika ʿalā hudam mir rabbihim wa ūlāʾika humul mufliḥūn.",
-            translation:
-              "In the name of Allah, Most Gracious, Most Merciful. Alif. Lam. Meem. This is the Book; In it is guidance sure, without doubt, to those who fear Allah; Who believe in the Unseen, are steadfast in prayer, and spend out of what We have provided for them; And who believe in the Revelation sent to thee, and sent before thy time, and have the assurance of the Hereafter. They are on true guidance, from their Lord, and it is these who will prosper.",
-          }),
-        ],
-      }),
+      taawwudh(),
+      ikhlas(),
+      falaq(),
+      nas(),
+      fatihah(),
+      baqarah_opening_1to5(),
     ],
   }),
 ];

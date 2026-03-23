@@ -1,6 +1,23 @@
 import { quran as waqiah_source } from "@/data/shared/quran-waqiah";
 import { quran as yasin_source } from "@/data/shared/quran-yasin";
-import { QuranEntryModel, QuranModel } from "@/models/recitation";
+import {
+  DhikrEntryModel,
+  DhikrModel,
+  QuranEntryModel,
+  QuranModel,
+} from "@/models/recitation";
+
+export function taawwudh() {
+  return new DhikrModel({
+    entries: [
+      new DhikrEntryModel({
+        arabic: "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
+        translit: "Aʿūdhu biLlāhi minash shayṭānir rajīm.",
+        translation: "I seek refuge in Allah from the accursed Satan.",
+      }),
+    ],
+  });
+}
 
 export function fatihah(
   repeat: number = 1,
@@ -54,6 +71,59 @@ export function fatihah(
     instruction,
     basmallah,
     repeat: repeat,
+  });
+}
+
+export function baqarah_opening_1to5(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: "Al-Baqarah",
+    surah: 2,
+    entries: [
+      new QuranEntryModel({
+        arabic: "الٓمٓ",
+        translit: "Alif Lām Mīm.",
+        translation: "Alif Lam Meem.",
+        verse: 1,
+      }),
+      new QuranEntryModel({
+        arabic: "ذَٰلِكَ ٱلۡكِتَٰبُ لَا رَيۡبَۛ فِيهِۛ هُدٗى لِّلۡمُتَّقِينَ",
+        translit: "Dhālikal kitābu lā rayba fīhi hudan lilmuttaqīn.",
+        translation:
+          "This is the Book! There is no doubt about it — a guide for those mindful of Allah.",
+        verse: 2,
+      }),
+      new QuranEntryModel({
+        arabic: "ٱلَّذِينَ يُؤۡمِنُونَ بِٱلۡغَيۡبِ وَيُقِيمُونَ ٱلصَّلَوٰةَ وَمِمَّا رَزَقۡنَٰهُمۡ يُنفِقُونَ",
+        translit:
+          "Alladhīna yuʾminūna bilghaybi wa yuqīmūnaṣ ṣalāta wa mimmā razaqnāhum yunfiqūn.",
+        translation:
+          "Those who believe in the unseen, establish prayer, and donate from what We have provided for them.",
+        verse: 3,
+      }),
+      new QuranEntryModel({
+        arabic:
+          "وَٱلَّذِينَ يُؤۡمِنُونَ بِمَآ أُنزِلَ إِلَيۡكَ وَمَآ أُنزِلَ مِن قَبۡلِكَ وَبِٱلۡأٓخِرَةِ هُمۡ يُوقِنُونَ",
+        translit:
+          "Walladhīna yuʾminūna bimā unzila ilayka wa mā unzila min qablika wa bilākhirati hum yūqinūn.",
+        translation:
+          "Those who believe in what has been revealed to you and what was revealed before you, and have sure faith in the Hereafter.",
+        verse: 4,
+      }),
+      new QuranEntryModel({
+        arabic: "أُوْلَٰٓئِكَ عَلَىٰ هُدٗى مِّن رَّبِّهِمۡۖ وَأُوْلَٰٓئِكَ هُمُ ٱلۡمُفۡلِحُونَ",
+        translit: "Ulāʾika ʿalā hudan mir rabbihim wa ulāʾika humul mufliḥūn.",
+        translation:
+          "It is they who are truly guided by their Lord, and it is they who will be successful.",
+        verse: 5,
+      }),
+    ],
+    instruction,
+    basmallah,
+    repeat,
   });
 }
 
