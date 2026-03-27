@@ -68,13 +68,22 @@ workbox.routing.registerRoute(
 // search-index.json is too large for precaching and not needed on initial load.
 // Cache on first search use, serve from cache while revalidating in the background.
 workbox.routing.registerRoute(
-  ({ url }) => url.pathname.endsWith("/search-index.json"),
+  ({ url, request }) =>
+    request.method === "GET" &&
+    url.origin === self.location.origin &&
+    url.pathname.endsWith("/search-index.json"),
   new workbox.strategies.StaleWhileRevalidate({
     cacheName: "search-index",
     plugins: [
       new workbox.cacheableResponse.CacheableResponsePlugin({
-        statuses: [0, 200],
+        statuses: [200],
       }),
+      new workbox.expiration.ExpirationPlugin({
+        maxEntries: 1,
+      }),
+    ],
+  }),
+);
     ],
   }),
 );
