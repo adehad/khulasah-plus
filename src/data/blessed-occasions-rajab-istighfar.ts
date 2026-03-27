@@ -2,6 +2,7 @@ import {
   DhikrEntryModel,
   DhikrModel,
   ExpandModel,
+  QuranDhikrEntryModel,
   WirdModel,
 } from "@/models/recitation";
 
@@ -13,8 +14,6 @@ export default [
         title: "Rajab 1447",
         entries: [
           new DhikrModel({
-            instruction:
-              "Habib Umar bin Hafiz (may Allah protect him and benefit us by him) encourages us to seek Allah’s forgiveness frequently during the month of Rajab, and he recommends reciting this prayer 3,000 times during the month:",
             entries: [
               new DhikrEntryModel({
                 arabic: "اللَّهُمَّ إِنَّا نَسْتَغْفِرُكَ وَنَتُوبُ إِلَيْكَ",
@@ -43,6 +42,8 @@ export default [
                   "Forgive us, and come to our aid and the aid of all Muslims. You are the most generous of all.",
               }),
             ],
+            instruction:
+              "Habib Umar bin Hafiz (may Allah protect him and benefit us by him) encourages us to seek Allah’s forgiveness frequently during the month of Rajab, and he recommends reciting this prayer 3,000 times during the month:",
             repeat: 3000,
           }),
         ],
@@ -69,8 +70,6 @@ export default [
   }),
   new WirdModel({
     title: "The Rajab Istighfar",
-    instruction:
-      "The following is a compilation of istighfār, known in Ḥaḍramawt as Istighfār Rajab, compiled by Ḥabīb Ḥasan, the son of Imām 'Abdullāh bin 'Alawī al-Ḥaddād. It is traditionally read every night in the month of Rajab.",
     entries: [
       new DhikrModel({
         entries: [
@@ -85,11 +84,100 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "وَصَلَّى اللَّهُ تَعَالَى عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ * أَسْتَغْفِرُ اللَّهَ * أَسْتَغْفِرُ اللَّهَ * أَسْتَغْفِرُ اللَّهَ * وَأَتُوبُ إِلَى اللَّهِ * مِنْ جَمِيعِ مَا يَكْرَهُ اللَّهُ * قَوْلًا وَفِعْلًا وَخَاطِرًا وَبَاطِنًا وَظَاهِرًا",
+            arabic: "وَصَلَّى اللَّهُ تَعَالَى عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ",
             translit: "",
             translation:
-              "May Allah bestow prayers and peace upon our Master Muhammad and upon his Family and Companions. I seek the forgiveness of Allah. I seek the forgiveness of Allah. I seek the forgiveness of Allah for every word, act and thought and every inward and outward action of mine which Allah dislikes.",
+              "May the prayers and peace of Allah be upon our Master Muhammad and upon his Family and Companions.",
+          }),
+          new DhikrEntryModel({
+            arabic: "والْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+            translit: "",
+            translation: "All praise is due to Allah, Lord of the Worlds,",
+          }),
+          new DhikrEntryModel({
+            arabic: "فِي كُلِّ لَحْظَةٍ أَبَدًا",
+            translit: "",
+            translation: "in every instant forever,",
+          }),
+          new DhikrEntryModel({
+            arabic: "عَدَدَ خَلْقِهِ",
+            translit: "",
+            translation: "the number of His creation,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَرِضَاءَ نَفْسِهِ",
+            translit: "",
+            translation: "to His satisfaction,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَزِنَةَ عَرْشِهِ",
+            translit: "",
+            translation: "the weight of His throne,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَمِدَادَ كَلِمَاتِهِ",
+            translit: "",
+            translation: "and the amount of ink of His words.",
+          }),
+          new DhikrEntryModel({
+            arabic: "والْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+            translit: "",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "فِي كُلِّ لَحْظَةٍ أَبَدًا",
+            translit: "",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "عَدَدَ خَلْقِهِ",
+            translit: "",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَرِضَاءَ نَفْسِهِ",
+            translit: "",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَزِنَةَ عَرْشِهِ",
+            translit: "",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَمِدَادَ كَلِمَاتِهِ",
+            translit: "",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "أَسْتَغْفِرُ اللَّهَ",
+            translit: "",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "أَسْتَغْفِرُ اللَّهَ",
+            translit: "",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "أَسْتَغْفِرُ اللَّهَ",
+            translit: "",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَتُوبُ إِلَى اللَّهِ",
+            translit: "",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "مِنْ جَمِيعِ مَا يَكْرَهُ اللَّهُ",
+            translit: "",
+            translation: "",
+          }),
+          new DhikrEntryModel({
+            arabic: "قَوْلًا وَفِعْلًا وَخَاطِرًا وَبَاطِنًا وَظَاهِرًا",
+            translit: "",
+            translation: "",
           }),
         ],
       }),
@@ -107,11 +195,37 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "اللَّهُمَّ إِنِّي أَسْتَغْفِرُكَ لِمَا قَدَّمْتُ وَمَا أَخَّرْتُ * وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ * وَمَا أَسْرَفْتُ * وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي * أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ * وَأَنْتَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+            arabic: "اللَّهُمَّ إِنِّي أَسْتَغْفِرُكَ لِمَا قَدَّمْتُ وَمَا أَخَّرْتُ",
             translit: "",
             translation:
-              "O Allah forgive me for what I have done previously, what I will do, what I have done in secret and in private, for my excesses and for that about which You have more knowledge than I. You are the one who puts people ahead and puts people behind and You have power over all things.",
+              "O Allah forgive me for what I have done previously, what I will do,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَمَا أَسْرَرْتُ وَمَا أَعْلَنْتُ",
+            translit: "",
+            translation: "what I have done in secret and in private,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَمَا أَسْرَفْتُ",
+            translit: "",
+            translation: "for my excesses,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي",
+            translit: "",
+            translation:
+              "and for that about which You have more knowledge than I.",
+          }),
+          new DhikrEntryModel({
+            arabic: "أَنْتَ الْمُقَدِّمُ وَأَنْتَ الْمُؤَخِّرُ",
+            translit: "",
+            translation:
+              "You are the one who puts people ahead and puts people behind,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْتَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+            translit: "",
+            translation: "and You have power over all things.",
           }),
         ],
       }),
@@ -128,11 +242,42 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "أَسْتَغْفِرُ اللَّهَ لِذُنُوبِي كُلِّهَا * سِرِّهَا وَجَهْرِهَا * وَصَغِيرِهَا وَكَبِيرِهَا * وَقَدِيمِهَا وَجَدِيدِهَا * وَأَوَّلِهَا وَآخِرِهَا * وَظَاهِرِهَا وَبَاطِنِهَا * وَأَتُوبُ إِلَيْهِ",
+            arabic: "أَسْتَغْفِرُ اللَّهَ لِذُنُوبِي كُلِّهَا",
             translit: "",
             translation:
-              "I seek the forgiveness of Allah for every one of my sins: those committed in private, those committed in public, the small and the large, those committed previously and those committed recently, the first and the last of them, outward and inward sins, and I repent to Him.",
+              "I seek the forgiveness of Allah for every one of my sins:",
+          }),
+          new DhikrEntryModel({
+            arabic: "سِرِّهَا وَجَهْرِهَا",
+            translit: "",
+            translation:
+              "those committed in private and those committed in public,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَصَغِيرِهَا وَكَبِيرِهَا",
+            translit: "",
+            translation: "the small and the large,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَقَدِيمِهَا وَجَدِيدِهَا",
+            translit: "",
+            translation:
+              "those committed previously and those committed recently,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَوَّلِهَا وَآخِرِهَا",
+            translit: "",
+            translation: "the first and the last of them,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَظَاهِرِهَا وَبَاطِنِهَا",
+            translit: "",
+            translation: "outward and inward sins,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَتُوبُ إِلَيْهِ",
+            translit: "",
+            translation: "and I repent to Him.",
           }),
         ],
       }),
@@ -180,11 +325,52 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "وَأَسْتَغْفِرُكَ يَا مَنْ لَا إِلَهَ إِلَّا أَنْتَ * يَا عَالِمَ الْغَيْبِ وَالشَّهَادَةِ مِنْ كُلِّ سَيِّئَةٍ عَمِلْتُهَا * فِي بَيَاضِ النَّهَارِ وَسَوَادِ اللَّيْلِ * فِي مَلَأٍ وَخَلَاءٍ * وَسِرٍّ وَعَلَانِيَةٍ وَأَنْتَ نَاظِرٌ إِلَيَّ إِذِ ارْتَكَبْتُهَا وَأَتَيْتُ بِهَا مِنَ الْعِصْيَانِ * فَأَتُوبُ إِلَيْكَ * يَا حَلِيمُ * يَا كَرِيمُ * يَا رَحِيمُ",
+            arabic: "وَأَسْتَغْفِرُكَ يَا مَنْ لَا إِلَهَ إِلَّا أَنْتَ",
+            translit: "",
+            translation: "I seek Your forgiveness, there is no deity but You,",
+          }),
+          new DhikrEntryModel({
+            arabic: "يَا عَالِمَ الْغَيْبِ وَالشَّهَادَةِ مِنْ كُلِّ سَيِّئَةٍ عَمِلْتُهَا",
             translit: "",
             translation:
-              "I seek Your forgiveness, there is no deity but You, O Knower of the seen and unseen, for every wrong or act of disobedience that I have committed in broad daylight or in the darkness of the night, in the company of people or whilst alone, in public or in private, in the knowledge that You were gazing upon me as I committed it. I repent to You, O Forbearing One, O Most Generous, O Most Merciful.",
+              "O Knower of the seen and unseen, for every wrong that I have committed,",
+          }),
+          new DhikrEntryModel({
+            arabic: "فِي بَيَاضِ النَّهَارِ وَسَوَادِ اللَّيْلِ",
+            translit: "",
+            translation: "in broad daylight or in the darkness of the night,",
+          }),
+          new DhikrEntryModel({
+            arabic: "فِي مَلَأٍ وَخَلَاءٍ",
+            translit: "",
+            translation: "in the company of people or whilst alone,",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَسِرٍّ وَعَلَانِيَةٍ وَأَنْتَ نَاظِرٌ إِلَيَّ إِذِ ارْتَكَبْتُهَا وَأَتَيْتُ بِهَا مِنَ الْعِصْيَانِ",
+            translit: "",
+            translation:
+              "in public or in private, in the knowledge that You were gazing upon me as I committed acts of disobedience.",
+          }),
+          new DhikrEntryModel({
+            arabic: "فَأَتُوبُ إِلَيْكَ",
+            translit: "",
+            translation: "I repent to You,",
+          }),
+          new DhikrEntryModel({
+            arabic: "يَا حَلِيمُ",
+            translit: "",
+            translation: "O Forbearing One,",
+          }),
+          new DhikrEntryModel({
+            arabic: "يَا كَرِيمُ",
+            translit: "",
+            translation: "O Most Generous,",
+          }),
+          new DhikrEntryModel({
+            arabic: "يَا رَحِيمُ",
+            translit: "",
+            translation: "O Most Merciful.",
           }),
         ],
       }),
@@ -202,11 +388,25 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "وَأَسْتَغْفِرُكَ مِنَ الذُّنُوبِ الَّتِي لَا يَعْرِفُهَا أَحَدٌ غَيْرُكَ * وَلَا يَطَّلِعُ عَلَيْهَا أَحَدٌ سِوَاكَ * وَلَا يَسَعُهَا إِلَّا حِلْمُكَ * وَلَا يُنَجِّينِي مِنْهَا إِلَّا عَفْوُكَ",
+            arabic: "وَأَسْتَغْفِرُكَ مِنَ الذُّنُوبِ الَّتِي لَا يَعْرِفُهَا أَحَدٌ غَيْرُكَ",
             translit: "",
             translation:
-              "I seek Your forgiveness for sins which only You know about and only You can see, sins which only Your forbearance can encompass and from which only Your pardon can save me.",
+              "I seek Your forgiveness for sins which only You know about,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَلَا يَطَّلِعُ عَلَيْهَا أَحَدٌ سِوَاكَ",
+            translit: "",
+            translation: "and only You can see,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَلَا يَسَعُهَا إِلَّا حِلْمُكَ",
+            translit: "",
+            translation: "sins which only Your forbearance can encompass,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَلَا يُنَجِّينِي مِنْهَا إِلَّا عَفْوُكَ",
+            translit: "",
+            translation: "and from which only Your pardon can save me.",
           }),
         ],
       }),
@@ -224,11 +424,41 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "وَأَسْتَغْفِرُكَ يَا مَنْ : ﴿ لَا إِلَٰهَ إِلَّا أَنتَ سُبْحَٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّٰلِمِينَ ۝ فَٱسْتَجَبْنَا لَهُۥ وَنَجَّيْنَٰهُ مِنَ ٱلْغَمِّ ۚ وَكَذَٰلِكَ نُنجِي ٱلْمُؤْمِنِينَ ۝ وَزَكَرِيَّآ إِذْ نَادَىٰ رَبَّهُۥ رَبِّ لَا تَذَرْنِى فَرْدًا وَأَنتَ خَيْرُ ٱلْوَٰرِثِينَ ﴾ ﴿ رَبِّ ٱغْفِرْ وَٱرْحَمْ وَأَنتَ خَيْرُ ٱلرَّٰحِمِينَ ﴾",
+            arabic: "وَأَسْتَغْفِرُكَ يَا مَنْ :",
+            translit: "",
+            translation: "I seek Your forgiveness,",
+          }),
+          new QuranDhikrEntryModel({
+            arabic: "لَا إِلَٰهَ إِلَّا أَنتَ سُبْحَٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّٰلِمِينَ",
             translit: "",
             translation:
-              "I seek Your forgiveness, there is no deity but You, transcendent are You, truly I am amongst the wrongdoers. So We responded to him and delivered him from distress; thus do We deliver those who have faith. And remember Zakariyyā, when he cried to his Lord: “O my Lord! Leave me not without offspring, for You are the best of bestowers.” “My Lord! Forgive and have mercy, for You are the Best of those who show mercy.”",
+              "there is no deity but You, transcendent are You, truly I am amongst the wrongdoers.",
+            verse: 87,
+            surah: 21,
+          }),
+          new QuranDhikrEntryModel({
+            arabic: "فَٱسْتَجَبْنَا لَهُۥ وَنَجَّيْنَٰهُ مِنَ ٱلْغَمِّ ۚ وَكَذَٰلِكَ نُنجِي ٱلْمُؤْمِنِينَ",
+            translit: "",
+            translation:
+              "So We responded to him and delivered him from distress; thus do We deliver those who have faith.",
+            verse: 88,
+            surah: 21,
+          }),
+          new QuranDhikrEntryModel({
+            arabic: "وَزَكَرِيَّآ إِذْ نَادَىٰ رَبَّهُۥ رَبِّ لَا تَذَرْنِى فَرْدًا وَأَنتَ خَيْرُ ٱلْوَٰرِثِينَ",
+            translit: "",
+            translation:
+              'And remember Zakariyya, when he cried to his Lord: "O my Lord! Leave me not without offspring, for You are the best of bestowers."',
+            verse: 89,
+            surah: 21,
+          }),
+          new QuranDhikrEntryModel({
+            arabic: "رَبِّ ٱغْفِرْ وَٱرْحَمْ وَأَنتَ خَيْرُ ٱلرَّٰحِمِينَ",
+            translit: "",
+            translation:
+              '"My Lord! Forgive and have mercy, for You are the Best of those who show mercy."',
+            verse: 118,
+            surah: 23,
           }),
         ],
       }),
@@ -236,21 +466,67 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "وَأَسْتَغْفِرُكَ مِنْ كُلِّ فَرِيضَةٍ أَوْجَبْتَهَا عَلَيَّ فِي آنَاءِ اللَّيْلِ وَأَطْرَافِ النَّهَارِ * فَتَرَكْتُهَا خَطَأ أَوْ عَمْدًا أَوْ نِسْيَانًا * أَوْ تَهَاوُنًا * أَوْ جَهْلًا وَأَنَا مُعَاقَبٌ بِهَا",
+              "وَأَسْتَغْفِرُكَ مِنْ كُلِّ فَرِيضَةٍ أَوْجَبْتَهَا عَلَيَّ فِي آنَاءِ اللَّيْلِ وَأَطْرَافِ النَّهَارِ",
             translit: "",
             translation:
-              "I seek Your forgiveness for every obligation which You have requested that I fulfil in the day or the night which I have subsequently neglected out of heedlessness, absentmindedness, forgetfulness or ignorance, and for which I will be punished.",
+              "I seek Your forgiveness for every obligation which You have requested that I fulfil in the day or the night which I have subsequently neglected out of heedlessness",
+          }),
+          new DhikrEntryModel({
+            arabic: "فَتَرَكْتُهَا خَطَأ أَوْ عَمْدًا أَوْ نِسْيَانًا",
+            translit: "",
+            translation: "absentmindedness",
+          }),
+          new DhikrEntryModel({
+            arabic: "أَوْ تَهَاوُنًا",
+            translit: "",
+            translation: "forgetfulness or ignorance",
+          }),
+          new DhikrEntryModel({
+            arabic: "أَوْ جَهْلًا وَأَنَا مُعَاقَبٌ بِهَا",
+            translit: "",
+            translation: "and for which I will be punished.",
           }),
         ],
       }),
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "وَأَسْتَغْفِرُكَ مِنْ كُلِّ سُنَّةٍ مِنْ سُنَنِ سَيِّدِ الْمُرْسَلِينَ وَخَاتَمِ النَّبِيِّينَ * نَبِيِّكَ سَيِّدِنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَصَحْبِهِ وَسَلَّمَ فَتَرَكْتُهَا غَفْلَةً * أَوْ سَهْوًا * أَوْ نِسْيَانًا * أَوْ تَهَاوُنًا * أَوْ جَهْلًا * أَوْ قِلَّةَ مُبَالَاةٍ بِهَا",
+            arabic: "وَأَسْتَغْفِرُكَ مِنْ كُلِّ سُنَّةٍ مِنْ سُنَنِ سَيِّدِ الْمُرْسَلِينَ وَخَاتَمِ النَّبِيِّينَ",
             translit: "",
             translation:
-              "I seek Your forgiveness for every sunnah of the Master of the Messengers, the Seal of the Prophets, Your Prophet our Master Muhammad صلى الله عليه وسلم which I have left out of heedlessness, absent-mindedness, forgetfulness, ignorance or not caring.",
+              "I seek Your forgiveness for every sunnah of the Master of the Messengers, the Seal of the Prophets,",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "نَبِيِّكَ سَيِّدِنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَصَحْبِهِ وَسَلَّمَ فَتَرَكْتُهَا غَفْلَةً",
+            translit: "",
+            translation:
+              "Your Prophet our Master Muhammad, may Allah's prayers and peace be upon him and his Family and Companions, which I have left out of heedlessness,",
+          }),
+          new DhikrEntryModel({
+            arabic: "أَوْ سَهْوًا",
+            translit: "",
+            translation: "absent-mindedness,",
+          }),
+          new DhikrEntryModel({
+            arabic: "أَوْ نِسْيَانًا",
+            translit: "",
+            translation: "forgetfulness,",
+          }),
+          new DhikrEntryModel({
+            arabic: "أَوْ تَهَاوُنًا",
+            translit: "",
+            translation: "ignorance,",
+          }),
+          new DhikrEntryModel({
+            arabic: "أَوْ جَهْلًا",
+            translit: "",
+            translation: "not caring,",
+          }),
+          new DhikrEntryModel({
+            arabic: "أَوْ قِلَّةَ مُبَالَاةٍ بِهَا",
+            translit: "",
+            translation: "or lack of concern.",
           }),
         ],
       }),
@@ -268,11 +544,67 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "سُبْحَانَكَ يَا رَبَّ الْعَالَمِيْنَ * لَكَ الْمُلْكُ وَلَكَ الْحَمْدُ * وَأَنْتَ حَسْبُنَا وَنِعْمَ الْوَكِيلُ * نِعْمَ الْمَوْلَى وَنِعْمَ النَّصِيرُ * وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ الْعَلِيِّ الْعَظِيمِ",
+            arabic: "سُبْحَانَكَ يَا رَبَّ الْعَالَمِيْنَ",
+            translit: "",
+            translation: "Transcendent are You, O Lord of the Worlds.",
+          }),
+          new DhikrEntryModel({
+            arabic: "لَكَ الْمُلْكُ وَلَكَ الْحَمْدُ",
+            translit: "",
+            translation: "To You belongs the dominion and all praise.",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْتَ حَسْبُنَا وَنِعْمَ الْوَكِيلُ",
             translit: "",
             translation:
-              "Transcendent are You, O Lord of the Worlds. To You belongs the dominion and all praise. You are sufficient for us, and You are the best disposer of our affairs. He is the best of those who protect and the best of those who assist. There is no strength nor might except in Allah, the Sublime, the Most Great.",
+              "You are sufficient for us and You are the best disposer of our affairs.",
+          }),
+          new DhikrEntryModel({
+            arabic: "نِعْمَ الْمَوْلَى وَنِعْمَ النَّصِيرُ",
+            translit: "",
+            translation:
+              "He is the best of those who protect and the best of those who assist.",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ الْعَلِيِّ الْعَظِيمِ",
+            translit: "",
+            translation:
+              "There is no strength nor might except in Allah, the Sublime, the Most Great.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "يَا جَابِرَ كُلِّ كَسِيرٍ",
+            translit: "",
+            translation: "O Repairer of every breakage,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَيَا مُؤْنِسَ كُلِّ وَحِيدٍ",
+            translit: "",
+            translation: "O Companion of everyone who is alone,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَيَا صَاحِبَ كُلِّ غَرِيبٍ",
+            translit: "",
+            translation: "O Friend of every stranger,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَيَا مُيَسِّرَ كُلِّ عَسِيرٍ",
+            translit: "",
+            translation: "O One who brings ease to every difficulty,",
+          }),
+          new DhikrEntryModel({
+            arabic: "يَا مَنْ لَا يَحْتَاجُ إِلَى الْبَيَانِ وَالتَّفْسِيرِ",
+            translit: "",
+            translation:
+              "O One who is not in need of clarification or explanation,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْتَ عَلَى مَا تَشَاءُ قَدِيرٌ",
+            translit: "",
+            translation: "You are able to do whatever You will.",
           }),
         ],
       }),
@@ -280,43 +612,70 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "يَا جَابِرَ كُلِّ كَسِيرٍ * وَيَا مُؤْنِسَ كُلِّ وَحِيدٍ * وَيَا صَاحِبَ كُلِّ غَرِيبٍ * وَيَا مُيَسِّرَ كُلِّ عَسِيرٍ * يَا مَنْ لَا يَحْتَاجُ إِلَى الْبَيَانِ وَالتَّفْسِيرِ * وَأَنْتَ عَلَى مَا تَشَاءُ قَدِيرٌ",
+              "وَصَلَّى اللَّهُ تَعَالَى وَسَلَّمَ عَلَى سَيِّدِنَا مُحَمَّدٍ وَآلِهِ وَصَحْبِهِ بِعَدَدِ مَنْ صَلَّى عَلَيْهِ",
             translit: "",
             translation:
-              "O Allah, You are the Repairer of every breakage, the Companion of everyone who is alone, the One who brings ease to every difficulty, the One who is not in need of clarification or explanation. You are able to do whatever You will.",
+              "Bestow prayers upon our Master Muhammad to the number of those who bestow prayers upon him",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَبِعَدَدِ مَنْ لَمْ يُصَلِّ عَلَيْهِ",
+            translit: "",
+            translation: "and to the number of those who do not.",
           }),
         ],
       }),
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "وَصَلَّى اللَّهُ تَعَالَى وَسَلَّمَ عَلَى سَيِّدِنَا مُحَمَّدٍ وَآلِهِ وَصَحْبِهِ بِعَدَدِ مَنْ صَلَّى عَلَيْهِ * وَبِعَدَدِ مَنْ لَمْ يُصَلِّ عَلَيْهِ",
+            arabic: "اللَّهُمَّ صَلِّ عَلَى رُوحِ سَيِّدِنَا مُحَمَّدٍ فِي الْأَرْوَاحِ",
             translit: "",
             translation:
-              "Bestow prayers upon our Master Muhammad to the number of those who bestow prayers upon him, and to the number of those who do not.",
+              "O Allah bestow prayers upon the spirit of our Master Muhammad,",
+          }),
+          new DhikrEntryModel({
+            arabic: "اللَّهُمَّ صَلِّ عَلَى تُرْبَةِ سَيِّدِنَا مُحَمَّدٍ فِي التُّرَبِ",
+            translit: "",
+            translation:
+              "O Allah bestow prayers upon the earth in which our Master Muhammad is buried,",
+          }),
+          new DhikrEntryModel({
+            arabic: "اللَّهُمَّ صَلِّ عَلَى قَبْرِ سَيِّدِنَا مُحَمَّدٍ فِي الْقُبُورِ",
+            translit: "",
+            translation:
+              "O Allah bestow prayers upon the grave in which our Master Muhammad lies,",
+          }),
+          new DhikrEntryModel({
+            arabic: "اللَّهُمَّ صَلِّ عَلَى صُورَةِ سَيِّدِنَا مُحَمَّدٍ فِي الصُّوَرِ",
+            translit: "",
+            translation:
+              "O Allah bestow prayers upon the physical form of our Master Muhammad,",
+          }),
+          new DhikrEntryModel({
+            arabic: "اللَّهُمَّ صَلِّ عَلَى اسْمِ سَيِّدِنَا مُحَمَّدٍ فِي الْأَسْمَاءِ",
+            translit: "",
+            translation:
+              "O Allah bestow prayers upon the name of our Master Muhammad.",
           }),
         ],
       }),
       new DhikrModel({
         entries: [
-          new DhikrEntryModel({
+          new QuranDhikrEntryModel({
             arabic:
-              "اللَّهُمَّ صَلِّ عَلَى رُوحِ سَيِّدِنَا مُحَمَّدٍ فِي الْأَرْوَاحِ * اللَّهُمَّ صَلِّ عَلَى تُرْبَةِ سَيِّدِنَا مُحَمَّدٍ فِي التُّرَبِ * اللَّهُمَّ صَلِّ عَلَى قَبْرِ سَيِّدِنَا مُحَمَّدٍ فِي الْقُبُورِ * اللَّهُمَّ صَلِّ عَلَى صُورَةِ سَيِّدِنَا مُحَمَّدٍ فِي الصُّوَرِ * اللَّهُمَّ صَلِّ عَلَى اسْمِ سَيِّدِنَا مُحَمَّدٍ فِي الْأَسْمَاءِ",
-            translit: "",
-            translation:
-              "O Allah bestow prayers upon the spirit of our Master Muhammad, upon the earth in which our Master Muhammad is buried, upon the grave in which our Master Muhammad lies, upon the physical form of our Master Muhammad and upon the name of our Master Muhammad.",
-          }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic:
-              "﴿ لَقَدْ جَآءَكُمْ رَسُولٌ مِّنْ أَنفُسِكُمْ عَزِيزٌ عَلَيْهِ مَا عَنِتُّمْ حَرِيصٌ عَلَيْكُم بِٱلْمُؤْمِنِينَ رَءُوفٌ رَّحِيمٌ ۝ فَإِن تَوَلَّوْا۟ فَقُلْ حَسْبِىَ ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَهُوَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيمِ ﴾",
+              "لَقَدْ جَآءَكُمْ رَسُولٌ مِّنْ أَنفُسِكُمْ عَزِيزٌ عَلَيْهِ مَا عَنِتُّمْ حَرِيصٌ عَلَيْكُم بِٱلْمُؤْمِنِينَ رَءُوفٌ رَّحِيمٌ",
             translit: "",
             translation:
               "There has come to you a Messenger from among yourselves, grievous to whom is your burden, concerned (is he) for you; for the believers (he is) full of compassion, merciful. If they turn away then say: Allah is sufficient for me; there is no god but He. On Him do I rely; He is the Lord of the Awesome Throne.",
+            verse: 128,
+            surah: 9,
+          }),
+          new QuranDhikrEntryModel({
+            arabic:
+              "فَإِن تَوَلَّوْا۟ فَقُلْ حَسْبِىَ ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَهُوَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيمِ",
+            translit: "",
+            translation: "",
+            verse: 129,
+            surah: 9,
           }),
         ],
       }),
@@ -332,5 +691,7 @@ export default [
         ],
       }),
     ],
+    instruction:
+      "The following is a compilation of istighfār, known in Ḥaḍramawt as Istighfār Rajab, compiled by Ḥabīb Ḥasan, the son of Imām 'Abdullāh bin 'Alawī al-Ḥaddād. It is traditionally read every night in the month of Rajab.",
   }),
 ];

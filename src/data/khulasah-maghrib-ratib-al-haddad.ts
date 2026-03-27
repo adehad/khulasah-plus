@@ -642,13 +642,18 @@ export const wird = [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "جَزَى اللَّهُ عَنَّا سَيِّدَنَا مُحَمَّدًا صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ خَيْرًا، جَزَى اللَّهُ عَنَّا سَيِّدَنَا مُحَمَّدًا صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ مَا هُوَ أَهْلُهُ",
-            translation:
-              "May Allāh reward, on our behalf, our master Muḥammad (blessings and peace on him) with good. May Allāh reward our master Muḥammad (blessings and peace on him) that which he is entitled to.",
+            arabic: "جَزَى اللَّهُ عَنَّا سَيِّدَنَا مُحَمَّدًا صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ خَيْرًا",
             translit:
-              "Jazallāhu ‛annā sayyidanā Muḥammadan ṣallallāhu ‛alayhi wa sallama khayran, jazallāhu ‛annā sayyidanā Muḥammadan ṣallallāhu ‛alayhi wa sallama mā huwa ahluhū.",
-            repeat: 3,
+              "Jazallāhu ‛annā sayyidanā Muḥammadan ṣallallāhu ‛alayhi wa sallama khayran",
+            translation: "May Allāh reward, on our behalf",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "جَزَى اللَّهُ عَنَّا سَيِّدَنَا مُحَمَّدًا صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ مَا هُوَ أَهْلُهُ",
+            translit:
+              "jazallāhu ‛annā sayyidanā Muḥammadan ṣallallāhu ‛alayhi wa sallama mā huwa ahluhū.",
+            translation:
+              "our master Muḥammad (blessings and peace on him) with good. May Allāh reward our master Muḥammad (blessings and peace on him) that which he is entitled to.",
           }),
         ],
       }),

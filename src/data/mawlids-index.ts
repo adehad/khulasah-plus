@@ -7,19 +7,19 @@ const mawlidsContent = [
   }),
   new NavModel({
     title: "The Pure Drink (Al-Sharab At-Tahur)",
-    href: "/",
+    href: "mawlids/the-pure-drink",
   }),
   new NavModel({
-    title: "After every prayer",
-    href: "/",
+    title: "Simt ad-Durar",
+    href: "mawlids/simt-ad-durar",
   }),
   new NavModel({
     title: "Mawlid Dayba'i",
-    href: "/",
+    href: "mawlids/mawlid-dayba-i",
   }),
   new NavModel({
     title: "Mawlid Barzanji",
-    href: "/",
+    href: "mawlids/mawlid-barzanji",
   }),
 ];
 
