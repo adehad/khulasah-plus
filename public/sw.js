@@ -65,6 +65,26 @@ workbox.routing.registerRoute(
   }),
 );
 
+// search-index.json is too large for precaching and not needed on initial load.
+// Cache on first search use, serve from cache while revalidating in the background.
+workbox.routing.registerRoute(
+  ({ url, request }) =>
+    request.method === "GET" &&
+    url.origin === self.location.origin &&
+    url.pathname.endsWith("/search-index.json"),
+  new workbox.strategies.StaleWhileRevalidate({
+    cacheName: "search-index",
+    plugins: [
+      new workbox.cacheableResponse.CacheableResponsePlugin({
+        statuses: [200],
+      }),
+      new workbox.expiration.ExpirationPlugin({
+        maxEntries: 1,
+      }),
+    ],
+  }),
+);
+
 // This is your Service Worker, you can put any of your custom Service Worker
 // code in this file, above the `precacheAndRoute` line.
 

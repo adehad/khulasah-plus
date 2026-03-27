@@ -49,7 +49,10 @@ export default defineConfig({
         swDest: "dist/sw.js",
         globDirectory: "dist",
         globPatterns: ["**/*.{html,js,css,json,png,ico,svg,woff,woff2}"],
-        globIgnores: ["sw.dev.js"],
+        globIgnores: [
+          "sw.dev.js",
+          "search-index.json", // Too large for precache — runtime cached via StaleWhileRevalidate in sw.js
+        ],
       },
       injectRegister: false,
       manifest: false,
