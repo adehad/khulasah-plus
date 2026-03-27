@@ -1,3 +1,17 @@
+import { quran as buruj_source } from "@/data/shared/quran-buruj";
+import { quran as duha_source } from "@/data/shared/quran-duha";
+import { quran as dukhan_source } from "@/data/shared/quran-dukhan";
+import { quran as kafirun_source } from "@/data/shared/quran-kafirun";
+import { quran as kahf_source } from "@/data/shared/quran-kahf";
+import { quran as kawthar_source } from "@/data/shared/quran-kawthar";
+import { quran as masad_source } from "@/data/shared/quran-masad";
+import { quran as muzzammil_source } from "@/data/shared/quran-muzzammil";
+import { quran as nasr_source } from "@/data/shared/quran-nasr";
+import { quran as qadr_source } from "@/data/shared/quran-qadr";
+import { quran as quraysh_source } from "@/data/shared/quran-quraysh";
+import { quran as sajdah_source } from "@/data/shared/quran-sajdah";
+import { quran as sharh_source } from "@/data/shared/quran-sharh";
+import { quran as tariq_source } from "@/data/shared/quran-tariq";
 import { quran as waqiah_source } from "@/data/shared/quran-waqiah";
 import { quran as yasin_source } from "@/data/shared/quran-yasin";
 import {
@@ -349,5 +363,215 @@ export function waqiah(
     instruction: instruction,
     basmallah: basmallah,
     repeat: repeat,
+  });
+}
+
+export function buruj(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: buruj_source.title,
+    surah: buruj_source.surah,
+    entries: buruj_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function tariq(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: tariq_source.title,
+    surah: tariq_source.surah,
+    entries: tariq_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function duha(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: duha_source.title,
+    surah: duha_source.surah,
+    entries: duha_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function sharh(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: sharh_source.title,
+    surah: sharh_source.surah,
+    entries: sharh_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function qadr(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: qadr_source.title,
+    surah: qadr_source.surah,
+    entries: qadr_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function quraysh(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: quraysh_source.title,
+    surah: quraysh_source.surah,
+    entries: quraysh_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function sajdah(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: sajdah_source.title,
+    surah: sajdah_source.surah,
+    entries: sajdah_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function kawthar(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: kawthar_source.title,
+    surah: kawthar_source.surah,
+    entries: kawthar_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function kafirun(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: kafirun_source.title,
+    surah: kafirun_source.surah,
+    entries: kafirun_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function nasr(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: nasr_source.title,
+    surah: nasr_source.surah,
+    entries: nasr_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function masad(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: masad_source.title,
+    surah: masad_source.surah,
+    entries: masad_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function kahf(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: kahf_source.title,
+    surah: kahf_source.surah,
+    entries: kahf_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function dukhan(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: dukhan_source.title,
+    surah: dukhan_source.surah,
+    entries: dukhan_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function muzzammil(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: muzzammil_source.title,
+    surah: muzzammil_source.surah,
+    entries: muzzammil_source.entries,
+    instruction,
+    basmallah,
+    repeat,
   });
 }

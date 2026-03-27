@@ -43,5 +43,6 @@ repos:
         exclude: |
             (?x)^(
                 src/data/shared/quran.ts|
-                src/data/mawlids-shimmering-light.ts|
+                src/data/shared/quran(?:-.*)?\.ts|
+                src/data/mawlids-.*\.ts
             )$
