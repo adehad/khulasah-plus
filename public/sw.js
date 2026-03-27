@@ -90,4 +90,4 @@ workbox.routing.registerRoute(
 
 // All HTML pages are included in __WB_MANIFEST via globPatterns.
 // precacheAndRoute handles navigation requests automatically (including /path → /path/index.html).
-workbox.precaching.precacheAndRoute(self.__WB_MANIFEST || [])
+workbox.precaching.precacheAndRoute(self.__WB_MANIFEST || []);
