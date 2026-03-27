@@ -84,9 +84,6 @@ workbox.routing.registerRoute(
     ],
   }),
 );
-],
-  }),
-)
 
 // This is your Service Worker, you can put any of your custom Service Worker
 // code in this file, above the `precacheAndRoute` line.
