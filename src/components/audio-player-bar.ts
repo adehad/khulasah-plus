@@ -47,6 +47,9 @@ export class AudioPlayerBar extends LitElement {
   /** Whether current audio is saved in IndexedDB for offline playback */
   @state() private _isCached = false;
 
+  /** True while downloading and storing audio for offline use */
+  @state() private _isCaching = false;
+
   /** True during opus→MP3 conversion to show progress UI and prevent re-clicks */
   @state() private _isConverting = false;
 
@@ -354,18 +357,26 @@ export class AudioPlayerBar extends LitElement {
       const { convertOpusToMp3, downloadBlob } = await import(
         "@/services/audio-converter"
       );
-      const blob = await convertOpusToMp3(
-        this._state.config.url,
-        (progress) => {
+
+      // Use cached audio as source if available, avoiding a re-download
+      const cached = await audioCache.get(this._state.config.url);
+      const sourceUrl = cached
+        ? URL.createObjectURL(cached.blob)
+        : this._state.config.url;
+
+      try {
+        const blob = await convertOpusToMp3(sourceUrl, (progress) => {
           this._conversionProgress = Math.round(progress.percent);
-        },
-      );
-      const title = this._getTitle();
-      const sanitized = title
-        .replace(/[^a-zA-Z0-9\u0600-\u06FF\s-]/g, "")
-        .trim();
-      const filename = sanitized ? `${sanitized}.mp3` : "audio.mp3";
-      downloadBlob(blob, filename);
+        });
+        const title = this._getTitle();
+        const sanitized = title
+          .replace(/[^a-zA-Z0-9\u0600-\u06FF\s-]/g, "")
+          .trim();
+        const filename = sanitized ? `${sanitized}.mp3` : "audio.mp3";
+        downloadBlob(blob, filename);
+      } finally {
+        if (cached) URL.revokeObjectURL(sourceUrl);
+      }
     } catch (err) {
       console.error("Failed to convert audio:", err);
     } finally {
@@ -380,7 +391,7 @@ export class AudioPlayerBar extends LitElement {
    * Updates UI state immediately on success to provide feedback.
    */
   private async _handleCacheToggle(): Promise<void> {
-    if (!this._state.config) return;
+    if (!this._state.config || this._isCaching) return;
 
     const url = this._state.config.url;
     if (this._isCached) {
@@ -391,11 +402,14 @@ export class AudioPlayerBar extends LitElement {
         console.error("Failed to remove from cache:", err);
       }
     } else {
+      this._isCaching = true;
       try {
         await audioCache.cache(url, { title: this._getTitle() });
         this._isCached = true;
       } catch (err) {
         console.error("Failed to cache audio:", err);
+      } finally {
+        this._isCaching = false;
       }
     }
   }
@@ -514,13 +528,19 @@ export class AudioPlayerBar extends LitElement {
               `
             }
 
-            <sl-tooltip content=${this._isCached ? "Remove from offline" : "Save for offline"}>
-              <sl-icon-button
-                name=${this._isCached ? "cloud-check-fill" : "cloud-arrow-down"}
-                label=${this._isCached ? "Remove from offline" : "Save for offline"}
-                @click=${this._handleCacheToggle}
-              ></sl-icon-button>
-            </sl-tooltip>
+            ${
+              this._isCaching
+                ? html`<sl-spinner></sl-spinner>`
+                : html`
+                <sl-tooltip content=${this._isCached ? "Remove from offline" : "Save for offline"}>
+                  <sl-icon-button
+                    name=${this._isCached ? "cloud-check-fill" : "cloud-arrow-down"}
+                    label=${this._isCached ? "Remove from offline" : "Save for offline"}
+                    @click=${this._handleCacheToggle}
+                  ></sl-icon-button>
+                </sl-tooltip>
+              `
+            }
           </div>
         </div>
 

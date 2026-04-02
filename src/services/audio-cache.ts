@@ -10,6 +10,8 @@
 
 import { type IDBPDatabase, openDB } from "idb";
 
+import { fetchHlsAsFmp4, isHlsUrl } from "@/services/audio-converter";
+
 const DB_NAME = "khulasah-audio-cache";
 const DB_VERSION = 1;
 const STORE_NAME = "audio-files";
@@ -115,9 +117,11 @@ class AudioCacheService {
   /**
    * Downloads and caches an audio file from a URL.
    *
-   * Fetches the audio, extracts metadata from response headers, and stores
-   * everything in IndexedDB. Uses put() instead of add() to allow re-caching
-   * the same URL (updates existing entry rather than failing on duplicate).
+   * For HLS URLs (m3u8), fetches all segments and assembles them into a single
+   * fMP4 blob before caching. For direct audio URLs, fetches the file as-is.
+   *
+   * Uses put() instead of add() to allow re-caching the same URL (updates
+   * existing entry rather than failing on duplicate).
    *
    * @param url - The audio file URL to fetch and cache
    * @param metadata - Additional metadata not derivable from the response
@@ -125,14 +129,20 @@ class AudioCacheService {
   async cache(url: string, metadata: { title: string }): Promise<void> {
     const db = await this._ensureDb();
 
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`Failed to fetch audio: ${response.status}`);
-    }
+    let blob: Blob;
+    let mimeType: string;
 
-    const blob = await response.blob();
-    // Default to audio/opus since that's our primary audio format
-    const mimeType = response.headers.get("content-type") ?? "audio/opus";
+    if (isHlsUrl(url)) {
+      blob = await fetchHlsAsFmp4(url);
+      mimeType = "audio/mp4";
+    } else {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`Failed to fetch audio: ${response.status}`);
+      }
+      blob = await response.blob();
+      mimeType = response.headers.get("content-type") ?? "audio/opus";
+    }
 
     const entry: CachedAudio = {
       url,

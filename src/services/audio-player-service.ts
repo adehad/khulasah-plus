@@ -3,7 +3,13 @@
  * Provides a singleton wrapper around HTMLAudioElement for recitation playback.
  */
 
+import type Hls from "hls.js";
+
 import type { AudioConfig } from "@/models/recitation";
+
+function isHlsUrl(url: string): boolean {
+  return new URL(url).pathname.toLowerCase().endsWith(".m3u8");
+}
 
 export interface AudioPlayerState {
   config: AudioConfig | null;
@@ -36,6 +42,7 @@ class AudioPlayerService extends EventTarget {
   private _state: AudioPlayerState = { ...DEFAULT_STATE };
   // Stored so we can remove it when rapidly switching tracks before metadata loads
   private _pendingSeekHandler: (() => void) | null = null;
+  private _hls: Hls | null = null;
 
   constructor() {
     super();
@@ -122,6 +129,42 @@ class AudioPlayerService extends EventTarget {
     return this._audio;
   }
 
+  private _destroyHls(): void {
+    if (this._hls) {
+      this._hls.destroy();
+      this._hls = null;
+    }
+  }
+
+  private async _loadHls(url: string): Promise<void> {
+    const { default: HlsConstructor } = await import("hls.js");
+
+    if (HlsConstructor.isSupported()) {
+      const hls = new HlsConstructor();
+      hls.loadSource(url);
+      hls.attachMedia(this._audio);
+      this._hls = hls;
+
+      hls.on(HlsConstructor.Events.ERROR, (_event, data) => {
+        if (data.fatal) {
+          this._updateState({
+            error: new Error(`HLS error: ${data.details}`),
+            isLoading: false,
+            isPlaying: false,
+          });
+        }
+      });
+    } else if (this._audio.canPlayType("application/vnd.apple.mpegurl")) {
+      // Safari native HLS
+      this._audio.src = url;
+    } else {
+      this._updateState({
+        error: new Error("HLS playback is not supported in this browser"),
+        isLoading: false,
+      });
+    }
+  }
+
   /**
    * Play a new track or resume current track.
    * If config has startTime, seeks to that position before playing.
@@ -139,7 +182,8 @@ class AudioPlayerService extends EventTarget {
           this._pendingSeekHandler = null;
         }
 
-        this._audio.src = config.url;
+        this._destroyHls();
+
         const startTime = config.startTime ?? 0;
         const targetUrl = config.url;
         this._updateState({
@@ -152,7 +196,6 @@ class AudioPlayerService extends EventTarget {
         // Seek to startTime once metadata is loaded
         if (startTime > 0) {
           this._pendingSeekHandler = () => {
-            // Verify this is still the intended track before seeking
             if (this._state.config?.url === targetUrl) {
               this._audio.currentTime = startTime;
             }
@@ -164,6 +207,20 @@ class AudioPlayerService extends EventTarget {
             { once: true },
           );
         }
+
+        if (isHlsUrl(config.url)) {
+          this._loadHls(config.url).then(() => {
+            this._audio.play().catch((err) => {
+              this._updateState({
+                error: err instanceof Error ? err : new Error(String(err)),
+                isPlaying: false,
+              });
+            });
+          });
+          return;
+        }
+
+        this._audio.src = config.url;
       }
     } else if (!this._state.config) {
       // No track loaded, nothing to play
@@ -236,6 +293,7 @@ class AudioPlayerService extends EventTarget {
    * Stop playback and reset state (clears config, hides player).
    */
   stop(): void {
+    this._destroyHls();
     this._audio.pause();
     this._audio.currentTime = 0;
     this._audio.src = "";
