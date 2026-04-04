@@ -3,6 +3,10 @@ import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 export default [
   new WirdModel({
     title: "Dalāʾil al-Khayrāt - 7 Sunday",
+    audio: {
+      url: "https://cdn.jsdelivr.net/gh/adehad/khulasah-plus-cdn@main/audio/dalail-khayrat-7---Sunday/playlist.m3u8",
+      title: "Dalāʾil al-Khayrāt - 7 Sunday",
+    },
     entries: [
       new DhikrModel({
         entries: [
