@@ -22,6 +22,19 @@
       "request": "launch",
       "type": "chrome",
       "url": "" // Provide your project's url to finish configuring
+    },
+    {
+      "name": "Dev: Dhikr Tools",
+      "type": "extensionHost",
+      "request": "launch",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}/tools/dhikr-tools-extension",
+        "${workspaceFolder}"
+      ],
+      "outFiles": [
+        "${workspaceFolder}/tools/dhikr-tools-extension/out/**/*.js"
+      ],
+      "preLaunchTask": "compile-dhikr-ext"
     }
   ]
 }
