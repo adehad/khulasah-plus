@@ -89,6 +89,42 @@ export class QuranEntryModel implements RecitationEntry {
 }
 
 /**
+ * Represents a Quranic verse that appears inside a DhikrModel.
+ * Unlike QuranEntryModel (used inside QuranModel), this carries its own
+ * surah context since there is no parent QuranModel to provide it.
+ * Surah name is looked up from SURAH_NAMES at render time.
+ *
+ * @implements {RecitationEntry}
+ */
+export class QuranDhikrEntryModel implements RecitationEntry {
+  arabic: string;
+  translit: string;
+  translation: string;
+  verse: number;
+  surah: number;
+
+  constructor({
+    arabic,
+    translit,
+    translation,
+    verse,
+    surah,
+  }: {
+    arabic: string;
+    translit: string;
+    translation: string;
+    verse: number;
+    surah: number;
+  }) {
+    this.arabic = arabic;
+    this.translit = translit;
+    this.translation = translation;
+    this.verse = verse;
+    this.surah = surah;
+  }
+}
+
+/**
  * Represents a single entry of Qasida verse.
  *
  * @implements {RecitationEntry}
@@ -190,7 +226,7 @@ export class ExpandModel extends BaseRecitationModel {
 export class DhikrModel extends BaseRecitationModel {
   /** Number of times to repeat the entire dhikr (all entries together) */
   repeat: number;
-  entries: DhikrEntryModel[];
+  entries: (DhikrEntryModel | QuranDhikrEntryModel)[];
 
   constructor({
     entries,
@@ -198,7 +234,7 @@ export class DhikrModel extends BaseRecitationModel {
     title,
     repeat = 1,
   }: {
-    entries?: DhikrEntryModel[];
+    entries?: (DhikrEntryModel | QuranDhikrEntryModel)[];
     instruction?: string;
     title?: string;
     repeat?: number;

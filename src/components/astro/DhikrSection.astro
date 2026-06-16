@@ -1,6 +1,13 @@
 ---
-import { DHIKR_COUNTER_THRESHOLD, type DhikrModel } from "@/models/recitation";
+import { SURAH_NAMES } from "@/data/shared/surah-names";
+import {
+  DHIKR_COUNTER_THRESHOLD,
+  DhikrEntryModel,
+  type DhikrModel,
+  QuranDhikrEntryModel,
+} from "@/models/recitation";
 import DhikrEntry from "./DhikrEntry.astro";
+import QuranEntry from "./QuranEntry.astro";
 
 interface Props {
   model: DhikrModel;
@@ -23,9 +30,25 @@ const makeKey = (suffix?: number) => {
 <div class="dhikr-container" id={elementId}>
   {model.instruction && <p class="instruction">{model.instruction}</p>}
   {showModelRepeatText && <p class="instruction dhikr-repeat">(Repeat the following x{modelRepeat})</p>}
-  {model.entries?.map((entry, i) => (
-    <DhikrEntry entry={entry} storageKey={makeKey(i)} />
-  ))}
+  {model.entries.map((entry, i) => {
+    if (entry instanceof QuranDhikrEntryModel) {
+      const surahName = SURAH_NAMES.get(entry.surah) ?? `Surah ${entry.surah}`;
+      return (
+        <>
+          <QuranEntry
+            entry={entry}
+            openingBrace={true}
+            closingBrace={true}
+            repeatText=""
+          />
+          <kp-footnote type="quran">
+            Surah {surahName} ({entry.surah}):{entry.verse}
+          </kp-footnote>
+        </>
+      );
+    }
+    return <DhikrEntry entry={entry as DhikrEntryModel} storageKey={makeKey(i)} />;
+  })}
   {showModelCounter && (
     <kp-dhikr-counter
       target={modelRepeat}
@@ -40,4 +63,5 @@ const makeKey = (suffix?: number) => {
     margin-top: 0.5em;
     font-style: italic;
   }
+
 </style>

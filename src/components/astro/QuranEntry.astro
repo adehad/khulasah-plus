@@ -1,8 +1,11 @@
 ---
-import type { QuranEntryModel } from "@/models/recitation";
+import type {
+  QuranDhikrEntryModel,
+  QuranEntryModel,
+} from "@/models/recitation";
 
 interface Props {
-  entry: QuranEntryModel;
+  entry: QuranEntryModel | QuranDhikrEntryModel;
   openingBrace: boolean;
   closingBrace: boolean;
   repeatText: string;
