@@ -64,6 +64,10 @@ export class StickyButton extends LitElement {
       padding: 0.3rem 1ch;
       font-size: 0.9rem;
       cursor: pointer;
+      /* WebKit gives native <button> text a system color (blue on iOS) instead of inheriting;
+         force inherit so the number matches the page color on every engine. */
+      color: inherit;
+      -webkit-text-fill-color: currentColor;
     }
 
     .sticky.verse {
