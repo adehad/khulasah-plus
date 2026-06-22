@@ -41,7 +41,26 @@ export default defineConfig({
   base: process.env.ASTRO_BASE || undefined,
   output: "static",
   integrations: [
-    sitemap(),
+    // Gallery route lives in tests/visual/ and is injected only when Playwright asks for it,
+    // so normal `bun run build` never emits it.
+    ...(process.env.INCLUDE_GALLERY === "1"
+      ? [
+          {
+            name: "inject-gallery",
+            hooks: {
+              "astro:config:setup": ({ injectRoute }) => {
+                injectRoute({
+                  pattern: "/component-gallery",
+                  entrypoint: "./tests/visual/component-gallery.astro",
+                });
+              },
+            },
+          },
+        ]
+      : []),
+    sitemap({
+      filter: (page) => !page.includes("/component-gallery"),
+    }),
     AstroPWA({
       strategies: "injectManifest",
       injectManifest: {

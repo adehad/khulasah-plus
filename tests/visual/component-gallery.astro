@@ -1,0 +1,102 @@
+---
+import ContentRenderer from "@/components/astro/ContentRenderer.astro";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { NavModel } from "@/models/nav";
+import {
+  DhikrEntryModel,
+  DhikrModel,
+  ExpandModel,
+  QasidaChapterModel,
+  QasidaEntryModel,
+  QasidaModel,
+  QasidaVerseModel,
+  QuranDhikrEntryModel,
+  QuranEntryModel,
+  QuranModel,
+  WirdModel,
+} from "@/models/recitation";
+
+const PAGE_PATH = "/component-gallery";
+const sampleAudio = { url: "/sample-audio", title: "Sample audio" };
+
+const quran = new QuranModel({
+  title: "Al-Ikhlas",
+  surah: 112,
+  basmallah: true,
+  entries: [
+    new QuranEntryModel({ arabic: "قُلْ هُوَ ٱللَّهُ أَحَدٌ", translit: "Qul huwa Allahu ahad", translation: "Say, He is Allah, One", verse: 1 }),
+    new QuranEntryModel({ arabic: "ٱللَّهُ ٱلصَّمَدُ", translit: "Allahu as-samad", translation: "Allah, the Eternal Refuge", verse: 2 }),
+  ],
+});
+
+const dhikr = new DhikrModel({
+  title: "Tasbih",
+  instruction: "Recite after the prayer",
+  repeat: 100,
+  entries: [
+    new DhikrEntryModel({ arabic: "سُبْحَانَ ٱللَّٰهِ", translit: "Subhan Allah", translation: "Glory be to Allah", repeat: 33, enableCounter: true }),
+    new QuranDhikrEntryModel({ arabic: "ءَامَنَ ٱلرَّسُولُ", translit: "Amana ar-rasul", translation: "The Messenger has believed", verse: 285, surah: 2 }),
+  ],
+});
+
+const expand = new ExpandModel({
+  title: "Optional section",
+  startExpanded: true,
+  entries: [
+    new DhikrModel({ entries: [new DhikrEntryModel({ arabic: "ٱلْحَمْدُ لِلَّٰهِ", translit: "Alhamdulillah", translation: "Praise be to Allah" })] }),
+  ],
+});
+
+const wird = new WirdModel({
+  title: "Morning Wird",
+  audio: sampleAudio,
+  entries: [
+    new DhikrModel({ title: "Opening", entries: [new DhikrEntryModel({ arabic: "بِسْمِ ٱللَّٰهِ", translit: "Bismillah", translation: "In the name of Allah" })] }),
+    new QuranModel({ title: "Al-Fatihah", surah: 1, entries: [new QuranEntryModel({ arabic: "ٱلْحَمْدُ لِلَّٰهِ رَبِّ ٱلْعَٰلَمِينَ", translit: "Alhamdu lillahi rabbil alamin", translation: "Praise be to Allah, Lord of the worlds", verse: 2 })] }),
+    new ExpandModel({ title: "Closing dua", entries: [new DhikrModel({ entries: [new DhikrEntryModel({ arabic: "آمِين", translit: "Amin", translation: "Amen" })] })] }),
+  ],
+});
+
+const qasida = new QasidaModel({
+  title: "Sample Qasida",
+  audio: sampleAudio,
+  entries: [
+    new QasidaChapterModel({
+      number: 1,
+      title: "Chapter One",
+      entries: [
+        new QasidaVerseModel({ entries: [new QasidaEntryModel({ arabic: "يَا نَبِيَّ سَلَامٌ عَلَيْكَ", translit: "Ya nabi salam alayka", translation: "O Prophet, peace be upon you" })] }),
+        new QasidaVerseModel({ chorus: true, entries: [new QasidaEntryModel({ arabic: "صَلَوَاتُ ٱللَّٰهِ عَلَيْكَ", translit: "Salawatu llahi alayka", translation: "The blessings of Allah upon you" })] }),
+      ],
+    }),
+  ],
+});
+
+const nav = [
+  new NavModel({ href: "component-gallery", title: "Sample Link A" }),
+  new NavModel({ href: "component-gallery", title: "Sample Link B" }),
+];
+
+const sections = [
+  { id: "quran", items: [quran] },
+  { id: "dhikr", items: [dhikr] },
+  { id: "wird", items: [wird] },
+  { id: "qasida", items: [qasida] },
+  { id: "expand", items: [expand] },
+  { id: "nav", items: nav },
+];
+---
+
+<BaseLayout title="Component Gallery" pagePath={PAGE_PATH}>
+  {sections.map((s) => (
+    <section data-testid={s.id} style="margin-block:2rem;">
+      <ContentRenderer items={s.items} pagePath={PAGE_PATH} />
+    </section>
+  ))}
+
+  <section data-testid="sticky-buttons" style="display:flex; gap:1rem; margin-block:2rem;">
+    <kp-sticky-button label="1" elementId="sb-entry" variant="entry"></kp-sticky-button>
+    <kp-sticky-button label="2" elementId="sb-verse" variant="verse"></kp-sticky-button>
+    <kp-sticky-button label="3" elementId="sb-chapter" variant="chapter"></kp-sticky-button>
+  </section>
+</BaseLayout>
