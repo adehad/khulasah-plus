@@ -1,0 +1,41 @@
+name: Visual Tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  visual:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: "1.2.23"
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Install Playwright browsers
+        run: bunx playwright install --with-deps chromium webkit
+
+      # Behavioural specs gate the run (engine-level, OS-independent); the gallery
+      # spec captures a full-page screenshot per engine into the HTML report.
+      - name: Run visual tests
+        run: bun run test:visual
+
+      # Expiring artifact — the screenshots to eyeball; uploaded even on failure.
+      - name: Upload Playwright report
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 14

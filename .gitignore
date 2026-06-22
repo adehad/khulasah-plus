@@ -1,3 +1,8 @@
+# Playwright (baselines under tests/**/*-snapshots are committed; these are not)
+/test-results/
+/playwright-report/
+/playwright/.cache/
+
 # temporary dev service worker
 /public/sw.dev.js
 /public/search-index.json
