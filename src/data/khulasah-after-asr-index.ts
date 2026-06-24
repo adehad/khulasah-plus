@@ -7,7 +7,7 @@ export const afterAsrContent = [
   }),
   new NavModel({
     title: "Supplication after Sūrah al-Wāqi‛ah",
-    href: "/",
+    href: "khulasah/after-asr/dua-after-surah-al-waqiah",
   }),
   new NavModel({
     title: "Hizb al-Bahr",

@@ -1,4 +1,3 @@
-import { falaq, ikhlas, nas } from "@/data/shared/quran";
 import {
   DhikrEntryModel,
   DhikrModel,
@@ -7,13 +6,124 @@ import {
   WirdModel,
 } from "@/models/recitation";
 
-export const wird = [
+export default [
   new WirdModel({
     title: "Wird al Latif",
     entries: [
-      ikhlas(3),
-      falaq(3),
-      nas(3),
+      new QuranModel({
+        title: "Ikhlas",
+        surah: 112,
+        entries: [
+          new QuranEntryModel({
+            arabic: "قُلۡ هُوَ ٱللَّهُ أَحَدٌ ",
+            translit: "Qul HuwaLlāhu aḥad.",
+            translation: "Say, ‘He is God the One, ",
+            verse: 1,
+          }),
+          new QuranEntryModel({
+            arabic: "ٱللَّهُ ٱلصَّمَدُ ",
+            translit: "Allāhus-Ṣamad.",
+            translation: "God the eternally Besought.",
+            verse: 2,
+          }),
+          new QuranEntryModel({
+            arabic: "لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ ",
+            translit: "Lam yalid wa lam yūlad.",
+            translation: "He begot no one nor was He begotten.",
+            verse: 3,
+          }),
+          new QuranEntryModel({
+            arabic: "وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ ",
+            translit: "Wa lam yakun lahu kufuwan aḥad. (3x)",
+            translation: "No one is comparable to Him.’",
+            verse: 4,
+          }),
+        ],
+        basmallah: true,
+        repeat: 3,
+      }),
+      new QuranModel({
+        title: "Falaq",
+        surah: 113,
+        entries: [
+          new QuranEntryModel({
+            arabic: "قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ",
+            translit: "Qul aʿūdhu bi rabb il-falaq.",
+            translation: "Say, ‘I take refuge with the Lord of daybreak",
+            verse: 1,
+          }),
+          new QuranEntryModel({
+            arabic: "مِن شَرِّ مَا خَلَقَ",
+            translit: " Min sharri mā khalaq.",
+            translation: "against the harm in what He has created,",
+            verse: 2,
+          }),
+          new QuranEntryModel({
+            arabic: "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+            translit: "Wa min sharri ghāsiqin idhā waqab.",
+            translation: "the harm in the night when darkness gathers,",
+            verse: 3,
+          }),
+          new QuranEntryModel({
+            arabic: "وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِي ٱلۡعُقَدِ",
+            translit: "Wa min sharri in-naffathāti fil ʿuqad.",
+            translation: "the harm in witches when they blow on knots,",
+            verse: 4,
+          }),
+          new QuranEntryModel({
+            arabic: "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+            translit: "Wa min sharri ḥāsidin idhā ḥasad.",
+            translation: "the harm in the envier when he envies.’",
+            verse: 5,
+          }),
+        ],
+        basmallah: true,
+        repeat: 3,
+      }),
+      new QuranModel({
+        title: "Nas",
+        surah: 114,
+        entries: [
+          new QuranEntryModel({
+            arabic: "قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ ",
+            translit: "Qul aʿūdhu bi rabb in-nās.",
+            translation: "Say, ‘I seek refuge with the Lord of people,",
+            verse: 1,
+          }),
+          new QuranEntryModel({
+            arabic: "مَلِكِ ٱلنَّاسِ",
+            translit: "Malik in-nās.",
+            translation: " the King of people,",
+            verse: 2,
+          }),
+          new QuranEntryModel({
+            arabic: "إِلَٰهِ ٱلنَّاسِ",
+            translit: "Ilāh in-nās.",
+            translation: "the God of people,",
+            verse: 3,
+          }),
+          new QuranEntryModel({
+            arabic: "مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ",
+            translit: " Min sharril waswāsil khannās.",
+            translation: "against the harm of the slinking whisperer",
+            verse: 4,
+          }),
+          new QuranEntryModel({
+            arabic: "ٱلَّذِي يُوَسۡوِسُ فِي صُدُورِ ٱلنَّاسِ",
+            translit: "Al-ladhī yuwaswisu fī ṣudūr in-nās.",
+            translation: "—who whispers into the hearts of people—",
+            verse: 5,
+          }),
+          new QuranEntryModel({
+            arabic: "مِنَ ٱلۡجِنَّةِ وَٱلنَّاسِ",
+            translit: "Min aljinnati wan-nās.",
+            translation: "whether they be jinn or people.’",
+            verse: 6,
+          }),
+        ],
+        basmallah: true,
+        repeat: 3,
+      }),
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -200,12 +310,18 @@ export const wird = [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "ٱللَّهُمَّ إِنِّي أَصْبَحْتُ مِنْكَ فِي نِعْمَةٍ وَعَافِيَةٍ وَسَتْرٍ فَأَتْمِمْ نِعْمَتَكَ عَلَيَّ وَعَافِيَتَكَ وَسَتْرَكَ فِي ٱلدُّنْيَا وَٱلْآخِرَة",
+            arabic: "ٱللَّهُمَّ إِنِّي أَصْبَحْتُ مِنْكَ فِي نِعْمَةٍ وَعَافِيَةٍ وَسَتْرٍ",
             translit:
-              "Allāhumma innī aṣbaḥtu minka fī niʿmatin wa ʿāfiyatin wa satr, faʾatmim niʿmataka ʿalayya wa ʿāfiyataka wa satraka fid-dunyā wal-ākhīrah.",
+              "Allāhumma innī aṣbaḥtu minka fī niʿmatin wa ʿāfiyatin wa satr,",
             translation:
-              "O Allah! As morning comes upon me, I dwell in Your favor, well-being and protection; so complete Your favor upon me, Your well-being, and Your protection, in this world and the next.",
+              "O Allah! As morning comes upon me, I dwell in Your favor, well-being and protection;",
+          }),
+          new DhikrEntryModel({
+            arabic: "فَأَتْمِمْ نِعْمَتَكَ عَلَيَّ وَعَافِيَتَكَ وَسَتْرَكَ فِي ٱلدُّنْيَا وَٱلْآخِرَة",
+            translit:
+              "faʾatmim niʿmataka ʿalayya wa ʿāfiyataka wa satraka fid-dunyā wal-ākhīrah.",
+            translation:
+              "so complete Your favor upon me, Your well-being, and Your protection, in this world and the next.",
             repeat: 3,
           }),
         ],
@@ -213,12 +329,19 @@ export const wird = [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "ٱللَّهُمَّ إِنِّي أَصْبَحْتُ أُشْهِدُكَ وَأُشْهِدُ حَمَلَةَ عَرْشِكَ وَمَلَائِكَتَكَ وَجَمِيعَ خَلْقِكَ أَنَّكَ أَنْتَ ٱللَّهُ لَا إِلَهَ إِلَّا أَنْتَ وَحْدَكَ لَا شَرِيكَ لَكَ وَأَنَّ سَيِّدَنَا مُحَمَّدًا عَبْدُكَ وَرَسُولُك",
+            arabic: "ٱللَّهُمَّ إِنِّي أَصْبَحْتُ أُشْهِدُكَ وَأُشْهِدُ حَمَلَةَ عَرْشِكَ وَمَلَائِكَتَكَ وَجَمِيعَ خَلْقِكَ",
             translit:
-              "Allāhumma innī aṣbaḥtu ushhiduka, wa ushhidu ḥamalata ʿarshika wa malāʾikataka wa jamīʿa khalqika, annaka antaLlāhu lā ilāha illā anta waḥdaka lā sharīka laka, wa anna Sayyidanā Muḥammadan ʿabduka wa rasūluk.",
+              "Allāhumma innī aṣbaḥtu ushhiduka, wa ushhidu ḥamalata ʿarshika wa malāʾikataka wa jamīʿa khalqika,",
             translation:
-              "O Allah! As morning comes upon me, I bear witness before You, the Bearers of Your Throne, Your angels, and all Your creation—that You are Allah, there is no god but You, alone with no partners, and that our master Muhammad is Your slave and messenger.",
+              "O Allah! As morning comes upon me, I bear witness before You, the Bearers of Your Throne, Your angels, and all Your creation—",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "أَنَّكَ أَنْتَ ٱللَّهُ لَا إِلَهَ إِلَّا أَنْتَ وَحْدَكَ لَا شَرِيكَ لَكَ وَأَنَّ سَيِّدَنَا مُحَمَّدًا عَبْدُكَ وَرَسُولُك",
+            translit:
+              "annaka antaLlāhu lā ilāha illā anta waḥdaka lā sharīka laka, wa anna Sayyidanā Muḥammadan ʿabduka wa rasūluk.",
+            translation:
+              "that You are Allah, there is no god but You, alone with no partners, and that our master Muhammad is Your slave and messenger.",
             repeat: 4,
           }),
         ],
@@ -238,12 +361,18 @@ export const wird = [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "آمَنْتُ بِٱللَّهِ ٱلْعَظِيمِ وَكَفَرْتُ بِٱلْجِبْتِ وَٱلطَّاغُوتِ وَٱسْتَمْسَكْتُ بِٱلْعُرْوَةِ ٱلْوُثْقَىٰ لَا ٱنفِصَامَ لَهَا وَٱللَّهُ سَمِيعٌ عَلِيمٌ",
+            arabic: "آمَنْتُ بِٱللَّهِ ٱلْعَظِيمِ وَكَفَرْتُ بِٱلْجِبْتِ وَٱلطَّاغُوتِ",
             translit:
-              "Āmantu billāh il-ʿAẓīm, wa kafartu bil jibti wat-ṭāghūt, wastamsaktu bil ʿurwat il-wuthqā, lanfiṣāma lahā wa Allāhu Samīʿun ʿAlīm.",
+              "Āmantu billāh il-ʿAẓīm, wa kafartu bil jibti wat-ṭāghūt,",
             translation:
-              "I believe in Allah the Almighty, and I denounce all idols and false gods, and I grasp the firmest handhold that never breaks, and Allah is All-Hearing, All-Knowing.",
+              "I believe in Allah the Almighty, and I denounce all idols and false gods,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَٱسْتَمْسَكْتُ بِٱلْعُرْوَةِ ٱلْوُثْقَىٰ لَا ٱنفِصَامَ لَهَا وَٱللَّهُ سَمِيعٌ عَلِيمٌ",
+            translit:
+              "wastamsaktu bil ʿurwat il-wuthqā, lanfiṣāma lahā wa Allāhu Samīʿun ʿAlīm.",
+            translation:
+              "and I grasp the firmest handhold that never breaks, and Allah is All-Hearing, All-Knowing.",
             repeat: 3,
           }),
         ],
@@ -299,12 +428,30 @@ export const wird = [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "ٱللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ خَلَقْتَنِي، وَأَنَا عَبْدُكَ وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا ٱسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ وَأَبُوءُ بِذَنْبِي فَٱغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ ٱلذُّنُوبَ إِلَّا أَنْتَ",
-            translit:
-              "Allāhumma anta Rabbī lā ilāha illā anta, khalaqtanī wa anā ʿabduka, wa anā ʿalā ʿahdika wa waʿdika ma astaṭaʿtu, aʿūdhu bika min sharri mā ṣanaʿtu, abūʾu laka bi niʿmatika ʿalayya wa abūʾu bi dhanbī, faghfir lī, faʾinnahu lā yaghfir udh-dhunūba illā anta.",
+            arabic: "ٱللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ خَلَقْتَنِي",
+            translit: "Allāhumma anta Rabbī lā ilāha illā anta",
             translation:
-              "O Allah! You are my Lord, there is no god but You, You created me and I am Your slave. I uphold Your pledge and promise as well as I can; I seek Your protection against the evil that I have done; I acknowledge Your favors upon me and I acknowledge my sin, so forgive me, for none forgives sin except You.",
+              "O Allah! You are my Lord, there is no god but You, You created me",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنَا عَبْدُكَ وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا ٱسْتَطَعْتُ",
+            translit: "khalaqtanī wa anā ʿabduka",
+            translation:
+              "and I am Your slave. I uphold Your pledge and promise as well as I can;",
+          }),
+          new DhikrEntryModel({
+            arabic: "أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ",
+            translit: "wa anā ʿalā ʿahdika wa waʿdika ma astaṭaʿtu",
+            translation:
+              "I seek Your protection against the evil that I have done;",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ وَأَبُوءُ بِذَنْبِي فَٱغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ ٱلذُّنُوبَ إِلَّا أَنْتَ",
+            translit:
+              "aʿūdhu bika min sharri mā ṣanaʿtu, abūʾu laka bi niʿmatika ʿalayya wa abūʾu bi dhanbī, faghfir lī, faʾinnahu lā yaghfir udh-dhunūba illā anta.",
+            translation:
+              "I acknowledge Your favors upon me and I acknowledge my sin, so forgive me, for none forgives sin except You.",
           }),
         ],
       }),
@@ -359,24 +506,53 @@ export const wird = [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ، وَمِنْ عَذَابِكَ أَسْتَجِيرُ، أَصْلِح لِي شَأْنِي كُلَّهُ، وَلَا تَكِلْنِي إِلَى نَفْسِي وَلَا إِلَى أَحَدٍ مِنْ خَلْقِكَ طَرْفَةَ عَيْن",
-            translit:
-              "Yā Ḥayyu yā Qayyūm, bi-raḥmatika astaghīth, wa min ʿadhābika astajīr, aṣliḥ lī shaʾnī kullahu, wa lā takilnī ilā nafsī wa lā ilā aḥadin min khalqika ṭarfata ʿayn.",
+            arabic: "يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ",
+            translit: "Yā Ḥayyu yā Qayyūm, bi-raḥmatika astaghīth",
             translation:
-              "O Ever-Living, O Sustainer! I  seek help through Your Mercy and  protection from Your Punishment. Rectify all my affairs and do not entrust me to myself or to any of Your creation for even the blink of an eye.",
+              "O Ever-Living, O Sustainer! I seek help through Your Mercy",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَمِنْ عَذَابِكَ أَسْتَجِيرُ",
+            translit: "wa min ʿadhābika astajīr",
+            translation: "and protection from Your Punishment.",
+          }),
+          new DhikrEntryModel({
+            arabic: "أَصْلِح لِي شَأْنِي كُلَّهُ",
+            translit: "aṣliḥ lī shaʾnī kullahu",
+            translation: "Rectify all my affairs",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَلَا تَكِلْنِي إِلَى نَفْسِي وَلَا إِلَى أَحَدٍ مِنْ خَلْقِكَ طَرْفَةَ عَيْن",
+            translit:
+              "wa lā takilnī ilā nafsī wa lā ilā aḥadin min khalqika ṭarfata ʿayn.",
+            translation:
+              "and do not entrust me to myself or to any of Your creation for even the blink of an eye.",
           }),
         ],
       }),
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "ٱللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ ٱلْهَمِّ وَٱلحَزَنِ، وَأَعُوذُ بِكَ مِنَ ٱلْعَجْزِ وَٱلْكَسَلِ، وَأَعُوذُ بِكَ مِنَ ٱلْجُبْنِ وَٱلْبُخْلِ، وَأَعُوذُ بِكَ مِنْ غَلَبَةِ ٱلدَّينِ وَقَهْرِ ٱلرِّجَالِ",
-            translit:
-              "Allāhumma innī aʿūdhu bika min al-hammi wa al-ḥazan, wa aʿūdhu bika min al-ʿajzi wa al-kasal, wa aʿūdhu bika min al-jubni wa al-bukhl, wa aʿūdhu bika min ghalabat id-dayni wa qahr ir-rijāl.",
+            arabic: "ٱللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ ٱلْهَمِّ وَٱلحَزَنِ",
+            translit: "Allāhumma innī aʿūdhu bika min al-hammi wa al-ḥazan",
             translation:
-              "O Allah! I seek Your protection from sorrow and grief, from incapacity and sloth, from cowardice and miserliness, and I seek Your protection from overwhelming debt and the tyranny of men.",
+              "O Allah! I seek Your protection from sorrow and grief",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَعُوذُ بِكَ مِنَ ٱلْعَجْزِ وَٱلْكَسَلِ",
+            translit: "wa aʿūdhu bika min al-ʿajzi wa al-kasal",
+            translation: "from incapacity and sloth",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَعُوذُ بِكَ مِنَ ٱلْجُبْنِ وَٱلْبُخْلِ",
+            translit: "wa aʿūdhu bika min al-jubni wa al-bukhl",
+            translation: "from cowardice and miserliness",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَعُوذُ بِكَ مِنْ غَلَبَةِ ٱلدَّينِ وَقَهْرِ ٱلرِّجَالِ",
+            translit: "wa aʿūdhu bika min ghalabat id-dayni wa qahr ir-rijāl.",
+            translation:
+              "and I seek Your protection from overwhelming debt and the tyranny of men.",
           }),
         ],
       }),
@@ -416,11 +592,17 @@ export const wird = [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "ٱللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ وَمِنْ خَلْفِي وَعَنْ يَمِينِي وَعَنْ شِمَالِي وَمِنْ فَوْقِي، وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي",
-            translit:
-              "Allāhumma iḥfaẓnī min bayni yadayya wa min khalfī, wa ʿan yamīnī wa ʿan shimālī wa min fawqī, wa aʿūdhu bi-ʿaẓamatika an ughtāla min taḥtī.",
+              "ٱللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ وَمِنْ خَلْفِي وَعَنْ يَمِينِي وَعَنْ شِمَالِي وَمِنْ فَوْقِي",
+            translit: "Allāhumma iḥfaẓnī min bayni yadayya wa min khalfī",
             translation:
-              "O Allah! Protect me from [the evil] in front of me and behind me, on my right and my left, and from above me—and I take refuge in Your Greatness from the unexpected harm from below me.",
+              "O Allah! Protect me from [the evil] in front of me and behind me, on my right and my left, and from above me;",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي",
+            translit:
+              "wa ʿan yamīnī wa ʿan shimālī wa min fawqī, wa aʿūdhu bi-ʿaẓamatika an ughtāla min taḥtī.",
+            translation:
+              "and I take refuge in Your Greatness from the unexpected harm from below me.",
           }),
         ],
       }),
@@ -428,11 +610,16 @@ export const wird = [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "ٱللَّهُمَّ أَنْتَ خَلَقْتَنِي وَأَنْتَ تَهْدِينِي وَأَنْتَ تُطْعِمُنِي وَأَنْتَ تَسْقِينِي وَأَنْتَ تُمِيتُنِي وَأَنْتَ تُحْيِينِي وَأَنْتَ عَلَى كُلِّ شَيْءٍ قَدِير",
+              "ٱللَّهُمَّ أَنْتَ خَلَقْتَنِي وَأَنْتَ تَهْدِينِي وَأَنْتَ تُطْعِمُنِي وَأَنْتَ تَسْقِينِي وَأَنْتَ تُمِيتُنِي وَأَنْتَ تُحْيِينِي",
             translit:
-              "Allāhumma anta khalaqtanī wa anta tahdīnī wa anta tuṭʿimunī wa anta tasqīnī wa anta tumītunī wa anta tuḥyīnī, wa anta ʿalā kulli shayyʾin qadīr.",
+              "Allāhumma anta khalaqtanī wa anta tahdīnī wa anta tuṭʿimunī wa anta tasqīnī wa anta tumītunī wa anta tuḥyīnī,",
             translation:
-              "O Allah! You created me and You guide me, and You feed me and provide me with drink, and You cause me to die and You give me life, and You have power over all things.",
+              "O Allah! You created me and You guide me, and You feed me and provide me with drink, and You cause me to die and You give me life,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَنْتَ عَلَى كُلِّ شَيْءٍ قَدِير",
+            translit: "wa anta ʿalā kulli shayyʾin qadīr.",
+            translation: "and You have power over all things.",
           }),
         ],
       }),
@@ -440,11 +627,18 @@ export const wird = [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "أَصْبَحْنَا عَلَى فِطْرَةِ ٱلْإِسْلَامِ وَعَلَى كَلِمَةِ ٱلْإِخْلَاصِ وَعَلَى دِينِ نَبِيِّنَا مُحَمَّدٍ صَلَّى ٱللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ وَعَلَى مِلَّةِ أَبِينَا إِبْرَٰهِيمَ حَنِيفًا مُسْلِمًا وَمَا كَانَ مِنَ ٱلْمُشْرِكِينَ",
+              "أَصْبَحْنَا عَلَى فِطْرَةِ ٱلْإِسْلَامِ وَعَلَى كَلِمَةِ ٱلْإِخْلَاصِ وَعَلَى دِينِ نَبِيِّنَا مُحَمَّدٍ صَلَّى ٱللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ",
             translit:
-              "Aṣbaḥnā ʿalā fiṭrat il-Islām wa ʿalā kalimat il-ikhlāṣ wa ʿalā dīni nabīyyinā Muḥammadin ṣallā Allāhu ʿalayhi wa ālihi wa sallim, wa ʿalā millati abīnā Ibrāhīma ḥanīfan musliman wa mā kāna min almushrikīn.",
+              "Aṣbaḥnā ʿalā fiṭrat il-Islām wa ʿalā kalimat il-ikhlāṣ wa ʿalā dīni nabīyyinā Muḥammadin ṣallā Allāhu ʿalayhi wa ālihi wa sallim,",
             translation:
-              "We have risen this morning on the original pattern of Islam, upon the Word of Sincerity, on the religion of our Prophet Muhammad (Allah’s blessings and peace be upon him and his family), and upon the confession of Ibrāhīm, who was upright, a Muslim, and not an idolator.",
+              "We have risen this morning on the original pattern of Islam, upon the Word of Sincerity, on the religion of our Prophet Muhammad (Allah's blessings and peace be upon him and his family),",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَعَلَى مِلَّةِ أَبِينَا إِبْرَٰهِيمَ حَنِيفًا مُسْلِمًا وَمَا كَانَ مِنَ ٱلْمُشْرِكِينَ",
+            translit:
+              "wa ʿalā millati abīnā Ibrāhīma ḥanīfan musliman wa mā kāna min almushrikīn.",
+            translation:
+              "and upon the confession of Ibrahim, who was upright, a Muslim, and not an idolator.",
           }),
         ],
       }),
@@ -487,11 +681,19 @@ export const wird = [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "ٱللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ هَذَا ٱلْيَوْمِ وَخَيْرَ مَا فِيهِ وَخَيْرَ مَا قَبْلَهُ وَخَيْرَ مَا بَعْدَهُ وَأَعُوذُ بِكَ مِنْ شَرِّ هَذَا ٱلْيَوْمِ وَشَرِّ مَا فِيهِ وَشَرِّ مَا قَبْلَهُ وَشَرِّ مَا بَعْدَهُ",
+              "ٱللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ هَذَا ٱلْيَوْمِ وَخَيْرَ مَا فِيهِ وَخَيْرَ مَا قَبْلَهُ وَخَيْرَ مَا بَعْدَهُ",
             translit:
-              "Allāhumma innī asʾaluka khayra hādhā al-youmi wa khayra mā fīhi, wa khayra mā qablahu wa khayra mā baʿdahu, wa aʿūdhu bika min sharri hādhā al-youmi wa sharri mā fīhi, wa sharri mā qablahu wa sharri mā baʿdahu.",
+              "Allāhumma innī asʾaluka khayra hādhā al-youmi wa khayra mā fīhi, wa khayra mā qablahu wa khayra mā baʿdahu,",
             translation:
-              "O Allah! I ask You for the good of this day and the best of what is in it, and the best of what came before it and the best of what comes after it;  and I seek refuge in You from the evil of this day and the worst of what is in it, and the worst of what came before it and the worst of what comes after it.",
+              "O Allah! I ask You for the good of this day and the best of what is in it, and the best of what came before it and the best of what comes after it;",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَأَعُوذُ بِكَ مِنْ شَرِّ هَذَا ٱلْيَوْمِ وَشَرِّ مَا فِيهِ وَشَرِّ مَا قَبْلَهُ وَشَرِّ مَا بَعْدَهُ",
+            translit:
+              "wa aʿūdhu bika min sharri hādhā al-youmi wa sharri mā fīhi, wa sharri mā qablahu wa sharri mā baʿdahu.",
+            translation:
+              "and I seek refuge in You from the evil of this day and the worst of what is in it, and the worst of what came before it and the worst of what comes after it.",
           }),
         ],
       }),
@@ -499,11 +701,17 @@ export const wird = [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "ٱللَّهُمَّ مَا أَصْبَحَ بِي مِنْ نِعْمَةٍ أَوْ بِأَحَدٍ مِنْ خَلْقِكَ فَمِنْكَ وَحْدَكَ لَا شَرِيكَ لَكَ فَلَكَ ٱلْحَمْدُ وَلَكَ ٱلشُّكْرُ عَلَى ذَلِكَ",
+              "ٱللَّهُمَّ مَا أَصْبَحَ بِي مِنْ نِعْمَةٍ أَوْ بِأَحَدٍ مِنْ خَلْقِكَ فَمِنْكَ وَحْدَكَ لَا شَرِيكَ لَكَ",
             translit:
-              "Allāhumma mā aṣbaḥa bī min niʿmatin aw bi-aḥadin min khalqika, fa minka waḥdaka lā sharīka laka, falakal-ḥamdu wa lakash-shukru ʿalā dhālik.",
+              "Allāhumma mā aṣbaḥa bī min niʿmatin aw bi-aḥadin min khalqika, fa minka waḥdaka lā sharīka laka,",
             translation:
-              "O Allah! Whatever favors I, or any of Your creatures, received this morning, they come only from You; You have no partners, so to You belongs all praise and to You belongs all thanks.",
+              "O Allah! Whatever favors I, or any of Your creatures, received this morning, they come only from You; You have no partners,",
+          }),
+          new DhikrEntryModel({
+            arabic: "فَلَكَ ٱلْحَمْدُ وَلَكَ ٱلشُّكْرُ عَلَى ذَلِكَ",
+            translit: "falakal-ḥamdu wa lakash-shukru ʿalā dhālik.",
+            translation:
+              "so to You belongs all praise and to You belongs all thanks.",
           }),
         ],
       }),
@@ -536,12 +744,111 @@ export const wird = [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "سُبْحَٰنَ ٱللَّهِ عَدَدَ مَا خَلَقَ فِي ٱلسَّمَاءِ، سُبْحَٰنَ ٱللَّهِ عَدَدَ مَا خَلَقَ فِي ٱلْأَرْضِ، سُبْحَٰنَ ٱللَّهِ عَدَدَ مَا بَيْنَ ذَلِك، سُبْحَٰنَ ٱللَّهِ عَدَدَ مَا هُوَ خَالِقٌ",
-            translit:
-              "Subḥān Allāhi ʿadada mā khalaqa fīs-samāʾ, subḥān Allāhi ʿadada mā khalaqa fil-arḍ, subḥān Allāhi ʿadada mā bayna dhālik, subḥān Allāhi ʿadada mā Huwa khāliq.",
+            arabic: "سُبْحَٰنَ ٱللَّهِ عَدَدَ مَا خَلَقَ فِي ٱلسَّمَاءِ",
+            translit: "Subḥān Allāhi ʿadada mā khalaqa fīs-samāʾ",
             translation:
-              "“Transcendent is Allah” equal to what He created in the heavens; “transcendent is Allah” equal to what He created on earth; “transcendent is Allah” equal to what is between them both; “transcendent is Allah” equal to whatever He creates.",
+              "“Transcendent is Allah” equal to what He created in the heavens;",
+          }),
+          new DhikrEntryModel({
+            arabic: "سُبْحَٰنَ ٱللَّهِ عَدَدَ مَا خَلَقَ فِي ٱلْأَرْضِ",
+            translit: "subḥān Allāhi ʿadada mā khalaqa fil-arḍ",
+            translation:
+              "“Transcendent is Allah” equal to what He created on earth;",
+          }),
+          new DhikrEntryModel({
+            arabic: "سُبْحَٰنَ ٱللَّهِ عَدَدَ مَا بَيْنَ ذَلِك",
+            translit: "subḥān Allāhi ʿadada mā bayna dhālik",
+            translation:
+              "“Transcendent is Allah” equal to what is between them both;",
+          }),
+          new DhikrEntryModel({
+            arabic: "سُبْحَٰنَ ٱللَّهِ عَدَدَ مَا هُوَ خَالِقٌ",
+            translit: "subḥān Allāhi ʿadada mā Huwa khāliq.",
+            translation:
+              "“Transcendent is Allah” equal to whatever He creates.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "ٱلْحَمْدُ لِلَّهِ عَدَدَ مَا خَلَقَ فِي ٱلسَّمَاءِ",
+            translit: "Al-ḥamdu lillāhi ʿadada mā khalaqa fis-samāʾ",
+            translation:
+              "“All praise belongs to Allah” equal to what He created in the heavens;",
+          }),
+          new DhikrEntryModel({
+            arabic: "ٱلْحَمْدُ لِلَّهِ عَدَدَ مَا خَلَقَ فِي ٱلْأَرْضِ",
+            translit: "al-ḥamdu lillāhi ʿadada mā khalaqa fil-arḍ",
+            translation:
+              "“All praise belongs to Allah” equal to what He created on earth;",
+          }),
+          new DhikrEntryModel({
+            arabic: "ٱلْحَمْدُ لِلَّهِ عَدَدَ مَا بَيْنَ ذَلِك",
+            translit: "al-ḥamdu lillāhi ʿadada mā bayna dhālik",
+            translation:
+              "“All praise belongs to Allah” equal to what is between them both;",
+          }),
+          new DhikrEntryModel({
+            arabic: "ٱلْحَمْدُ لِلَّهِ عَدَدَ مَا هُوَ خَالِقٌ",
+            translit: "al-ḥamdu lillāhi ʿadada mā Huwa khāliq.",
+            translation:
+              "“All praise belongs to Allah” equal to whatever He creates.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "لَآ إِلَٰهَ إِلَّا ٱللَّهُ عَدَدَ مَا خَلَقَ فِي ٱلسَّمَاءِ",
+            translit: "Lā ilāha illā Allāhu ʿadada mā khalaqa fis-samāʾ",
+            translation:
+              "“There is no god except Allah” equal to what He created in the heavens;",
+          }),
+          new DhikrEntryModel({
+            arabic: "لَآ إِلَٰهَ إِلَّا ٱللَّهُ عَدَدَ مَا خَلَقَ فِي ٱلْأَرْضِ",
+            translit: "lā ilāha illā Allāhu ʿadada mā khalaqa fil-arḍ",
+            translation:
+              "“There is no god except Allah” equal to what He created on earth;",
+          }),
+          new DhikrEntryModel({
+            arabic: "لَآ إِلَٰهَ إِلَّا ٱللَّهُ عَدَدَ مَا بَيْنَ ذَلِك",
+            translit: "lā ilāha illā Allāhu ʿadada mā bayna dhālik",
+            translation:
+              "“There is no god except Allah” equal to what is between them both;",
+          }),
+          new DhikrEntryModel({
+            arabic: "لَآ إِلَٰهَ إِلَّا ٱللَّهُ عَدَدَ مَا هُوَ خَالِقٌ",
+            translit: "lā ilāha illā Allāhu ʿadada mā Huwa khāliq.",
+            translation:
+              "“There is no god except Allah” equal to whatever He creates.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "ٱللَّهُ أَكْبَرُ عَدَدَ مَا خَلَقَ فِي ٱلسَّمَاءِ",
+            translit: "Allāhu akbar ʿadada mā khalaqa fis-samāʾ",
+            translation:
+              "“Allah is Greater” equal to what He created in the heavens;",
+          }),
+          new DhikrEntryModel({
+            arabic: "ٱللَّهُ أَكْبَرُ عَدَدَ مَا خَلَقَ فِي ٱلْأَرْضِ",
+            translit: "Allāhu akbar ʿadada mā khalaqa fil-arḍ",
+            translation:
+              "“Allah is Greater” equal to what He created on earth;",
+          }),
+          new DhikrEntryModel({
+            arabic: "ٱللَّهُ أَكْبَرُ عَدَدَ مَا بَيْنَ ذَلِك",
+            translit: "Allāhu akbar ʿadada mā bayna dhālik",
+            translation:
+              "“Allah is Greater” equal to what is between them both;",
+          }),
+          new DhikrEntryModel({
+            arabic: "ٱللَّهُ أَكْبَرُ عَدَدَ مَا هُوَ خَالِقٌ",
+            translit: "Allāhu akbar ʿadada mā Huwa khāliq.",
+            translation: "“Allah is Greater” equal to whatever He creates.",
           }),
         ],
       }),
@@ -549,11 +856,49 @@ export const wird = [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "ٱلْحَمْدُ لِلَّهِ عَدَدَ مَا خَلَقَ فِي ٱلسَّمَاءِ، ٱلْحَمْدُ لِلَّهِ عَدَدَ مَا خَلَقَ فِي ٱلْأَرْضِ، ٱلْحَمْدُ لِلَّهِ عَدَدَ مَا بَيْنَ ذَلِك، ٱلْحَمْدُ لِلَّهِ عَدَدَ مَا هُوَ خَالِقٌ",
+              "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّهِ ٱلْعَلِيِّ ٱلْعَظِيمِ عَدَدَ مَا خَلَقَ فِي ٱلسَّمَاءِ",
             translit:
-              "Al-ḥamdu lillāhi ʿadada mā khalaqa fis-samāʾ, al-ḥamdu lillāhi ʿadada mā khalaqa fil-arḍ, al-ḥamdu lillāhi ʿadada mā bayna dhālik, al-ḥamdu lillāhi ʿadada mā Huwa khāliq.",
+              "Lā ḥawla wa lā quwwata illā billāh il-ʿAlīyy il-ʿAẓīm ʿadada mā khalaqa fis-samāʾ",
             translation:
-              "“All praise belongs to Allah” equal to what He created in the heavens; “all praise belongs to Allah” equal to what He created on earth; “all praise belongs to Allah” equal to what is between them both; “all praise belongs to Allah” equal to whatever He creates.",
+              "“There is no power or ability except by Allah, the Most High, the Almighty” equal to what He created in the heavens;",
+          }),
+          new DhikrEntryModel({
+            arabic: "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّهِ ٱلْعَلِيِّ ٱلْعَظِيمِ عَدَدَ مَا خَلَقَ فِي ٱلْأَرْضِ",
+            translit:
+              "lā ḥawla wa lā quwwata illā billāh il-ʿAlīyy ilʿAẓīm ʿadada mā khalaqa fil-arḍ",
+            translation:
+              "“There is no power or ability except by Allah, the Most High, the Almighty” equal to what He created on earth;",
+          }),
+          new DhikrEntryModel({
+            arabic: "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّهِ ٱلْعَلِيِّ ٱلْعَظِيمِ عَدَدَ مَا بَيْنَ ذَلِك",
+            translit:
+              "lā ḥawla wa lā quwwata illā billāh il-ʿAlīyy il-ʿAẓīm ʿadada mā bayna dhālik",
+            translation:
+              "“There is no power or ability except by Allah, the Most High, the Almighty” equal to what is between them both;",
+          }),
+          new DhikrEntryModel({
+            arabic: "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّهِ ٱلْعَلِيِّ ٱلْعَظِيمِ عَدَدَ مَا هُوَ خَالِقٌ",
+            translit:
+              "lā ḥawla wa lā quwwata illā billāh il-ʿAlīyy il-ʿAẓīm ʿadada mā Huwa khāliq.",
+            translation:
+              "“There is no power or ability except by Allah, the Most High, the Almighty” equal to whatever He creates.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "لَآ إِلَٰهَ إِلَّا ٱللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ",
+            translit: "Lā ilāha illāLlāhu waḥdahu lā sharīka lahu",
+            translation: "“There is no god except Allah",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "لَهُ ٱلْمُلْكُ وَلَهُ ٱلْحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ عَدَدَ كُلِّ ذَرَّةٍ أَلْفَ مَرَّة",
+            translit:
+              "lahul-mulku wa lahul-ḥamdu, yuḥyī wa yumītu wa Huwa ʿalā kulli shayyʾin qadīr, ʿadada kulli dharratin alfa marrah.",
+            translation:
+              "One without partner, all control and praise belong to Him, He gives life and death, and He has power over all things”—equal to every atom one thousand times over.",
           }),
         ],
       }),
@@ -561,60 +906,18 @@ export const wird = [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "لَآ إِلَٰهَ إِلَّا ٱللَّهُ عَدَدَ مَا خَلَقَ فِي ٱلسَّمَاءِ، لَآ إِلَٰهَ إِلَّا ٱللَّهُ عَدَدَ مَا خَلَقَ فِي ٱلْأَرْضِ، لَآ إِلَٰهَ إِلَّا ٱللَّهُ عَدَدَ مَا بَيْنَ ذَلِك، لَآ إِلَٰهَ إِلَّا ٱللَّهُ عَدَدَ مَا هُوَ خَالِقٌ",
+              "ٱللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ مِفْتَاحِ بَابِ رَحْمَةِ ٱللَّهِ عَدَدَ مَا فِي عِلْمِ ٱللَّهِ صَلَاةً وَسَلَامًا دَائِمَيْنِ بِدَوَامِ مُلْكِ ٱللَّهِ",
             translit:
-              "Lā ilāha illā Allāhu ʿadada mā khalaqa fis-samāʾ, lā ilāha illā Allāhu ʿadada mā khalaqa fil-arḍ, lā ilāha illā Allāhu ʿadada mā bayna dhālik, lā ilāha illā Allāhu ʿadada mā Huwa khāliq.",
+              "Allāhumma ṣalli wa sallim ʿalā Sayyidinā Muḥammadin miftāḥi bābi raḥmatillāh, ʿadada mā fī ʿilmillāh, ṣalātan wa salāman dāʾiymayni bi dawāmi mulkillāh,",
             translation:
-              "“There is no god except Allah” equal to what He created in the heavens; “there is no god except Allah” equal to what He created on earth; “there is no god except Allah” equal to what is between them both; “there is no god except Allah” equal to whatever He creates.",
+              "“O Allah! Send blessings and peace upon our master Muhammad, the key to Allah's Gates of Mercy—equal to that which is in Allah's knowledge—blessings and peace that last as eternally as Allah's sovereignty,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
           new DhikrEntryModel({
-            arabic:
-              "ٱللَّهُ أَكْبَرُ عَدَدَ مَا خَلَقَ فِي ٱلسَّمَاءِ، ٱللَّهُ أَكْبَرُ عَدَدَ مَا خَلَقَ فِي ٱلْأَرْضِ، ٱللَّهُ أَكْبَرُ عَدَدَ مَا بَيْنَ ذَلِك، ٱللَّهُ أَكْبَرُ عَدَدَ مَا هُوَ خَالِقٌ",
+            arabic: "وَعَلَى آلِهِ وَصَحْبِهِ عَدَدَ كُلِّ ذَرَّةٍ أَلْفَ مَرَّة",
             translit:
-              "Allāhu akbar ʿadada mā khalaqa fis-samāʾ, Allāhu akbar ʿadada mā khalaqa fil-arḍ, Allāhu akbar ʿadada mā bayna dhālik, Allāhu akbar ʿadada mā Huwa khāliq.",
+              "wa ʿalā ālihi wa ṣaḥbihi ʿadada kulli dharratin alfa marrah.",
             translation:
-              "“Allah is Greater” equal to what He created in the heavens; “Allah is Greater” equal to what He created on earth; “Allah is Greater” equal to what is between them both; “Allah is Greater” equal to whatever He creates.",
-          }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic:
-              "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّهِ ٱلْعَلِيِّ ٱلْعَظِيمِ عَدَدَ مَا خَلَقَ فِي ٱلسَّمَاءِ، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّهِ ٱلْعَلِيِّ ٱلْعَظِيمِ عَدَدَ مَا خَلَقَ فِي ٱلْأَرْضِ، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّهِ ٱلْعَلِيِّ ٱلْعَظِيمِ عَدَدَ مَا بَيْنَ ذَلِك، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّهِ ٱلْعَلِيِّ ٱلْعَظِيمِ عَدَدَ مَا هُوَ خَالِقٌ",
-            translit:
-              "Lā ḥawla wa lā quwwata illā billāh il-ʿAlīyy il-ʿAẓīm ʿadada mā khalaqa fis-samāʾ, lā ḥawla wa lā quwwata illā billāh il-ʿAlīyy ilʿAẓīm ʿadada mā khalaqa fil-arḍ, lā ḥawla wa lā quwwata illā billāh il-ʿAlīyy il-ʿAẓīm ʿadada mā bayna dhālik, lā ḥawla wa lā quwwata illā billāh il-ʿAlīyy il-ʿAẓīm ʿadada mā Huwa khāliq.",
-            translation:
-              "“There is no power or ability except by Allah, the Most High, the Almighty” equal to what He created in the heavens; “There is no power or ability except by Allah, the Most High, the Almighty” equal to what He created on earth; “There is no power or ability except by Allah, the Most High, the Almighty” equal to what is between them both; “There is no power or ability except by Allah, the Most High, the Almighty” equal to whatever He creates.",
-          }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic:
-              "لَآ إِلَٰهَ إِلَّا ٱللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ ٱلْمُلْكُ وَلَهُ ٱلْحَمْدُ يُحْيِي وَيُمِيتُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ عَدَدَ كُلِّ ذَرَّةٍ أَلْفَ مَرَّة",
-            translit:
-              "Lā ilāha illāLlāhu waḥdahu lā sharīka lahu, lahul-mulku wa lahul-ḥamdu, yuḥyī wa yumītu wa Huwa ʿalā kulli shayyʾin qadīr, ʿadada kulli dharratin alfa marrah.",
-            translation:
-              "“There is no god except Allah, One without partner, all control and praise belong to Him, He gives life and death, and He has power over all things”—equal to every atom one thousand times over.",
-            repeat: 3,
-          }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic:
-              "ٱللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ مِفْتَاحِ بَابِ رَحْمَةِ ٱللَّهِ عَدَدَ مَا فِي عِلْمِ ٱللَّهِ صَلَاةً وَسَلَامًا دَائِمَيْنِ بِدَوَامِ مُلْكِ ٱللَّهِ وَعَلَى آلِهِ وَصَحْبِهِ عَدَدَ كُلِّ ذَرَّةٍ أَلْفَ مَرَّة",
-            translit:
-              "Allāhumma ṣalli wa sallim ʿalā Sayyidinā Muḥammadin miftāḥi bābi raḥmatillāh, ʿadada mā fī ʿilmillāh, ṣalātan wa salāman dāʾiymayni bi dawāmi mulkillāh, wa ʿalā ālihi wa ṣaḥbihi ʿadada kulli dharratin alfa marrah.",
-            translation:
-              "“O Allah! Send blessings and peace upon our master Muhammad, the key to Allah’s Gates of Mercy—equal to that which is in Allah’s knowledge—blessings and peace that last as eternally as Allah’s sovereignty, and upon his family and companions”—equal to every atom one thousand times over.",
+              "and upon his family and companions”—equal to every atom one thousand times over.",
             repeat: 3,
           }),
         ],
@@ -622,5 +925,3 @@ export const wird = [
     ],
   }),
 ];
-
-export default wird;

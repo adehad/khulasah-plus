@@ -306,12 +306,13 @@ async function buildSearchIndex() {
 
   const documents: SearchDocument[] = [];
   let successCount = 0;
-  let skippedCount = 0;
+  let skippedIndexCount = 0;
   const errors: { path: string; error: unknown }[] = [];
 
   for (const config of pageConfigs) {
     // Skip index pages that just have navigation
     if (config.contentImportPath.endsWith("-index")) {
+      skippedIndexCount++;
       console.log(`  Skipping index page: ${config.path}`);
       continue;
     }
@@ -322,15 +323,6 @@ async function buildSearchIndex() {
     try {
       contentModule = await import(contentPath);
     } catch (error) {
-      const message =
-        error instanceof Error
-          ? error.message
-          : String((error as { message?: string }).message ?? error);
-      if (message.includes("Cannot find module")) {
-        skippedCount++;
-        console.log(`  Skipping unmigrated: ${config.path}`);
-        continue;
-      }
       errors.push({ path: config.path, error });
       console.error(`  ERROR ${config.path}:`, error);
       continue;
@@ -381,7 +373,7 @@ async function buildSearchIndex() {
 
   console.log("\nSearch index build complete!");
   console.log(`  Successfully indexed: ${successCount}`);
-  console.log(`  Skipped (unmigrated): ${skippedCount}`);
+  console.log(`  Skipped index pages: ${skippedIndexCount}`);
   console.log(`  Errors: ${errors.length}`);
   console.log(`  Output: ${outputPath}`);
   console.log(
