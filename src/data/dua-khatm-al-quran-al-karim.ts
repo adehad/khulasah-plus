@@ -453,23 +453,53 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "اللَّهُمَّ اجْعَلْنَا وَوَالِدِينَا وَمَشَايِخَنَا وَمُعَلِّمِينَا وَوَالِدِيهِمْ وَالْحَاضِرِينَ وَجَمِيعَ الْمُسْلِمِينَ مِنْ عِبَادِكَ الصَّالِحِينَ الْمُفْلِحِينَ الْمُنْجِحِينَ الْفَائِزِينَ الْبَارِّينَ النَّعِمِينَ الْفَرِحِينَ الْمَسْرُورِينَ الْمُسْتَبْشِرِينَ الْمُطْمَئِنِّينَ الْآمِنِينَ الَّذِينَ لَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ",
+              "اللَّهُمَّ اجْعَلْنَا وَوَالِدِينَا وَمَشَايِخَنَا وَمُعَلِّمِينَا وَوَالِدِيهِمْ وَالْحَاضِرِينَ",
             translit:
-              "Allāhummaj-‛alnā wa wālidīnā wa mashāyikhanā wa mu‛allimīnā wa wālidīhim wal-ḥāḍirīna wa jamī‛al-muslimīna min ‛ibādikaṣ-ṣāliḥīnal-mufliḥīnal-munjiḥīnal-fā’izīnal-barrīnan-na‛imīnal-fariḥīnal-masrūrīnal-mustabshirīnal-muṭma’innīnal-āminīnal-ladhīna lā khawfun ‛alayhim wa lā hum yaḥzanūn, biraḥmatika yā arḥamar-rāḥimīn",
+              "Allāhummaj-‛alnā wa wālidīnā wa mashāyikhanā wa mu‛allimīnā wa wālidīhim wal-ḥāḍirīna",
             translation:
-              "O Allah, make us, our parents, our scholars, our teachers, their parents, those present and all Muslims of Your righteous, successful, triumphant, favoured, happy, joyful, cheerful, tranquil and secure slaves, upon whom no fear shall come nor shall they grieve, by Your mercy, O Most Merciful.",
+              "O Allah, make us, our parents, our scholars, our teachers, their parents, those present",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَجَمِيعَ الْمُسْلِمِينَ مِنْ عِبَادِكَ الصَّالِحِينَ الْمُفْلِحِينَ الْمُنْجِحِينَ الْفَائِزِينَ الْبَارِّينَ النَّعِمِينَ الْفَرِحِينَ الْمَسْرُورِينَ الْمُسْتَبْشِرِينَ الْمُطْمَئِنِّينَ الْآمِنِينَ",
+            translit:
+              "wa jamī‛al-muslimīna min ‛ibādikaṣ-ṣāliḥīnal-mufliḥīnal-munjiḥīnal-fā’izīnal-barrīnan-na‛imīnal-fariḥīnal-masrūrīnal-mustabshirīnal-muṭma’innīnal-āminīn",
+            translation:
+              "and all Muslims of Your righteous, successful, triumphant, favoured, happy, joyful, cheerful, tranquil and secure slaves,",
+          }),
+          new DhikrEntryModel({
+            arabic: "الَّذِينَ لَا خَوْفٌ عَلَيْهِمْ وَلَا هُمْ يَحْزَنُونَ بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ",
+            translit:
+              "al-ladhīna lā khawfun ‛alayhim wa lā hum yaḥzanūn, biraḥmatika yā arḥamar-rāḥimīn",
+            translation:
+              "upon whom no fear shall come nor shall they grieve, by Your mercy, O Most Merciful.",
           }),
         ],
       }),
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "صَدَقَ اللَّهُ الْعَلِيُّ الْعَظِيمُ وَبَلَّغَ رَسُولُهُ النَّبِيُّ الْوَفِيُّ الْكَرِيمُ وَنَحْنُ عَلَى مَا قَالَ رَبُّنَا وَسَيِّدُنَا وَمَوْلَانَا وَخَالِقُنَا وَرَازِقُنَا وَبَاعِثُنَا وَوَارِثُنَا وَنَصِيرُنَا وَمَنْ إِلَيْهِ مَصِيرُنَا وَوَلِيُّ النِّعْمَةِ عَلَيْنَا مِنَ الشَّاهِدِينَ وَلَهُ مِنَ الذَّاكِرِينَ",
+            arabic: "صَدَقَ اللَّهُ الْعَلِيُّ الْعَظِيمُ وَبَلَّغَ رَسُولُهُ النَّبِيُّ الْوَفِيُّ الْكَرِيمُ",
             translit:
-              "Ṣadaqallāhul-‛Aliyyul-‛aẓīm, wa ballagha rasūluhun-nabiyyul-wafiyyul-karīm, wa naḥnu ‛alā mā qāla rabbunā wa sayyidunā wa mawlānā wa khāliqunā wa rāziqunā wa bā‛ithunā wa wārithunā wa naṣīrunā wa man ilayhi maṣīrunā wa waliyyun-ni‛mati ‛alaynā minash-shāhidīn, wa lahū minadh-dhākirīn",
+              "Ṣadaqallāhul-‛Aliyyul-‛aẓīm, wa ballagha rasūluhun-nabiyyul-wafiyyul-karīm,",
             translation:
-              "Allah, the All-Exalted, the Supreme, has spoken the truth and His loyal, generous Messenger and Prophet conveyed. And we are among the witnesses to what our Lord, Master, Guardian, Creator, Sustainer, Resurrector, Inheritor, Helper, the One to whom is our destination and our Benefactor has said, and among those who remember Him.",
+              "Allah, the All-Exalted, the Supreme, has spoken the truth and His loyal, generous Messenger and Prophet conveyed.",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَنَحْنُ عَلَى مَا قَالَ رَبُّنَا وَسَيِّدُنَا وَمَوْلَانَا وَخَالِقُنَا وَرَازِقُنَا وَبَاعِثُنَا وَوَارِثُنَا",
+            translit:
+              "wa naḥnu ‛alā mā qāla rabbunā wa sayyidunā wa mawlānā wa khāliqunā wa rāziqunā wa bā‛ithunā wa wārithunā",
+            translation:
+              "And we are among the witnesses to what our Lord, Master, Guardian, Creator, Sustainer, Resurrector, Inheritor,",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَنَصِيرُنَا وَمَنْ إِلَيْهِ مَصِيرُنَا وَوَلِيُّ النِّعْمَةِ عَلَيْنَا مِنَ الشَّاهِدِينَ وَلَهُ مِنَ الذَّاكِرِينَ",
+            translit:
+              "wa naṣīrunā wa man ilayhi maṣīrunā wa waliyyun-ni‛mati ‛alaynā minash-shāhidīn, wa lahū minadh-dhākirīn",
+            translation:
+              "Helper, the One to whom is our destination and our Benefactor has said, and among those who remember Him.",
           }),
           new DhikrEntryModel({
             arabic: "وَالْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",

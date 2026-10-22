@@ -379,11 +379,74 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "الْفَاتِحَة إِلَى رُوحِ سَيِّدِنَا وَحَبِيبِنَا وَشَفِيْعِنَا رَسُولِ ٱللَّهِ مُحَمَّدِ بْنِ عَبْدِ ٱللَّهِ وَآلِهِ وَأَصْحَابِهِ وَأَزْوَاجِهِ وَذُرِّيَّـتِهِ أَنَّ ٱللَّهَ يُعْلِي دَرَجَاتِهِمْ فِى الْجَنَّةِ وَيَنْفَعُنَا بِأَسْرَارِهِمْ وَأَنْوَارِهِمْ وَعُلُومِهِمْ فِي الدِّينِ وَالدُّنْـيَا وَالْآخِرَةِ وَيَجْعَلُنَا مِنْ حِزْبِهِمْ وَيَرْزُقُنَا مَحَبَّتَهُمْ وَيَتَوَفَّانَا عَلَى مِلَّتِهِمْ وَيَحْشُرُنَا فِى زُمْرَتِهِمْ فِي خَيْرٍ وَلُطْفٍ وَعَافِـيَةٍ [بِسِرِّ الْفَاتِحَة]",
+              "الْفَاتِحَة إِلَى رُوحِ سَيِّدِنَا وَحَبِيبِنَا وَشَفِيْعِنَا رَسُولِ ٱللَّهِ مُحَمَّدِ بْنِ عَبْدِ ٱللَّهِ",
             translit:
-              "Alfātiḥata ilā rūḥi sayyidinā wa ḥabībinā wa shafī‛inā rasūlillāh, Muḥammadibni ‛abdillāh, wa ālihī wa aṣḥābihī wa azwājihī wa dhurriyyatihī, annallāha yu‛lī darajātihim fil jannah, wa yanfa‛unā bi’asrārihim wa anwārihim wa ‛ulūmihim fiddīni waddunyā wal’ākhirati, wa yaj‛alunā min ḥizbihim, wa yarzuqunā maḥabbatahum, wa yatawaffānā ‛alā millatihim wa yaḥshurunā fī zumratihim fī khayrin wa luṭfin wa ‛āfiyatin [bisirril fātiḥah].",
+              "Alfātiḥata ilā rūḥi sayyidinā wa ḥabībinā wa shafī‛inā rasūlillāh, Muḥammadibni ‛abdillāh,",
             translation:
-              "The Fātiḥah to the soul of our master, our beloved and our intercessor, the Messenger of Allāh, Muhammad son of ‛Abdullāh, and to his family, his companions, his wives and his descendants, that Allāh raise their ranks in Paradise and benefit us through their secrets, their lights and their knowledge in this world, in religion and in the Hereafter; that He make us of their party, grant us love for them, cause us to die upon their path and gather us in their company, in goodness, gentleness and well-being, by the secret of the Fātiḥah.",
+              "The Fātiḥah to the soul of our master, our beloved and our intercessor, the Messenger of Allāh, Muhammad son of ‛Abdullāh,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَآلِهِ وَأَصْحَابِهِ وَأَزْوَاجِهِ وَذُرِّيَّـتِهِ",
+            translit: "wa ālihī wa aṣḥābihī wa azwājihī wa dhurriyyatihī,",
+            translation:
+              "and to his family, his companions, his wives and his descendants,",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "أَنَّ ٱللَّهَ يُعْلِي دَرَجَاتِهِمْ فِى الْجَنَّةِ وَيَنْفَعُنَا بِأَسْرَارِهِمْ وَأَنْوَارِهِمْ وَعُلُومِهِمْ فِي الدِّينِ وَالدُّنْـيَا وَالْآخِرَةِ",
+            translit:
+              "annallāha yu‛lī darajātihim fil jannah, wa yanfa‛unā bi’asrārihim wa anwārihim wa ‛ulūmihim fiddīni waddunyā wal’ākhirati,",
+            translation:
+              "that Allāh raise their ranks in Paradise and benefit us through their secrets, their lights and their knowledge in this world, in religion and in the Hereafter;",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَيَجْعَلُنَا مِنْ حِزْبِهِمْ وَيَرْزُقُنَا مَحَبَّتَهُمْ وَيَتَوَفَّانَا عَلَى مِلَّتِهِمْ وَيَحْشُرُنَا فِى زُمْرَتِهِمْ فِي خَيْرٍ وَلُطْفٍ وَعَافِـيَةٍ [بِسِرِّ الْفَاتِحَة]",
+            translit:
+              "wa yaj‛alunā min ḥizbihim, wa yarzuqunā maḥabbatahum, wa yatawaffānā ‛alā millatihim wa yaḥshurunā fī zumratihim fī khayrin wa luṭfin wa ‛āfiyatin [bisirril fātiḥah].",
+            translation:
+              "that He make us of their party, grant us love for them, cause us to die upon their path and gather us in their company, in goodness, gentleness and well-being, by the secret of the Fātiḥah.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "الْفَاتِحَة إِلَى رُوحِ سَيِّدِنَا الْمُهَاجِرِ إِلَى ٱللَّهِ أَحْمَدِ بْنِ عِيْسَى",
+            translit:
+              "Alfātiḥata ilā rūḥi sayyidinal muhājiri ilallāhi Aḥmadabni ‛īsā",
+            translation:
+              "The Fātiḥah to the soul of our master, the one who migrated to Allāh, Aḥmad son of ‛Īsā,",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَإِلَى رُوحِ سَيِّدِنَا الْأُسْتَاذِ الْأَعْظَمِ الْفَقِيهِ الْمُقَدَّمِ مُحَمَّدِ بْنِ عَلِي بَا عَلَوِي",
+            translit:
+              "wa ilā rūḥi sayyidinal ustādhil a‛ẓamil faqīhil muqaddami Muḥammadinibni ‛aliyyin bā‛alawī",
+            translation:
+              "and to the soul of our master, the greatest teacher, the jurist and leader, Muhammad son of ‛Alī Bā ‛Alawī,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأُصُوْلِهِمَا وَفُرُوْعِهِمْ وَذَوِي الْحُقُوقِ عَلَيْهِمْ أَجْمَعِيْن",
+            translit:
+              "wa uṣūlihimā wa furū‛ihim, wa dhawil ḥuqūqi ‛alayhim ajma‛īna",
+            translation:
+              "and to their forebears, their descendants and all those who have rights over them,",
+          }),
+          new DhikrEntryModel({
+            arabic: "أَنَّ ٱللَّهَ يَغْفِرُ لَهُمْ وَيَرْحَمُهُمْ وَيُعْلِي دَرَجَاتِهِمْ فِي الْجَنَّةِ",
+            translit:
+              "annallāha yaghfiru lahum wa yarḥamuhum wa yu‛lī darajātihim fil jannah,",
+            translation:
+              "that Allāh forgive them, have mercy on them and raise their ranks in Paradise,",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَيَنْفَعُنَا بِأَسْرَارِهِمْ وَأَنْوَارِهِمْ وَعُلُومِهِمْ فِي الدِّينِ وَالدُّنْـيَا وَالْآخِرَة [الْفَاتِحَة]",
+            translit:
+              "wa yanfa‛unā bi’asrārihim wa anwārihim wa ‛ulūmihim fiddīni waddunyā wal’ākhirati [al fātiḥah]",
+            translation:
+              "and benefit us through their secrets, their lights and their knowledge in this world, in religion and in the Hereafter.",
           }),
         ],
       }),
@@ -391,11 +454,70 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "الْفَاتِحَة إِلَى رُوحِ سَيِّدِنَا الْمُهَاجِرِ إِلَى ٱللَّهِ أَحْمَدِ بْنِ عِيْسَى وَإِلَى رُوحِ سَيِّدِنَا الْأُسْتَاذِ الْأَعْظَمِ الْفَقِيهِ الْمُقَدَّمِ مُحَمَّدِ بْنِ عَلِي بَا عَلَوِي وَأُصُوْلِهِمَا وَفُرُوْعِهِمْ وَذَوِي الْحُقُوقِ عَلَيْهِمْ أَجْمَعِيْن أَنَّ ٱللَّهَ يَغْفِرُ لَهُمْ وَيَرْحَمُهُمْ وَيُعْلِي دَرَجَاتِهِمْ فِي الْجَنَّةِ وَيَنْفَعُنَا بِأَسْرَارِهِمْ وَأَنْوَارِهِمْ وَعُلُومِهِمْ فِي الدِّينِ وَالدُّنْـيَا وَالْآخِرَة [الْفَاتِحَة]",
+              "الْفَاتِحَة إِلَى رُوحِ سَيِّدِنَا وَحَبِيبِنَا وَبَرَكَتِنَا صَاحِبِ الرَّاتِبِ قُطْبِ الْأَنْفَاسِ الْحَبِيبِ عُمَر بن عَبْدِ الرَّحْمَنِ الْعَطَّاس",
             translit:
-              "Alfātiḥata ilā rūḥi sayyidinal muhājiri ilallāhi Aḥmadabni ‛īsā wa ilā rūḥi sayyidinal ustādhil a‛ẓamil faqīhil muqaddami Muḥammadinibni ‛aliyyin bā‛alawī wa uṣūlihimā wa furū‛ihim, wa dhawil ḥuqūqi ‛alayhim ajma‛īna annallāha yaghfiru lahum wa yarḥamuhum wa yu‛lī darajātihim fil jannah, wa yanfa‛unā bi’asrārihim wa anwārihim wa ‛ulūmihim fiddīni waddunyā wal’ākhirati [al fātiḥah]",
+              "Alfātiḥata ilā rūḥi sayyidinā wa ḥabībinā wa barakatinā ṣāḥibir rātibi quṭbil anfāsil ḥabībi ‛Umarabni ‛Abdirraḥmānil ‛Aṭṭāsi",
             translation:
-              "The Fātiḥah to the soul of our master, the one who migrated to Allāh, Aḥmad son of ‛Īsā, and to the soul of our master, the greatest teacher, the jurist and leader, Muhammad son of ‛Alī Bā ‛Alawī, and to their forebears, their descendants and all those who have rights over them, that Allāh forgive them, have mercy on them and raise their ranks in Paradise, and benefit us through their secrets, their lights and their knowledge in this world, in religion and in the Hereafter.",
+              "The Fātiḥah to the soul of our master, our beloved and our blessing, the author of the Rātib, the Pole of the breaths, the beloved ‛Umar son of ‛Abd ar-Raḥmān al-‛Aṭṭās;",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَإِلَى رُوحِ الشَّيْخِ عَلِي بن عَبْدِ ٱللَّهِ بَا رَاس",
+            translit: "wa ilā rūḥish shaykhi ‛Aliyyibni ‛Abdillāhi Bārāsi",
+            translation:
+              "and to the soul of the Shaykh ‛Alī son of ‛Abdullāh Bā Rās;",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَإِلَى رُوحِ الْحَبِيبِ عَبْدِ الرَّحْمَنِ بن عَقِيلِ الْعَطَّاس",
+            translit: "wa ilā rūḥil ḥabībi ‛Abdir raḥmānibni ‛Aqīlil ‛Aṭṭās",
+            translation:
+              "and to the soul of the beloved ‛Abd ar-Raḥmān son of ‛Aqīl al-‛Aṭṭās;",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَإِلَى رُوحِ حُسَيْن بن عُمَر الْعَطَّاسِ وَإِخْوَانِهِ",
+            translit: "wa ilā rūḥi Ḥusaynibni ‛Umaral ‛Aṭṭāsi wa ikhwānihī",
+            translation:
+              "and to the soul of Ḥusayn son of ‛Umar al-‛Aṭṭās and his brothers;",
+          }),
+          new DhikrEntryModel({
+            arabic: "ثُمَّ إِلَى رُوحِ عَقِيل وَعَبْدِ ٱللَّهِ وَصَالِح بَنِي عَبْدِ الرَّحْمَنِ الْعَطَّاس",
+            translit:
+              "thumma ilā rūḥi ‛Aqīlin wa ‛Abdillāhi wa Ṣāliḥibni ‛Abdirraḥmānil ‛Aṭṭāsi",
+            translation:
+              "then to the souls of ‛Aqīl, ‛Abdullāh and Ṣāliḥ, the sons of ‛Abd ar-Raḥmān al-‛Aṭṭās;",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَإِلَى رُوحِ الْحَبِيبِ عَلِي بن حَسَنِ الْعَطَّاسِ",
+            translit: "wa ilā rūḥil ḥabībi ‛Aliyyibni Ḥasanil ‛Aṭṭāsi",
+            translation:
+              "and to the soul of the beloved ‛Alī son of Ḥasan al-‛Aṭṭās;",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَإِلَى رُوحِ الْحَبِيبِ أَحْمَدِ بن حَسَنِ الْعَطَّاسِ",
+            translit: "wa ilā rūḥil ḥabībi Aḥmadabni Ḥasanil ‛Aṭṭāsi",
+            translation:
+              "and to the soul of the beloved Aḥmad son of Ḥasan al-‛Aṭṭās;",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأُصُولِهِمْ وَفُرُوعِهِمْ وَذَوِي الْحُقُوقِ عَلَيْهِمْ أَجْمَعِينَ",
+            translit:
+              "wa uṣūlihim wa furū‛ihim wa dhawil ḥuqūqi ‛alayhim ajma‛īna",
+            translation:
+              "and to their forebears, their descendants and all those who have rights over them,",
+          }),
+          new DhikrEntryModel({
+            arabic: "أَنَّ ٱللَّهَ يَغْفِرُ لَهُمْ وَيَرْحَمُهُمْ وَيُعْلِي دَرَجَاتِهِمْ فِي الْجَنَّةِ",
+            translit:
+              "annallāha yaghfiru lahum wa yarḥamuhum wa yu‛lī darajātihim fil jannah,",
+            translation:
+              "that Allāh forgive them, have mercy on them and raise their ranks in Paradise,",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَيَنْفَعُنَا بِأَسْرَارِهِمْ وَأَنْوَارِهِمْ وَعُلُومِهِمْ وَنَفَحَـاتِهِمْ فِي الدِّينِ وَالدُّنْـيَا وَالْآخِرَة [الْفَاتِحَة]",
+            translit:
+              "wa yanfa‛unā bi’asrārihim wa anwārihim wa ‛ulūmihim fiddīni waddunyā wal’ākhirati, [al fātiḥah]",
+            translation:
+              "and benefit us through their secrets, their lights, their knowledge and their gifts in this world, in religion and in the Hereafter.",
           }),
         ],
       }),
@@ -403,11 +525,85 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "الْفَاتِحَة إِلَى رُوحِ سَيِّدِنَا وَحَبِيبِنَا وَبَرَكَتِنَا صَاحِبِ الرَّاتِبِ قُطْبِ الْأَنْفَاسِ الْحَبِيبِ عُمَر بن عَبْدِ الرَّحْمَنِ الْعَطَّاس وَإِلَى رُوحِ الشَّيْخِ عَلِي بن عَبْدِ ٱللَّهِ بَا رَاس وَإِلَى رُوحِ الْحَبِيبِ عَبْدِ الرَّحْمَنِ بن عَقِيلِ الْعَطَّاس وَإِلَى رُوحِ حُسَيْن بن عُمَر الْعَطَّاسِ وَإِخْوَانِهِ ثُمَّ إِلَى رُوحِ عَقِيل وَعَبْدِ ٱللَّهِ وَصَالِح بَنِي عَبْدِ الرَّحْمَنِ الْعَطَّاس وَإِلَى رُوحِ الْحَبِيبِ عَلِي بن حَسَنِ الْعَطَّاسِ وَإِلَى رُوحِ الْحَبِيبِ أَحْمَدِ بن حَسَنِ الْعَطَّاسِ وَأُصُولِهِمْ وَفُرُوعِهِمْ وَذَوِي الْحُقُوقِ عَلَيْهِمْ أَجْمَعِينَ أَنَّ ٱللَّهَ يَغْفِرُ لَهُمْ وَيَرْحَمُهُمْ وَيُعْلِي دَرَجَاتِهِمْ فِي الْجَنَّةِ وَيَنْفَعُنَا بِأَسْرَارِهِمْ وَأَنْوَارِهِمْ وَعُلُومِهِمْ وَنَفَحَـاتِهِمْ فِي الدِّينِ وَالدُّنْـيَا وَالْآخِرَة [الْفَاتِحَة]",
+              "الْفَاتِحَة إِلَى أَرْوَاحِ الْأَوْلِيَاءِ وَالشُّهَدَاءِ وَالصَّالِحِينَ وَالْأَئِمَّةِ الرَّاشِدِينَ",
             translit:
-              "Alfātiḥata ilā rūḥi sayyidinā wa ḥabībinā wa barakatinā ṣāḥibir rātibi quṭbil anfāsil ḥabībi ‛Umarabni ‛Abdirraḥmānil ‛Aṭṭāsi wa ilā rūḥish shaykhi ‛Aliyyibni ‛Abdillāhi Bārāsi wa ilā rūḥil ḥabībi ‛Abdir raḥmānibni ‛Aqīlil ‛Aṭṭās wa ilā rūḥi Ḥusaynibni ‛Umaral ‛Aṭṭāsi wa ikhwānihī thumma ilā rūḥi ‛Aqīlin wa ‛Abdillāhi wa Ṣāliḥibni ‛Abdirraḥmānil ‛Aṭṭāsi wa ilā rūḥil ḥabībi ‛Aliyyibni Ḥasanil ‛Aṭṭāsi wa ilā rūḥil ḥabībi Aḥmadabni Ḥasanil ‛Aṭṭāsi wa uṣūlihim wa furū‛ihim wa dhawil ḥuqūqi ‛alayhim ajma‛īna annallāha yaghfiru lahum wa yarḥamuhum wa yu‛lī darajātihim fil jannah, wa yanfa‛unā bi’asrārihim wa anwārihim wa ‛ulūmihim fiddīni waddunyā wal’ākhirati, [al fātiḥah]",
+              "Alfātiḥata ilā arwāḥil awliyā’i wash-shuhadā’i waṣṣāliḥīna wal a’immatir rāshidīna,",
             translation:
-              "The Fātiḥah to the soul of our master, our beloved and our blessing, the author of the Rātib, the Pole of the breaths, the beloved ‛Umar son of ‛Abd ar-Raḥmān al-‛Aṭṭās; and to the soul of the Shaykh ‛Alī son of ‛Abdullāh Bā Rās; and to the soul of the beloved ‛Abd ar-Raḥmān son of ‛Aqīl al-‛Aṭṭās; and to the soul of Ḥusayn son of ‛Umar al-‛Aṭṭās and his brothers; then to the souls of ‛Aqīl, ‛Abdullāh and Ṣāliḥ, the sons of ‛Abd ar-Raḥmān al-‛Aṭṭās; and to the soul of the beloved ‛Alī son of Ḥasan al-‛Aṭṭās; and to the soul of the beloved Aḥmad son of Ḥasan al-‛Aṭṭās; and to their forebears, their descendants and all those who have rights over them, that Allāh forgive them, have mercy on them and raise their ranks in Paradise, and benefit us through their secrets, their lights, their knowledge and their gifts in this world, in religion and in the Hereafter.",
+              "The Fātiḥah to the souls of the saints, the martyrs, the righteous and the rightly guided leaders,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَإِلَى أَرْوَاحِ وَالِدِينَا وَمَشَائِخِنَا وَذَوِي الْحُقُوقِ عَلَيْهِمْ أَجْمَعِين",
+            translit:
+              "wa ilā arwāḥi wālidīnā wa mashā’ikhinā wa dhawil ḥuqūqi ‛alayhim ajma‛īn,",
+            translation:
+              "and to the souls of our parents, our teachers and all those who have rights over them;",
+          }),
+          new DhikrEntryModel({
+            arabic: "ثُمَّ إِلَى أَرْوَاحِ أَمْوَاتِ أَهْلِ هَذِهِ الْبَلْدَةِ مِنَ الْمُسْلِمِينَ وَالْمُسْلِمَاتِ",
+            translit:
+              "Thumma ilā arwīḥi amwāti ahli hādhihil baldati minal muslimīna wal muslimāti",
+            translation:
+              "then to the souls of the deceased Muslim men and women of this town,",
+          }),
+          new DhikrEntryModel({
+            arabic: "أَنَّ ٱللَّهَ يَغْفِرُ لَهُمْ وَيَرْحَمُهُمْ وَيُعْلِي دَرَجَاتِهِمْ فِي الْجَنَّةِ",
+            translit:
+              "annallāha yaghfiru lahum wa yarḥamuhum wa yu‛lī darajātihim fil jannah,",
+            translation:
+              "that Allāh forgive them, have mercy on them and raise their ranks in Paradise,",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَيَنفَعُنَا بِأَسْرَارِهِمْ وَأَنْوَارِهِمْ وَعُلُوْمِهِمْ فِي الدِّينِ وَالدُّنْيَا وَالْآخِرَة [الْفَاتِحَة]",
+            translit:
+              "wa yanfa‛unā bi’asrārihim wa anwārihim wa ‛ulūmihim fiddīni waddunyā wal’ākhirati, [al fātiḥah]",
+            translation:
+              "and benefit us through their secrets, their lights and their knowledge in this world, in religion and in the Hereafter.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        instruction: "Then say:",
+        entries: [
+          new DhikrEntryModel({
+            arabic:
+              "الْفَاتِحَة بِالْقَبُولِ وَتَمَامِ كُلِّ سُولٍ وَمَأْمُولٍ وَصَلَاحِ الشَّأْنِ ظَاهِرًا وَبَاطِنًا فِي الدِّينِ وَالدُّنْـيَا وَالْآخِرَة دَافِعَةً لِكُلِّ شَرٍّ جَـالِبَةً لِكُلِّ خَيْرٍ لَنَا",
+            translit:
+              "Alfātiḥata bil qabūli wa tamāmi kulli sūlin wa ma’mūlin wa ṣalāḥish-sha’ni ẓāhiraw wa baṭinan fiddīni waddunyā wal’ākhirata, dāfi‛atal likulli sharrin jālibatan likulli khayr, lanā",
+            translation:
+              "Al-Fātiḥah, for acceptance, for the fulfilment of every request and hope, and for the soundness of our affairs outwardly and inwardly in religion, this world and the Hereafter, repelling every evil and drawing every good, for us",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَلِوَالِدِينَا وَأَوْلَادِنَا وَأَحْبَابِنَا وَمَشَائِخِنَا فِي الدِّينِ مَعَ اللُّطْفِ وَالْعَافِيَةِ",
+            translit:
+              "wa liwālidīnā wa awlādinā wa aḥbābinā wa mashā’ikhinā fiddīn, ma‛al luṭfi wal ‛āfiyati,",
+            translation:
+              "and for our parents, our children, our loved ones and our teachers in religion, with gentleness and well-being;",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَعَلَى نِيَّةِ أَنَّ ٱللَّهَ يُنَوِّرُ قُلُوبَنَا وَقَوَالِبَنَا مَعَ الْهُدَى وَالتُّـقَى وَالْعَفَافِ وَالْغِنَى",
+            translit:
+              "wa ‛alā niyyatin annallāha yunawwiru qulūbanā wa qawālibanā ma‛al hudā wattuqā wal ‛afāfi wal ghinā,",
+            translation:
+              "and with the intention that Allāh illumines our hearts and our bodies with guidance, piety, chastity and sufficiency,",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَالْمَوْتِ عَلَى دِينِ الْإِسْلَامِ وَالْإِيمَانِ بِلَا مِحْنَةٍ وَلَا امْتِحَانٍ بِحَقِّ سَيِّدِ وَلَدِ عَدْنَان",
+            translit:
+              "wal mawti ‛alā dīnil islāmi wal īmāni bilā miḥnatin wa lā imtiḥānin, biḥaqqi sayyidi waladi ‛adnān,",
+            translation:
+              "and death upon the religion of Islam and faith, without trial or tribulation, by the right of the master of the children of ‛Adnān;",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَعَلَى كُلِّ نِيَّةٍ صَالِحَةٍ وَإِلَى حَضْرَةِ النَّبِيِّ (مُحَمَّدٍ صَلَّى ٱللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ) [الْفَاتِحَة]",
+            translit:
+              "wa ‛alā kulli niyyatin ṣāliḥatin; wa ilā ḥaḍratin nabiyyi (Muḥammadin ṣallallāhu ‛alayhi wa ālihī wa sallam [al fātiḥah].",
+            translation:
+              "and upon every righteous intention, and to the presence of the Prophet (Muḥammad, may Allāh bless him and his family and grant them peace). [Al-Fātiḥah]",
           }),
         ],
       }),
@@ -415,11 +611,32 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "الْفَاتِحَة إِلَى أَرْوَاحِ الْأَوْلِيَاءِ وَالشُّهَدَاءِ وَالصَّالِحِينَ وَالْأَئِمَّةِ الرَّاشِدِينَ وَإِلَى أَرْوَاحِ وَالِدِينَا وَمَشَائِخِنَا وَذَوِي الْحُقُوقِ عَلَيْهِمْ أَجْمَعِين ثُمَّ إِلَى أَرْوَاحِ أَمْوَاتِ أَهْلِ هَذِهِ الْبَلْدَةِ مِنَ الْمُسْلِمِينَ وَالْمُسْلِمَاتِ أَنَّ ٱللَّهَ يَغْفِرُ لَهُمْ وَيَرْحَمُهُمْ وَيُعْلِي دَرَجَاتِهِمْ فِي الْجَنَّةِ وَيَنفَعُنَا بِأَسْرَارِهِمْ وَأَنْوَارِهِمْ وَعُلُوْمِهِمْ فِي الدِّينِ وَالدُّنْيَا وَالْآخِرَة [الْفَاتِحَة]",
+              "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ حَمْدًا يُوَافِي نِعَمَهُ وَيُكَافِئُ مَزِيدَهُ",
             translit:
-              "Alfātiḥata ilā arwāḥil awliyā’i wash-shuhadā’i waṣṣāliḥīna wal a’immatir rāshidīna, wa ilā arwāḥi wālidīnā wa mashā’ikhinā wa dhawil ḥuqūqi ‛alayhim ajma‛īn, Thumma ilā arwīḥi amwāti ahli hādhihil baldati minal muslimīna wal muslimāti annallāha yaghfiru lahum wa yarḥamuhum wa yu‛lī darajātihim fil jannah, wa yanfa‛unā bi’asrārihim wa anwārihim wa ‛ulūmihim fiddīni waddunyā wal’ākhirati, [al fātiḥah]",
+              "Bismillāhir raḥmānir raḥīm. Alḥamdulillāhi rabbil ‛ālamīna ḥamdan yuwāfī ni‛amahū wa yukāfi’u mazīdah,",
             translation:
-              "The Fātiḥah to the souls of the saints, the martyrs, the righteous and the rightly guided leaders, and to the souls of our parents, our teachers and all those who have rights over them; then to the souls of the deceased Muslim men and women of this town, that Allāh forgive them, have mercy on them and raise their ranks in Paradise, and benefit us through their secrets, their lights and their knowledge in this world, in religion and in the Hereafter.",
+              "In the name of Allāh, the Most Gracious, the Most Merciful. Praise be to Allāh, Lord of the worlds, a praise that matches His blessings and compensates for His increase.",
+          }),
+          new DhikrEntryModel({
+            arabic: "يَا رَبَّنَا لَكَ الْحَمْدُ كَمَا يَنْبَغِي لِجَلَالِ وَجْهِكَ وَعَظِيمِ سُلْطَانِكَ",
+            translit:
+              "yā rabbanā lakal ḥamdu kamā yambaghī li jalāli wajhika wa ‛aẓīmi sulṭānik,",
+            translation:
+              "Our Lord, to You belongs praise as befits the majesty of Your Face and the greatness of Your authority.",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "سُبْحَانَكَ لَا نُحْصِي ثَنَاءً عَلَيْكَ أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ فَلَكَ الْحَمْدُ حَتَّى تَرْضَى",
+            translit:
+              "subḥānaka lā nuḥṣī thanā’an ‛alayka anta kamā athnayta ‛alā nafsik, falakal ḥamdu ḥattā tarḍā,",
+            translation:
+              "Glory be to You; we cannot count Your praises; You are as You have praised Yourself. To You belongs praise until You are pleased,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَلَكَ الْحَمْدُ اِذَا رَضِيتَ وَلَكَ الْحَمْدُ بَعْدَ الرِّضَى",
+            translit: "walakal ḥamdu idhā raḍīta wa lakal ḥamdu ba‛dar riḍā.",
+            translation:
+              "to You belongs praise when You are pleased, and to You belongs praise after being pleased.",
           }),
         ],
       }),
@@ -427,34 +644,27 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "الْفَاتِحَة بِالْقَبُولِ وَتَمَامِ كُلِّ سُولٍ وَمَأْمُولٍ وَصَلَاحِ الشَّأْنِ ظَاهِرًا وَبَاطِنًا فِي الدِّينِ وَالدُّنْـيَا وَالْآخِرَة دَافِعَةً لِكُلِّ شَرٍّ جَـالِبَةً لِكُلِّ خَيْرٍ لَنَا وَلِوَالِدِينَا وَأَوْلَادِنَا وَأَحْبَابِنَا وَمَشَائِخِنَا فِي الدِّينِ مَعَ اللُّطْفِ وَالْعَافِيَةِ وَعَلَى نِيَّةِ أَنَّ ٱللَّهَ يُنَوِّرُ قُلُوبَنَا وَقَوَالِبَنَا مَعَ الْهُدَى وَالتُّـقَى وَالْعَفَافِ وَالْغِنَى وَالْمَوْتِ عَلَى دِينِ الْإِسْلَامِ وَالْإِيمَانِ بِلَا مِحْنَةٍ وَلَا امْتِحَانٍ بِحَقِّ سَيِّدِ وَلَدِ عَدْنَان وَعَلَى كُلِّ نِيَّةٍ صَالِحَةٍ وَإِلَى حَضْرَةِ النَّبِيِّ (مُحَمَّدٍ صَلَّى ٱللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ) [الْفَاتِحَة]",
+              "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ فِي الْأَوَّلِينَ وَصَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ فِي الْآخِرِينَ",
             translit:
-              "Alfātiḥata bil qabūli wa tamāmi kulli sūlin wa ma’mūlin wa ṣalāḥish-sha’ni ẓāhiraw wa baṭinan fiddīni waddunyā wal’ākhirata, dāfi‛atal likulli sharrin jālibatan likulli khayr, lanā wa liwālidīnā wa awlādinā wa aḥbābinā wa mashā’ikhinā fiddīn, ma‛al luṭfi wal ‛āfiyati, wa ‛alā niyyatin annallāha yunawwiru qulūbanā wa qawālibanā ma‛al hudā wattuqā wal ‛afāfi wal ghinā, wal mawti ‛alā dīnil islāmi wal īmāni bilā miḥnatin wa lā imtiḥānin, biḥaqqi sayyidi waladi ‛adnān, wa ‛alā kulli niyyatin ṣāliḥatin; wa ilā ḥaḍratin nabiyyi (Muḥammadin ṣallallāhu ‛alayhi wa ālihī wa sallam [al fātiḥah].",
-            translation: "Then say:",
+              "Allāhumma ṣalli wa sallim ‛alā sayyidinā Muḥammadin fil awwalīn, wa ṣalli wa sallim ‛alā sayyidinā Muḥammadin fil ākhirīn,",
+            translation:
+              "O Allāh, bestow blessings and peace upon our master Muhammad among the first, and bestow blessings and peace upon our master Muhammad among the last,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
           new DhikrEntryModel({
             arabic:
-              "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ حَمْدًا يُوَافِي نِعَمَهُ وَيُكَافِئُ مَزِيدَهُ يَا رَبَّنَا لَكَ الْحَمْدُ كَمَا يَنْبَغِي لِجَلَالِ وَجْهِكَ وَعَظِيمِ سُلْطَانِكَ سُبْحَانَكَ لَا نُحْصِي ثَنَاءً عَلَيْكَ أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ فَلَكَ الْحَمْدُ حَتَّى تَرْضَى وَلَكَ الْحَمْدُ اِذَا رَضِيتَ وَلَكَ الْحَمْدُ بَعْدَ الرِّضَى",
+              "وَصَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ فِي كُلِّ وَقْتٍ وَحِينٍ وَصَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ فِى الْمَلَاءِ الْأَعْلَى إِلَى يَوْمِ الدِّينِ",
             translit:
-              "Bismillāhir raḥmānir raḥīm. Alḥamdulillāhi rabbil ‛ālamīna ḥamdan yuwāfī ni‛amahū wa yukāfi’u mazīdah, yā rabbanā lakal ḥamdu kamā yambaghī li jalāli wajhika wa ‛aẓīmi sulṭānik, subḥānaka lā nuḥṣī thanā’an ‛alayka anta kamā athnayta ‛alā nafsik, falakal ḥamdu ḥattā tarḍā, walakal ḥamdu idhā raḍīta wa lakal ḥamdu ba‛dar riḍā.",
+              "wa ṣalli wa sallim ‛alā sayyidinā Muḥammadin fī kulli waqtiw wa ḥīn, Wa ṣalli wa sallim ‛alā sayyidinā Muḥammadin fil mala’il a‛lā ilā yawmid dīn,",
             translation:
-              "In the name of Allāh, the Most Gracious, the Most Merciful. Praise be to Allāh, Lord of the worlds, a praise that matches His blessings and compensates for His increase. Our Lord, to You belongs praise as befits the majesty of Your Face and the greatness of Your authority. Glory be to You; we cannot count Your praises; You are as You have praised Yourself. To You belongs praise until You are pleased, to You belongs praise when You are pleased, and to You belongs praise after being pleased.",
+              "and bestow blessings and peace upon our master Muhammad at every time and moment, and bestow blessings and peace upon our master Muhammad in the highest assembly until the Day of Judgement,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
           new DhikrEntryModel({
             arabic:
-              "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ فِي الْأَوَّلِينَ وَصَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ فِي الْآخِرِينَ وَصَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ فِي كُلِّ وَقْتٍ وَحِينٍ وَصَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ فِى الْمَلَاءِ الْأَعْلَى إِلَى يَوْمِ الدِّينِ وَصَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ حَتَّى تَرِثَ الْأَرْضَ وَمَنْ عَلَيْهَا وَأَنْتَ خَيْرُ الْوَارِثِين",
+              "وَصَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ حَتَّى تَرِثَ الْأَرْضَ وَمَنْ عَلَيْهَا وَأَنْتَ خَيْرُ الْوَارِثِين",
             translit:
-              "Allāhumma ṣalli wa sallim ‛alā sayyidinā Muḥammadin fil awwalīn, wa ṣalli wa sallim ‛alā sayyidinā Muḥammadin fil ākhirīn, wa ṣalli wa sallim ‛alā sayyidinā Muḥammadin fī kulli waqtiw wa ḥīn, Wa ṣalli wa sallim ‛alā sayyidinā Muḥammadin fil mala’il a‛lā ilā yawmid dīn, wa ṣalli wa sallim ‛alā sayyidinā Muḥammadin ḥattā tarithal arḍa wa man ‛alayhā wa anta khayrul wārithīn.",
+              "wa ṣalli wa sallim ‛alā sayyidinā Muḥammadin ḥattā tarithal arḍa wa man ‛alayhā wa anta khayrul wārithīn.",
             translation:
-              "O Allāh, bestow blessings and peace upon our master Muhammad among the first, and bestow blessings and peace upon our master Muhammad among the last, and bestow blessings and peace upon our master Muhammad at every time and moment, and bestow blessings and peace upon our master Muhammad in the highest assembly until the Day of Judgement, and bestow blessings and peace upon our master Muhammad until You inherit the earth and all upon it, for You are the best of inheritors.",
+              "and bestow blessings and peace upon our master Muhammad until You inherit the earth and all upon it, for You are the best of inheritors.",
           }),
         ],
       }),

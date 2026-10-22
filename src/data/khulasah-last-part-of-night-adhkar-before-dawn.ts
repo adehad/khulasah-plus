@@ -541,11 +541,59 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "يَا اللَّهُ يَا رَحْمَٰنُ يَا رَحِيمُ يَا مَلِكُ يَا قُدُّوسُ يَا سَلَامُ يَا مُؤْمِنُ يَا مُهَيمِنُ يَا عَزِيزُ يَا جَبَّارُ يَا مُتَكَبِّرُ يَا خَالِقُ يَا بَارِئُ يَا مُصَوِّرُ يَا غَفَّارُ يَا قَهَّارُ يَا وَهَّابُ يَا رَزَّاقُ يَا فَتَّاحُ يَا عَلِيمُ يَا قَابِضُ يَا بَاسِطُ يَا خَافِضُ يَا رَافِعُ يَا مُعِزُّ يَا مُذِلُّ يَا سَمِيعُ يَا بَصِيرُ يَاحَكَمُ يَا عَدْلُ يَا لَطِيفُ يَا خَبِيرُ يَا حَلِيمُ يَا عَظِيمُ يَا غَفُورُ يَا شَكُورُ يَا عَلِيُّ يَا كَبِيرُ يَا حَفِيظُ يَا مُقِيتُ يَا حَسِيبُ يَا جَلِيلُ يَا كَرِيمُ يَا رَقِيبُ يَا مُجِيبُ يَا وَاسِعُ يَا حَكِيمُ يَا وَدُودُ يَا مَجِيدُ يَا بَاعِثُ يَا شَهِيدُ يَا حَقُّ يَا وَكِيلُ يَا قَوِيُّ يَا مَتِينُ يَا وَلِيُّ يَا حَمِيدُ يَا مُحْصِي يَا مُبْدِئُ يَا مُعِيدُ يَا مُحْيِي يَا مُمِيتُ يَا حَيُّ يَا قَيُّومُ يَا وَاجِدُ يَا مَاجِدُ يَا وَاحِدُ يَا أَحَدُ يَا فَردُ يَا صَمَدُ يَا قَادِرُ يَا مُقتَدِرُ يَا مُقَدِّمُ يَا مُؤَخِّرُ يَا أَوَّلُ يَا آخِرُ يَاظَاهِرُ يَا بَاطِنُ يَا وَالِي يَا مُتَعَالِي يَا بَرُّ يَا تَوَّابُ يَا مُنْتَقِمُ يَا عَفُوُّ يَا رَؤُوفُ يَا مَالِكَ الْمُلكِ",
+              "يَا اللَّهُ يَا رَحْمَٰنُ يَا رَحِيمُ يَا مَلِكُ يَا قُدُّوسُ يَا سَلَامُ يَا مُؤْمِنُ يَا مُهَيمِنُ يَا عَزِيزُ يَا جَبَّارُ يَا مُتَكَبِّرُ يَا خَالِقُ",
             translit:
-              "Yā Allāhu yā raḥmānu yā raḥīmu yā maliku yā quddūsu yā salāmu yā mu’minu yā muhayminu yā ‛azīzu yā jabbāru yā mutakabbiru yā khāliqu yā bāri’u yā muṣawwiru yā ghaffāru yā qahhār yā wahhābu yā razzāqu yā fattāḥu yā ‛alīmu yā qābiḍu yā bāsiṭu yā khāfiḍu yā rāfi‛u yā mu‛izzu yā mudhillu yā samī‛u yā baṣīru yā ḥakamu yā ‛adlu yā laṭīfu yā khabīru yā ḥalīmu yā ‛aẓīmu yā ghafūru yā shakūru yā ‛aliyyu yā kabīru yā ḥafīẓu yā muqītu yā ḥasību yā jalīlu yā karīmu yā raqību yā mujību yā wāsi‛u yā ḥakīmu yā wadūdu yā majīdu yā bā‛ithu yā shahīdu yā ḥaqqu yā wakīlu yā qawiyyu yā matīnu yā waliyyu yā ḥamīdu yā muḥṣī yā mubdi’u yā mu‛īdu yā muḥyī yā mumītu yā ḥayyu yā qayyūmu yā wājidu yā mājidu yā wāḥidu yā aḥadu yā faradu yā ṣamadu yā qādiru yā muqtadiru yā muqaddimu yā mu’akh-khiru yā awwalu yā ākhiru yā ẓāhiru yā bāṭinu yā wāli yā muta‛ālu yā barru yā tawwābu yā muntaqimu yā ‛afuwwu yā ra’ūfu yā mālikal mulki",
+              "Yā Allāhu yā raḥmānu yā raḥīmu yā maliku yā quddūsu yā salāmu yā mu’minu yā muhayminu yā ‛azīzu yā jabbāru yā mutakabbiru yā khāliqu",
             translation:
-              "O Allah, O Most Gracious, O Most Merciful, O King, O Most Holy, O Source of Peace, O Granter of Security, O Guardian, O Almighty, O Compeller, O Supreme, O Creator, O Originator, O Fashioner, O Most Forgiving, O Subduer, O Bestower, O Provider, O Opener, O All-Knowing, O Withholder, O Expander, O Abaser, O Exalter, O Honourer, O Humbler, O All-Hearing, O All-Seeing, O Judge, O Just, O Subtle, O All-Aware, O Forbearing, O Magnificent, O Oft-Forgiving, O Appreciative, O Most High, O Great, O Preserver, O Sustainer, O Reckoner, O Majestic, O Generous, O Watchful, O Responsive, O Vast, O All-Wise, O Loving, O Glorious, O Resurrector, O Witness, O Truth, O Trustee, O Strong, O Firm, O Protecting Friend, O Praiseworthy, O Counter, O Originator, O Restorer, O Giver of life, O Giver of death, O Ever-Living, O Self-Sustaining, O Finder, O Noble, O One, O Unique, O Singular, O Eternal Refuge, O All-Powerful, O Determiner, O Expediter, O Delayer, O First, O Last, O Manifest, O Hidden, O Governor, O Most Exalted, O Source of Goodness, O Accepter of Repentance, O Avenger, O Pardoner, O Compassionate, O Owner of all sovereignty.",
+              "O Allah, O Most Gracious, O Most Merciful, O King, O Most Holy, O Source of Peace, O Granter of Security, O Guardian, O Almighty, O Compeller, O Supreme, O Creator,",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "يَا بَارِئُ يَا مُصَوِّرُ يَا غَفَّارُ يَا قَهَّارُ يَا وَهَّابُ يَا رَزَّاقُ يَا فَتَّاحُ يَا عَلِيمُ يَا قَابِضُ يَا بَاسِطُ يَا خَافِضُ يَا رَافِعُ",
+            translit:
+              "yā bāri’u yā muṣawwiru yā ghaffāru yā qahhār yā wahhābu yā razzāqu yā fattāḥu yā ‛alīmu yā qābiḍu yā bāsiṭu yā khāfiḍu yā rāfi‛u",
+            translation:
+              "O Originator, O Fashioner, O Most Forgiving, O Subduer, O Bestower, O Provider, O Opener, O All-Knowing, O Withholder, O Expander, O Abaser, O Exalter,",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "يَا مُعِزُّ يَا مُذِلُّ يَا سَمِيعُ يَا بَصِيرُ يَاحَكَمُ يَا عَدْلُ يَا لَطِيفُ يَا خَبِيرُ يَا حَلِيمُ يَا عَظِيمُ يَا غَفُورُ يَا شَكُورُ يَا عَلِيُّ",
+            translit:
+              "yā mu‛izzu yā mudhillu yā samī‛u yā baṣīru yā ḥakamu yā ‛adlu yā laṭīfu yā khabīru yā ḥalīmu yā ‛aẓīmu yā ghafūru yā shakūru yā ‛aliyyu",
+            translation:
+              "O Honourer, O Humbler, O All-Hearing, O All-Seeing, O Judge, O Just, O Subtle, O All-Aware, O Forbearing, O Magnificent, O Oft-Forgiving, O Appreciative, O Most High,",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "يَا كَبِيرُ يَا حَفِيظُ يَا مُقِيتُ يَا حَسِيبُ يَا جَلِيلُ يَا كَرِيمُ يَا رَقِيبُ يَا مُجِيبُ يَا وَاسِعُ يَا حَكِيمُ يَا وَدُودُ يَا مَجِيدُ",
+            translit:
+              "yā kabīru yā ḥafīẓu yā muqītu yā ḥasību yā jalīlu yā karīmu yā raqību yā mujību yā wāsi‛u yā ḥakīmu yā wadūdu yā majīdu",
+            translation:
+              "O Great, O Preserver, O Sustainer, O Reckoner, O Majestic, O Generous, O Watchful, O Responsive, O Vast, O All-Wise, O Loving, O Glorious,",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "يَا بَاعِثُ يَا شَهِيدُ يَا حَقُّ يَا وَكِيلُ يَا قَوِيُّ يَا مَتِينُ يَا وَلِيُّ يَا حَمِيدُ يَا مُحْصِي يَا مُبْدِئُ يَا مُعِيدُ يَا مُحْيِي يَا مُمِيتُ",
+            translit:
+              "yā bā‛ithu yā shahīdu yā ḥaqqu yā wakīlu yā qawiyyu yā matīnu yā waliyyu yā ḥamīdu yā muḥṣī yā mubdi’u yā mu‛īdu yā muḥyī yā mumītu",
+            translation:
+              "O Resurrector, O Witness, O Truth, O Trustee, O Strong, O Firm, O Protecting Friend, O Praiseworthy, O Counter, O Originator, O Restorer, O Giver of life, O Giver of death,",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "يَا حَيُّ يَا قَيُّومُ يَا وَاجِدُ يَا مَاجِدُ يَا وَاحِدُ يَا أَحَدُ يَا فَردُ يَا صَمَدُ يَا قَادِرُ يَا مُقتَدِرُ يَا مُقَدِّمُ يَا مُؤَخِّرُ يَا أَوَّلُ",
+            translit:
+              "yā ḥayyu yā qayyūmu yā wājidu yā mājidu yā wāḥidu yā aḥadu yā faradu yā ṣamadu yā qādiru yā muqtadiru yā muqaddimu yā mu’akh-khiru yā awwalu",
+            translation:
+              "O Ever-Living, O Self-Sustaining, O Finder, O Noble, O One, O Unique, O Singular, O Eternal Refuge, O All-Powerful, O Determiner, O Expediter, O Delayer, O First,",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "يَا آخِرُ يَاظَاهِرُ يَا بَاطِنُ يَا وَالِي يَا مُتَعَالِي يَا بَرُّ يَا تَوَّابُ يَا مُنْتَقِمُ يَا عَفُوُّ يَا رَؤُوفُ يَا مَالِكَ الْمُلكِ",
+            translit:
+              "yā ākhiru yā ẓāhiru yā bāṭinu yā wāli yā muta‛ālu yā barru yā tawwābu yā muntaqimu yā ‛afuwwu yā ra’ūfu yā mālikal mulki",
+            translation:
+              "O Last, O Manifest, O Hidden, O Governor, O Most Exalted, O Source of Goodness, O Accepter of Repentance, O Avenger, O Pardoner, O Compassionate, O Owner of all sovereignty.",
           }),
           new DhikrEntryModel({
             arabic: "يَا ذَا الْجَلَالِ وَالْإِكْرَامِ",

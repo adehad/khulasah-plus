@@ -1249,11 +1249,26 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "اللَّهُمَّ يَا رَبِّ بِجَاهِ نَبِيِّكَ الْمُصْطَفَى وَرَسُولِكَ الْمُرْتَضَى طَهِّرْ قُلُوبَنَا مِنْ كُلِّ وَصْفٍ يُبَاعِدُنَا عَنْ مُشَاهَدَتِكَ وَمَحَبَّتِكَ وَأَمِتْنَا عَلَى السُّنَّةِ وَالْجَمَاعَةِ وَالشَّوْقِ إِلَى لِقَائِكَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ وَصَلَّ ٱللَّهُ عَلَى سَيِّدِنَا مُحَّمَدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ تَسْلِيمًا والْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+              "اللَّهُمَّ يَا رَبِّ بِجَاهِ نَبِيِّكَ الْمُصْطَفَى وَرَسُولِكَ الْمُرْتَضَى طَهِّرْ قُلُوبَنَا مِنْ كُلِّ وَصْفٍ يُبَاعِدُنَا عَنْ مُشَاهَدَتِكَ وَمَحَبَّتِكَ",
             translit:
-              "Allāhumma yā rabbi bijāhi nabiyyikal-Muṣṭafā wa rasūlikal-Murtaḍā ṭahhir qulūbanā min kulli waṣfin yubā‛iduna ‛an mushāhadatika wa maḥabbatik, wa amitnā ‛alas-sunnati wal-jamā‛ati wash-shawqi ilā liqā’ik, yā dhal-jalāli wal-ikrām. Wa ṣallallāhu ‛alā sayyidinā Muḥammadin wa ‛alā ālihī wa ṣaḥbihī wa sallama taslīmā, wal-ḥamdu lillāhi rabbil-‛ālamīn",
+              "Allāhumma yā rabbi bijāhi nabiyyikal-Muṣṭafā wa rasūlikal-Murtaḍā ṭahhir qulūbanā min kulli waṣfin yubā‛iduna ‛an mushāhadatika wa maḥabbatik,",
             translation:
-              "O Allah, our Lord, by the honour of Your Prophet, the Chosen One, and Your Messenger, the Approved One, purify our hearts of every attribute that distances us from beholding You and from loving You. Let us die upon the Sunnah and the community, and in longing to meet You, O Possessor of Majesty and Honour. May Allah bless our master Muhammad, his Family and his Companions, and grant them abundant peace. All praise is due to Allah, Lord of the Worlds.",
+              "O Allah, our Lord, by the honour of Your Prophet, the Chosen One, and Your Messenger, the Approved One, purify our hearts of every attribute that distances us from beholding You and from loving You.",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَمِتْنَا عَلَى السُّنَّةِ وَالْجَمَاعَةِ وَالشَّوْقِ إِلَى لِقَائِكَ",
+            translit:
+              "wa amitnā ‛alas-sunnati wal-jamā‛ati wash-shawqi ilā liqā’ik,",
+            translation:
+              "Let us die upon the Sunnah and the community, and in longing to meet You,",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "يَا ذَا الْجَلَالِ وَالْإِكْرَامِ وَصَلَّ ٱللَّهُ عَلَى سَيِّدِنَا مُحَّمَدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ تَسْلِيمًا والْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+            translit:
+              "yā dhal-jalāli wal-ikrām. Wa ṣallallāhu ‛alā sayyidinā Muḥammadin wa ‛alā ālihī wa ṣaḥbihī wa sallama taslīmā, wal-ḥamdu lillāhi rabbil-‛ālamīn",
+            translation:
+              "O Possessor of Majesty and Honour. May Allah bless our master Muhammad, his Family and his Companions, and grant them abundant peace. All praise is due to Allah, Lord of the Worlds.",
           }),
         ],
       }),
