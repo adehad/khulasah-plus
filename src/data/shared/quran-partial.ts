@@ -3,7 +3,11 @@
  * An ellipsis marks the end of the verse that is cut off; `verse` is the verse the quote starts in.
  * Each is a factory so a page can set its own repeat without sharing a mutable instance.
  */
-import { QuranDhikrEntryModel } from "@/models/recitation";
+import {
+  QuranDhikrEntryModel,
+  QuranEntryModel,
+  QuranModel,
+} from "@/models/recitation";
 
 /** start of Al-Baqarah 2:186 — used in salawat-compilations-majma-al-lataif-6---Wednesday */
 export function baqarah_186(repeat = 1, enableCounter?: boolean) {
@@ -372,5 +376,688 @@ export function saff_13_14(repeat = 1, enableCounter?: boolean) {
     verse: 13,
     repeat,
     enableCounter,
+  });
+}
+
+// ---- verse selections recited as their own section ----
+
+/** Al-Baqarah 2:137, one entry per verse */
+export function baqarah_137(
+  repeat = 1,
+  instruction = "",
+  basmallah = false,
+  title = "Al-Baqarah",
+) {
+  return new QuranModel({
+    title,
+    surah: 2,
+    entries: [
+      new QuranEntryModel({
+        arabic: "… فَسَيَكْفِيكَهُمُ ٱللَّهُ وَهُوَ ٱلسَّمِيعُ ٱلْعَلِيمُ",
+        translit: "fa-sayakfīkahumu-llāhu wa huwa-s-samīʿu-l-ʿalīm",
+        translation:
+          "And Allah will be sufficient for you against them, and He is the Hearing, the Knowing.",
+        verse: 137,
+      }),
+    ],
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+/** Al-A'raf 7:196, one entry per verse */
+export function a_raf_196(
+  repeat = 1,
+  instruction = "",
+  basmallah = false,
+  title = "Al-A'ra",
+) {
+  return new QuranModel({
+    title,
+    surah: 7,
+    entries: [
+      new QuranEntryModel({
+        arabic: "إِنَّ وَلِـِّۧىَ ٱللَّهُ ٱلَّذِى نَزَّلَ ٱلْكِتَـٰبَ ۖ وَهُوَ يَتَوَلَّى ٱلصَّـٰلِحِينَ",
+        translit:
+          "inna waliyyiya-llāhu-lladhī nazzala-l-kitāba wa huwa yatawalla-ṣ-ṣāliḥīn",
+        translation:
+          "Indeed, my protector is Allah, who has sent down the Book; and He is an ally to the righteous.",
+        verse: 196,
+      }),
+    ],
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+/** At-Tawbah 9:129, one entry per verse */
+export function tawbah_129_section(
+  repeat = 1,
+  instruction = "",
+  basmallah = false,
+  title = "At-Tawbah",
+) {
+  return new QuranModel({
+    title,
+    surah: 9,
+    entries: [
+      new QuranEntryModel({
+        arabic: "… حَسْبِىَ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيمِ",
+        translit:
+          "ḥasbiya-llāhu lā ilāha illā huwa ʿalayhi tawakkaltu wa huwa rabbu-l-ʿarshi-l-ʿaẓīm",
+        translation:
+          "Sufficient for me is Allah; there is no deity except Him. On Him I have relied, and He is the Lord of the Great Throne.",
+        verse: 129,
+      }),
+    ],
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+/** Yusuf 12:64, one entry per verse */
+export function yusuf_64(
+  repeat = 1,
+  instruction = "",
+  basmallah = false,
+  title = "Yusuf",
+) {
+  return new QuranModel({
+    title,
+    surah: 12,
+    entries: [
+      new QuranEntryModel({
+        arabic: "… فَٱللَّهُ خَيْرٌ حَـٰفِظًا وَهُوَ أَرْحَمُ ٱلرَّٰحِمِينَ",
+        translit: "fa-llāhu khayrun ḥāfiẓan wa huwa arḥamu-r-rāḥimīn",
+        translation:
+          "For Allah is the best guardian, and He is the most merciful of the merciful.",
+        verse: 64,
+      }),
+    ],
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+/** Taha 20:111, one entry per verse */
+export function taha_111(
+  repeat = 1,
+  instruction = "",
+  basmallah = false,
+  title = "Taha",
+) {
+  return new QuranModel({
+    title,
+    surah: 20,
+    entries: [
+      new QuranEntryModel({
+        arabic: "۞ وَعَنَتِ ٱلْوُجُوهُ لِلْحَىِّ ٱلْقَيُّومِ ۖ وَقَدْ خَابَ مَنْ حَمَلَ ظُلْمًا",
+        translit:
+          "wa ʿanati-l-wujūhu li-l-ḥayyi-l-qayyūm, wa qad khāba man ḥamala ẓulmā",
+        translation:
+          "And faces shall be humbled before the Ever-Living, the Self-Sustaining. And he will have failed who carries injustice.",
+        verse: 111,
+      }),
+    ],
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+/** Al-Mu'minun 23:115-118, one entry per verse */
+export function mu_minun_115_118(
+  repeat = 1,
+  instruction = "",
+  basmallah = false,
+  title = "Al-Mu'minun",
+) {
+  return new QuranModel({
+    title,
+    surah: 23,
+    entries: [
+      new QuranEntryModel({
+        arabic: "أَفَحَسِبْتُمْ أَنَّمَا خَلَقْنَـٰكُمْ عَبَثًا وَأَنَّكُمْ إِلَيْنَا لَا تُرْجَعُونَ",
+        translit:
+          "Afaḥasibtum annamā khalaqnākum ʿabathan wa annakum ilaynā lā turjaʿūn.",
+        translation:
+          "Did you think We had created you in vain, and that you would not be brought back to Us?",
+        verse: 115,
+      }),
+      new QuranEntryModel({
+        arabic: "فَتَعَـٰلَى ٱللَّهُ ٱلْمَلِكُ ٱلْحَقُّ ۖ لَآ إِلَـٰهَ إِلَّا هُوَ رَبُّ ٱلْعَرْشِ ٱلْكَرِيمِ",
+        translit:
+          "Fa taʿālā Allāh ul-Malik ul-Ḥaqq, lā ilāha illā Huwa Rabb ul-ʿArsh il-Karīm.",
+        translation:
+          "Exalted be God, the true King, there is no god but Him, the Lord of the Glorious Throne!",
+        verse: 116,
+      }),
+      new QuranEntryModel({
+        arabic:
+          "وَمَن يَدْعُ مَعَ ٱللَّهِ إِلَـٰهًا ءَاخَرَ لَا بُرْهَـٰنَ لَهُۥ بِهِۦ فَإِنَّمَا حِسَابُهُۥ عِندَ رَبِّهِۦٓ ۚ إِنَّهُۥ لَا يُفْلِحُ ٱلْكَـٰفِرُونَ",
+        translit:
+          "Wa man yadʿu maʿ Allāhi ilāhan ākhara lā burhāna lahu bihi, faʾinnamā ḥisābuhu ʿinda Rabbih, innahu lā yufliḥ ul-kāfirūn.",
+        translation:
+          "Whoever prays to another god alongside Him—he has no proof of this—will face his reckoning with his Lord. Those who reject the truth will not prosper.",
+        verse: 117,
+      }),
+      new QuranEntryModel({
+        arabic: "وَقُل رَّبِّ ٱغْفِرْ وَٱرْحَمْ وَأَنتَ خَيْرُ ٱلرَّٰحِمِينَ",
+        translit: "Wa qul Rabb ighfir warḥam wa anta khayr ur-rāḥimīn.",
+        translation:
+          "Say, ‘Lord, forgive and have mercy: You are the most merciful of all.’",
+        verse: 118,
+      }),
+    ],
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+/** An-Naml 27:1, one entry per verse */
+export function naml_1(
+  repeat = 1,
+  instruction = "",
+  basmallah = false,
+  title = "An-Naml",
+) {
+  return new QuranModel({
+    title,
+    surah: 27,
+    entries: [
+      new QuranEntryModel({
+        arabic: "طسٓ …",
+        translit: "Ṭā Sīn",
+        translation: "Ta Sin.",
+        verse: 1,
+      }),
+    ],
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+/** Ar-Rum 30:17-19, one entry per verse */
+export function rum_17_19(
+  repeat = 1,
+  instruction = "",
+  basmallah = false,
+  title = "Ar-Rum",
+) {
+  return new QuranModel({
+    title,
+    surah: 30,
+    entries: [
+      new QuranEntryModel({
+        arabic: "فَسُبْحَـٰنَ ٱللَّهِ حِينَ تُمْسُونَ وَحِينَ تُصْبِحُونَ",
+        translit: "Fasubḥān Allāhi ḥīna tumsūna wa ḥīna tuṣbiḥūn.",
+        translation: "So celebrate God’s glory in the evening, in the morning—",
+        verse: 17,
+      }),
+      new QuranEntryModel({
+        arabic: "وَلَهُ ٱلْحَمْدُ فِى ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ وَعَشِيًّا وَحِينَ تُظْهِرُونَ",
+        translit:
+          "Wa lahu ulḥamdu fis-samāwāti wal-arḍi wa ʿashīyyan wa ḥīna tuẓhirūn.",
+        translation:
+          "praise is due to Him in the heavens and the earth—in the late afternoon, and at midday.",
+        verse: 18,
+      }),
+      new QuranEntryModel({
+        arabic:
+          "يُخْرِجُ ٱلْحَىَّ مِنَ ٱلْمَيِّتِ وَيُخْرِجُ ٱلْمَيِّتَ مِنَ ٱلْحَىِّ وَيُحْىِ ٱلْأَرْضَ بَعْدَ مَوْتِهَا ۚ وَكَذَٰلِكَ تُخْرَجُونَ",
+        translit:
+          "Yukhrij ul-ḥayya min al-mayyiti wa yukhrij ul-mayyita min al-ḥayyi wa yuḥyī il-arḍa baʿda mawtihā, wa kathālika tukhrajūn.",
+        translation:
+          "He brings the living out of the dead and the dead out of the living. He gives life to the earth after death, and you will be brought out in the same way.",
+        verse: 19,
+      }),
+    ],
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+/** Al-Ahzab 33:11-12, one entry per verse */
+export function ahzab_11_12(
+  repeat = 1,
+  instruction = "",
+  basmallah = false,
+  title = "Al-Ahzab",
+) {
+  return new QuranModel({
+    title,
+    surah: 33,
+    entries: [
+      new QuranEntryModel({
+        arabic: "… ٱبْتُلِىَ ٱلْمُؤْمِنُونَ وَزُلْزِلُوا۟ زِلْزَالًا شَدِيدًا",
+        translit: "(Faqad)i-btuliya-l-mu'minūna wa zulzilū zilzālan shadīdan",
+        translation:
+          "(There,) the believers were tried and shaken with a mighty shaking.",
+        verse: 11,
+      }),
+      new QuranEntryModel({
+        arabic:
+          "وَإِذْ يَقُولُ ٱلْمُنَـٰفِقُونَ وَٱلَّذِينَ فِى قُلُوبِهِم مَّرَضٌ مَّا وَعَدَنَا ٱللَّهُ وَرَسُولُهُۥٓ إِلَّا غُرُورًا",
+        translit:
+          "Wa idh yaqūlu-l-munāfiqūna wa-lladhīna fī qulūbihim maraḍun mā waʿadanā-llāhu wa rasūluhū illā ghurūran",
+        translation:
+          "And when the hypocrites and those in whose hearts is a disease said, ‘Allah and His Messenger did not promise us except delusion.’",
+        verse: 12,
+      }),
+    ],
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+/** Al-Ahzab 33:56, one entry per verse */
+export function ahzab_56(
+  repeat = 1,
+  instruction = "",
+  basmallah = false,
+  title = "Al-Ahzab",
+) {
+  return new QuranModel({
+    title,
+    surah: 33,
+    entries: [
+      new QuranEntryModel({
+        arabic:
+          "إِنَّ ٱللَّهَ وَمَلَـٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى ٱلنَّبِىِّ ۚ يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ صَلُّوا۟ عَلَيْهِ وَسَلِّمُوا۟ تَسْلِيمًا",
+        translit:
+          "Inna Allāha wa malā’ikatahu yuṣallūna ‘alā al-nabīyi yā ayyuhā alladhīna āmanū ṣallū ‘alayhi wa sallimū taslīman.",
+        translation:
+          "Indeed, Allah confers blessing upon the Prophet, and His angels [ask Him to do so]. O you who have believed, ask [Allah to confer] blessing upon him and ask [Allah to grant him] peace.",
+        verse: 56,
+      }),
+    ],
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+/** Ya-Sin 36:1-9, one entry per verse */
+export function ya_sin_1_9(
+  repeat = 1,
+  instruction = "",
+  basmallah = false,
+  title = "Ya-Sin",
+) {
+  return new QuranModel({
+    title,
+    surah: 36,
+    entries: [
+      new QuranEntryModel({
+        arabic: "يسٓ",
+        translit: "Yā Sīn",
+        translation: "Ya Sin.",
+        verse: 1,
+      }),
+      new QuranEntryModel({
+        arabic: "وَٱلْقُرْءَانِ ٱلْحَكِيمِ",
+        translit: "wa-l-qur'āni-l-ḥakīm",
+        translation: "By the wise Qur'an.",
+        verse: 2,
+      }),
+      new QuranEntryModel({
+        arabic: "إِنَّكَ لَمِنَ ٱلْمُرْسَلِينَ",
+        translit: "innaka lamina-l-mursalīn",
+        translation: "Indeed, you are from among the messengers.",
+        verse: 3,
+      }),
+      new QuranEntryModel({
+        arabic: "عَلَىٰ صِرَٰطٍ مُّسْتَقِيمٍ",
+        translit: "ʿalā ṣirāṭin mustaqīm",
+        translation: "On a straight path.",
+        verse: 4,
+      }),
+      new QuranEntryModel({
+        arabic: "تَنزِيلَ ٱلْعَزِيزِ ٱلرَّحِيمِ",
+        translit: "tanzīla-l-ʿazīzi-r-raḥīm",
+        translation: "A revelation of the Exalted in Might, the Merciful.",
+        verse: 5,
+      }),
+      new QuranEntryModel({
+        arabic: "لِتُنذِرَ قَوْمًا مَّآ أُنذِرَ ءَابَآؤُهُمْ فَهُمْ غَـٰفِلُونَ",
+        translit: "li-tundhira qawman mā undhira ābā'uhum fahum ghāfilūn",
+        translation:
+          "That you may warn a people whose forefathers were not warned, so they are unaware.",
+        verse: 6,
+      }),
+      new QuranEntryModel({
+        arabic: "لَقَدْ حَقَّ ٱلْقَوْلُ عَلَىٰٓ أَكْثَرِهِمْ فَهُمْ لَا يُؤْمِنُونَ",
+        translit: "laqad ḥaqqa-l-qawlu ʿalā aktharihim fahum lā yu'minūn",
+        translation:
+          "The word has come into effect upon most of them, so they do not believe.",
+        verse: 7,
+      }),
+      new QuranEntryModel({
+        arabic: "إِنَّا جَعَلْنَا فِىٓ أَعْنَـٰقِهِمْ أَغْلَـٰلًا فَهِىَ إِلَى ٱلْأَذْقَانِ فَهُم مُّقْمَحُونَ",
+        translit:
+          "innā jaʿalnā fī aʿnāqihim aghlālan fa-hiya ilā-l-adhqāni fahum muqmaḥūn",
+        translation:
+          "Indeed, We have put shackles on their necks, and they are to their chins, so they are with heads aloft.",
+        verse: 8,
+      }),
+      new QuranEntryModel({
+        arabic:
+          "وَجَعَلْنَا مِنۢ بَيْنِ أَيْدِيهِمْ سَدًّا وَمِنْ خَلْفِهِمْ سَدًّا فَأَغْشَيْنَـٰهُمْ فَهُمْ لَا يُبْصِرُونَ",
+        translit:
+          "wa jaʿalnā min bayni aydīhim saddan wa min khalfihim saddan fa-aghshaynāhum fahum lā yubṣirūn",
+        translation:
+          "And We have put before them a barrier and behind them a barrier and covered them, so they do not see.",
+        verse: 9,
+      }),
+    ],
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+/** Ya-Sin 36:66-67, one entry per verse */
+export function ya_sin_66_67(
+  repeat = 1,
+  instruction = "",
+  basmallah = false,
+  title = "Ya-Sin",
+) {
+  return new QuranModel({
+    title,
+    surah: 36,
+    entries: [
+      new QuranEntryModel({
+        arabic: "وَلَوْ نَشَآءُ لَطَمَسْنَا عَلَىٰٓ أَعْيُنِهِمْ فَٱسْتَبَقُوا۟ ٱلصِّرَٰطَ فَأَنَّىٰ يُبْصِرُونَ",
+        translit:
+          "wa law nashā'u la-ṭamasnā ʿalā aʿyunihim fa-stabaqū-ṣ-ṣirāṭa fa-annā yubṣirūn",
+        translation:
+          "And if We willed, We could have obliterated their eyes, then they would race to the path, but how would they see?",
+        verse: 66,
+      }),
+      new QuranEntryModel({
+        arabic: "وَلَوْ نَشَآءُ لَمَسَخْنَـٰهُمْ عَلَىٰ مَكَانَتِهِمْ فَمَا ٱسْتَطَـٰعُوا۟ مُضِيًّا وَلَا يَرْجِعُونَ",
+        translit:
+          "wa law nashā'u la-masakhnāhum ʿalā makānatihim fa-mā-staṭāʿū muḍiyyan wa lā yarjiʿūn",
+        translation:
+          "And if We willed, We could have transfigured them in their places, so they would not be able to proceed, nor would they return.",
+        verse: 67,
+      }),
+    ],
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+/** As-Saffat 37:79-81, one entry per verse */
+export function saffat_79_81(
+  repeat = 1,
+  instruction = "",
+  basmallah = false,
+  title = "As-Saffat",
+) {
+  return new QuranModel({
+    title,
+    surah: 37,
+    entries: [
+      new QuranEntryModel({
+        arabic: "سَلَـٰمٌ عَلَىٰ نُوحٍ فِى ٱلْعَـٰلَمِينَ",
+        translit: "Salāmun ʿalā Nūḥin fil-ʿālamīn.",
+        translation: "‘Peace be upon Noah among all the nations!’",
+        verse: 79,
+      }),
+      new QuranEntryModel({
+        arabic: "إِنَّا كَذَٰلِكَ نَجْزِى ٱلْمُحْسِنِينَ",
+        translit: "Innā kadhalika najzil-muḥsinīn.",
+        translation: "This is how We reward those who do good:",
+        verse: 80,
+      }),
+      new QuranEntryModel({
+        arabic: "إِنَّهُۥ مِنْ عِبَادِنَا ٱلْمُؤْمِنِينَ",
+        translit: "Innahu min ʿibādina al-muʾminīn.",
+        translation: "he was truly one of Our faithful servants.",
+        verse: 81,
+      }),
+    ],
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+/** As-Saffat 37:180-182, one entry per verse */
+export function saffat_180_182(
+  repeat = 1,
+  instruction = "",
+  basmallah = false,
+  title = "As-Saffat",
+) {
+  return new QuranModel({
+    title,
+    surah: 37,
+    entries: [
+      new QuranEntryModel({
+        arabic: "سُبْحَـٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ",
+        translit: "Subḥāna rabbika rabbil ‛izzati ‛ammā yaṣifūn.",
+        translation:
+          "Glory be to your Lord; the Lord of Honour and Power Who is far above what they attribute to Him;",
+        verse: 180,
+      }),
+      new QuranEntryModel({
+        arabic: "وَسَلَـٰمٌ عَلَى ٱلْمُرْسَلِينَ",
+        translit: "Wa salāmun ‛alal mursalīn.",
+        translation: "And peace be on the Messengers;",
+        verse: 181,
+      }),
+      new QuranEntryModel({
+        arabic: "وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
+        translit: "Walḥamdu lillāhi rabbil ‛ālamīn.",
+        translation:
+          "And praise be to Allāh, the Lord and Cherisher of the Worlds. [Sūrah Al-Ṣāffāt (37), Verses 180-182]",
+        verse: 182,
+      }),
+    ],
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+/** Ghafir 40:1-3, one entry per verse */
+export function ghafir_1_3(
+  repeat = 1,
+  instruction = "",
+  basmallah = false,
+  title = "Ghafir",
+) {
+  return new QuranModel({
+    title,
+    surah: 40,
+    entries: [
+      new QuranEntryModel({
+        arabic: "حمٓ",
+        translit: "Ḥā Mīm.",
+        translation: "Ḥā, Meem.",
+        verse: 1,
+      }),
+      new QuranEntryModel({
+        arabic: "تَنزِيلُ ٱلْكِتَـٰبِ مِنَ ٱللَّهِ ٱلْعَزِيزِ ٱلْعَلِيمِ",
+        translit: "Tanzīlul kitābi minallāhil ‛azīzil ‛alīm.",
+        translation:
+          "The revelation of the Book [i.e., the Qur’ān] is from Allāh, the Exalted in Might, the Knowing,",
+        verse: 2,
+      }),
+      new QuranEntryModel({
+        arabic:
+          "غَافِرِ ٱلذَّنۢبِ وَقَابِلِ ٱلتَّوْبِ شَدِيدِ ٱلْعِقَابِ ذِى ٱلطَّوْلِ ۖ لَآ إِلَـٰهَ إِلَّا هُوَ ۖ إِلَيْهِ ٱلْمَصِيرُ",
+        translit:
+          "Ghāfiridh dhambi wa qābilit tawbi shadīdil ‛iqābi dhiṭ ṭawl, lā ilāha illā huwa ilayhil maṣīr.",
+        translation:
+          "The forgiver of sin, acceptor of repentance, severe in punishment, owner of abundance. There is no deity except Him; to Him is the destination.",
+        verse: 3,
+      }),
+    ],
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+/** Ash-Shura 42:1-2, one entry per verse */
+export function shura_1_2(
+  repeat = 1,
+  instruction = "",
+  basmallah = false,
+  title = "Ash-Shura",
+) {
+  return new QuranModel({
+    title,
+    surah: 42,
+    entries: [
+      new QuranEntryModel({
+        arabic: "حمٓ",
+        translit: "Ḥā Mīm",
+        translation: "Ha Mim.",
+        verse: 1,
+      }),
+      new QuranEntryModel({
+        arabic: "عٓسٓقٓ",
+        translit: "ʿAyn Sīn Qāf",
+        translation: "Ayn Sin Qaf.",
+        verse: 2,
+      }),
+    ],
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+/** Ar-Rahman 55:19-20, one entry per verse */
+export function rahman_19_20(
+  repeat = 1,
+  instruction = "",
+  basmallah = false,
+  title = "Ar-Rahman",
+) {
+  return new QuranModel({
+    title,
+    surah: 55,
+    entries: [
+      new QuranEntryModel({
+        arabic: "مَرَجَ ٱلْبَحْرَيْنِ يَلْتَقِيَانِ",
+        translit: "maraja-l-baḥrayni yaltaqiyān",
+        translation: "He released the two seas, meeting side by side.",
+        verse: 19,
+      }),
+      new QuranEntryModel({
+        arabic: "بَيْنَهُمَا بَرْزَخٌ لَّا يَبْغِيَانِ",
+        translit: "baynahumā barzakhun lā yabghiyān",
+        translation: "Between them is a barrier which they do not transgress.",
+        verse: 20,
+      }),
+    ],
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+/** Al-Hashr 59:21-24, one entry per verse */
+export function hashr_21_24(
+  repeat = 1,
+  instruction = "",
+  basmallah = false,
+  title = "Al-Hashr",
+) {
+  return new QuranModel({
+    title,
+    surah: 59,
+    entries: [
+      new QuranEntryModel({
+        arabic:
+          "لَوْ أَنزَلْنَا هَـٰذَا ٱلْقُرْءَانَ عَلَىٰ جَبَلٍ لَّرَأَيْتَهُۥ خَـٰشِعًا مُّتَصَدِّعًا مِّنْ خَشْيَةِ ٱللَّهِ ۚ وَتِلْكَ ٱلْأَمْثَـٰلُ نَضْرِبُهَا لِلنَّاسِ لَعَلَّهُمْ يَتَفَكَّرُونَ",
+        translit:
+          "Lau anzalnā hādhā al-Qurʾāna ʿalā jabalin laraʾāytahu khāshiʿan mutaṣaddiʿan min khashyat Illāh, wa tilk al-amthālu naḍribuhā liʾn-nāsi laʿalahum yatafakkarūn.",
+        translation:
+          "If We had sent this Qur’an down on a mountain, you would have seen it humbled and split apart in its awe of God: We offer people such illustrations so that they may reflect.",
+        verse: 21,
+      }),
+      new QuranEntryModel({
+        arabic:
+          "هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَـٰهَ إِلَّا هُوَ ۖ عَـٰلِمُ ٱلْغَيْبِ وَٱلشَّهَـٰدَةِ ۖ هُوَ ٱلرَّحْمَـٰنُ ٱلرَّحِيمُ",
+        translit:
+          "Huwa Allāhu alladhī lā ilāha illā Hu, ʿālim ul-ghaybi wa ash-shahādati Huwa ar-Raḥmān ur-Raḥīm.",
+        translation:
+          "He is God: there is no god other than Him. It is He who knows what is hidden as well as what is in the open, He is the Lord of Mercy, the Giver of Mercy.",
+        verse: 22,
+      }),
+      new QuranEntryModel({
+        arabic:
+          "هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَـٰمُ ٱلْمُؤْمِنُ ٱلْمُهَيْمِنُ ٱلْعَزِيزُ ٱلْجَبَّارُ ٱلْمُتَكَبِّرُ ۚ سُبْحَـٰنَ ٱللَّهِ عَمَّا يُشْرِكُونَ",
+        translit:
+          "Huwa Allāhu alladhī lā ilāha illā Huwa al-Malik ul-Quddūs us-Salām ulMuʾmin ul-Muhaymin ul-ʿAzīz ul-Jabbār ul-Mutakabbir, subḥān Allāhi ʿammā yushrikūn.",
+        translation:
+          "He is God: there is no god other than Him, the Controller, the Holy One, Source of Peace, Granter of Security, Guardian over all, the Almighty, the Compeller, the Truly Great; God is far above anything they consider to be His partner.",
+        verse: 23,
+      }),
+      new QuranEntryModel({
+        arabic:
+          "هُوَ ٱللَّهُ ٱلْخَـٰلِقُ ٱلْبَارِئُ ٱلْمُصَوِّرُ ۖ لَهُ ٱلْأَسْمَآءُ ٱلْحُسْنَىٰ ۚ يُسَبِّحُ لَهُۥ مَا فِى ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
+        translit:
+          "Huwa Allāh ul-Khāliq ul-Bāriʾ ulMuṣawwir, lahu ul-asmāʾ ul-ḥusnā, yusabbiḥu lahu ma fīs-samāwāti wal-arḍi wa Huwa al-ʿAzīz ul-Ḥakīm.",
+        translation:
+          "He is God: the Creator, the Originator, the Shaper. The best names belong to Him. Everything in the heavens and earth glorifies Him: He is the Almighty, the Wise.",
+        verse: 24,
+      }),
+    ],
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+/** Al-Buruj 85:20-22, one entry per verse */
+export function buruj_20_22(
+  repeat = 1,
+  instruction = "",
+  basmallah = false,
+  title = "Al-Buruj",
+) {
+  return new QuranModel({
+    title,
+    surah: 85,
+    entries: [
+      new QuranEntryModel({
+        arabic: "وَٱللَّهُ مِن وَرَآئِهِم مُّحِيطٌۢ",
+        translit: "wa-llāhu min warā'ihim muḥīṭ",
+        translation: "And Allah, from behind them, is encompassing.",
+        verse: 20,
+      }),
+      new QuranEntryModel({
+        arabic: "بَلْ هُوَ قُرْءَانٌ مَّجِيدٌ",
+        translit: "bal huwa qur'ānun majīd",
+        translation: "But it is a glorious Qur'an.",
+        verse: 21,
+      }),
+      new QuranEntryModel({
+        arabic: "فِى لَوْحٍ مَّحْفُوظٍۭ",
+        translit: "fī lawḥin maḥfūẓ",
+        translation: "In a Preserved Tablet.",
+        verse: 22,
+      }),
+    ],
+    instruction,
+    basmallah,
+    repeat,
   });
 }

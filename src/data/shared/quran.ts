@@ -5,6 +5,7 @@ import { quran as kafirun_source } from "@/data/shared/quran-kafirun";
 import { quran as kahf_source } from "@/data/shared/quran-kahf";
 import { quran as kawthar_source } from "@/data/shared/quran-kawthar";
 import { quran as masad_source } from "@/data/shared/quran-masad";
+import { quran as mulk_source } from "@/data/shared/quran-mulk";
 import { quran as muzzammil_source } from "@/data/shared/quran-muzzammil";
 import { quran as nasr_source } from "@/data/shared/quran-nasr";
 import { quran as qadr_source } from "@/data/shared/quran-qadr";
@@ -570,6 +571,21 @@ export function muzzammil(
     title: muzzammil_source.title,
     surah: muzzammil_source.surah,
     entries: muzzammil_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function mulk(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: mulk_source.title,
+    surah: mulk_source.surah,
+    entries: mulk_source.entries,
     instruction,
     basmallah,
     repeat,

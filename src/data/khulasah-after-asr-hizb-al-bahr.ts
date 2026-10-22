@@ -1,11 +1,21 @@
 import { baqarah_ayat_al_kursi } from "@/data/shared/quran";
 import {
-  DhikrEntryModel,
-  DhikrModel,
-  QuranEntryModel,
-  QuranModel,
-  WirdModel,
-} from "@/models/recitation";
+  a_raf_196,
+  ahzab_11_12,
+  ahzab_56,
+  baqarah_137,
+  buruj_20_22,
+  ghafir_1_3,
+  naml_1,
+  rahman_19_20,
+  shura_1_2,
+  taha_111,
+  tawbah_129_section,
+  ya_sin_1_9,
+  ya_sin_66_67,
+  yusuf_64,
+} from "@/data/shared/quran-partial";
+import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 const hizbAlBahrContent = [
   new WirdModel({
@@ -47,29 +57,7 @@ const hizbAlBahrContent = [
           }),
         ],
       }),
-      new QuranModel({
-        title: "Al-Ahzab",
-        surah: 33,
-        entries: [
-          new QuranEntryModel({
-            arabic: " (فَقَد) ٱبۡتُلِيَ ٱلۡمُؤۡمِنُونَ وَزُلۡزِلُواْ زِلۡزَالٗا شَدِيدٗا",
-            translit:
-              "(Faqad)i-btuliya-l-mu'minūna wa zulzilū zilzālan shadīdan",
-            translation:
-              "(There,) the believers were tried and shaken with a mighty shaking.",
-            verse: 11,
-          }),
-          new QuranEntryModel({
-            arabic:
-              "وَإِذۡ يَقُولُ ٱلۡمُنَٰفِقُونَ وَٱلَّذِينَ فِي قُلُوبِهِم  مَّرَضٞ مَّا وَعَدَنَا ٱللَّهُ وَرَسُولُهُۥٓ إِلَّا غُرُورٗا",
-            translit:
-              "Wa idh yaqūlu-l-munāfiqūna wa-lladhīna fī qulūbihim maraḍun mā waʿadanā-llāhu wa rasūluhū illā ghurūran",
-            translation:
-              "And when the hypocrites and those in whose hearts is a disease said, ‘Allah and His Messenger did not promise us except delusion.’",
-            verse: 12,
-          }),
-        ],
-      }),
+      ahzab_11_12(1, "", false),
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -205,95 +193,8 @@ const hizbAlBahrContent = [
           }),
         ],
       }),
-      new QuranModel({
-        title: "Ya-Sin",
-        surah: 36,
-        entries: [
-          new QuranEntryModel({
-            arabic: "وَلَوۡ نَشَآءُ لَطَمَسۡنَا عَلَىٰٓ أَعۡيُنِهِمۡ فَٱسۡتَبَقُواْ ٱلصِّرَٰطَ فَأَنَّىٰ يُبۡصِرُونَ",
-            translit:
-              "wa law nashā'u la-ṭamasnā ʿalā aʿyunihim fa-stabaqū-ṣ-ṣirāṭa fa-annā yubṣirūn",
-            translation:
-              "And if We willed, We could have obliterated their eyes, then they would race to the path, but how would they see?",
-            verse: 66,
-          }),
-          new QuranEntryModel({
-            arabic: "وَلَوۡ نَشَآءُ لَمَسَخۡنَٰهُمۡ عَلَىٰ مَكَانَتِهِمۡ فَمَا ٱسۡتَطَٰعُواْ مُضِيّٗا وَلَا يَرۡجِعُونَ",
-            translit:
-              "wa law nashā'u la-masakhnāhum ʿalā makānatihim fa-mā-staṭāʿū muḍiyyan wa lā yarjiʿūn",
-            translation:
-              "And if We willed, We could have transfigured them in their places, so they would not be able to proceed, nor would they return.",
-            verse: 67,
-          }),
-        ],
-      }),
-      new QuranModel({
-        title: "Ya-Sin",
-        surah: 36,
-        entries: [
-          new QuranEntryModel({
-            arabic: "يسٓ",
-            translit: "Yā Sīn",
-            translation: "Ya Sin.",
-            verse: 1,
-          }),
-          new QuranEntryModel({
-            arabic: "وَالْقُرْآنِ الْحَكِيمِ",
-            translit: "wa-l-qur'āni-l-ḥakīm",
-            translation: "By the wise Qur'an.",
-            verse: 2,
-          }),
-          new QuranEntryModel({
-            arabic: "إِنَّكَ لَمِنَ الْمُرْسَلِينَ",
-            translit: "innaka lamina-l-mursalīn",
-            translation: "Indeed, you are from among the messengers.",
-            verse: 3,
-          }),
-          new QuranEntryModel({
-            arabic: "عَلَىٰ صِرَاطٍ مُسْتَقِيمٍ",
-            translit: "ʿalā ṣirāṭin mustaqīm",
-            translation: "On a straight path.",
-            verse: 4,
-          }),
-          new QuranEntryModel({
-            arabic: "تَنْزِيلَ الْعَزِيزِ الرَّحِيمِ",
-            translit: "tanzīla-l-ʿazīzi-r-raḥīm",
-            translation: "A revelation of the Exalted in Might, the Merciful.",
-            verse: 5,
-          }),
-          new QuranEntryModel({
-            arabic: "لِتُنْذِرَ قَوْمًا مَا أُنْذِرَ آبَاؤُهُمْ فَهُمْ غَافِلُونَ",
-            translit: "li-tundhira qawman mā undhira ābā'uhum fahum ghāfilūn",
-            translation:
-              "That you may warn a people whose forefathers were not warned, so they are unaware.",
-            verse: 6,
-          }),
-          new QuranEntryModel({
-            arabic: "لَقَدْ حَقَّ الْقَوْلُ عَلَىٰ أَكْثَرِهِمْ فَهُمْ لَا يُؤْمِنُونَ",
-            translit: "laqad ḥaqqa-l-qawlu ʿalā aktharihim fahum lā yu'minūn",
-            translation:
-              "The word has come into effect upon most of them, so they do not believe.",
-            verse: 7,
-          }),
-          new QuranEntryModel({
-            arabic: "إِنَّا جَعَلْنَا فِي أَعْنَاقِهِمْ أَغْلَالًا فَهِيَ إِلَى الْأَذْقَانِ فَهُمْ مُقْمَحُونَ",
-            translit:
-              "innā jaʿalnā fī aʿnāqihim aghlālan fa-hiya ilā-l-adhqāni fahum muqmaḥūn",
-            translation:
-              "Indeed, We have put shackles on their necks, and they are to their chins, so they are with heads aloft.",
-            verse: 8,
-          }),
-          new QuranEntryModel({
-            arabic:
-              "وَجَعَلْنَا مِنْ بَيْنِ أَيْدِيهِمْ سَدًّا وَمِنْ خَلْفِهِمْ سَدًّا فَأَغْشَيْنَاهُمْ فَهُمْ لَا يُبْصِرُونَ",
-            translit:
-              "wa jaʿalnā min bayni aydīhim saddan wa min khalfihim saddan fa-aghshaynāhum fahum lā yubṣirūn",
-            translation:
-              "And We have put before them a barrier and behind them a barrier and covered them, so they do not see.",
-            verse: 9,
-          }),
-        ],
-      }),
+      ya_sin_66_67(1, "", false),
+      ya_sin_1_9(1, "", false),
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -304,69 +205,10 @@ const hizbAlBahrContent = [
           }),
         ],
       }),
-      new QuranModel({
-        title: "Taha",
-        surah: 20,
-        entries: [
-          new QuranEntryModel({
-            arabic: "وَعَنَتِ ٱلْوُجُوهُ لِلْحَيِّ ٱلْقَيُّومِ ۖ وَقَدْ خَابَ مَنْ حَمَلَ ظُلْمً",
-            translit:
-              "wa ʿanati-l-wujūhu li-l-ḥayyi-l-qayyūm, wa qad khāba man ḥamala ẓulmā",
-            translation:
-              "And faces shall be humbled before the Ever-Living, the Self-Sustaining. And he will have failed who carries injustice.",
-            verse: 111,
-          }),
-        ],
-      }),
-      new QuranModel({
-        title: "An-Naml",
-        surah: 27,
-        entries: [
-          new QuranEntryModel({
-            arabic: "طسٓ",
-            translit: "Ṭā Sīn",
-            translation: "Ta Sin.",
-            verse: 1,
-          }),
-        ],
-      }),
-      new QuranModel({
-        title: "Ash-Shura",
-        surah: 42,
-        entries: [
-          new QuranEntryModel({
-            arabic: "حمٓ",
-            translit: "Ḥā Mīm",
-            translation: "Ha Mim.",
-            verse: 1,
-          }),
-          new QuranEntryModel({
-            arabic: "عٓسٓقٓ",
-            translit: "ʿAyn Sīn Qāf",
-            translation: "Ayn Sin Qaf.",
-            verse: 2,
-          }),
-        ],
-      }),
-      new QuranModel({
-        title: "Ar-Rahman",
-        surah: 55,
-        entries: [
-          new QuranEntryModel({
-            arabic: "مَرَجَ الْبَحْرَيْنِ يَلْتَقِيَانِ",
-            translit: "maraja-l-baḥrayni yaltaqiyān",
-            translation: "He released the two seas, meeting side by side.",
-            verse: 19,
-          }),
-          new QuranEntryModel({
-            arabic: "بَيْنَهُمَا بَرْزَخٌ لَا يَبْغِيَانِ",
-            translit: "baynahumā barzakhun lā yabghiyān",
-            translation:
-              "Between them is a barrier which they do not transgress.",
-            verse: 20,
-          }),
-        ],
-      }),
+      taha_111(1, "", false),
+      naml_1(1, "", false),
+      shura_1_2(1, "", false),
+      rahman_19_20(1, "", false),
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -383,34 +225,7 @@ const hizbAlBahrContent = [
           }),
         ],
       }),
-      new QuranModel({
-        title: "Ghafir",
-        surah: 40,
-        entries: [
-          new QuranEntryModel({
-            arabic: "حمٓ",
-            translit: "Ḥā Mīm.",
-            translation: "Ḥā, Meem.",
-            verse: 1,
-          }),
-          new QuranEntryModel({
-            arabic: "تَنزِيلُ ٱلۡكِتَٰبِ مِنَ ٱللَّهِ ٱلۡعَزِيزِ ٱلۡعَلِيمِ",
-            translit: "Tanzīlul kitābi minallāhil ‛azīzil ‛alīm.",
-            translation:
-              "The revelation of the Book [i.e., the Qur’ān] is from Allāh, the Exalted in Might, the Knowing,",
-            verse: 2,
-          }),
-          new QuranEntryModel({
-            arabic:
-              "غَافِرِ ٱلذَّنۢبِ وَقَابِلِ ٱلتَّوۡبِ شَدِيدِ ٱلۡعِقَابِ ذِي ٱلطَّوۡلِۖ لَآ إِلَٰهَ إِلَّا هُوَۖ إِلَيۡهِ ٱلۡمَصِيرُ",
-            translit:
-              "Ghāfiridh dhambi wa qābilit tawbi shadīdil ‛iqābi dhiṭ ṭawl, lā ilāha illā huwa ilayhil maṣīr.",
-            translation:
-              "The forgiver of sin, acceptor of repentance, severe in punishment, owner of abundance. There is no deity except Him; to Him is the destination.",
-            verse: 3,
-          }),
-        ],
-      }),
+      ghafir_1_3(1, "", false),
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -440,19 +255,7 @@ const hizbAlBahrContent = [
           }),
         ],
       }),
-      new QuranModel({
-        title: "Al-Baqarah",
-        surah: 2,
-        entries: [
-          new QuranEntryModel({
-            arabic: "فَسَيَكْفِيكَهُمُ اللَّهُ ۚ وَهُوَ السَّمِيعُ الْعَلِيمُ",
-            translit: "fa-sayakfīkahumu-llāhu wa huwa-s-samīʿu-l-ʿalīm",
-            translation:
-              "And Allah will be sufficient for you against them, and He is the Hearing, the Knowing.",
-            verse: 137,
-          }),
-        ],
-      }),
+      baqarah_137(1, "", false),
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -472,71 +275,10 @@ const hizbAlBahrContent = [
           }),
         ],
       }),
-      new QuranModel({
-        title: "Al-Buruj",
-        surah: 85,
-        entries: [
-          new QuranEntryModel({
-            arabic: "وَاللَّهُ مِنْ وَرَائِهِمْ مُحِيطٌ",
-            translit: "wa-llāhu min warā'ihim muḥīṭ",
-            translation: "And Allah, from behind them, is encompassing.",
-            verse: 20,
-          }),
-          new QuranEntryModel({
-            arabic: "بَلْ هُوَ قُرْآنٌ مَجِيدٌ",
-            translit: "bal huwa qur'ānun majīd",
-            translation: "But it is a glorious Qur'an.",
-            verse: 21,
-          }),
-          new QuranEntryModel({
-            arabic: "فِي لَوْحٍ مَحْفُوظٍ",
-            translit: "fī lawḥin maḥfūẓ",
-            translation: "In a Preserved Tablet.",
-            verse: 22,
-          }),
-        ],
-      }),
-      new QuranModel({
-        title: "Yusuf",
-        surah: 12,
-        entries: [
-          new QuranEntryModel({
-            arabic: "فَاللَّهُ خَيْرٌ حَافِظًا ۖ وَهُوَ أَرْحَمُ الرَّاحِمِينَ",
-            translit: "fa-llāhu khayrun ḥāfiẓan wa huwa arḥamu-r-rāḥimīn",
-            translation:
-              "For Allah is the best guardian, and He is the most merciful of the merciful.",
-            verse: 64,
-          }),
-        ],
-      }),
-      new QuranModel({
-        title: "Al-A'ra",
-        surah: 7,
-        entries: [
-          new QuranEntryModel({
-            arabic: "إِنَّ وَلِيِّيَ اللَّهُ الَّذِي نَزَّلَ الْكِتَابَ ۖ وَهُوَ يَتَوَلَّى الصَّالِحِينَ",
-            translit:
-              "inna waliyyiya-llāhu-lladhī nazzala-l-kitāba wa huwa yatawalla-ṣ-ṣāliḥīn",
-            translation:
-              "Indeed, my protector is Allah, who has sent down the Book; and He is an ally to the righteous.",
-            verse: 196,
-          }),
-        ],
-      }),
-      new QuranModel({
-        title: "At-Tawbah",
-        surah: 9,
-        entries: [
-          new QuranEntryModel({
-            arabic: "حَسْبِيَ اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ",
-            translit:
-              "ḥasbiya-llāhu lā ilāha illā huwa ʿalayhi tawakkaltu wa huwa rabbu-l-ʿarshi-l-ʿaẓīm",
-            translation:
-              "Sufficient for me is Allah; there is no deity except Him. On Him I have relied, and He is the Lord of the Great Throne.",
-            verse: 129,
-          }),
-        ],
-      }),
+      buruj_20_22(1, "", false),
+      yusuf_64(1, "", false),
+      a_raf_196(1, "", false),
+      tawbah_129_section(1, "", false),
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -557,21 +299,7 @@ const hizbAlBahrContent = [
           }),
         ],
       }),
-      new QuranModel({
-        title: "Al-Ahzab",
-        surah: 33,
-        entries: [
-          new QuranEntryModel({
-            arabic:
-              "إِنَّ ٱللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى ٱلنَّبِيِّۚ يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيۡهِ وَسَلِّمُواْ تَسۡلِيمًا",
-            translit:
-              "Inna Allāha wa malā’ikatahu yuṣallūna ‘alā al-nabīyi yā ayyuhā alladhīna āmanū ṣallū ‘alayhi wa sallimū taslīman.",
-            translation:
-              "Indeed, Allah confers blessing upon the Prophet, and His angels [ask Him to do so]. O you who have believed, ask [Allah to confer] blessing upon him and ask [Allah to grant him] peace.",
-            verse: 56,
-          }),
-        ],
-      }),
+      ahzab_56(1, "", false),
       baqarah_ayat_al_kursi(
         1,
         "Ayatul Kursi - it is better if it is read in one breath",

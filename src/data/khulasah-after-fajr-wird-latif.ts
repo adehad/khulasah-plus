@@ -1,130 +1,20 @@
-import { tawbah_129 } from "@/data/shared/quran-partial";
+import { falaq, ikhlas, nas } from "@/data/shared/quran";
 import {
-  DhikrEntryModel,
-  DhikrModel,
-  QuranEntryModel,
-  QuranModel,
-  WirdModel,
-} from "@/models/recitation";
+  hashr_21_24,
+  mu_minun_115_118,
+  rum_17_19,
+  saffat_79_81,
+  tawbah_129,
+} from "@/data/shared/quran-partial";
+import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
     title: "Wird al Latif",
     entries: [
-      new QuranModel({
-        title: "Ikhlas",
-        surah: 112,
-        entries: [
-          new QuranEntryModel({
-            arabic: "قُلۡ هُوَ ٱللَّهُ أَحَدٌ ",
-            translit: "Qul HuwaLlāhu aḥad.",
-            translation: "Say, ‘He is God the One, ",
-            verse: 1,
-          }),
-          new QuranEntryModel({
-            arabic: "ٱللَّهُ ٱلصَّمَدُ ",
-            translit: "Allāhus-Ṣamad.",
-            translation: "God the eternally Besought.",
-            verse: 2,
-          }),
-          new QuranEntryModel({
-            arabic: "لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ ",
-            translit: "Lam yalid wa lam yūlad.",
-            translation: "He begot no one nor was He begotten.",
-            verse: 3,
-          }),
-          new QuranEntryModel({
-            arabic: "وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ ",
-            translit: "Wa lam yakun lahu kufuwan aḥad. (3x)",
-            translation: "No one is comparable to Him.’",
-            verse: 4,
-          }),
-        ],
-        basmallah: true,
-        repeat: 3,
-      }),
-      new QuranModel({
-        title: "Falaq",
-        surah: 113,
-        entries: [
-          new QuranEntryModel({
-            arabic: "قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ",
-            translit: "Qul aʿūdhu bi rabb il-falaq.",
-            translation: "Say, ‘I take refuge with the Lord of daybreak",
-            verse: 1,
-          }),
-          new QuranEntryModel({
-            arabic: "مِن شَرِّ مَا خَلَقَ",
-            translit: " Min sharri mā khalaq.",
-            translation: "against the harm in what He has created,",
-            verse: 2,
-          }),
-          new QuranEntryModel({
-            arabic: "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
-            translit: "Wa min sharri ghāsiqin idhā waqab.",
-            translation: "the harm in the night when darkness gathers,",
-            verse: 3,
-          }),
-          new QuranEntryModel({
-            arabic: "وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِي ٱلۡعُقَدِ",
-            translit: "Wa min sharri in-naffathāti fil ʿuqad.",
-            translation: "the harm in witches when they blow on knots,",
-            verse: 4,
-          }),
-          new QuranEntryModel({
-            arabic: "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
-            translit: "Wa min sharri ḥāsidin idhā ḥasad.",
-            translation: "the harm in the envier when he envies.’",
-            verse: 5,
-          }),
-        ],
-        basmallah: true,
-        repeat: 3,
-      }),
-      new QuranModel({
-        title: "Nas",
-        surah: 114,
-        entries: [
-          new QuranEntryModel({
-            arabic: "قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ ",
-            translit: "Qul aʿūdhu bi rabb in-nās.",
-            translation: "Say, ‘I seek refuge with the Lord of people,",
-            verse: 1,
-          }),
-          new QuranEntryModel({
-            arabic: "مَلِكِ ٱلنَّاسِ",
-            translit: "Malik in-nās.",
-            translation: " the King of people,",
-            verse: 2,
-          }),
-          new QuranEntryModel({
-            arabic: "إِلَٰهِ ٱلنَّاسِ",
-            translit: "Ilāh in-nās.",
-            translation: "the God of people,",
-            verse: 3,
-          }),
-          new QuranEntryModel({
-            arabic: "مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ",
-            translit: " Min sharril waswāsil khannās.",
-            translation: "against the harm of the slinking whisperer",
-            verse: 4,
-          }),
-          new QuranEntryModel({
-            arabic: "ٱلَّذِي يُوَسۡوِسُ فِي صُدُورِ ٱلنَّاسِ",
-            translit: "Al-ladhī yuwaswisu fī ṣudūr in-nās.",
-            translation: "—who whispers into the hearts of people—",
-            verse: 5,
-          }),
-          new QuranEntryModel({
-            arabic: "مِنَ ٱلۡجِنَّةِ وَٱلنَّاسِ",
-            translit: "Min aljinnati wan-nās.",
-            translation: "whether they be jinn or people.’",
-            verse: 6,
-          }),
-        ],
-        basmallah: true,
-        repeat: 3,
-      }),
+      ikhlas(3, "", true),
+      falaq(3, "", true),
+      nas(3, "", true),
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -137,74 +27,8 @@ export default [
           }),
         ],
       }),
-      new QuranModel({
-        title: "Al-Mu'minun",
-        surah: 23,
-        entries: [
-          new QuranEntryModel({
-            arabic: "أَفَحَسِبۡتُمۡ أَنَّمَا خَلَقۡنَٰكُمۡ عَبَثٗا وَأَنَّكُمۡ إِلَيۡنَا لَا تُرۡجَعُونَ",
-            translit:
-              "Afaḥasibtum annamā khalaqnākum ʿabathan wa annakum ilaynā lā turjaʿūn.",
-            translation:
-              "Did you think We had created you in vain, and that you would not be brought back to Us?",
-            verse: 115,
-          }),
-          new QuranEntryModel({
-            arabic: "فَتَعَٰلَى ٱللَّهُ ٱلۡمَلِكُ ٱلۡحَقُّۖ لَآ إِلَٰهَ إِلَّا هُوَ رَبُّ ٱلۡعَرۡشِ ٱلۡكَرِيمِ",
-            translit:
-              "Fa taʿālā Allāh ul-Malik ul-Ḥaqq, lā ilāha illā Huwa Rabb ul-ʿArsh il-Karīm.",
-            translation:
-              "Exalted be God, the true King, there is no god but Him, the Lord of the Glorious Throne!",
-            verse: 116,
-          }),
-          new QuranEntryModel({
-            arabic:
-              "وَمَن يَدۡعُ مَعَ ٱللَّهِ إِلَٰهًا ءَاخَرَ لَا بُرۡهَٰنَ لَهُۥ بِهِۦ فَإِنَّمَا حِسَابُهُۥ عِندَ رَبِّهِۦٓۚ إِنَّهُۥ لَا يُفۡلِحُ ٱلۡكَٰفِرُونَ",
-            translit:
-              "Wa man yadʿu maʿ Allāhi ilāhan ākhara lā burhāna lahu bihi, faʾinnamā ḥisābuhu ʿinda Rabbih, innahu lā yufliḥ ul-kāfirūn.",
-            translation:
-              "Whoever prays to another god alongside Him—he has no proof of this—will face his reckoning with his Lord. Those who reject the truth will not prosper.",
-            verse: 117,
-          }),
-          new QuranEntryModel({
-            arabic: "وَقُل رَّبِّ ٱغۡفِرۡ وَٱرۡحَمۡ وَأَنتَ خَيۡرُ ٱلرَّٰحِمِينَ",
-            translit: "Wa qul Rabb ighfir warḥam wa anta khayr ur-rāḥimīn.",
-            translation:
-              "Say, ‘Lord, forgive and have mercy: You are the most merciful of all.’",
-            verse: 118,
-          }),
-        ],
-      }),
-      new QuranModel({
-        title: "Ar-Rum",
-        surah: 30,
-        entries: [
-          new QuranEntryModel({
-            arabic: "فَسُبۡحَٰنَ ٱللَّهِ حِينَ تُمۡسُونَ وَحِينَ تُصۡبِحُونَ",
-            translit: "Fasubḥān Allāhi ḥīna tumsūna wa ḥīna tuṣbiḥūn.",
-            translation:
-              "So celebrate God’s glory in the evening, in the morning—",
-            verse: 17,
-          }),
-          new QuranEntryModel({
-            arabic: "وَلَهُ ٱلۡحَمۡدُ فِي ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ وَعَشِيّٗا وَحِينَ تُظۡهِرُونَ",
-            translit:
-              "Wa lahu ulḥamdu fis-samāwāti wal-arḍi wa ʿashīyyan wa ḥīna tuẓhirūn.",
-            translation:
-              "praise is due to Him in the heavens and the earth—in the late afternoon, and at midday.",
-            verse: 18,
-          }),
-          new QuranEntryModel({
-            arabic:
-              "يُخۡرِجُ ٱلۡحَيَّ مِنَ ٱلۡمَيِّتِ وَيُخۡرِجُ ٱلۡمَيِّتَ مِنَ ٱلۡحَيِّ وَيُحۡيِ ٱلۡأَرۡضَ بَعۡدَ مَوۡتِهَاۚ وَكَذَٰلِكَ تُخۡرَجُونَ",
-            translit:
-              "Yukhrij ul-ḥayya min al-mayyiti wa yukhrij ul-mayyita min al-ḥayyi wa yuḥyī il-arḍa baʿda mawtihā, wa kathālika tukhrajūn.",
-            translation:
-              "He brings the living out of the dead and the dead out of the living. He gives life to the earth after death, and you will be brought out in the same way.",
-            verse: 19,
-          }),
-        ],
-      }),
+      mu_minun_115_118(1, "", false),
+      rum_17_19(1, "", false),
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -217,72 +41,8 @@ export default [
           }),
         ],
       }),
-      new QuranModel({
-        title: "Al-Hashr",
-        surah: 59,
-        entries: [
-          new QuranEntryModel({
-            arabic:
-              "لَوۡ أَنزَلۡنَا هَٰذَا ٱلۡقُرۡءَانَ عَلَىٰ جَبَلٖ لَّرَأَيۡتَهُۥ خَٰشِعٗا مُّتَصَدِّعٗا مِّنۡ خَشۡيَةِ ٱللَّهِۚ وَتِلۡكَ ٱلۡأَمۡثَٰلُ نَضۡرِبُهَا لِلنَّاسِ لَعَلَّهُمۡ يَتَفَكَّرُونَ",
-            translit:
-              "Lau anzalnā hādhā al-Qurʾāna ʿalā jabalin laraʾāytahu khāshiʿan mutaṣaddiʿan min khashyat Illāh, wa tilk al-amthālu naḍribuhā liʾn-nāsi laʿalahum yatafakkarūn.",
-            translation:
-              "If We had sent this Qur’an down on a mountain, you would have seen it humbled and split apart in its awe of God: We offer people such illustrations so that they may reflect.",
-            verse: 21,
-          }),
-          new QuranEntryModel({
-            arabic:
-              "هُوَ ٱللَّهُ ٱلَّذِي لَآ إِلَٰهَ إِلَّا هُوَۖ عَٰلِمُ ٱلۡغَيۡبِ وَٱلشَّهَٰدَةِۖ هُوَ ٱلرَّحۡمَٰنُ ٱلرَّحِيمُ",
-            translit:
-              "Huwa Allāhu alladhī lā ilāha illā Hu, ʿālim ul-ghaybi wa ash-shahādati Huwa ar-Raḥmān ur-Raḥīm.",
-            translation:
-              "He is God: there is no god other than Him. It is He who knows what is hidden as well as what is in the open, He is the Lord of Mercy, the Giver of Mercy.",
-            verse: 22,
-          }),
-          new QuranEntryModel({
-            arabic:
-              "هُوَ ٱللَّهُ ٱلَّذِي لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡمَلِكُ ٱلۡقُدُّوسُ ٱلسَّلَٰمُ ٱلۡمُؤۡمِنُ ٱلۡمُهَيۡمِنُ ٱلۡعَزِيزُ ٱلۡجَبَّارُ ٱلۡمُتَكَبِّرُۚ سُبۡحَٰنَ ٱللَّهِ عَمَّا يُشۡرِكُونَ",
-            translit:
-              "Huwa Allāhu alladhī lā ilāha illā Huwa al-Malik ul-Quddūs us-Salām ulMuʾmin ul-Muhaymin ul-ʿAzīz ul-Jabbār ul-Mutakabbir, subḥān Allāhi ʿammā yushrikūn.",
-            translation:
-              "He is God: there is no god other than Him, the Controller, the Holy One, Source of Peace, Granter of Security, Guardian over all, the Almighty, the Compeller, the Truly Great; God is far above anything they consider to be His partner.",
-            verse: 23,
-          }),
-          new QuranEntryModel({
-            arabic:
-              "هُوَ ٱللَّهُ ٱلۡخَٰلِقُ ٱلۡبَارِئُ ٱلۡمُصَوِّرُۖ لَهُ ٱلۡأَسۡمَآءُ ٱلۡحُسۡنَىٰۚ يُسَبِّحُ لَهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِۖ وَهُوَ ٱلۡعَزِيزُ ٱلۡحَكِيمُ",
-            translit:
-              "Huwa Allāh ul-Khāliq ul-Bāriʾ ulMuṣawwir, lahu ul-asmāʾ ul-ḥusnā, yusabbiḥu lahu ma fīs-samāwāti wal-arḍi wa Huwa al-ʿAzīz ul-Ḥakīm.",
-            translation:
-              "He is God: the Creator, the Originator, the Shaper. The best names belong to Him. Everything in the heavens and earth glorifies Him: He is the Almighty, the Wise.",
-            verse: 24,
-          }),
-        ],
-      }),
-      new QuranModel({
-        title: "As-Saffat",
-        surah: 37,
-        entries: [
-          new QuranEntryModel({
-            arabic: "سَلَٰمٌ عَلَىٰ نُوحٖ فِي ٱلۡعَٰلَمِينَ",
-            translit: "Salāmun ʿalā Nūḥin fil-ʿālamīn.",
-            translation: "‘Peace be upon Noah among all the nations!’",
-            verse: 79,
-          }),
-          new QuranEntryModel({
-            arabic: "إِنَّا كَذَٰلِكَ نَجۡزِي ٱلۡمُحۡسِنِينَ",
-            translit: "Innā kadhalika najzil-muḥsinīn.",
-            translation: "This is how We reward those who do good:",
-            verse: 80,
-          }),
-          new QuranEntryModel({
-            arabic: "إِنَّهُۥ مِنۡ عِبَادِنَا ٱلۡمُؤۡمِنِينَ",
-            translit: "Innahu min ʿibādina al-muʾminīn.",
-            translation: "he was truly one of Our faithful servants.",
-            verse: 81,
-          }),
-        ],
-      }),
+      hashr_21_24(1, "", false),
+      saffat_79_81(1, "", false),
       new DhikrModel({
         entries: [
           new DhikrEntryModel({

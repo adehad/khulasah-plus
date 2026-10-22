@@ -1,10 +1,5 @@
-import {
-  DhikrEntryModel,
-  DhikrModel,
-  QuranEntryModel,
-  QuranModel,
-  WirdModel,
-} from "@/models/recitation";
+import { saffat_180_182 } from "@/data/shared/quran-partial";
+import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
@@ -254,32 +249,7 @@ export default [
           }),
         ],
       }),
-      new QuranModel({
-        title: "As-Saffat",
-        surah: 37,
-        entries: [
-          new QuranEntryModel({
-            arabic: "سُبْحَٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ",
-            translit: "Subḥāna rabbika rabbil ‛izzati ‛ammā yaṣifūn.",
-            translation:
-              "Glory be to your Lord; the Lord of Honour and Power Who is far above what they attribute to Him;",
-            verse: 180,
-          }),
-          new QuranEntryModel({
-            arabic: "وَسَلَٰمٌ عَلَى ٱلْمُرْسَلِينَ",
-            translit: "Wa salāmun ‛alal mursalīn.",
-            translation: "And peace be on the Messengers;",
-            verse: 181,
-          }),
-          new QuranEntryModel({
-            arabic: "وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
-            translit: "Walḥamdu lillāhi rabbil ‛ālamīn.",
-            translation:
-              "And praise be to Allāh, the Lord and Cherisher of the Worlds. [Sūrah Al-Ṣāffāt (37), Verses 180-182]",
-            verse: 182,
-          }),
-        ],
-      }),
+      saffat_180_182(1, "", false),
     ],
   }),
 ];
