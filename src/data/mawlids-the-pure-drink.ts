@@ -424,7 +424,27 @@ export default [
             arabic: "دَ الْوَضْعِ بِالتَّسْبِيحِ قَدْ فَاضَ النَّدَى",
             translit: "dal waḍ‛i bittasbīḥi qad fāḍan nadā",
             translation:
-              "of Allah at time of the birth. Allah’s generosity overflowed.*",
+              "of Allah at time of the birth. Allah’s generosity overflowed.",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
+          new QasidaEntryModel({
+            arabic: "سُبْحَانَ اللَّهِ وَالْحَمْدُ لِلَّهِ وَلَا إِلَهَ إِلَّا اللَّهُ وَاللَّهُ أَكْبَرُ",
+            translit:
+              "Subḥānallāhi walḥamdu lillāhi wa lā ilāha illallāhu wallāhu akbar.",
+            translation:
+              "Recite here four times: Glory be to Allah, all praise is for Allah, there is no god but Allah, and Allah is the Greatest.",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ الْعَلِيِّ الْعَظِيمِ فِي كُلِّ لَحْظَةٍ أَبَدًا عَدَدَ خَلْقِهِ وَرِضَى نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ",
+            translit:
+              "Wa lā ḥawla wa lā quwwata illā billāhil ‛aliyyil ‛aẓīmi fī kulli laḥẓatin abadan ‛adada khalqihī wa riḍā nafsihī wa zinata ‛arshihī wa midāda kalimātih.",
+            translation:
+              "Then add: There is no power and no strength except through Allah, the Most High, the Magnificent, in every moment forever, as many as His creation, as much as pleases Him, the weight of His Throne and the ink of His words.",
           }),
         ],
       }),
