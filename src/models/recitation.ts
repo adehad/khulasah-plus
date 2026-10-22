@@ -170,16 +170,21 @@ export class QasidaEntryModel implements RecitationEntry {
 export class QasidaVerseModel {
   entries: (QasidaEntryModel | QuranEntryModel)[];
   chorus: boolean;
+  /** Times the verse is recited, as hadrahs prescribe for litany lines */
+  repeat: number;
 
   constructor({
     entries,
     chorus = false,
+    repeat = 1,
   }: {
     entries: (QasidaEntryModel | QuranEntryModel)[];
     chorus?: boolean;
+    repeat?: number;
   }) {
     this.entries = entries;
     this.chorus = chorus;
+    this.repeat = repeat;
   }
 }
 

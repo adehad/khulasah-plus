@@ -59,6 +59,7 @@ const hasAudio = !!model.audio?.url;
                     <button class="chorus-toggle-button" data-chorus-target={verseId}>Chorus</button>
                     <div class="verses sticky-chorus" id={verseId}>
                       {chapterEntry.entries.map((ve) => <QasidaEntry entry={ve} />)}
+{chapterEntry.repeat > 1 && <p class="instruction verse-repeat">(Repeat x{chapterEntry.repeat})</p>}
                     </div>
                   </Fragment>
                 );
@@ -68,6 +69,7 @@ const hasAudio = !!model.audio?.url;
                   <kp-sticky-button label={j + 1} elementId={verseId} variant="verse"></kp-sticky-button>
                   <div class="verses" id={verseId}>
                     {chapterEntry.entries.map((ve) => <QasidaEntry entry={ve} />)}
+{chapterEntry.repeat > 1 && <p class="instruction verse-repeat">(Repeat x{chapterEntry.repeat})</p>}
                   </div>
                 </Fragment>
               );
@@ -88,6 +90,7 @@ const hasAudio = !!model.audio?.url;
             <button class="chorus-toggle-button" data-chorus-target={verseId}>Chorus</button>
             <div class="verses sticky-chorus" id={verseId}>
               {entry.entries.map((ve) => <QasidaEntry entry={ve} />)}
+{entry.repeat > 1 && <p class="instruction verse-repeat">(Repeat x{entry.repeat})</p>}
             </div>
           </Fragment>
         );
@@ -97,6 +100,7 @@ const hasAudio = !!model.audio?.url;
           <kp-sticky-button label={i + 1} elementId={verseId} variant="verse"></kp-sticky-button>
           <div class="verses" id={verseId}>
             {entry.entries.map((ve) => <QasidaEntry entry={ve} />)}
+{entry.repeat > 1 && <p class="instruction verse-repeat">(Repeat x{entry.repeat})</p>}
           </div>
         </Fragment>
       );
@@ -134,6 +138,11 @@ const hasAudio = !!model.audio?.url;
     padding: 20px 30px;
     display: flex;
     flex-direction: column;
+  }
+
+  .verse-repeat {
+    flex-basis: 100%;
+    text-align: center;
   }
 
   .chorus-toggle-button {
