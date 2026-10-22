@@ -565,12 +565,49 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "صَلِّ وَسَلِّم فِي كُلِّ لَحْظَةٍ أَبَدًا عَدَدَ مَعْلُومَاتِكَ عَلَى سَيِّدِنَا مُحَمَّدٍ وَآلِهِ، وَارْحَمنَا وَالْمُسْلِمِينَ، وَاحْفَظْنَا وَالْمُسْلِمِينَ، وَانْصُرْنَا وَالْمُسْلِمِينَ، وَفَرِّج عَنَّا وَالْمُسْلِمِينَ، وَعَجِّل بِإِهْلَاكِ أَعْدَاءِ الدِّينِ، وَهَبْ لَنَا وَلِأَحْبَابِنَا فِي هَذِهِ السَّاعَةِ وَفِي كُلِّ حِينٍ أَبَدًا مَا وَهَبْتَهُ لِعِبَادِكَ الصَّالِحِينَ فِي كُلِّ حِينٍ أَبَدًا مَعَ الْعَافِيَةِ التَّامَّةِ فِي الدَّارَينِ، وَافْتَحْ عَلَيْنَا فَتُوحَ الْعَارِفِينَ، وَاغْنِنَا بِحَلَالِكَ عَنْ حَرَامِكَ، وَبِطَاعَتِكَ عَنْ مَعْصِيَتِكَ، وَبِفَضْلِكَ عَمَّنْ سِوَاكَ، وَاهْدِنَا لِأَحْسَنِ الْأَعمَالِ وَالْأَخْلَاقِ لَا يَهْدِي لِأَحْسَنِهَا إِلَّا أَنْتَ، وَاصْرِفْ عَنَّا سَيِّئَهَا لَا يَصْرِفُ عَنَّا سَيِّئَهَا إِلَّا أَنْتَ",
+            arabic: "صَلِّ وَسَلِّم فِي كُلِّ لَحْظَةٍ أَبَدًا عَدَدَ مَعْلُومَاتِكَ عَلَى سَيِّدِنَا مُحَمَّدٍ وَآلِهِ،",
             translit:
-              "Ṣalli wa sallim fī kulli laḥẓatin abadan ‛adada ma‛lūmātika ‛alā sayyidinā Muḥammadin wa ālihī, warḥamnā wal muslimīna waḥfaẓnā wal muslimīna wanṣurnā wal muslimīna wa farrij ‛annā wal muslimīna, wa ‛ajjil bi’ihlāki a‛dā’id-dīn, wa hab lanā wa li’aḥbābinā fī hadhihis sā‛ati wa fī kulli ḥīnin abadam mā wahabtahū li‛ibādikaṣṣāliḥīna fī kulli ḥīnin abadan ma‛al ‛āfiyatit tāmmati fiddārayn, waftaḥ ‛alaynā futūḥal ‛ārifīn, waghninā biḥalālika ‛an ḥarāmika, wa bi ṭā‛atika ‛am ma‛ṣiyatika, wa bifaḍlika ‛amman siwāka, wahdinā li’aḥsanil a‛māli wal akhlāqi lā yahdī li’aḥsanihā illā anta. Waṣrif ‛annā sayyi’ahā lā yaṣrifu ‛annā sayyi’ahā illā anta.",
+              "Ṣalli wa sallim fī kulli laḥẓatin abadan ‛adada ma‛lūmātika ‛alā sayyidinā Muḥammadin wa ālihī,",
             translation:
-              "Bestow blessings and peace, at every moment, forever, to the number of Your knowns, upon our master Muhammad and his family; have mercy on us and the Muslims, protect us and the Muslims, grant victory to us and the Muslims, relieve us and the Muslims, and hasten the destruction of the enemies of the religion; grant us and our loved ones, at this hour and at every time forever, what You have granted Your righteous servants at every time forever, together with complete well-being in both abodes; open for us the openings of the knowers; enrich us with what You have made lawful instead of what You have forbidden, with obedience to You instead of disobedience to You, and with Your bounty instead of anyone other than You; guide us to the best of deeds and character, none guides to the best of them except You, and turn away from us the worst of them, none turns away the worst of them from us except You.",
+              "Bestow blessings and peace, at every moment, forever, to the number of Your knowns, upon our master Muhammad and his family;",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَارْحَمنَا وَالْمُسْلِمِينَ، وَاحْفَظْنَا وَالْمُسْلِمِينَ، وَانْصُرْنَا وَالْمُسْلِمِينَ، وَفَرِّج عَنَّا وَالْمُسْلِمِينَ، وَعَجِّل بِإِهْلَاكِ أَعْدَاءِ الدِّينِ،",
+            translit:
+              "warḥamnā wal muslimīna waḥfaẓnā wal muslimīna wanṣurnā wal muslimīna wa farrij ‛annā wal muslimīna, wa ‛ajjil bi’ihlāki a‛dā’id-dīn,",
+            translation:
+              "have mercy on us and the Muslims, protect us and the Muslims, grant victory to us and the Muslims, relieve us and the Muslims, and hasten the destruction of the enemies of the religion;",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَهَبْ لَنَا وَلِأَحْبَابِنَا فِي هَذِهِ السَّاعَةِ وَفِي كُلِّ حِينٍ أَبَدًا مَا وَهَبْتَهُ لِعِبَادِكَ الصَّالِحِينَ فِي كُلِّ حِينٍ أَبَدًا مَعَ الْعَافِيَةِ التَّامَّةِ فِي الدَّارَينِ،",
+            translit:
+              "wa hab lanā wa li’aḥbābinā fī hadhihis sā‛ati wa fī kulli ḥīnin abadam mā wahabtahū li‛ibādikaṣṣāliḥīna fī kulli ḥīnin abadan ma‛al ‛āfiyatit tāmmati fiddārayn,",
+            translation:
+              "grant us and our loved ones, at this hour and at every time forever, what You have granted Your righteous servants at every time forever, together with complete well-being in both abodes;",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَافْتَحْ عَلَيْنَا فَتُوحَ الْعَارِفِينَ، وَاغْنِنَا بِحَلَالِكَ عَنْ حَرَامِكَ، وَبِطَاعَتِكَ عَنْ مَعْصِيَتِكَ، وَبِفَضْلِكَ عَمَّنْ سِوَاكَ،",
+            translit:
+              "waftaḥ ‛alaynā futūḥal ‛ārifīn, waghninā biḥalālika ‛an ḥarāmika, wa bi ṭā‛atika ‛am ma‛ṣiyatika, wa bifaḍlika ‛amman siwāka,",
+            translation:
+              "open for us the openings of the knowers; enrich us with what You have made lawful instead of what You have forbidden, with obedience to You instead of disobedience to You, and with Your bounty instead of anyone other than You;",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَاهْدِنَا لِأَحْسَنِ الْأَعمَالِ وَالْأَخْلَاقِ لَا يَهْدِي لِأَحْسَنِهَا إِلَّا أَنْتَ،",
+            translit:
+              "wahdinā li’aḥsanil a‛māli wal akhlāqi lā yahdī li’aḥsanihā illā anta.",
+            translation:
+              "guide us to the best of deeds and character, none guides to the best of them except You,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَاصْرِفْ عَنَّا سَيِّئَهَا لَا يَصْرِفُ عَنَّا سَيِّئَهَا إِلَّا أَنْتَ",
+            translit:
+              "Waṣrif ‛annā sayyi’ahā lā yaṣrifu ‛annā sayyi’ahā illā anta.",
+            translation:
+              "and turn away from us the worst of them, none turns away the worst of them from us except You.",
           }),
         ],
       }),

@@ -398,12 +398,33 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ، يَا ذَا الْجَلَالِ وَالْجَمَالِ وَالْإِكْرَامِ وَالْمَوَاهِبِ الْعِظَامِ، وَرَضِيَ اللَّهُ تَعَالَى عَنْ أَصْحَابِ سَيِّدِنَا رَسُولِ اللَّهِ أَجْمَعِينَ، وَرَضِيَ عَنَّا، وَعَنْ وَالِدِينَا، وَعَنْ أَمْوَاتِنَا، وَعَنْ مَشَايِخِنَا، وَعَنْ مُعَلِّمِينَا، وَعَنْ وَالِدِيهِمْ، وَالْحَاضِرِينَ، وَجَمِيعِ الْمُسْلِمِينَ",
+            arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ،",
             translit:
-              "Allāhumma ṣalli wa sallim ‛alā sayyidinā Muḥammadin wa ‛alā āli sayyidinā Muḥammad, yā dhal-jalāli wal-jamāli wal-ikrāmi wal-mawāhibil-‛iẓām, wa raḍiyallāhu ta‛ālā ‛an aṣḥābi sayyidinā rasūlillāhi ajma‛īn, wa raḍiya ‛annā, wa ‛an wālidīnā, wa ‛an amwātinā, wa ‛an mashāyikhinā, wa ‛an mu‛allimīnā, wa ‛an wālidīhim, wal-ḥāḍirīn, wa jamī‛il-muslimīn",
+              "Allāhumma ṣalli wa sallim ‛alā sayyidinā Muḥammadin wa ‛alā āli sayyidinā Muḥammad,",
             translation:
-              "O Allah, bless and grant peace to our master Muḥammad and the family of our master Muhammad. O Possessor of majesty, beauty, honour and great gifts! May Allah the Exalted be pleased with all the companions of our master the Messenger of Allah. May He be pleased with us, our parents, our deceased, our scholars, our teachers, their parents, those present, and all Muslims.",
+              "O Allah, bless and grant peace to our master Muḥammad and the family of our master Muhammad.",
+          }),
+          new DhikrEntryModel({
+            arabic: "يَا ذَا الْجَلَالِ وَالْجَمَالِ وَالْإِكْرَامِ وَالْمَوَاهِبِ الْعِظَامِ،",
+            translit:
+              "yā dhal-jalāli wal-jamāli wal-ikrāmi wal-mawāhibil-‛iẓām,",
+            translation:
+              "O Possessor of majesty, beauty, honour and great gifts!",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَرَضِيَ اللَّهُ تَعَالَى عَنْ أَصْحَابِ سَيِّدِنَا رَسُولِ اللَّهِ أَجْمَعِينَ،",
+            translit:
+              "wa raḍiyallāhu ta‛ālā ‛an aṣḥābi sayyidinā rasūlillāhi ajma‛īn,",
+            translation:
+              "May Allah the Exalted be pleased with all the companions of our master the Messenger of Allah.",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَرَضِيَ عَنَّا، وَعَنْ وَالِدِينَا، وَعَنْ أَمْوَاتِنَا، وَعَنْ مَشَايِخِنَا، وَعَنْ مُعَلِّمِينَا، وَعَنْ وَالِدِيهِمْ، وَالْحَاضِرِينَ، وَجَمِيعِ الْمُسْلِمِينَ",
+            translit:
+              "wa raḍiya ‛annā, wa ‛an wālidīnā, wa ‛an amwātinā, wa ‛an mashāyikhinā, wa ‛an mu‛allimīnā, wa ‛an wālidīhim, wal-ḥāḍirīn, wa jamī‛il-muslimīn",
+            translation:
+              "May He be pleased with us, our parents, our deceased, our scholars, our teachers, their parents, those present, and all Muslims.",
           }),
         ],
       }),
