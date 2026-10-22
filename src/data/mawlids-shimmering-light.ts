@@ -188,6 +188,7 @@ const shimmeringLight = [
             ],
           }),
           new QasidaVerseModel({
+            chorus: true,
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",

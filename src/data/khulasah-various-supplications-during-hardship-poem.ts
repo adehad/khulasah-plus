@@ -9,7 +9,7 @@ export default [
     title: "",
     entries: [
       new QasidaVerseModel({
-        chorus: false,
+        chorus: true,
         entries: [
           new QasidaEntryModel({
             arabic: "قَدْ كَفَانِي عِلْمُ رَبِّي",
@@ -70,7 +70,7 @@ export default [
         ],
       }),
       new QasidaVerseModel({
-        chorus: false,
+        chorus: true,
         entries: [
           new QasidaEntryModel({
             arabic: "قَدْ كَفَانِي عِلْمُ رَبِّي",
@@ -145,7 +145,7 @@ export default [
         ],
       }),
       new QasidaVerseModel({
-        chorus: false,
+        chorus: true,
         entries: [
           new QasidaEntryModel({
             arabic: "قَدْ كَفَانِي عِلْمُ رَبِّي",
@@ -220,7 +220,7 @@ export default [
         ],
       }),
       new QasidaVerseModel({
-        chorus: false,
+        chorus: true,
         entries: [
           new QasidaEntryModel({
             arabic: "قَدْ كَفَانِي عِلْمُ رَبِّي",
@@ -296,7 +296,7 @@ export default [
         ],
       }),
       new QasidaVerseModel({
-        chorus: false,
+        chorus: true,
         entries: [
           new QasidaEntryModel({
             arabic: "قَدْ كَفَانِي عِلْمُ رَبِّي",
@@ -373,7 +373,7 @@ export default [
         ],
       }),
       new QasidaVerseModel({
-        chorus: false,
+        chorus: true,
         entries: [
           new QasidaEntryModel({
             arabic: "قَدْ كَفَانِي عِلْمُ رَبِّي",

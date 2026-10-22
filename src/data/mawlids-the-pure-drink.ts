@@ -147,7 +147,7 @@ export default [
         ],
       }),
       new QasidaVerseModel({
-        chorus: false,
+        chorus: true,
         entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهْ",
@@ -273,7 +273,7 @@ export default [
         ],
       }),
       new QasidaVerseModel({
-        chorus: false,
+        chorus: true,
         entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى النَّبِيِّ وَآلِهِ",
@@ -290,7 +290,7 @@ export default [
         ],
       }),
       new QasidaVerseModel({
-        chorus: false,
+        chorus: true,
         entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهْ",
@@ -763,7 +763,7 @@ export default [
         ],
       }),
       new QasidaVerseModel({
-        chorus: false,
+        chorus: true,
         entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهْ",
@@ -930,7 +930,7 @@ export default [
         ],
       }),
       new QasidaVerseModel({
-        chorus: false,
+        chorus: true,
         entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى النَّبِيِّ وَآلِهِ",
@@ -947,7 +947,7 @@ export default [
         ],
       }),
       new QasidaVerseModel({
-        chorus: false,
+        chorus: true,
         entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهْ",
@@ -1159,7 +1159,7 @@ export default [
         ],
       }),
       new QasidaVerseModel({
-        chorus: false,
+        chorus: true,
         entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى النَّبِيِّ وَآلِهِ",
@@ -1176,7 +1176,7 @@ export default [
         ],
       }),
       new QasidaVerseModel({
-        chorus: false,
+        chorus: true,
         entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهْ",
