@@ -6,20 +6,20 @@ export const quran = new QuranModel({
   entries: [
     new QuranEntryModel({
       arabic: "إِنَّآ أَعْطَيْنَـٰكَ ٱلْكَوْثَرَ",
-      translit: "",
-      translation: "",
+      translit: "Innā a‛ṭaynākal kawthar.",
+      translation: "Indeed, We have granted you, [O Muḥammad], al-Kawthar.",
       verse: 1,
     }),
     new QuranEntryModel({
       arabic: "فَصَلِّ لِرَبِّكَ وَٱنْحَرْ",
-      translit: "",
-      translation: "",
+      translit: "Faṣalli lirabbika wanḥar.",
+      translation: "So pray to your Lord and offer sacrifice [to Him alone].",
       verse: 2,
     }),
     new QuranEntryModel({
       arabic: "إِنَّ شَانِئَكَ هُوَ ٱلْأَبْتَرُ",
-      translit: "",
-      translation: "",
+      translit: "Inna shāni’aka huwal abtar.",
+      translation: "Indeed, your enemy is the one cut off.",
       verse: 3,
     }),
   ],

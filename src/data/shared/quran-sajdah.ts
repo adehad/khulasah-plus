@@ -6,198 +6,248 @@ export const quran = new QuranModel({
   entries: [
     new QuranEntryModel({
       arabic: "الٓمٓ",
-      translit: "",
-      translation: "",
+      translit: "Alif Lām Mīm",
+      translation: "Alif, Lām, Meem.",
       verse: 1,
     }),
     new QuranEntryModel({
       arabic: "تَنزِيلُ ٱلْكِتَٰبِ لَا رَيْبَ فِيهِ مِن رَّبِّ ٱلْعَٰلَمِينَ",
-      translit: "",
-      translation: "",
+      translit: "Tanzīlul kitābi lā rayba fīhi min rabbil ‛ālamīn.",
+      translation:
+        "[This is] the revelation of the Book about which there is no doubt from the Lord of the worlds.",
       verse: 2,
     }),
     new QuranEntryModel({
       arabic:
         "أَمْ يَقُولُونَ ٱفْتَرَىٰهُ ۚ بَلْ هُوَ ٱلْحَقُّ مِن رَّبِّكَ لِتُنذِرَ قَوْمًا مَّآ أَتَىٰهُم مِّن نَّذِيرٍ مِّن قَبْلِكَ لَعَلَّهُمْ يَهْتَدُونَ",
-      translit: "",
-      translation: "",
+      translit:
+        "Am yaqūlūnaftarāhu bal huwal ḥaqqu min rabbika litundhira qawman mā atāhum min nadhīrin min qablika la‛allahum yahtadūn.",
+      translation:
+        'Or do they say, "He invented it"? Rather, it is the truth from your Lord, [O Muḥammad], that you may warn a people to whom no warner has come before you [so] perhaps they will be guided.',
       verse: 3,
     }),
     new QuranEntryModel({
       arabic:
         "ٱللَّهُ ٱلَّذِى خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ وَمَا بَيْنَهُمَا فِى سِتَّةِ أَيَّامٍ ثُمَّ ٱسْتَوَىٰ عَلَى ٱلْعَرْشِ ۖ مَا لَكُم مِّن دُونِهِۦ مِن وَلِىٍّ وَلَا شَفِيعٍ ۚ أَفَلَا تَتَذَكَّرُونَ",
-      translit: "",
-      translation: "",
+      translit:
+        "Allāhulladhī khalaqas samāwāti wal arḍa wamā baynahumā fī sittati ayyāmin thumma istawā ‛alal ‛arshi mā lakum min dūnihi min waliyyin walā shafī‛in afalā tatadhakkarūn.",
+      translation:
+        "It is Allāh who created the heavens and the earth and whatever is between them in six days; then He established Himself above the Throne. You have not besides Him any protector or any intercessor; so will you not be reminded?",
       verse: 4,
     }),
     new QuranEntryModel({
       arabic:
         "يُدَبِّرُ ٱلْأَمْرَ مِنَ ٱلسَّمَآءِ إِلَى ٱلْأَرْضِ ثُمَّ يَعْرُجُ إِلَيْهِ فِى يَوْمٍ كَانَ مِقْدَارُهُۥٓ أَلْفَ سَنَةٍ مِّمَّا تَعُدُّونَ",
-      translit: "",
-      translation: "",
+      translit:
+        "Yudabbirul amra minas samā’i ilal arḍi thumma ya‛rujū ilayhi fī yawmin kāna miqdāruhū alfa sanatin mimmā ta‛uddūn.",
+      translation:
+        "He arranges [each] matter from the heaven to the earth; then it will ascend to Him in a Day, the extent of which is a thousand years of those which you count.",
       verse: 5,
     }),
     new QuranEntryModel({
       arabic: "ذَٰلِكَ عَٰلِمُ ٱلْغَيْبِ وَٱلشَّهَٰدَةِ ٱلْعَزِيزُ ٱلرَّحِيمُ",
-      translit: "",
-      translation: "",
+      translit: "Dhālika ‛ālimul ghaybi wash shahādatil ‛azīzur raḥīm.",
+      translation:
+        "That is the Knower of the unseen and the witnessed, the Exalted in Might, the Merciful,",
       verse: 6,
     }),
     new QuranEntryModel({
       arabic: "ٱلَّذِىٓ أَحْسَنَ كُلَّ شَىْءٍ خَلَقَهُۥ ۖ وَبَدَأَ خَلْقَ ٱلْإِنسَٰنِ مِن طِينٍ",
-      translit: "",
-      translation: "",
+      translit:
+        "Alladhī aḥsana kulla shay’in khalaqahu wabada’a khalqal insāni min ṭīn.",
+      translation:
+        "Who perfected everything which He created and began the creation of man from clay.",
       verse: 7,
     }),
     new QuranEntryModel({
       arabic: "ثُمَّ جَعَلَ نَسْلَهُۥ مِن سُلَٰلَةٍ مِّن مَّآءٍ مَّهِينٍ",
-      translit: "",
-      translation: "",
+      translit: "Thumma ja‛ala naslahū min sulālatin min māa’in mahīn.",
+      translation:
+        "Then He made his posterity out of the extract of a liquid disdained.",
       verse: 8,
     }),
     new QuranEntryModel({
       arabic:
         "ثُمَّ سَوَّىٰهُ وَنَفَخَ فِيهِ مِن رُّوحِهِۦ ۖ وَجَعَلَ لَكُمُ ٱلسَّمْعَ وَٱلْأَبْصَٰرَ وَٱلْأَفْـِٔدَةَ ۚ قَلِيلًا مَّا تَشْكُرُونَ",
-      translit: "",
-      translation: "",
+      translit:
+        "Thumma sawwāhu wanafakha fīhi min rūḥihi wa ja‛ala lakumus sam‛a wal abṣāra wal af’idata qalīlan mā tashkurūn.",
+      translation:
+        "Then He proportioned him and breathed into him from His [created] soul and made for you hearing and vision and hearts [i.e., intellect]; little are you grateful.",
       verse: 9,
     }),
     new QuranEntryModel({
       arabic:
         "وَقَالُوٓا۟ أَءِذَا ضَلَلْنَا فِى ٱلْأَرْضِ أَءِنَّا لَفِى خَلْقٍ جَدِيدٍۭ ۚ بَلْ هُم بِلِقَآءِ رَبِّهِمْ كَٰفِرُونَ",
-      translit: "",
-      translation: "",
+      translit:
+        "Waqālū a’idhā ḍalalnā fil arḍi a’innā lafī khalqin jadīdin bal hum biliqā’i rabbihim kāfirūn.",
+      translation:
+        'And they say, "When we are lost [i.e., disintegrated] within the earth, will we indeed be [recreated] in a new creation?" Rather, they are, in the meeting with their Lord, disbelievers.',
       verse: 10,
     }),
     new QuranEntryModel({
       arabic: "۞ قُلْ يَتَوَفَّىٰكُم مَّلَكُ ٱلْمَوْتِ ٱلَّذِى وُكِّلَ بِكُمْ ثُمَّ إِلَىٰ رَبِّكُمْ تُرْجَعُونَ",
-      translit: "",
-      translation: "",
+      translit:
+        "Qul yatawaffākum malakul mawtil ladhī wukkila bikum thumma ilā rabbikum turja‛ūn.",
+      translation:
+        'Say, "The angel of death who has been entrusted with you will take you. Then to your Lord you will be returned."',
       verse: 11,
     }),
     new QuranEntryModel({
       arabic:
         "وَلَوْ تَرَىٰٓ إِذِ ٱلْمُجْرِمُونَ نَاكِسُوا۟ رُءُوسِهِمْ عِندَ رَبِّهِمْ رَبَّنَآ أَبْصَرْنَا وَسَمِعْنَا فَٱرْجِعْنَا نَعْمَلْ صَٰلِحًا إِنَّا مُوقِنُونَ",
-      translit: "",
-      translation: "",
+      translit:
+        "Walaw tarā idhil mujrimūna nākisū ru’ūsihim ‛inda rabbihim rabbanā abṣarnā wasami‛nā farji‛nā na‛mal ṣāliḥan innā mūqinūn.",
+      translation:
+        'If you could but see when the criminals are hanging their heads before their Lord, [saying], "Our Lord, we have seen and heard, so return us [to the world]; we will work righteousness. Indeed, we are [now] certain."',
       verse: 12,
     }),
     new QuranEntryModel({
       arabic:
         "وَلَوْ شِئْنَا لَـَٔاتَيْنَا كُلَّ نَفْسٍ هُدَىٰهَا وَلَٰكِنْ حَقَّ ٱلْقَوْلُ مِنِّى لَأَمْلَأَنَّ جَهَنَّمَ مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ أَجْمَعِينَ",
-      translit: "",
-      translation: "",
+      translit:
+        "Walaw shi’nā la’ātaynā kulla nafsin hudāhā walākin ḥaqqal qawlu minnī la’amla’anna jahannama minal jinnati wannāsi ajma‛īn.",
+      translation:
+        'And if We had willed, We could have given every soul its guidance, but the word from Me will come into effect [that] "I will surely fill Hell with jinn and people all together.',
       verse: 13,
     }),
     new QuranEntryModel({
       arabic:
         "فَذُوقُوا۟ بِمَا نَسِيتُمْ لِقَآءَ يَوْمِكُمْ هَٰذَآ إِنَّا نَسِينَٰكُمْ ۖ وَذُوقُوا۟ عَذَابَ ٱلْخُلْدِ بِمَا كُنتُمْ تَعْمَلُونَ",
-      translit: "",
-      translation: "",
+      translit:
+        "Fadhūqū bimā nasītum liqā’a yawmikum hādhā innā nasīnākum wadhūqū ‛adhābal khuldi bimā kuntum ta‛malūn.",
+      translation:
+        'So taste [punishment] because you forgot the meeting of this, your Day; indeed, We have [accordingly] forgotten you. And taste the punishment of eternity for what you used to do."',
       verse: 14,
     }),
     new QuranEntryModel({
       arabic:
         "إِنَّمَا يُؤْمِنُ بِـَٔايَٰتِنَا ٱلَّذِينَ إِذَا ذُكِّرُوا۟ بِهَا خَرُّوا۟ سُجَّدًا وَسَبَّحُوا۟ بِحَمْدِ رَبِّهِمْ وَهُمْ لَا يَسْتَكْبِرُونَ ۩",
-      translit: "",
+      translit:
+        "Innamā yu’minu bi’āyātinalladhīna idhā dhukkirū bihā kharrū sujjadan wasabbaḥū biḥamdi rabbihim wahum lā yastakbirūn.",
       translation: "The previous verse was a verse of prostration.",
       verse: 15,
     }),
     new QuranEntryModel({
       arabic:
         "تَتَجَافَىٰ جُنُوبُهُمْ عَنِ ٱلْمَضَاجِعِ يَدْعُونَ رَبَّهُمْ خَوْفًا وَطَمَعًا وَمِمَّا رَزَقْنَٰهُمْ يُنفِقُونَ",
-      translit: "",
-      translation: "",
+      translit:
+        "Tatajāfā junūbuhum ‛anil madāji‛i yad‛ūna rabbahum khawfan waṭama‛an wamimmā razaqnāhum yunfiqūn.",
+      translation:
+        "Their sides part [i.e., they arise] from [their] beds; they supplicate their Lord in fear and aspiration, and from what We have provided them, they spend.",
       verse: 16,
     }),
     new QuranEntryModel({
       arabic: "فَلَا تَعْلَمُ نَفْسٌ مَّآ أُخْفِىَ لَهُم مِّن قُرَّةِ أَعْيُنٍ جَزَآءًۢ بِمَا كَانُوا۟ يَعْمَلُونَ",
-      translit: "",
-      translation: "",
+      translit:
+        "Falā ta‛lamu nafsun mā ukhfiya lahum min qurrati a‛yunin jazā’an bimā kānū ya‛malūn.",
+      translation:
+        "And no soul knows what has been hidden for them of comfort for eyes [i.e., satisfaction] as reward for what they used to do.",
       verse: 17,
     }),
     new QuranEntryModel({
       arabic: "أَفَمَن كَانَ مُؤْمِنًا كَمَن كَانَ فَاسِقًا ۚ لَّا يَسْتَوُۥنَ",
-      translit: "",
-      translation: "",
+      translit: "Afaman kāna mu’minan kaman kāna fāsiqan lā yastawūn.",
+      translation:
+        "Then is one who was a believer like one who was defiantly disobedient? They are not equal.",
       verse: 18,
     }),
     new QuranEntryModel({
       arabic:
         "أَمَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ فَلَهُمْ جَنَّٰتُ ٱلْمَأْوَىٰ نُزُلًۢا بِمَا كَانُوا۟ يَعْمَلُونَ",
-      translit: "",
-      translation: "",
+      translit:
+        "Ammal ladhīna āmanū wa‛amilū aṣ ṣāliḥāti falahum jannātul ma’wā nuzulan bimā kānū ya‛malūn.",
+      translation:
+        "As for those who believed and did righteous deeds, for them will be the Gardens of Refuge as accommodation for what they used to do.",
       verse: 19,
     }),
     new QuranEntryModel({
       arabic:
         "وَأَمَّا ٱلَّذِينَ فَسَقُوا۟ فَمَأْوَىٰهُمُ ٱلنَّارُ ۖ كُلَّمَآ أَرَادُوٓا۟ أَن يَخْرُجُوا۟ مِنْهَآ أُعِيدُوا۟ فِيهَا وَقِيلَ لَهُمْ ذُوقُوا۟ عَذَابَ ٱلنَّارِ ٱلَّذِى كُنتُم بِهِۦ تُكَذِّبُونَ",
-      translit: "",
-      translation: "",
+      translit:
+        "Wa ammal ladhīna fasaqū fama’wāhumun nāru kullamā arādū an yakhrujū minhā u‛īdū fīhā waqīla lahum dhūqū ‛adhābal nāril ladhī kuntum bihi tukadhdhibūn.",
+      translation:
+        'But as for those who defiantly disobeyed, their refuge is the Fire. Every time they wish to emerge from it, they will be returned to it while it is said to them, "Taste the punishment of the Fire which you used to deny."',
       verse: 20,
     }),
     new QuranEntryModel({
       arabic: "وَلَنُذِيقَنَّهُم مِّنَ ٱلْعَذَابِ ٱلْأَدْنَىٰ دُونَ ٱلْعَذَابِ ٱلْأَكْبَرِ لَعَلَّهُمْ يَرْجِعُونَ",
-      translit: "",
-      translation: "",
+      translit:
+        "Walanudhīqannahum minal ‛adhābil adnā dūnal ‛adhābil akbari la‛allahum yarji‛ūn.",
+      translation:
+        "And We will surely let them taste the nearer punishment short of the greater punishment that perhaps they will return [i.e., repent].",
       verse: 21,
     }),
     new QuranEntryModel({
       arabic:
         "وَمَنْ أَظْلَمُ مِمَّن ذُكِّرَ بِـَٔايَٰتِ رَبِّهِۦ ثُمَّ أَعْرَضَ عَنْهَآ ۚ إِنَّا مِنَ ٱلْمُجْرِمِينَ مُنتَقِمُونَ",
-      translit: "",
-      translation: "",
+      translit:
+        "Waman aẓlamu mimman dhukkira bi’āyāti rabbihi thumma a‛raḍa ‛anhā innā minal mujrimīna muntaqimūn.",
+      translation:
+        "And who is more unjust than one who is reminded of the verses of his Lord; then he turns away from them? Indeed We, from the criminals, will take retribution.",
       verse: 22,
     }),
     new QuranEntryModel({
       arabic:
         "وَلَقَدْ ءَاتَيْنَا مُوسَى ٱلْكِتَٰبَ فَلَا تَكُن فِى مِرْيَةٍ مِّن لِّقَآئِهِۦ ۖ وَجَعَلْنَٰهُ هُدًى لِّبَنِىٓ إِسْرَٰٓءِيلَ",
-      translit: "",
-      translation: "",
+      translit:
+        "Walaqad ātaynā Mūsal kitāba falā takun fī miryatin min liqā’ihi wa ja‛alnāhu hudan libanī Isrā’īl.",
+      translation:
+        "And We certainly gave Moses the Scripture, so do not be in doubt over his meeting. And We made it [i.e., the Torah] guidance for the Children of Israel.",
       verse: 23,
     }),
     new QuranEntryModel({
       arabic: "وَجَعَلْنَا مِنْهُمْ أَئِمَّةً يَهْدُونَ بِأَمْرِنَا لَمَّا صَبَرُوا۟ ۖ وَكَانُوا۟ بِـَٔايَٰتِنَا يُوقِنُونَ",
-      translit: "",
-      translation: "",
+      translit:
+        "Wa ja‛alnā minhum a’immatan yahdūna bi’amrinā lammā ṣabarū wa kānū bi’āyātinā yūqinūn.",
+      translation:
+        "And We made from among them leaders guiding by Our command when they were patient and [when] they were certain of Our signs.",
       verse: 24,
     }),
     new QuranEntryModel({
       arabic: "إِنَّ رَبَّكَ هُوَ يَفْصِلُ بَيْنَهُمْ يَوْمَ ٱلْقِيَٰمَةِ فِيمَا كَانُوا۟ فِيهِ يَخْتَلِفُونَ",
-      translit: "",
-      translation: "",
+      translit:
+        "Inna rabbaka huwa yafṣilu baynahum yawmal qiyāmati fīmā kānū fīhi yakhtalifūn.",
+      translation:
+        "Indeed, your Lord will judge between them on the Day of Resurrection concerning that over which they used to differ.",
       verse: 25,
     }),
     new QuranEntryModel({
       arabic:
         "أَوَلَمْ يَهْدِ لَهُمْ كَمْ أَهْلَكْنَا مِن قَبْلِهِم مِّنَ ٱلْقُرُونِ يَمْشُونَ فِى مَسَٰكِنِهِمْ ۚ إِنَّ فِى ذَٰلِكَ لَـَٔايَٰتٍ ۖ أَفَلَا يَسْمَعُونَ",
-      translit: "",
-      translation: "",
+      translit:
+        "Awalam yahdi lahum kam ahlaknā min qablihim minal qurūni yamshūna fī masākinihim inna fī dhālika la’āyātin afalā yasma‛ūn.",
+      translation:
+        "Has it not become clear to them how many generations We destroyed before them, [as] they walk among their dwellings? Indeed in that are signs; then do they not hear?",
       verse: 26,
     }),
     new QuranEntryModel({
       arabic:
         "أَوَلَمْ يَرَوْا۟ أَنَّا نَسُوقُ ٱلْمَآءَ إِلَى ٱلْأَرْضِ ٱلْجُرُزِ فَنُخْرِجُ بِهِۦ زَرْعًا تَأْكُلُ مِنْهُ أَنْعَٰمُهُمْ وَأَنفُسُهُمْ ۖ أَفَلَا يُبْصِرُونَ",
-      translit: "",
-      translation: "",
+      translit:
+        "Awalam yarawā annā nasūqul mā’a ilal arḍil juruzi fanukhriju bihi zar‛an ta’kulu minhu an‛āmuhum wa anfusuhum afalā yubṣirūn.",
+      translation:
+        "Have they not seen that We drive water [in clouds] to barren land and bring forth thereby crops from which their livestock eat and [they] themselves? Then do they not see?",
       verse: 27,
     }),
     new QuranEntryModel({
       arabic: "وَيَقُولُونَ مَتَىٰ هَٰذَا ٱلْفَتْحُ إِن كُنتُمْ صَٰدِقِينَ",
-      translit: "",
-      translation: "",
+      translit: "Wayaqūlūna matā hādhal fatḥu in kuntum ṣādiqīn.",
+      translation:
+        'And they say, "When will be this conquest, if you should be truthful?"',
       verse: 28,
     }),
     new QuranEntryModel({
       arabic: "قُلْ يَوْمَ ٱلْفَتْحِ لَا يَنفَعُ ٱلَّذِينَ كَفَرُوٓا۟ إِيمَٰنُهُمْ وَلَا هُمْ يُنظَرُونَ",
-      translit: "",
-      translation: "",
+      translit:
+        "Qul yawmal fatḥi lā yanfa‛ul ladhīna kafarū īmānuhum walā hum yunẓarūn.",
+      translation:
+        'Say, [O Muḥammad], "On the Day of Conquest the belief of those who had disbelieved will not benefit them, nor will they be reprieved."',
       verse: 29,
     }),
     new QuranEntryModel({
       arabic: "فَأَعْرِضْ عَنْهُمْ وَٱنتَظِرْ إِنَّهُم مُّنتَظِرُونَ",
-      translit: "",
-      translation: "",
+      translit: "Fa’a‛riḍ ‛anhum wantaẓir innahum muntaẓirūn.",
+      translation: "So turn away from them and wait. Indeed, they are waiting.",
       verse: 30,
     }),
   ],
