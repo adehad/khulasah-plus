@@ -11,13 +11,13 @@ export const quran = new QuranModel({
       verse: 1,
     }),
     new QuranEntryModel({
-      arabic: "وَٱلْكِتَٰبِ ٱلْمُبِينِ",
+      arabic: "وَٱلْكِتَـٰبِ ٱلْمُبِينِ",
       translit: "Walkitābil mubīn.",
       translation: "By the clear Book,",
       verse: 2,
     }),
     new QuranEntryModel({
-      arabic: "إِنَّآ أَنزَلْنَٰهُ فِى لَيْلَةٍ مُّبَٰرَكَةٍ ۚ إِنَّا كُنَّا مُنذِرِينَ",
+      arabic: "إِنَّآ أَنزَلْنَـٰهُ فِى لَيْلَةٍ مُّبَـٰرَكَةٍ ۚ إِنَّا كُنَّا مُنذِرِينَ",
       translit: "Innā anzalnāhu fī laylatin mubārakatin innā kunnā mundhirīn.",
       translation:
         "Indeed, We sent it down during a blessed night. Indeed, We were to warn [mankind].",
@@ -45,14 +45,14 @@ export const quran = new QuranModel({
       verse: 6,
     }),
     new QuranEntryModel({
-      arabic: "رَبِّ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ وَمَا بَيْنَهُمَآ ۖ إِن كُنتُم مُّوقِنِينَ",
+      arabic: "رَبِّ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ وَمَا بَيْنَهُمَآ ۖ إِن كُنتُم مُّوقِنِينَ",
       translit: "Rabbis samāwāti wal arḍi wamā baynahumā in kuntum mūqinīn.",
       translation:
         "Lord of the heavens and the earth and that between them, if you would be certain.",
       verse: 7,
     }),
     new QuranEntryModel({
-      arabic: "لَآ إِلَٰهَ إِلَّا هُوَ يُحْىِۦ وَيُمِيتُ ۖ رَبُّكُمْ وَرَبُّ ءَابَآئِكُمُ ٱلْأَوَّلِينَ",
+      arabic: "لَآ إِلَـٰهَ إِلَّا هُوَ يُحْىِۦ وَيُمِيتُ ۖ رَبُّكُمْ وَرَبُّ ءَابَآئِكُمُ ٱلْأَوَّلِينَ",
       translit:
         "Lā ilāha illā huwa yuḥyī wayumītu rabbukum warabbu ābā’ikumul awwalīn.",
       translation:
@@ -73,7 +73,7 @@ export const quran = new QuranModel({
       verse: 10,
     }),
     new QuranEntryModel({
-      arabic: "يَغْشَى ٱلنَّاسَ ۖ هَٰذَا عَذَابٌ أَلِيمٌ",
+      arabic: "يَغْشَى ٱلنَّاسَ ۖ هَـٰذَا عَذَابٌ أَلِيمٌ",
       translit: "Yaghshan nāsa hādhā ‛adhābun alīm.",
       translation: "Covering the people; this is a painful torment.",
       verse: 11,
@@ -114,7 +114,7 @@ export const quran = new QuranModel({
       verse: 16,
     }),
     new QuranEntryModel({
-      arabic: "وَلَقَدْ فَتَنَّا قَبْلَهُمْ قَوْمَ فِرْعَوْنَ وَجَآءَهُمْ رَسُولٌ كَرِيمٌ",
+      arabic: "۞ وَلَقَدْ فَتَنَّا قَبْلَهُمْ قَوْمَ فِرْعَوْنَ وَجَآءَهُمْ رَسُولٌ كَرِيمٌ",
       translit:
         "Walaqad fatannā qablahum qawma Fir‛awna wajā’ahum rasūlun karīm.",
       translation:
@@ -129,7 +129,7 @@ export const quran = new QuranModel({
       verse: 18,
     }),
     new QuranEntryModel({
-      arabic: "وَأَن لَّا تَعْلُوا۟ عَلَى ٱللَّهِ ۖ إِنِّىٓ ءَاتِيكُم بِسُلْطَٰنٍ مُّبِينٍ",
+      arabic: "وَأَن لَّا تَعْلُوا۟ عَلَى ٱللَّهِ ۖ إِنِّىٓ ءَاتِيكُم بِسُلْطَـٰنٍ مُّبِينٍ",
       translit: "Wa an lā ta‛lū ‛alā Allāhi innī ātīkum bisulṭānin mubīn.",
       translation:
         'And [saying], "Be not haughty with Allāh. Indeed, I have come to you with clear evidence.',
@@ -149,7 +149,7 @@ export const quran = new QuranModel({
       verse: 21,
     }),
     new QuranEntryModel({
-      arabic: "فَدَعَا رَبَّهُۥٓ أَنَّ هَٰٓؤُلَآءِ قَوْمٌ مُّجْرِمُونَ",
+      arabic: "فَدَعَا رَبَّهُۥٓ أَنَّ هَـٰٓؤُلَآءِ قَوْمٌ مُّجْرِمُونَ",
       translit: "Fada‛ā rabbahu anna hā’ulā’i qawmun mujrimūn.",
       translation:
         "And [finally] he called to his Lord that these were a criminal people.",
@@ -170,7 +170,7 @@ export const quran = new QuranModel({
       verse: 24,
     }),
     new QuranEntryModel({
-      arabic: "كَمْ تَرَكُوا۟ مِن جَنَّٰتٍ وَعُيُونٍ",
+      arabic: "كَمْ تَرَكُوا۟ مِن جَنَّـٰتٍ وَعُيُونٍ",
       translit: "Kam tarakū min jannātin wa‛uyūn.",
       translation: "How much they left behind of gardens and springs",
       verse: 25,
@@ -182,13 +182,13 @@ export const quran = new QuranModel({
       verse: 26,
     }),
     new QuranEntryModel({
-      arabic: "وَنَعْمَةٍ كَانُوا۟ فِيهَا فَٰكِهِينَ",
+      arabic: "وَنَعْمَةٍ كَانُوا۟ فِيهَا فَـٰكِهِينَ",
       translit: "Wana‛matin kānū fīhā fākihīn.",
       translation: "And comfort wherein they were amused.",
       verse: 27,
     }),
     new QuranEntryModel({
-      arabic: "كَذَٰلِكَ ۖ وَأَوْرَثْنَٰهَا قَوْمًا ءَاخَرِينَ",
+      arabic: "كَذَٰلِكَ ۖ وَأَوْرَثْنَـٰهَا قَوْمًا ءَاخَرِينَ",
       translit: "Kadhālika wa awrathnāhā qawman ākharīn.",
       translation: "Thus. And We caused to inherit it another people.",
       verse: 28,
@@ -215,21 +215,21 @@ export const quran = new QuranModel({
       verse: 31,
     }),
     new QuranEntryModel({
-      arabic: "وَلَقَدِ ٱخْتَرْنَٰهُمْ عَلَىٰ عِلْمٍ عَلَى ٱلْعَٰلَمِينَ",
+      arabic: "وَلَقَدِ ٱخْتَرْنَـٰهُمْ عَلَىٰ عِلْمٍ عَلَى ٱلْعَـٰلَمِينَ",
       translit: "Walaqadikhtarnāhum ‛alā ‛ilmin ‛alal ‛ālamīn.",
       translation:
         "And We certainly chose them by knowledge over [all] the worlds.",
       verse: 32,
     }),
     new QuranEntryModel({
-      arabic: "وَءَاتَيْنَٰهُم مِّنَ ٱلْـَٔايَٰتِ مَا فِيهِ بَلَٰٓؤٌا۟ مُّبِينٌ",
+      arabic: "وَءَاتَيْنَـٰهُم مِّنَ ٱلْـَٔايَـٰتِ مَا فِيهِ بَلَـٰٓؤٌا۟ مُّبِينٌ",
       translit: "Wa ātaynāhum minal āyāti mā fīhi balā’un mubīn.",
       translation:
         "And We gave them of signs that in which there was a clear trial.",
       verse: 33,
     }),
     new QuranEntryModel({
-      arabic: "إِنَّ هَٰٓؤُلَآءِ لَيَقُولُونَ",
+      arabic: "إِنَّ هَـٰٓؤُلَآءِ لَيَقُولُونَ",
       translit: "Inna hā’ulā’i layaqūlūn.",
       translation: "Indeed, these [disbelievers] are saying,",
       verse: 34,
@@ -242,14 +242,14 @@ export const quran = new QuranModel({
       verse: 35,
     }),
     new QuranEntryModel({
-      arabic: "فَأْتُوا۟ بِـَٔابَآئِنَآ إِن كُنتُمْ صَٰدِقِينَ",
+      arabic: "فَأْتُوا۟ بِـَٔابَآئِنَآ إِن كُنتُمْ صَـٰدِقِينَ",
       translit: "Fa’tū bi’ābā’inā in kuntum ṣādiqīn.",
       translation:
         'Then bring [back] our forefathers, if you should be truthful."',
       verse: 36,
     }),
     new QuranEntryModel({
-      arabic: "أَهُمْ خَيْرٌ أَمْ قَوْمُ تُبَّعٍ وَٱلَّذِينَ مِن قَبْلِهِمْ ۚ أَهْلَكْنَٰهُمْ ۖ إِنَّهُمْ كَانُوا۟ مُجْرِمِينَ",
+      arabic: "أَهُمْ خَيْرٌ أَمْ قَوْمُ تُبَّعٍ وَٱلَّذِينَ مِن قَبْلِهِمْ ۚ أَهْلَكْنَـٰهُمْ ۖ إِنَّهُمْ كَانُوا۟ مُجْرِمِينَ",
       translit:
         "Ahum khayrun am qawmu tubba‛in wallādhīna min qablihim ahlaknāhum innahum kānū mujrimīn.",
       translation:
@@ -257,21 +257,21 @@ export const quran = new QuranModel({
       verse: 37,
     }),
     new QuranEntryModel({
-      arabic: "وَمَا خَلَقْنَا ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ وَمَا بَيْنَهُمَا لَٰعِبِينَ",
+      arabic: "وَمَا خَلَقْنَا ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضَ وَمَا بَيْنَهُمَا لَـٰعِبِينَ",
       translit: "Wamā khalaqnās samāwāti wal arḍa wamā baynahumā lā‛ibīn.",
       translation:
         "And We did not create the heavens and earth and that between them in play.",
       verse: 38,
     }),
     new QuranEntryModel({
-      arabic: "مَا خَلَقْنَٰهُمَآ إِلَّا بِٱلْحَقِّ وَلَٰكِنَّ أَكْثَرَهُمْ لَا يَعْلَمُونَ",
+      arabic: "مَا خَلَقْنَـٰهُمَآ إِلَّا بِٱلْحَقِّ وَلَـٰكِنَّ أَكْثَرَهُمْ لَا يَعْلَمُونَ",
       translit: "Mā khalaqnāhumā illā bilḥaqqi walākinna akthahum lā ya‛lamūn.",
       translation:
         "We did not create them except in truth, but most of them do not know.",
       verse: 39,
     }),
     new QuranEntryModel({
-      arabic: "إِنَّ يَوْمَ ٱلْفَصْلِ مِيقَٰتُهُمْ أَجْمَعِينَ",
+      arabic: "إِنَّ يَوْمَ ٱلْفَصْلِ مِيقَـٰتُهُمْ أَجْمَعِينَ",
       translit: "Inna yawmal faṣli mīqātuhum ajma‛īn.",
       translation:
         "Indeed, the Day of Judgement is the appointed time for them all -",
@@ -337,7 +337,7 @@ export const quran = new QuranModel({
       verse: 49,
     }),
     new QuranEntryModel({
-      arabic: "إِنَّ هَٰذَا مَا كُنتُم بِهِۦ تَمْتَرُونَ",
+      arabic: "إِنَّ هَـٰذَا مَا كُنتُم بِهِۦ تَمْتَرُونَ",
       translit: "Inna hādhā mā kuntum bihi tamtarūn.",
       translation: 'Indeed, this is what you used to dispute."',
       verse: 50,
@@ -349,27 +349,27 @@ export const quran = new QuranModel({
       verse: 51,
     }),
     new QuranEntryModel({
-      arabic: "فِى جَنَّٰتٍ وَعُيُونٍ",
+      arabic: "فِى جَنَّـٰتٍ وَعُيُونٍ",
       translit: "Fī jannātin wa‛uyūn.",
       translation: "Within gardens and springs,",
       verse: 52,
     }),
     new QuranEntryModel({
-      arabic: "يَلْبَسُونَ مِن سُندُسٍ وَإِسْتَبْرَقٍ مُّتَقَٰبِلِينَ",
+      arabic: "يَلْبَسُونَ مِن سُندُسٍ وَإِسْتَبْرَقٍ مُّتَقَـٰبِلِينَ",
       translit: "Yalbasūna min sundusin wa istabraqin mutaqābilīn.",
       translation:
         "Wearing [garments of] fine silk and brocade, facing each other.",
       verse: 53,
     }),
     new QuranEntryModel({
-      arabic: "كَذَٰلِكَ وَزَوَّجْنَٰهُم بِحُورٍ عِينٍ",
+      arabic: "كَذَٰلِكَ وَزَوَّجْنَـٰهُم بِحُورٍ عِينٍ",
       translit: "Kadhālika wazawwajnāhum biḥūrin ‛īn.",
       translation:
         "Thus. And We will marry them to fair women with large, [beautiful] eyes.",
       verse: 54,
     }),
     new QuranEntryModel({
-      arabic: "يَدْعُونَ فِيهَا بِكُلِّ فَٰكِهَةٍ ءَامِنِينَ",
+      arabic: "يَدْعُونَ فِيهَا بِكُلِّ فَـٰكِهَةٍ ءَامِنِينَ",
       translit: "Yad‛ūna fīhā bikulli fākihatin āminīn.",
       translation:
         "They will call therein for every [kind of] fruit - safe and secure.",
@@ -391,7 +391,7 @@ export const quran = new QuranModel({
       verse: 57,
     }),
     new QuranEntryModel({
-      arabic: "فَإِنَّمَا يَسَّرْنَٰهُ بِلِسَانِكَ لَعَلَّهُمْ يَتَذَكَّرُونَ",
+      arabic: "فَإِنَّمَا يَسَّرْنَـٰهُ بِلِسَانِكَ لَعَلَّهُمْ يَتَذَكَّرُونَ",
       translit: "Fa innamā yassarnāhu bilisānika la‛allahum yatadhakkarūn.",
       translation:
         "And indeed, We have eased it [i.e., the Qur’ān] in your tongue that they might be reminded.",

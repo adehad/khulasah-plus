@@ -23,7 +23,7 @@ export const quran = new QuranModel({
       verse: 3,
     }),
     new QuranEntryModel({
-      arabic: "قُتِلَ أَصْحَٰبُ ٱلْأُخْدُودِ",
+      arabic: "قُتِلَ أَصْحَـٰبُ ٱلْأُخْدُودِ",
       translit: "Qutila aṣḥābul ’ukhdūd.",
       translation: "Destroyed [i.e., cursed] were the companions of the trench",
       verse: 4,
@@ -55,7 +55,7 @@ export const quran = new QuranModel({
       verse: 8,
     }),
     new QuranEntryModel({
-      arabic: "ٱلَّذِى لَهُۥ مُلْكُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ ۚ وَٱللَّهُ عَلَىٰ كُلِّ شَىْءٍ شَهِيدٌ",
+      arabic: "ٱلَّذِى لَهُۥ مُلْكُ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ ۚ وَٱللَّهُ عَلَىٰ كُلِّ شَىْءٍ شَهِيدٌ",
       translit:
         "Alladhī lahu mulkus samāwāti wal’arḍ. Wallāhu ‛alā kulli shay’in shahīd.",
       translation:
@@ -64,7 +64,7 @@ export const quran = new QuranModel({
     }),
     new QuranEntryModel({
       arabic:
-        "إِنَّ ٱلَّذِينَ فَتَنُوا۟ ٱلْمُؤْمِنِينَ وَٱلْمُؤْمِنَٰتِ ثُمَّ لَمْ يَتُوبُوا۟ فَلَهُمْ عَذَابُ جَهَنَّمَ وَلَهُمْ عَذَابُ ٱلْحَرِيقِ",
+        "إِنَّ ٱلَّذِينَ فَتَنُوا۟ ٱلْمُؤْمِنِينَ وَٱلْمُؤْمِنَـٰتِ ثُمَّ لَمْ يَتُوبُوا۟ فَلَهُمْ عَذَابُ جَهَنَّمَ وَلَهُمْ عَذَابُ ٱلْحَرِيقِ",
       translit:
         "Innalladhīna fatanul mu’minīna walmu’mināti thumma lam yatūbū falahum ‛adhābu jahannama walahum ‛adhābul ḥarīq.",
       translation:
@@ -73,7 +73,7 @@ export const quran = new QuranModel({
     }),
     new QuranEntryModel({
       arabic:
-        "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّٰلِحَٰتِ لَهُمْ جَنَّٰتٌ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ ۚ ذَٰلِكَ ٱلْفَوْزُ ٱلْكَبِيرُ",
+        "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ لَهُمْ جَنَّـٰتٌ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَـٰرُ ۚ ذَٰلِكَ ٱلْفَوْزُ ٱلْكَبِيرُ",
       translit:
         "Innalladhīna āmanū wa‛amiluṣ ṣāliḥāti lahum jannātun tajrī min taḥtihal ’anhāru dhālikal fawzul kabīr.",
       translation:

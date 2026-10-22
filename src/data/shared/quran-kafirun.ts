@@ -5,7 +5,7 @@ export const quran = new QuranModel({
   surah: 109,
   entries: [
     new QuranEntryModel({
-      arabic: "قُلْ يَٰٓأَيُّهَا ٱلْكَٰفِرُونَ",
+      arabic: "قُلْ يَـٰٓأَيُّهَا ٱلْكَـٰفِرُونَ",
       translit: "Qul yā ayyuhal kāfirūn.",
       translation: 'Say, "O disbelievers,',
       verse: 1,
@@ -17,7 +17,7 @@ export const quran = new QuranModel({
       verse: 2,
     }),
     new QuranEntryModel({
-      arabic: "وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ",
+      arabic: "وَلَآ أَنتُمْ عَـٰبِدُونَ مَآ أَعْبُدُ",
       translit: "Walā antum ‛ābidūna mā a‛budu.",
       translation: "Nor are you worshippers of what I worship.",
       verse: 3,
@@ -29,7 +29,7 @@ export const quran = new QuranModel({
       verse: 4,
     }),
     new QuranEntryModel({
-      arabic: "وَلَآ أَنتُمْ عَٰبِدُونَ مَآ أَعْبُدُ",
+      arabic: "وَلَآ أَنتُمْ عَـٰبِدُونَ مَآ أَعْبُدُ",
       translit: "Walā antum ‛ābidūna mā a‛budu.",
       translation: "Nor will you be worshippers of what I worship.",
       verse: 5,

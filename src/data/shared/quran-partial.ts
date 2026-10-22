@@ -8,7 +8,7 @@ import { QuranDhikrEntryModel } from "@/models/recitation";
 /** start of Al-Baqarah 2:186 — used in salawat-compilations-majma-al-lataif-6---Wednesday */
 export function baqarah_186(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "وَإِذَا سَأَلَكَ عِبَادِى عَنِّى فَإِنِّى قَرِيبٌ ۖ أُجِيبُ دَعْوَةَ ٱلدَّاعِ إِذَا دَعَانِ …",
+    arabic: "وَإِذَا سَأَلَكَ عِبَادِى عَنِّى فَإِنِّى قَرِيبٌ أُجِيبُ دَعْوَةَ ٱلدَّاعِ إِذَا دَعَانِ …",
     translit:
       "Wa idhā sa’alaka ‛ibādī ‛annī fa innī qarībun ujību da‛watad dā‛i idhā da‛ān …",
     translation:
@@ -23,7 +23,7 @@ export function baqarah_186(repeat = 1, enableCounter?: boolean) {
 /** end of Al-Baqarah 2:201 — used in khulasah-last-part-of-night-adhkar-before-dawn, visiting-the-beloved */
 export function baqarah_201(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… رَبَّنَآ ءَاتِنَا فِى ٱلدُّنْيَا حَسَنَةً وَفِى الآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ ٱلنَّارِ",
+    arabic: "… رَبَّنَآ ءَاتِنَا فِى ٱلدُّنْيَا حَسَنَةً وَفِى ٱلْـَٔاخِرَةِ حَسَنَةً وَقِنَا عَذَابَ ٱلنَّارِ",
     translit:
       "… Rabbanā ātinā fiddunyā ḥasanatan wa fil ākhirati ḥasanatan wa qinā ‛adhāban nār.",
     translation:
@@ -38,7 +38,7 @@ export function baqarah_201(repeat = 1, enableCounter?: boolean) {
 /** end of Al-Baqarah 2:250 — used in prayers-for-palestine */
 export function baqarah_250(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا وَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ",
+    arabic: "… رَبَّنَآ أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا وَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَـٰفِرِينَ",
     translit:
       "… Rabbanā afrigh ‛alaynā ṣabran wathabbit aqdāmanā wanṣurnā ‛alal qawmil kāfirīn.",
     translation:
@@ -70,7 +70,7 @@ export function baqarah_285_286(repeat = 1, enableCounter?: boolean) {
 export function baqarah_286(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic:
-      "… رَبَّنَا لَا تُؤَاخِذْنَآ إِن نَّسِينَآ أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَآ إِصْرًا كَمَا حَمَلْتَهُۥ عَلَى ٱلَّذِينَ مِن قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِۦ ۖ وَٱعْفُ عَنَّا وَٱغْفِرْ لَنَا وَٱرْحَمْنَآ ۚ أَنتَ مَوْلَىٰنَا فَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَٰفِرِينَ",
+      "… رَبَّنَا لَا تُؤَاخِذْنَآ إِن نَّسِينَآ أَوْ أَخْطَأْنَا رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَآ إِصْرًا كَمَا حَمَلْتَهُۥ عَلَى ٱلَّذِينَ مِن قَبْلِنَا رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِۦ وَٱعْفُ عَنَّا وَٱغْفِرْ لَنَا وَٱرْحَمْنَآ أَنتَ مَوْلَىٰنَا فَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَـٰفِرِينَ",
     translit:
       "… Rabbanā lā tu'ākhidhnā in nasīnā aw akhṭa'nā, rabbanā walā taḥmil ‛alaynā iṣran kamā ḥamaltahū ‛alalladhīna min qablinā, rabbanā walā tuḥammilnā mā lā ṭāqata lanā bihī, wa‛fu ‛annā, waghfir lanā, warḥamnā, anta mawlanā fanṣurnā ‛alal qawmil kāfirīn.",
     translation:
@@ -85,7 +85,7 @@ export function baqarah_286(repeat = 1, enableCounter?: boolean) {
 /** start of Aal-Imran 3:19 — used in khulasah-friday-opening-supplications */
 export function imran_19(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "إِنَّ ٱلدِّينَ عِندَ ٱللَّهِ ٱلْإِسْلَٰمُ …",
+    arabic: "إِنَّ ٱلدِّينَ عِندَ ٱللَّهِ ٱلْإِسْلَـٰمُ …",
     translit: "Innad dīna ‛indallāhil islām …",
     translation: "Indeed, the religion in the sight of Allāh is Islām …",
     surah: 3,
@@ -98,7 +98,7 @@ export function imran_19(repeat = 1, enableCounter?: boolean) {
 /** end of Aal-Imran 3:45 — used in khulasah-dhuhr-adhkar */
 export function imran_45(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… وَجِيهًا فِى ٱلدُّنْيَا وَالآخِرَةِ وَمِنَ ٱلْمُقَرَّبِينَ",
+    arabic: "… وَجِيهًا فِى ٱلدُّنْيَا وَٱلْـَٔاخِرَةِ وَمِنَ ٱلْمُقَرَّبِينَ",
     translit: "… Wajīhan fiddunyā wal ākhirati  wa minal muqarrabīn.",
     translation:
       "… Held in honour in this world and in the Hereafter, and he will be one of those who are granted nearness to Allāh.",
@@ -113,7 +113,7 @@ export function imran_45(repeat = 1, enableCounter?: boolean) {
 export function imran_147(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic:
-      "… رَبَّنَا اغْفِرْ لَنَا ذُنُوبَنَا وَإِسْرَافَنَا فِي أَمْرِنَا وَثَبِّتْ أَقْدَامَنَا وَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ",
+      "… رَبَّنَا ٱغْفِرْ لَنَا ذُنُوبَنَا وَإِسْرَافَنَا فِىٓ أَمْرِنَا وَثَبِّتْ أَقْدَامَنَا وَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَـٰفِرِينَ",
     translit:
       "… Rabbanā ighfir lanā dhunūbanā wa isrāfanā fī amrinā wathabbit aqdāmanā wanṣurnā ‛alal qawmil kāfirīn.",
     translation:
@@ -129,7 +129,7 @@ export function imran_147(repeat = 1, enableCounter?: boolean) {
 export function nisa_64(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic:
-      "… وَلَوْ أَنَّهُمْ إِذ ظَّلَمُوٓا۟ أَنفُسَهُمْ جَآءُوكَ فَٱسْتَغْفَرُوا۟ ٱللَّهَ وَٱسْتَغْفَرَ لَهُمُ ٱلرَّسُولُ لَوَجَدُوا۟ ٱللَّهَ تَوَّابًا رَّحِيمًا",
+      "… ٱللَّهِ وَلَوْ أَنَّهُمْ إِذ ظَّلَمُوٓا۟ أَنفُسَهُمْ جَآءُوكَ فَٱسْتَغْفَرُوا۟ ٱللَّهَ وَٱسْتَغْفَرَ لَهُمُ ٱلرَّسُولُ لَوَجَدُوا۟ ٱللَّهَ تَوَّابًا رَّحِيمًا",
     translit:
       "… Wa law annahum idhẓalamū anfusahum jā'ūka fastaghfarul lāha wastaghfara lahumurrasūlu lawajadullāha tawwābar raḥīmā.",
     translation:
@@ -144,7 +144,7 @@ export function nisa_64(repeat = 1, enableCounter?: boolean) {
 /** start of Al-An'am 6:79 — used in khulasah-dhuhr-adhkar */
 export function an_am_79(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "وَجَّهْتُ وَجْهِىَ لِلَّذِى فَطَرَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ …",
+    arabic: "… وَجَّهْتُ وَجْهِىَ لِلَّذِى فَطَرَ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضَ …",
     translit: "Wajjahtu wajhiya lilladhī faṭaras samāwāti wal'arḍ …",
     translation:
       '"I have turned my face with single-minded devotion, towards Him Who has created the Heavens and the earth." …',
@@ -158,7 +158,7 @@ export function an_am_79(repeat = 1, enableCounter?: boolean) {
 /** start of Al-An'am 6:153 — used in salawat-compilations-majma-al-lataif-4---Monday */
 export function an_am_153(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "وَأَنَّ هَٰذَا صِرَٰطِى مُسْتَقِيمًا …",
+    arabic: "وَأَنَّ هَـٰذَا صِرَٰطِى مُسْتَقِيمًا …",
     translit: "Wa anna hādhā ṣirāṭī mustaqīmā …",
     translation: "And, [moreover], this is My path, which is straight …",
     surah: 6,
@@ -171,7 +171,7 @@ export function an_am_153(repeat = 1, enableCounter?: boolean) {
 /** middle of Al-A'raf 7:43 — used in khulasah-various-supplications-duas-for-travel */
 export function a_raf_43(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… ٱلْحَمْدُ لِلَّهِ ٱلَّذِى هَدَىٰنَا لِهَٰذَا وَمَا كُنَّا لِنَهْتَدِىَ لَوْلَآ أَنْ هَدَىٰنَا ٱللَّهُ …",
+    arabic: "… ٱلْحَمْدُ لِلَّهِ ٱلَّذِى هَدَىٰنَا لِهَـٰذَا وَمَا كُنَّا لِنَهْتَدِىَ لَوْلَآ أَنْ هَدَىٰنَا ٱللَّهُ …",
     translit:
       "… Alḥamdu lillāhilladhī hadānā lihādhā wa mā kunnā linahtadiya lawlā an hadānallāhu …",
     translation:
@@ -200,7 +200,7 @@ export function tawbah_128(repeat = 1, enableCounter?: boolean) {
 /** end of At-Tawbah 9:129 — used in khulasah-after-fajr-wird-latif */
 export function tawbah_129(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… حَسْبِىَ ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيم",
+    arabic: "… حَسْبِىَ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيمِ",
     translit:
       "… Ḥasbī Allāhu lā ilāha illā Huwa ʿalayhi tawakkaltu wa Huwa Rabb ul-ʿarsh il-ʿaẓīm.",
     translation:
@@ -230,7 +230,7 @@ export function kahf_10(repeat = 1, enableCounter?: boolean) {
 /** end of Al-Anbiya 21:87 — used in blessed-occasions-rajab-istighfar, dalail-khayrat-6---Saturday */
 export function anbiya_87(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… لَا إِلَٰهَ إِلَّا أَنتَ سُبْحَٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّٰلِمِينَ",
+    arabic: "… ٱلظُّلُمَـٰتِ أَن لَّآ إِلَـٰهَ إِلَّآ أَنتَ سُبْحَـٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّـٰلِمِينَ",
     translit: "… lā ilāha illā anta subḥānaka innī kuntu minaẓ ẓālimīna.",
     translation:
       "… there is no deity but You, transcendent are You, truly I am amongst the wrongdoers.",
@@ -258,7 +258,7 @@ export function qasas_85(repeat = 1, enableCounter?: boolean) {
 /** end of Al-Ahzab 33:33 — used in dalail-khayrat-allahs-most-beautiful-names */
 export function ahzab_33(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… إِنَّمَا يُرِيدُ اللَّهُ لِيُذْهِبَ عَنكُمُ الرِّجْسَ أَهْلَ الْبَيْتِ وَيُطَهِّرَكُمْ تَطْهِيرًا",
+    arabic: "… إِنَّمَا يُرِيدُ ٱللَّهُ لِيُذْهِبَ عَنكُمُ ٱلرِّجْسَ أَهْلَ ٱلْبَيْتِ وَيُطَهِّرَكُمْ تَطْهِيرًا",
     translit:
       "… innamā yurīduLlāhu liyudh-hiba ʿankumur rijsa ahlal bayti wa yuṭahhirakum taṭhīran.",
     translation:
@@ -286,7 +286,7 @@ export function ahzab_69(repeat = 1, enableCounter?: boolean) {
 /** end of Ghafir 40:44 — used in khulasah-after-fajr-wird-of-imam-an-nawawi, prayers-for-palestine */
 export function ghafir_44(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… وَأُفَوِّضُ أَمْرِىٓ إِلَى ٱللَّهِ ۚ إِنَّ ٱللَّهَ بَصِيرٌۢ بِٱلْعِبَادِ",
+    arabic: "… وَأُفَوِّضُ أَمْرِىٓ إِلَى ٱللَّهِ إِنَّ ٱللَّهَ بَصِيرٌۢ بِٱلْعِبَادِ",
     translit: "… Wa ufawwiḍu amrī ilallāh, innallāha baṣīrum bil ‛ibād.",
     translation:
       "… and I entrust my affair to Allāh. Indeed, Allāh is Seeing of [His] servants.",
@@ -300,7 +300,7 @@ export function ghafir_44(repeat = 1, enableCounter?: boolean) {
 /** end of Az-Zukhruf 43:13 — used in khulasah-various-supplications-duas-for-travel */
 export function zukhruf_13(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… سُبْحَٰنَ ٱلَّذِى سَخَّرَ لَنَا هَٰذَا وَمَا كُنَّا لَهُۥ مُقْرِنِينَ",
+    arabic: "… سُبْحَـٰنَ ٱلَّذِى سَخَّرَ لَنَا هَـٰذَا وَمَا كُنَّا لَهُۥ مُقْرِنِينَ",
     translit:
       "… Subḥānalladhī sakh-khara lanā hādhā wa mā kunnā lahū muqrinīna.",
     translation:
@@ -331,7 +331,7 @@ export function fath_10(repeat = 1, enableCounter?: boolean) {
 export function hashr_10(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic:
-      "… اغْفِرْ لَنَا وَلِإِخْوَٰنِنَا الَّذِينَ سَبَقُونَا بِالْإِيمَٰنِ وَلَا تَجْعَلْ فِى قُلُوبِنَا غِلًّا لِّلَّذِينَ ءَامَنُواْ رَبَّنَآ إِنَّكَ رَؤُوفٌ رَّحِيمٌ",
+      "… ٱغْفِرْ لَنَا وَلِإِخْوَٰنِنَا ٱلَّذِينَ سَبَقُونَا بِٱلْإِيمَـٰنِ وَلَا تَجْعَلْ فِى قُلُوبِنَا غِلًّا لِّلَّذِينَ ءَامَنُوا۟ رَبَّنَآ إِنَّكَ رَءُوفٌ رَّحِيمٌ",
     translit:
       "… waghfīrlanā wa li ikhwānalladhīna sabaqūna bil īmani walā tajʿal fī qulūbinā ghillan lilladhīna āmanū. Rabbanā innaka raʾūfun raḥīm.",
     translation:
@@ -347,7 +347,7 @@ export function hashr_10(repeat = 1, enableCounter?: boolean) {
 export function hashr_24(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic:
-      "… لَهُ ٱلْأَسْمَآءُ ٱلْحُسْنَىٰ ۚ يُسَبِّحُ لَهُۥ مَا فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
+      "… لَهُ ٱلْأَسْمَآءُ ٱلْحُسْنَىٰ يُسَبِّحُ لَهُۥ مَا فِى ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
     translit:
       "… Lahul asmā’ul ḥusnā, yusabbiḥu lahū mā fissamāwāti wal’arḍ, wa huwal ‛azīzul ḥakīm.",
     translation:

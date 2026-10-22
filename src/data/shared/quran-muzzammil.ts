@@ -5,7 +5,7 @@ export const quran = new QuranModel({
   surah: 73,
   entries: [
     new QuranEntryModel({
-      arabic: "يَٰٓأَيُّهَا ٱلْمُزَّمِّلُ",
+      arabic: "يَـٰٓأَيُّهَا ٱلْمُزَّمِّلُ",
       translit: "Yā ayyuhal muzzammil.",
       translation: "O you who wraps himself [in clothing]",
       verse: 1,
@@ -56,7 +56,7 @@ export const quran = new QuranModel({
       verse: 8,
     }),
     new QuranEntryModel({
-      arabic: "رَّبُّ ٱلْمَشْرِقِ وَٱلْمَغْرِبِ لَآ إِلَٰهَ إِلَّا هُوَ فَٱتَّخِذْهُ وَكِيلًا",
+      arabic: "رَّبُّ ٱلْمَشْرِقِ وَٱلْمَغْرِبِ لَآ إِلَـٰهَ إِلَّا هُوَ فَٱتَّخِذْهُ وَكِيلًا",
       translit:
         "Rabbul mashriqi wal maghribi lā ilāha illā huwa fattakhidhhu wakīlā.",
       translation:
@@ -98,7 +98,7 @@ export const quran = new QuranModel({
       verse: 14,
     }),
     new QuranEntryModel({
-      arabic: "إِنَّآ أَرْسَلْنَآ إِلَيْكُمْ رَسُولًا شَٰهِدًا عَلَيْكُمْ كَمَآ أَرْسَلْنَآ إِلَىٰ فِرْعَوْنَ رَسُولًا",
+      arabic: "إِنَّآ أَرْسَلْنَآ إِلَيْكُمْ رَسُولًا شَـٰهِدًا عَلَيْكُمْ كَمَآ أَرْسَلْنَآ إِلَىٰ فِرْعَوْنَ رَسُولًا",
       translit:
         "Innā arsalnā ilaykum rasūlan shāhidan ‛alaykum kamā arsalnā ilā Fir‛awna rasūlā.",
       translation:
@@ -106,7 +106,7 @@ export const quran = new QuranModel({
       verse: 15,
     }),
     new QuranEntryModel({
-      arabic: "فَعَصَىٰ فِرْعَوْنُ ٱلرَّسُولَ فَأَخَذْنَٰهُ أَخْذًا وَبِيلًا",
+      arabic: "فَعَصَىٰ فِرْعَوْنُ ٱلرَّسُولَ فَأَخَذْنَـٰهُ أَخْذًا وَبِيلًا",
       translit: "Fa‛aṣā Fir‛awnur rasūla fa’akhadhnāhu akhdhan wabīlā.",
       translation:
         "But Pharaoh disobeyed the messenger, so We seized him with a ruinous seizure.",
@@ -127,7 +127,7 @@ export const quran = new QuranModel({
       verse: 18,
     }),
     new QuranEntryModel({
-      arabic: "إِنَّ هَٰذِهِۦ تَذْكِرَةٌ ۖ فَمَن شَآءَ ٱتَّخَذَ إِلَىٰ رَبِّهِۦ سَبِيلًا",
+      arabic: "إِنَّ هَـٰذِهِۦ تَذْكِرَةٌ ۖ فَمَن شَآءَ ٱتَّخَذَ إِلَىٰ رَبِّهِۦ سَبِيلًا",
       translit:
         "Inna hādhihi tadhkiratun faman shā’a ttakhadha ilā rabbihi sabīlā.",
       translation:
@@ -136,7 +136,7 @@ export const quran = new QuranModel({
     }),
     new QuranEntryModel({
       arabic:
-        "إِنَّ رَبَّكَ يَعْلَمُ أَنَّكَ تَقُومُ أَدْنَىٰ مِن ثُلُثَىِ ٱلَّيْلِ وَنِصْفَهُۥ وَثُلُثَهُۥ وَطَآئِفَةٌ مِّنَ ٱلَّذِينَ مَعَكَ ۚ وَٱللَّهُ يُقَدِّرُ ٱلَّيْلَ وَٱلنَّهَارَ ۚ عَلِمَ أَن لَّن تُحْصُوهُ فَتَابَ عَلَيْكُمْ ۖ فَٱقْرَءُوا۟ مَا تَيَسَّرَ مِنَ ٱلْقُرْءَانِ ۚ عَلِمَ أَن سَيَكُونُ مِنكُم مَّرْضَىٰ ۙ وَءَاخَرُونَ يَضْرِبُونَ فِى ٱلْأَرْضِ يَبْتَغُونَ مِن فَضْلِ ٱللَّهِ ۙ وَءَاخَرُونَ يُقَٰتِلُونَ فِى سَبِيلِ ٱللَّهِ ۖ فَٱقْرَءُوا۟ مَا تَيَسَّرَ مِنْهُ ۚ وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَأَقْرِضُوا۟ ٱللَّهَ قَرْضًا حَسَنًا ۚ وَمَا تُقَدِّمُوا۟ لِأَنفُسِكُم مِّنْ خَيْرٍ تَجِدُوهُ عِندَ ٱللَّهِ هُوَ خَيْرًا وَأَعْظَمَ أَجْرًا ۚ وَٱسْتَغْفِرُوا۟ ٱللَّهَ ۖ إِنَّ ٱللَّهَ غَفُورٌ رَّحِيمٌۢ",
+        "۞ إِنَّ رَبَّكَ يَعْلَمُ أَنَّكَ تَقُومُ أَدْنَىٰ مِن ثُلُثَىِ ٱلَّيْلِ وَنِصْفَهُۥ وَثُلُثَهُۥ وَطَآئِفَةٌ مِّنَ ٱلَّذِينَ مَعَكَ ۚ وَٱللَّهُ يُقَدِّرُ ٱلَّيْلَ وَٱلنَّهَارَ ۚ عَلِمَ أَن لَّن تُحْصُوهُ فَتَابَ عَلَيْكُمْ ۖ فَٱقْرَءُوا۟ مَا تَيَسَّرَ مِنَ ٱلْقُرْءَانِ ۚ عَلِمَ أَن سَيَكُونُ مِنكُم مَّرْضَىٰ ۙ وَءَاخَرُونَ يَضْرِبُونَ فِى ٱلْأَرْضِ يَبْتَغُونَ مِن فَضْلِ ٱللَّهِ ۙ وَءَاخَرُونَ يُقَـٰتِلُونَ فِى سَبِيلِ ٱللَّهِ ۖ فَٱقْرَءُوا۟ مَا تَيَسَّرَ مِنْهُ ۚ وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَأَقْرِضُوا۟ ٱللَّهَ قَرْضًا حَسَنًا ۚ وَمَا تُقَدِّمُوا۟ لِأَنفُسِكُم مِّنْ خَيْرٍ تَجِدُوهُ عِندَ ٱللَّهِ هُوَ خَيْرًا وَأَعْظَمَ أَجْرًا ۚ وَٱسْتَغْفِرُوا۟ ٱللَّهَ ۖ إِنَّ ٱللَّهَ غَفُورٌ رَّحِيمٌۢ",
       translit:
         "Inna rabbaka ya‛lamu annaka taqūmu adnā min thuluthayil layli wanisfahu wathuluthahu waṭā’ifatun minal ladhīna ma‛ka wallāhu yuqaddirul layla wannahār ‛alima an lan tuḥṣūhu fatāba ‛alaykum fa’qra’ū mā tayassara minal qur’āni ‛alima an sayakūnu minkum marḍā wa’ākharūna yaḍribūna fil arḍi yabtaghūna min faḍlillāhi wa’ākharūna yuqātilūna fī sabīlillāhi faqra’ū mā tayassara minhu wa’aqīmuṣ ṣalāta wa’ātuz zakāta wa’aqriḍullāha qarḍan ḥasanā wamā tuqaddimū li’anfusikum min khayrin tajidūhu ‛inda Allāhi huwa khayran wa’a‛ẓama ajrā wastaghfirullāha innallāha ghafūrun raḥīm.",
       translation:

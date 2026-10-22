@@ -24,7 +24,7 @@ export const quran = new QuranModel({
       verse: 3,
     }),
     new QuranEntryModel({
-      arabic: "وَلَلآخِرَةُ خَيْرٌ لَّكَ مِنَ ٱلْأُولَىٰ",
+      arabic: "وَلَلْـَٔاخِرَةُ خَيْرٌ لَّكَ مِنَ ٱلْأُولَىٰ",
       translit: "Walal’ākhiratu khayrul laka minal ’ūlā.",
       translation: "And the Hereafter is better for you than the first [life].",
       verse: 4,

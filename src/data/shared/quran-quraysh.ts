@@ -5,20 +5,20 @@ export const quran = new QuranModel({
   surah: 106,
   entries: [
     new QuranEntryModel({
-      arabic: "لِإِيلَٰفِ قُرَيْشٍ",
+      arabic: "لِإِيلَـٰفِ قُرَيْشٍ",
       translit: "Li’īlāfi Quraysh.",
       translation: "For the accustomed security of the Quraysh -",
       verse: 1,
     }),
     new QuranEntryModel({
-      arabic: "إِۦلَٰفِهِمْ رِحْلَةَ ٱلشِّتَآءِ وَٱلصَّيْفِ",
+      arabic: "إِۦلَـٰفِهِمْ رِحْلَةَ ٱلشِّتَآءِ وَٱلصَّيْفِ",
       translit: "Īlāfihim riḥlatash shitā’i waṣ ṣayf.",
       translation:
         "Their accustomed security [in] the caravan of winter and summer -",
       verse: 2,
     }),
     new QuranEntryModel({
-      arabic: "فَلْيَعْبُدُوا۟ رَبَّ هَٰذَا ٱلْبَيْتِ",
+      arabic: "فَلْيَعْبُدُوا۟ رَبَّ هَـٰذَا ٱلْبَيْتِ",
       translit: "Falya‛budū rabba hādhal bayt.",
       translation: "Let them worship the Lord of this House,",
       verse: 3,
