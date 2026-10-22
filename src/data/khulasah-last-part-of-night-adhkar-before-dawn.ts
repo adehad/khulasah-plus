@@ -1141,654 +1141,456 @@ export default [
       }),
     ],
   }),
-  new WirdModel({
+  new QasidaModel({
     title: "",
     entries: [
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَا عَالِمَ السِّرِّ مِنَّا",
             translit: "Yā ‛ālimas sirri minnā",
             translation: "O Knower of our secrets,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "لَا تَهتِكِ السَّتْرَ عَنَّا",
             translit: "lā tahtikis sitra ‛annā",
             translation: "do not tear the veil from us,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَعَافِنَا وَاعْفُ عَنَّا",
             translit: "Wa ‛āfinā wa‛fu ‛annā",
             translation: "and grant us well-being and pardon us,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَكُنْ لَنَا حَيْثُ كُنَّا",
             translit: "wa kullanā ḥaythu kunnā",
             translation: "and be for us wherever we are.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَا رَبِّ يَا عَالِمَ الْحَال",
             translit: "Yā rabbi yā ‛ālimal ḥāl",
             translation: "O Lord, O Knower of our state,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "إِلَيْكَ وَجَّهتُ الْآمَال",
             translit: "ilayka wajjahtul āmāl",
             translation: "to You I have directed my hopes,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "فَامْنُنْ عَلَيْنَا بِالْإِقْبَال",
             translit: "Famnun ‛alaynā bil’iqbāl",
             translation: "so favour us with Your turning towards us,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَكُنْ لَنَا وَاصْلِحِ الْبَال",
             translit: "wa kullanā waṣliḥil bāl",
             translation: "and be for us and set our affairs right.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَا رَبِّ يَا رَبَّ الْأَرْبَاب",
             translit: "Yā rabbi yā rabbal arbāb",
             translation: "O my Lord, O Lord of lords,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "عَبْدُك فَقِيرُك عَلَى الْبَاب",
             translit: "‛abduk faqīruk ‛alal bāb",
             translation: "Your servant, Your poor one, is at the door;",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "أَتَى وَقَدْ بَتَّ الْأَسْبَاب",
             translit: "Atā wa qad battal asbāb",
             translation: "he has come with all means exhausted,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "مُسْتَدْرِكًا بَعْدَ مَا مَال",
             translit: "mustadrikan ba‛da mā māl",
             translation: "making amends after having strayed.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَا وَاسِعَ الْجُودِ جُودَك",
             translit: "Yā wasi‛al jūdi jūduk",
             translation: "O You of vast generosity, Your generosity,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "اَلْخَيْرُ خَيْرُك وَعِنْدَك",
             translit: "alkhayru khayruk wa ‛indak",
             translation: "all good is Yours and with You,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "فَوْقَ الَّذِي رَامَ عَبْدُك",
             translit: "Fawqalladhī rāma ‛abduk",
             translation: "beyond what Your servant aspires to,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "فَادْرِك بِرَحْمَتِك فِي الْحَالِ",
             translit: "fadrik biraḥmatik fil ḥāl",
             translation: "so reach me with Your mercy right now.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَا مُوجِدَ الْخَلقِ طُرًّا",
             translit: "Yā mūjidal khalqi ṭurrā",
             translation: "O Originator of all creation,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَمُوسِعَ الْكُلِّ بِرًّا",
             translit: "wa mūsi‛al kulli birrā",
             translation: "and Expander of all with goodness,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "أَسْأَلُكَ إسْبَال سَتْرًا",
             translit: "As’aluk asbāla sitrā",
             translation: "I ask You to draw a veil",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "عَلَى الْقَبَائِح وَالْأَخْطَالْ",
             translit: "‛alal qabā’iḥ wal akhṭāl",
             translation: "over the shameful deeds and the errors.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَا مَنْ يَرَى سِرَّ قَلْبِي",
             translit: "Yā man yarā sirra qalbī",
             translation: "O You who see the secret of my heart,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "حَسْبِي اطِّلَاعُكَ حَسْبِي",
             translit: "ḥasbiṭṭilā‛uka ḥasbī",
             translation:
               "Your knowledge of it is enough for me, enough for me;",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "فَامْحُ بِعَفْوِكَ ذَنْبِي",
             translit: "Famḥu bi‛afwika dhambī",
             translation: "so erase my sin with Your pardon,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَاصْلِح قُصُودِي وَالْأَعْمَال",
             translit: "waṣliḥ quṣūdī wal a‛māl",
             translation: "and set right my intentions and my deeds.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "رَبِّي عَلَيْكَ اعْتِمَادِي",
             translit: "Rabbi ‛alayka‛timādī",
             translation: "My Lord, upon You is my reliance,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "كَمَا إِلَيْكَ اسْتِنَادِي",
             translit: "kamā ilaykastinādī",
             translation: "just as to You is my recourse,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "صِدْقًا وَأَقْصَى مُرَادِي",
             translit: "Ṣidqan wa aqṣā murādī",
             translation: "in sincerity, and the utmost of my desire",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "رِضَاؤُكَ الدَّائِمُ الْحَال",
             translit: "riḍā’ukad dā’imul ḥāl",
             translation: "is Your pleasure at all times.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَا رَبِّ يَا رَبِّ إِنِّي",
             translit: "Yā rabbi yā rabbi innī",
             translation: "O Lord, O Lord, I",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "أَسْأَلُكَ الْعَفْوَ عَنِّي",
             translit: "as’alukal ‛afwa ‛annī",
             translation: "ask You to pardon me,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَلَمْ يَخِبْ فِيكَ ظَنِّي",
             translit: "Wa lam yakhib fīka ẓannī",
             translation: "and my hope in You has not been disappointed.",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَا مَالِكَ الْمُلكِ يَا وَال",
             translit: "yā mālikal mulki yā wāl",
             translation: "O Owner of sovereignty, O Governor,",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "أَشْكُو إِلَيْكَ وَأَبْكِي",
             translit: "Ashkū ilayka wa abkī",
             translation: "I complain to You and I weep",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "مِنْ شُؤْمِ ظُلْمِي وَإِفْكِي",
             translit: "min shu’mi ẓulmī wa ifkī",
             translation:
               "because of the ill omen of my wrongdoing and my falsehood,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَسُوءِ فِعْلِي وَتَرْكِي",
             translit: "Wa sū’i fi‛lī wa tarkī",
             translation: "and my evil deeds and my neglect,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَشَهْوَةِ الْقِيلِ وَالْقَال",
             translit: "wa shahwatil qīli wal qāl",
             translation: "and the desire for idle gossip,",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَحُبِّ دُنْيَا ذَمِيمَهْ",
             translit: "Wa ḥubbi dunyā dhamīmah",
             translation: "and the love of a blameworthy world,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "مِنْ كُلِّ خَيْرٍ عَقِيمَهْ",
             translit: "min kulli khayrin ‛aqīmah",
             translation: "barren of all good,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "فِيهَا الْبَلَايَا مُقِيمَهْ",
             translit: "Fīhal balāyā muqīmah",
             translation: "in which trials abide,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَحَشْوُهَا آفَات وَاشْغَال",
             translit: "wa ḥashwuhā āfāt washghāl",
             translation: "and whose filling is afflictions and distractions.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَا وَيْحَ نَفْسِي الْغَوِيَّهْ",
             translit: "Yā wayḥa nafsil ghawiyyah",
             translation: "Woe to my misguided soul,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "عَنِ السَّبِيلِ السَّوِيَّهْ",
             translit: "‛anis sabīlis sawiyyah",
             translation: "which has strayed from the straight path;",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "أَضْحَتْ تُرَوِّج عَلَيَّهْ",
             translit: "Aḍḥat turawwij ‛alayyah",
             translation: "it has taken to deceiving me,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَقَصْدُهَا الْجَاهُ وَالْمَال",
             translit: "wa qaṣduhal jāhu wal māl",
             translation: "and its aim is status and wealth.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَا رَبِّ قَدْ غَلَبَتْنِي",
             translit: "Yā rabbi qad ghalabatnī",
             translation: "O Lord, it has overcome me,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَبِالْأَمَانِي سَبَتْنِي",
             translit: "wa bil’amānī sabatnī",
             translation: "and captivated me with wishful hopes,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَفِي الْحُظُوظِ كَبَتنِي",
             translit: "Wa fil ḥuẓūẓi kabatnī",
             translation: "and humiliated me through worldly shares,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَقَيَّدَتْنِي بِالْاِكْبَالْ",
             translit: "wa qayyadatnī bil’ikbāl",
             translation: "and shackled me with fetters.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "قَدِ اسْتَعَنْتُكَ رَبِّي",
             translit: "Qadista‛intuka rabbī",
             translation: "I have sought Your help, my Lord,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "عَلَى مُدَاوَاةِ قَلْبِي",
             translit: "‛alā mudāwāti qalbī",
             translation: "to heal my heart,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَحَلِّ عُقْدَةِ كَربِي",
             translit: "Wa ḥalli ‛uqdati karbī",
             translation: "and to loosen the knot of my distress;",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "فَانْظُرْ إِلَى الْغَمِّ يَنْجَالْ",
             translit: "fanẓur ilal ghammi yanjāl",
             translation: "so look upon the sorrow that it may be lifted.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَا رَبِّ يَا خَيْرَ كَافِي",
             translit: "Yā rabbi yā khayra kāfī",
             translation: "O Lord, O best of those who suffice,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "أَحلِل عَلَيْنَا الْعَوَافِي",
             translit: "aḥlil ‛alaynal ‛awāfī",
             translation: "bring well-being down upon us,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "فَلَيْسَ شَي ثَمَّ خَافِي",
             translit: "Falaysa shay’un thamma khāfī",
             translation: "for nothing is hidden",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "عَلَيْك تَفْصِيل وَاجْمَال",
             translit: "‛alayka tafṣīl wajmāl",
             translation: "from You, in detail or in sum.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَا رَبِّ عَبدُك بِبَابِك",
             translit: "Yā rabbi ‛abduk bibābik",
             translation: "O Lord, Your servant is at Your door,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَخْشَى أَلِيمَ عَذَابِك",
             translit: "yakhshā alīma ‛adhābik",
             translation: "fearing Your painful punishment,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَيَرْتَجِي لِثَوَابِك",
             translit: "Wa yartajī lithawābik",
             translation: "and hoping for Your reward,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَغَيْثُ رَحْمَتِك هَطَّالْ",
             translit: "wa ghaythu raḥmatik haṭṭāl",
             translation: "while the rain of Your mercy pours down.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَقَدْ أَتَاكَ بِعُذْرِه",
             translit: "Wa qad atāka bi‛udhrihī",
             translation: "He has come to You with his excuse,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَبِانْكِسَارِه وَفَقْرِه",
             translit:
               "wa binkisārihī wa faqrihī, Fahzim biyusrika ‛usrihī, bimaḥḍi jūdik wal’afḍāl",
             translation: "with his brokenness and his poverty;",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "فَاهْزِمْ بِيُسْرِكَ عُسْرِه",
             translit: "Fahzim biyusrika ‛usrih",
             translation: "so defeat his hardship with Your ease,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "بِمَحْضِ جُودِك وَالْاِفْضَال",
             translit: "bimaḥḍi jūdika wal ifḍāl",
             translation: "out of Your sheer generosity and bounty.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَامْنُن عَلَيْهِ بِتَوْبَهْ",
             translit: "Wamnun ‛alayhi bitawbah",
             translation: "and favour him with repentance",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "تَغْسِلْهُ مِنْ كُلِّ حَوْبَهْ",
             translit: "taghsilhu min kulli ḥawbah",
             translation: "that washes him of every sin,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَاعْصِمْهُ مِنْ شَرِّ أَوبَهْ",
             translit: "Wa‛ṣimhu min sharri awbah",
             translation: "and protect him from the evil of relapse",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "لِكُلِّ مَا عَنْهُ قَدْ حَالْ",
             translit: "likulli mā ‛anhu qad ḥāl",
             translation: "into all that he has turned away from.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "فَأَنْتَ مَوْلَى الْمَوَالِي",
             translit: "Fa’anta mawlal mawālī",
             translation: "For You are the Master of masters,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "الْمُنْفَرِد بِالْكَمَالِ",
             translit: "al-munfaridu bil kamāl",
             translation: "alone in perfection,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَبِالْعُلَا وَالتَّعَالِي",
             translit: "wa bil ‛ulā wat ta‛ālī",
             translation: "and in loftiness and exaltedness;",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "عَلَوْتَ عَنْ ضَرْبِ الْاَمْثَال",
             translit:
               "Fa’anta mawlal mawālī, almunfarid bilkamāl. Wa bil‛ulā watta‛ālī, ‛alawta ‛an ḍarbil amthāl.",
@@ -1796,36 +1598,25 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "جُودُك وَفَضْلُك وَبِرُّك",
             translit: "Jūduk wa faḍluk wa birruk",
             translation: "Your generosity, Your bounty and Your kindness",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يُرْجَى وَبَطْشُك وَقَهْرُك",
             translit: "yurjā wa baṭshuk wa qahruk",
             translation: "are hoped for, and Your might and Your subduing",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يُخْشَى وَذِكْرُك وَشُكْرُك",
             translit: "Yukhshā wa dhikruk wa shukruk",
             translation: "are feared, and remembrance of You and thanks to You",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "لَازِم وَحَمْدُك وَالْإِجْلَال",
             translit: "lāzim wa ḥamduk wal’ijlāl",
             translation:
@@ -1833,756 +1624,530 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَا رَبِّ أَنْتَ نَصِيرِي",
             translit: "Yā rabbi anta naṣīrī",
             translation: "O Lord, You are my Helper,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "فَلَقِّنِي كُلَّ خَيرِ",
             translit: "falaqqinī kulla khayr",
             translation: "so grant me every good,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَاجْعَلْ جِنَانَك مَصِيرِي",
             translit: "Waj‛al jinānak maṣīrī",
             translation: "and make Your Gardens my destination,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَاخْتِمْ بِالْإِيمَانِ الْآجَالْ",
             translit: "wakhtim bil’īmānil ājāl",
             translation: "and seal my last hours with faith.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَصَلِّ فِي كُلِّ حَالَهْ",
             translit: "Wa ṣalli fī kulli ḥālah",
             translation: "And send blessings in every state",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "عَلَى مُزِيلِ الضَّلَالَهْ",
             translit: "‛alā mazīliḍ ḍalālah",
             translation: "upon the remover of misguidance,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "مَنْ كَلَّمَتهُ الْغَزَالَهْ",
             translit: "Man kullamathul ghazālah",
             translation: "to whom the gazelle spoke,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "مُحَمَّدِ الْهَادِي الدَّالْ",
             translit: "Muḥammadinil hādid dāl",
             translation: "Muhammad, the guide and the pointer.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَالْحَمْدُ لِلَّهِ شُكْرا",
             translit: "Walḥamdu lillāhi shukrā",
             translation: "And praise is to Allah in gratitude",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "عَلَى نِعَم مِنْهُ تَتْرَى",
             translit: "‛alā ni‛ami minhu tatrā",
             translation: "for His blessings that come in succession;",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "نَحْمَدهُ سِرًّا وَجَهْرا",
             translit: "Naḥmadhu sirran wa jahrā",
             translation: "we praise Him secretly and openly,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَبِالْغَدَايَا وَالْآصَالْ",
             translit: "wa bilghadāyā wal’āṣāl",
             translation: "in the mornings and the evenings.",
           }),
         ],
       }),
-      new DhikrModel({
+    ],
+  }),
+  new QasidaModel({
+    title: "",
+    entries: [
+      new QasidaVerseModel({
+        chorus: true,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَا أَرْحَمَ ٱلرَّٰحِمِينَ",
             translit: "Yā arḥamar rāḥimīn.",
             translation: "O Most Merciful of the merciful.",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَا أَرْحَمَ ٱلرَّٰحِمِينَ",
             translit: "Yā arḥamar rāḥimīn.",
             translation: "O Most Merciful of the merciful.",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَا أَرْحَمَ ٱلرَّٰحِمِينَ",
             translit: "Yā arḥamar rāḥimīn.",
             translation: "O Most Merciful of the merciful.",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "فَرِّجْ عَلَى الْمُسْلِمِين",
             translit: "farrij ‛alal muslimīn.",
             translation: "Relieve the Muslims.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَا رَبَّنَا يَا كَرِيمْ",
             translit: "Yā rabbanā yā karīm",
             translation: "O our Lord, O Generous,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَا رَبَّنَا يَا رَحِيمْ",
             translit: "yā rabbanā yā raḥīm",
             translation: "O our Lord, O Merciful,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "أَنْتَ الْجَوَادُ الْحَلِيمْ",
             translit: "Antal jawādul ḥalīm",
             translation: "You are the Bountiful, the Forbearing,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَأَنْتَ نِعْمَ الْمُعِين",
             translit: "wa anta ni‛mal mu‛īn",
             translation: "and You are the best of helpers,",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَلَيْسَ نَرْجُو سِوَاك",
             translit: "Wa laysa narjū siwāk",
             translation: "and we hope for none other than You;",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "فَادْرِك إِلَهِي دَرَاكْ",
             translit: "fadrik ilāhī darāk",
             translation: "so reach us, my God, swiftly,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "قَبْلَ الْفَنَا وَالْهَلَاك",
             translit: "Qablal fanā wal halāk",
             translation: "before annihilation and destruction,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَعُمُّ دُنْيَا وَدِين",
             translit: "ya‛ummu dunyā wa dīn",
             translation: "which would engulf this world and the religion.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَمَا لَنَا رَبَّنَا",
             translit: "Wa mā lanā rabbanā",
             translation: "And we have nothing, our Lord,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "سِوَاكَ يَا حَسْبَنَا",
             translit: "siwāka yā ḥasbanā",
             translation: "besides You, O our Sufficiency,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَا ذَا الْعُلَا وَالْغِنَى",
             translit: "Yā dhal ‛ulā wal ghinā",
             translation: "O Possessor of loftiness and sufficiency,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَيَا قَوِي يَا مَتِينْ",
             translit: "wa yā qawiyyu yā matīn",
             translation: "and O Strong, O Firm,",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "نَسْأَلك وَالِي يُقِيم",
             translit: "Nas’aluka wālī yuqīm",
             translation: "we ask You for a ruler who establishes",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "اَلْعَدْلَ كَيْ نَسْتَقِيم",
             translit: "al‛adla kay nastaqīm",
             translation: "justice so that we may stay upright",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "عَلَى هُدَاكَ الْقَوِيم",
             translit: "‛Alā hudākal qawīm",
             translation: "on Your straight guidance,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَلَا نُطِيعُ اللَّعِين",
             translit: "wa lā nuṭī‛ul la‛īn",
             translation: "and not obey the accursed one.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَا رَبَّنَا يَا مُجِيبْ",
             translit: "Yā rabbanā yā mujīb",
             translation: "O our Lord, O Responder,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "أَنْتَ السَّمِيعُ الْقَرِيب",
             translit: "antas samī‛ul qarīb",
             translation: "You are the All-Hearing, the Near;",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "ضَاقَ الْوَسِيعُ الرَّحِيب",
             translit: "Ḍāqal wasī‛ur raḥīb",
             translation: "the vast and spacious has become narrow,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "فَانْظُرْ إِلَى الْمُؤْمِنِين",
             translit: "fanẓur ilal mu’minīn",
             translation: "so look upon the believers,",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "نَظرَه تُزِيلُ الْعَنَا",
             translit: "Naẓrahū tuzīlul ‛anā",
             translation: "with a look that removes hardship",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "عَنَّا وَتُدْنِي الْمُنَى",
             translit: "‛annā wa tudnil munā",
             translation: "from us and brings closer the hopes",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "مِنَّا وَكُلَّ الْهَنَا",
             translit: "Minnā wa kullal hanā",
             translation: "to us, and all happiness,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "نُعْطَاه فِي كُلِّ حِين",
             translit: "nu‛ṭāhu fī kulli ḥīn",
             translation: "that we are given at every time.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "سَالَكْ بِجَاهِ الْجُدُود",
             translit: "Sālak bi jāhil judūd",
             translation: "I ask You, by the honour of the forefathers,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَالِي يُقِيمُ الْحُدُود",
             translit: "wālī yuqīmul ḥudūd",
             translation: "for a ruler who establishes the limits,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "عَنَّا وَيَكْفِي الْحَسُود",
             translit: "‛Annā wa yakfil ḥusūd",
             translation: "and who wards off the envier from us,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَيَدْفَعُ الظَّالِمِين",
             translit: "wa yadfa‛uẓ ẓālimīn",
             translation: "and repels the wrongdoers,",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يُزِيلُ لِلْمُنْكَرَات",
             translit: "Yuzīlu lil munkarāt",
             translation: "who removes the abominations,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يُقِيمُ لِلصَّلَوَات",
             translit: "yuqīmu lil ṣalawāt",
             translation: "who establishes the prayers,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَأْمُرُ بِالصَّالِحَات",
             translit: "Ya’muru bil ṣāliḥāt",
             translation: "who commands righteous deeds,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "مُحِبٌّ لِلصَّالِحِين",
             translit: "muḥibbun lil ṣāliḥīn",
             translation: "and loves the righteous,",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يُزِيحُ كُلَّ الْحَرَام",
             translit: "Yuzīḥu kullal ḥarām",
             translation: "who clears away all that is forbidden,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَقْهَرُ كُلَّ الطَّغَامْ",
             translit: "yaqharu kullal ṭaghām",
             translation: "who subdues all the rabble,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَعدِلُ بَيْنَ الْأَنَام",
             translit: "Ya‛dilu baynal anām",
             translation: "who is just among the people,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَيُؤْمِنُ الْخَائِفِين",
             translit: "wa yu’minul khā’ifīn",
             translation: "and who gives security to the fearful.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "رَبِّ اسْقِنَا غَيْث عَام",
             translit: "Rabbisqinā ghaytha ‛ām",
             translation: "My Lord, send down upon us a general rain,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "نَافِع مُبَارَك دَوَام",
             translit: "nāfi‛ mubāraka dawām",
             translation: "beneficial, blessed, lasting,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَدُومُ فِي كُلِّ عَام",
             translit: "Yadūmu fī kulli ‛ām",
             translation: "continuing in every year",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "عَلَى مَمَرِّ السِّنِين",
             translit: "‛alā mamarris sinīn",
             translation: "through the passing of the years.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "رَبِّ احْيِنَا شَاكِرِين",
             translit: "Rabbiḥyinā shākirīn",
             translation: "My Lord, keep us alive grateful,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَتَوَفَّنَا مُسْلِمِين",
             translit: "wa tawaffanā muslimīn",
             translation: "and take us in death as Muslims,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "نُبْعَث مِنَ الْآمِنِين",
             translit: "Nub‛ath minal āminīn",
             translation: "that we may be raised among those secure,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "فِي زُمْرَةِ السَّابِقِين",
             translit: "fī zumratis sābiqīn",
             translation: "in the company of the foremost,",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "بِجَاهِ طَهَ الرَّسُول",
             translit: "Bijāhi ṭāharrasūl",
             translation: "by the honour of Taha, the Messenger.",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "جُدْ رَبَّنَا بِالْقَبُول",
             translit: "jud rabbanā bil qabūl",
             translation: "Our Lord, be generous with acceptance,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَهَبْ لَنَا كُلَّ سُول",
             translit: "Wa hab lanā kulla sūl",
             translation: "and grant us every request;",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "رَبِّ اسْتَجِبْ لِي أَمِين",
             translit: "rabbistajib lī amīn",
             translation: "my Lord, answer me, Amen.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "عَطَاكَ رَبِّي جَزِيل",
             translit: "‛Aṭāka rabbī jazīl",
             translation: "Your gift, my Lord, is abundant,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَكُلُّ فِعْلِك جَمِيل",
             translit: "wa kullu fi‛lika jamīl",
             translation: "and all Your actions are beautiful,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَفِيك أَمَلنَا طَوِيل",
             translit: "Wa fīka amalnā ṭawīl",
             translation: "and our hope in You is long,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "فَجُدْ عَلَى الطَّامِعِين",
             translit: "fajud ‛alal ṭāmi‛īn",
             translation: "so be generous to those who aspire.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "يَا رَبِّ ضَاقَ الْخِنَاق",
             translit: "Yā rabbi ḍāqal khanāq",
             translation: "O Lord, we are in dire straits,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "مِنْ فِعْلِ مَا لَا يُطَاق",
             translit: "min fi‛li mā lā yuṭāq",
             translation: "from doing what cannot be borne,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "فَامْنُنْ بِفَكِّ الْغَلَاقْ",
             translit: "Fa’amnun bifakkigh-ghilāq",
             translation: "so favour us with the releasing of the lock",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "لِمَنْ بِذَنْبِه رَهِين",
             translit: "liman bidhambihī rahīn",
             translation: "for one who is held hostage by his sin.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَاغْفِرْ لِكُلِّ الذُّنُوب",
             translit: "Waghfir likullidh-dhunūb",
             translation: "And forgive all sins,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَاسْتُرْ لِكُلِّ الْعُيُوب",
             translit: "wastur likullil ‛uyūb",
             translation: "conceal all faults,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَاكْشِفْ لِكُلِّ الْكُرُوب",
             translit: "Wakshif likullil kurūb",
             translation: "remove all distresses,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَاكْفِ أَذَى الْمُؤْذِيين",
             translit: "wakfi adhal mu’dhīn",
             translation: "and ward off the harm of those who cause harm.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَاخْتِمْ بِأَحْسَن خِتَام",
             translit: "Wakhtim bi’aḥsan khitām",
             translation: "And seal with the best of endings",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "إِذَا دَنَا الْإِنْصِرَامْ",
             translit: "idhā danal inṣirām",
             translation: "when the end draws near,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَحَانَ حِينُ الْحِمَام",
             translit: "Wa ḥāna ḥīnul ḥimām",
             translation: "and the time of death arrives,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَزَادَ رَشحُ الْجَبِين",
             translit: "wa zāda rash-ḥul jabīn",
             translation: "and the sweat on the forehead increases.",
           }),
         ],
       }),
-      new DhikrModel({
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "ثُمَّ الصَّلَاة وَالسَّلَام",
             translit: "Thummaṣṣalātu wassalām",
             translation: "Then blessings and peace",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "عَلَى شَفِيعِ الْأَنَام",
             translit: "‛alā shafī‛il anām",
             translation: "upon the intercessor of mankind,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَالْآلِ نِعْمَ الْكِرَام",
             translit: "wal āli ni‛mal kirām",
             translation: "and upon the family, how excellent the noble ones.",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَالصَّحْبِ وَالتَّابِعِين",
             translit:
               "Thummaṣṣalātu wassalām, ‛alā shafī‛il anām. Wal’āli ni‛mal kirām, waṣṣaḥḥibi wattābi‛īn.",
