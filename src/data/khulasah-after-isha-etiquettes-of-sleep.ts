@@ -9,28 +9,29 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي",
-            translit: "",
+            translit: "Bismika rabbi waḍa’tu jambī,",
             translation: "I lie down in Your Name, my Lord",
           }),
           new DhikrEntryModel({
             arabic: "وَبِاسْمِكَ أَرْفَعُهُ",
-            translit: "",
+            translit: "wa bismika arfa’uhū,",
             translation: "and I rise (in the morning) in Your Name",
           }),
           new DhikrEntryModel({
             arabic: "فَاغْفِرْ لِي ذَنْبِي",
-            translit: "",
+            translit: "faghfir lī dhambī.",
             translation: "so forgive my sins",
           }),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ إِنْ أَمْسَكْتَ نَفْسِيِ فَارْحَمْهَا",
-            translit: "",
+            translit: "Allāhumma in amsakta nafsī farḥamhā,",
             translation:
               "O Allāh! If You should take my soul (during sleep), have mercy upon it",
           }),
           new DhikrEntryModel({
             arabic: "وَإِنْ أَرْسَلْتَهَا فَاحْفَظْهَا بِمَا تَحفَظُ بِهِ عِبَادَكَ الصَّالِحِينَ",
-            translit: "",
+            translit:
+              "wa in arsaltahā faḥfaẓhā bimā taḥfaẓu bihī ‘ibādakaṣ ṣāliḥīn.",
             translation:
               "and if You should return it (to my body in the morning), then preserve it as You have preserved the souls of Your righteous servants.",
           }),
@@ -170,24 +171,28 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic: "سُبْحَانَ اللَّهِ (33)",
-            translit: "",
-            translation: "Glory be to Allāh (33 times)",
+            arabic: "سُبْحَانَ اللَّهِ",
+            translit: "Subḥānallāh",
+            translation: "Glory be to Allāh",
+            repeat: 33,
           }),
           new DhikrEntryModel({
-            arabic: "الْحَمْدُ لِلَّهِ (33)",
-            translit: "",
-            translation: "Praise be to Allāh (33 times)",
+            arabic: "الْحَمْدُ لِلَّهِ",
+            translit: "Alḥamdu lillāh",
+            translation: "Praise be to Allāh",
+            repeat: 33,
           }),
           new DhikrEntryModel({
-            arabic: "اللَّهُ أَكْبَر (34)",
-            translit: "",
-            translation: "Allāh is the Greatest (34 times)",
+            arabic: "اللَّهُ أَكْبَر",
+            translit: "Allāhu akbar",
+            translation: "Allāh is the Greatest",
+            repeat: 34,
           }),
           new DhikrEntryModel({
             arabic:
               "أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيَّ الْقَيُّومَ وَأَتُوبُ إِلَيْهِ (3)",
-            translit: "",
+            translit:
+              "Astaghfirullāhal ‛aẓīmal ladhī lā ilāha illā huwal ḥayyal qayyūma wa atūbu ilayh (3)",
             translation:
               "I ask forgiveness of Allāh, the Mighty; there is no god, but He; He is the Ever-Living, the Self-Subsisting, and I turn to Him (in repentance). (3 times)",
           }),
@@ -196,11 +201,11 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic: "اللَّهُمَّ قِنِي عَذَابَكَ يَوْمَ تَبْعَثُ عِبَادَكَ (3)",
-            translit:
-              "Allāhumma qinī ‛adhābaka yawma tab‛athu ‛ibādaka. (3 times)",
+            arabic: "اللَّهُمَّ قِنِي عَذَابَكَ يَوْمَ تَبْعَثُ عِبَادَكَ",
+            translit: "Allāhumma qinī ‛adhābaka yawma tab‛athu ‛ibādaka.",
             translation:
-              "O Allāh! Save me from Your punishment the day You will resurrect Your servants (3 times)",
+              "O Allāh! Save me from Your punishment the day You will resurrect Your servants",
+            repeat: 3,
           }),
         ],
       }),

@@ -13,18 +13,13 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "قَدْ كَفَانِي عِلْمُ رَبِّي",
-            translit: "",
-            translation: "Audio",
+            translit: "Qad kafānī ‛ilmu rabbī,",
+            translation: "My Lord's knowledge suffices me",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "مِنْ سُؤَالِي وَاخْتِيَارِي",
-            translit: "",
-            translation: "",
+            translit: "Min su’ālī wakhtiyārī.",
+            translation: "from asking or choosing.",
           }),
         ],
       }),
@@ -33,19 +28,14 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "فَدُعَائِي وابْتِهَالِي",
-            translit: "",
+            translit: "Fadu‛ā’ī wabtihālī,",
             translation:
-              "My Lord's knowledge suffices me from asking or choosing.",
+              "Hence my supplications and entreaties bear witness to my utter dependence.",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "شَاهِدٌ لِي بِافْتِقَارِي",
-            translit: "",
-            translation: "",
+            translit: "Shāhidun lī biftiqārī.",
+            translation: "bearing witness to my need",
           }),
         ],
       }),
@@ -54,19 +44,13 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "فَلِهَذَا السِّرِّ أَدْعُو",
-            translit: "",
-            translation:
-              "Hence my supplications and entreaties bear witness to my utter dependence.",
+            translit: "Falihādhas sirri ad‛ū,",
+            translation: "It is for this secret that I beseech Him",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "فِي يَسَارِي وَعَسَارِي",
-            translit: "",
-            translation: "",
+            translit: "Fī yasārī wa ‛asārī.",
+            translation: "in both hardship and ease.",
           }),
         ],
       }),
@@ -75,19 +59,13 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "أَنَا عَبْدٌ صَارَ فَخْرِي",
-            translit: "",
-            translation:
-              "It is for this secret that I beseech Him in both hardship and ease.",
+            translit: "Ana ‛abdun ṣāra fakhrī,",
+            translation: "I am a servant.",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "ضِمْنَ فَقْرِي وَاضْطِرَارِي",
-            translit: "",
-            translation: "",
+            translit: "Ḍimna faqrī waḍṭirārī.",
+            translation: "I take pride in my poverty and subservience.",
           }),
         ],
       }),
@@ -96,19 +74,13 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "قَدْ كَفَانِي عِلْمُ رَبِّي",
-            translit: "",
-            translation:
-              "I am a servant. I take pride in my poverty and subservience.",
+            translit: "Qad kafānī ‛ilmu rabbī,",
+            translation: "My Lord's knowledge suffices me",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "مِنْ سُؤَالِي وَاخْتِيَارِي",
-            translit: "",
-            translation: "",
+            translit: "Min su’ālī wakhtiyārī.",
+            translation: "from asking or choosing.",
           }),
         ],
       }),
@@ -117,19 +89,13 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "يَا إِلَهِي وَمَلِيْكِي",
-            translit: "",
-            translation:
-              "My Lord's knowledge suffices me from asking or choosing.",
+            translit: "Yā Ilāhī wa Malīkī,",
+            translation: "O my Lord and my Keeper!",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "أنْتَ تَعْلَم كَيْفَ حَالِي",
-            translit: "",
-            translation: "",
+            translit: "Anta ta‛lam kayfa ḥālī.",
+            translation: "You know the state I am in.",
           }),
         ],
       }),
@@ -138,18 +104,13 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "وَبِمَا قَدْ حَلَّ قَلْبِي",
-            translit: "",
-            translation: "O my Lord and my Keeper! You know the state I am in.",
+            translit: "Wa bimā qad ḥalla qalbī,",
+            translation: "And what has beset my heart",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "مِنْ هُمُوْمٍ وَاشْتِغَالِ",
-            translit: "",
-            translation: "",
+            translit: "Min humūmin washtighālin.",
+            translation: "of worries and occupations",
           }),
         ],
       }),
@@ -158,19 +119,13 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "فَتَدَارَكْنِي بِلُطْفٍ",
-            translit: "",
-            translation:
-              "And what has beset my heart of worries and occupations",
+            translit: "Fatadāraknī biluṭfin,",
+            translation: "Rescue me with a kindness",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "مِنْكَ يَا مَوْلَى الْمَوَالِي",
-            translit: "",
-            translation: "",
+            translit: "Minka yā mawlal mawālī.",
+            translation: "from Yourself, O Master of masters.",
           }),
         ],
       }),
@@ -179,19 +134,13 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "يَا كَرِيْمَ الْوَجْهِ غِثْنِي",
-            translit: "",
-            translation:
-              "Rescue me with a kindness from Yourself, O Master of masters.",
+            translit: "Yā karīmal wajhi ghithnī,",
+            translation: "O the one of Noble Countenance, save me",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "قَبْلَ أنْ يَفْنَى اصْطِبَارِي",
-            translit: "",
-            translation: "",
+            translit: "Qabla an yafnaṣṭibārī.",
+            translation: "before my patience fails me.",
           }),
         ],
       }),
@@ -200,19 +149,13 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "قَدْ كَفَانِي عِلْمُ رَبِّي",
-            translit: "",
-            translation:
-              "O the one of Noble Countenance, save me before my patience fails me.",
+            translit: "Qad kafānī ‛ilmu rabbī,",
+            translation: "My Lord's knowledge suffices me",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "مِنْ سُؤَالِي وَاخْتِيَارِي",
-            translit: "",
-            translation: "",
+            translit: "Min su’ālī wakhtiyārī.",
+            translation: "from asking or choosing.",
           }),
         ],
       }),
@@ -221,19 +164,13 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "يَا سَرِيْعَ الْغَوْثِ غَوْثًا",
-            translit: "",
-            translation:
-              "My Lord's knowledge suffices me from asking or choosing.",
+            translit: "Yā sarī‛al ghawthi ghawthan,",
+            translation: "O the One Swift in Aid!",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "مِنْكَ يُدْرِكْنِي سَرِيْعًا",
-            translit: "",
-            translation: "",
+            translit: "Minka yudriknī sarī‛an.",
+            translation: "Hasten a rescue that will reach me quickly",
           }),
         ],
       }),
@@ -242,19 +179,13 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "يَهْزِمُ الْعُسْرَ وَيَأْتِي",
-            translit: "",
-            translation:
-              "O the One Swift in Aid! Hasten a rescue that will reach me quickly",
+            translit: "Yahzimul ‛usra wa ya’tī,",
+            translation: "that will vanquish all hardship,",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "بِالَّذِي أَرْجُو جَمِيْعًا",
-            translit: "",
-            translation: "",
+            translit: "Billadhī arjū jamī‛an.",
+            translation: "and bring all that we desire.",
           }),
         ],
       }),
@@ -263,19 +194,13 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "يا قَرِيْبًا يا مُجِيْبًا",
-            translit: "",
-            translation:
-              "that will vanquish all hardship, and bring all that we desire.",
+            translit: "Yā qarīban yā mujīban,",
+            translation: "O Near One! O Answerer of Prayers!",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "يا عَلِيْمًا يا سَمِيْعًا",
-            translit: "",
-            translation: "",
+            translit: "Yā ‛alīman yā samī‛an.",
+            translation: "O Knower! O Hearer!",
           }),
         ],
       }),
@@ -284,19 +209,13 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "قَدْ تَحَقَّقْتُ بِعَجْزِي",
-            translit: "",
-            translation:
-              "O Near One! O Answerer of Prayers! O Knower! O Hearer!",
+            translit: "Qad taḥaqqaqtu bi‛ajzī,",
+            translation: "I have fully realized my incapacity,",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "وَخُضُوْعِي وانْكِسَارِي",
-            translit: "",
-            translation: "",
+            translit: "Wa khuḍū‛ī wankisārī.",
+            translation: "submission and contrition.",
           }),
         ],
       }),
@@ -305,19 +224,13 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "قَدْ كَفَانِي عِلْمُ رَبِّي",
-            translit: "",
-            translation:
-              "I have fully realized my incapacity, submission and contrition.",
+            translit: "Qad kafānī ‛ilmu rabbī,",
+            translation: "My Lord's knowledge suffices me",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "مِنْ سُؤَالِي وَاخْتِيَارِي",
-            translit: "",
-            translation: "",
+            translit: "Min su’ālī wakhtiyārī.",
+            translation: "from asking or choosing.",
           }),
         ],
       }),
@@ -326,19 +239,13 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "لَمْ أَزَلْ بِالْبَابِ وَاقِفْ",
-            translit: "",
-            translation:
-              "My Lord's knowledge suffices me from asking or choosing.",
+            translit: "Lam azal bilbābi wāqif,",
+            translation: "I am still standing at the door,",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "فَارْحَمَنْ رَبِّي وُقُوْفِي",
-            translit: "",
-            translation: "",
+            translit: "Farḥaman rabbī wuqūfī.",
+            translation: "so have mercy O my Lord as I stand.",
           }),
         ],
       }),
@@ -347,19 +254,14 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "وبِوَادِي الْفَضْلِ عَاكِفْ",
-            translit: "",
+            translit: "Wa biwādil faḍli ‛ākif,",
             translation:
-              "I am still standing at the door, so have mercy O my Lord as I stand.",
+              "In the valley of Your grace, I am assiduously devoted;",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "فَأَدِمْ ربِّي عُكُوْفِي",
-            translit: "",
-            translation: "",
+            translit: "Fa’adim rabbī ‛ukūfī.",
+            translation: "O my Lord so perpetually increase my devotion.",
           }),
         ],
       }),
@@ -368,19 +270,13 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "ولِحُسْنِ الظَّن أُلَازِم",
-            translit: "",
-            translation:
-              "In the valley of Your grace, I am assiduously devoted; O my Lord so perpetually increase my devotion.",
+            translit: "Wa liḥusniẓ ẓanni ulāzim,",
+            translation: "I persevere on account of my good opinion",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "فَهوَ خِلِّي وَحَلِيْفِي",
-            translit: "",
-            translation: "",
+            translit: "Fahwa khillī wa ḥalīfī.",
+            translation: "(of You), which is my bosom friend and ally",
           }),
         ],
       }),
@@ -389,19 +285,13 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "وَأَنِيْسِي وَجَلِيْسِي",
-            translit: "",
-            translation:
-              "I persevere on account of my good opinion (of You), which is my bosom friend and ally",
+            translit: "Wa anīsī wa jalīsī,",
+            translation: "and my consoler and my",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "طُوْلَ لَيْلِي وَنَهَارِي",
-            translit: "",
-            translation: "",
+            translit: "Ṭūla laylī wa nahārī.",
+            translation: "companion, throughout my day and night.",
           }),
         ],
       }),
@@ -410,19 +300,14 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "قَدْ كَفَانِي عِلْمُ رَبِّي",
-            translit: "",
+            translit: "Qad kafānī ‛ilmu rabbī,",
             translation:
-              "and my consoler and my companion, throughout my day and night.",
+              "My Lord's knowledge suffices me from asking or choosing.",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "مِنْ سُؤَالِي وَاخْتِيَارِي",
-            translit: "",
-            translation: "",
+            translit: "Min su’ālī wakhtiyārī.",
+            translation: "from asking or choosing",
           }),
         ],
       }),
@@ -431,19 +316,13 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "حَاجَةً فِي النَّفْسِ يَا رَبّ",
-            translit: "",
-            translation:
-              "My Lord's knowledge suffices me from asking or choosing.",
+            translit: "Ḥājatan finnafsi yā rab,",
+            translation: "There is a need in my soul, O my Lord! Fulfil it,",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "فَاقْضِهَا يَا خَيْرَ قَاضِي",
-            translit: "",
-            translation: "",
+            translit: "faqḍihā yā khayra qāḍī.",
+            translation: "for You are the Best Fulfiller (of needs).",
           }),
         ],
       }),
@@ -452,19 +331,14 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "وَأَرِحْ سِرِّي وَقَلْبِي",
-            translit: "",
+            translit: "Wa ariḥ sirrī wa qalbī,",
             translation:
-              "There is a need in my soul, O my Lord! Fulfil it, for You are the Best Fulfiller (of needs).",
+              "Grant comfort to my secret and my heart from its fervour and passion.",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "مِنْ لَظَاهَا وَالشُّوَاظِ",
-            translit: "",
-            translation: "",
+            translit: "Min laẓāhā wash-shuwāḍi.",
+            translation: "from its blaze and its searing flames",
           }),
         ],
       }),
@@ -473,19 +347,13 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "فِي سُرُورٍ وَحُبُورٍ",
-            translit: "",
-            translation:
-              "Grant comfort to my secret and my heart from its fervour and passion.",
+            translit: "Fī surūrin wa ḥubūrin,",
+            translation: "In a state of happiness and mirth;",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "وَإِذَا مَا كُنْتَ رَاضِي",
-            translit: "",
-            translation: "",
+            translit: "Wa idhā mā kunta rāḍī.",
+            translation: "Then if You are pleased with me",
           }),
         ],
       }),
@@ -494,19 +362,13 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "فَالْهَنَا وَالْبَسْطُ حَالِي",
-            translit: "",
-            translation:
-              "In a state of happiness and mirth; Then if You are pleased with me",
+            translit: "Falhanā wal basṭu ḥālī,",
+            translation: "happiness and joy will be my spiritual condition;",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "وَشِعَارِي وَدِثَارِي",
-            translit: "",
-            translation: "",
+            translit: "Wa shi‛ārī wa dithārī.",
+            translation: "my hallmark and my raiment.",
           }),
         ],
       }),
@@ -515,19 +377,14 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "قَدْ كَفَانِي عِلْمُ رَبِّي",
-            translit: "",
+            translit: "Qad kafānī ‛ilmu rabbī,",
             translation:
-              "happiness and joy will be my spiritual condition; my hallmark and my raiment.",
+              "My Lord's knowledge suffices me from asking or choosing.",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "مِنْ سُؤَالِي وَاخْتِيَارِي",
-            translit: "",
-            translation: "",
+            translit: "Min su’ālī wakhtiyārī.",
+            translation: "from asking or choosing",
           }),
         ],
       }),

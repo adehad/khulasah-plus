@@ -36,9 +36,10 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic: "يَا مُفَرِّج فَرِّجْ (3)",
-            translit: "Yā mufarrij farrij (3 times)",
+            arabic: "يَا مُفَرِّج فَرِّجْ",
+            translit: "Yā mufarrij farrij",
             translation: "O He Who grants relief, grant relief!",
+            repeat: 3,
           }),
         ],
       }),
@@ -67,7 +68,8 @@ export default [
           new DhikrEntryModel({
             arabic:
               "اللَّهُمَّ إِنَّا نَسْتَحفِظُكَ وَنَسْتَوْدِعُكَ أَدْيَانَنَا وَأَبْدَانَنَا وَأَنْفُسَنَا وَأَهْلَنَا وَأَوْلَادَنَا وَأَمْوَالَنَا وَكُلَّ شَيْءٍ أَعْطَيتَنَا",
-            translit: "",
+            translit:
+              "Allāhumma innā nastaḥfiẓuka wa nastawdiʻuka adyānanā wa abdānanā wa anfusanā wa ahlanā wa awlādanā wa amwālanā wa kulla shayʼin aʻṭaytanā",
             translation:
               "O Allāh! We entrust You with the protection of our religion, our bodies, our souls, our families, our children, our wealth, and all that You have granted us.",
           }),
@@ -125,23 +127,24 @@ export default [
           new DhikrEntryModel({
             arabic:
               "اللَّهُمَّ اغْفِرْ لَنَا وَلِوَالِدِينَا وَأَوْلَادِنَا وَمَشَائِخِنَا وَإِخْوَانِنَا فِي الدِّينِ وَأَصْحَابِنَا وَلِمَنْ أَحَبَّنَا فِيكَ",
-            translit: "",
+            translit:
+              "Allāhummaghfir lanā wa liwālidīnā wa awlādinā wa mashāʼikhinā wa ikhwāninā fid dīni wa aṣḥābinā wa liman aḥabbanā fīk",
             translation:
               "O Allāh! Forgive us, our parents, our children, our religious teachers, our brothers in religion, our companions, and whoever loves us for Your sake,",
           }),
           new DhikrEntryModel({
             arabic: "وَلِمَنْ أَحْسَنَ إِلَيْنَا",
-            translit: "",
+            translit: "wa liman aḥsana ilaynā",
             translation: "and whoever has done good for us,",
           }),
           new DhikrEntryModel({
             arabic: "وَالْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ",
-            translit: "",
+            translit: "wal muʼminīna wal muʼmināt",
             translation: "(and forgive) the male and female believers,",
           }),
           new DhikrEntryModel({
             arabic: "وَالْمُسْلِمِينَ وَالْمُسلِمَاتِ يَا رَبَّ الْعَالَمِينَ",
-            translit: "",
+            translit: "wal muslimīna wal muslimāti yā rabbal ʻālamīn",
             translation:
               "and the male and female Muslims, O Lord of the Worlds.",
           }),

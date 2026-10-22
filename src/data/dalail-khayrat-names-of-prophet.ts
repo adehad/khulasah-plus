@@ -1,4 +1,9 @@
-import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
+import {
+  DhikrEntryModel,
+  DhikrModel,
+  QuranDhikrEntryModel,
+  WirdModel,
+} from "@/models/recitation";
 
 export default [
   new WirdModel({
@@ -6,13 +11,15 @@ export default [
     entries: [
       new DhikrModel({
         entries: [
-          new DhikrEntryModel({
+          new QuranDhikrEntryModel({
             arabic:
-              "﴿إِنَّ اللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا﴾",
+              "إِنَّ اللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا",
             translit:
               "InnaLlāha wa malāʾikatahu yuṣallūna ʿalan nabiyyi yā ayyuhalladhīna āmanū ṣallū ʿalayhi wa sallimū taslīmā",
             translation:
               "Allah and His angels send blessings on the Prophet. O you who believe! Call down blessings on him and salute him with a worthy salutation",
+            surah: 33,
+            verse: 56,
           }),
         ],
       }),

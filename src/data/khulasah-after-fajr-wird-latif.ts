@@ -1,3 +1,4 @@
+import { tawbah_129 } from "@/data/shared/quran-partial";
 import {
   DhikrEntryModel,
   DhikrModel,
@@ -391,16 +392,7 @@ export default [
         ],
       }),
       new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic: "حَسْبِىَ ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيم",
-            translit:
-              "Ḥasbī Allāhu lā ilāha illā Huwa ʿalayhi tawakkaltu wa Huwa Rabb ul-ʿarsh il-ʿaẓīm.",
-            translation:
-              "Allah is enough for me: there is no god but Him; I put my trust in Him; He is Lord of the Mighty Throne.",
-            repeat: 7,
-          }),
-        ],
+        entries: [tawbah_129(7)],
       }),
       new DhikrModel({
         entries: [

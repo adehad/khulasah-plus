@@ -13,18 +13,14 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "فَيَا نَفَحَاتِ اللَّهِ يَا عَطَفَاتِهِ",
-            translit: "",
-            translation: "Lorem ipsum",
+            translit: "Fayā nafaḥātillāhi yā ‛aṭafātihī,",
+            translation: "O Divine Fragrance, Allāh’s Compassion,",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "وَيَا جَذَبَاتِ الْحَقِّ جُودِي بِزَورَةِ",
-            translit: "",
-            translation: "",
+            translit: "wa yā jadhabātil ḥaqqi jūdī bizawrati.",
+            translation:
+              "His Compelling Truth, be kind enough to pay us a visit.",
           }),
         ],
       }),
@@ -33,19 +29,13 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "وَيَا نَظَرَاتِ اللَّهِ يَا لَحَظَاتِهِ",
-            translit: "",
-            translation:
-              "O Divine Fragrance, Allāh’s Compassion, His Compelling Truth, be kind enough to pay us a visit.",
+            translit: "Wa yā naẓarātillāhi yā laḥaẓātihī,",
+            translation: "O Allāh’s Gazes;",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "وَيَا نَسَمَاتِ اللُّطْفِ أُمِّي بِهَبَّةِ",
-            translit: "",
-            translation: "",
+            translit: "wa yā nasamātil luṭfi ummī bihabbati.",
+            translation: "O Sweet Air of Kindness! Lend me a breeze.",
           }),
         ],
       }),
@@ -54,19 +44,13 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "وَيَا غَارَةَ ٱلرَّحۡمَٰنِ جِدِّي بِسُرْعَةٍ",
-            translit: "",
-            translation:
-              "O Allāh’s Gazes; O Sweet Air of Kindness! Lend me a breeze.",
+            translit: "Wa yā ghāratar Raḥmāni jiddī bisur‛atin,",
+            translation: "O Succor of the Most Merciful, hasten towards us,",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "إِلَيْنَا وَحُلِّي عَقْدَ كُلِّ مُلِمَّةِ",
-            translit: "",
-            translation: "",
+            translit: "ilaynā wa ḥullī ‛aqda kulli mulimmati.",
+            translation: "and unravel the knot of every difficulty.",
           }),
         ],
       }),
@@ -75,19 +59,14 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "وَيَا رَحْمَةَ الرَّبِّ الرَّحِيمِ تَوَجَّهِي",
-            translit: "",
-            translation:
-              "O Succor of the Most Merciful, hasten towards us, and unravel the knot of every difficulty.",
+            translit: "Wa yā raḥmatar Rabbir Raḥīmi tawajjahī,",
+            translation: "O Mercy of the Merciful Lord,",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "وَأَحْيِي بِرُوحِ الْفَضْلِ كُلَّ رَمِيمَةِ",
-            translit: "",
-            translation: "",
+            translit: "wa aḥyī birūḥil faḍli kulla ramīmati.",
+            translation:
+              "come towards us and revive with the soul of grace every listless thing.",
           }),
         ],
       }),
@@ -96,19 +75,14 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "وَيَا كُلَّ أَبْوَابِ الْقَبُولِ تَفَتَّحِي",
-            translit: "",
-            translation:
-              "O Mercy of the Merciful Lord, come towards us and revive with the soul of grace every listless thing.",
+            translit: "Wa yā kulla abwābil qabūli tafattaḥī,",
+            translation: "O Every Door of Acceptance, open wide;",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "فَإِنَّ مَطَايَا الْقَصْدِ نَحْوَكِ أَمَّتِ",
-            translit: "",
-            translation: "",
+            translit: "fa’inna maṭāyal qaṣdi naḥwaki ammati.",
+            translation:
+              "for the essence of intentions have been directed towards You.",
           }),
         ],
       }),
@@ -117,19 +91,14 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "وَيَا سُحُبَ الْجُودِ الْإِلَهِيِّ أَمْطِرِي",
-            translit: "",
-            translation:
-              "O Every Door of Acceptance, open wide; for the essence of intentions have been directed towards You.",
+            translit: "Wa yā suḥubal jūdil ilāhiyyi amṭirī,",
+            translation: "O Clouds of Divine Generosity, rain down on us,",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "فَإِنَّ أَكُفَّ الْمَحلِ تِلْقَاكِ مُدَّتِ",
-            translit: "",
-            translation: "",
+            translit: "fa’inna akuffal maḥli tilqāki muddati.",
+            translation:
+              "for the palms of poverty are outstretched towards You.",
           }),
         ],
       }),
@@ -138,19 +107,14 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "بِحُرْمَةِ هَادِينَا وَمُحْيِي قُلُوبِنَا",
-            translit: "",
-            translation:
-              "O Clouds of Divine Generosity, rain down on us, for the palms of poverty are outstretched towards You.",
+            translit: "Biḥurmati hādīnā wa muḥyī qulūbinā,",
+            translation: "By the sanctity of our guide,",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "وَمُرْشِدِنَا نَهْجَ الطَّرِيقِ الْقَوِيمَةِ",
-            translit: "",
-            translation: "",
+            translit: "wa murshidinā nahjaṭ ṭarīqil qawīmati.",
+            translation:
+              "the reviver of our hearts, who showed us the right path,",
           }),
         ],
       }),
@@ -159,19 +123,14 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "دَعَانَا إِلَى حَقٍّ بِحَقٍّ مُنَزَّلٍ",
-            translit: "",
-            translation:
-              "By the sanctity of our guide, the reviver of our hearts, who showed us the right path,",
+            translit: "Da‛ānā ilā ḥaqqin biḥaqqin munazzalin,",
+            translation: "who called us to the Truth in the best way;",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "عَلَيْهِ مِنْ ٱلرَّحۡمَٰنِ أَفْضَلَ دَعْوَةِ",
-            translit: "",
-            translation: "",
+            translit: "‛alayhi minar raḥmāni afḍala da‛wati.",
+            translation:
+              "by the true revelation sent down to him from the Merciful.",
           }),
         ],
       }),
@@ -180,19 +139,13 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "أَجَبْنَا قَبِلْنَا مُذْعِنِينَ لِأَمْرِهِ",
-            translit: "",
-            translation:
-              "who called us to the Truth in the best way; by the true revelation sent down to him from the Merciful.",
+            translit: "Ajabnā qabilnā mudh‛inīna li’amrihī,",
+            translation: "We answered, fully accepting his command,",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "سَمِعْنَا أَطَعْنَا عَنْ هُدًى وَبَصِيرَةِ",
-            translit: "",
-            translation: "",
+            translit: "sami’nā aṭa‛nā ‛an hudā wa baṣīrati.",
+            translation: "hearing and obeying in right-guidance and insight.",
           }),
         ],
       }),
@@ -201,19 +154,15 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "فَيَا رَبِّ ثَبِّتنَا عَلَى الْحَقِّ وَالْهُدَى",
-            translit: "",
+            translit: "Fayā Rabbi thabbitnā ‛alal ḥaqqi wal hudā,",
             translation:
-              "We answered, fully accepting his command, hearing and obeying in right-guidance and insight.",
+              "O Lord, therefore make us steadfast upon truth and guidance,",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "وَيَا رَبِّ إِقبِضنَا عَلَى خَيْرِ مِلَّةِ",
-            translit: "",
-            translation: "",
+            translit: "wa yā Rabbiq-biḍnā ‛alā khayri millati.",
+            translation:
+              "and O Lord, let us die with the best religion (Islām).",
           }),
         ],
       }),
@@ -222,19 +171,14 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "وَعُمَّ أُصُولًا وَالْفُرُوعَ بِرَحْمَةٍ",
-            translit: "",
+            translit: "Wa ‛umma usūlan wal furū‛a biraḥmatin,",
             translation:
-              "O Lord, therefore make us steadfast upon truth and guidance, and O Lord, let us die with the best religion (Islām).",
+              "And bestow mercy on all our forefathers and offspring,",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "وَأَهْلًا وَأَصْحَابًا وَكُلَّ قَرَابَةِ",
-            translit: "",
-            translation: "",
+            translit: "wa ahlan wa aṣḥāban wa kulla qarābati.",
+            translation: "and on all family, companions and kin,",
           }),
         ],
       }),
@@ -243,19 +187,14 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "وَسَائِرِ أَهْلِ الدِّينِ مِنْ كُلِّ مُسْلِمٍ",
-            translit: "",
+            translit: "Wa sā’ira ahlid dīni min kulli muslimin,",
             translation:
-              "And bestow mercy on all our forefathers and offspring, and on all family, companions and kin,",
+              "and on all Muslims who acknowledge You in monotheism, without doubt.",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "أَقَامَ لَكَ التَّوْحِيدَ مِنْ غَيْرِ رِيبَةِ",
-            translit: "",
-            translation: "",
+            translit: "aqāma lakat tawḥīda min ghayri rībati.",
+            translation: "who established Your Oneness beyond all doubt.",
           }),
         ],
       }),
@@ -264,19 +203,14 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "وَصَلِّ وَسَلِّم دَائِمَ الدَّهْرِ سَرْمَدًا",
-            translit: "",
+            translit: "Wa ṣalli wa sallim dā’imad dahri sarmadan,",
             translation:
-              "and on all Muslims who acknowledge You in monotheism, without doubt.",
+              "And bestow eternal grace and blessings on the best Messenger to the best nation,",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "عَلَى خَيْرِ مَبْعُوثٍ إِلَى خَيْرِ أُمَّةِ",
-            translit: "",
-            translation: "",
+            translit: "‛alā khayri mab‛ūthin ilā khayri ummati.",
+            translation: "upon the best of those sent, to the best of nations,",
           }),
         ],
       }),
@@ -285,19 +219,14 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "مُحَمَّدٍ الْمَخْصُوصِ مِنْكَ بِفَضْلِكَ الْـــ",
-            translit: "",
-            translation:
-              "And bestow eternal grace and blessings on the best Messenger to the best nation,",
+            translit:
+              "Muḥammadin almakhṣūṣi minka bifaḍlikal ‛aẓīmi wa inzālil Kitābi wa ḥikmati.",
+            translation: "Muḥammad, whom You selected for Your immense grace,",
           }),
-        ],
-      }),
-      new QasidaVerseModel({
-        chorus: false,
-        entries: [
           new QasidaEntryModel({
             arabic: "ـــعَظِيمِ وَإِنْزَالِ الْكِتَابِ وَحِكْمَةِ",
-            translit: "",
-            translation: "",
+            translit: "‛aẓīmi wa inzālil kitābi wa ḥikmati.",
+            translation: "Your Book, and wisdom.",
           }),
         ],
       }),

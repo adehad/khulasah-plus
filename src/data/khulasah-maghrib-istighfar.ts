@@ -9,18 +9,19 @@ export default [
           new DhikrEntryModel({
             arabic:
               "أَسْتَغْفِرُ اللَّهَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الرَّحْمَنَ الرَّحِيمَ الْحَيَّ الْقَيُّومَ الَّذِي لَا يَمُوتُ",
-            translit: "",
+            translit:
+              "Astaghfirullāhal ladhī lā ilāha illā huwar raḥmānar raḥīmal ḥayyal qayyūmal ladhī lā yamūt.",
             translation:
               "I ask forgiveness of Allāh; there is no god but Him, the Most Compassionate, the Most Merciful, the Ever-Living, the Self-Subsisting, who never dies.",
           }),
           new DhikrEntryModel({
             arabic: "وَأَتُوبُ إِلَيْهِ",
-            translit: "",
+            translit: "Wa atūbu ilayh.",
             translation: "I repent to Him.",
           }),
           new DhikrEntryModel({
             arabic: "رَبِّ اغْفِرْ لِي (27)",
-            translit: "",
+            translit: "Rabbigh fir lī (27).",
             translation: "O Lord forgive me! (27 times)",
           }),
         ],
@@ -28,10 +29,11 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic: "أَسْتَغْفِرُ اللَّهَ لِلْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ (27)",
-            translit: "Astaghfirullāha lilmu’minīna wal mu’mināt. (27 times)",
+            arabic: "أَسْتَغْفِرُ اللَّهَ لِلْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ",
+            translit: "Astaghfirullāha lilmu’minīna wal mu’mināt.",
             translation:
-              "I ask Allāh’s forgiveness for all believing men and women. (27 times)",
+              "I ask Allāh’s forgiveness for all believing men and women.",
+            repeat: 27,
           }),
         ],
       }),

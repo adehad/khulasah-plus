@@ -20,11 +20,12 @@ export default [
           }),
           new DhikrEntryModel({
             arabic:
-              "يَا اللَّهُ يَا وَاحِدُ يَا أَحَدُ يَا وَاجِدُ يَا جَوَادُ؛ انفَحنَا مِنْكَ بِنَفْحَةِ خَيرٍ (3)",
+              "يَا اللَّهُ يَا وَاحِدُ يَا أَحَدُ يَا وَاجِدُ يَا جَوَادُ؛ انفَحنَا مِنْكَ بِنَفْحَةِ خَيرٍ",
             translit:
-              "yā allāhu, yā waḥidu, yā aḥadu, yā wājidu, yā jawwād; infaḥnā minka bi nafḥati khayrin (3 times)",
+              "yā allāhu, yā waḥidu, yā aḥadu, yā wājidu, yā jawwād; infaḥnā minka bi nafḥati khayrin",
             translation:
-              "and his family. O Allāh, the One and the Unique, O Creator, O the Most Generous; blow upon us from Yourself a breeze of goodness. (3 times)",
+              "and his family. O Allāh, the One and the Unique, O Creator, O the Most Generous; blow upon us from Yourself a breeze of goodness.",
+            repeat: 3,
           }),
         ],
       }),
@@ -43,9 +44,10 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic: "يَا بَاسِطُ (10)",
-            translit: "Yā bāsiṭu (10 times)",
-            translation: "O the Releaser of Abundance (10 times).",
+            arabic: "يَا بَاسِطُ",
+            translit: "Yā bāsiṭu",
+            translation: "O the Releaser of Abundance",
+            repeat: 10,
           }),
         ],
       }),

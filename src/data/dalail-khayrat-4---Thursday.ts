@@ -1,4 +1,10 @@
-import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
+import { hashr_10 } from "@/data/shared/quran-partial";
+import {
+  DhikrEntryModel,
+  DhikrModel,
+  QuranDhikrEntryModel,
+  WirdModel,
+} from "@/models/recitation";
 
 export default [
   new WirdModel({
@@ -387,12 +393,17 @@ export default [
             translation: "living and passed",
           }),
           new DhikrEntryModel({
-            arabic:
-              "وَتَابِعْ بَيْنَنَا وَبَيْنَهُمْ بِالخَيْرَاتِ. \n﴿\nرَّبِّ اغْفِرْ وَارْحَمْ وَأَنتَ خَيْرُ الرَّٰحِمِينَ\n﴾",
-            translit:
-              "wa tābiʿ baynanā wa baynahum bil khayrāt. rabbighfir warḥam wa anta khayrur rāhimīn",
+            arabic: "وَتَابِعْ بَيْنَنَا وَبَيْنَهُمْ بِالخَيْرَاتِ.",
+            translit: "wa tābiʿ baynanā wa baynahum bil khayrāt.",
+            translation: "And make blessings accompany us and them.",
+          }),
+          new QuranDhikrEntryModel({
+            arabic: "رَّبِّ اغْفِرْ وَارْحَمْ وَأَنتَ خَيْرُ الرَّٰحِمِينَ",
+            translit: "rabbighfir warḥam wa anta khayrur rāhimīn",
             translation:
-              "And make blessings accompany us and them. O Lord, forgive and show mercy for You are the best of the Merciful",
+              "O Lord, forgive and show mercy for You are the best of the Merciful",
+            surah: 23,
+            verse: 118,
           }),
           new DhikrEntryModel({
             arabic: "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا باللَّهِ العَلِيِّ العَظِيمِ.",
@@ -873,12 +884,19 @@ export default [
             translation: "and we followed the light which descended with him.",
           }),
           new DhikrEntryModel({
+            arabic: "وَقُلْتَ وَقَوْلُكَ الحَقُّ",
+            translit: "wa qulta waqawlukal ḥaqq:",
+            translation: "You said – and Your word is true:",
+          }),
+          new QuranDhikrEntryModel({
             arabic:
-              "وَقُلْتَ وَقَوْلُكَ الحَقُّ:﴿ \n\n\nإِنَّ اللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا\n\n ﴾",
+              "إِنَّ اللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا",
             translit:
-              "wa qulta waqawlukal ḥaqq: inna Allāha wa malāʾikatahu yuṣallūna ʿalan nabiyyi yā ayyuhalladhīna āmanū ṣallū ʿalayhi wa sallimū taslīmā",
+              "inna Allāha wa malāʾikatahu yuṣallūna ʿalan nabiyyi yā ayyuhalladhīna āmanū ṣallū ʿalayhi wa sallimū taslīmā",
             translation:
-              'You said – and Your word is true: "Allah and His angels call down blessings on the Prophet. O you who believe! Call down blessings on him and ask for complete peace and safety for him." (Quran 33:56)',
+              "Allah and His angels call down blessings on the Prophet. O you who believe! Call down blessings on him and ask for complete peace and safety for him.",
+            surah: 33,
+            verse: 56,
           }),
           new DhikrEntryModel({
             arabic: "وَأَمَرْتَ العِبَادَ بِالصَّلَاةِ عَلَى نَبِيِّهِمْ",
@@ -1481,13 +1499,11 @@ export default [
             translation: "and the Muslim men and women",
           }),
           new DhikrEntryModel({
-            arabic:
-              "الأَحْيَاءِ مِنْهُمْ وَالأَمْوَاتِ وَ﴿اغْفِرْ لَنَا وَلِإِخْوَٰنِنَا الَّذِينَ سَبَقُونَا بِالْإِيمَٰنِ وَلَا تَجْعَلْ فِى قُلُوبِنَا غِلًّا لِّلَّذِينَ ءَامَنُواْ رَبَّنَآ إِنَّكَ رَؤُوفٌ رَّحِيمٌ\n\n\n﴾.",
-            translit:
-              "alʾaḥyāʾi minhum wal amwāti, waghfīrlanā wa li ikhwānalladhīna sabaqūna bil īmani walā tajʿal fī qulūbinā ghillan lilladhīna āmanū. Rabbanā innaka raʾūfun raḥīm.",
-            translation:
-              "living and passed, and forgive us and our brothers who preceded us in faith, and do not place rancour in our hearts towards those who believe, Our Lord. You are Compassionate, Merciful.",
+            arabic: "الأَحْيَاءِ مِنْهُمْ وَالأَمْوَاتِ وَ",
+            translit: "alʾaḥyāʾi minhum wal amwāti,",
+            translation: "living and passed,",
           }),
+          hashr_10(),
         ],
       }),
       new DhikrModel({

@@ -100,7 +100,7 @@ export default [
           new DhikrEntryModel({
             arabic: "آمِين",
             translit: "Aamin",
-            translation: "",
+            translation: "Amen.",
           }),
         ],
       }),
@@ -154,9 +154,10 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic: "تَتَرَّسْنَا بِاللَّهِ (3)",
-            translit: "tatarrasnā billāh (3 times)",
-            translation: "Allāh is our shield (3 times)",
+            arabic: "تَتَرَّسْنَا بِاللَّهِ",
+            translit: "tatarrasnā billāh",
+            translation: "Allāh is our shield",
+            repeat: 3,
           }),
         ],
       }),
@@ -164,32 +165,35 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "مِنْ عَدُوِّنَا وَعَدُوِّ اللَّهِ مِنْ سَاقِ عَرْشِ اللَّهِ",
-            translit: "",
+            translit: "Min ‛aduwwinā wa ‛aduwwillāh, min sāqi ‛arshillāh,",
             translation:
               "against our enemy and the enemy of Allāh, from the pillar of Allāh's Throne",
           }),
           new DhikrEntryModel({
             arabic: "إِلَى قَاعِ أَرْضِ اللَّهِ",
-            translit: "",
+            translit: "ilā qā‛i arḍillāh,",
             translation: "to the depths of Allāh's earth",
           }),
           new DhikrEntryModel({
             arabic: "بِمِائَةِ أَلْفِ أَلْفِ أَلْفِ لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ الْعَلِيِّ الْعَظِيمِ",
-            translit: "",
+            translit:
+              "bi mi’ati alfi alfi alfi lā ḥawla wa lā quwwata illā billāhil ‛aliyyil ‛aẓīm;",
             translation:
               "with one hundred billion of: There is no power nor strength except with Allāh, the Exalted, the Mighty",
           }),
           new DhikrEntryModel({
             arabic:
               "صِنْعَتُهُ لَا تَنْقَطِعُ بِمِائَةِ أَلْفِ أَلْفِ أَلْفِ لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ الْعَلِيِّ الْعَظِيمِ",
-            translit: "",
+            translit:
+              "ṣin‛atuhū lā tanqaṭi‛u bi mi’ati alfi alfi alfi lā ḥawla wa lā quwwata illā billāhil ‛aliyyil ‛aẓīm;",
             translation:
               "Its composition will never break with one hundred billion of: There is no power nor strength except with Allāh, the Exalted, the Mighty",
           }),
           new DhikrEntryModel({
             arabic:
               "عَزِيمَتُهُ لَا تَنْشَقُّ بِمِائَةِ أَلْفِ أَلْفِ أَلْفِ لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ الْعَلِيِّ الْعَظِيم",
-            translit: "",
+            translit:
+              "‛azīmatuhū lā tanshaqqu bi mi’ati alfi alfi alfi lā ḥawla wa lā quwwata illā billāhil ‛aliyyil ‛aẓīm",
             translation:
               "Its fortification will never shatter with one hundred billion of: There is no power nor strength except with Allāh, the Exalted, the Mighty.",
           }),
@@ -200,49 +204,51 @@ export default [
           new DhikrEntryModel({
             arabic:
               "اللَّهُمَّ إِنْ أَحَدٌ أَرَادَنِي بِسُوءٍ مِنَ الْجِنِّ وَالْإِنْسِ وَالْوُحُوشِ وَغَيْرِهِمْ مِنْ سَائِرِ الْمَخْلُوقَاتِ",
-            translit: "",
+            translit:
+              "Allāhumma in aḥadun arādanī bi sū’in minal jinni wal insi wal wuḥūshi wa ghayrihim min sā’iril makhlūqāt;",
             translation:
               "O Allāh! If someone from the jinn, humans, beasts or anything else from the rest of creation",
           }),
           new DhikrEntryModel({
             arabic: "مِنْ بَشَرٍ أَوْ شَيْطَانٍ أَوْ سُلْطَانٍ أَوْ وَسْوَاسٍ",
-            translit: "",
+            translit: "min basharin aw shayṭānin aw sulṭānin aw waswāsin,",
             translation: "of humankind, the devil, a ruler or evil whisperer",
           }),
           new DhikrEntryModel({
             arabic: "فَارْدُدْ نَظَرَهُمْ فِي انْتِكَاسٍ",
-            translit: "",
+            translit: "fardud naẓarahum fintikāsin,",
             translation:
               "plots to cause me any harm, then cause their (evil) gazes to relapse",
           }),
           new DhikrEntryModel({
             arabic: "وَقُلُوبَهُمْ فِي وَسْوَاسٍ",
-            translit: "",
+            translit: "wa qulūbahum fī waswāsin,",
             translation: "and instill trouble in their hearts",
           }),
           new DhikrEntryModel({
             arabic: "وَأَيْدِيَهُمْ فِي إِفْلَاسٍ",
-            translit: "",
+            translit: "wa aydiyahim fī iflāsin,",
             translation: "and make them bankrupt",
           }),
           new DhikrEntryModel({
             arabic: "وَأَوْبِقْهُمْ مِنَ الرِّجْلِ إِلَى الرَّأْسِ",
-            translit: "",
+            translit: "wa awbiqhum minar rijli ilar ra‛si,",
             translation: "and disable them from head to toe",
           }),
           new DhikrEntryModel({
             arabic: "لَا فِي سَهْلٍ يَقْطَع",
-            translit: "",
+            translit: "lā fī sahlin yaqṭa‛u,",
             translation: "so that they can neither cross a plane",
           }),
           new DhikrEntryModel({
             arabic: "وَلَا فِي جَبَلٍ يَطْلَع",
-            translit: "",
+            translit: "wa lā fī jabalin yaṭlu‛u,",
             translation: "nor climb a mountain",
           }),
           new DhikrEntryModel({
             arabic: "بِمِائَةِ أَلْفِ أَلْفِ أَلْفِ لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ الْعَلِيِّ الْعَظِيمِ",
-            translit: "",
+            translit:
+              "bi mi’ati alfi alfi alfi lā ḥawla wa lā quwwata illā billāhil ‛aliyyil ‛aẓīm",
             translation:
               "with one hundred billion of: There is no power nor strength except with Allāh, the Exalted, the Mighty.",
           }),

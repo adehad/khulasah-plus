@@ -1,4 +1,10 @@
-import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
+import { ahzab_33 } from "@/data/shared/quran-partial";
+import {
+  DhikrEntryModel,
+  DhikrModel,
+  QuranDhikrEntryModel,
+  WirdModel,
+} from "@/models/recitation";
 
 export default [
   new WirdModel({
@@ -1089,20 +1095,22 @@ export default [
               "O You Who help those who ask for help. There is no god but You. By the honour of Our Master Muhammad, may Allah bless him and grant him peace, give us succour and show us mercy.",
           }),
           new DhikrEntryModel({
-            arabic:
-              "رَحْمَةُ اللَّهِ وَبَرَكَاتُهُ عَلَيْكُمْ أَهْلَ البَيْتِ إِنَّهُ حَمِيدٌ مَجِيدٌ: ﴿إِنَّمَا يُرِيدُ اللَّهُ لِيُذْهِبَ عَنكُمُ الرِّجْسَ أَهْلَ الْبَيْتِ وَيُطَهِّرَكُمْ تَطْهِيرًا﴾",
+            arabic: "رَحْمَةُ اللَّهِ وَبَرَكَاتُهُ عَلَيْكُمْ أَهْلَ البَيْتِ إِنَّهُ حَمِيدٌ مَجِيدٌ",
             translit:
-              "RaḥmatuLlāhi wa barakātuhu ʿalaykum ahlal bayti innahu ḥamīdun majīdun: innamā yurīduLlāhu liyudh-hiba ʿankumur rijsa ahlal bayti wa yuṭahhirakum taṭhīran.",
+              "RaḥmatuLlāhi wa barakātuhu ʿalaykum ahlal bayti innahu ḥamīdun majīdun:",
             translation:
-              "May the mercy of Allah and His blessings be upon you, People of the House. He is Praiseworthy, Glorious. Allah desires to remove all impurity from you, People of the House, and to purify you completely.",
+              "May the mercy of Allah and His blessings be upon you, People of the House. He is Praiseworthy, Glorious.",
           }),
-          new DhikrEntryModel({
+          ahzab_33(),
+          new QuranDhikrEntryModel({
             arabic:
-              "﴿إِنَّ اللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا﴾",
+              "إِنَّ اللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا",
             translit:
               "innaLlāha wamalāʾikatahu yuṣallūna ʿalān nabiyyi yā ayyuhāl ladhīna āmanū ṣallū ʿalayhi wasallimū taslīman.",
             translation:
               "Allah and His angels call down blessings on the Prophet. O you who believe, call down blessings on him and ask for complete peace and safety for him.",
+            surah: 33,
+            verse: 56,
           }),
         ],
       }),
