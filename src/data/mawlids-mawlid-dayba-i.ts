@@ -655,7 +655,7 @@ export default [
             translit:
               "Qīl: huwa Ādamu (‛alayhis salām)? Qāla: Ādamu bihī unīluhū a‛lal marātib.",
             translation:
-              "It was said: Is it Ādam (peace be upon him)? He said: Ādam, through him I grant the highest ranks.",
+              "It was said: Is it Ādam (peace be upon him)? He said: Ādam, through him I grant Ādam the highest ranks.",
           }),
           new QasidaEntryModel({
             arabic:
@@ -663,7 +663,7 @@ export default [
             translit:
               "Qīl: huwa Nūḥun (‛alayhis salām)? Qāla: Nūḥun bihī yanjū minal gharaqi wa yahliku man khālafahū minal ahli wal aqārib.",
             translation:
-              "It was said: Is it Nūḥ (peace be upon him)? He said: Nūḥ, through him one is saved from the flood, while whoever opposes him among family and relatives perishes.",
+              "It was said: Is it Nūḥ (peace be upon him)? He said: Nūḥ, through him Nūḥ is saved from drowning, while whoever opposed Nūḥ among his family and relatives perishes.",
           }),
           new QasidaEntryModel({
             arabic:
@@ -671,7 +671,7 @@ export default [
             translit:
               "Qīl: huwa Ibrāhīmu (‛alayhis salām)? Qāla: Ibrāhīmu bihī taqūmu ḥujjatuhū ‛alā ‛ubbādil aṣnāmi wal kawākib.",
             translation:
-              "It was said: Is it Ibrāhīm (peace be upon him)? He said: Ibrāhīm, through him his argument is established against the worshippers of idols and stars.",
+              "It was said: Is it Ibrāhīm (peace be upon him)? He said: Ibrāhīm, through him Ibrāhīm's argument is established against the worshippers of idols and stars.",
           }),
           new QasidaEntryModel({
             arabic:
@@ -687,7 +687,7 @@ export default [
             translit:
               "Qīl: huwa ‛Īsā (‛alayhis salām)? Qāla: ‛Īsā yubashshiru bihī wa huwa bayna yaday nubuwwatihī kal ḥājib.",
             translation:
-              "It was said: Is it ‛Īsā (peace be upon him)? He said: ‛Īsā gives glad tidings of him, and before his prophethood he is like a chamberlain.",
+              "It was said: Is it ‛Īsā (peace be upon him)? He said: ‛Īsā gives glad tidings of him, and stands before the Prophet's prophethood like a chamberlain.",
           }),
           new QasidaEntryModel({
             arabic:
