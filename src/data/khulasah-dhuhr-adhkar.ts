@@ -40,14 +40,29 @@ export default [
               "In the Name of Allāh, the Most Compassionate, the Most Merciful.",
           }),
           new QuranDhikrEntryModel({
-            arabic:
-              "إِنَّا فَتَحْنَا لَكَ فَتْحًا مُّبِينًا ۝ لِّيَغْفِرَ لَكَ ٱللَّهُ مَا تَقَدَّمَ مِن ذَنۢبِكَ وَمَا تَأَخَّرَ وَيُتِمَّ نِعْمَتَهُۥ عَلَيْكَ وَيَهْدِيَكَ صِرَٰطًا مُّسْتَقِيمًا ۝ وَيَنصُرَكَ ٱللَّهُ نَصْرًا عَزِيزًا",
-            translit:
-              "Innā fataḥnā laka fatḥam mubīnā. Liyaghfira lakallāhu mā taqaddama min dhambika wa mā ta'akh-khara wa yutimmu ni‛matahū ‛alayka wa yahdiyaka ṣirāṭam mustaqīmā. Wa yanṣurakallāhu naṣran ‛azīzā.",
+            arabic: "إِنَّا فَتَحْنَا لَكَ فَتْحًا مُّبِينًا",
+            translit: "Innā fataḥnā laka fatḥam mubīnā.",
             translation:
-              "Verily, We have given you a clear (manifest) victory. That Allāh may forgive you your sins of the past and the future and complete His Favour on you and guide you on the Straight Path. So that Allāh might bestow on you His Mighty Help.",
-            surah: 48,
+              "Indeed, We have given you, [O Muḥammad], a clear conquest",
             verse: 1,
+            surah: 48,
+          }),
+          new QuranDhikrEntryModel({
+            arabic:
+              "لِّيَغْفِرَ لَكَ ٱللَّهُ مَا تَقَدَّمَ مِن ذَنۢبِكَ وَمَا تَأَخَّرَ وَيُتِمَّ نِعْمَتَهُۥ عَلَيْكَ وَيَهْدِيَكَ صِرَٰطًا مُّسْتَقِيمًا",
+            translit:
+              "Liyaghfira lakallāhu mā taqaddama min dhambika wa mā ta'akh-khara wa yutimmu ni‛matahū ‛alayka wa yahdiyaka ṣirāṭam mustaqīmā.",
+            translation:
+              "That Allāh may forgive for you what preceded of your sin [i.e., errors] and what will follow and complete His favor upon you and guide you to a straight path",
+            verse: 2,
+            surah: 48,
+          }),
+          new QuranDhikrEntryModel({
+            arabic: "وَيَنصُرَكَ ٱللَّهُ نَصْرًا عَزِيزًا",
+            translit: "Wa yanṣurakallāhu naṣran ‛azīzā.",
+            translation: "And [that] Allāh may aid you with a mighty victory.",
+            verse: 3,
+            surah: 48,
           }),
           ahzab_69(),
           imran_45(),
@@ -58,7 +73,7 @@ export default [
             translation:
               "In the Name of Allāh, the Most Compassionate, the Most Merciful…",
           }),
-          saff_13_14(),
+          ...saff_13_14(),
         ],
       }),
       new DhikrModel({
@@ -85,13 +100,43 @@ export default [
           }),
           new QuranDhikrEntryModel({
             arabic:
-              "لَوْ أَنزَلْنَا هَٰذَا ٱلْقُرْءَانَ عَلَىٰ جَبَلٍ لَّرَأَيْتَهُۥ خَٰشِعًا مُّتَصَدِّعًا مِّنْ خَشْيَةِ ٱللَّهِ ۚ وَتِلْكَ ٱلْأَمْثَٰلُ نَضْرِبُهَا لِلنَّاسِ لَعَلَّهُمْ يَتَفَكَّرُونَ ۝ هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَٰهَ إِلَّا هُوَ ۖ عَٰلِمُ ٱلْغَيْبِ وَٱلشَّهَٰدَةِ ۖ هُوَ ٱلرَّحْمَٰنُ ٱلرَّحِيمُ ۝ هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَٰمُ ٱلْمُؤْمِنُ ٱلْمُهَيْمِنُ ٱلْعَزِيزُ ٱلْجَبَّارُ ٱلْمُتَكَبِّرُ ۚ سُبْحَٰنَ ٱللَّهِ عَمَّا يُشْرِكُونَ ۝ هُوَ ٱللَّهُ ٱلْخَٰلِقُ ٱلْبَارِئُ ٱلْمُصَوِّرُ ۖ لَهُ ٱلْأَسْمَآءُ ٱلْحُسْنَىٰ ۚ يُسَبِّحُ لَهُۥ مَا فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
+              "لَوْ أَنزَلْنَا هَٰذَا ٱلْقُرْءَانَ عَلَىٰ جَبَلٍ لَّرَأَيْتَهُۥ خَٰشِعًا مُّتَصَدِّعًا مِّنْ خَشْيَةِ ٱللَّهِ ۚ وَتِلْكَ ٱلْأَمْثَٰلُ نَضْرِبُهَا لِلنَّاسِ لَعَلَّهُمْ يَتَفَكَّرُونَ",
             translit:
-              "Law anzalnā hādhal qur’āna ‛alā jabalil lara’aytahū khāshi‛am mutaṣaddi‛am min khashyatillāh, wa tilkal amthālu naḍribuhā linnāsi la‛Allāhum yatafakkarūn, Huwallāhulladhī lā ilāha illā huwa ‛ālimul ghaybi wash shahādati huwar raḥmānur raḥīm. Huwallāhulladhī lā ilāha illā huwal malikul quddūsus salāmul muʾminul muhayminul ‛azīzul jabbārul mutakabbir, subhānallāhi ‛ammā yushrikūn. Huwallāhul khāliqul bāri’ul musawwiru lahul asmā’ul ḥusnā, yusabbiḥu lahū mā fissamāwāti wal arḍi wa huwal ‛azīzul ḥakīm.",
+              "Law anzalnā hādhal qur’āna ‛alā jabalil lara’aytahū khāshi‛am mutaṣaddi‛am min khashyatillāh, wa tilkal amthālu naḍribuhā linnāsi la‛Allāhum yatafakkarūn.",
             translation:
-              "If We had sent down this Qur’ān upon a mountain, you would have seen it humbled and splitting from fear of Allāh. And these examples We present to the people that perhaps they will give thought. He is Allāh, other than whom there is no deity, Knower of the unseen and the witnessed. He is the Entirely Merciful, the Especially Merciful. He is Allāh, other than whom there is no deity, the Sovereign, the Pure, the Perfection, the Grantor of Security, the Overseer, the Exalted in Might, the Compeller, the Superior. Exalted is Allāh above whatever they associate with Him. He is Allāh, the Creator, the Producer, the Fashioner; to Him belong the best names. Whatever is in the heavens and earth is exalting Him. And He is the Exalted in Might, the Wise.",
-            surah: 59,
+              "If We had sent down this Qur’ān upon a mountain, you would have seen it humbled and splitting from fear of Allāh. And these examples We present to the people that perhaps they will give thought.",
             verse: 21,
+            surah: 59,
+          }),
+          new QuranDhikrEntryModel({
+            arabic:
+              "هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَٰهَ إِلَّا هُوَ ۖ عَٰلِمُ ٱلْغَيْبِ وَٱلشَّهَٰدَةِ ۖ هُوَ ٱلرَّحْمَٰنُ ٱلرَّحِيمُ",
+            translit:
+              "Huwallāhulladhī lā ilāha illā huwa ‛ālimul ghaybi wash shahādati huwar raḥmānur raḥīm.",
+            translation:
+              "He is Allāh, other than whom there is no deity, Knower of the unseen and the witnessed. He is the Entirely Merciful, the Especially Merciful.",
+            verse: 22,
+            surah: 59,
+          }),
+          new QuranDhikrEntryModel({
+            arabic:
+              "هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَٰمُ ٱلْمُؤْمِنُ ٱلْمُهَيْمِنُ ٱلْعَزِيزُ ٱلْجَبَّارُ ٱلْمُتَكَبِّرُ ۚ سُبْحَٰنَ ٱللَّهِ عَمَّا يُشْرِكُونَ",
+            translit:
+              "Huwallāhulladhī lā ilāha illā huwal malikul quddūsus salāmul muʾminul muhayminul ‛azīzul jabbārul mutakabbir, subhānallāhi ‛ammā yushrikūn.",
+            translation:
+              "He is Allāh, other than whom there is no deity, the Sovereign, the Pure, the Perfection, the Grantor of Security, the Overseer, the Exalted in Might, the Compeller, the Superior. Exalted is Allāh above whatever they associate with Him.",
+            verse: 23,
+            surah: 59,
+          }),
+          new QuranDhikrEntryModel({
+            arabic:
+              "هُوَ ٱللَّهُ ٱلْخَٰلِقُ ٱلْبَارِئُ ٱلْمُصَوِّرُ ۖ لَهُ ٱلْأَسْمَآءُ ٱلْحُسْنَىٰ ۚ يُسَبِّحُ لَهُۥ مَا فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
+            translit:
+              "Huwallāhul khāliqul bāri’ul musawwiru lahul asmā’ul ḥusnā, yusabbiḥu lahū mā fissamāwāti wal arḍi wa huwal ‛azīzul ḥakīm.",
+            translation:
+              "He is Allāh, the Creator, the Producer, the Fashioner; to Him belong the best names. Whatever is in the heavens and earth is exalting Him. And He is the Exalted in Might, the Wise.",
+            verse: 24,
+            surah: 59,
           }),
         ],
       }),

@@ -1,3 +1,4 @@
+import { fath_29 } from "@/data/shared/quran-partial";
 import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
@@ -98,12 +99,11 @@ export default [
             translation: "and the owner of the Pool to which people come.",
           }),
           new DhikrEntryModel({
-            arabic: "وَعَلَى آلِهِ وَصَحْبِهِ الَّذِينَ سِيمَاهُمْ فِى وُجُوهِهِم مِّنْ أَثَرِ ٱلسُّجُودِ.",
-            translit:
-              "Wa ‛alā ālihī wa ṣaḥbihil ladhīna sīmāhum fī wujūhihim min atharis sujūd.",
-            translation:
-              "And upon his family and companions, whose mark is on their faces from the trace of prostration.",
+            arabic: "وَعَلَى آلِهِ وَصَحْبِهِ الَّذِينَ",
+            translit: "Wa ‛alā ālihī wa ṣaḥbihil ladhīna",
+            translation: "And upon his family and companions, those who",
           }),
+          fath_29(),
         ],
       }),
       new DhikrModel({

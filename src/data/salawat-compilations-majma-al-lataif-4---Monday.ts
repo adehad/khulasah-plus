@@ -1,4 +1,4 @@
-import { an_am_153, tawbah_128 } from "@/data/shared/quran-partial";
+import { an_am_153, qaf_35, tawbah_128 } from "@/data/shared/quran-partial";
 import {
   DhikrEntryModel,
   DhikrModel,
@@ -1197,13 +1197,7 @@ export default [
             translation:
               "O Allāh, bestow blessings and peace upon the noblest of servants, the leader at the prayer niche of oneness, and the one intended by the allusion of",
           }),
-          new QuranDhikrEntryModel({
-            arabic: "وَلَدَيْنَا مَزِيدٌ",
-            translit: "Wa ladaynā mazīd",
-            translation: "… and with Us is more.",
-            verse: 35,
-            surah: 50,
-          }),
+          qaf_35(),
           new DhikrEntryModel({
             arabic:
               "حَبِيبِي رَسُولِ اللَّهِ مُحَمَّدِ بْنِ عَبْدِ اللَّهِ، صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ وَعَلَى آلِهِ وَصَحْبِهِ وَمَنْ وَالَاهُ.",

@@ -1,5 +1,5 @@
 import { ikhlas } from "@/data/shared/quran";
-import { ghafir_44 } from "@/data/shared/quran-partial";
+import { ghafir_44, hud_56 } from "@/data/shared/quran-partial";
 import {
   DhikrEntryModel,
   DhikrModel,
@@ -338,12 +338,13 @@ export default [
               "O Allāh, place me and them in Your safekeeping, Your refuge, Your servants, Your charge, Your protection, Your security, Your trust, Your party, Your stronghold, Your shelter, Your covering and Your gentleness, away from every devil and ruler, human and jinn, aggressor and envier, predator, snake and scorpion,",
           }),
           new DhikrEntryModel({
-            arabic: "وَمِنْ شَرِّ كُلِّ دَابَّةٍ أَنْتَ آخِذٌ بِنَاصِيَتِهَا إِنَّ رَبِّي عَلَى صِرَاطٍ مُسْتَقِيمٍ",
+            arabic: "وَمِنْ شَرِّ كُلِّ دَابَّةٍ أَنْتَ آخِذٌ بِنَاصِيَتِهَا",
             translit:
-              "wa insin wa jānn, wa bāghin wa ḥāsidin, wa sabu‛in wa ḥayyatin wa ‛aqrabin, wa min sharri kulli dābbatin anta ākhidhum bi nāṣiyatihā inna rabbi ‛alā ṣirāṭim mustaqīm.",
+              "wa insin wa jānn, wa bāghin wa ḥāsidin, wa sabu‛in wa ḥayyatin wa ‛aqrabin, wa min sharri kulli dābbatin anta ākhidhum bi nāṣiyatihā",
             translation:
-              "and from the evil of every creature whose forelock You hold. Truly my Lord is on a straight path.",
+              "and from the evil of every creature whose forelock You hold.",
           }),
+          hud_56(),
         ],
       }),
       new DhikrModel({

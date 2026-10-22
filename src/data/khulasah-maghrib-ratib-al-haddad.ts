@@ -6,6 +6,7 @@ import {
   ikhlas,
   nas,
 } from "@/data/shared/quran";
+import { baqarah_128 } from "@/data/shared/quran-partial";
 import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export const wird = [
@@ -74,13 +75,12 @@ export const wird = [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic: "رَبَّنَا اغْفِرْ لَنَا وَتُبْ عَلَيْنَا إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ",
-            translation:
-              "Our Lord, forgive us and grant us repentance; indeed, You are the Oft-Forgiving, Most Merciful.",
-            translit:
-              "Rabbanaghfir lanā wa tub ‛alaynā innaka antat tawwābur raḥīm.",
+            arabic: "رَبَّنَا اغْفِرْ لَنَا",
+            translit: "Rabbanaghfir lanā",
+            translation: "Our Lord, forgive us",
             repeat: 3,
           }),
+          baqarah_128(3),
         ],
       }),
       new DhikrModel({

@@ -959,13 +959,25 @@ export default [
         chorus: false,
         entries: [
           new QuranEntryModel({
-            arabic:
-              "سُبْحَـٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ ۝ وَسَلَـٰمٌ عَلَى ٱلْمُرْسَلِينَ ۝ وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
-            translit:
-              "Subḥāna rabbika rabbil ‛izzati ‛ammā yaṣifūn, wa salāmun ‛alal mursalīn, wal ḥamdu lillāhi rabbil ‛ālamīn",
+            arabic: "سُبْحَـٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ",
+            translit: "Subḥāna rabbika rabbil ‛izzati ‛ammā yaṣifūn",
             translation:
-              "Exalted is your Lord, the Lord of might, above what they describe. And peace upon the messengers. And praise to Allāh, Lord of the worlds.",
+              "Exalted is your Lord, the Lord of might, above what they describe.",
             verse: 180,
+            surah: 37,
+          }),
+          new QuranEntryModel({
+            arabic: "وَسَلَـٰمٌ عَلَى ٱلْمُرْسَلِينَ",
+            translit: "wa salāmun ‛alal mursalīn",
+            translation: "And peace upon the messengers.",
+            verse: 181,
+            surah: 37,
+          }),
+          new QuranEntryModel({
+            arabic: "وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
+            translit: "wal ḥamdu lillāhi rabbil ‛ālamīn",
+            translation: "And praise to Allāh, Lord of the worlds.",
+            verse: 182,
             surah: 37,
           }),
         ],

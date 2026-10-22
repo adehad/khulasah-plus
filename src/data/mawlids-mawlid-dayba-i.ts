@@ -381,23 +381,48 @@ export default [
         chorus: false,
         entries: [
           new QuranEntryModel({
-            arabic:
-              "إِنَّا فَتَحْنَا لَكَ فَتْحًا مُّبِينًا ۝ لِّيَغْفِرَ لَكَ ٱللَّهُ مَا تَقَدَّمَ مِن ذَنۢبِكَ وَمَا تَأَخَّرَ وَيُتِمَّ نِعْمَتَهُۥ عَلَيْكَ وَيَهْدِيَكَ صِرَٰطًا مُّسْتَقِيمًا ۝ وَيَنصُرَكَ ٱللَّهُ نَصْرًا عَزِيزًا",
-            translit:
-              "Innā fataḥnā laka fatḥam mubīnā. Liyaghfira lakallāhu mā taqaddama min dhanbika wa mā ta’akhkhara wa yutimma ni‛matahū ‛alayka wa yahdiyaka ṣirāṭam mustaqīmā. Wa yanṣurakallāhu naṣran ‛azīzā.",
+            arabic: "إِنَّا فَتَحْنَا لَكَ فَتْحًا مُّبِينًا",
+            translit: "Innā fataḥnā laka fatḥam mubīnā.",
             translation:
-              "Indeed, We have given you, [O Muḥammad], a clear conquest That Allāh may forgive for you what preceded of your sin [i.e., errors] and what will follow and complete His favor upon you and guide you to a straight path And [that] Allāh may aid you with a mighty victory.",
+              "Indeed, We have given you, [O Muḥammad], a clear conquest",
             verse: 1,
             surah: 48,
           }),
           new QuranEntryModel({
             arabic:
-              "لَقَدْ جَآءَكُمْ رَسُولٌ مِّنْ أَنفُسِكُمْ عَزِيزٌ عَلَيْهِ مَا عَنِتُّمْ حَرِيصٌ عَلَيْكُم بِٱلْمُؤْمِنِينَ رَءُوفٌ رَّحِيمٌ ۝ فَإِن تَوَلَّوْا۟ فَقُلْ حَسْبِىَ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَهُوَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيمِ",
+              "لِّيَغْفِرَ لَكَ ٱللَّهُ مَا تَقَدَّمَ مِن ذَنۢبِكَ وَمَا تَأَخَّرَ وَيُتِمَّ نِعْمَتَهُۥ عَلَيْكَ وَيَهْدِيَكَ صِرَٰطًا مُّسْتَقِيمًا",
             translit:
-              "Laqad jā’akum rasūlum min anfusikum ‛azīzun ‛alayhi mā ‛anittum ḥarīṣun ‛alaykum bil mu’minīna ra’ūfur raḥīm. Fa in tawallaw faqul ḥasbiyallāhu lā ilāha illā huwa, ‛alayhi tawakkaltu, wa huwa rabbul ‛arshil ‛aẓīm.",
+              "Liyaghfira lakallāhu mā taqaddama min dhanbika wa mā ta’akhkhara wa yutimma ni‛matahū ‛alayka wa yahdiyaka ṣirāṭam mustaqīmā.",
             translation:
-              'There has certainly come to you a Messenger from among yourselves. Grievous to him is what you suffer; [he is] concerned over you [i.e., your guidance] and to the believers is kind and merciful. But if they turn away, [O Muḥammad], say, "Sufficient for me is Allāh; there is no deity except Him. On Him I have relied, and He is the Lord of the Great Throne."',
+              "That Allāh may forgive for you what preceded of your sin [i.e., errors] and what will follow and complete His favor upon you and guide you to a straight path",
+            verse: 2,
+            surah: 48,
+          }),
+          new QuranEntryModel({
+            arabic: "وَيَنصُرَكَ ٱللَّهُ نَصْرًا عَزِيزًا",
+            translit: "Wa yanṣurakallāhu naṣran ‛azīzā.",
+            translation: "And [that] Allāh may aid you with a mighty victory.",
+            verse: 3,
+            surah: 48,
+          }),
+          new QuranEntryModel({
+            arabic:
+              "لَقَدْ جَآءَكُمْ رَسُولٌ مِّنْ أَنفُسِكُمْ عَزِيزٌ عَلَيْهِ مَا عَنِتُّمْ حَرِيصٌ عَلَيْكُم بِٱلْمُؤْمِنِينَ رَءُوفٌ رَّحِيمٌ",
+            translit:
+              "Laqad jā’akum rasūlum min anfusikum ‛azīzun ‛alayhi mā ‛anittum ḥarīṣun ‛alaykum bil mu’minīna ra’ūfur raḥīm.",
+            translation:
+              "There has certainly come to you a Messenger from among yourselves. Grievous to him is what you suffer; [he is] concerned over you [i.e., your guidance] and to the believers is kind and merciful.",
             verse: 128,
+            surah: 9,
+          }),
+          new QuranEntryModel({
+            arabic:
+              "فَإِن تَوَلَّوْا۟ فَقُلْ حَسْبِىَ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَهُوَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيمِ",
+            translit:
+              "Fa in tawallaw faqul ḥasbiyallāhu lā ilāha illā huwa, ‛alayhi tawakkaltu, wa huwa rabbul ‛arshil ‛aẓīm.",
+            translation:
+              'But if they turn away, [O Muḥammad], say, "Sufficient for me is Allāh; there is no deity except Him. On Him I have relied, and He is the Lord of the Great Throne."',
+            verse: 129,
             surah: 9,
           }),
           new QuranEntryModel({
@@ -3367,13 +3392,25 @@ export default [
         chorus: false,
         entries: [
           new QuranEntryModel({
-            arabic:
-              "سُبْحَـٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ ۝ وَسَلَـٰمٌ عَلَى ٱلْمُرْسَلِينَ ۝ وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
-            translit:
-              "Subḥāna rabbika rabbil ‛izzati ‛ammā yaṣifūn. Wa salāmun ‛alal mursalīn. Wal ḥamdu lillāhi rabbil ‛ālamīn.",
+            arabic: "سُبْحَـٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ",
+            translit: "Subḥāna rabbika rabbil ‛izzati ‛ammā yaṣifūn.",
             translation:
-              "Exalted is your Lord, the Lord of might, above what they describe. And peace upon the messengers. And praise to Allāh, Lord of the worlds.",
+              "Exalted is your Lord, the Lord of might, above what they describe.",
             verse: 180,
+            surah: 37,
+          }),
+          new QuranEntryModel({
+            arabic: "وَسَلَـٰمٌ عَلَى ٱلْمُرْسَلِينَ",
+            translit: "Wa salāmun ‛alal mursalīn.",
+            translation: "And peace upon the messengers.",
+            verse: 181,
+            surah: 37,
+          }),
+          new QuranEntryModel({
+            arabic: "وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
+            translit: "Wal ḥamdu lillāhi rabbil ‛ālamīn.",
+            translation: "And praise to Allāh, Lord of the worlds.",
+            verse: 182,
             surah: 37,
           }),
         ],

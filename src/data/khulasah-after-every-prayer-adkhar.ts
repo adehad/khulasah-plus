@@ -1,3 +1,4 @@
+import { baqarah_127, baqarah_128 } from "@/data/shared/quran-partial";
 import {
   DhikrEntryModel,
   DhikrModel,
@@ -78,19 +79,8 @@ export default [
         ],
       }),
       new DhikrModel({
-        entries: [
-          new QuranDhikrEntryModel({
-            arabic:
-              "رَبَّنَا تَقَبَّلْ مِنَّآ ۖ إِنَّكَ أَنتَ ٱلسَّمِيعُ ٱلْعَلِيمُ ، وَتُبْ عَلَيْنَآ ۖ إِنَّكَ أَنتَ ٱلتَّوَّابُ ٱلرَّحِيمُ",
-            translit:
-              "Rabbanā taqabbal minnā innaka antas samī‛ul ‛alīm, wa tub ‛alaynā innaka antattawwābur raḥīm.",
-            translation:
-              "… Our Lord, accept [this] from us. Indeed You are the Hearing, the Knowing … and accept our repentance. Indeed, You are the Accepting of repentance, the Merciful.",
-            surah: 2,
-            verse: 127,
-            repeat: 3,
-          }),
-        ],
+        repeat: 3,
+        entries: [baqarah_127(), baqarah_128()],
       }),
       new DhikrModel({
         entries: [

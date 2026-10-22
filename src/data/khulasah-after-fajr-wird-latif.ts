@@ -1,9 +1,13 @@
 import { falaq, ikhlas, nas } from "@/data/shared/quran";
 import {
+  baqarah_256,
   hashr_21_24,
+  mu_minun_97,
+  mu_minun_98,
   mu_minun_115_118,
   rum_17_19,
   saffat_79_81,
+  talaq_12,
   tawbah_129,
 } from "@/data/shared/quran-partial";
 import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
@@ -16,16 +20,8 @@ export default [
       falaq(3, "", true),
       nas(3, "", true),
       new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic: "رَبِّ أَعُوذُ بِكَ مِنْ هَمَزَٰتِ ٱلشَّيَٰطِينِ وَأَعُوذُ بِكَ رَبِّ أَن يَحْضُرُونِ",
-            translit:
-              "Rabbī ʿaudhu bika min hamāzat ash-shayaṭīni wa ʿaudhu bika Rabbī an yaḥdurūn.",
-            translation:
-              "‘Lord, I take refuge with You from the goadings of the satans; I seek refuge with You, Lord, so that they may not come near me.’",
-            repeat: 3,
-          }),
-        ],
+        repeat: 3,
+        entries: [mu_minun_97(), mu_minun_98()],
       }),
       mu_minun_115_118(1, "", false),
       rum_17_19(1, "", false),
@@ -129,13 +125,12 @@ export default [
               "I believe in Allah the Almighty, and I denounce all idols and false gods,",
           }),
           new DhikrEntryModel({
-            arabic: "وَٱسْتَمْسَكْتُ بِٱلْعُرْوَةِ ٱلْوُثْقَىٰ لَا ٱنفِصَامَ لَهَا وَٱللَّهُ سَمِيعٌ عَلِيمٌ",
-            translit:
-              "wastamsaktu bil ʿurwat il-wuthqā, lanfiṣāma lahā wa Allāhu Samīʿun ʿAlīm.",
-            translation:
-              "and I grasp the firmest handhold that never breaks, and Allah is All-Hearing, All-Knowing.",
+            arabic: "وَٱسْتَمْسَكْتُ",
+            translit: "wastamsaktu",
+            translation: "and I grasp",
             repeat: 3,
           }),
+          baqarah_256(3),
         ],
       }),
       new DhikrModel({
@@ -234,13 +229,11 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "أَعْلَمُ أَنَّ ٱللَّهَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ وَأَنَّ ٱللَّهَ قَدْ أَحَاطَ بِكُلِّ شَيْءٍ عِلْمًا",
-            translit:
-              "Aʿlamu annaLlāha ʿalā kulli shayyʾin qadīr wa annaLlāha qad aḥāṭa bi kulli shayyʾin ʿilmā.",
-            translation:
-              "I know that Allah has power over all things and that Allah encompasses all things in His knowledge.",
+            arabic: "أَعْلَمُ",
+            translit: "Aʿlamu",
+            translation: "I know",
           }),
+          talaq_12(),
         ],
       }),
       new DhikrModel({

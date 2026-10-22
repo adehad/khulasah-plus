@@ -1,4 +1,5 @@
 import {
+  anbiya_87,
   baqarah_201,
   baqarah_286,
   hashr_24,
@@ -96,13 +97,12 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic: "يَا حَيُّ يَا قَيُّومُ لَا إِلَهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ",
-            translit:
-              "Yā ḥayyu yā qayyūmu lā ilāha illā anta subḥānaka innī kuntu minaẓẓālimīn.",
-            translation:
-              "O Ever-Living, O Self-Sustaining, there is no god but You; glory be to You, I have been among the wrongdoers.",
+            arabic: "يَا حَيُّ يَا قَيُّومُ",
+            translit: "Yā ḥayyu yā qayyūmu",
+            translation: "O Ever-Living, O Self-Sustaining,",
             repeat: 40,
           }),
+          anbiya_87(40),
         ],
       }),
       new DhikrModel({

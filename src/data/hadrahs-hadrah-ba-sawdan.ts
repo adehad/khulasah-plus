@@ -1797,13 +1797,113 @@ export default [
                   "In the Name of Allah, the Most Compassionate, the Most Merciful.",
               }),
               new QuranEntryModel({
-                arabic:
-                  "إِنَّ ٱلَّذِينَ سَبَقَتْ لَهُم مِّنَّا ٱلْحُسْنَىٰٓ أُو۟لَٰٓئِكَ عَنْهَا مُبْعَدُونَ ۝ لَا يَسْمَعُونَ حَسِيسَهَا ۖ وَهُمْ فِى مَا ٱشْتَهَتْ أَنفُسُهُمْ خَٰلِدُونَ۝ لَا يَحْزُنُهُمُ ٱلْفَزَعُ ٱلْأَكْبَرُ وَتَتَلَقَّىٰهُمُ ٱلْمَلَٰٓئِكَةُ هَٰذَا يَوْمُكُمُ ٱلَّذِى كُنتُمْ تُوعَدُونَ۝ يَوْمَ نَطْوِى ٱلسَّمَآءَ كَطَىِّ ٱلسِّجِلِّ لِلْكُتُبِ ۚ كَمَا بَدَأْنَآ أَوَّلَ خَلْقٍۢ نُّعِيدُهُۥ ۚ وَعْدًا عَلَيْنَآ ۚ إِنَّا كُنَّا فَٰعِلِينَ۝ وَلَقَدْ كَتَبْنَا فِى ٱلزَّبُورِ مِنۢ بَعْدِ ٱلذِّكْرِ أَنَّ ٱلْأَرْضَ يَرِثُهَا عِبَادِىَ ٱلصَّٰلِحُونَ۝ إِنَّ فِى هَٰذَا لَبَلَٰغًۭا لِّقَوْمٍ عَٰبِدِينَ۝ وَمَآ أَرْسَلْنَٰكَ إِلَّا رَحْمَةًۭ لِّلْعَٰلَمِينَ۝ قُلْ إِنَّمَا يُوحَىٰٓ إِلَىَّ أَنَّمَآ إِلَٰهُكُمْ إِلَٰهٌۭ وَٰحِدٌۭ ۖ فَهَلْ أَنتُم مُّسْلِمُونَ۝ فَإِن تَوَلَّوْا۟ فَقُلْ ءَاذَنتُكُمْ عَلَىٰ سَوَآءٍۢ ۖ وَإِنْ أَدْرِىٓ أَقَرِيبٌ أَم بَعِيدٌۭ مَّا تُوعَدُونَ۝ إِنَّهُۥ يَعْلَمُ ٱلْجَهْرَ مِنَ ٱلْقَوْلِ وَيَعْلَمُ مَا تَكْتُمُونَ۝ وَإِنْ أَدْرِى لَعَلَّهُۥ فِتْنَةٌۭ لَّكُمْ وَمَتَٰعٌ إِلَىٰ حِينٍۢ۝ قَٰلَ رَبِّ ٱحْكُم بِٱلْحَقِّ ۗ وَرَبُّنَا ٱلرَّحْمَٰنُ ٱلْمُسْتَعَانُ عَلَىٰ مَا تَصِفُونَ",
+                arabic: "إِنَّ ٱلَّذِينَ سَبَقَتْ لَهُم مِّنَّا ٱلْحُسْنَىٰٓ أُو۟لَٰٓئِكَ عَنْهَا مُبْعَدُونَ",
                 translit:
-                  "Inna alladhīna sabaqat lahum minnal-ḥusnā ulā’ika ‛anhā mub‛adūn. Lā yasma‛ūna ḥasīsahā wa hum fī mashtahat anfusuhum khālidūn. Lā yaḥzunuhumul-faza‛ul-akbaru wa tatalaqqāhumul-malā’ikatu hādhā yawmukumul-ladhī kuntum tū‛adūn. Yawma naṭwis-samā’a kaṭayyis-sijilli lil-kutub, kamā bada’nā awwala khalqin nu‛īduh, wa‛dan ‛alaynā, innā kunnā fā‛ilīn. Wa laqad katabnā fiz-zabūri min ba‛dhidh-dhikri annal-arḍa yarithuhā ‛ibādiyaṣ-ṣāliḥūn. Inna fī hādhā labalāghan liqawmin ‛ābidīn. Wa mā arsalnāka illā raḥmatan lil-‛ālamīn. Qul innamā yūḥā ilayya annamā ilāhukum ilāhun wāḥid, fahal antum muslimūn. Fa in tawallaw faqul ādhantukum ‛alā sawā’, wa in adrī a qarībun am ba‛īdun mā tū‛adūn. Innahū ya‛lamul-jahra minal-qawli wa ya‛lamu mā taktumūn. Wa in adrī la‛allahū fitnatun lakum wa matā‛un ilā ḥīn. Qāla rabbiḥ-kum bil-ḥaqq, wa rabbunar-raḥmānul-musta‛ānu ‛alā mā taṣifūn.",
+                  "Inna alladhīna sabaqat lahum minnal-ḥusnā ulā’ika ‛anhā mub‛adūn.",
                 translation:
-                  'Indeed, those for whom the best [reward] has preceded from Us - they are from it far removed. They will not hear its sound, while they are, in that which their souls desire, abiding eternally. They will not be grieved by the greatest terror, and the angels will meet them, [saying], "This is your Day which you have been promised" - The Day when We will fold the heaven like the folding of a [written] sheet for the records. As We began the first creation, We will repeat it. [That is] a promise binding upon Us. Indeed, We will do it. And We have already written in the book [of Psalms] after the [previous] mention that the land [of Paradise] is inherited by My righteous servants. Indeed, in this [Qur’ān] is notification for a worshipping people. And We have not sent you, [O Muḥammad], except as a mercy to the worlds. Say, "It is only revealed to me that your god is but one God; so will you be Muslims [in submission to Him]?" But if they turn away, then say, "I have announced to [all of] you equally. And I know not whether near or far is that which you are promised. Indeed, He knows what is declared of speech, and He knows what you conceal. And I know not; perhaps it is a trial for you and enjoyment for a time." [The Prophet (ﷺ)] has said, "My Lord, judge [between us] in truth. And our Lord is the Most Merciful, the one whose help is sought against that which you describe."',
+                  "Indeed, those for whom the best [reward] has preceded from Us - they are from it far removed.",
                 verse: 101,
+                surah: 21,
+              }),
+              new QuranEntryModel({
+                arabic: "لَا يَسْمَعُونَ حَسِيسَهَا ۖ وَهُمْ فِى مَا ٱشْتَهَتْ أَنفُسُهُمْ خَٰلِدُونَ",
+                translit:
+                  "Lā yasma‛ūna ḥasīsahā wa hum fī mashtahat anfusuhum khālidūn.",
+                translation:
+                  "They will not hear its sound, while they are, in that which their souls desire, abiding eternally.",
+                verse: 102,
+                surah: 21,
+              }),
+              new QuranEntryModel({
+                arabic:
+                  "لَا يَحْزُنُهُمُ ٱلْفَزَعُ ٱلْأَكْبَرُ وَتَتَلَقَّىٰهُمُ ٱلْمَلَٰٓئِكَةُ هَٰذَا يَوْمُكُمُ ٱلَّذِى كُنتُمْ تُوعَدُونَ",
+                translit:
+                  "Lā yaḥzunuhumul-faza‛ul-akbaru wa tatalaqqāhumul-malā’ikatu hādhā yawmukumul-ladhī kuntum tū‛adūn.",
+                translation:
+                  'They will not be grieved by the greatest terror, and the angels will meet them, [saying], "This is your Day which you have been promised" -',
+                verse: 103,
+                surah: 21,
+              }),
+              new QuranEntryModel({
+                arabic:
+                  "يَوْمَ نَطْوِى ٱلسَّمَآءَ كَطَىِّ ٱلسِّجِلِّ لِلْكُتُبِ ۚ كَمَا بَدَأْنَآ أَوَّلَ خَلْقٍ نُّعِيدُهُۥ ۚ وَعْدًا عَلَيْنَآ ۚ إِنَّا كُنَّا فَٰعِلِينَ",
+                translit:
+                  "Yawma naṭwis-samā’a kaṭayyis-sijilli lil-kutub, kamā bada’nā awwala khalqin nu‛īduh, wa‛dan ‛alaynā, innā kunnā fā‛ilīn.",
+                translation:
+                  "The Day when We will fold the heaven like the folding of a [written] sheet for the records. As We began the first creation, We will repeat it. [That is] a promise binding upon Us. Indeed, We will do it.",
+                verse: 104,
+                surah: 21,
+              }),
+              new QuranEntryModel({
+                arabic:
+                  "وَلَقَدْ كَتَبْنَا فِى ٱلزَّبُورِ مِنۢ بَعْدِ ٱلذِّكْرِ أَنَّ ٱلْأَرْضَ يَرِثُهَا عِبَادِىَ ٱلصَّٰلِحُونَ",
+                translit:
+                  "Wa laqad katabnā fiz-zabūri min ba‛dhidh-dhikri annal-arḍa yarithuhā ‛ibādiyaṣ-ṣāliḥūn.",
+                translation:
+                  "And We have already written in the book [of Psalms] after the [previous] mention that the land [of Paradise] is inherited by My righteous servants.",
+                verse: 105,
+                surah: 21,
+              }),
+              new QuranEntryModel({
+                arabic: "إِنَّ فِى هَٰذَا لَبَلَٰغًا لِّقَوْمٍ عَٰبِدِينَ",
+                translit: "Inna fī hādhā labalāghan liqawmin ‛ābidīn.",
+                translation:
+                  "Indeed, in this [Qur’ān] is notification for a worshipping people.",
+                verse: 106,
+                surah: 21,
+              }),
+              new QuranEntryModel({
+                arabic: "وَمَآ أَرْسَلْنَٰكَ إِلَّا رَحْمَةً لِّلْعَٰلَمِينَ",
+                translit: "Wa mā arsalnāka illā raḥmatan lil-‛ālamīn.",
+                translation:
+                  "And We have not sent you, [O Muḥammad], except as a mercy to the worlds.",
+                verse: 107,
+                surah: 21,
+              }),
+              new QuranEntryModel({
+                arabic: "قُلْ إِنَّمَا يُوحَىٰٓ إِلَىَّ أَنَّمَآ إِلَٰهُكُمْ إِلَٰهٌ وَٰحِدٌ ۖ فَهَلْ أَنتُم مُّسْلِمُونَ",
+                translit:
+                  "Qul innamā yūḥā ilayya annamā ilāhukum ilāhun wāḥid, fahal antum muslimūn.",
+                translation:
+                  'Say, "It is only revealed to me that your god is but one God; so will you be Muslims [in submission to Him]?"',
+                verse: 108,
+                surah: 21,
+              }),
+              new QuranEntryModel({
+                arabic:
+                  "فَإِن تَوَلَّوْا۟ فَقُلْ ءَاذَنتُكُمْ عَلَىٰ سَوَآءٍ ۖ وَإِنْ أَدْرِىٓ أَقَرِيبٌ أَم بَعِيدٌ مَّا تُوعَدُونَ",
+                translit:
+                  "Fa in tawallaw faqul ādhantukum ‛alā sawā’, wa in adrī a qarībun am ba‛īdun mā tū‛adūn.",
+                translation:
+                  'But if they turn away, then say, "I have announced to [all of] you equally. And I know not whether near or far is that which you are promised.',
+                verse: 109,
+                surah: 21,
+              }),
+              new QuranEntryModel({
+                arabic: "إِنَّهُۥ يَعْلَمُ ٱلْجَهْرَ مِنَ ٱلْقَوْلِ وَيَعْلَمُ مَا تَكْتُمُونَ",
+                translit:
+                  "Innahū ya‛lamul-jahra minal-qawli wa ya‛lamu mā taktumūn.",
+                translation:
+                  "Indeed, He knows what is declared of speech, and He knows what you conceal.",
+                verse: 110,
+                surah: 21,
+              }),
+              new QuranEntryModel({
+                arabic: "وَإِنْ أَدْرِى لَعَلَّهُۥ فِتْنَةٌ لَّكُمْ وَمَتَٰعٌ إِلَىٰ حِينٍ",
+                translit:
+                  "Wa in adrī la‛allahū fitnatun lakum wa matā‛un ilā ḥīn.",
+                translation:
+                  'And I know not; perhaps it is a trial for you and enjoyment for a time."',
+                verse: 111,
+                surah: 21,
+              }),
+              new QuranEntryModel({
+                arabic: "قَٰلَ رَبِّ ٱحْكُم بِٱلْحَقِّ ۗ وَرَبُّنَا ٱلرَّحْمَٰنُ ٱلْمُسْتَعَانُ عَلَىٰ مَا تَصِفُونَ",
+                translit:
+                  "Qāla rabbiḥ-kum bil-ḥaqq, wa rabbunar-raḥmānul-musta‛ānu ‛alā mā taṣifūn.",
+                translation:
+                  '[The Prophet (ﷺ)] has said, "My Lord, judge [between us] in truth. And our Lord is the Most Merciful, the one whose help is sought against that which you describe."',
+                verse: 112,
                 surah: 21,
               }),
               new QasidaEntryModel({

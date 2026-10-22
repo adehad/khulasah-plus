@@ -1,4 +1,4 @@
-import { hashr_10 } from "@/data/shared/quran-partial";
+import { hashr_10, nisa_69 } from "@/data/shared/quran-partial";
 import {
   DhikrEntryModel,
   DhikrModel,
@@ -1229,13 +1229,11 @@ export default [
               "let us drink at his wellspring and make us among his comrades",
           }),
           new DhikrEntryModel({
-            arabic:
-              "مَعَ المُنْعَمِ عَلَيْهِمْ \n﴿\n\nمِّنَ النَّبِيِّينَ وَالصِّدِّيقِينَ وَالشُّهَدَآءِ وَالصَّٰلِحِينَ ۚ وَحَسُنَ أُوْلَٰٓئِكَ رَفِيقًا\n﴾",
-            translit:
-              "maʿal munʿami ʿalayhim minan nabiyyīna waṣ ṣiddiqīna wash shuhadāʾi waṣ ṣāliḥīna wa ḥasuna ulāʾika rafīqan",
-            translation:
-              "along with those who are blessed among the Prophets, the truthful, the martyrs and the righteous. They are the best companions.",
+            arabic: "مَعَ المُنْعَمِ عَلَيْهِمْ",
+            translit: "maʿal munʿami ʿalayhim",
+            translation: "along with those who are blessed",
           }),
+          nisa_69(),
           new DhikrEntryModel({
             arabic: "وَالحَمْدُ للَّهِ رَبِّ العَالَمِينَ.",
             translit: "wal ḥamduliLlāhi rabbil ʿālamīn.",

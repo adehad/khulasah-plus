@@ -1,4 +1,9 @@
-import { baqarah_201, fath_10, nisa_64 } from "@/data/shared/quran-partial";
+import {
+  baqarah_201,
+  fath_10,
+  imran_193,
+  nisa_64,
+} from "@/data/shared/quran-partial";
 import {
   DhikrEntryModel,
   DhikrModel,
@@ -1292,12 +1297,11 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic: "اللَّهُمَّ اغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سِيِّئَاتِنَا وَتَوَفَّنَا مَعَ الأَبْرَارِ",
-            translit:
-              "Allāhummaghfir lanā dhunūbanā wa kaffir ‛annā sayyi’ātinā wa tawaffanā ma‛al abrār",
-            translation:
-              "O Allah, forgive our sins, wipe out our misdeeds, and allow us to die among the righteous.",
+            arabic: "اللَّهُمَّ اغْفِرْ لَنَا",
+            translit: "Allāhummaghfir lanā",
+            translation: "O Allāh, forgive us",
           }),
+          imran_193(),
           new QuranDhikrEntryModel({
             arabic:
               "رَبَّنَا وَءَاتِنَا مَا وَعَدتَّنَا عَلَىٰ رُسُلِكَ وَلَا تُخْزِنَا يَوْمَ ٱلْقِيَٰمَةِ ۗ إِنَّكَ لَا تُخْلِفُ ٱلْمِيعَادَ",

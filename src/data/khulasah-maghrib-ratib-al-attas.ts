@@ -29,14 +29,56 @@ export default [
             translation: "I seek refuge in Allāh from the accursed Satan.",
           }),
           new QuranDhikrEntryModel({
-            arabic:
-              "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ۝ ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ ۝ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ ۝ مَٰلِكِ يَوْمِ ٱلدِّينِ ۝ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ۝ ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ ۝ صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
-            translit:
-              "Bismillāhir raḥmānir raḥīm. Alḥamdulillāhi rabbil ‛ālamīn. Arraḥmānir raḥīm. Māliki yawmid dīn. Iyyāka na‛budu wa iyyāka nasta‛īn. Ihdinaṣ ṣirāṭal mustaqīm. Ṣirāṭalladhīna an‛amta ‛alayhim, ghayril maghḍūbi ‛alayhim walaḍ ḍāllīn.",
+            arabic: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+            translit: "Bismillāhir raḥmānir raḥīm.",
             translation:
-              "In the name of Allāh, the Entirely Merciful, the Especially Merciful. [All] praise is [due] to Allāh, Lord of the worlds - The Entirely Merciful, the Especially Merciful, Sovereign of the Day of Recompense. It is You we worship and You we ask for help. Guide us to the straight path - The path of those upon whom You have bestowed favor, not of those who have earned [Your] anger or of those who are astray.",
-            surah: 1,
+              "In the name of Allāh, the Entirely Merciful, the Especially Merciful.",
             verse: 1,
+            surah: 1,
+          }),
+          new QuranDhikrEntryModel({
+            arabic: "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
+            translit: "Alḥamdulillāhi rabbil ‛ālamīn.",
+            translation: "[All] praise is [due] to Allāh, Lord of the worlds -",
+            verse: 2,
+            surah: 1,
+          }),
+          new QuranDhikrEntryModel({
+            arabic: "ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+            translit: "Arraḥmānir raḥīm.",
+            translation: "The Entirely Merciful, the Especially Merciful,",
+            verse: 3,
+            surah: 1,
+          }),
+          new QuranDhikrEntryModel({
+            arabic: "مَٰلِكِ يَوْمِ ٱلدِّينِ",
+            translit: "Māliki yawmid dīn.",
+            translation: "Sovereign of the Day of Recompense.",
+            verse: 4,
+            surah: 1,
+          }),
+          new QuranDhikrEntryModel({
+            arabic: "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+            translit: "Iyyāka na‛budu wa iyyāka nasta‛īn.",
+            translation: "It is You we worship and You we ask for help.",
+            verse: 5,
+            surah: 1,
+          }),
+          new QuranDhikrEntryModel({
+            arabic: "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
+            translit: "Ihdinaṣ ṣirāṭal mustaqīm.",
+            translation: "Guide us to the straight path -",
+            verse: 6,
+            surah: 1,
+          }),
+          new QuranDhikrEntryModel({
+            arabic: "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
+            translit:
+              "Ṣirāṭalladhīna an‛amta ‛alayhim, ghayril maghḍūbi ‛alayhim walaḍ ḍāllīn.",
+            translation:
+              "The path of those upon whom You have bestowed favor, not of those who have earned [Your] anger or of those who are astray.",
+            verse: 7,
+            surah: 1,
           }),
           new DhikrEntryModel({
             arabic: "آمِين",
@@ -60,13 +102,43 @@ export default [
         entries: [
           new QuranDhikrEntryModel({
             arabic:
-              "لَوْ أَنزَلْنَا هَٰذَا ٱلْقُرْءَانَ عَلَىٰ جَبَلٍ لَّرَأَيْتَهُۥ خَٰشِعًا مُّتَصَدِّعًا مِّنْ خَشْيَةِ ٱللَّهِ ۚ وَتِلْكَ ٱلْأَمْثَٰلُ نَضْرِبُهَا لِلنَّاسِ لَعَلَّهُمْ يَتَفَكَّرُونَ ۝ هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَٰهَ إِلَّا هُوَ ۖ عَٰلِمُ ٱلْغَيْبِ وَٱلشَّهَٰدَةِ ۖ هُوَ ٱلرَّحْمَٰنُ ٱلرَّحِيمُ ۝ هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَٰمُ ٱلْمُؤْمِنُ ٱلْمُهَيْمِنُ ٱلْعَزِيزُ ٱلْجَبَّارُ ٱلْمُتَكَبِّرُ ۚ سُبْحَٰنَ ٱللَّهِ عَمَّا يُشْرِكُونَ ۝ هُوَ ٱللَّهُ ٱلْخَٰلِقُ ٱلْبَارِئُ ٱلْمُصَوِّرُ ۖ لَهُ ٱلْأَسْمَآءُ ٱلْحُسْنَىٰ ۚ يُسَبِّحُ لَهُۥ مَا فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
+              "لَوْ أَنزَلْنَا هَٰذَا ٱلْقُرْءَانَ عَلَىٰ جَبَلٍ لَّرَأَيْتَهُۥ خَٰشِعًا مُّتَصَدِّعًا مِّنْ خَشْيَةِ ٱللَّهِ ۚ وَتِلْكَ ٱلْأَمْثَٰلُ نَضْرِبُهَا لِلنَّاسِ لَعَلَّهُمْ يَتَفَكَّرُونَ",
             translit:
-              "Law anzalnā hādhal qur’āna ‛alā jabalil lara’aytahū khāshi‛am mutaṣaddi‛am min khashyatillāh, wa tilkal amthālu naḍribuhā linnāsi la‛Allāhum yatafakkarūn. Huwallāhulladhī lā ilāha illā huwa ‛ālimul ghaybi wash- shahādati huwar raḥmānur raḥīm. Huwallāhulladhī lā ilāha illā huwal malikul quddūsus salāmul muʾminul muhayminul ‛azīzul jabbārul mutakabbir, subḥānallāhi ‛ammā yushrikūn. Huwallāhul khāliqul bāri’ul musawwiru lahul asmā’ul ḥusnā, yusabbiḥu lahū mā fissamāwāti wal’arḍi wa huwal ‛azīzul ḥakīm.",
+              "Law anzalnā hādhal qur’āna ‛alā jabalil lara’aytahū khāshi‛am mutaṣaddi‛am min khashyatillāh, wa tilkal amthālu naḍribuhā linnāsi la‛Allāhum yatafakkarūn.",
             translation:
-              "If We had sent down this Qur’ān upon a mountain, you would have seen it humbled and splitting from fear of Allāh. And these examples We present to the people that perhaps they will give thought. He is Allāh, other than whom there is no deity, Knower of the unseen and the witnessed. He is the Entirely Merciful, the Especially Merciful. He is Allāh, other than whom there is no deity, the Sovereign, the Pure, the Perfection, the Grantor of Security, the Overseer, the Exalted in Might, the Compeller, the Superior. Exalted is Allāh above whatever they associate with Him. He is Allāh, the Creator, the Producer, the Fashioner; to Him belong the best names. Whatever is in the heavens and earth is exalting Him. And He is the Exalted in Might, the Wise.",
-            surah: 59,
+              "If We had sent down this Qur’ān upon a mountain, you would have seen it humbled and splitting from fear of Allāh. And these examples We present to the people that perhaps they will give thought.",
             verse: 21,
+            surah: 59,
+          }),
+          new QuranDhikrEntryModel({
+            arabic:
+              "هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَٰهَ إِلَّا هُوَ ۖ عَٰلِمُ ٱلْغَيْبِ وَٱلشَّهَٰدَةِ ۖ هُوَ ٱلرَّحْمَٰنُ ٱلرَّحِيمُ",
+            translit:
+              "Huwallāhulladhī lā ilāha illā huwa ‛ālimul ghaybi wash- shahādati huwar raḥmānur raḥīm.",
+            translation:
+              "He is Allāh, other than whom there is no deity, Knower of the unseen and the witnessed. He is the Entirely Merciful, the Especially Merciful.",
+            verse: 22,
+            surah: 59,
+          }),
+          new QuranDhikrEntryModel({
+            arabic:
+              "هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَٰمُ ٱلْمُؤْمِنُ ٱلْمُهَيْمِنُ ٱلْعَزِيزُ ٱلْجَبَّارُ ٱلْمُتَكَبِّرُ ۚ سُبْحَٰنَ ٱللَّهِ عَمَّا يُشْرِكُونَ",
+            translit:
+              "Huwallāhulladhī lā ilāha illā huwal malikul quddūsus salāmul muʾminul muhayminul ‛azīzul jabbārul mutakabbir, subḥānallāhi ‛ammā yushrikūn.",
+            translation:
+              "He is Allāh, other than whom there is no deity, the Sovereign, the Pure, the Perfection, the Grantor of Security, the Overseer, the Exalted in Might, the Compeller, the Superior. Exalted is Allāh above whatever they associate with Him.",
+            verse: 23,
+            surah: 59,
+          }),
+          new QuranDhikrEntryModel({
+            arabic:
+              "هُوَ ٱللَّهُ ٱلْخَٰلِقُ ٱلْبَارِئُ ٱلْمُصَوِّرُ ۖ لَهُ ٱلْأَسْمَآءُ ٱلْحُسْنَىٰ ۚ يُسَبِّحُ لَهُۥ مَا فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
+            translit:
+              "Huwallāhul khāliqul bāri’ul musawwiru lahul asmā’ul ḥusnā, yusabbiḥu lahū mā fissamāwāti wal’arḍi wa huwal ‛azīzul ḥakīm.",
+            translation:
+              "He is Allāh, the Creator, the Producer, the Fashioner; to Him belong the best names. Whatever is in the heavens and earth is exalting Him. And He is the Exalted in Might, the Wise.",
+            verse: 24,
+            surah: 59,
           }),
         ],
       }),
@@ -301,7 +373,7 @@ export default [
         ],
       }),
       new DhikrModel({
-        entries: [baqarah_285_286()],
+        entries: [...baqarah_285_286()],
       }),
       new DhikrModel({
         entries: [

@@ -1,4 +1,9 @@
-import { a_raf_43, qasas_85, zukhruf_13 } from "@/data/shared/quran-partial";
+import {
+  a_raf_43,
+  nur_61,
+  qasas_85,
+  zukhruf_13,
+} from "@/data/shared/quran-partial";
 import {
   DhikrEntryModel,
   DhikrModel,
@@ -936,12 +941,11 @@ export default [
               "Peace be upon us and upon all Allāh's righteous servants.",
           }),
           new DhikrEntryModel({
-            arabic: "السَّلَامُ عَلَيْنَا مِنْ رَبِّنَا تَحِيَّةً مِنْ عِنْدِ اللَّهِ مُبَارَكَةً طَيِّبَة",
-            translit:
-              "assalāmu ‛alaynā mirrabbinā taḥiyyatam min ‛indillāhi mubārakatan ṭayyibatan.",
-            translation:
-              "Peace be upon us from our Lord, a good and blessed greeting from Allāh.",
+            arabic: "السَّلَامُ عَلَيْنَا مِنْ رَبِّنَا",
+            translit: "assalāmu ‛alaynā mirrabbinā",
+            translation: "Peace be upon us from our Lord,",
           }),
+          nur_61(),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَآلِهِ وَسَلِّم",
             translit:

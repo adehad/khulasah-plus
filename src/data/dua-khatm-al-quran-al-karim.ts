@@ -1,4 +1,4 @@
-import { saffat_180_182 } from "@/data/shared/quran-partial";
+import { baqarah_201, saffat_180_182 } from "@/data/shared/quran-partial";
 import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
@@ -421,13 +421,11 @@ export default [
             translation: "our Lord",
           }),
           new DhikrEntryModel({
-            arabic:
-              "اللَّهُمَّ رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
-            translit:
-              "Allāhumma rabbanā ātinā fid-dunyā ḥasanatan wa fil-ākhirati ḥasanatan wa qinā ‛adhāban-nār",
-            translation:
-              "give us good in this world and in the Hereafter, and protect us from the torment of the Fire.",
+            arabic: "اللَّهُمَّ",
+            translit: "Allāhumma",
+            translation: "O Allāh,",
           }),
+          baqarah_201(),
         ],
       }),
       new DhikrModel({

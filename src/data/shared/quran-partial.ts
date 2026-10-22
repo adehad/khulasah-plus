@@ -9,6 +9,34 @@ import {
   QuranModel,
 } from "@/models/recitation";
 
+/** end of Al-Baqarah 2:127 — used in khulasah-after-every-prayer-adkhar */
+export function baqarah_127(repeat = 1, enableCounter?: boolean) {
+  return new QuranDhikrEntryModel({
+    arabic: "… رَبَّنَا تَقَبَّلْ مِنَّآ إِنَّكَ أَنتَ ٱلسَّمِيعُ ٱلْعَلِيمُ",
+    translit: "… Rabbanā taqabbal minnā innaka antas samī‛ul ‛alīm.",
+    translation:
+      "… Our Lord, accept [this] from us. Indeed, You are the Hearing, the Knowing.",
+    surah: 2,
+    verse: 127,
+    repeat,
+    enableCounter,
+  });
+}
+
+/** end of Al-Baqarah 2:128 — used in khulasah-after-every-prayer-adkhar, khulasah-maghrib-ratib-al-haddad */
+export function baqarah_128(repeat = 1, enableCounter?: boolean) {
+  return new QuranDhikrEntryModel({
+    arabic: "… وَتُبْ عَلَيْنَآ إِنَّكَ أَنتَ ٱلتَّوَّابُ ٱلرَّحِيمُ",
+    translit: "… wa tub ‛alaynā innaka antat tawwābur raḥīm.",
+    translation:
+      "… and accept our repentance. Indeed, You are the Accepting of Repentance, the Merciful.",
+    surah: 2,
+    verse: 128,
+    repeat,
+    enableCounter,
+  });
+}
+
 /** start of Al-Baqarah 2:186 — used in salawat-compilations-majma-al-lataif-6---Wednesday */
 export function baqarah_186(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
@@ -24,7 +52,7 @@ export function baqarah_186(repeat = 1, enableCounter?: boolean) {
   });
 }
 
-/** end of Al-Baqarah 2:201 — used in khulasah-last-part-of-night-adhkar-before-dawn, visiting-the-beloved */
+/** end of Al-Baqarah 2:201 — used in khulasah-last-part-of-night-adhkar-before-dawn, visiting-the-beloved, dua-khatm-al-quran-al-karim */
 export function baqarah_201(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic: "… رَبَّنَآ ءَاتِنَا فِى ٱلدُّنْيَا حَسَنَةً وَفِى ٱلْـَٔاخِرَةِ حَسَنَةً وَقِنَا عَذَابَ ٱلنَّارِ",
@@ -54,20 +82,46 @@ export function baqarah_250(repeat = 1, enableCounter?: boolean) {
   });
 }
 
-/** end of Al-Baqarah 2:285-286 — used in khulasah-maghrib-ratib-al-attas */
-export function baqarah_285_286(repeat = 1, enableCounter?: boolean) {
+/** end of Al-Baqarah 2:256 — used in khulasah-after-fajr-wird-latif */
+export function baqarah_256(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic:
-      "… غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ ٱلْمَصِيرُ ۝ لَا يُكَلِّفُ ٱللَّهُ نَفْسًا إِلَّا وُسْعَهَا ۚ لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا ٱكْتَسَبَتْ ۗ رَبَّنَا لَا تُؤَاخِذْنَآ إِن نَّسِينَآ أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَآ إِصْرًا كَمَا حَمَلْتَهُۥ عَلَى ٱلَّذِينَ مِن قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِۦ ۖ وَٱعْفُ عَنَّا وَٱغْفِرْ لَنَا وَٱرْحَمْنَآ ۚ أَنتَ مَوْلَىٰنَا فَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَٰفِرِينَ",
-    translit:
-      "… Ghufrānaka rabbanā wa ilaykal maṣīr. Lā yukalliful lāhu nafsan illā wus’ahā, lahā mā kasabat wa ‘alaihā maktasabat, rabbanā lā tu-ākhidhnā in nasīnā aw akhṭa’nā, rabbanā walā taḥmil ‘alainā iṣran kamā ḥamaltahū ‘alal ladhīna min qablinā, rabbanā walā tuḥammilnā mā lā ṭāqata lanā bihī, wa’fu ‘annā, waghfir lanā, warḥamnā, anta mawlanā fanṣurnā ‘alal qawmil kāfirīn.",
+    arabic: "… بِٱلْعُرْوَةِ ٱلْوُثْقَىٰ لَا ٱنفِصَامَ لَهَا وَٱللَّهُ سَمِيعٌ عَلِيمٌ",
+    translit: "… bil ‛urwatil wuthqā lanfiṣāma lahā wallāhu samī‛un ‛alīm.",
     translation:
-      "… [We seek] Your forgiveness, our Lord, and to You is the [final] destination. Allāh does not charge a soul except [with that within] its capacity. It will have [the consequence of] what [good] it has gained, and it will bear [the consequence of] what [evil] it has earned. Our Lord, do not impose blame upon us if we have forgotten or erred. Our Lord, and lay not upon us a burden like that which You laid upon those before us. Our Lord, and burden us not with that which we have no ability to bear. And pardon us; and forgive us; and have mercy upon us. You are our protector, so give us victory over the disbelieving people.",
+      "… the most trustworthy handhold with no break in it. And Allāh is Hearing and Knowing.",
     surah: 2,
-    verse: 285,
+    verse: 256,
     repeat,
     enableCounter,
   });
+}
+
+/** end of Al-Baqarah 2:285, then 2:286, one entry per verse — used in khulasah-maghrib-ratib-al-attas */
+export function baqarah_285_286(repeat = 1, enableCounter?: boolean) {
+  return [
+    new QuranDhikrEntryModel({
+      arabic: "… غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ ٱلْمَصِيرُ",
+      translit: "… Ghufrānaka rabbanā wa ilaykal maṣīr.",
+      translation:
+        "… [We seek] Your forgiveness, our Lord, and to You is the [final] destination.",
+      verse: 285,
+      surah: 2,
+      repeat,
+      enableCounter,
+    }),
+    new QuranDhikrEntryModel({
+      arabic:
+        "لَا يُكَلِّفُ ٱللَّهُ نَفْسًا إِلَّا وُسْعَهَا ۚ لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا ٱكْتَسَبَتْ ۗ رَبَّنَا لَا تُؤَاخِذْنَآ إِن نَّسِينَآ أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَآ إِصْرًا كَمَا حَمَلْتَهُۥ عَلَى ٱلَّذِينَ مِن قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِۦ ۖ وَٱعْفُ عَنَّا وَٱغْفِرْ لَنَا وَٱرْحَمْنَآ ۚ أَنتَ مَوْلَىٰنَا فَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَـٰفِرِينَ",
+      translit:
+        "Lā yukallifullāhu nafsan illā wus‛ahā, lahā mā kasabat wa ‛alayhā maktasabat, rabbanā lā tu’ākhidhnā in nasīnā aw akhṭa’nā, rabbanā walā taḥmil ‛alaynā iṣran kamā ḥamaltahū ‛alalladhīna min qablinā, rabbanā walā tuḥammilnā mā lā ṭāqata lanā bihī, wa‛fu ‛annā, waghfir lanā, warḥamnā, anta mawlānā fanṣurnā ‛alal qawmil kāfirīn.",
+      translation:
+        'Allāh does not charge a soul except [with that within] its capacity. It will have [the consequence of] what [good] it has gained, and it will bear [the consequence of] what [evil] it has earned. "Our Lord, do not impose blame upon us if we have forgotten or erred. Our Lord, and lay not upon us a burden like that which You laid upon those before us. Our Lord, and burden us not with that which we have no ability to bear. And pardon us; and forgive us; and have mercy upon us. You are our protector, so give us victory over the disbelieving people."',
+      verse: 286,
+      surah: 2,
+      repeat,
+      enableCounter,
+    }),
+  ];
 }
 
 /** end of Al-Baqarah 2:286 — used in khulasah-last-part-of-night-adhkar-before-dawn */
@@ -129,6 +183,21 @@ export function imran_147(repeat = 1, enableCounter?: boolean) {
   });
 }
 
+/** end of Aal-Imran 3:193 — used in visiting-the-beloved */
+export function imran_193(repeat = 1, enableCounter?: boolean) {
+  return new QuranDhikrEntryModel({
+    arabic: "… ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّـَٔاتِنَا وَتَوَفَّنَا مَعَ ٱلْأَبْرَارِ",
+    translit:
+      "… dhunūbanā wa kaffir ‛annā sayyi’ātinā wa tawaffanā ma‛al abrār.",
+    translation:
+      "… our sins and remove from us our misdeeds and cause us to die among the righteous.",
+    surah: 3,
+    verse: 193,
+    repeat,
+    enableCounter,
+  });
+}
+
 /** end of An-Nisa 4:64 — used in khulasah-last-part-of-night-adhkar-on-waking-up, visiting-the-beloved */
 export function nisa_64(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
@@ -140,6 +209,21 @@ export function nisa_64(repeat = 1, enableCounter?: boolean) {
       "… If they had come to you (O Prophet) and sought forgiveness from Allāh whenever they wronged themselves, and (you) the Messenger had prayed for forgiveness for them, they would have found that Allāh is Oft-Forgiving, Most Merciful.",
     surah: 4,
     verse: 64,
+    repeat,
+    enableCounter,
+  });
+}
+
+/** end of An-Nisa 4:69 — used in dalail-khayrat-4---Thursday */
+export function nisa_69(repeat = 1, enableCounter?: boolean) {
+  return new QuranDhikrEntryModel({
+    arabic: "… مِّنَ ٱلنَّبِيِّـۧنَ وَٱلصِّدِّيقِينَ وَٱلشُّهَدَآءِ وَٱلصَّـٰلِحِينَ وَحَسُنَ أُو۟لَـٰٓئِكَ رَفِيقًا",
+    translit:
+      "… minan nabiyyīna waṣ ṣiddīqīna wash shuhadā’i waṣ ṣāliḥīna wa ḥasuna ulā’ika rafīqā.",
+    translation:
+      "… among the prophets, the steadfast affirmers of truth, the martyrs and the righteous. And excellent are those as companions.",
+    surah: 4,
+    verse: 69,
     repeat,
     enableCounter,
   });
@@ -216,6 +300,47 @@ export function tawbah_129(repeat = 1, enableCounter?: boolean) {
   });
 }
 
+/** end of Hud 11:56 — used in khulasah-after-fajr-wird-of-imam-an-nawawi */
+export function hud_56(repeat = 1, enableCounter?: boolean) {
+  return new QuranDhikrEntryModel({
+    arabic: "… إِنَّ رَبِّى عَلَىٰ صِرَٰطٍ مُّسْتَقِيمٍ",
+    translit: "… inna rabbī ‛alā ṣirāṭim mustaqīm.",
+    translation: "… Indeed, my Lord is on a path [that is] straight.",
+    surah: 11,
+    verse: 56,
+    repeat,
+    enableCounter,
+  });
+}
+
+/** end of Hud 11:73 — used in dalail-khayrat-allahs-most-beautiful-names */
+export function hud_73(repeat = 1, enableCounter?: boolean) {
+  return new QuranDhikrEntryModel({
+    arabic: "… رَحْمَتُ ٱللَّهِ وَبَرَكَـٰتُهُۥ عَلَيْكُمْ أَهْلَ ٱلْبَيْتِ إِنَّهُۥ حَمِيدٌ مَّجِيدٌ",
+    translit:
+      "… Raḥmatullāhi wa barakātuhū ‛alaykum ahlal bayti innahū ḥamīdum majīd.",
+    translation:
+      "… May the mercy of Allāh and His blessings be upon you, people of the house. Indeed, He is Praiseworthy and Honorable.",
+    surah: 11,
+    verse: 73,
+    repeat,
+    enableCounter,
+  });
+}
+
+/** end of Al-Hijr 15:87 — used in dalail-khayrat-7---Sunday */
+export function hijr_87(repeat = 1, enableCounter?: boolean) {
+  return new QuranDhikrEntryModel({
+    arabic: "… سَبْعًا مِّنَ ٱلْمَثَانِى وَٱلْقُرْءَانَ ٱلْعَظِيمَ",
+    translit: "… sab‛an minal mathānī wal qur’ānal ‛aẓīm.",
+    translation: "… seven of the often repeated [verses] and the great Qur’ān.",
+    surah: 15,
+    verse: 87,
+    repeat,
+    enableCounter,
+  });
+}
+
 /** end of Al-Kahf 18:10 — used in salawat-compilations-the-garden-of-love */
 export function kahf_10(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
@@ -231,7 +356,20 @@ export function kahf_10(repeat = 1, enableCounter?: boolean) {
   });
 }
 
-/** end of Al-Anbiya 21:87 — used in blessed-occasions-rajab-istighfar, dalail-khayrat-6---Saturday */
+/** Al-Anbiya 21:20 — used in dalail-khayrat-7---Sunday */
+export function anbiya_20(repeat = 1, enableCounter?: boolean) {
+  return new QuranDhikrEntryModel({
+    arabic: "يُسَبِّحُونَ ٱلَّيْلَ وَٱلنَّهَارَ لَا يَفْتُرُونَ",
+    translit: "Yusabbiḥūnal layla wan nahāra lā yafturūn.",
+    translation: "They exalt [Him] night and day [and] do not slacken.",
+    surah: 21,
+    verse: 20,
+    repeat,
+    enableCounter,
+  });
+}
+
+/** end of Al-Anbiya 21:87 — used in blessed-occasions-rajab-istighfar, dalail-khayrat-6---Saturday, khulasah-last-part-of-night-adhkar-before-dawn */
 export function anbiya_87(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic: "… ٱلظُّلُمَـٰتِ أَن لَّآ إِلَـٰهَ إِلَّآ أَنتَ سُبْحَـٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّـٰلِمِينَ",
@@ -240,6 +378,47 @@ export function anbiya_87(repeat = 1, enableCounter?: boolean) {
       "… there is no deity but You, transcendent are You, truly I am amongst the wrongdoers.",
     surah: 21,
     verse: 87,
+    repeat,
+    enableCounter,
+  });
+}
+
+/** end of Al-Mu'minun 23:97 — used in khulasah-after-fajr-wird-latif */
+export function mu_minun_97(repeat = 1, enableCounter?: boolean) {
+  return new QuranDhikrEntryModel({
+    arabic: "… رَّبِّ أَعُوذُ بِكَ مِنْ هَمَزَٰتِ ٱلشَّيَـٰطِينِ",
+    translit: "… rabbi a‛ūdhu bika min hamazātish shayāṭīn.",
+    translation:
+      "… my Lord, I seek refuge in You from the incitements of the devils.",
+    surah: 23,
+    verse: 97,
+    repeat,
+    enableCounter,
+  });
+}
+
+/** Al-Mu'minun 23:98 — used in khulasah-after-fajr-wird-latif */
+export function mu_minun_98(repeat = 1, enableCounter?: boolean) {
+  return new QuranDhikrEntryModel({
+    arabic: "وَأَعُوذُ بِكَ رَبِّ أَن يَحْضُرُونِ",
+    translit: "Wa a‛ūdhu bika rabbi ay yaḥḍurūn.",
+    translation:
+      "And I seek refuge in You, my Lord, lest they be present with me.",
+    surah: 23,
+    verse: 98,
+    repeat,
+    enableCounter,
+  });
+}
+
+/** middle of An-Nur 24:61 — used in khulasah-various-supplications-duas-for-travel */
+export function nur_61(repeat = 1, enableCounter?: boolean) {
+  return new QuranDhikrEntryModel({
+    arabic: "… تَحِيَّةً مِّنْ عِندِ ٱللَّهِ مُبَـٰرَكَةً طَيِّبَةً …",
+    translit: "… taḥiyyatam min ‛indillāhi mubārakatan ṭayyibatan …",
+    translation: "… a greeting from Allāh, blessed and good …",
+    surah: 24,
+    verse: 61,
     repeat,
     enableCounter,
   });
@@ -254,6 +433,20 @@ export function qasas_85(repeat = 1, enableCounter?: boolean) {
       "Verily, He Who gave you the Qur’ān will bring you back to the Place of Return …",
     surah: 28,
     verse: 85,
+    repeat,
+    enableCounter,
+  });
+}
+
+/** start of Ar-Rum 30:25 — used in dalail-khayrat-allahs-most-beautiful-names */
+export function rum_25(repeat = 1, enableCounter?: boolean) {
+  return new QuranDhikrEntryModel({
+    arabic: "وَمِنْ ءَايَـٰتِهِۦٓ أَن تَقُومَ ٱلسَّمَآءُ وَٱلْأَرْضُ بِأَمْرِهِۦ …",
+    translit: "Wa min āyātihī an taqūmas samā’u wal arḍu bi’amrihī …",
+    translation:
+      "And of His signs is that the heaven and earth stand [i.e., remain] by His command …",
+    surah: 30,
+    verse: 25,
     repeat,
     enableCounter,
   });
@@ -287,6 +480,21 @@ export function ahzab_69(repeat = 1, enableCounter?: boolean) {
   });
 }
 
+/** middle of Az-Zumar 39:46 — used in dalail-khayrat-8---Monday */
+export function zumar_46(repeat = 1, enableCounter?: boolean) {
+  return new QuranDhikrEntryModel({
+    arabic: "… ٱللَّهُمَّ فَاطِرَ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ عَـٰلِمَ ٱلْغَيْبِ وَٱلشَّهَـٰدَةِ …",
+    translit:
+      "… allāhumma fāṭiras samāwāti wal arḍi ‛ālimal ghaybi wash shahādah …",
+    translation:
+      "… O Allāh, Creator of the heavens and the earth, Knower of the unseen and the witnessed …",
+    surah: 39,
+    verse: 46,
+    repeat,
+    enableCounter,
+  });
+}
+
 /** end of Ghafir 40:44 — used in khulasah-after-fajr-wird-of-imam-an-nawawi, prayers-for-palestine */
 export function ghafir_44(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
@@ -296,6 +504,20 @@ export function ghafir_44(repeat = 1, enableCounter?: boolean) {
       "… and I entrust my affair to Allāh. Indeed, Allāh is Seeing of [His] servants.",
     surah: 40,
     verse: 44,
+    repeat,
+    enableCounter,
+  });
+}
+
+/** end of Ash-Shura 42:11 — used in dalail-khayrat-allahs-most-beautiful-names */
+export function shura_11(repeat = 1, enableCounter?: boolean) {
+  return new QuranDhikrEntryModel({
+    arabic: "… لَيْسَ كَمِثْلِهِۦ شَىْءٌ وَهُوَ ٱلسَّمِيعُ ٱلْبَصِيرُ",
+    translit: "… laysa kamithlihī shay’un wa huwas samī‛ul baṣīr.",
+    translation:
+      "… There is nothing like unto Him, and He is the Hearing, the Seeing.",
+    surah: 42,
+    verse: 11,
     repeat,
     enableCounter,
   });
@@ -326,6 +548,33 @@ export function fath_10(repeat = 1, enableCounter?: boolean) {
       "Indeed, those who pledge allegiance to you, [O Beloved], are actually pledging allegiance to Allah. The hand of Allah is over theirs …",
     surah: 48,
     verse: 10,
+    repeat,
+    enableCounter,
+  });
+}
+
+/** middle of Al-Fath 48:29 — used in salawat-compilations-majma-al-lataif-7---Thursday */
+export function fath_29(repeat = 1, enableCounter?: boolean) {
+  return new QuranDhikrEntryModel({
+    arabic: "… سِيمَاهُمْ فِى وُجُوهِهِم مِّنْ أَثَرِ ٱلسُّجُودِ …",
+    translit: "… sīmāhum fī wujūhihim min atharis sujūd …",
+    translation:
+      "… their sign is in their faces from the effect of prostration [i.e., prayer] …",
+    surah: 48,
+    verse: 29,
+    repeat,
+    enableCounter,
+  });
+}
+
+/** end of Qaf 50:35 — used in salawat-compilations-majma-al-lataif-4---Monday */
+export function qaf_35(repeat = 1, enableCounter?: boolean) {
+  return new QuranDhikrEntryModel({
+    arabic: "… وَلَدَيْنَا مَزِيدٌ",
+    translit: "… wa ladaynā mazīd.",
+    translation: "… and with Us is more.",
+    surah: 50,
+    verse: 35,
     repeat,
     enableCounter,
   });
@@ -363,17 +612,84 @@ export function hashr_24(repeat = 1, enableCounter?: boolean) {
   });
 }
 
-/** middle of As-Saff 61:13-14 — used in khulasah-dhuhr-adhkar */
+/** middle of As-Saff 61:13, then 61:14 cut at its end, one entry per verse — used in khulasah-dhuhr-adhkar */
 export function saff_13_14(repeat = 1, enableCounter?: boolean) {
+  return [
+    new QuranDhikrEntryModel({
+      arabic: "… نَصْرٌ مِّنَ ٱللَّهِ وَفَتْحٌ قَرِيبٌ وَبَشِّرِ ٱلْمُؤْمِنِينَ",
+      translit: "… naṣrum minallāhi wa fatḥun qarīb, wa bash-shiril mu'minīn.",
+      translation:
+        "… help from Allāh (against your enemies) and an imminent victory; and give glad tidings (O Prophet) to the believers.",
+      verse: 13,
+      surah: 61,
+      repeat,
+      enableCounter,
+    }),
+    new QuranDhikrEntryModel({
+      arabic:
+        "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ كُونُوٓا۟ أَنصَارَ ٱللَّهِ كَمَا قَالَ عِيسَى ٱبْنُ مَرْيَمَ لِلْحَوَارِيِّـۧنَ مَنْ أَنصَارِىٓ إِلَى ٱللَّهِ قَالَ ٱلْحَوَارِيُّونَ نَحْنُ أَنصَارُ ٱللَّهِ …",
+      translit:
+        "Yā ayyuhalladhīna āmanū kūnū anṣārallāhi kamā qāla ‛īsabnu maryama lil ḥawāriyyīna man anṣārī ilallāh, qālal ḥawāriyyūna naḥnu anṣārullāh …",
+      translation:
+        'O you who believe, be Allāh\'s Helpers as Jesus, son of Mary, said to the desciples: "Who will be my helpers in the cause of Allah? They said: "We are Allāh\'s helpers..." …',
+      verse: 14,
+      surah: 61,
+      repeat,
+      enableCounter,
+    }),
+  ];
+}
+
+/** end of At-Talaq 65:12 — used in khulasah-after-fajr-wird-latif */
+export function talaq_12(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic:
-      "… نَصْرٌ مِّنَ ٱللَّهِ وَفَتْحٌ قَرِيبٌ ۗ وَبَشِّرِ ٱلْمُؤْمِنِينَ ۝ يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ كُونُوٓا۟ أَنصَارَ ٱللَّهِ كَمَا قَالَ عِيسَى ٱبْنُ مَرْيَمَ لِلْحَوَارِيِّـۧنَ مَنْ أَنصَارِىٓ إِلَى ٱللَّهِ ۖ قَالَ ٱلْحَوَارِيُّونَ نَحْنُ أَنصَارُ ٱللَّهِ …",
+    arabic: "… أَنَّ ٱللَّهَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ وَأَنَّ ٱللَّهَ قَدْ أَحَاطَ بِكُلِّ شَىْءٍ عِلْمًۢا",
     translit:
-      "…naṣrum minallāhi wa fatḥun qarīb, wa bash-shiril mu'minīn. Yā ayyuhalladhīna āmanū kūnū anṣārallāhi kamā qāla ‛īsabnu maryama lil ḥawāriyyīna man anṣārī ilallāh, qālal ḥawāriyyūna naḥnu anṣārullāh…",
+      "… annallāha ‛alā kulli shay’in qadīr wa annallāha qad aḥāṭa bikulli shay’in ‛ilmā.",
     translation:
-      '… help from Allāh (against your enemies) and an imminent victory; and give glad tidings (O Prophet) to the believers. O you who believe, be Allāh\'s Helpers as Jesus, son of Mary, said to the desciples: "Who will be my helpers in the cause of Allah? They said: "We are Allāh\'s helpers..." …',
-    surah: 61,
-    verse: 13,
+      "… that Allāh is over all things competent and that Allāh has encompassed all things in knowledge.",
+    surah: 65,
+    verse: 12,
+    repeat,
+    enableCounter,
+  });
+}
+
+/** end of At-Tahrim 66:6 — used in dalail-khayrat-7---Sunday */
+export function tahrim_6(repeat = 1, enableCounter?: boolean) {
+  return new QuranDhikrEntryModel({
+    arabic: "… لَّا يَعْصُونَ ٱللَّهَ مَآ أَمَرَهُمْ وَيَفْعَلُونَ مَا يُؤْمَرُونَ",
+    translit: "… lā ya‛ṣūnallāha mā amarahum wa yaf‛alūna mā yu’marūn.",
+    translation:
+      "… they do not disobey Allāh in what He commands them but do what they are commanded.",
+    surah: 66,
+    verse: 6,
+    repeat,
+    enableCounter,
+  });
+}
+
+/** Al-Ikhlas 112:3 — used in dalail-khayrat-8---Monday */
+export function ikhlas_3(repeat = 1, enableCounter?: boolean) {
+  return new QuranDhikrEntryModel({
+    arabic: "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+    translit: "Lam yalid wa lam yūlad.",
+    translation: "He neither begets nor is born,",
+    surah: 112,
+    verse: 3,
+    repeat,
+    enableCounter,
+  });
+}
+
+/** Al-Ikhlas 112:4 — used in dalail-khayrat-8---Monday */
+export function ikhlas_4(repeat = 1, enableCounter?: boolean) {
+  return new QuranDhikrEntryModel({
+    arabic: "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
+    translit: "Wa lam yakun lahū kufuwan aḥad.",
+    translation: "Nor is there to Him any equivalent.",
+    surah: 112,
+    verse: 4,
     repeat,
     enableCounter,
   });
