@@ -1,4 +1,5 @@
 ---
+import { SURAH_NAMES } from "@/data/shared/surah-names";
 import { type QasidaEntryModel, QuranEntryModel } from "@/models/recitation";
 
 interface Props {
@@ -7,12 +8,20 @@ interface Props {
 
 const { entry } = Astro.props;
 const isQuran = entry instanceof QuranEntryModel;
+const surah = isQuran ? entry.surah : undefined;
 ---
 
 <div class="qasida-entry">
-  <div class:list={["arabic", { quran: isQuran }]} dir="rtl" lang="ar">{entry.arabic}</div>
+  <div class:list={["arabic", { quran: isQuran }]} dir="rtl" lang="ar">
+    {isQuran ? `﴿${entry.arabic} ۝${(entry as QuranEntryModel).verse}﴾` : entry.arabic}
+  </div>
   <div class="translit">{entry.translit}</div>
   <div class="translation">{entry.translation}</div>
+  {surah && (
+    <kp-footnote type="quran">
+      Surah {SURAH_NAMES.get(surah) ?? `Surah ${surah}`} ({surah}):{(entry as QuranEntryModel).verse}
+    </kp-footnote>
+  )}
 </div>
 
 <style>

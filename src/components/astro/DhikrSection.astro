@@ -33,14 +33,19 @@ const makeKey = (suffix?: number) => {
   {model.entries.map((entry, i) => {
     if (entry instanceof QuranDhikrEntryModel) {
       const surahName = SURAH_NAMES.get(entry.surah) ?? `Surah ${entry.surah}`;
+      const showCounter =
+        entry.repeat > DHIKR_COUNTER_THRESHOLD || entry.enableCounter === true;
       return (
         <>
           <QuranEntry
             entry={entry}
             openingBrace={true}
             closingBrace={true}
-            repeatText=""
+            repeatText={entry.repeat > 1 ? ` (x${entry.repeat})` : ""}
           />
+          {showCounter && (
+            <kp-dhikr-counter target={entry.repeat} storagekey={makeKey(i)} />
+          )}
           <kp-footnote type="quran">
             Surah {surahName} ({entry.surah}):{entry.verse}
           </kp-footnote>

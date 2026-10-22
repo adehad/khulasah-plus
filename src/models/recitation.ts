@@ -74,17 +74,27 @@ export class QuranEntryModel implements RecitationEntry {
   translit: string;
   translation: string;
   verse: number;
+  /** Only needed outside a QuranModel (e.g. inside a QasidaVerseModel), where no parent carries the surah */
+  surah?: number;
 
   constructor({
     arabic,
     translit,
     translation,
     verse,
-  }: { arabic: string; translit: string; translation: string; verse: number }) {
+    surah,
+  }: {
+    arabic: string;
+    translit: string;
+    translation: string;
+    verse: number;
+    surah?: number;
+  }) {
     this.arabic = arabic;
     this.translit = translit;
     this.translation = translation;
     this.verse = verse;
+    this.surah = surah;
   }
 }
 
@@ -102,6 +112,8 @@ export class QuranDhikrEntryModel implements RecitationEntry {
   translation: string;
   verse: number;
   surah: number;
+  repeat: number;
+  enableCounter?: boolean;
 
   constructor({
     arabic,
@@ -109,18 +121,24 @@ export class QuranDhikrEntryModel implements RecitationEntry {
     translation,
     verse,
     surah,
+    repeat = 1,
+    enableCounter,
   }: {
     arabic: string;
     translit: string;
     translation: string;
     verse: number;
     surah: number;
+    repeat?: number;
+    enableCounter?: boolean;
   }) {
     this.arabic = arabic;
     this.translit = translit;
     this.translation = translation;
     this.verse = verse;
     this.surah = surah;
+    this.repeat = repeat;
+    this.enableCounter = enableCounter;
   }
 }
 
