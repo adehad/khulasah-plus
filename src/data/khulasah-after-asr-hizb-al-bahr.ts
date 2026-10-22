@@ -384,44 +384,30 @@ const hizbAlBahrContent = [
         ],
       }),
       new QuranModel({
-        title: "Fussilat",
-        surah: 41,
+        title: "Ghafir",
+        surah: 40,
         entries: [
           new QuranEntryModel({
             arabic: "حمٓ",
-            translit: "Ḥā Mīm",
-            translation: "Ha Mim.",
+            translit: "Ḥā Mīm.",
+            translation: "Ḥā, Meem.",
             verse: 1,
           }),
           new QuranEntryModel({
-            arabic: "تَنْزِيلٌ مِنَ الرَّحْمَٰنِ الرَّحِيمِ",
-            translit: "tanzīlun mina-r-raḥmāni-r-raḥīm",
+            arabic: "تَنزِيلُ ٱلۡكِتَٰبِ مِنَ ٱللَّهِ ٱلۡعَزِيزِ ٱلۡعَلِيمِ",
+            translit: "Tanzīlul kitābi minallāhil ‛azīzil ‛alīm.",
             translation:
-              "A revelation from the Most Gracious, the Most Merciful.",
+              "The revelation of the Book [i.e., the Qur’ān] is from Allāh, the Exalted in Might, the Knowing,",
             verse: 2,
           }),
           new QuranEntryModel({
-            arabic: "كِتَابٌ فُصِّلَتْ آيَاتُهُ قُرْآنًا عَرَبِيًّا لِقَوْمٍ يَعْلَمُونَ",
+            arabic:
+              "غَافِرِ ٱلذَّنۢبِ وَقَابِلِ ٱلتَّوۡبِ شَدِيدِ ٱلۡعِقَابِ ذِي ٱلطَّوۡلِۖ لَآ إِلَٰهَ إِلَّا هُوَۖ إِلَيۡهِ ٱلۡمَصِيرُ",
             translit:
-              "kitābun fuṣṣilat āyātuhū qur'ānan ʿarabiyyan li-qawmin yaʿlamūn",
+              "Ghāfiridh dhambi wa qābilit tawbi shadīdil ‛iqābi dhiṭ ṭawl, lā ilāha illā huwa ilayhil maṣīr.",
             translation:
-              "A Book whose verses have been detailed, an Arabic Qur'an for a people who know.",
+              "The forgiver of sin, acceptor of repentance, severe in punishment, owner of abundance. There is no deity except Him; to Him is the destination.",
             verse: 3,
-          }),
-          new QuranEntryModel({
-            arabic: "بَشِيرًا وَنَذِيرًا فَأَعْرَضَ أَكْثَرُهُمْ فَهُمْ لَا يَسْمَعُونَ",
-            translit:
-              "bashīran wa nadhīran fa-aʿraḍa aktharuhum fahum lā yasmaʿūn",
-            translation:
-              "As a giver of good tidings and a warner; but most of them turn away, so they do not hear.",
-            verse: 4,
-          }),
-          new QuranEntryModel({
-            arabic: "وَقَالُوا قُلُوبُنَا فِي أَكِنَّةٍ مِمَّا تَدْعُونَا إِلَيْهِ",
-            translit: "wa qālū qulūbunā fī akinnatin mimmā tadʿūnā ilayh",
-            translation:
-              "Our hearts are within coverings from that to which you invite us.",
-            verse: 5,
           }),
         ],
       }),
