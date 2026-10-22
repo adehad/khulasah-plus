@@ -103,23 +103,24 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا لَطِيفًا لَمْ يَزَلْ",
-                translit: "",
-                translation: "",
+                translit: "Yā laṭīfan lam yazal",
+                translation: "O Subtle One, who has never ceased to be,",
               }),
               new QasidaEntryModel({
                 arabic: "اُلْطُفْ بِنَا فِيمَا نَزَلْ",
-                translit: "",
-                translation: "",
+                translit: "Ulṭuf binā fīmā nazal",
+                translation: "be gentle with us in what has befallen us,",
               }),
               new QasidaEntryModel({
                 arabic: "إِنَّكْ لَطِيفٌ لَمْ تَزَلْ",
-                translit: "",
-                translation: "",
+                translit: "Innak laṭīfun lam tazal",
+                translation:
+                  "for You are the Subtle One, who has never ceased to be;",
               }),
               new QasidaEntryModel({
                 arabic: "اُلْطُفْ بِنَا وَالْمُسْلِمِين",
-                translit: "",
-                translation: "",
+                translit: "Ulṭuf binā walmuslimīn",
+                translation: "be gentle with us and with the Muslims.",
               }),
             ],
           }),
@@ -128,23 +129,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "بِسْمِ إِلَهٍ قَادِرِ",
-                translit: "",
-                translation: "",
+                translit: "Bismi ilāhin qādir",
+                translation: "In the name of a God who is All-Powerful,",
               }),
               new QasidaEntryModel({
                 arabic: "مُقْتَدِرٍ وَقَاهِرِ",
-                translit: "",
-                translation: "",
+                translit: "Muqtadirin waqāhir",
+                translation: "Almighty and Overpowering,",
               }),
               new QasidaEntryModel({
                 arabic: "لِكُلِّ غَاوٍ غَادِرِ",
-                translit: "",
-                translation: "",
+                translit: "Likulli ghāwin ghādir",
+                translation: "against every misguided, treacherous one,",
               }),
               new QasidaEntryModel({
                 arabic: "مِنَ الْعُتَاةِ الظَّالِمِين",
-                translit: "",
-                translation: "",
+                translit: "Minal ‛utātiẓ ẓālimīn",
+                translation: "from among the tyrants and wrongdoers,",
               }),
             ],
           }),
@@ -153,23 +154,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وكُلِّ بَاغٍ مَارِدِ",
-                translit: "",
-                translation: "",
+                translit: "Wakulli bāghin mārid",
+                translation: "and every rebellious, defiant aggressor,",
               }),
               new QasidaEntryModel({
                 arabic: "وَفَاجِرٍ مُعَانِدِ",
-                translit: "",
-                translation: "",
+                translit: "Wafājirin mu‛ānid",
+                translation: "and every wicked, obstinate one,",
               }),
               new QasidaEntryModel({
                 arabic: "وَكُلِّ طَاغٍ حَاسِدِ",
-                translit: "",
-                translation: "",
+                translit: "Wakulli ṭāghin ḥāsid",
+                translation: "and every tyrant, every envier,",
               }),
               new QasidaEntryModel({
                 arabic: "مِنَ الْبُغَاةِ الْمُفْسِدِين",
-                translit: "",
-                translation: "",
+                translit: "Minal bughātil mufsidīn",
+                translation: "from among the transgressors and the corrupters.",
               }),
             ],
           }),
@@ -178,23 +179,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "بِهِ بِهِ نَسْتَنْصِرُ",
-                translit: "",
-                translation: "",
+                translit: "Bihi bihi nastanṣir",
+                translation: "By Him, by Him we seek victory,",
               }),
               new QasidaEntryModel({
                 arabic: "بِهِ بِهِ نَقْتَدِرُ",
-                translit: "",
-                translation: "",
+                translit: "Bihi bihi naqtadir",
+                translation: "by Him, by Him we gain strength,",
               }),
               new QasidaEntryModel({
                 arabic: "بِسَيْفِ بَطْشِهْ نَقْهَرُ",
-                translit: "",
-                translation: "",
+                translit: "Bisayfi baṭshih naqhar",
+                translation: "with the sword of His might we overcome",
               }),
               new QasidaEntryModel({
                 arabic: "أَعْدَاءَنَا الْمُعَانِدِين",
-                translit: "",
-                translation: "",
+                translit: "A‛dā’anal mu‛ānidīn",
+                translation: "our enemies, the obstinate ones.",
               }),
             ],
           }),
@@ -203,23 +204,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَالْحَمْدُ دَأبًا سَرْمَدَا",
-                translit: "",
-                translation: "",
+                translit: "Walḥamdu da’ban sarmadā",
+                translation: "Praise is due always and everlastingly,",
               }),
               new QasidaEntryModel({
                 arabic: "وَدَائِمًا مُؤَبَّدَا",
-                translit: "",
-                translation: "",
+                translit: "Wadā’iman mu’abbadā",
+                translation: "perpetually and eternally,",
               }),
               new QasidaEntryModel({
                 arabic: "وَلَيْسَ يُحْصَى عَدَدَا",
-                translit: "",
-                translation: "",
+                translit: "Walaysa yuḥṣā ‛adadā",
+                translation: "beyond any counting in number,",
               }),
               new QasidaEntryModel({
                 arabic: "لِلَّهِ رَبِّ الْعَالَمِين",
-                translit: "",
-                translation: "",
+                translit: "Lillāhi rabbil ‛ālamīn",
+                translation: "to Allah, Lord of the worlds.",
               }),
             ],
           }),
@@ -228,23 +229,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "سُبْحَانَ مَنْ عَزَّ وَجَلّ",
-                translit: "",
-                translation: "",
+                translit: "Subḥāna man ‛azza wajall",
+                translation: "Glory be to Him who is Mighty and Majestic,",
               }),
               new QasidaEntryModel({
                 arabic: "بَرَى الْأَمَانَ وَالْوَجَلْ",
-                translit: "",
-                translation: "",
+                translit: "Barāl amāna walwajal",
+                translation: "who created security and fear,",
               }),
               new QasidaEntryModel({
                 arabic: "قَضَى لِكُلٍّ بِالْأَجَلْ",
-                translit: "",
-                translation: "",
+                translit: "Qaḍā likullin bil’ajal",
+                translation: "who decreed for each one an appointed term,",
               }),
               new QasidaEntryModel({
                 arabic: "مِنْ سَائِرِ الْخَلْق اجْمَعِين",
-                translit: "",
-                translation: "",
+                translit: "Min sā’iril khalq ajma‛īn",
+                translation: "among all of creation, altogether.",
               }),
             ],
           }),
@@ -253,23 +254,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "نَسْأَلُك رَفْعَ الْأَذَى",
-                translit: "",
-                translation: "",
+                translit: "Nas’aluk raf‛al adhā",
+                translation: "We ask You to remove harm,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالْبَلَايَا وَالْوَبَا",
-                translit: "",
-                translation: "",
+                translit: "Walbalāyā walwabā",
+                translation: "and afflictions, and plague,",
               }),
               new QasidaEntryModel({
                 arabic: "وَشَرِّ كُلِّ مُبْتَلَى",
-                translit: "",
-                translation: "",
+                translit: "Washarri kulli mubtalā",
+                translation: "and the evil of every afflicted one,",
               }),
               new QasidaEntryModel({
                 arabic: "وَكَيْدِ كُلِّ الظَّالِمِين",
-                translit: "",
-                translation: "",
+                translit: "Wakaydi kulliẓ ẓālimīn",
+                translation: "and the scheming of all the wrongdoers,",
               }),
             ],
           }),
@@ -278,23 +279,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "بِسِرِّ طَهَ الْمُجْتَبَى",
-                translit: "",
-                translation: "",
+                translit: "Bisirri Ṭāhal Mujtabā",
+                translation: "by the secret of Ṭāhā, the Chosen One,",
               }),
               new QasidaEntryModel({
                 arabic: "عَلَا عَلَى السَّبْعِ الْعُلَى",
-                translit: "",
-                translation: "",
+                translit: "‛Alā ‛alas sab‛il ‛ulā",
+                translation: "who rose above the seven lofty heavens,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالْآلِ أَرْبَابِ الْعَبَا",
-                translit: "",
-                translation: "",
+                translit: "Wal’āli arbābil ‛abā",
+                translation: "and by his family, the people of the cloak,",
               }),
               new QasidaEntryModel({
                 arabic: "وَصَحْبِهِ الْمُجَاهِدِين",
-                translit: "",
-                translation: "",
+                translit: "Waṣaḥbihil mujāhidīn",
+                translation: "and his Companions, who strove,",
               }),
             ],
           }),
@@ -303,23 +304,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَالتَّابِعِينَ الْأَصْفِيَاء",
-                translit: "",
-                translation: "",
+                translit: "Wattābi‛īnal aṣfiyā’",
+                translation: "and the Followers, the pure chosen ones,",
               }),
               new QasidaEntryModel({
                 arabic: "الْعَابِدِينَ الْأَوْلِيَاء",
-                translit: "",
-                translation: "",
+                translit: "Al-‛ābidīnal awliyā’",
+                translation: "the worshippers, the friends of Allah,",
               }),
               new QasidaEntryModel({
                 arabic: "الزَّاهِدِينَ الْأَتْقِيَاء",
-                translit: "",
-                translation: "",
+                translit: "Az-zāhidīnal atqiyā’",
+                translation: "the ascetics, the God-fearing,",
               }),
               new QasidaEntryModel({
                 arabic: "الْمُصْلِحِينَ الْمُحْسِنِين",
-                translit: "",
-                translation: "",
+                translit: "Al-muṣliḥīnal muḥsinīn",
+                translation: "the reformers, the doers of good,",
               }),
             ],
           }),
@@ -328,23 +329,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "مِنْ مَاضِيٍ وَغَابِرِ",
-                translit: "",
-                translation: "",
+                translit: "Min māḍin wa ghābir",
+                translation: "from those past and those long gone,",
               }),
               new QasidaEntryModel({
                 arabic: "كَالشَّيْخِ عَبْدِ الْقَادِرِ",
-                translit: "",
-                translation: "",
+                translit: "Kashshaykhi ‛Abdil Qādir",
+                translation: "such as the Shaykh ‛Abd al-Qādir,",
               }),
               new QasidaEntryModel({
                 arabic: "مَنْ خُصَّ بِالسَّرَائِرِ",
-                translit: "",
-                translation: "",
+                translit: "Man khuṣṣa bissarā’ir",
+                translation: "who was singled out with inner secrets",
               }),
               new QasidaEntryModel({
                 arabic: "بَيْنَ الْعِبَادِ الصَّالِحِين",
-                translit: "",
-                translation: "",
+                translit: "Baynal ‛ibādiṣ ṣāliḥīn",
+                translation: "among the righteous servants.",
               }),
             ],
           }),
@@ -353,23 +354,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "ثُمَّ الْفَقِيه جَدُّنَا",
-                translit: "",
-                translation: "",
+                translit: "Thummal faqīh jaddunā",
+                translation: "Then al-Faqīh, our grandfather,",
               }),
               new QasidaEntryModel({
                 arabic: "وَبِبَنِيهِ ذُخْرُنَا",
-                translit: "",
-                translation: "",
+                translit: "Wabibanīhi dhukhrunā",
+                translation: "and by his sons, our treasure,",
               }),
               new QasidaEntryModel({
                 arabic: "عَلوِيُّنَا عَلِيُّنَا",
-                translit: "",
-                translation: "",
+                translit: "‛Alawiyyunā ‛aliyyunā",
+                translation: "our ‛Alawī and our ‛Alī,",
               }),
               new QasidaEntryModel({
                 arabic: "والْقُطْب سَقَّاف مَكِين",
-                translit: "",
-                translation: "",
+                translit: "Walquṭb Saqqāf makīn",
+                translation: "and the Pole, Saqqāf, firmly established,",
               }),
             ],
           }),
@@ -378,23 +379,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَبِابْنِهِ الْمِحْضَارِ",
-                translit: "",
-                translation: "",
+                translit: "Wabibnihil Miḥḍār",
+                translation: "and by his son al-Miḥḍār,",
               }),
               new QasidaEntryModel({
                 arabic: "النَّدْبِ ذِي الأَسْرَارِ",
-                translit: "",
-                translation: "",
+                translit: "An-nadbi dhil asrār",
+                translation: "the noble one, master of secrets,",
               }),
               new QasidaEntryModel({
                 arabic: "حَامِي الْحِمَى وَالْجَارِ",
-                translit: "",
-                translation: "",
+                translit: "Ḥāmil ḥimā waljār",
+                translation: "protector of the sanctuary and of the neighbour,",
               }),
               new QasidaEntryModel({
                 arabic: "الغَوْثِ حَتْفِ الظَّالِمِين",
-                translit: "",
-                translation: "",
+                translit: "Al-ghawthi ḥatfiẓ ẓālimīn",
+                translation: "the Ghawth, the death of the wrongdoers,",
               }),
             ],
           }),
@@ -403,23 +404,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "والْعَيْدَرُوس فَخْرُنَا",
-                translit: "",
-                translation: "",
+                translit: "Wal‛Aydarūs fakhrunā",
+                translation: "and al-‛Aydarūs, our pride,",
               }),
               new QasidaEntryModel({
                 arabic: "وَشَيْخُنَا حَدَّادُنَا",
-                translit: "",
-                translation: "",
+                translit: "Washaykhunā ḥaddādunā",
+                translation: "and our shaykh, our Ḥaddād,",
               }),
               new QasidaEntryModel({
                 arabic: "هُو غَوْثُنَا، هُو كَنْزُنَا",
-                translit: "",
-                translation: "",
+                translit: "Hū ghawthunā, hū kanzunā",
+                translation: "he is our helper, he is our treasure,",
               }),
               new QasidaEntryModel({
                 arabic: "وَهُوَ مَلَاذُ اللَّائِذِين",
-                translit: "",
-                translation: "",
+                translit: "Wahuwa malādhul lā’idhīn",
+                translation: "and he is the refuge of those who seek refuge.",
               }),
             ],
           }),
@@ -428,23 +429,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَالشَّيْخ أَبُو بَكْر الْهُمَام",
-                translit: "",
-                translation: "",
+                translit: "Washshaykh Abū Bakril Humām",
+                translation: "And the Shaykh Abū Bakr, the high-minded,",
               }),
               new QasidaEntryModel({
                 arabic: "بِنْ سَالِم الْعَضْبُ الْحُسَام",
-                translit: "",
-                translation: "",
+                translit: "Bin Sālimil ‛aḍbul ḥusām",
+                translation: "Bin Sālim, the keen-edged sword,",
               }),
               new QasidaEntryModel({
                 arabic: "وَبِبَنِيهِ غَوْثِ الْأَنَام",
-                translit: "",
-                translation: "",
+                translit: "Wabibanīhi ghawthil anām",
+                translation: "and by his sons, helper of mankind,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالْعَدَنِي حَبْرٌ أَمِين",
-                translit: "",
-                translation: "",
+                translit: "Wal‛Adanī ḥabrun amīn",
+                translation: "and al-‛Adanī, a trustworthy scholar,",
               }),
             ],
           }),
@@ -453,23 +454,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَبِابْنِ زَيْنٍ أَحْمَدِ",
-                translit: "",
-                translation: "",
+                translit: "Wabibni Zaynin Aḥmad",
+                translation: "and by the son of Zayn, Aḥmad,",
               }),
               new QasidaEntryModel({
                 arabic: "هُو نُورُ كُلِّ مُهْتَدِي",
-                translit: "",
-                translation: "",
+                translit: "Hū nūru kulli muhtadī",
+                translation: "he is the light of every guided one,",
               }),
               new QasidaEntryModel({
                 arabic: "وَجَعْفَرٍ ذِي الرَّشادِ",
-                translit: "",
-                translation: "",
+                translit: "Waja‛farin dhir rashād",
+                translation: "and Ja‛far, possessor of right guidance,",
               }),
               new QasidaEntryModel({
                 arabic: "سُلْطَان كُلِّ الْعَارِفِين",
-                translit: "",
-                translation: "",
+                translit: "Sulṭān kullil ‛ārifīn",
+                translation: "sultan of all the knowers of Allah,",
               }),
             ],
           }),
@@ -478,23 +479,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "بِذِي الْيَقِينِ الْعَطَّاس",
-                translit: "",
-                translation: "",
+                translit: "Bidhil yaqīnil ‛Aṭṭās",
+                translation: "by the man of certainty, al-‛Aṭṭās,",
               }),
               new QasidaEntryModel({
                 arabic: "أَبِي الْحُسَينِ النِّبْرَاس",
-                translit: "",
-                translation: "",
+                translit: "Abil Ḥusaynin Nibrās",
+                translation: "Abū al-Ḥusayn, the lantern,",
               }),
               new QasidaEntryModel({
                 arabic: "وَبِالْخَلِيفَة بَارَاس",
-                translit: "",
-                translation: "",
+                translit: "Wabilkhalīfat Bārās",
+                translation: "and by the successor, Bārās,",
               }),
               new QasidaEntryModel({
                 arabic: "وأهْل (دَوعَن) أجْمَعِين",
-                translit: "",
-                translation: "",
+                translit: "Wa’ahli (Daw‛an) ajma‛īn",
+                translation: "and all the people of Daw‛an.",
               }),
             ],
           }),
@@ -503,23 +504,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَبِالشُّجَاعِ عُمْدَتِي",
-                translit: "",
-                translation: "",
+                translit: "Wabishshujā‛i ‛umdatī",
+                translation: "And by the Brave One, my mainstay,",
               }),
               new QasidaEntryModel({
                 arabic: "غَوْثِي غِيَاثِي عُدَّتِي",
-                translit: "",
-                translation: "",
+                translit: "Ghawthī ghiyāthī ‛uddatī",
+                translation: "my helper, my relief, my provision,",
               }),
               new QasidaEntryModel({
                 arabic: "وَمُنْقِذِي مِنْ شِدَّتِي",
-                translit: "",
-                translation: "",
+                translit: "Wamunqidhī min shiddatī",
+                translation: "and my rescuer from my hardship,",
               }),
               new QasidaEntryModel({
                 arabic: "الْبَار كَهْفُ الْقَاصِدِين",
-                translit: "",
-                translation: "",
+                translit: "Al-Bār kahful qāṣidīn",
+                translation: "al-Bār, the shelter of those who seek him.",
               }),
             ],
           }),
@@ -528,23 +529,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَبِالْوَجِيهِ وَالْجَمَال",
-                translit: "",
-                translation: "",
+                translit: "Wabilwajīhi waljamāl",
+                translation: "And by al-Wajīh and al-Jamāl,",
               }),
               new QasidaEntryModel({
                 arabic: "وَبِالصَّفِيِّ وَالْكَمَال",
-                translit: "",
-                translation: "",
+                translit: "Wabiṣṣafiyyi walkamāl",
+                translation: "and by aṣ-Ṣafī and al-Kamāl,",
               }),
               new QasidaEntryModel({
                 arabic: "وَمَنْ لَهُمْ بِهِ اتِّصَال",
-                translit: "",
-                translation: "",
+                translit: "Waman lahum bihittiṣāl",
+                translation: "and those of them who are connected with him,",
               }),
               new QasidaEntryModel({
                 arabic: "مِنْ أَهْلِ حَضْرَتِه اجْمَعِين",
-                translit: "",
-                translation: "",
+                translit: "Min ahli ḥaḍratih ajma‛īn",
+                translation: "from all the people of his presence.",
               }),
             ],
           }),
@@ -553,23 +554,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "بِشَيْخِنَا الْحُلَاحِلِ",
-                translit: "",
-                translation: "",
+                translit: "Bishaykhinal ḥulāḥil",
+                translation: "By our Shaykh, the noble chieftain,",
               }),
               new QasidaEntryModel({
                 arabic: "مَنْ حَلَّ فِي (جَلَاجِلِ)",
-                translit: "",
-                translation: "",
+                translit: "Man ḥalla fī (Jalājil)",
+                translation: "who settled in Jalājil,",
               }),
               new QasidaEntryModel({
                 arabic: "عُمَر غِيَاثِ الْآمِلِ",
-                translit: "",
-                translation: "",
+                translit: "‛Umar ghiyāthil āmil",
+                translation: "‛Umar, the succour of the hopeful,",
               }),
               new QasidaEntryModel({
                 arabic: "الْبَار قُطْبُ الْكَامِلِين",
-                translit: "",
-                translation: "",
+                translit: "Al-Bār quṭbul kāmilīn",
+                translation: "al-Bār, pole of the perfected,",
               }),
             ],
           }),
@@ -578,23 +579,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "والْعَيْدَرُوسِ الذَّاكِرِ",
-                translit: "",
-                translation: "",
+                translit: "Wal‛Aydarūsidh dhākir",
+                translation: "and al-‛Aydarūs, the one who remembers,",
               }),
               new QasidaEntryModel({
                 arabic: "فِي كُلِّ حَالٍ شَاكِرِ",
-                translit: "",
-                translation: "",
+                translit: "Fī kulli ḥālin shākir",
+                translation: "grateful in every state,",
               }),
               new QasidaEntryModel({
                 arabic: "وَمُسْتَقِيمٍ صَابِرِ",
-                translit: "",
-                translation: "",
+                translit: "Wamustaqīmin ṣābir",
+                translation: "upright and patient,",
               }),
               new QasidaEntryModel({
                 arabic: "حَاوِي خِصَالِ الْمُهْتَدِين",
-                translit: "",
-                translation: "",
+                translit: "Ḥāwī khiṣālil muhtadīn",
+                translation: "who gathers the qualities of the guided.",
               }),
             ],
           }),
@@ -603,23 +604,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَابْنِ سُمَيْطِ الْمُشْتَهَرْ",
-                translit: "",
-                translation: "",
+                translit: "Wabni Sumayṭil mushtahar",
+                translation: "And the son of Sumayṭ, the renowned,",
               }),
               new QasidaEntryModel({
                 arabic: "الْقُطْب سَيِّدنَا عُمَرْ",
-                translit: "",
-                translation: "",
+                translit: "Al-Quṭb sayyidnā ‛Umar",
+                translation: "the Pole, our master ‛Umar,",
               }),
               new QasidaEntryModel({
                 arabic: "ثُمَّ الصَّفِي بَحْرِ الدُّرَرْ",
-                translit: "",
-                translation: "",
+                translit: "Thummaṣ Ṣafī baḥrid durar",
+                translation: "then aṣ-Ṣafī, ocean of pearls,",
               }),
               new QasidaEntryModel({
                 arabic: "قُطْبِ الدُّعَاةِ النَّاصِحِين",
-                translit: "",
-                translation: "",
+                translit: "Quṭbid du‛ātin nāṣiḥīn",
+                translation: "pole of the callers, the sincere advisers,",
               }),
             ],
           }),
@@ -628,23 +629,24 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "بِسِرِّ حَامِدْ بِنْ عُمَرْ",
-                translit: "",
-                translation: "",
+                translit: "Bisirri Ḥāmid bin ‛Umar",
+                translation: "by the secret of Ḥāmid bin ‛Umar,",
               }),
               new QasidaEntryModel({
                 arabic: "وَابْنِ الْحَسَنْ ذَاكَ الْأَبَرّ",
-                translit: "",
-                translation: "",
+                translit: "Wabnil Ḥasan dhākal abarr",
+                translation:
+                  "and the son of al-Ḥasan, that most righteous one,",
               }),
               new QasidaEntryModel({
                 arabic: "وَمَنْ إِذَا يُدْعَى حَضَرْ",
-                translit: "",
-                translation: "",
+                translit: "Waman idhā yud‛ā ḥaḍar",
+                translation: "and he who, when called, is present,",
               }),
               new QasidaEntryModel({
                 arabic: "لِمَنْ يُنَادِيه يُعِين",
-                translit: "",
-                translation: "",
+                translit: "Liman yunādīh yu‛īn",
+                translation: "and helps whoever calls upon him.",
               }),
             ],
           }),
@@ -653,23 +655,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَبِالْوَلِي بَاجَلْحَبَان",
-                translit: "",
-                translation: "",
+                translit: "Wabilwalī Bājalḥabān",
+                translation: "And by the friend of Allah, Bājalḥabān,",
               }),
               new QasidaEntryModel({
                 arabic: "نُورُهْ لِأَهْلِ اللَّه بَانْ",
-                translit: "",
-                translation: "",
+                translit: "Nūruh li’ahlillāh bān",
+                translation: "whose light is clear to the people of Allah,",
               }),
               new QasidaEntryModel({
                 arabic: "أَصْلِحْ بِجَاهِهْ كُلَّ شَان",
-                translit: "",
-                translation: "",
+                translit: "Aṣliḥ bijāhih kulla shān",
+                translation: "set right, by his standing, every affair,",
               }),
               new QasidaEntryModel({
                 arabic: "وَهَبْ لَنَا حُسْنَ الْيَقِين",
-                translit: "",
-                translation: "",
+                translit: "Wahab lanā ḥusnal yaqīn",
+                translation: "and grant us excellence of certainty.",
               }),
             ],
           }),
@@ -678,23 +680,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "بِمَنْ بِهَذَا الْعَرْضِ حَلْ",
-                translit: "",
-                translation: "",
+                translit: "Biman bihādhal ‛arḍi ḥal",
+                translation: "By him who settled in this place,",
               }),
               new QasidaEntryModel({
                 arabic: "الشَّيْخِ سَيِّدِنَا الْأَجَلْ",
-                translit: "",
-                translation: "",
+                translit: "Ash-shaykhi sayyidinal ajal",
+                translation: "the Shaykh, our master, the most venerable,",
               }),
               new QasidaEntryModel({
                 arabic: "يَسِّرْ لَنَا كُلَّ الْأَمَلْ",
-                translit: "",
-                translation: "",
+                translit: "Yassir lanā kullal amal",
+                translation: "make easy for us all that we hope for,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالْطُفْ بِنَا وَالْمُسْلِمِين",
-                translit: "",
-                translation: "",
+                translit: "Walṭuf binā walmuslimīn",
+                translation: "and be gentle with us and with the Muslims.",
               }),
             ],
           }),
@@ -703,23 +705,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "بِسِرِّ شَيْخِ الْجُفْرِي",
-                translit: "",
-                translation: "",
+                translit: "Bisirri shaykhil Jufrī",
+                translation: "By the secret of the Shaykh al-Jufrī,",
               }),
               new QasidaEntryModel({
                 arabic: "عَجِّلْ لَنَا بِالْيُسْرِ",
-                translit: "",
-                translation: "",
+                translit: "‛Ajjil lanā bilyusr",
+                translation: "hasten for us ease,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالْفَتْحِ ثُمَّ النَّصْرِ",
-                translit: "",
-                translation: "",
+                translit: "Walfatḥi thummannaṣr",
+                translation: "and success, then victory,",
               }),
               new QasidaEntryModel({
                 arabic: "آمِين رَبَّ الْعَالَمِين",
-                translit: "",
-                translation: "",
+                translit: "Āmīn rabbal ‛ālamīn",
+                translation: "Āmīn, Lord of the worlds.",
               }),
             ],
           }),
@@ -728,23 +730,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَعِتْرَةِ الْبَارِ الْكِرَام",
-                translit: "",
-                translation: "",
+                translit: "Wa‛itratil Bāril kirām",
+                translation: "And the family of al-Bār, the noble,",
               }),
               new QasidaEntryModel({
                 arabic: "وَخُصَّ سَيَّدَنا الْإِمَام",
-                translit: "",
-                translation: "",
+                translit: "Wakhuṣṣa sayyidanal imām",
+                translation: "and favour especially our master the Imām,",
               }),
               new QasidaEntryModel({
                 arabic: "عَبْدَ اللَّهِ الْعَالِي الْمَقَام",
-                translit: "",
-                translation: "",
+                translit: "‛Abdallāhil ‛ālil maqām",
+                translation: "‛Abdullāh, of lofty station,",
               }),
               new QasidaEntryModel({
                 arabic: "واأهلِ الْمُخَرَّج أَجْمَعِين",
-                translit: "",
-                translation: "",
+                translit: "Wa’ahlil Mukharraj ajma‛īn",
+                translation: "and all the people of al-Mukharraj,",
               }),
             ],
           }),
@@ -753,23 +755,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَكُلِّ مَنْ فِي قُطْرِنَا",
-                translit: "",
-                translation: "",
+                translit: "Wakulli man fī quṭrinā",
+                translation: "and everyone in our land,",
               }),
               new QasidaEntryModel({
                 arabic: "مِنْ كُلِّ بَرٍّ مُحْسِنَا",
-                translit: "",
-                translation: "",
+                translit: "Min kulli barrin muḥsinā",
+                translation: "from every righteous doer of good,",
               }),
               new QasidaEntryModel({
                 arabic: "وَسَائِر اَسْلَافٍ لَنَا",
-                translit: "",
-                translation: "",
+                translit: "Wasā’ir aslāfin lanā",
+                translation: "and all our forebears,",
               }),
               new QasidaEntryModel({
                 arabic: "نَسْلِ الْحَسَنْ مَعَ الْحُسَيْن",
-                translit: "",
-                translation: "",
+                translit: "Naslil Ḥasan ma‛al Ḥusayn",
+                translation: "the descendants of al-Ḥasan and al-Ḥusayn,",
               }),
             ],
           }),
@@ -778,23 +780,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَبِالْعَمُودِيِّ الْإِمَام",
-                translit: "",
-                translation: "",
+                translit: "Wabil‛amūdiyyil imām",
+                translation: "and by al-‛Amūdī, the Imām,",
               }),
               new QasidaEntryModel({
                 arabic: "وَاولَادِهِ الْغُرِّ الْكِرَام",
-                translit: "",
-                translation: "",
+                translit: "Wawlādihil ghurril kirām",
+                translation: "and his children, the illustrious and noble,",
               }),
               new QasidaEntryModel({
                 arabic: "مِمَّنْ حَوَى ذَاكَ الْمَقَام",
-                translit: "",
-                translation: "",
+                translit: "Mimman ḥawā dhākal maqām",
+                translation: "of those who attained that station,",
               }),
               new QasidaEntryModel({
                 arabic: "مِنْ كُلِّ قَيْدُومٍ مَكِين",
-                translit: "",
-                translation: "",
+                translit: "Min kulli qaydūmin makīn",
+                translation: "every leader, firmly established.",
               }),
             ],
           }),
@@ -803,23 +805,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "ذِي حَضْرَةُ الْقَومِ اللُّيُوث",
-                translit: "",
-                translation: "",
+                translit: "Dhī ḥaḍratul qawmil luyūth",
+                translation: "This is the gathering of the people, the lions,",
               }),
               new QasidaEntryModel({
                 arabic: "وَوَعْدُهَا يَومَ الثَّلُوث",
-                translit: "",
-                translation: "",
+                translit: "Wawa‛duhā yawmath thalūth",
+                translation: "and its appointed day is Tuesday,",
               }),
               new QasidaEntryModel({
                 arabic: "بِهَا انْتَفَتْ عَنَّا الْمُغُوث",
-                translit: "",
-                translation: "",
+                translit: "Bihā ntafat ‛annal mughūth",
+                translation: "through it distress has been lifted from us,",
               }),
               new QasidaEntryModel({
                 arabic: "مِنْ حِين نَأْتِي قَاصِدِين",
-                translit: "",
-                translation: "",
+                translit: "Min ḥīn na’tī qāṣidīn",
+                translation: "from the moment we come with intent.",
               }),
             ],
           }),
@@ -828,23 +830,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "الشَّيْخِ ذِي حَازَ الْعُلَا",
-                translit: "",
-                translation: "",
+                translit: "Ash-shaykhi dhī ḥāzal ‛ulā",
+                translation: "The Shaykh who has attained the heights,",
               }),
               new QasidaEntryModel({
                 arabic: "وَارْتَاح فِيهَا وَاعْتَلَا",
-                translit: "",
-                translation: "",
+                translit: "Wartāḥ fīhā wa‛talā",
+                translation: "and found rest in it and was exalted,",
               }),
               new QasidaEntryModel({
                 arabic: "مَرْسُومُهُ بَيْنَ الْمَلَا",
-                translit: "",
-                translation: "",
+                translit: "Marsūmuhu baynal malā",
+                translation: "his decree stands among the assembly,",
               }),
               new QasidaEntryModel({
                 arabic: "فِي الْوَقْت شَيْخُ الْعَارِفِين",
-                translit: "",
-                translation: "",
+                translit: "Fil waqt shaykhul ‛ārifīn",
+                translation: "in his time, the Shaykh of the knowers of Allah.",
               }),
             ],
           }),
@@ -853,23 +855,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "الشَّافِعِيّ مَذْهَبًا",
-                translit: "",
-                translation: "",
+                translit: "Ash-Shāfi‛iyy madhhabā",
+                translation: "A Shāfi‛ī in his school of law,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالْعَلَوِيّ مَشْرَبًا",
-                translit: "",
-                translation: "",
+                translit: "Wal‛Alawiyy mashrabā",
+                translation: "and an ‛Alawī in his spiritual path,",
               }),
               new QasidaEntryModel({
                 arabic: "وَهوَ الَّذِي يُدْعَى بِـ(بَا",
-                translit: "",
-                translation: "",
+                translit: "Wahuwal ladhī yud‛ā bi(Bā",
+                translation: "and he is the one called Bā",
               }),
               new QasidaEntryModel({
                 arabic: "سَوْدَان) بَيْنَ الْعَالَمِين",
-                translit: "",
-                translation: "",
+                translit: "Sawdān) baynal ‛ālamīn",
+                translation: "Sawdān among all the peoples.",
               }),
             ],
           }),
@@ -878,23 +880,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "عَيْنُ الْعِنَايَة ذُو الْفِطَنْ",
-                translit: "",
-                translation: "",
+                translit: "‛Aynul ‛ināyat dhul fiṭan",
+                translation: "The eye of providence, possessor of discernment,",
               }),
               new QasidaEntryModel({
                 arabic: "سَاقِي كُؤُوسَاتِ الْمِنَنْ",
-                translit: "",
-                translation: "",
+                translit: "Sāqī ku’ūsātil minan",
+                translation: "who serves the cups of bounties,",
               }),
               new QasidaEntryModel({
                 arabic: "أَحْيَا الطَّرِيقَة وَالسُّنَنْ",
-                translit: "",
-                translation: "",
+                translit: "Aḥyāṭ ṭarīqat wassunan",
+                translation: "who revived the Way and the Sunnah,",
               }),
               new QasidaEntryModel({
                 arabic: "فَاتِحْ رِتَاجِ الطَّالِبِين",
-                translit: "",
-                translation: "",
+                translit: "Fātiḥ ritājiṭ ṭālibīn",
+                translation: "opener of the great door for the seekers.",
               }),
             ],
           }),
@@ -903,23 +905,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "شَيْخُ الشُّيُوخِ الْجَامِعِ",
-                translit: "",
-                translation: "",
+                translit: "Shaykhush shuyūkhil jāmi‛",
+                translation: "The Shaykh of shaykhs, the all-comprehending,",
               }),
               new QasidaEntryModel({
                 arabic: "ذِي حَلَّ قُرْبَ الْجَامِعِ",
-                translit: "",
-                translation: "",
+                translit: "Dhī ḥalla qurbal jāmi‛",
+                translation: "who settled near the mosque,",
               }),
               new QasidaEntryModel({
                 arabic: "سَالَكْ بِهِ يَا سَامِعِ",
-                translit: "",
-                translation: "",
+                translit: "Sālak bihi yā Sāmi‛",
+                translation: "I ask You by him, O Hearer,",
               }),
               new QasidaEntryModel({
                 arabic: "اُلْطُفْ بِنَا وَالْمُسْلِمِين",
-                translit: "",
-                translation: "",
+                translit: "Ulṭuf binā walmuslimīn",
+                translation: "be gentle with us and with the Muslims.",
               }),
             ],
           }),
@@ -934,13 +936,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "(اللَّه اللَّه اللَّه اللَّه حَسْبُنَا",
-                translit: "",
-                translation: "",
+                translit: "(Allāh Allāh Allāh Allāh ḥasbunā",
+                translation: "(Allah, Allah, Allah, Allah is enough for us,",
               }),
               new QasidaEntryModel({
                 arabic: "رَبَّنَا عَجِّلْ لَنَا مَطْلُوبَنَا)",
-                translit: "",
-                translation: "",
+                translit: "Rabbanā ‛ajjil lanā maṭlūbanā)",
+                translation: "our Lord, hasten for us what we seek.)",
               }),
             ],
           }),
@@ -949,13 +951,15 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "رَبَّنا بِالْمُصْطَفَى اصْلِحْ أَمْرَنَا",
-                translit: "",
-                translation: "",
+                translit: "Rabbanā bilmuṣṭafā ṣliḥ amranā",
+                translation:
+                  "Our Lord, by the Chosen One, set right our affairs,",
               }),
               new QasidaEntryModel({
                 arabic: "وَبِحَقِّ الْمُرْتَضَى اكْشِفْ كَرْبَنَا",
-                translit: "",
-                translation: "",
+                translit: "Wabiḥaqqil Murtaḍā kshif karbanā",
+                translation:
+                  "and by the right of al-Murtaḍā, remove our distress,",
               }),
             ],
           }),
@@ -964,13 +968,14 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَبِأَسْرَارِ الْبَتُولِ الْطُفْ بِنَا",
-                translit: "",
-                translation: "",
+                translit: "Wabi’asrāril Batūli lṭuf binā",
+                translation:
+                  "and by the secrets of al-Batūl, be gentle with us,",
               }),
               new QasidaEntryModel({
                 arabic: "وَبِحَقِّ الْحَسَنَيْنِ كُنْ لَنَا",
-                translit: "",
-                translation: "",
+                translit: "Wabiḥaqqil Ḥasanayni kun lanā",
+                translation: "and by the right of the two Ḥasans, be with us,",
               }),
             ],
           }),
@@ -979,13 +984,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَبِزَيْنِ الْعَابِدِينَ اغْفِرْ لَنَا",
-                translit: "",
-                translation: "",
+                translit: "Wabizaynil ‛ābidīna ghfir lanā",
+                translation: "and by Zayn al-‛Ābidīn, forgive us,",
               }),
               new QasidaEntryModel({
                 arabic: "وَبِحَقِّ الْبَاقِرِ اتْمِمْ نُورَنَا",
-                translit: "",
-                translation: "",
+                translit: "Wabiḥaqqil Bāqiri tmim nūranā",
+                translation: "and by the right of al-Bāqir, perfect our light,",
               }),
             ],
           }),
@@ -994,13 +999,15 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَبِصِدْقِ الصَّادِقِ اجْمَعْ شَمْلَنَا",
-                translit: "",
-                translation: "",
+                translit: "Wabiṣidqiṣ Ṣādiqi jma‛ shamlanā",
+                translation:
+                  "and by the truthfulness of aṣ-Ṣādiq, bring us together,",
               }),
               new QasidaEntryModel({
                 arabic: "وَبِحَقِّ الْكَاظِمِ ارْفَعْ قَدْرَنَا",
-                translit: "",
-                translation: "",
+                translit: "Wabiḥaqqil Kāẓimi rfa‛ qadranā",
+                translation:
+                  "and by the right of al-Kāẓim, raise our standing,",
               }),
             ],
           }),
@@ -1009,13 +1016,14 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَبِأَنْوَارِ الْعُرَيْضِي اهْدِنَا",
-                translit: "",
-                translation: "",
+                translit: "Wabi’anwāril ‛Uraydiyyi hdinā",
+                translation: "and by the lights of al-‛Uraydī, guide us,",
               }),
               new QasidaEntryModel({
                 arabic: "وَبِمَعْرُوفِ الْجَمَال جَمِّلْ لَنَا",
-                translit: "",
-                translation: "",
+                translit: "Wabima‛rūfil Jamāl jammil lanā",
+                translation:
+                  "and by the kindness of al-Jamāl, grant us beauty,",
               }),
             ],
           }),
@@ -1024,13 +1032,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَبِحَقِّ الْبَرِّ عِيسَى فَاشْفِنَا",
-                translit: "",
-                translation: "",
+                translit: "Wabiḥaqqil Barri ‛Īsā fashfinā",
+                translation: "and by the right of the righteous ‛Īsā, heal us,",
               }),
               new QasidaEntryModel({
                 arabic: "وَابْنِهِ أَحْمَد سَهِّلْ صَعْبَنَا",
-                translit: "",
-                translation: "",
+                translit: "Wabnihi Aḥmad sahhil ṣa‛banā",
+                translation: "and his son Aḥmad, ease our difficulty,",
               }),
             ],
           }),
@@ -1039,13 +1047,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَبِأَوْصَافِ عُبَيْدٍ نَجِّنَا",
-                translit: "",
-                translation: "",
+                translit: "Wabi’awṣāfi ‛Ubaydin najjinā",
+                translation: "and by the qualities of ‛Ubayd, save us,",
               }),
               new QasidaEntryModel({
                 arabic: "وَبِعَلوِيٍّ فَكَمِّلْ سَعْدَنا",
-                translit: "",
-                translation: "",
+                translit: "Wabi‛Alawiyyin fakammil sa‛danā",
+                translation: "and by ‛Alawī, complete our good fortune,",
               }),
             ],
           }),
@@ -1054,13 +1062,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَبِأَلْطَافِ الْجَمَالِ اسْمَعْ لَنَا",
-                translit: "",
-                translation: "",
+                translit: "Wabi’alṭāfil Jamāli sma‛ lanā",
+                translation: "and by the kindnesses of al-Jamāl, hear us,",
               }),
               new QasidaEntryModel({
                 arabic: "وبِعَلوِيْ وَعَلِيٍّ ذُخْرِنَا",
-                translit: "",
-                translation: "",
+                translit: "Wabi‛Alawī wa‛Aliyyin dhukhrinā",
+                translation: "and by ‛Alawī and ‛Alī, our treasure,",
               }),
             ],
           }),
@@ -1069,13 +1077,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وبِمَنْ شَرَّفَ (مِرْبَاطًا) كَذَا",
-                translit: "",
-                translation: "",
+                translit: "Wabiman sharrafa (Mirbāṭan) kadhā",
+                translation: "and by him who honoured Mirbāṭ, and likewise",
               }),
               new QasidaEntryModel({
                 arabic: "عَلَوِيٌّ وَعَلِيٌّ أَصْلُنَا",
-                translit: "",
-                translation: "",
+                translit: "‛Alawiyyun wa‛Aliyyun aṣlunā",
+                translation: "‛Alawī and ‛Alī, our origin,",
               }),
             ],
           }),
@@ -1084,13 +1092,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَبِآيَاتِ الْفَقِيهِ الْغَوْث يَا",
-                translit: "",
-                translation: "",
+                translit: "Wabi’āyātil Faqīhil Ghawth yā",
+                translation: "and by the signs of al-Faqīh, the Ghawth, O",
               }),
               new QasidaEntryModel({
                 arabic: "غَوْثَنَا هَيَّا لَنَا هَيَّا لَنَا",
-                translit: "",
-                translation: "",
+                translit: "Ghawthanā hayyā lanā hayyā lanā",
+                translation: "our Helper, hasten to us, hasten to us!",
               }),
             ],
           }),
@@ -1099,13 +1107,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَبِبَنِيهِ عَلَوِيٍّ وَعَلِي",
-                translit: "",
-                translation: "",
+                translit: "Wabibanīhi ‛Alawiyyin wa‛Alī",
+                translation: "and by his sons ‛Alawī and ‛Alī,",
               }),
               new QasidaEntryModel({
                 arabic: "وَشِهَابِ الدِّين بِالْكُلِّ احْمِنَا",
-                translit: "",
-                translation: "",
+                translit: "Washihābid dīni bilkulli ḥminā",
+                translation: "and Shihāb ad-Dīn, by all of them protect us,",
               }),
             ],
           }),
@@ -1114,13 +1122,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَبِعَبْدِ اللَّه يَا بَا عَلَوِي",
-                translit: "",
-                translation: "",
+                translit: "Wabi‛Abdillāh yā Bā ‛Alawī",
+                translation: "and by ‛Abdullāh, O Bā ‛Alawī,",
               }),
               new QasidaEntryModel({
                 arabic: "وعَلِيٍّ صِنْوِه الْغَوْثِ اكْفِنَا",
-                translit: "",
-                translation: "",
+                translit: "Wa‛Aliyyin ṣinwihil ghawthi kfinā",
+                translation: "and ‛Alī, his brother, the Ghawth, suffice us,",
               }),
             ],
           }),
@@ -1129,13 +1137,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَجَمَالِ الدِّين وَالشَّيْخِ ابْنِهِ",
-                translit: "",
-                translation: "",
+                translit: "Wajamāliddīn washshaykhi bnihi",
+                translation: "and Jamāl ad-Dīn, and the Shaykh, his son,",
               }),
               new QasidaEntryModel({
                 arabic: "غَوْثِنَا السَّقَّاف فِي كُلِّ عَنَا",
-                translit: "",
-                translation: "",
+                translit: "Ghawthinas Saqqāf fī kulli ‛anā",
+                translation: "our helper as-Saqqāf, in all hardship,",
               }),
             ],
           }),
@@ -1144,13 +1152,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَابْنِهِ السَّكْرَان وَالْمِحْضَار وَالْـ",
-                translit: "",
-                translation: "",
+                translit: "Wabnihis Sakrān walMiḥḍāri wal",
+                translation: "and his son as-Sakrān, and al-Miḥḍār, and the",
               }),
               new QasidaEntryModel({
                 arabic: "إِخْوَةِ الْبَاقِين عَجِّلْ نَصْرَنَا",
-                translit: "",
-                translation: "",
+                translit: "Ikhwatil bāqīn ‛ajjil naṣranā",
+                translation: "remaining brothers; hasten our victory,",
               }),
             ],
           }),
@@ -1159,13 +1167,15 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَبِحَقِّ الْعَيْدَرُوسِ القُطْبِ، وَالْـ",
-                translit: "",
-                translation: "",
+                translit: "Wabiḥaqqil ‛Aydarūsil quṭbi, wal",
+                translation:
+                  "and by the right of al-‛Aydarūs, the Pole, and the",
               }),
               new QasidaEntryModel({
                 arabic: "ـفَخْرِ نِعْمَ الْغَوْث فَادْفَعْ شَرَّنَا",
-                translit: "",
-                translation: "",
+                translit: "Fakhri ni‛mal ghawth fadfa‛ sharranā",
+                translation:
+                  "Fakhr, how excellent a helper; ward off our evil,",
               }),
             ],
           }),
@@ -1174,13 +1184,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَبِشَيْخَيْنَا عَلِيٍّ وَابْنِهِ",
-                translit: "",
-                translation: "",
+                translit: "Wabishaykhaynā ‛Aliyyin wabnihi",
+                translation: "and by our two shaykhs, ‛Alī and his son,",
               }),
               new QasidaEntryModel({
                 arabic: "وَشِهَابِ الدِّين تَمِّمْ قَصْدَنَا",
-                translit: "",
-                translation: "",
+                translit: "Washihābid dīni tammim qaṣdanā",
+                translation: "and Shihāb ad-Dīn, fulfil our aim,",
               }),
             ],
           }),
@@ -1189,13 +1199,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَبِسِرِّ الْفَخْرِ وَالْغَوْثِ الَّذِي",
-                translit: "",
-                translation: "",
+                translit: "Wabisirril fakhri walghawthil ladhī",
+                translation: "and by the secret of al-Fakhr and the Ghawth who",
               }),
               new QasidaEntryModel({
                 arabic: "حَلَّ فِي (عِينَات) فَاهْزِمْ خَصْمَنَا",
-                translit: "",
-                translation: "",
+                translit: "Ḥalla fī (‛Īnāt) fahzim khaṣmanā",
+                translation: "settled in ‛Īnāt, so defeat our adversary,",
               }),
             ],
           }),
@@ -1204,13 +1214,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَابْنِهِ الْحَامِدِ وَالْمِحْضَار ثُمَّ",
-                translit: "",
-                translation: "",
+                translit: "Wabnihil Ḥāmidi walMiḥḍār thumma",
+                translation: "and his son al-Ḥāmid, and al-Miḥḍār, then",
               }),
               new QasidaEntryModel({
                 arabic: "الْحُسَيْنِ اهْلِكْ عِدَانَا وَابْقِنَا",
-                translit: "",
-                translation: "",
+                translit: "Al-Ḥusayni hlik ‛idānā wabqinā",
+                translation: "al-Ḥusayn; destroy our enemies and preserve us,",
               }),
             ],
           }),
@@ -1219,13 +1229,14 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَالْفَقِيهِ الْحَبْرِ وَالشَّيْخِ الَّذِي",
-                translit: "",
-                translation: "",
+                translit: "Walfaqīhil ḥabri washshaykhil ladhī",
+                translation:
+                  "and the Faqīh, the learned scholar, and the Shaykh who",
               }),
               new QasidaEntryModel({
                 arabic: "حَلَّ فِي (مَكَّةَ) سَهِّلْ صَعْبَنَا",
-                translit: "",
-                translation: "",
+                translit: "Ḥalla fī (Makkata) sahhil ṣa‛banā",
+                translation: "settled in Makkah, ease our difficulty,",
               }),
             ],
           }),
@@ -1234,13 +1245,14 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَجَمَالِ الدِّين جَدِّي وَابْنِهِ الْـ",
-                translit: "",
-                translation: "",
+                translit: "Wajamāliddīn jaddī wabnihil",
+                translation: "and Jamāl ad-Dīn, my grandfather, and his son",
               }),
               new QasidaEntryModel({
                 arabic: "ـعَيْدَرُوسِ الْحَبْر فَانْصُرْ جُنْدَنَا",
-                translit: "",
-                translation: "",
+                translit: "‛Aydarūsil ḥabr fanṣur jundanā",
+                translation:
+                  "al-‛Aydarūs, the scholar; grant victory to our troops,",
               }),
             ],
           }),
@@ -1249,13 +1261,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَبِشَيْخِي وَإِمَامِي وَالِدِي",
-                translit: "",
-                translation: "",
+                translit: "Wabishaykhī wa’imāmī wālidī",
+                translation: "and by my shaykh, my imām, my father,",
               }),
               new QasidaEntryModel({
                 arabic: "قُدْوَةِ الدِّينِ وَمِصْبَاحِ الدُّنَا",
-                translit: "",
-                translation: "",
+                translit: "Qudwatid dīni wamiṣbāḥid dunā",
+                translation: "exemplar of the faith and lamp of the world,",
               }),
             ],
           }),
@@ -1264,13 +1276,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "رَبَّنَا فَانْفَعْ بِهِمْ يَا رَبَّنَا",
-                translit: "",
-                translation: "",
+                translit: "Rabbanā fanfa‛ bihim yā rabbanā",
+                translation: "our Lord, benefit us through them, O our Lord,",
               }),
               new QasidaEntryModel({
                 arabic: "وَاكْفِنَا كُلَّ مُهِمٍّ وَعَنَا",
-                translit: "",
-                translation: "",
+                translit: "Wakfinā kulla muhimmin wa‛anā",
+                translation: "and spare us every pressing matter and hardship,",
               }),
             ],
           }),
@@ -1279,13 +1291,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "رَبَّنَا عَجِّلْ بِهِمْ مَطْلُوبَنَا",
-                translit: "",
-                translation: "",
+                translit: "Rabbanā ‛ajjil bihim maṭlūbanā",
+                translation: "our Lord, through them hasten what we seek,",
               }),
               new QasidaEntryModel({
                 arabic: "وَاكْشِفِ الْحَالَ الَّذِي حَلَّ بِنَا",
-                translit: "",
-                translation: "",
+                translit: "Wakshifil ḥālal ladhī ḥalla binā",
+                translation: "and remove the state that has befallen us.",
               }),
             ],
           }),
@@ -1294,13 +1306,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "سَادَتِي إِنِّي بِكُمْ جَارٌ لَكُمْ",
-                translit: "",
-                translation: "",
+                translit: "Sādatī innī bikum jārun lakum",
+                translation: "My masters, I am your neighbour, in your care,",
               }),
               new QasidaEntryModel({
                 arabic: "مَا أَخَافُ قَطُّ ضَيْمًا أَوْ وَنَا",
-                translit: "",
-                translation: "",
+                translit: "Mā akhāfu qaṭṭu ḍayman aw wanā",
+                translation: "so I never fear wrong or weariness.",
               }),
             ],
           }),
@@ -1309,13 +1321,14 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "سُدْتُمُ النَّاسَ فَمَنْ ذَا مِثْلُكُم",
-                translit: "",
-                translation: "",
+                translit: "Sudtumun nāsa faman dhā mithlukum",
+                translation:
+                  "You have been masters of the people, so who is like you,",
               }),
               new QasidaEntryModel({
                 arabic: "يَا أَعَزَّ النَّاس يَا كَنْزَ الْغِنَا",
-                translit: "",
-                translation: "",
+                translit: "Yā a‛azzan nās yā kanzal ghinā",
+                translation: "O most honoured of people, O treasure of riches?",
               }),
             ],
           }),
@@ -1324,13 +1337,14 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "أَنْتُمُ الْأَقْطَابُ وَالْأَوْتَادُ يَا",
-                translit: "",
-                translation: "",
+                translit: "Antumul aqṭābu wal’awtādu yā",
+                translation: "You are the Poles and the Pillars, O",
               }),
               new QasidaEntryModel({
                 arabic: "خَيْرَ مَنْ حَازَ الْمَثَانِي وَالثَّنَا",
-                translit: "",
-                translation: "",
+                translit: "Khayra man ḥāzal mathānī waththanā",
+                translation:
+                  "best of those who have attained the oft-repeated verses and praise.",
               }),
             ],
           }),
@@ -1339,13 +1353,14 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "فَإِلَى مَنْ غَيْرُكُمْ يَا سَادَتِي",
-                translit: "",
-                translation: "",
+                translit: "Fa’ilā man ghayrukum yā sādatī",
+                translation: "So to whom, other than you, my masters,",
               }),
               new QasidaEntryModel({
                 arabic: "أَلْتَجِي إِنْ حَانَ خَطْبٌ أَوْ دَنَا",
-                translit: "",
-                translation: "",
+                translit: "Altajī in ḥāna khaṭbun aw danā",
+                translation:
+                  "shall I turn for refuge if a calamity comes or draws near?",
               }),
             ],
           }),
@@ -1354,13 +1369,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "لَيْسَ لِي مَلْجَأ سِوَاكُمْ فَادْرِكُوا",
-                translit: "",
-                translation: "",
+                translit: "Laysa lī malja’ siwākum fadrikū",
+                translation: "I have no refuge but you, so come to my aid,",
               }),
               new QasidaEntryModel({
                 arabic: "هَيَّا هَيَّا هَيَّا هَيَّا هَا هُنَا",
-                translit: "",
-                translation: "",
+                translit: "Hayyā hayyā hayyā hayyā hā hunā",
+                translation: "hasten, hasten, hasten, hasten, right here!",
               }),
             ],
           }),
@@ -1369,13 +1384,14 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "هَيَّا هَيَّا عَجِّلُوا لِي غَارَةً",
-                translit: "",
-                translation: "",
+                translit: "Hayyā hayyā ‛ajjilū lī ghāratan",
+                translation: "Hasten, hasten, bring me quickly a relief",
               }),
               new QasidaEntryModel({
                 arabic: "يُدْرِكُ الْعَبْدُ بِهَا أَقْصَى الْمُنَا",
-                translit: "",
-                translation: "",
+                translit: "Yudrikul ‛abdu bihā aqṣal munā",
+                translation:
+                  "by which the servant attains the farthest of his hopes.",
               }),
             ],
           }),
@@ -1384,13 +1400,15 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "رَبَّنَا فَاكْشِفْ بِهِمْ مَكْرُوهَنَا",
-                translit: "",
-                translation: "",
+                translit: "Rabbanā fakshif bihim makrūhanā",
+                translation:
+                  "Our Lord, through them remove from us what we hate,",
               }),
               new QasidaEntryModel({
                 arabic: "وَاحْمِنَا مِنْ كُلِّ خَطْبٍ أَمَّنَا",
-                translit: "",
-                translation: "",
+                translit: "Waḥminā min kulli khaṭbin ammanā",
+                translation:
+                  "and protect us from every calamity that has come upon us.",
               }),
             ],
           }),
@@ -1399,13 +1417,14 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "خَتْمُهَا بِالْمُصْطَفَى الْهَادِي اكْفِنَا",
-                translit: "",
-                translation: "",
+                translit: "Khatmuhā bilmuṣṭafal hādī kfinā",
+                translation:
+                  "To seal it: by the Chosen One, the Guide, suffice us",
               }),
               new QasidaEntryModel({
                 arabic: "كُلَّ شَرٍّ وَعَدُوٍّ ربَّنَا",
-                translit: "",
-                translation: "",
+                translit: "Kulla sharrin wa‛adūwin rabbanā",
+                translation: "against every evil and enemy, our Lord,",
               }),
             ],
           }),
@@ -1414,13 +1433,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَصَلَاةً وَسَلَامًا دَائِمًا",
-                translit: "",
-                translation: "",
+                translit: "Waṣalātan wasalāman dā’iman",
+                translation: "and blessings and peace, everlasting,",
               }),
               new QasidaEntryModel({
                 arabic: "يَتَغَشَّاهُ بَِها كُلَّ هَنَا",
-                translit: "",
-                translation: "",
+                translit: "Yataghashshāhu bihā kulla hanā",
+                translation: "that cover him with every joy,",
               }),
             ],
           }),
@@ -1429,13 +1448,14 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَعَلَى آلٍ وَأَصْحَابٍ وَمَنْ",
-                translit: "",
-                translation: "",
+                translit: "Wa‛alā ālin wa’aṣḥābin waman",
+                translation: "and upon the family and Companions, and those",
               }),
               new QasidaEntryModel({
                 arabic: "بَعْدَهُمْ مَا لَاحَ بَرْقٌ أَوْ سَنَا",
-                translit: "",
-                translation: "",
+                translit: "Ba‛dahum mā lāḥa barqun aw sanā",
+                translation:
+                  "who came after them, as long as lightning or radiance appears.",
               }),
             ],
           }),
@@ -1450,8 +1470,8 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "آمِين يَا اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Āmīn yā Allāh",
+                translation: "Āmīn, O Allah.",
               }),
             ],
           }),
@@ -1460,23 +1480,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "بِهِمْ بِهِمْ يَا رَبِّي",
-                translit: "",
-                translation: "",
+                translit: "Bihim bihim yā rabbī",
+                translation: "Through them, through them, O my Lord,",
               }),
               new QasidaEntryModel({
                 arabic: "سَالَكْ تُفَرِِّج كَرْبِي",
-                translit: "",
-                translation: "",
+                translit: "Sālak tufarrij karbī",
+                translation: "I ask You to relieve my distress,",
               }),
               new QasidaEntryModel({
                 arabic: "أَنْتَ إِلَهِي حَسْبِي",
-                translit: "",
-                translation: "",
+                translit: "Anta ilāhī ḥasbī",
+                translation: "You are my God, my sufficiency,",
               }),
               new QasidaEntryModel({
                 arabic: "عَلَى الْبُغَاةِ الْكَائِدِين",
-                translit: "",
-                translation: "",
+                translit: "‛Alal bughātil kā’idīn",
+                translation: "against the transgressors who plot.",
               }),
             ],
           }),
@@ -1485,23 +1505,24 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "عَجِّلْ بِرَفْعِ مَا نَزَلْ",
-                translit: "",
-                translation: "",
+                translit: "‛Ajjil biraf‛i mā nazal",
+                translation: "Hasten the lifting of what has befallen us,",
               }),
               new QasidaEntryModel({
                 arabic: "إِنَّك لَطِيفٌ لَمْ تَزَلْ",
-                translit: "",
-                translation: "",
+                translit: "Innak laṭīfun lam tazal",
+                translation:
+                  "for You are the Subtle One, who has never ceased to be;",
               }),
               new QasidaEntryModel({
                 arabic: "مَنْ غَيْرُكَ عَزَّ وَجَلْ",
-                translit: "",
-                translation: "",
+                translit: "Man ghayruka ‛azza wajal",
+                translation: "who is there but You, Mighty and Majestic?",
               }),
               new QasidaEntryModel({
                 arabic: "وَلَاطِفٌ بِالْعَالَمِين",
-                translit: "",
-                translation: "",
+                translit: "Walāṭifun bil‛ālamīn",
+                translation: "and gentle with all the worlds.",
               }),
             ],
           }),
@@ -1510,23 +1531,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "رَبِّ اكْفِنَا شَرَّ الْعِدَا",
-                translit: "",
-                translation: "",
+                translit: "Rabbi kfinā sharral ‛idā",
+                translation: "My Lord, spare us the evil of the enemies,",
               }),
               new QasidaEntryModel({
                 arabic: "وَخُذْهُمُ وَبَدِّدَا",
-                translit: "",
-                translation: "",
+                translit: "Wakhudhhumu wabaddidā",
+                translation: "and seize them and scatter them,",
               }),
               new QasidaEntryModel({
                 arabic: "وَاجْعَلْهُمُ لَنَا فِدَا",
-                translit: "",
-                translation: "",
+                translit: "Waj‛alhumu lanā fidā",
+                translation: "and make them a ransom for us,",
               }),
               new QasidaEntryModel({
                 arabic: "وَعِبْرَةً لِلنَّاظِرِين",
-                translit: "",
-                translation: "",
+                translit: "Wa‛ibratan linnāẓirīn",
+                translation: "and a lesson for those who see.",
               }),
             ],
           }),
@@ -1535,23 +1556,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا رَبِّ شَتِّتْ شَمْلَهُمْ",
-                translit: "",
-                translation: "",
+                translit: "Yā rabbi shattit shamlahum",
+                translation: "O my Lord, break up their gathering,",
               }),
               new QasidaEntryModel({
                 arabic: "يَا رَبِّ فَرِّقْ جَمْعَهُمْ",
-                translit: "",
-                translation: "",
+                translit: "Yā rabbi farriq jam‛ahum",
+                translation: "O my Lord, divide their company,",
               }),
               new QasidaEntryModel({
                 arabic: "يَا رَبِّ قَلِّلْ عَدَّهُمْ",
-                translit: "",
-                translation: "",
+                translit: "Yā rabbi qallil ‛addahum",
+                translation: "O my Lord, diminish their number,",
               }),
               new QasidaEntryModel({
                 arabic: "وَاجْعَلْهُمُ فِى الْغَابِرِين",
-                translit: "",
-                translation: "",
+                translit: "Waj‛alhumu fil ghābirīn",
+                translation: "and make them among the bygone.",
               }),
             ],
           }),
@@ -1560,23 +1581,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَلَا تُبَلِّغْهُمْ مُرَادْ",
-                translit: "",
-                translation: "",
+                translit: "Walā tuballighhum murād",
+                translation: "And do not let them reach their aim,",
               }),
               new QasidaEntryModel({
                 arabic: "وَنَارُهُمْ تُصْبِحْ رَمَادْ",
-                translit: "",
-                translation: "",
+                translit: "Wanāruhum tuṣbiḥ ramād",
+                translation: "and may their fire become ashes,",
               }),
               new QasidaEntryModel({
                 arabic: "بِ﴿كٓهيعٓصٓ﴾",
-                translit: "",
-                translation: "",
+                translit: "Bi Kāf Hā Yā ‛Ayn Ṣād",
+                translation: "by Kāf Hā Yā ‛Ayn Ṣād,",
               }),
               new QasidaEntryModel({
                 arabic: "فِى الْحَالِ وَلَّوْا خَائِبِين",
-                translit: "",
-                translation: "",
+                translit: "Fil ḥāli wallaw khā’ibīn",
+                translation: "and at once they turn back disappointed.",
               }),
             ],
           }),
@@ -1585,23 +1606,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَشَرِّ كُلِّ مَاكِرِ",
-                translit: "",
-                translation: "",
+                translit: "Washarri kulli mākir",
+                translation: "And from the evil of every deceiver,",
               }),
               new QasidaEntryModel({
                 arabic: "وَخَائِنٍ وَغَادِرِ",
-                translit: "",
-                translation: "",
+                translit: "Wakhā’inin waghādir",
+                translation: "and traitor and betrayer,",
               }),
               new QasidaEntryModel({
                 arabic: "وَعَايِنٍ وَسَاحِرِ",
-                translit: "",
-                translation: "",
+                translit: "Wa‛āyinin wasāḥir",
+                translation: "and one who casts the evil eye, and sorcerer,",
               }),
               new QasidaEntryModel({
                 arabic: "وَشَرِّ كُلِّ الْمُؤْذِيِين",
-                translit: "",
-                translation: "",
+                translit: "Washarri kullil mu’dhiyīn",
+                translation: "and the evil of all who cause harm,",
               }),
             ],
           }),
@@ -1610,23 +1631,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "مِنْ مُعْتَدٍ وَغَاصِبِ",
-                translit: "",
-                translation: "",
+                translit: "Min mu‛tadin waghāṣib",
+                translation: "from the aggressor and the usurper,",
               }),
               new QasidaEntryModel({
                 arabic: "وَمُفْتَرٍ وَكَاذِبِ",
-                translit: "",
-                translation: "",
+                translit: "Wamuftarin wakādhib",
+                translation: "and the slanderer and the liar,",
               }),
               new QasidaEntryModel({
                 arabic: "وَفَاجِرٍ وَعَائِبِ",
-                translit: "",
-                translation: "",
+                translit: "Wafājirin wa‛ā’ib",
+                translation: "and the wicked one and the faultfinder,",
               }),
               new QasidaEntryModel({
                 arabic: "وَحَاسِدٍ وَالشَّامِتِين",
-                translit: "",
-                translation: "",
+                translit: "Waḥāsidin washshāmitīn",
+                translation: "and the envier and those who gloat.",
               }),
             ],
           }),
@@ -1635,23 +1656,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا رَبَّنَا يَا رَبَّنَا",
-                translit: "",
-                translation: "",
+                translit: "Yā rabbanā yā rabbanā",
+                translation: "O our Lord, O our Lord,",
               }),
               new QasidaEntryModel({
                 arabic: "يَا ذَا الْبَهَا وَذَا السَّنَا",
-                translit: "",
-                translation: "",
+                translit: "Yā dhal bahā wadhas sanā",
+                translation: "O Possessor of splendour and radiance,",
               }),
               new QasidaEntryModel({
                 arabic: "وَذَا الْعَطَا وَذَا الْغِنَى",
-                translit: "",
-                translation: "",
+                translit: "Wadhal ‛aṭā wadhal ghinā",
+                translation: "and Possessor of gifts and riches,",
               }),
               new QasidaEntryModel({
                 arabic: "أَنْتَ مُجِيبُ السَّائِلِين",
-                translit: "",
-                translation: "",
+                translit: "Anta mujībus sā’ilīn",
+                translation: "You answer those who ask.",
               }),
             ],
           }),
@@ -1660,23 +1681,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَسِّرْ لَنَا أُمُورَنَا",
-                translit: "",
-                translation: "",
+                translit: "Yassir lanā umūranā",
+                translation: "Make easy for us our affairs,",
               }),
               new QasidaEntryModel({
                 arabic: "وَاشْرَح لَنَا صُدُورَنَا",
-                translit: "",
-                translation: "",
+                translit: "Washraḥ lanā ṣudūranā",
+                translation: "and expand our breasts,",
               }),
               new QasidaEntryModel({
                 arabic: "وَاسْتُرْ لَنَا عُيُوبَنَا",
-                translit: "",
-                translation: "",
+                translit: "Wastur lanā ‛uyūbanā",
+                translation: "and cover our faults,",
               }),
               new QasidaEntryModel({
                 arabic: "فَأَنْتَ بِالسَّتْرِ قَمِين",
-                translit: "",
-                translation: "",
+                translit: "Fa’anta bissatri qamīn",
+                translation: "for You are most fitting for covering.",
               }),
             ],
           }),
@@ -1685,23 +1706,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَاغْفِرْ لَنَا ذُنُوبَنَا",
-                translit: "",
-                translation: "",
+                translit: "Waghfir lanā dhunūbanā",
+                translation: "And forgive us our sins,",
               }),
               new QasidaEntryModel({
                 arabic: "وَكُلُّ ذَنْبٍ عِنْدَنا",
-                translit: "",
-                translation: "",
+                translit: "Wakullu dhanbin ‛indanā",
+                translation: "and every sin of ours,",
               }),
               new QasidaEntryModel({
                 arabic: "وَامْنُنْ بِتَوْبَةٍ لَنَا",
-                translit: "",
-                translation: "",
+                translit: "Wamnun bitawbatin lanā",
+                translation: "and bestow repentance upon us,",
               }),
               new QasidaEntryModel({
                 arabic: "أَنْتَ حَبِيبُ التَّائِبِين",
-                translit: "",
-                translation: "",
+                translit: "Anta ḥabībut tā’ibīn",
+                translation: "You are the Beloved of those who repent.",
               }),
             ],
           }),
@@ -1710,23 +1731,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "بِجَاهِ سَيِّدِنَا الرَّسُول",
-                translit: "",
-                translation: "",
+                translit: "Bijāhi sayyidinar rasūl",
+                translation: "By the standing of our master the Messenger,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالْحَسَنَيْنِ وَالْبَتُول",
-                translit: "",
-                translation: "",
+                translit: "Walḥasanayni walbatūl",
+                translation: "and the two Ḥasans and al-Batūl,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالْمُرْتَضَى أَبِي الْفُحُول",
-                translit: "",
-                translation: "",
+                translit: "Walmurtaḍā abil fuḥūl",
+                translation: "and al-Murtaḍā, father of the champions,",
               }),
               new QasidaEntryModel({
                 arabic: "وَجَاهِ جِبْرِيلَ الْأَمِين",
-                translit: "",
-                translation: "",
+                translit: "Wajāhi Jibrīlal Amīn",
+                translation: "and the standing of Jibrīl, the Trustworthy.",
               }),
             ],
           }),
@@ -1735,23 +1756,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "ثُمَّ الصَّلَاةُ وَالسَّلَام",
-                translit: "",
-                translation: "",
+                translit: "Thummaṣ ṣalātu wassalām",
+                translation: "Then blessings and peace",
               }),
               new QasidaEntryModel({
                 arabic: "عَلَى النَّبِي خَيْرِ الْأَنَامْ",
-                translit: "",
-                translation: "",
+                translit: "‛Alan nabī khayril anām",
+                translation: "upon the Prophet, the best of mankind,",
               }),
               new QasidaEntryModel({
                 arabic: "وَآلِهِ الْغُرِّ الْكِرَامْ",
-                translit: "",
-                translation: "",
+                translit: "Wa’ālihil ghurril kirām",
+                translation: "and his illustrious and noble family,",
               }),
               new QasidaEntryModel({
                 arabic: "وَصَحْبِهِ وَالتَّابِعِين",
-                translit: "",
-                translation: "",
+                translit: "Waṣaḥbihi wattābi‛īn",
+                translation: "and his Companions and the Followers.",
               }),
             ],
           }),
@@ -1803,13 +1824,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا أَرْحَمَ الرَّاحِمِين",
-                translit: "",
-                translation: "",
+                translit: "Yā arḥamar rāḥimīn",
+                translation: "O Most Merciful of those who show mercy,",
               }),
               new QasidaEntryModel({
                 arabic: "اُلْطُفْ بِنَا فِي قَضَاك",
-                translit: "",
-                translation: "",
+                translit: "Ulṭuf binā fī qaḍāk",
+                translation: "be gentle with us in Your decree,",
               }),
             ],
           }),
@@ -1818,13 +1839,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَعَافِنَا يَا إِلَهِي",
-                translit: "",
-                translation: "",
+                translit: "Wa‛āfinā yā ilāhī",
+                translation: "and grant us well-being, O my God,",
               }),
               new QasidaEntryModel({
                 arabic: "مِنْ نَوَازِلْ بَلَاك",
-                translit: "",
-                translation: "",
+                translit: "Min nawāzil balāk",
+                translation: "from the calamities of Your tribulation,",
               }),
             ],
           }),
@@ -1833,13 +1854,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَهَبْ لَنَا الْخَيْرَ كُلَّه",
-                translit: "",
-                translation: "",
+                translit: "Wahab lanal khayra kullah",
+                translation: "and grant us all good,",
               }),
               new QasidaEntryModel({
                 arabic: "وَاهْدِنَا بِهُدَاك",
-                translit: "",
-                translation: "",
+                translit: "Wahdinā bihudāk",
+                translation: "and guide us by Your guidance,",
               }),
             ],
           }),
@@ -1848,13 +1869,14 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَنَسْتَعِينُك وَنَسْتَغْنِيك",
-                translit: "",
-                translation: "",
+                translit: "Wanasta‛īnuk wanastaghnīk",
+                translation:
+                  "and we ask Your help and ask You to make us self-sufficient,",
               }),
               new QasidaEntryModel({
                 arabic: "عَمَّنْ سِوَاك",
-                translit: "",
-                translation: "",
+                translit: "‛Amman siwāk",
+                translation: "free of any besides You.",
               }),
             ],
           }),
@@ -1863,13 +1885,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا صَاحِبَ الْفَضْلِ وَالْإِحْسَان",
-                translit: "",
-                translation: "",
+                translit: "Yā ṣāḥibal faḍli wal’iḥsān",
+                translation: "O Possessor of grace and kindness,",
               }),
               new QasidaEntryModel({
                 arabic: "نَرْجُوا عَطَاك",
-                translit: "",
-                translation: "",
+                translit: "Narjū ‛aṭāk",
+                translation: "we hope for Your gift,",
               }),
             ],
           }),
@@ -1878,13 +1900,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "نَنَال كُلَّ الْمَطَالِب",
-                translit: "",
-                translation: "",
+                translit: "Nanāl kullal maṭālib",
+                translation: "that we may attain every request,",
               }),
               new QasidaEntryModel({
                 arabic: "كُلَّهَا فِي رِضَاك",
-                translit: "",
-                translation: "",
+                translit: "Kullahā fī riḍāk",
+                translation: "all of them, in Your good pleasure.",
               }),
             ],
           }),
@@ -1893,13 +1915,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "إيَّاك نَعْبُد وَنَشْهَد",
-                translit: "",
-                translation: "",
+                translit: "Iyyāk na‛bud wanashhad",
+                translation: "You alone we worship, and we witness,",
               }),
               new QasidaEntryModel({
                 arabic: "مَشْهَد أَنَّا نَرَاك",
-                translit: "",
-                translation: "",
+                translit: "Mashhad annā narāk",
+                translation: "in a witnessing, that we see You,",
               }),
             ],
           }),
@@ -1908,13 +1930,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَنَشْهَد أَنَّكْ تَرَانَا",
-                translit: "",
-                translation: "",
+                translit: "Wanashhad annak tarānā",
+                translation: "and we witness that You see us,",
               }),
               new QasidaEntryModel({
                 arabic: "نُور عَيْنِ اصْطِفَاك",
-                translit: "",
-                translation: "",
+                translit: "Nūr ‛ayni ṣṭifāk",
+                translation: "the light of the eye of Your choice.",
               }),
             ],
           }),
@@ -1923,13 +1945,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "طَابَتْ شَوَاهِد مَشَاهِد",
-                translit: "",
-                translation: "",
+                translit: "Ṭābat shawāhid mashāhid",
+                translation: "Sweet are the signs and the witnessings",
               }),
               new QasidaEntryModel({
                 arabic: "مَنْ يُوَالِي وَلَاك",
-                translit: "",
-                translation: "",
+                translit: "Man yuwālī walāk",
+                translation: "of whoever is devoted to Your friendship,",
               }),
             ],
           }),
@@ -1938,13 +1960,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَمَنْ عَلَى سُنَّةِ الْهَادِي",
-                translit: "",
-                translation: "",
+                translit: "Waman ‛alā sunnatil hādī",
+                translation: "and whoever, upon the Sunnah of the Guide,",
               }),
               new QasidaEntryModel({
                 arabic: "يُرَاعِي رَعَاك",
-                translit: "",
-                translation: "",
+                translit: "Yurā‛ī ra‛āk",
+                translation: "keeps to it, has Your protection,",
               }),
             ],
           }),
@@ -1953,13 +1975,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَمَنْ قَرَأ لِلْقُرْآن",
-                translit: "",
-                translation: "",
+                translit: "Waman qara’ lilqur’ān",
+                translation: "and whoever has recited the Qur’ān,",
               }),
               new QasidaEntryModel({
                 arabic: "أَوْعَى بِحَقِّ نَبَاك",
-                translit: "",
-                translation: "",
+                translit: "Aw‛ā biḥaqqi nabāk",
+                translation: "and has kept in mind the truth of Your tidings,",
               }),
             ],
           }),
@@ -1968,13 +1990,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "مِنْكَ إِلَيْكَ تَحَقَّق",
-                translit: "",
-                translation: "",
+                translit: "Minka ilayka taḥaqqaq",
+                translation: "from You, to You, he has realised",
               }),
               new QasidaEntryModel({
                 arabic: "أَنَّ هَذَا حَكَاك",
-                translit: "",
-                translation: "",
+                translit: "Anna hādhā ḥakāk",
+                translation: "that this speaks of You,",
               }),
             ],
           }),
@@ -1983,13 +2005,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَصَار قَلْبُه وَقَالَبْهُ",
-                translit: "",
-                translation: "",
+                translit: "Waṣāra qalbuh waqālabhu",
+                translation: "and his heart and his body have become",
               }),
               new QasidaEntryModel({
                 arabic: "امْتَلَا مِنْ صَفَاك",
-                translit: "",
-                translation: "",
+                translit: "Imtalā min ṣafāk",
+                translation: "full of Your purity,",
               }),
             ],
           }),
@@ -1998,13 +2020,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "بِالْفَهْم وَالْعِلم وَالتَّعْظِيم",
-                translit: "",
-                translation: "",
+                translit: "Bilfahm wal‛ilm watta‛ẓīm",
+                translation: "with understanding, knowledge and reverence,",
               }),
               new QasidaEntryModel({
                 arabic: "يَلْحَظ سَنَاك",
-                translit: "",
-                translation: "",
+                translit: "Yalḥaẓ sanāk",
+                translation: "he beholds Your radiance.",
               }),
             ],
           }),
@@ -2013,13 +2035,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "هَذَا لِمَنْ كَان حَظُّه",
-                translit: "",
-                translation: "",
+                translit: "Hādhā liman kān ḥaẓẓuh",
+                translation: "This is for the one whose share",
               }),
               new QasidaEntryModel({
                 arabic: "مِنْكَ وَافِر هُنَاك",
-                translit: "",
-                translation: "",
+                translit: "Minka wāfir hunāk",
+                translation: "from You is abundant, there,",
               }),
             ],
           }),
@@ -2028,13 +2050,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "فِي سَابِقِ الْعِلْم",
-                translit: "",
-                translation: "",
+                translit: "Fī sābiqil ‛ilm",
+                translation: "in Your prior knowledge;",
               }),
               new QasidaEntryModel({
                 arabic: "جَائَتِ اللَّاحِقَة مِنْ قَدَاك",
-                translit: "",
-                translation: "",
+                translit: "Jā’atil lāḥiqat min qadāk",
+                translation: "what followed came from Your decree,",
               }),
             ],
           }),
@@ -2043,13 +2065,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَأَدْرَكَتْهُ الْعِنَايَة",
-                translit: "",
-                translation: "",
+                translit: "Wa’adrakathul ‛ināyah",
+                translation: "and Providence overtook him",
               }),
               new QasidaEntryModel({
                 arabic: "حَيْث جِيتَه وَجَاك",
-                translit: "",
-                translation: "",
+                translit: "Ḥayth jītah wajāk",
+                translation: "when You came to him and he came to You.",
               }),
             ],
           }),
@@ -2058,13 +2080,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَسْعَى مُلَبِّي مُجِيبَك",
-                translit: "",
-                translation: "",
+                translit: "Yas‛ā mulabbī mujībak",
+                translation: "He hastens, answering, responding to You,",
               }),
               new QasidaEntryModel({
                 arabic: "صَار سَمْعُه دَعَاك",
-                translit: "",
-                translation: "",
+                translit: "Ṣār sam‛uh da‛āk",
+                translation: "his hearing has turned to Your call,",
               }),
             ],
           }),
@@ -2073,13 +2095,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "مِنْكَ إِلَيْكَ وَخَيَّم",
-                translit: "",
-                translation: "",
+                translit: "Minka ilayka wakhayyam",
+                translation: "from You, to You, and he pitched his tent,",
               }),
               new QasidaEntryModel({
                 arabic: "حَطّا سَاحَة فِنَاك",
-                translit: "",
-                translation: "",
+                translit: "Ḥaṭṭā sāḥat fināk",
+                translation: "alighting in the courtyard of Your threshold,",
               }),
             ],
           }),
@@ -2088,13 +2110,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "عَلَى الْهَنَا وَالْمُنَى",
-                translit: "",
-                translation: "",
+                translit: "‛Alal hanā walmunā",
+                translation: "amid happiness and desires,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالْبَسط شِيتَه وَشَاك",
-                translit: "",
-                translation: "",
+                translit: "Walbasṭ shītah washāk",
+                translation: "and expansion, as You willed and as he willed.",
               }),
             ],
           }),
@@ -2103,13 +2125,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا رَبِّ يَا رَبِّ هَبْ لِي",
-                translit: "",
-                translation: "",
+                translit: "Yā rabbi yā rabbi hab lī",
+                translation: "O my Lord, O my Lord, grant me",
               }),
               new QasidaEntryModel({
                 arabic: "فِي رَجَاء مَنْ رَجَاك",
-                translit: "",
-                translation: "",
+                translit: "Fī rajā’ man rajāk",
+                translation: "the hope of one who has hoped in You,",
               }),
             ],
           }),
@@ -2118,13 +2140,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَاقْبَل دُعَائِي وَقَرِّبْنِي",
-                translit: "",
-                translation: "",
+                translit: "Waqbal du‛ā’ī waqarribnī",
+                translation: "and accept my prayer and draw me near",
               }),
               new QasidaEntryModel({
                 arabic: "مَعَ مَنْ دَعَاك",
-                translit: "",
-                translation: "",
+                translit: "Ma‛a man da‛āk",
+                translation: "with those who called upon You,",
               }),
             ],
           }),
@@ -2133,13 +2155,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَأَنْتَ حَسْبِي وَعَوْنِي",
-                translit: "",
-                translation: "",
+                translit: "Wa’anta ḥasbī wa‛awnī",
+                translation: "and You are my sufficiency and my help,",
               }),
               new QasidaEntryModel({
                 arabic: "فَاشْفِنِي بِشِفَاك",
-                translit: "",
-                translation: "",
+                translit: "Fashfinī bishifāk",
+                translation: "so heal me with Your healing,",
               }),
             ],
           }),
@@ -2148,13 +2170,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "قَلْبِي وَقَالَبِي وَالْبِسْنِي",
-                translit: "",
-                translation: "",
+                translit: "Qalbī waqālabī walbisnī",
+                translation: "my heart and my body, and clothe me",
               }),
               new QasidaEntryModel({
                 arabic: "لِبَاسَ اتْقِيَاك",
-                translit: "",
-                translation: "",
+                translit: "Libāsa tqiyāk",
+                translation: "in the garment of Your pious ones,",
               }),
             ],
           }),
@@ -2163,13 +2185,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَغَذِّ رُوحِي بِذِكْرِك",
-                translit: "",
-                translation: "",
+                translit: "Waghadhdhi rūḥī bidhikrik",
+                translation: "and nourish my soul with remembrance of You,",
               }),
               new QasidaEntryModel({
                 arabic: "وَاحْمِنِي بِحِمَاك",
-                translit: "",
-                translation: "",
+                translit: "Waḥminī biḥimāk",
+                translation: "and protect me within Your sanctuary,",
               }),
             ],
           }),
@@ -2178,13 +2200,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَحَبِّبَك لِي وَحَبِّبْ",
-                translit: "",
-                translation: "",
+                translit: "Waḥabbibak lī waḥabbib",
+                translation: "and make You dear to me, and make dear",
               }),
               new QasidaEntryModel({
                 arabic: "لِي مَحَبَّة لِقَاك",
-                translit: "",
-                translation: "",
+                translit: "Lī maḥabbat liqāk",
+                translation: "to me the love of meeting You.",
               }),
             ],
           }),
@@ -2193,13 +2215,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "أَسْتَغْفِرُ اللَّه غُفْرَانَك",
-                translit: "",
-                translation: "",
+                translit: "Astaghfirullāh ghufrānak",
+                translation: "I seek forgiveness from Allah; Your pardon",
               }),
               new QasidaEntryModel({
                 arabic: "لِمَنْ قَدْ عَصَاك",
-                translit: "",
-                translation: "",
+                translit: "Liman qad ‛aṣāk",
+                translation: "for the one who has disobeyed You.",
               }),
             ],
           }),
@@ -2208,13 +2230,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَاصْدُق يَقِينِي وَثَبِّتْنِي",
-                translit: "",
-                translation: "",
+                translit: "Waṣduq yaqīnī wathabbitnī",
+                translation: "Make my certainty true and make me steadfast",
               }),
               new QasidaEntryModel({
                 arabic: "ثَبَات أَوْلِيَاك",
-                translit: "",
-                translation: "",
+                translit: "Thabāt awliyāk",
+                translation: "with the steadfastness of Your friends.",
               }),
             ],
           }),
@@ -2223,13 +2245,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَالْحَمْدُ لِلَّهِ وَاخْتِمْهَا",
-                translit: "",
-                translation: "",
+                translit: "Walḥamdu lillāhi wakhtimhā",
+                translation: "And praise be to Allah, and seal it",
               }),
               new QasidaEntryModel({
                 arabic: "بِطَابِع هُدَاك",
-                translit: "",
-                translation: "",
+                translit: "Biṭābi‛ hudāk",
+                translation: "with the seal of Your guidance.",
               }),
             ],
           }),
@@ -2238,13 +2260,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "صَلَاة رَبِّي وَسَلِّمْ",
-                translit: "",
-                translation: "",
+                translit: "Ṣalāt rabbī wasallim",
+                translation: "The blessings of my Lord, and peace,",
               }),
               new QasidaEntryModel({
                 arabic: "مَا نَزَل مُزْن مَاك",
-                translit: "",
-                translation: "",
+                translit: "Mā nazal muzn māk",
+                translation: "for as long as rainclouds send down their water,",
               }),
             ],
           }),
@@ -2253,13 +2275,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "عَلَى النَّبِيِّ الْمُصْطَفَى الْـ",
-                translit: "",
-                translation: "",
+                translit: "‛Alan nabiyyil muṣṭafal",
+                translation: "upon the Prophet, the Chosen One, the",
               }),
               new QasidaEntryModel({
                 arabic: "ـمَحْمُودِ خَتْم أَنْبِيَاك",
-                translit: "",
-                translation: "",
+                translit: "Maḥmūdi khatm anbiyāk",
+                translation: "Praised, the seal of Your prophets,",
               }),
             ],
           }),
@@ -2268,13 +2290,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "عَدَد حَيَاةِ الَّذِي يَحْيَا",
-                translit: "",
-                translation: "",
+                translit: "‛Adad ḥayātil ladhī yaḥyā",
+                translation: "as many as the lives of all who live",
               }),
               new QasidaEntryModel({
                 arabic: "بِهَا مِن حَيَاك",
-                translit: "",
-                translation: "",
+                translit: "Bihā min ḥayāk",
+                translation: "by it, from Your life,",
               }),
             ],
           }),
@@ -2283,13 +2305,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَالْآل وَالصَّحب",
-                translit: "",
-                translation: "",
+                translit: "Wal’āl waṣṣaḥb",
+                translation: "and upon the family and the Companions,",
               }),
               new QasidaEntryModel({
                 arabic: "وَأَلْحِقْنَا بِحِزْب أَصْفِيَاك",
-                translit: "",
-                translation: "",
+                translit: "Wa’alḥiqnā biḥizb aṣfiyāk",
+                translation: "and join us to the party of Your chosen ones.",
               }),
             ],
           }),
@@ -2304,13 +2326,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا أَمَانَ الْخَائِفِين",
-                translit: "",
-                translation: "",
+                translit: "Yā amānal khā’ifīn",
+                translation: "O Security of the fearful,",
               }),
               new QasidaEntryModel({
                 arabic: "نَجِّنَا مِمَّا نَخَافْ",
-                translit: "",
-                translation: "",
+                translit: "Najjinā mimmā nakhāf",
+                translation: "save us from what we fear,",
               }),
             ],
           }),
@@ -2319,13 +2341,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا وَلِيَّ الصَّالِحِين",
-                translit: "",
-                translation: "",
+                translit: "Yā waliyyaṣ ṣāliḥīn",
+                translation: "O Guardian of the righteous,",
               }),
               new QasidaEntryModel({
                 arabic: "كُنْ مُوَالِينَا وَكَافْ",
-                translit: "",
-                translation: "",
+                translit: "Kun muwālīnā wakāf",
+                translation: "be our Friend and be enough for us,",
               }),
             ],
           }),
@@ -2334,13 +2356,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا جَلِيسَ الذَّاكِرِين",
-                translit: "",
-                translation: "",
+                translit: "Yā jalīsadh dhākirīn",
+                translation: "O Companion of those who remember You,",
               }),
               new QasidaEntryModel({
                 arabic: "اِهْدِنَا سُبْلَ الْعَفَافْ",
-                translit: "",
-                translation: "",
+                translit: "Ihdinā sublal ‛afāf",
+                translation: "guide us to the ways of chastity,",
               }),
             ],
           }),
@@ -2349,13 +2371,14 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا مُجِيبَ السَّائِلِين",
-                translit: "",
-                translation: "",
+                translit: "Yā mujības sā’ilīn",
+                translation: "O Answerer of those who ask,",
               }),
               new QasidaEntryModel({
                 arabic: "رُفْ بِنَا وَاغْفِرْ وَعَافْ",
-                translit: "",
-                translation: "",
+                translit: "Ruf binā waghfir wa‛āf",
+                translation:
+                  "be gentle with us, forgive us, and grant us well-being,",
               }),
             ],
           }),
@@ -2364,13 +2387,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "نَسْتَعِينُك يَا مُعِين",
-                translit: "",
-                translation: "",
+                translit: "Nasta‛īnuk yā mu‛īn",
+                translation: "we seek Your help, O Helper,",
               }),
               new QasidaEntryModel({
                 arabic: "شفّهَا أَحْسَن شَفَافْ",
-                translit: "",
-                translation: "",
+                translit: "Shaffahā aḥsan shafāf",
+                translation: "make it clear in the finest clarity,",
               }),
             ],
           }),
@@ -2379,13 +2402,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "هَبْ لَنَا فَتْحًا مُبِين",
-                translit: "",
-                translation: "",
+                translit: "Hab lanā fatḥan mubīn",
+                translation: "grant us a manifest victory",
               }),
               new QasidaEntryModel({
                 arabic: "جَاءَ بِالنَّصْرِ مُوَافْ",
-                translit: "",
-                translation: "",
+                translit: "Jā’a binnaṣri muwāf",
+                translation: "that comes with help, complete,",
               }),
             ],
           }),
@@ -2394,13 +2417,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَاكْفِ شَرَّ الْمُؤذِين",
-                translit: "",
-                translation: "",
+                translit: "Wakfi sharral mu’dhīn",
+                translation: "and ward off the evil of those who cause harm,",
               }),
               new QasidaEntryModel({
                 arabic: "كُفَّهَمْ عَنَّا كَفَافْ",
-                translit: "",
-                translation: "",
+                translit: "Kuffaham ‛annā kafāf",
+                translation: "restrain them from us, enough,",
               }),
             ],
           }),
@@ -2409,13 +2432,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَالْعُتَاةَ الظَّالِمِين",
-                translit: "",
-                translation: "",
+                translit: "Wal‛utātaẓ ẓālimīn",
+                translation: "and the tyrants, the wrongdoers,",
               }),
               new QasidaEntryModel({
                 arabic: "حُتَّهُم حَتَّى التَّلَافْ",
-                translit: "",
-                translation: "",
+                translit: "Ḥuttahum ḥattat talāf",
+                translation: "strip them away until their ruin,",
               }),
             ],
           }),
@@ -2424,13 +2447,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "شَرُّهُمْ فِيهِمْ مُبِين",
-                translit: "",
-                translation: "",
+                translit: "Sharruhum fīhim mubīn",
+                translation: "their evil is plain among them,",
               }),
               new QasidaEntryModel({
                 arabic: "مِنْهُمُ فِيهِم مُضَافْ",
-                translit: "",
-                translation: "",
+                translit: "Minhumu fīhim muḍāf",
+                translation: "from them, returned upon them,",
               }),
             ],
           }),
@@ -2439,13 +2462,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "خَاسِرِينَ مُدْبِرِين",
-                translit: "",
-                translation: "",
+                translit: "Khāsirīna mudbirīn",
+                translation: "losers, turning their backs,",
               }),
               new QasidaEntryModel({
                 arabic: "ذَهَبُوا بِالْاِنْصِرَافْ",
-                translit: "",
-                translation: "",
+                translit: "Dhahabū bilinṣirāf",
+                translation: "they have gone away, departing,",
               }),
             ],
           }),
@@ -2454,13 +2477,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "مُرْتَدِّينَ هَالِكِين",
-                translit: "",
-                translation: "",
+                translit: "Murtaddīna hālikīn",
+                translation: "turned back, perishing,",
               }),
               new QasidaEntryModel({
                 arabic: "فِي شَفَا جُرفِ الْهَيَاف",
-                translit: "",
-                translation: "",
+                translit: "Fī shafā jurfil hayāf",
+                translation: "on the edge of the brink of ruin.",
               }),
             ],
           }),
@@ -2469,13 +2492,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَالطُّغَاةِ الْبَاغِين",
-                translit: "",
-                translation: "",
+                translit: "Waṭṭughātil bāghīn",
+                translation: "And the oppressors, the transgressors,",
               }),
               new QasidaEntryModel({
                 arabic: "اِكْفِهِمْ يَا خَيْرَ كَافْ",
-                translit: "",
-                translation: "",
+                translit: "Ikfihim yā khayra kāf",
+                translation: "deal with them, O best of those who suffice.",
               }),
             ],
           }),
@@ -2484,13 +2507,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "حَسْبُنَا اللَّه الْمُعِين",
-                translit: "",
-                translation: "",
+                translit: "Ḥasbunallāhul Mu‛īn",
+                translation: "Allah, the Helper, is enough for us;",
               }),
               new QasidaEntryModel({
                 arabic: "هُوَ هُوَ لَا خِلَافْ",
-                translit: "",
-                translation: "",
+                translit: "Huwa huwa lā khilāf",
+                translation: "He, He, without any dispute,",
               }),
             ],
           }),
@@ -2499,13 +2522,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَكَفَى الْمُتَوَكِّلِين",
-                translit: "",
-                translation: "",
+                translit: "Wakafal mutawakkilīn",
+                translation: "and He suffices those who put their trust in Him",
               }),
               new QasidaEntryModel({
                 arabic: "كُلَّ شَرٍّ مِنْ مُخَافْ",
-                translit: "",
-                translation: "",
+                translit: "Kulla sharrin min mukhāf",
+                translation: "against every evil of what is feared.",
               }),
             ],
           }),
@@ -2514,13 +2537,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "هُوَ رَبُّ الْعَالَمِين",
-                translit: "",
-                translation: "",
+                translit: "Huwa rabbul ‛ālamīn",
+                translation: "He is the Lord of the worlds,",
               }),
               new QasidaEntryModel({
                 arabic: "وَإِلَيْهِ الْإِنْعِطَافْ",
-                translit: "",
-                translation: "",
+                translit: "Wa’ilayhil in‛iṭāf",
+                translation: "and toward Him is the turning,",
               }),
             ],
           }),
@@ -2529,13 +2552,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "كَهْفُنَا الْحِصْنُ الْحَصِين",
-                translit: "",
-                translation: "",
+                translit: "Kahfunal ḥiṣnul ḥaṣīn",
+                translation: "our shelter, the impregnable fortress;",
               }),
               new QasidaEntryModel({
                 arabic: "مِنْ سِوَاهُ مَا نَخَافْ",
-                translit: "",
-                translation: "",
+                translit: "Min siwāhu mā nakhāf",
+                translation: "we fear nothing besides Him.",
               }),
             ],
           }),
@@ -2544,13 +2567,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَصَلَاةٌ كُلَّ حِين",
-                translit: "",
-                translation: "",
+                translit: "Waṣalātun kulla ḥīn",
+                translation: "And blessings at every moment,",
               }),
               new QasidaEntryModel({
                 arabic: "وَسَلَامُ اللَّهِ وَافْ",
-                translit: "",
-                translation: "",
+                translit: "Wasalāmullāhi wāf",
+                translation: "and the peace of Allah, abundant,",
               }),
             ],
           }),
@@ -2559,13 +2582,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "تَبْلُغُ الْهَادِي الْأَمِين",
-                translit: "",
-                translation: "",
+                translit: "Tablughul hādil amīn",
+                translation: "reaching the Guide, the Trustworthy,",
               }),
               new QasidaEntryModel({
                 arabic: "وَآلَه اَصْحَابَ الْعَفَافْ",
-                translit: "",
-                translation: "",
+                translit: "Wa’ālah aṣḥābal ‛afāf",
+                translation: "and his family, the Companions of chastity.",
               }),
             ],
           }),
@@ -2574,13 +2597,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "خَتْمُهَا لِلْمُسْلِمِين",
-                translit: "",
-                translation: "",
+                translit: "Khatmuhā lilmuslimīn",
+                translation: "Its conclusion is for the Muslims,",
               }),
               new QasidaEntryModel({
                 arabic: "الْمَسَاكِين الضِّعَافْ",
-                translit: "",
-                translation: "",
+                translit: "Al-masākīniḍ ḍi‛āf",
+                translation: "the poor, the weak.",
               }),
             ],
           }),
@@ -2589,13 +2612,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "غَارَةُ اللَّهِ الْمَتِين",
-                translit: "",
-                translation: "",
+                translit: "Ghāratullāhil matīn",
+                translation: "The succour of Allah, the Firm,",
               }),
               new QasidaEntryModel({
                 arabic: "هُوْ بِهِمْ أَرْحَمْ وَرَافْ",
-                translit: "",
-                translation: "",
+                translit: "Hū bihim arḥam warāf",
+                translation: "He is more merciful and kind toward them.",
               }),
             ],
           }),
@@ -2610,13 +2633,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا تَوَّاب تُبْ عَلَيْنَا",
-                translit: "",
-                translation: "",
+                translit: "Yā Tawwāb tub ‛alaynā",
+                translation: "O Ever-Relenting, relent toward us,",
               }),
               new QasidaEntryModel({
                 arabic: "وَارْحَمْنَا وَانْظُرْ إِلَيْنَا",
-                translit: "",
-                translation: "",
+                translit: "Warḥamnā wanẓur ilaynā",
+                translation: "and have mercy on us and look upon us,",
               }),
             ],
           }),
@@ -2625,13 +2648,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا تَوَّاب تُبْ عَلَيْنَا",
-                translit: "",
-                translation: "",
+                translit: "Yā Tawwāb tub ‛alaynā",
+                translation: "O Ever-Relenting, relent toward us,",
               }),
               new QasidaEntryModel({
                 arabic: "سَامِحْنَا فِيمَا جَنَيْنَا",
-                translit: "",
-                translation: "",
+                translit: "Sāmiḥnā fīmā janaynā",
+                translation: "pardon us for what we have committed,",
               }),
             ],
           }),
@@ -2640,13 +2663,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا تَوَّاب تُبْ عَلَيْنَا",
-                translit: "",
-                translation: "",
+                translit: "Yā Tawwāb tub ‛alaynā",
+                translation: "O Ever-Relenting, relent toward us,",
               }),
               new QasidaEntryModel({
                 arabic: "اِغْفِرْ لَنَا وَلِوَالِدِينَا",
-                translit: "",
-                translation: "",
+                translit: "Ighfir lanā waliwālidīnā",
+                translation: "forgive us and our parents.",
               }),
             ],
           }),
@@ -2655,13 +2678,14 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا اللَّه بِتَوْبَة تَوْبَة مَغْفِرَة",
-                translit: "",
-                translation: "",
+                translit: "Yā Allāh bitawbat tawbat maghfirah",
+                translation:
+                  "O Allah, with repentance, repentance, and forgiveness,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالْجَمَالَة دُنْيَا وَآخِرَة",
-                translit: "",
-                translation: "",
+                translit: "Waljamālat dunyā wa’ākhirah",
+                translation: "and beauty in this world and the next.",
               }),
             ],
           }),
@@ -2670,13 +2694,15 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا اللَّه بِتَوْبَة وَقَبُول وَإِحْسَان",
-                translit: "",
-                translation: "",
+                translit: "Yā Allāh bitawbat waqabūl wa’iḥsān",
+                translation:
+                  "O Allah, with repentance and acceptance and kindness,",
               }),
               new QasidaEntryModel({
                 arabic: "يَا اللَّه بِتَوْبَة قَبْلَ دَرْجِ الْأَكْفَان",
-                translit: "",
-                translation: "",
+                translit: "Yā Allāh bitawbat qabla darjil akfān",
+                translation:
+                  "O Allah, with repentance before the shrouds are wrapped around us,",
               }),
             ],
           }),
@@ -2685,13 +2711,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا اللَّه رِضَى يَا اللَّه رِضَى",
-                translit: "",
-                translation: "",
+                translit: "Yā Allāh riḍā yā Allāh riḍā",
+                translation: "O Allah, Your pleasure, O Allah, Your pleasure,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالْعَفْوَ عَمَّا قَدْ مَضَى",
-                translit: "",
-                translation: "",
+                translit: "Wal‛afwa ‛ammā qad maḍā",
+                translation: "and pardon for what has passed,",
               }),
             ],
           }),
@@ -2700,13 +2726,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا اللَّه رِضَى يَا اللَّه رِضَى",
-                translit: "",
-                translation: "",
+                translit: "Yā Allāh riḍā yā Allāh riḍā",
+                translation: "O Allah, Your pleasure, O Allah, Your pleasure,",
               }),
               new QasidaEntryModel({
                 arabic: "يَا اللَّه بِتَوْبَةْ وَالْقَبُول",
-                translit: "",
-                translation: "",
+                translit: "Yā Allāh bitawbah walqabūl",
+                translation: "O Allah, with repentance and acceptance.",
               }),
             ],
           }),
@@ -2715,13 +2741,15 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "أَسْتَغْفِرُ اللَّه أَسْتَغْفِرُ اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Astaghfirullāh astaghfirullāh",
+                translation:
+                  "I seek forgiveness from Allah, I seek forgiveness from Allah,",
               }),
               new QasidaEntryModel({
                 arabic: "أَسْتَغْفِرُ اللَّه وَنَتُوبُ إِلَى اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Astaghfirullāh wanatūbu ilallāh",
+                translation:
+                  "I seek forgiveness from Allah, and we repent to Allah.",
               }),
             ],
           }),
@@ -2730,13 +2758,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "أَسْتَغْفِرُ اللَّهَ رَبَّ الْبَرَايَا",
-                translit: "",
-                translation: "",
+                translit: "Astaghfirullāha rabbal barāyā",
+                translation: "I seek forgiveness from Allah, Lord of creation,",
               }),
               new QasidaEntryModel({
                 arabic: "أَسْتَغْفِرُ اللَّه مِنَ الْخَطَايَا",
-                translit: "",
-                translation: "",
+                translit: "Astaghfirullāh minal khaṭāyā",
+                translation: "I seek forgiveness from Allah for all sins.",
               }),
             ],
           }),
@@ -2745,13 +2773,14 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا فَارِجَ الْهَمِّ يَا كَاشِفَ الْغَم",
-                translit: "",
-                translation: "",
+                translit: "Yā fārijal hammi yā kāshifal ghamm",
+                translation: "O Reliever of worry, O Remover of grief,",
               }),
               new QasidaEntryModel({
                 arabic: "يَا مَنْ لِعَبْدِهِ يَغْفِرْ وَيَرْحَمْ",
-                translit: "",
-                translation: "",
+                translit: "Yā man li‛abdihi yaghfir wayarḥam",
+                translation:
+                  "O You who forgive and show mercy to Your servant,",
               }),
             ],
           }),
@@ -2760,13 +2789,14 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا رَبِّ سَالَكْ بِحَقِّ ذَاتِك",
-                translit: "",
-                translation: "",
+                translit: "Yā rabbi sālak biḥaqqi dhātik",
+                translation:
+                  "O my Lord, I ask You by the right of Your Essence,",
               }),
               new QasidaEntryModel({
                 arabic: "اِغْفِرْ لَنَا وَلِوَالِدِينَا",
-                translit: "",
-                translation: "",
+                translit: "Ighfir lanā waliwālidīnā",
+                translation: "forgive us and our parents.",
               }),
             ],
           }),
@@ -2796,8 +2826,8 @@ export default [
               }),
               new QasidaEntryModel({
                 arabic: "مِنَ اللَّه نَرْجُو الْغُفْرَان",
-                translit: "",
-                translation: "",
+                translit: "Minallāh narjūl ghufrān",
+                translation: "From Allah we hope for forgiveness,",
               }),
             ],
           }),
@@ -2806,23 +2836,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا حَنَّان يَا مَنَّان",
-                translit: "",
-                translation: "",
+                translit: "Yā ḥannān yā mannān",
+                translation: "O Compassionate, O Great Giver,",
               }),
               new QasidaEntryModel({
                 arabic: "يَا قَدِيمَ الْإِحْسَان",
-                translit: "",
-                translation: "",
+                translit: "Yā qadīmal iḥsān",
+                translation: "O Eternal in kindness,",
               }),
               new QasidaEntryModel({
                 arabic: "بَحْر جُودِك مَلْيَان",
-                translit: "",
-                translation: "",
+                translit: "Baḥr jūdik malyān",
+                translation: "the sea of Your generosity is full,",
               }),
               new QasidaEntryModel({
                 arabic: "جُدْ لَنَا بِالْغُفْرَان",
-                translit: "",
-                translation: "",
+                translit: "Jud lanā bilghufrān",
+                translation: "be generous to us with forgiveness,",
               }),
             ],
           }),
@@ -2831,23 +2861,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "جُدْ لِهَذَا الْإِنْسَان",
-                translit: "",
-                translation: "",
+                translit: "Jud lihādhal insān",
+                translation: "be generous to this human being,",
               }),
               new QasidaEntryModel({
                 arabic: "عَبْدِ سُوءٍ خَزْيَان",
-                translit: "",
-                translation: "",
+                translit: "‛Abdi sū’in khazyān",
+                translation: "a wretched servant, disgraced,",
               }),
               new QasidaEntryModel({
                 arabic: "مِنْ ذُنُوبِه وَحْلَان",
-                translit: "",
-                translation: "",
+                translit: "Min dhunūbih waḥlān",
+                translation: "stuck in the mire of his sins,",
               }),
               new QasidaEntryModel({
                 arabic: "خَائِف إِنَّك غَضْبَان",
-                translit: "",
-                translation: "",
+                translit: "Khā’if innak ghaḍbān",
+                translation: "afraid that You are angry.",
               }),
             ],
           }),
@@ -2856,23 +2886,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "رَبَّنَا نَسْتَعْفِيك",
-                translit: "",
-                translation: "",
+                translit: "Rabbanā nasta‛fīk",
+                translation: "Our Lord, we ask Your pardon,",
               }),
               new QasidaEntryModel({
                 arabic: "رَبَّنَا نَسْتَكْفِيك",
-                translit: "",
-                translation: "",
+                translit: "Rabbanā nastakfīk",
+                translation: "our Lord, we ask You to suffice us,",
               }),
               new QasidaEntryModel({
                 arabic: "وَلَنَا ظَنٌّ فِيك",
-                translit: "",
-                translation: "",
+                translit: "Walanā ẓannun fīk",
+                translation: "and we place our expectation in You,",
               }),
               new QasidaEntryModel({
                 arabic: "يَا رَجَاء أهْلِ الْإِيمَان",
-                translit: "",
-                translation: "",
+                translit: "Yā rajā’ ahlil īmān",
+                translation: "O Hope of the people of faith,",
               }),
             ],
           }),
@@ -2881,23 +2911,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "لَا تُخَيِّب رَاجِي",
-                translit: "",
-                translation: "",
+                translit: "Lā tukhayyib rājī",
+                translation: "do not disappoint the one who hopes,",
               }),
               new QasidaEntryModel({
                 arabic: "تَحْتَ بَابِك لَاجِي",
-                translit: "",
-                translation: "",
+                translit: "Taḥta bābik lājī",
+                translation: "who takes refuge beneath Your door,",
               }),
               new QasidaEntryModel({
                 arabic: "لَمْ يَزَلْ بِالدَّاجِي",
-                translit: "",
-                translation: "",
+                translit: "Lam yazal biddājī",
+                translation: "who has not ceased, in the darkness,",
               }),
               new QasidaEntryModel({
                 arabic: "قَائِلاً: يَا حَنَّان",
-                translit: "",
-                translation: "",
+                translit: "Qā’ilan: yā ḥannān",
+                translation: "saying: O Compassionate One.",
               }),
             ],
           }),
@@ -2906,23 +2936,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "بِعَظِيمِ الْأَسْمَا",
-                translit: "",
-                translation: "",
+                translit: "Bi‛aẓīmil asmā",
+                translation: "By the mighty Names,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالصِّفَاتِ الْعُظْمَى",
-                translit: "",
-                translation: "",
+                translit: "Waṣṣifātil ‛uẓmā",
+                translation: "and the supreme Attributes,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالْمَلَائِك جَمَّا",
-                translit: "",
-                translation: "",
+                translit: "Walmalā’ik jammā",
+                translation: "and the angels, in their multitudes,",
               }),
               new QasidaEntryModel({
                 arabic: "وَبِجَاهِ الْقُرْآن",
-                translit: "",
-                translation: "",
+                translit: "Wabijāhil qur’ān",
+                translation: "and by the standing of the Qur’ān,",
               }),
             ],
           }),
@@ -2931,23 +2961,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "بِالنَّبِيِّ الْأُمِّي",
-                translit: "",
-                translation: "",
+                translit: "Binnabiyyil ummī",
+                translation: "by the unlettered Prophet,",
               }),
               new QasidaEntryModel({
                 arabic: "وَخَدِيجَة أُمِّي",
-                translit: "",
-                translation: "",
+                translit: "Wakhadījat ummī",
+                translation: "and Khadījah, my mother,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالْبَتُولِ الْخَتْمِ",
-                translit: "",
-                translation: "",
+                translit: "Walbatūlil khatm",
+                translation: "and al-Batūl, the Seal,",
               }),
               new QasidaEntryModel({
                 arabic: "سَيِّدَاتِ النِّسْوَان",
-                translit: "",
-                translation: "",
+                translit: "Sayyidātin niswān",
+                translation: "the leaders of women,",
               }),
             ],
           }),
@@ -2956,23 +2986,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "بِالنَّبِيِّينَ الْجَمْ",
-                translit: "",
-                translation: "",
+                translit: "Binnabiyyīnal jamm",
+                translation: "by the many prophets,",
               }),
               new QasidaEntryModel({
                 arabic: "مِنْ أَبِينَا آدَم",
-                translit: "",
-                translation: "",
+                translit: "Min abīnā Ādam",
+                translation: "from our father Ādam,",
               }),
               new QasidaEntryModel({
                 arabic: "وَبِنُوحِ الْأَقْدَمْ",
-                translit: "",
-                translation: "",
+                translit: "Wabinūḥil aqdam",
+                translation: "and by Nūḥ, the most ancient,",
               }),
               new QasidaEntryModel({
                 arabic: "وَخَلِيلِ الرَّحْمَن",
-                translit: "",
-                translation: "",
+                translit: "Wakhalīlir raḥmān",
+                translation: "and the intimate friend of the Most Merciful,",
               }),
             ],
           }),
@@ -2981,23 +3011,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "بِالنَّبِيّ بِن مَرْيَم",
-                translit: "",
-                translation: "",
+                translit: "Binnabiyyi bin Maryam",
+                translation: "by the Prophet, son of Maryam,",
               }),
               new QasidaEntryModel({
                 arabic: "وَبِهُودِ الْأَكْرَم",
-                translit: "",
-                translation: "",
+                translit: "Wabihūdil akram",
+                translation: "and by Hūd, the most honoured,",
               }),
               new QasidaEntryModel({
                 arabic: "وَبِهَادُونِ الْعَم",
-                translit: "",
-                translation: "",
+                translit: "Wabihādūnil ‛amm",
+                translation: "and by Hārūn, the uncle,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالنَّبِي بِن عِمْرَان",
-                translit: "",
-                translation: "",
+                translit: "Wannabī bin ‛Imrān",
+                translation: "and the Prophet, son of ‛Imrān,",
               }),
             ],
           }),
@@ -3006,23 +3036,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَبِجَاهِ الْأَصْحَاب",
-                translit: "",
-                translation: "",
+                translit: "Wabijāhil aṣḥāb",
+                translation: "and by the standing of the Companions,",
               }),
               new QasidaEntryModel({
                 arabic: "وَبِجَاهِ الْأَقْطَاب",
-                translit: "",
-                translation: "",
+                translit: "Wabijāhil aqṭāb",
+                translation: "and by the standing of the Poles,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالْوَلِيِّ الْأَوَّاب",
-                translit: "",
-                translation: "",
+                translit: "Walwaliyyil awwāb",
+                translation: "and the saint who constantly returns to Allah,",
               }),
               new QasidaEntryModel({
                 arabic: "شَيْخِنَا بَاسَوْدَان",
-                translit: "",
-                translation: "",
+                translit: "Shaykhinā Bāsawdān",
+                translation: "our Shaykh, Bā Sawdān,",
               }),
             ],
           }),
@@ -3031,23 +3061,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "بِمَشَايِخِ الْإِسْلَام",
-                translit: "",
-                translation: "",
+                translit: "Bimashāyikhil islām",
+                translation: "by the shaykhs of Islam,",
               }),
               new QasidaEntryModel({
                 arabic: "أَهْلِ عِلْمٍ وَأَحْكَام",
-                translit: "",
-                translation: "",
+                translit: "Ahli ‛ilmin wa’aḥkām",
+                translation: "people of knowledge and rulings,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالْوَلِي بِن بسْطَام",
-                translit: "",
-                translation: "",
+                translit: "Walwalī bin Bisṭām",
+                translation: "and the saint, son of Bisṭām,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالْوَلِي بِن جَيْلَان",
-                translit: "",
-                translation: "",
+                translit: "Walwalī bin Jaylān",
+                translation: "and the saint, son of Jaylān,",
               }),
             ],
           }),
@@ -3062,8 +3092,8 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا إِلَهَ الْعَالَم",
-                translit: "",
-                translation: "",
+                translit: "Yā ilāhal ‛ālam",
+                translation: "O God of the world,",
               }),
             ],
           }),
@@ -3072,23 +3102,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "بأهْلِ (تُرْبَة بَشَّار)",
-                translit: "",
-                translation: "",
+                translit: "Bi’ahli (Turbat Bashshār)",
+                translation: "by the people of Turbat Bashshār,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالْفَقِيهِ الْمِشْهَار",
-                translit: "",
-                translation: "",
+                translit: "Walfaqīhil Mishhār",
+                translation: "and the renowned Faqīh,",
               }),
               new QasidaEntryModel({
                 arabic: "وَآل عَلوِي الْأَبْرَار",
-                translit: "",
-                translation: "",
+                translit: "Wa’āl ‛Alawīl abrār",
+                translation: "and the family of ‛Alawī, the righteous,",
               }),
               new QasidaEntryModel({
                 arabic: "مَنْ بِهِمْ حَالِي زَانْ",
-                translit: "",
-                translation: "",
+                translit: "Man bihim ḥālī zān",
+                translation: "through whom my state is adorned,",
               }),
             ],
           }),
@@ -3097,23 +3127,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "بأهْلِ (عِينَاتِ) الْيَوم",
-                translit: "",
-                translation: "",
+                translit: "Bi’ahli (‛Īnāti) alyawm",
+                translation: "by the people of ‛Īnāt today,",
               }),
               new QasidaEntryModel({
                 arabic: "مَا كَمَاهُم فِي الْقَوم",
-                translit: "",
-                translation: "",
+                translit: "Mā kamāhum fil qawm",
+                translation: "there is none like them among the people,",
               }),
               new QasidaEntryModel({
                 arabic: "وَإِنْ بَدَا مِنِّي لَوم",
-                translit: "",
-                translation: "",
+                translit: "Wa’in badā minnī lawm",
+                translation: "and if blame appears from me,",
               }),
               new QasidaEntryModel({
                 arabic: "يَطْلُبُوا لِي الْغُفْرَانْ",
-                translit: "",
-                translation: "",
+                translit: "Yaṭlubū līl ghufrān",
+                translation: "they will ask forgiveness for me.",
               }),
             ],
           }),
@@ -3122,23 +3152,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "بِالْحَسَن بِن صَالِح",
-                translit: "",
-                translation: "",
+                translit: "Bilḥasan bin Ṣāliḥ",
+                translation: "By al-Ḥasan bin Ṣāliḥ,",
               }),
               new QasidaEntryModel({
                 arabic: "بَحْرِ نُورُه طَافِح",
-                translit: "",
-                translation: "",
+                translit: "Baḥri nūruh ṭāfiḥ",
+                translation: "an ocean whose light overflows,",
               }),
               new QasidaEntryModel({
                 arabic: "لَا تَكُنْ لِي فَاضِح",
-                translit: "",
-                translation: "",
+                translit: "Lā takun lī fāḍiḥ",
+                translation: "do not expose me,",
               }),
               new QasidaEntryModel({
                 arabic: "يَا صَمَد يَا مَنَّانْ",
-                translit: "",
-                translation: "",
+                translit: "Yā Ṣamad yā Mannān",
+                translation: "O Self-Sufficient, O Great Giver.",
               }),
             ],
           }),
@@ -3147,23 +3177,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "مِثْل شَيْخِ الْمَشْهَد",
-                translit: "",
-                translation: "",
+                translit: "Mithl shaykhil mashhad",
+                translation: "Like the Shaykh of the Mashhad,",
               }),
               new QasidaEntryModel({
                 arabic: "ابنِ نَاصِر أَحْمَد",
-                translit: "",
-                translation: "",
+                translit: "Ibni Nāṣir Aḥmad",
+                translation: "the son of Nāṣir, Aḥmad,",
               }),
               new QasidaEntryModel({
                 arabic: "وَأَبِيه ثُمَّ الْجَدْ",
-                translit: "",
-                translation: "",
+                translit: "Wa’abīh thummal jadd",
+                translation: "and his father, and then the grandfather,",
               }),
               new QasidaEntryModel({
                 arabic: "لِلْمَعَالِي لَهُم شَانْ",
-                translit: "",
-                translation: "",
+                translit: "Lilma‛ālī lahum shān",
+                translation: "they have a standing in the heights of honour.",
               }),
             ],
           }),
@@ -3172,23 +3202,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "جُدْ لَنَا بِالْمَطْلُوب",
-                translit: "",
-                translation: "",
+                translit: "Jud lanā bilmaṭlūb",
+                translation: "Be generous to us with what we ask,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالْفَرَج مِثْل أَيُّوب",
-                translit: "",
-                translation: "",
+                translit: "Walfaraj mithl Ayyūb",
+                translation: "and with relief, as for Ayyūb,",
               }),
               new QasidaEntryModel({
                 arabic: "وَبِفَرْحَة يَعْقُوب",
-                translit: "",
-                translation: "",
+                translit: "Wabifarḥat Ya‛qūb",
+                translation: "and with the joy of Ya‛qūb,",
               }),
               new QasidaEntryModel({
                 arabic: "حِين زَالَتِ الْأَحْزَانْ",
-                translit: "",
-                translation: "",
+                translit: "Ḥīn zālatil aḥzān",
+                translation: "when the sorrows departed.",
               }),
             ],
           }),
@@ -3197,23 +3227,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "رَبَّنَا اغْفِرْ وَارْحَمْ",
-                translit: "",
-                translation: "",
+                translit: "Rabbanā ghfir warḥam",
+                translation: "Our Lord, forgive and have mercy,",
               }),
               new QasidaEntryModel({
                 arabic: "وَاعْفُ عَمَّا تَعْلَم",
-                translit: "",
-                translation: "",
+                translit: "Wa‛fu ‛ammā ta‛lam",
+                translation: "and pardon what You know,",
               }),
               new QasidaEntryModel({
                 arabic: "فَإِنَّ جُودَك قَدْ عَمْ",
-                translit: "",
-                translation: "",
+                translit: "Fa’inna jūdak qad ‛amm",
+                translation: "for Your generosity has spread to all,",
               }),
               new QasidaEntryModel({
                 arabic: "إِنْسَ خَلْقِك وَالْجَانْ",
-                translit: "",
-                translation: "",
+                translit: "Insa khalqik waljān",
+                translation: "the humans of Your creation, and the jinn,",
               }),
             ],
           }),
@@ -3222,23 +3252,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَدُرُوسِ الْقُرْآن",
-                translit: "",
-                translation: "",
+                translit: "Wadurūsil qur’ān",
+                translation: "and by the lessons of the Qur’ān,",
               }),
               new QasidaEntryModel({
                 arabic: "وَاجْتِمَاعِ الْإِخْوَان",
-                translit: "",
-                translation: "",
+                translit: "Wajtimā‛il ikhwān",
+                translation: "and the gathering of the brothers,",
               }),
               new QasidaEntryModel({
                 arabic: "لِدُعَاءِ الرَّحْمَن",
-                translit: "",
-                translation: "",
+                translit: "Lidu‛ā’ir raḥmān",
+                translation: "to call upon the Most Merciful,",
               }),
               new QasidaEntryModel({
                 arabic: "سِرَّهُم وَالْإِعْلَانْ",
-                translit: "",
-                translation: "",
+                translit: "Sirrahum wal’i‛lān",
+                translation: "in private and in the open.",
               }),
             ],
           }),
@@ -3247,23 +3277,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَالْحَبِيبِ المحْضَار",
-                translit: "",
-                translation: "",
+                translit: "Walḥabībil Miḥḍār",
+                translation: "And the beloved al-Miḥḍār,",
               }),
               new QasidaEntryModel({
                 arabic: "قَائِمًا بِالْأَسْحَار",
-                translit: "",
-                translation: "",
+                translit: "Qā’iman bil’asḥār",
+                translation: "standing in prayer at the hours before dawn,",
               }),
               new QasidaEntryModel({
                 arabic: "قَائِلاً: يَا غَفَّار",
-                translit: "",
-                translation: "",
+                translit: "Qā’ilan: yā Ghaffār",
+                translation: "saying: O Ever-Forgiving,",
               }),
               new QasidaEntryModel({
                 arabic: "جُدْ لَنَا بِالْغُفْرَانْ",
-                translit: "",
-                translation: "",
+                translit: "Jud lanā bilghufrān",
+                translation: "be generous to us with forgiveness.",
               }),
             ],
           }),
@@ -3272,23 +3302,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "اِسْتَجِبْ لِي وَاسْمَعْ",
-                translit: "",
-                translation: "",
+                translit: "Istajib lī wasma‛",
+                translation: "Answer me, and hear,",
               }),
               new QasidaEntryModel({
                 arabic: "وَلَنَا الْكُل أَجْمَع",
-                translit: "",
-                translation: "",
+                translit: "Walanal kull ajma‛",
+                translation: "and us, all of us together,",
               }),
               new QasidaEntryModel({
                 arabic: "وَلِمَنْ لَكْ يَضْرَعْ",
-                translit: "",
-                translation: "",
+                translit: "Waliman lak yaḍra‛",
+                translation: "and whoever humbles himself to You,",
               }),
               new QasidaEntryModel({
                 arabic: "طَالِبًا لِلْإِحْسَانْ",
-                translit: "",
-                translation: "",
+                translit: "Ṭāliban lil’iḥsān",
+                translation: "seeking Your kindness.",
               }),
             ],
           }),
@@ -3297,23 +3327,24 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَصَلَاةٌ تَتْرَى",
-                translit: "",
-                translation: "",
+                translit: "Waṣalātun tatrā",
+                translation: "And blessings in unbroken succession",
               }),
               new QasidaEntryModel({
                 arabic: "لِمَنْ خُصَّ بِالْإِسْرَا",
-                translit: "",
-                translation: "",
+                translit: "Liman khuṣṣa bil’isrā",
+                translation:
+                  "upon him who was singled out with the Night Journey,",
               }),
               new QasidaEntryModel({
                 arabic: "وَذَوِيهِ طُرَّا",
-                translit: "",
-                translation: "",
+                translit: "Wadhawīhi ṭurrā",
+                translation: "and all his kinsfolk,",
               }),
               new QasidaEntryModel({
                 arabic: "فِي جَمِيعِ الْأَزْمَان",
-                translit: "",
-                translation: "",
+                translit: "Fī jamī‛il azmān",
+                translation: "at all times.",
               }),
             ],
           }),
@@ -3328,23 +3359,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا عَالِمَ السِّرِّ مِنَّا",
-                translit: "",
-                translation: "",
+                translit: "Yā ‛ālimas sirri minnā",
+                translation: "O Knower of what is secret in us,",
               }),
               new QasidaEntryModel({
                 arabic: "لَا تَهتِكِ السَّتْرَ عَنَّا",
-                translit: "",
-                translation: "",
+                translit: "Lā tahtikis satra ‛annā",
+                translation: "do not tear the veil from us,",
               }),
               new QasidaEntryModel({
                 arabic: "وَعَافِنَا وَاعْفُ عَنَّا",
-                translit: "",
-                translation: "",
+                translit: "Wa‛āfinā wa‛fu ‛annā",
+                translation: "and grant us well-being and pardon us,",
               }),
               new QasidaEntryModel({
                 arabic: "وَكُنْ لَنَا حَيْثُ كُنَّا",
-                translit: "",
-                translation: "",
+                translit: "Wakun lanā ḥaythu kunnā",
+                translation: "and be with us wherever we are.",
               }),
             ],
           }),
@@ -3353,23 +3384,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا رَبِّ يَا عَالِمَ الْحَال",
-                translit: "",
-                translation: "",
+                translit: "Yā rabbi yā ‛ālimal ḥāl",
+                translation: "O my Lord, O Knower of our state,",
               }),
               new QasidaEntryModel({
                 arabic: "إِلَيْكَ وَجَّهتُ الْآمَال",
-                translit: "",
-                translation: "",
+                translit: "Ilayka wajjahtul āmāl",
+                translation: "to You I have directed my hopes,",
               }),
               new QasidaEntryModel({
                 arabic: "فَامْنُنْ عَلَيْنَا بِالْإِقْبَال",
-                translit: "",
-                translation: "",
+                translit: "Famnun ‛alaynā bil’iqbāl",
+                translation: "so favour us by turning toward us,",
               }),
               new QasidaEntryModel({
                 arabic: "وَكُنْ لَنَا وَاصْلِحِ الْبَال",
-                translit: "",
-                translation: "",
+                translit: "Wakun lanā waṣliḥil bāl",
+                translation: "and be with us, and set our state right.",
               }),
             ],
           }),
@@ -3378,23 +3409,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا رَبِّ يَا رَبَّ الْأَرْبَاب",
-                translit: "",
-                translation: "",
+                translit: "Yā rabbi yā rabbal arbāb",
+                translation: "O my Lord, O Lord of lords,",
               }),
               new QasidaEntryModel({
                 arabic: "عَبْدُك فَقِيرُك عَلَى الْبَاب",
-                translit: "",
-                translation: "",
+                translit: "‛Abduk faqīruk ‛alal bāb",
+                translation: "Your servant, Your poor one, is at the door,",
               }),
               new QasidaEntryModel({
                 arabic: "أَتَى وَقَدْ بَتَّ الْأَسْبَاب",
-                translit: "",
-                translation: "",
+                translit: "Atā waqad battal asbāb",
+                translation: "he has come, having cut off all other means,",
               }),
               new QasidaEntryModel({
                 arabic: "مُسْتَدْرِكًا بَعْدَ مَا مَال",
-                translit: "",
-                translation: "",
+                translit: "Mustadrikan ba‛da mā māl",
+                translation: "setting right what had gone astray.",
               }),
             ],
           }),
@@ -3403,23 +3434,24 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا وَاسِعَ الْجُودِ جُودَك",
-                translit: "",
-                translation: "",
+                translit: "Yā wāsi‛al jūdi jūdak",
+                translation: "O Vast in generosity, Your generosity",
               }),
               new QasidaEntryModel({
                 arabic: "اَلْخَيْرُ خَيْرُك وَعِنْدَك",
-                translit: "",
-                translation: "",
+                translit: "Al-khayru khayruk wa‛indak",
+                translation:
+                  "is all good: the good is Your good, and is with You,",
               }),
               new QasidaEntryModel({
                 arabic: "فَوْقَ الَّذِي رَامَ عَبْدُك",
-                translit: "",
-                translation: "",
+                translit: "Fawqal ladhī rāma ‛abduk",
+                translation: "beyond what Your servant seeks,",
               }),
               new QasidaEntryModel({
                 arabic: "فَادْرِك بِرَحْمَتِك فِي الْحَالِ",
-                translit: "",
-                translation: "",
+                translit: "Fadrik biraḥmatik fil ḥāl",
+                translation: "so reach me with Your mercy at once,",
               }),
             ],
           }),
@@ -3428,23 +3460,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا مُوجِدَ الْخَلقِ طُرًّا",
-                translit: "",
-                translation: "",
+                translit: "Yā mūjidal khalqi ṭurrā",
+                translation: "O Bringer into being of all creation,",
               }),
               new QasidaEntryModel({
                 arabic: "وَمُوسِعَ الْكُلِّ بِرًّا",
-                translit: "",
-                translation: "",
+                translit: "Wamūsi‛al kulli birrā",
+                translation: "who extends kindness to all,",
               }),
               new QasidaEntryModel({
                 arabic: "أَسْأَلُكَ إسْبَال سَتْرًا",
-                translit: "",
-                translation: "",
+                translit: "As’aluka isbāl satrā",
+                translation: "I ask You to draw down a veil",
               }),
               new QasidaEntryModel({
                 arabic: "عَلَى الْقَبَائِح وَالْأَخْطَالْ",
-                translit: "",
-                translation: "",
+                translit: "‛Alal qabā’iḥ wal’akhṭāl",
+                translation: "over shameful deeds and errors.",
               }),
             ],
           }),
@@ -3453,23 +3485,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا مَنْ يَرَى سِرَّ قَلْبِي",
-                translit: "",
-                translation: "",
+                translit: "Yā man yarā sirra qalbī",
+                translation: "O You who see the secret of my heart,",
               }),
               new QasidaEntryModel({
                 arabic: "حَسْبِي اطِّلَاعُكَ حَسْبِي",
-                translit: "",
-                translation: "",
+                translit: "Ḥasbī iṭṭilā‛uka ḥasbī",
+                translation: "Your awareness of it is enough for me, enough,",
               }),
               new QasidaEntryModel({
                 arabic: "فَامْحُ بِعَفْوِكَ ذَنْبِي",
-                translit: "",
-                translation: "",
+                translit: "Famḥu bi‛afwika dhanbī",
+                translation: "so wipe away my sin with Your pardon,",
               }),
               new QasidaEntryModel({
                 arabic: "وَاصْلِح قُصُودِي وَالْأَعْمَال",
-                translit: "",
-                translation: "",
+                translit: "Waṣliḥ quṣūdī wal’a‛māl",
+                translation: "and set right my intentions and my deeds.",
               }),
             ],
           }),
@@ -3478,23 +3510,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "رَبِّي عَلَيْكَ اعْتِمَادِي",
-                translit: "",
-                translation: "",
+                translit: "Rabbī ‛alayka ‛timādī",
+                translation: "My Lord, upon You is my reliance,",
               }),
               new QasidaEntryModel({
                 arabic: "كَمَا إِلَيْكَ اسْتِنَادِي",
-                translit: "",
-                translation: "",
+                translit: "Kamā ilayka stinādī",
+                translation: "and on You I lean,",
               }),
               new QasidaEntryModel({
                 arabic: "صِدْقًا وَأَقْصَى مُرَادِي",
-                translit: "",
-                translation: "",
+                translit: "Ṣidqan wa’aqṣā murādī",
+                translation: "sincerely, and my utmost aim",
               }),
               new QasidaEntryModel({
                 arabic: "رِضَاؤُكَ الدَّائِمُ الْحَال",
-                translit: "",
-                translation: "",
+                translit: "Riḍā’uka dā’imul ḥāl",
+                translation: "is Your pleasure, enduring in every state.",
               }),
             ],
           }),
@@ -3503,23 +3535,24 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا رَبِّ يَا رَبِّ إِنِّي",
-                translit: "",
-                translation: "",
+                translit: "Yā rabbi yā rabbi innī",
+                translation: "O my Lord, O my Lord, I",
               }),
               new QasidaEntryModel({
                 arabic: "أَسْأَلُكَ الْعَفْوَ عَنِّي",
-                translit: "",
-                translation: "",
+                translit: "As’alukal ‛afwa ‛annī",
+                translation: "ask You to pardon me,",
               }),
               new QasidaEntryModel({
                 arabic: "وَلَمْ يَخِبْ فِيكَ ظَنِّي",
-                translit: "",
-                translation: "",
+                translit: "Walam yakhib fīka ẓannī",
+                translation:
+                  "and my expectation in You has never been disappointed.",
               }),
               new QasidaEntryModel({
                 arabic: "يَا مَالِكَ الْمُلكِ يَا وَال",
-                translit: "",
-                translation: "",
+                translit: "Yā mālikal mulki yā wāl",
+                translation: "O Master of the Kingdom, O Ruler,",
               }),
             ],
           }),
@@ -3528,23 +3561,25 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "أَشْكُو إِلَيْكَ وَأَبْكِي",
-                translit: "",
-                translation: "",
+                translit: "Ashkū ilayka wa’abkī",
+                translation: "I complain to You and I weep",
               }),
               new QasidaEntryModel({
                 arabic: "مِنْ شُؤْمِ ظُلْمِي وَإِفْكِي",
-                translit: "",
-                translation: "",
+                translit: "Min shu’mi ẓulmī wa’ifkī",
+                translation:
+                  "because of the misfortune of my wrongdoing and my falsehood,",
               }),
               new QasidaEntryModel({
                 arabic: "وَسُوءِ فِعْلِي وَتَرْكِي",
-                translit: "",
-                translation: "",
+                translit: "Wasū’i fi‛lī watarkī",
+                translation:
+                  "and my evil in what I did and what I left undone,",
               }),
               new QasidaEntryModel({
                 arabic: "وَشَهْوَةِ الْقِيلِ وَالْقَال",
-                translit: "",
-                translation: "",
+                translit: "Washahwatil qīli walqāl",
+                translation: "and the craving for gossip and idle talk,",
               }),
             ],
           }),
@@ -3553,23 +3588,24 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَحُبِّ دُنْيَا ذَمِيمَهْ",
-                translit: "",
-                translation: "",
+                translit: "Waḥubbi dunyā dhamīmah",
+                translation: "and love of a blameworthy world,",
               }),
               new QasidaEntryModel({
                 arabic: "مِنْ كُلِّ خَيْرٍ عَقِيمَهْ",
-                translit: "",
-                translation: "",
+                translit: "Min kulli khayrin ‛aqīmah",
+                translation: "barren of all good,",
               }),
               new QasidaEntryModel({
                 arabic: "فِيهَا الْبَلَايَا مُقِيمَهْ",
-                translit: "",
-                translation: "",
+                translit: "Fīhal balāyā muqīmah",
+                translation: "in which trials dwell permanently,",
               }),
               new QasidaEntryModel({
                 arabic: "وَحَشْوُهَا آفَات وَاشْغَال",
-                translit: "",
-                translation: "",
+                translit: "Waḥashwuhā āfātun washghāl",
+                translation:
+                  "and whose filling is calamities and distractions.",
               }),
             ],
           }),
@@ -3578,23 +3614,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا وَيْحَ نَفْسِي الْغَوِيَّهْ",
-                translit: "",
-                translation: "",
+                translit: "Yā wayḥa nafsil ghawiyyah",
+                translation: "Woe to my misguided self,",
               }),
               new QasidaEntryModel({
                 arabic: "عَنِ السَّبِيلِ السَّوِيَّهْ",
-                translit: "",
-                translation: "",
+                translit: "‛Anis sabīlis sawiyyah",
+                translation: "away from the straight path,",
               }),
               new QasidaEntryModel({
                 arabic: "أَضْحَتْ تُرَوِّج عَلَيَّهْ",
-                translit: "",
-                translation: "",
+                translit: "Aḍḥat turawwij ‛alayyah",
+                translation: "it has come to deceive me,",
               }),
               new QasidaEntryModel({
                 arabic: "وَقَصْدُهَا الْجَاهُ وَالْمَال",
-                translit: "",
-                translation: "",
+                translit: "Waqaṣduhal jāhu walmāl",
+                translation: "and its aim is status and wealth.",
               }),
             ],
           }),
@@ -3603,23 +3639,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا رَبِّ قَدْ غَلَبَتْنِي",
-                translit: "",
-                translation: "",
+                translit: "Yā rabbi qad ghalabatnī",
+                translation: "O my Lord, it has overcome me,",
               }),
               new QasidaEntryModel({
                 arabic: "وَبِالْأَمَانِي سَبَتْنِي",
-                translit: "",
-                translation: "",
+                translit: "Wabil’amānī sabatnī",
+                translation: "and has captivated me with wishes,",
               }),
               new QasidaEntryModel({
                 arabic: "وَفِي الْحُظُوظِ كَبَتنِي",
-                translit: "",
-                translation: "",
+                translit: "Wafil ḥuẓūẓi kabatnī",
+                translation: "and in worldly portions has cast me down,",
               }),
               new QasidaEntryModel({
                 arabic: "وَقَيَّدَتْنِي بِالْاِكْبَالْ",
-                translit: "",
-                translation: "",
+                translit: "Waqayyadatnī bilikbāl",
+                translation: "and has bound me in shackles.",
               }),
             ],
           }),
@@ -3628,23 +3664,24 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "قَدِ اسْتَعَنْتُكَ رَبِّي",
-                translit: "",
-                translation: "",
+                translit: "Qadista‛antuka rabbī",
+                translation: "I have sought Your help, my Lord,",
               }),
               new QasidaEntryModel({
                 arabic: "عَلَى مُدَاوَاةِ قَلْبِي",
-                translit: "",
-                translation: "",
+                translit: "‛Alā mudāwāti qalbī",
+                translation: "to heal my heart,",
               }),
               new QasidaEntryModel({
                 arabic: "وَحَلِّ عُقْدَةِ كَربِي",
-                translit: "",
-                translation: "",
+                translit: "Waḥalli ‛uqdati karbī",
+                translation: "and to untie the knot of my distress,",
               }),
               new QasidaEntryModel({
                 arabic: "فَانْظُرْ إِلَى الْغَمِّ يَنْجَالْ",
-                translit: "",
-                translation: "",
+                translit: "Fanẓur ilal ghammi yanjāl",
+                translation:
+                  "so look upon the sorrow, that it may be dispelled.",
               }),
             ],
           }),
@@ -3653,23 +3690,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا رَبِّ يَا خَيْرَ كَافِي",
-                translit: "",
-                translation: "",
+                translit: "Yā rabbi yā khayra kāfī",
+                translation: "O my Lord, O best of those who suffice,",
               }),
               new QasidaEntryModel({
                 arabic: "أَحلِل عَلَيْنَا الْعَوَافِي",
-                translit: "",
-                translation: "",
+                translit: "Aḥlil ‛alaynal ‛awāfī",
+                translation: "bestow upon us well-being,",
               }),
               new QasidaEntryModel({
                 arabic: "فَلَيْسَ شَي ثَمَّ خَافِي",
-                translit: "",
-                translation: "",
+                translit: "Falaysa shay thamma khāfī",
+                translation: "for nothing at all is hidden",
               }),
               new QasidaEntryModel({
                 arabic: "عَلَيْك تَفْصِيل وَاجْمَال",
-                translit: "",
-                translation: "",
+                translit: "‛Alayk tafṣīlun wajmāl",
+                translation: "from You, in detail or in sum.",
               }),
             ],
           }),
@@ -3688,23 +3725,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا رَبِّ عَبدُك بِبَابِك",
-                translit: "",
-                translation: "",
+                translit: "Yā rabbi ‛abduk bibābik",
+                translation: "O my Lord, Your servant is at Your door,",
               }),
               new QasidaEntryModel({
                 arabic: "يَخْشَى أَلِيمَ عَذَابِك",
-                translit: "",
-                translation: "",
+                translit: "Yakhshā alīma ‛adhābik",
+                translation: "fearing Your painful punishment,",
               }),
               new QasidaEntryModel({
                 arabic: "وَيَرْتَجِي لِثَوَابِك",
-                translit: "",
-                translation: "",
+                translit: "Wayartajī lithawābik",
+                translation: "and hoping for Your reward,",
               }),
               new QasidaEntryModel({
                 arabic: "وَغَيْثُ رَحْمَتِك هَطَّالْ",
-                translit: "",
-                translation: "",
+                translit: "Waghaythu raḥmatik haṭṭāl",
+                translation: "for the rain of Your mercy pours down.",
               }),
             ],
           }),
@@ -3713,23 +3750,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَقَدْ أَتَاكَ بِعُذْرِه",
-                translit: "",
-                translation: "",
+                translit: "Waqad atāka bi‛udhrih",
+                translation: "He has come to You with his excuse,",
               }),
               new QasidaEntryModel({
                 arabic: "وَبِانْكِسَارِه وَفَقْرِه",
-                translit: "",
-                translation: "",
+                translit: "Wabinkisārih wafaqrih",
+                translation: "and with his brokenness and his poverty,",
               }),
               new QasidaEntryModel({
                 arabic: "فَاهْزِمْ بِيُسْرِكَ عُسْرِه",
-                translit: "",
-                translation: "",
+                translit: "Fahzim biyusrika ‛usrih",
+                translation: "so defeat his hardship with Your ease,",
               }),
               new QasidaEntryModel({
                 arabic: "بِمَحْضِ جُودِك وَالْاِفْضَال",
-                translit: "",
-                translation: "",
+                translit: "Bimaḥḍi jūdik walifḍāl",
+                translation: "by Your pure generosity and bounty.",
               }),
             ],
           }),
@@ -3738,23 +3775,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَامْنُن عَلَيْهِ بِتَوْبَهْ",
-                translit: "",
-                translation: "",
+                translit: "Wamnun ‛alayhi bitawbah",
+                translation: "And bestow upon him repentance",
               }),
               new QasidaEntryModel({
                 arabic: "تَغْسِلْهُ مِنْ كُلِّ حَوْبَهْ",
-                translit: "",
-                translation: "",
+                translit: "Taghsilhu min kulli ḥawbah",
+                translation: "that washes him from every sin,",
               }),
               new QasidaEntryModel({
                 arabic: "وَاعْصِمْهُ مِنْ شَرِّ أَوبَهْ",
-                translit: "",
-                translation: "",
+                translit: "Wa‛ṣimhu min sharri awbah",
+                translation: "and protect him from the evil of returning",
               }),
               new QasidaEntryModel({
                 arabic: "لِكُلِّ مَا عَنْهُ قَدْ حَالْ",
-                translit: "",
-                translation: "",
+                translit: "Likulli mā ‛anhu qad ḥāl",
+                translation: "to all that has turned him away.",
               }),
             ],
           }),
@@ -3763,23 +3800,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "فَأَنْتَ مَوْلَى الْمَوَالِي",
-                translit: "",
-                translation: "",
+                translit: "Fa’anta mawlal mawālī",
+                translation: "For You are the Master of masters,",
               }),
               new QasidaEntryModel({
                 arabic: "الْمُنْفَرِد بِالْكَمَالِ",
-                translit: "",
-                translation: "",
+                translit: "Al-munfarid bilkamāl",
+                translation: "the One alone in perfection,",
               }),
               new QasidaEntryModel({
                 arabic: "وَبِالْعُلَا وَالتَّعَالِي",
-                translit: "",
-                translation: "",
+                translit: "Wabil‛ulā watta‛ālī",
+                translation: "and in loftiness and exaltation;",
               }),
               new QasidaEntryModel({
                 arabic: "عَلَوْتَ عَنْ ضَرْبِ الْاَمْثَال",
-                translit: "",
-                translation: "",
+                translit: "‛Alawta ‛an ḍarbil amthāl",
+                translation: "You are far above any similitude being drawn.",
               }),
             ],
           }),
@@ -3788,23 +3825,26 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "جُودُك وَفَضْلُك وَبِرُّك",
-                translit: "",
-                translation: "",
+                translit: "Jūduk wafaḍluk wabirruk",
+                translation: "Your generosity, Your grace and Your kindness",
               }),
               new QasidaEntryModel({
                 arabic: "يُرْجَى وَبَطْشُك وَقَهْرُك",
-                translit: "",
-                translation: "",
+                translit: "Yurjā wabaṭshuk waqahruk",
+                translation:
+                  "are what is hoped for; and Your might and Your overpowering",
               }),
               new QasidaEntryModel({
                 arabic: "يُخْشَى وَذِكْرُك وَشُكْرُك",
-                translit: "",
-                translation: "",
+                translit: "Yukhshā wadhikruk washukruk",
+                translation:
+                  "are what is feared; and remembering You and thanking You",
               }),
               new QasidaEntryModel({
                 arabic: "لَازِم وَحَمْدُك وَالْإِجْلَال",
-                translit: "",
-                translation: "",
+                translit: "Lāzim waḥamduk wal’ijlāl",
+                translation:
+                  "are binding, as are praising You and revering You.",
               }),
             ],
           }),
@@ -3813,23 +3853,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا رَبِّ أَنْتَ نَصِيرِي",
-                translit: "",
-                translation: "",
+                translit: "Yā rabbi anta naṣīrī",
+                translation: "O my Lord, You are my Helper,",
               }),
               new QasidaEntryModel({
                 arabic: "فَلَقِّنِي كُلَّ خَيرِ",
-                translit: "",
-                translation: "",
+                translit: "Falaqqinī kulla khayr",
+                translation: "so grant me every good,",
               }),
               new QasidaEntryModel({
                 arabic: "وَاجْعَلْ جِنَانَك مَصِيرِي",
-                translit: "",
-                translation: "",
+                translit: "Waj‛al jinānak maṣīrī",
+                translation: "and make Your Gardens my destination,",
               }),
               new QasidaEntryModel({
                 arabic: "وَاخْتِمْ بِالْإِيمَانِ الْآجَالْ",
-                translit: "",
-                translation: "",
+                translit: "Wakhtim bil’īmānil ājāl",
+                translation: "and seal the end of my days with faith.",
               }),
             ],
           }),
@@ -3838,23 +3878,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَصَلِّ فِي كُلِّ حَالَهْ",
-                translit: "",
-                translation: "",
+                translit: "Waṣalli fī kulli ḥālah",
+                translation: "And send blessings, in every state,",
               }),
               new QasidaEntryModel({
                 arabic: "عَلَى مُزِيلِ الضَّلَالَهْ",
-                translit: "",
-                translation: "",
+                translit: "‛Alā muzīliḍ ḍalālah",
+                translation: "upon the remover of misguidance,",
               }),
               new QasidaEntryModel({
                 arabic: "مَنْ كَلَّمَتهُ الْغَزَالَهْ",
-                translit: "",
-                translation: "",
+                translit: "Man kallamathul ghazālah",
+                translation: "to whom the gazelle spoke,",
               }),
               new QasidaEntryModel({
                 arabic: "مُحَمَّدِ الْهَادِي الدَّالْ",
-                translit: "",
-                translation: "",
+                translit: "Muḥammadil hādid dāl",
+                translation: "Muḥammad, the Guide who directs to good.",
               }),
             ],
           }),
@@ -3863,23 +3903,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَالْحَمْدُ لِلَّهِ شُكْرا",
-                translit: "",
-                translation: "",
+                translit: "Walḥamdu lillāhi shukrā",
+                translation: "And praise be to Allah in gratitude",
               }),
               new QasidaEntryModel({
                 arabic: "عَلَى نِعَم مِنْهُ تَتْرَى",
-                translit: "",
-                translation: "",
+                translit: "‛Alā ni‛am minhu tatrā",
+                translation: "for favours from Him in unbroken succession;",
               }),
               new QasidaEntryModel({
                 arabic: "نَحْمَدهُ سِرًّا وَجَهْرا",
-                translit: "",
-                translation: "",
+                translit: "Naḥmaduhu sirran wajahrā",
+                translation: "we praise Him in secret and aloud,",
               }),
               new QasidaEntryModel({
                 arabic: "وَبِالْغَدَايَا وَالْآصَالْ",
-                translit: "",
-                translation: "",
+                translit: "Wabilghadāyā wal’āṣāl",
+                translation: "in the mornings and the evenings.",
               }),
             ],
           }),
@@ -3894,23 +3934,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا رَبَّنَا يَاكَرِيم",
-                translit: "",
-                translation: "",
+                translit: "Yā rabbanā yā karīm",
+                translation: "O our Lord, O Generous One,",
               }),
               new QasidaEntryModel({
                 arabic: "يَا رَبَّنَا يَا رَحِيم",
-                translit: "",
-                translation: "",
+                translit: "Yā rabbanā yā raḥīm",
+                translation: "O our Lord, O Merciful One,",
               }),
               new QasidaEntryModel({
                 arabic: "أَنْتَ الْجَوَادُ الْحَلِيم",
-                translit: "",
-                translation: "",
+                translit: "Antal jawādul ḥalīm",
+                translation: "You are the Bountiful, the Forbearing,",
               }),
               new QasidaEntryModel({
                 arabic: "وَأَنْتَ نِعمَ الْمُعِين",
-                translit: "",
-                translation: "",
+                translit: "Wa’anta ni‛mal mu‛īn",
+                translation: "and You are the best Helper.",
               }),
             ],
           }),
@@ -3919,23 +3959,24 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَلَيْسَ نَرْجُو سِوَاك",
-                translit: "",
-                translation: "",
+                translit: "Walaysa narjū siwāk",
+                translation: "We hope for none but You,",
               }),
               new QasidaEntryModel({
                 arabic: "فَادْرِك إِلَهِي دَرَاكْ",
-                translit: "",
-                translation: "",
+                translit: "Fadrik ilāhī darāk",
+                translation: "so overtake us, my God, with Your rescue",
               }),
               new QasidaEntryModel({
                 arabic: "قَبْلَ الفَنَا وَالْهَلَاك",
-                translit: "",
-                translation: "",
+                translit: "Qablal fanā walhalāk",
+                translation: "before destruction and perishing",
               }),
               new QasidaEntryModel({
                 arabic: "يَعُمُّ دُنْيَا وَدِين",
-                translit: "",
-                translation: "",
+                translit: "Ya‛ummu dunyā wadīn",
+                translation:
+                  "that would overwhelm both worldly life and faith.",
               }),
             ],
           }),
@@ -3944,23 +3985,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَمَا لَنَا رَبَّنَا",
-                translit: "",
-                translation: "",
+                translit: "Wamā lanā rabbanā",
+                translation: "We have no one, our Lord,",
               }),
               new QasidaEntryModel({
                 arabic: "سِوَاكَ يَا حَسبَنَا",
-                translit: "",
-                translation: "",
+                translit: "Siwāka yā ḥasbanā",
+                translation: "but You, O our Sufficiency,",
               }),
               new QasidaEntryModel({
                 arabic: "يَا ذَا الْعُلَا وَالْغِنَى",
-                translit: "",
-                translation: "",
+                translit: "Yā dhal ‛ulā walghinā",
+                translation: "O Possessor of loftiness and richness,",
               }),
               new QasidaEntryModel({
                 arabic: "وَيَا قَوِي يَا مَتِينْ",
-                translit: "",
-                translation: "",
+                translit: "Wayā qawī yā matīn",
+                translation: "and O Strong, O Firm.",
               }),
             ],
           }),
@@ -3969,23 +4010,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "نَسْأَلك وَالِي يُقِيم",
-                translit: "",
-                translation: "",
+                translit: "Nas’aluk wālī yuqīm",
+                translation: "We ask You for a ruler who establishes",
               }),
               new QasidaEntryModel({
                 arabic: "اَلْعَدْلَ كَيْ نَسْتَقِيم",
-                translit: "",
-                translation: "",
+                translit: "Al-‛adla kay nastaqīm",
+                translation: "justice, so that we may be upright",
               }),
               new QasidaEntryModel({
                 arabic: "عَلَى هُدَاكَ الْقَوِيم",
-                translit: "",
-                translation: "",
+                translit: "‛Alā hudākal qawīm",
+                translation: "upon Your straight guidance,",
               }),
               new QasidaEntryModel({
                 arabic: "وَلَا نُطِيعُ اللَّعِين",
-                translit: "",
-                translation: "",
+                translit: "Walā nuṭī‛ul la‛īn",
+                translation: "and not obey the accursed.",
               }),
             ],
           }),
@@ -3994,23 +4035,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا رَبَّنَا يَا مُجِيبْ",
-                translit: "",
-                translation: "",
+                translit: "Yā rabbanā yā mujīb",
+                translation: "O our Lord, O Responsive One,",
               }),
               new QasidaEntryModel({
                 arabic: "أَنْتَ السَّمِيعُ الْقَرِيب",
-                translit: "",
-                translation: "",
+                translit: "Antas samī‛ul qarīb",
+                translation: "You are the All-Hearing, the Near,",
               }),
               new QasidaEntryModel({
                 arabic: "ضَاقَ الْوَسِيعُ الرَّحِيب",
-                translit: "",
-                translation: "",
+                translit: "Ḍāqal wasī‛ur raḥīb",
+                translation: "the wide and spacious has grown narrow,",
               }),
               new QasidaEntryModel({
                 arabic: "فَانْظُرْ إِلَى الْمُؤْمِنِين",
-                translit: "",
-                translation: "",
+                translit: "Fanẓur ilal mu’minīn",
+                translation: "so look upon the believers",
               }),
             ],
           }),
@@ -4019,23 +4060,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "نَظرَه تُزِيلُ الْعَنَا",
-                translit: "",
-                translation: "",
+                translit: "Naẓrah tuzīlul ‛anā",
+                translation: "with a glance that removes hardship",
               }),
               new QasidaEntryModel({
                 arabic: "عَنَّا وَتُدْنِي الْمُنَى",
-                translit: "",
-                translation: "",
+                translit: "‛Annā watudnil munā",
+                translation: "from us, and brings our hopes near",
               }),
               new QasidaEntryModel({
                 arabic: "مِنَّا وَكُلَّ الْهَنَا",
-                translit: "",
-                translation: "",
+                translit: "Minnā wakullal hanā",
+                translation: "to us, and all happiness,",
               }),
               new QasidaEntryModel({
                 arabic: "نُعْطَاه فِي كُلِّ حِين",
-                translit: "",
-                translation: "",
+                translit: "Nu‛ṭāh fī kulli ḥīn",
+                translation: "to be given to us at every time.",
               }),
             ],
           }),
@@ -4044,23 +4085,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "سَالَكْ بِجَاهِ الْجُدُود",
-                translit: "",
-                translation: "",
+                translit: "Sālak bijāhil judūd",
+                translation: "I ask You by the standing of the forefathers",
               }),
               new QasidaEntryModel({
                 arabic: "وَالِي يُقِيمُ الْحُدُود",
-                translit: "",
-                translation: "",
+                translit: "Wālī yuqīmul ḥudūd",
+                translation: "for a ruler who upholds the legal limits",
               }),
               new QasidaEntryModel({
                 arabic: "عَنَّا وَيَكْفِي الْحَسُود",
-                translit: "",
-                translation: "",
+                translit: "‛Annā wayakfil ḥasūd",
+                translation: "on our behalf, and spares us the envious,",
               }),
               new QasidaEntryModel({
                 arabic: "وَيَدْفَعُ الظَّالِمِين",
-                translit: "",
-                translation: "",
+                translit: "Wayadfa‛uẓ ẓālimīn",
+                translation: "and repels the wrongdoers,",
               }),
             ],
           }),
@@ -4069,23 +4110,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يُزِيلُ لِلْمُنْكَرَات",
-                translit: "",
-                translation: "",
+                translit: "Yuzīlu lilmunkarāt",
+                translation: "who removes evils,",
               }),
               new QasidaEntryModel({
                 arabic: "يُقِيمُ لِلصَّلَوَات",
-                translit: "",
-                translation: "",
+                translit: "Yuqīmu liṣṣalawāt",
+                translation: "establishes the prayers,",
               }),
               new QasidaEntryModel({
                 arabic: "يَأْمُرُ بِالصَّالِحَات",
-                translit: "",
-                translation: "",
+                translit: "Ya’muru biṣṣāliḥāt",
+                translation: "commands good deeds,",
               }),
               new QasidaEntryModel({
                 arabic: "مُحِبٌّ لِلصَّالِحِين",
-                translit: "",
-                translation: "",
+                translit: "Muḥibbun liṣṣāliḥīn",
+                translation: "a lover of the righteous,",
               }),
             ],
           }),
@@ -4094,23 +4135,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يُزِيحُ كُلَّ الْحَرَام",
-                translit: "",
-                translation: "",
+                translit: "Yuzīḥu kullal ḥarām",
+                translation: "who removes all that is forbidden,",
               }),
               new QasidaEntryModel({
                 arabic: "يَقْهَرُ كُلَّ الطَّغَامْ",
-                translit: "",
-                translation: "",
+                translit: "Yaqharu kullaṭ ṭaghām",
+                translation: "subdues all the base rabble,",
               }),
               new QasidaEntryModel({
                 arabic: "يَعدِلُ بَيْنَ الْأَنَام",
-                translit: "",
-                translation: "",
+                translit: "Ya‛dilu baynal anām",
+                translation: "judges justly among mankind,",
               }),
               new QasidaEntryModel({
                 arabic: "وَيُؤْمِنُ الْخَائِفِين",
-                translit: "",
-                translation: "",
+                translit: "Wayu’minul khā’ifīn",
+                translation: "and gives security to the fearful.",
               }),
             ],
           }),
@@ -4119,23 +4160,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "رَبِّ اسْقِنَا غَيْث عَام",
-                translit: "",
-                translation: "",
+                translit: "Rabbi sqinā ghayth ‛ām",
+                translation: "My Lord, give us widespread rain,",
               }),
               new QasidaEntryModel({
                 arabic: "نَافِع مُبَارَك دَوَام",
-                translit: "",
-                translation: "",
+                translit: "Nāfi‛ mubārak dawām",
+                translation: "beneficial, blessed, lasting,",
               }),
               new QasidaEntryModel({
                 arabic: "يَدُومُ فِي كُلِّ عَام",
-                translit: "",
-                translation: "",
+                translit: "Yadūmu fī kulli ‛ām",
+                translation: "continuing every year",
               }),
               new QasidaEntryModel({
                 arabic: "عَلَى مَمَرِّ السِّنِين",
-                translit: "",
-                translation: "",
+                translit: "‛Alā mamarris sinīn",
+                translation: "through the passing of the years.",
               }),
             ],
           }),
@@ -4144,23 +4185,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "رَبِّ احْيِنَا شَاكِرِين",
-                translit: "",
-                translation: "",
+                translit: "Rabbi ḥyinā shākirīn",
+                translation: "My Lord, grant us life as thankful ones,",
               }),
               new QasidaEntryModel({
                 arabic: "وَتَوَفَّنَا مُسْلِمِين",
-                translit: "",
-                translation: "",
+                translit: "Watawaffanā muslimīn",
+                translation: "and take us in death as Muslims,",
               }),
               new QasidaEntryModel({
                 arabic: "نُبْعَث مِنَ الْآمِنِين",
-                translit: "",
-                translation: "",
+                translit: "Nub‛ath minal āminīn",
+                translation: "to be raised among those who are safe,",
               }),
               new QasidaEntryModel({
                 arabic: "فِي زُمْرَةِ السَّابِقِين",
-                translit: "",
-                translation: "",
+                translit: "Fī zumratis sābiqīn",
+                translation: "in the company of the foremost.",
               }),
             ],
           }),
@@ -4169,23 +4210,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "بِجَاهِ طَهَ الرَّسُول",
-                translit: "",
-                translation: "",
+                translit: "Bijāhi Ṭāhar rasūl",
+                translation: "By the standing of Ṭāhā, the Messenger,",
               }),
               new QasidaEntryModel({
                 arabic: "جُدْ رَبَّنَا بِالْقَبُول",
-                translit: "",
-                translation: "",
+                translit: "Jud rabbanā bilqabūl",
+                translation: "be generous, our Lord, with acceptance,",
               }),
               new QasidaEntryModel({
                 arabic: "وَهَب لَنَا كُلَّ سُول",
-                translit: "",
-                translation: "",
+                translit: "Wahab lanā kulla sūl",
+                translation: "and grant us everything we ask,",
               }),
               new QasidaEntryModel({
                 arabic: "رَبِّ اسْتَجِبْ لِي أَمِين",
-                translit: "",
-                translation: "",
+                translit: "Rabbi stajib lī, āmīn",
+                translation: "my Lord, answer me. Āmīn.",
               }),
             ],
           }),
@@ -4194,23 +4235,24 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "عَطَاكَ رَبِّي جَزِيل",
-                translit: "",
-                translation: "",
+                translit: "‛Aṭāka rabbī jazīl",
+                translation: "Your gift, my Lord, is abundant,",
               }),
               new QasidaEntryModel({
                 arabic: "وَكُلُّ فِعْلِك جَمِيل",
-                translit: "",
-                translation: "",
+                translit: "Wakullu fi‛lik jamīl",
+                translation: "and all Your doing is beautiful,",
               }),
               new QasidaEntryModel({
                 arabic: "وَفِيك أَمَلنَا طَوِيل",
-                translit: "",
-                translation: "",
+                translit: "Wafīk amalnā ṭawīl",
+                translation: "and our hope in You is far-reaching,",
               }),
               new QasidaEntryModel({
                 arabic: "فَجُدْ عَلَى الطَّامِعِين",
-                translit: "",
-                translation: "",
+                translit: "Fajud ‛alaṭ ṭāmi‛īn",
+                translation:
+                  "so be generous to those who yearn for Your bounty.",
               }),
             ],
           }),
@@ -4219,23 +4261,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا رَبِّ ضَاقَ الْخِنَاق",
-                translit: "",
-                translation: "",
+                translit: "Yā rabbi ḍāqal khināq",
+                translation: "O my Lord, the strangling grip has tightened",
               }),
               new QasidaEntryModel({
                 arabic: "مِنْ فِعْلِ مَا لَا يُطَاق",
-                translit: "",
-                translation: "",
+                translit: "Min fi‛li mā lā yuṭāq",
+                translation: "from doing what cannot be borne,",
               }),
               new QasidaEntryModel({
                 arabic: "فَامْنُنْ بِفَكِّ الْغَلَاقْ",
-                translit: "",
-                translation: "",
+                translit: "Famnun bifakkil ghalāq",
+                translation: "so bestow the loosing of the bond",
               }),
               new QasidaEntryModel({
                 arabic: "لِمَنْ بِذَنْبِه رَهِين",
-                translit: "",
-                translation: "",
+                translit: "Liman bidhanbih rahīn",
+                translation: "for the one held hostage by his sin,",
               }),
             ],
           }),
@@ -4244,23 +4286,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَاغْفِرْ لِكُلِّ الذُّنُوب",
-                translit: "",
-                translation: "",
+                translit: "Waghfir likullidh dhunūb",
+                translation: "and forgive all sins,",
               }),
               new QasidaEntryModel({
                 arabic: "وَاسْتُرْ لِكُلِّ الْعُيُوب",
-                translit: "",
-                translation: "",
+                translit: "Wastur likullil ‛uyūb",
+                translation: "and cover all faults,",
               }),
               new QasidaEntryModel({
                 arabic: "وَاكْشِفْ لِكُلِّ الْكُرُوب",
-                translit: "",
-                translation: "",
+                translit: "Wakshif likullil kurūb",
+                translation: "and remove all distresses,",
               }),
               new QasidaEntryModel({
                 arabic: "وَاكْفِ أَذَى الْمُؤْذِيين",
-                translit: "",
-                translation: "",
+                translit: "Wakfi adhal mu’dhiyīn",
+                translation: "and ward off the harm of those who cause harm,",
               }),
             ],
           }),
@@ -4269,23 +4311,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَاخْتِمْ بِأَحْسَن خِتَام",
-                translit: "",
-                translation: "",
+                translit: "Wakhtim bi’aḥsan khitām",
+                translation: "and seal our lives with the best ending",
               }),
               new QasidaEntryModel({
                 arabic: "إِذَا دَنَا الْإِنصِرَامْ",
-                translit: "",
-                translation: "",
+                translit: "Idhā danal inṣirām",
+                translation: "when the ending draws near,",
               }),
               new QasidaEntryModel({
                 arabic: "وَحَانَ حِينُ الحِمَام",
-                translit: "",
-                translation: "",
+                translit: "Waḥāna ḥīnul ḥimām",
+                translation: "and the hour of death arrives,",
               }),
               new QasidaEntryModel({
                 arabic: "وَزَادَ رَشحُ الْجَبِين",
-                translit: "",
-                translation: "",
+                translit: "Wazāda rashḥul jabīn",
+                translation: "and the sweat of the brow increases.",
               }),
             ],
           }),
@@ -4294,23 +4336,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "ثُمَّ الصَّلَاة وَالسَّلَام",
-                translit: "",
-                translation: "",
+                translit: "Thummaṣ ṣalāt wassalām",
+                translation: "Then blessings and peace",
               }),
               new QasidaEntryModel({
                 arabic: "عَلَى شَفِيعِ الْأَنَام",
-                translit: "",
-                translation: "",
+                translit: "‛Alā shafī‛il anām",
+                translation: "upon the intercessor for mankind,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالْآلِ نِعمَ الْكِرَام",
-                translit: "",
-                translation: "",
+                translit: "Wal’āli ni‛mal kirām",
+                translation: "and the family, how excellent the noble ones,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالصَّحْبِ وَالتَّابِعِين",
-                translit: "",
-                translation: "",
+                translit: "Waṣṣaḥbi wattābi‛īn",
+                translation: "and the Companions and the Followers.",
               }),
             ],
           }),
@@ -4325,23 +4367,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "مَشَايِخَ الْحَضْرَة",
-                translit: "",
-                translation: "",
+                translit: "Mashāyikhal ḥaḍrah",
+                translation: "The shaykhs of the gathering,",
               }),
               new QasidaEntryModel({
                 arabic: "عَسَى لَنَا نَظْرَة",
-                translit: "",
-                translation: "",
+                translit: "‛Asā lanā naẓrah",
+                translation: "perhaps a glance for us,",
               }),
               new QasidaEntryModel({
                 arabic: "بِجَاهِ أَهْلِ اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Bijāhi ahlillāh",
+                translation: "by the standing of the people of Allah,",
               }),
               new QasidaEntryModel({
                 arabic: "يَمْحُو الذُّنُوبَ اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Yamḥudh dhunūballāh",
+                translation: "Allah wipes away the sins.",
               }),
             ],
           }),
@@ -4350,23 +4392,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "نَبْدِي بِحَمْدِ اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Nabdī biḥamdillāh",
+                translation: "We begin with the praise of Allah,",
               }),
               new QasidaEntryModel({
                 arabic: "وَنَسْتَمِد بِاللَّه",
-                translit: "",
-                translation: "",
+                translit: "Wanastamid billāh",
+                translation: "and we seek support from Allah,",
               }),
               new QasidaEntryModel({
                 arabic: "بِجَاهِ أَهْلِ اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Bijāhi ahlillāh",
+                translation: "by the standing of the people of Allah,",
               }),
               new QasidaEntryModel({
                 arabic: "نَفُزْ بِحَوْلِ اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Nafuz biḥawlillāh",
+                translation: "we succeed by the power of Allah,",
               }),
             ],
           }),
@@ -4375,23 +4417,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "بِفَضْلِهِ الشَّامِل",
-                translit: "",
-                translation: "",
+                translit: "Bifaḍlihish shāmil",
+                translation: "by His all-encompassing grace.",
               }),
               new QasidaEntryModel({
                 arabic: "يُصْلِح لَنَا الْعَاجِل",
-                translit: "",
-                translation: "",
+                translit: "Yuṣliḥ lanal ‛ājil",
+                translation: "He sets right for us the present,",
               }),
               new QasidaEntryModel({
                 arabic: "فِي الْحَالِ وَالْآجِل",
-                translit: "",
-                translation: "",
+                translit: "Fil ḥāli wal’ājil",
+                translation: "now and in the time to come,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالْكُلُّ فَضْلُ اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Walkullu faḍlullāh",
+                translation: "and all is the bounty of Allah.",
               }),
             ],
           }),
@@ -4400,23 +4442,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَبَعْدَ جَاءَ النَّظْم",
-                translit: "",
-                translation: "",
+                translit: "Waba‛da jā’an naẓm",
+                translation: "And after this came the verse",
               }),
               new QasidaEntryModel({
                 arabic: "مِنَ الشَّرِيفِ الضَّخْم",
-                translit: "",
-                translation: "",
+                translit: "Minash sharīfiḍ ḍakhm",
+                translation: "from the noble, the eminent,",
               }),
               new QasidaEntryModel({
                 arabic: "أَعْنِي الْجَمَالَ الْفَخْم",
-                translit: "",
-                translation: "",
+                translit: "A‛nīl Jamālal fakhm",
+                translation: "I mean al-Jamāl, the grand,",
               }),
               new QasidaEntryModel({
                 arabic: "حَبِيبَنَا فِي اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Ḥabībanā fillāh",
+                translation: "our beloved in Allah,",
               }),
             ],
           }),
@@ -4425,23 +4467,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "ابن طَالِب الْمحْضَار",
-                translit: "",
-                translation: "",
+                translit: "Ibn Ṭālibil Miḥḍār",
+                translation: "son of Ṭālib al-Miḥḍār,",
               }),
               new QasidaEntryModel({
                 arabic: "الْمُخْبِت الصَّبَّار",
-                translit: "",
-                translation: "",
+                translit: "Al-mukhbitiṣ ṣabbār",
+                translation: "the humble, the very patient,",
               }),
               new QasidaEntryModel({
                 arabic: "مُطَهِّر الْأَسْرَار",
-                translit: "",
-                translation: "",
+                translit: "Muṭahhiril asrār",
+                translation: "purifier of inner secrets,",
               }),
               new QasidaEntryModel({
                 arabic: "سَلِيلِ أَهْلِ اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Salīli ahlillāh",
+                translation: "descendant of the people of Allah,",
               }),
             ],
           }),
@@ -4450,23 +4492,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "الْقَادَةِ الْقُدْوَة",
-                translit: "",
-                translation: "",
+                translit: "Al-qādatil qudwah",
+                translation: "the leaders, the exemplars,",
               }),
               new QasidaEntryModel({
                 arabic: "السَّادَةِ الصَّفْوَة",
-                translit: "",
-                translation: "",
+                translit: "As-sādatiṣ ṣafwah",
+                translation: "the masters, the elect,",
               }),
               new QasidaEntryModel({
                 arabic: "ذِي مَا لَهُم شَهْوَة",
-                translit: "",
-                translation: "",
+                translit: "Dhī mā lahum shahwah",
+                translation: "who have no desire",
               }),
               new QasidaEntryModel({
                 arabic: "إِلَّا لِذِكْرِ اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Illā lidhikrillāh",
+                translation: "except for the remembrance of Allah,",
               }),
             ],
           }),
@@ -4475,23 +4517,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "مِثْلِ الْإِمَامِ الْفَخْر",
-                translit: "",
-                translation: "",
+                translit: "Mithlil imāmil fakhr",
+                translation: "like the Imām, al-Fakhr,",
               }),
               new QasidaEntryModel({
                 arabic: "أَعْنِي رَفِيعَ الْقَدْر",
-                translit: "",
-                translation: "",
+                translit: "A‛nī rafī‛al qadr",
+                translation: "I mean him of lofty rank,",
               }),
               new QasidaEntryModel({
                 arabic: "كَالشَّمْسِ لَا كَالْبَدْر",
-                translit: "",
-                translation: "",
+                translit: "Kashshamsi lā kalbadr",
+                translation: "like the sun, not like the full moon,",
               }),
               new QasidaEntryModel({
                 arabic: "يَاضِي لِخَلْقِ اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Yāḍī likhalqillāh",
+                translation: "who shines for the creation of Allah,",
               }),
             ],
           }),
@@ -4500,23 +4542,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "بُو بَكر بِن سَالِم",
-                translit: "",
-                translation: "",
+                translit: "Bū Bakr bin Sālim",
+                translation: "Abū Bakr bin Sālim.",
               }),
               new QasidaEntryModel({
                 arabic: "هُوَ حَتْف لِلظَّالِم",
-                translit: "",
-                translation: "",
+                translit: "Huwa ḥatf liẓẓālim",
+                translation: "He is death to the wrongdoer,",
               }),
               new QasidaEntryModel({
                 arabic: "الْفَاجِر الْغَاشِم",
-                translit: "",
-                translation: "",
+                translit: "Al-fājiril ghāshim",
+                translation: "the wicked, the oppressive,",
               }),
               new QasidaEntryModel({
                 arabic: "يَهْلِك بِأَمْرِ اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Yahlik bi’amrillāh",
+                translation: "who perishes by the command of Allah.",
               }),
             ],
           }),
@@ -4525,23 +4567,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَيُنْجِي الْغَارِق",
-                translit: "",
-                translation: "",
+                translit: "Wayunjil ghāriq",
+                translation: "And he rescues the drowning one,",
               }),
               new QasidaEntryModel({
                 arabic: "إِنْ كَانَ بِهِ وَاثِق",
-                translit: "",
-                translation: "",
+                translit: "In kāna bihi wāthiq",
+                translation: "if he has trust in him,",
               }),
               new QasidaEntryModel({
                 arabic: "يُلْحِقُهُ بِالسَّابِق",
-                translit: "",
-                translation: "",
+                translit: "Yulḥiquhu bissābiq",
+                translation: "and joins him to the foremost.",
               }),
               new QasidaEntryModel({
                 arabic: "هَذَا بِفَضْلِ اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Hādhā bifaḍlillāh",
+                translation: "This is by the grace of Allah.",
               }),
             ],
           }),
@@ -4550,23 +4592,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "لَما قَرَأهُ الْعَبْد",
-                translit: "",
-                translation: "",
+                translit: "Lamā qara’ahul ‛abd",
+                translation: "When the servant read it,",
               }),
               new QasidaEntryModel({
                 arabic: "فَاحَ الشَّذَى مِنْ نَجْد",
-                translit: "",
-                translation: "",
+                translit: "Fāḥash shadhā min Najd",
+                translation: "the fragrance spread from Najd,",
               }),
               new QasidaEntryModel({
                 arabic: "وَقَالَ: لَعَلَّ السَّعْد",
-                translit: "",
-                translation: "",
+                translit: "Waqāla: la‛allas sa‛d",
+                translation: "and he said: perhaps good fortune",
               }),
               new QasidaEntryModel({
                 arabic: "يَأْتِي بِجُودِ اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Ya’tī bijūdillāh",
+                translation: "will come by the generosity of Allah.",
               }),
             ],
           }),
@@ -4575,23 +4617,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَالْعَبْد ذَا الْجَانِي",
-                translit: "",
-                translation: "",
+                translit: "Wal‛abd dhal jānī",
+                translation: "And this servant, the offender,",
               }),
               new QasidaEntryModel({
                 arabic: "كَثِيرُ عِصْيَانِي",
-                translit: "",
-                translation: "",
+                translit: "Kathīru ‛iṣyānī",
+                translation: "great is his disobedience,",
               }),
               new QasidaEntryModel({
                 arabic: "كَثِيرُ طُغْيَانِي",
-                translit: "",
-                translation: "",
+                translit: "Kathīru ṭughyānī",
+                translation: "great is his transgression,",
               }),
               new QasidaEntryModel({
                 arabic: "كَمْ خَالَف أَمْرَ اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Kam khālaf amrallāh",
+                translation: "how often he has defied the command of Allah,",
               }),
             ],
           }),
@@ -4600,23 +4642,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "لِأَنَّهُ حَائِرْ",
-                translit: "",
-                translation: "",
+                translit: "Li’annahu ḥā’ir",
+                translation: "because he is bewildered,",
               }),
               new QasidaEntryModel({
                 arabic: "وَقَلْبَهُ طَائِرْ",
-                translit: "",
-                translation: "",
+                translit: "Waqalbahu ṭā’ir",
+                translation: "and his heart is fluttering,",
               }),
               new QasidaEntryModel({
                 arabic: "وَلَا لَهُ نَاصِرْ",
-                translit: "",
-                translation: "",
+                translit: "Walā lahu nāṣir",
+                translation: "and he has no helper",
               }),
               new QasidaEntryModel({
                 arabic: "إِلَّا عِبَادَ اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Illā ‛ibādallāh",
+                translation: "except the servants of Allah.",
               }),
             ],
           }),
@@ -4625,23 +4667,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "عَسَى بِحَقِّ الْقَوْم",
-                translit: "",
-                translation: "",
+                translit: "‛Asā biḥaqqil qawm",
+                translation: "Perhaps, by the right of these people,",
               }),
               new QasidaEntryModel({
                 arabic: "نَلْحَق بِهِم فِي الْعوم",
-                translit: "",
-                translation: "",
+                translit: "Nalḥaq bihim fil ‛awm",
+                translation: "we will catch up with them in the swimming,",
               }),
               new QasidaEntryModel({
                 arabic: "وَمَا جَرَى مِنْ لَوْم",
-                translit: "",
-                translation: "",
+                translit: "Wamā jarā min lawm",
+                translation: "and whatever blame has occurred",
               }),
               new QasidaEntryModel({
                 arabic: "يُغْفَر بِجَاهِ اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Yughfar bijāhillāh",
+                translation: "will be forgiven by the standing with Allah.",
               }),
             ],
           }),
@@ -4650,23 +4692,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا سَادَتِي غَارَهْ",
-                translit: "",
-                translation: "",
+                translit: "Yā sādatī ghārah",
+                translation: "O my masters, succour,",
               }),
               new QasidaEntryModel({
                 arabic: "فِي الْحَال بَدَّارَهْ",
-                translit: "",
-                translation: "",
+                translit: "Fil ḥāl baddārah",
+                translation: "at once, in haste,",
               }),
               new QasidaEntryModel({
                 arabic: "مَا فِي الْكَبِد مَارَهْ",
-                translit: "",
-                translation: "",
+                translit: "Mā fil kabid mārah",
+                translation: "there is no strength left in my liver.",
               }),
               new QasidaEntryModel({
                 arabic: "اللَّه اللَّه اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Allāh Allāh Allāh",
+                translation: "Allah, Allah, Allah.",
               }),
             ],
           }),
@@ -4675,23 +4717,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "قُومُوا مَعِي قَومَه",
-                translit: "",
-                translation: "",
+                translit: "Qūmū ma‛ī qawmah",
+                translation: "Rise with me, rise up,",
               }),
               new QasidaEntryModel({
                 arabic: "وَاقْضُوا الَّذِي رُومَه",
-                translit: "",
-                translation: "",
+                translit: "Waqḍul ladhī rūmah",
+                translation: "and fulfil what I seek,",
               }),
               new QasidaEntryModel({
                 arabic: "كُلّه مَدَى نَومَه",
-                translit: "",
-                translation: "",
+                translit: "Kulluh madā nawmah",
+                translation: "all of it, within the span of a nap,",
               }),
               new QasidaEntryModel({
                 arabic: "يَجِي بِعُونِ اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Yajī bi‛ūnillāh",
+                translation: "it will come, by the help of Allah.",
               }),
             ],
           }),
@@ -4700,23 +4742,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "كَفَى كَفَى مَا بِي",
-                translit: "",
-                translation: "",
+                translit: "Kafā kafā mā bī",
+                translation: "Enough, enough of what afflicts me,",
               }),
               new QasidaEntryModel({
                 arabic: "دَاوُوا لِي أَصْوَابِي",
-                translit: "",
-                translation: "",
+                translit: "Dāwū lī aṣwābī",
+                translation: "heal my afflictions",
               }),
               new QasidaEntryModel({
                 arabic: "فِي الْحَال يَا اَحْبَابِي",
-                translit: "",
-                translation: "",
+                translit: "Fil ḥāl yā aḥbābī",
+                translation: "at once, O my beloved ones,",
               }),
               new QasidaEntryModel({
                 arabic: "فَإِنَّكُم بِاللَّه",
-                translit: "",
-                translation: "",
+                translit: "Fa’innakum billāh",
+                translation: "for you, through Allah,",
               }),
             ],
           }),
@@ -4725,23 +4767,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "كُونُوا لَنَا نُصْرَهْ",
-                translit: "",
-                translation: "",
+                translit: "Kūnū lanā nuṣrah",
+                translation: "be a help for us",
               }),
               new QasidaEntryModel({
                 arabic: "بِالسَّيف وَالْقُدْرَهْ",
-                translit: "",
-                translation: "",
+                translit: "Bissayf walqudrah",
+                translation: "with the sword and with power,",
               }),
               new QasidaEntryModel({
                 arabic: "وَكُلّ مَا نَكَرَهْ",
-                translit: "",
-                translation: "",
+                translit: "Wakull mā nakarah",
+                translation: "and everything objectionable,",
               }),
               new QasidaEntryModel({
                 arabic: "حُوشُوه شَيْ لِلَّه",
-                translit: "",
-                translation: "",
+                translit: "Ḥūshūh shay lillāh",
+                translation: "drive it away, for Allah’s sake.",
               }),
             ],
           }),
@@ -4750,23 +4792,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "هَيَّا بِكُم هَيَّا",
-                translit: "",
-                translation: "",
+                translit: "Hayyā bikum hayyā",
+                translation: "Onward with you, onward,",
               }),
               new QasidaEntryModel({
                 arabic: "لِلدِّينِ وَالدُّنْيَا",
-                translit: "",
-                translation: "",
+                translit: "Liddīni waddunyā",
+                translation: "for the faith and the world,",
               }),
               new QasidaEntryModel({
                 arabic: "حَيَّا بِكُم حَيَّا",
-                translit: "",
-                translation: "",
+                translit: "Ḥayyā bikum ḥayyā",
+                translation: "come, hasten, come,",
               }),
               new QasidaEntryModel({
                 arabic: "حَيَّا بِنَصْرِ اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Ḥayyā binaṣrillāh",
+                translation: "hasten with the help of Allah.",
               }),
             ],
           }),
@@ -4775,23 +4817,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَقْدُمْهُ جِبْرَائِيل",
-                translit: "",
-                translation: "",
+                translit: "Yaqdumhu Jibrā’īl",
+                translation: "Jibrā’īl goes before it,",
               }),
               new QasidaEntryModel({
                 arabic: "أَيْضًا وَمِيكَائِيل",
-                translit: "",
-                translation: "",
+                translit: "Ayḍan wamīkā’īl",
+                translation: "and likewise Mīkā’īl,",
               }),
               new QasidaEntryModel({
                 arabic: "فَإِنَّهُ قَدْ قِيل",
-                translit: "",
-                translation: "",
+                translit: "Fa’innahu qad qīl",
+                translation: "for it has been said,",
               }),
               new QasidaEntryModel({
                 arabic: "فِي الْوَقْت: جَار اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Fil waqt: jārullāh",
+                translation: "at this time: the neighbour of Allah.",
               }),
             ],
           }),
@@ -4800,23 +4842,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "وَالْمُصْطَفَى الطَّاهِرْ",
-                translit: "",
-                translation: "",
+                translit: "Walmuṣṭafaṭ ṭāhir",
+                translation: "And the Chosen One, the pure,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالْمُرْتَضَى النَّاصِرْ",
-                translit: "",
-                translation: "",
+                translit: "Walmurtaḍan nāṣir",
+                translation: "and al-Murtaḍā, the helper,",
               }),
               new QasidaEntryModel({
                 arabic: "وَابْنَاهُ وَالْبَاقِرْ",
-                translit: "",
-                translation: "",
+                translit: "Wabnāhu walbāqir",
+                translation: "and his two sons, and al-Bāqir,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالْكُلُّ حِزْبُ اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Walkullu ḥizbullāh",
+                translation: "and all are the party of Allah.",
               }),
             ],
           }),
@@ -4825,23 +4867,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "حَسْبِي بِهِمْ حَسْبِي",
-                translit: "",
-                translation: "",
+                translit: "Ḥasbī bihim ḥasbī",
+                translation: "They are enough for me, enough for me,",
               }),
               new QasidaEntryModel({
                 arabic: "هُمْ صَفْوَةُ الرَّبِّ",
-                translit: "",
-                translation: "",
+                translit: "Hum ṣafwatur rabb",
+                translation: "they are the chosen ones of the Lord",
               }),
               new QasidaEntryModel({
                 arabic: "فِي الْفَضْلِ وَالْقُرْبِ",
-                translit: "",
-                translation: "",
+                translit: "Fil faḍli walqurb",
+                translation: "in merit and in nearness,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالْكُلُّ شَيْ لِلَّه",
-                translit: "",
-                translation: "",
+                translit: "Walkullu shay lillāh",
+                translation: "and all of it is for Allah’s sake.",
               }),
             ],
           }),
@@ -4850,23 +4892,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "صَلِّ وَسَلِّمْ دُوب",
-                translit: "",
-                translation: "",
+                translit: "Ṣalli wasallim dūb",
+                translation: "Send blessings and peace, constantly,",
               }),
               new QasidaEntryModel({
                 arabic: "عَلَى النَّبِي الْمَحْبُوب",
-                translit: "",
-                translation: "",
+                translit: "‛Alan nabiyyil maḥbūb",
+                translation: "upon the beloved Prophet,",
               }),
               new QasidaEntryModel({
                 arabic: "بِهِ يَحْصُلُ الْمَطْلُوب",
-                translit: "",
-                translation: "",
+                translit: "Bihi yaḥṣulul maṭlūb",
+                translation: "through whom what is sought is obtained,",
               }),
               new QasidaEntryModel({
                 arabic: "أَجْمَعْ بِفَضْلِ اللَّه",
-                translit: "",
-                translation: "",
+                translit: "Ajma‛ bifaḍlillāh",
+                translation: "all of it, by the grace of Allah.",
               }),
             ],
           }),
@@ -4881,13 +4923,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا اللَّه بِهَا يَا اللَّه بِهَا",
-                translit: "",
-                translation: "",
+                translit: "Yā Allāh bihā yā Allāh bihā",
+                translation: "O Allah, with it, O Allah, with it,",
               }),
               new QasidaEntryModel({
                 arabic: "يَا اللَّه بِحُسْنِ الْخَاتِمَهْ",
-                translit: "",
-                translation: "",
+                translit: "Yā Allāh biḥusnil khātimah",
+                translation: "O Allah, a good ending,",
               }),
             ],
           }),
@@ -4896,23 +4938,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا اهْلِ الْعُقُولِ السَّالِمَهْ",
-                translit: "",
-                translation: "",
+                translit: "Yā ahlil ‛uqūlis sālimah",
+                translation: "O people of sound minds,",
               }),
               new QasidaEntryModel({
                 arabic: "وَاهْلِ الْقُلُوبِ الْعَالِمَهْ",
-                translit: "",
-                translation: "",
+                translit: "Wa’ahlil qulūbil ‛ālimah",
+                translation: "and people of knowing hearts,",
               }),
               new QasidaEntryModel({
                 arabic: "قُولُوا بِهِمَّهْ عَازِمَهْ",
-                translit: "",
-                translation: "",
+                translit: "Qūlū bihimmah ‛āzimah",
+                translation: "say it with firm resolve",
               }),
               new QasidaEntryModel({
                 arabic: "وَبِصِدْقِ نِيَّهْ جَازِمَهْ",
-                translit: "",
-                translation: "",
+                translit: "Wabiṣidqi niyyah jāzimah",
+                translation: "and with truthfulness of unwavering intention,",
               }),
             ],
           }),
@@ -4921,23 +4963,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "فَهِيَ إِلَيْهَا الْمُنْتَهَى",
-                translit: "",
-                translation: "",
+                translit: "Fahiya ilayhal muntahā",
+                translation: "for it is the final destination;",
               }),
               new QasidaEntryModel({
                 arabic: "قَدْ قَالَ أَرْبَابُ النُّهَى",
-                translit: "",
-                translation: "",
+                translit: "Qad qāla arbābun nuhā",
+                translation: "so have said the people of intellect.",
               }),
               new QasidaEntryModel({
                 arabic: "يَا اللَّه بِهَا يَا اللَّه بِهَا",
-                translit: "",
-                translation: "",
+                translit: "Yā Allāh bihā yā Allāh bihā",
+                translation: "O Allah, with it, O Allah, with it,",
               }),
               new QasidaEntryModel({
                 arabic: "دَعْوَه عَجِيبَه تَامَّهْ",
-                translit: "",
-                translation: "",
+                translit: "Da‛wah ‛ajībah tāmmah",
+                translation: "a wondrous, complete supplication.",
               }),
             ],
           }),
@@ -4946,23 +4988,25 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا رَبَّنَا يَا رَبَّنَا",
-                translit: "",
-                translation: "",
+                translit: "Yā rabbanā yā rabbanā",
+                translation: "O our Lord, O our Lord,",
               }),
               new QasidaEntryModel({
                 arabic: "اُلْطُفْ بِنَا وَاغْفِرْ لَنَا",
-                translit: "",
-                translation: "",
+                translit: "Ulṭuf binā waghfir lanā",
+                translation: "be gentle with us and forgive us,",
               }),
               new QasidaEntryModel({
                 arabic: "وَاخْتِمْ بِخَيْرٍ إِنْ دَنَا",
-                translit: "",
-                translation: "",
+                translit: "Wakhtim bikhayrin in danā",
+                translation:
+                  "and seal our lives with good, when there draws near",
               }),
               new QasidaEntryModel({
                 arabic: "إِبَّانُ يَوْمِ الطَّامَّهْ",
-                translit: "",
-                translation: "",
+                translit: "Ibbānu yawmiṭ ṭāmmah",
+                translation:
+                  "the time of the Day of the Overwhelming Calamity.",
               }),
             ],
           }),
@@ -4971,23 +5015,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "فَالْمَوْتُ آتٍ عَنْ قَرِيب",
-                translit: "",
-                translation: "",
+                translit: "Falmawtu ātin ‛an qarīb",
+                translation: "For death is coming before long,",
               }),
               new QasidaEntryModel({
                 arabic: "كُلٌّ لَهُ مِنْهُ نَصِيب",
-                translit: "",
-                translation: "",
+                translit: "Kullun lahu minhu naṣīb",
+                translation: "each one has a share of it,",
               }),
               new QasidaEntryModel({
                 arabic: "مَنْ كَانَ دَانٍ أَوْ نَسِيب",
-                translit: "",
-                translation: "",
+                translit: "Man kāna dānin aw nasīb",
+                translation: "whoever was near or a kinsman,",
               }),
               new QasidaEntryModel({
                 arabic: "فَهُوَ مُصِيبَهْ عَامَّهْ",
-                translit: "",
-                translation: "",
+                translit: "Fahuwa muṣībah ‛āmmah",
+                translation: "for it is a calamity for all.",
               }),
             ],
           }),
@@ -4996,23 +5040,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "ثُمَّ إِذَا مُتَّ أَتَوْك",
-                translit: "",
-                translation: "",
+                translit: "Thumma idhā mutta atawk",
+                translation: "Then, when you die, they come to you,",
               }),
               new QasidaEntryModel({
                 arabic: "وَغَسَّلُوك وَكَفَّنُوك",
-                translit: "",
-                translation: "",
+                translit: "Waghassalūk wakaffanūk",
+                translation: "and they wash you and shroud you,",
               }),
               new QasidaEntryModel({
                 arabic: "وَشَيَّعُوك وَأَلْحَدُوك",
-                translit: "",
-                translation: "",
+                translit: "Washayya‛ūk wa’alḥadūk",
+                translation: "and escort you and lay you in the grave,",
               }),
               new QasidaEntryModel({
                 arabic: "وَصِرْتَ جِيفَهْ خَامَّهْ",
-                translit: "",
-                translation: "",
+                translit: "Waṣirta jīfah khāmmah",
+                translation: "and you have become a putrid corpse.",
               }),
             ],
           }),
@@ -5021,23 +5065,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا رَبِّ كُنْ لِي يَا مُعِين",
-                translit: "",
-                translation: "",
+                translit: "Yā rabbi kun lī yā mu‛īn",
+                translation: "O my Lord, be for me, O Helper,",
               }),
               new QasidaEntryModel({
                 arabic: "إِذَا رَشَحْ عَظْمُ الْجَبِين",
-                translit: "",
-                translation: "",
+                translit: "Idhā rashaḥ ‛aẓmul jabīn",
+                translation: "when the bone of the brow sweats,",
               }),
               new QasidaEntryModel({
                 arabic: "وَاخْتِمْ إِلَهِي بِالْيَقِين",
-                translit: "",
-                translation: "",
+                translit: "Wakhtim ilāhī bilyaqīn",
+                translation: "and seal, my God, with certainty,",
               }),
               new QasidaEntryModel({
                 arabic: "مِنْ قَبْلِ لَوْمِ اللَّائِمَهْ",
-                translit: "",
-                translation: "",
+                translit: "Min qabli lawmil lā’imah",
+                translation: "before the reproach of the one who reproaches.",
               }),
             ],
           }),
@@ -5046,23 +5090,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "دُنْيَاك مَا هِي لِلْمَقَرّ",
-                translit: "",
-                translation: "",
+                translit: "Dunyāk mā hī lilmaqarr",
+                translation: "Your worldly life is not meant for staying,",
               }),
               new QasidaEntryModel({
                 arabic: "وَإِنَّمَا هِي لِلْمَمَرّ",
-                translit: "",
-                translation: "",
+                translit: "Wa’innamā hī lilmamarr",
+                translation: "it is only for passing through,",
               }),
               new QasidaEntryModel({
                 arabic: "فَافْكِرْ وَأَمْعِنْ فِي النَّظَرْ",
-                translit: "",
-                translation: "",
+                translit: "Fafkir wa’am‛in fin naẓar",
+                translation: "so reflect, and consider deeply,",
               }),
               new QasidaEntryModel({
                 arabic: "وَلَا تَكُنْ كَالسَّائِمَهْ",
-                translit: "",
-                translation: "",
+                translit: "Walā takun kassā’imah",
+                translation: "and do not be like the grazing herd.",
               }),
             ],
           }),
@@ -5071,23 +5115,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا رَبِّ مَا مَعنَا عَمَل",
-                translit: "",
-                translation: "",
+                translit: "Yā rabbi mā ma‛anā ‛amal",
+                translation: "O my Lord, we have no deeds with us,",
               }),
               new QasidaEntryModel({
                 arabic: "وكَسْبُنَا كُلُّهْ زَلَلْ",
-                translit: "",
-                translation: "",
+                translit: "Wakasbunā kulluh zalal",
+                translation: "and all that we have earned is error,",
               }),
               new QasidaEntryModel({
                 arabic: "لَكِنْ لَنَا فِيكَ أَمَل",
-                translit: "",
-                translation: "",
+                translit: "Lākin lanā fīka amal",
+                translation: "but we have hope in You,",
               }),
               new QasidaEntryModel({
                 arabic: "تُحْيِي الْعِظَامَ الرَّامَّهْ",
-                translit: "",
-                translation: "",
+                translit: "Tuḥyil ‛iẓāmar rāmmah",
+                translation: "You who give life to the decayed bones.",
               }),
             ],
           }),
@@ -5097,23 +5141,23 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "قَدْ حَانَ حِينُ الْإِنْتِقَالْ",
-                translit: "",
-                translation: "",
+                translit: "Qad ḥāna ḥīnul intiqāl",
+                translation: "The time of departure has come,",
               }),
               new QasidaEntryModel({
                 arabic: "وَالْعُمْر وَلَّى فِي ضَلَالْ",
-                translit: "",
-                translation: "",
+                translit: "Wal‛umr wallā fī ḍalāl",
+                translation: "and life has passed in error,",
               }),
               new QasidaEntryModel({
                 arabic: "لَكِنِّي أَرْجُو ذَا الْجَلَال",
-                translit: "",
-                translation: "",
+                translit: "Lākinnī arjū dhal jalāl",
+                translation: "but I place my hope in the Possessor of Majesty,",
               }),
               new QasidaEntryModel({
                 arabic: "بِجَاهْ وَالِدْ فَاطِمَهْ",
-                translit: "",
-                translation: "",
+                translit: "Bijāh wālid Fāṭimah",
+                translation: "by the standing of the father of Fāṭimah,",
               }),
             ],
           }),
@@ -5123,13 +5167,13 @@ export default [
             entries: [
               new QasidaEntryModel({
                 arabic: "بِجاهْ وَالِدْ فَاطِمَهْ",
-                translit: "",
-                translation: "",
+                translit: "Bijāh wālid Fāṭimah",
+                translation: "by the standing of the father of Fāṭimah,",
               }),
               new QasidaEntryModel({
                 arabic: "اُمْنُنْ بِحُسْنِ الْخَاتِمَةْ",
-                translit: "",
-                translation: "",
+                translit: "Umnun biḥusnil khātimah",
+                translation: "bestow upon us a good ending.",
               }),
             ],
           }),
