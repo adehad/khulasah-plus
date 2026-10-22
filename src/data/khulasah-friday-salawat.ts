@@ -100,6 +100,12 @@ export default [
           }),
         ],
       }),
+    ],
+  }),
+  new WirdModel({
+    title:
+      "Ṣalāt at-Tāj (The Prayer of the Crown) by Sayyiduna Shaykh Abu Bakr bin Salim",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -140,57 +146,34 @@ export default [
             translation: "and on the family of our master and leader Muḥammad",
           }),
           new DhikrEntryModel({
-            arabic: "صَاحِبِ التَّاجِ",
-            translit: "ṣāḥibit tāj",
-            translation: "the owner of the crown",
-          }),
-          new DhikrEntryModel({
-            arabic: "وَالْمِعْرَاجِ",
-            translit: "wal mi‛rāj",
-            translation: "the ascent",
-          }),
-          new DhikrEntryModel({
-            arabic: "وَالْبُرَاقِ",
-            translit: "wal burāq",
-            translation: "the burāq",
-          }),
-          new DhikrEntryModel({
-            arabic: "وَالْعَلَم * وَدَافِعِ الْبَلَاءِ",
-            translit: "wal ‛alam, wa dāfi‛il balā’",
-            translation: "and the flag; and the remover of calamities",
-          }),
-          new DhikrEntryModel({
-            arabic: "وَالْوَبَاءِ",
-            translit: "wal wabā’",
-            translation: "contagious sicknesses",
-          }),
-          new DhikrEntryModel({
-            arabic: "وَالْمَرَضِ",
-            translit: "wal maraḍ",
-            translation: "illnesses",
-          }),
-          new DhikrEntryModel({
-            arabic:
-              "وَالْأَلَم * جِسْمُهُ مُطَهَّرٌ مُعَطَّرٌ مُنَوَّر * مَنِ اسْمُهُ مَكْتُوبٌ مَرْفُوعٌ مَوْضُوعٌ عَلَى اللَّوْحِ وَالْقَلَم * شَمْسِ الضُّحَى",
-            translit:
-              "wal alam, jismuhū muṭahharun mu‛aṭṭarun munawwar, man ismuhū maktūbun marfū‛un mawḍū‛un ‛alal lawḥi wal qalam, shamsiḍ ḍuḥā",
+            arabic: "صَاحِبِ التَّاجِ وَالْمِعْرَاجِ وَالْبُرَاقِ وَالْعَلَم",
+            translit: "ṣāḥibit tāj, wal mi‛rāj, wal burāq, wal ‛alam",
             translation:
-              "and pain. His body is purified, perfumed, and illuminated; he, whose name is written, elevated, placed on the Preserved Tablet and the Pen; the morning sun",
+              "the owner of the crown, the ascent, the burāq, and the flag;",
           }),
           new DhikrEntryModel({
-            arabic: "بَدْرِ الدُّجَى",
-            translit: "badrid dujā",
-            translation: "the moon lighting the darkness",
+            arabic: "وَدَافِعِ الْبَلَاءِ وَالْوَبَاءِ وَالْمَرَضِ وَالْأَلَم",
+            translit: "wa dāfi‛il balā’, wal wabā’, wal maraḍ, wal alam",
+            translation:
+              "and the remover of calamities, contagious sicknesses, illnesses, and pain.",
           }),
           new DhikrEntryModel({
-            arabic: "نُورِ الْهُدَى",
-            translit: "nūril hudā",
-            translation: "the light of guidance",
+            arabic: "جِسْمُهُ مُطَهَّرٌ مُعَطَّرٌ مُنَوَّر",
+            translit: "jismuhū muṭahharun mu‛aṭṭarun munawwar",
+            translation: "His body is purified, perfumed, and illuminated;",
           }),
           new DhikrEntryModel({
-            arabic: "مِصْبَاحِ الظُّلَم",
-            translit: "miṣbāḥiẓ ẓulam",
-            translation: "and the lamp lighting the darkness",
+            arabic: "مَنِ اسْمُهُ مَكْتُوبٌ مَرْفُوعٌ مَوْضُوعٌ عَلَى اللَّوْحِ وَالْقَلَم",
+            translit:
+              "man ismuhū maktūbun marfū‛un mawḍū‛un ‛alal lawḥi wal qalam",
+            translation:
+              "he, whose name is written, elevated, placed on the Preserved Tablet and the Pen;",
+          }),
+          new DhikrEntryModel({
+            arabic: "شَمْسِ الضُّحَى بَدْرِ الدُّجَى نُورِ الْهُدَى مِصْبَاحِ الظُّلَم",
+            translit: "shamsiḍ ḍuḥā, badrid dujā, nūril hudā, miṣbāḥiẓ ẓulam",
+            translation:
+              "the morning sun, the moon lighting the darkness, the light of guidance, and the lamp lighting the darkness",
           }),
           new DhikrEntryModel({
             arabic: "أَبِي الْقَاسِمِ سَيِّدِ الْكَوْنَيْنِ وَشَفِيعِ الثَّقَلَيْن",
@@ -206,17 +189,18 @@ export default [
               "Abūl Qāsim, our master, Muḥammad, son of Abdullah, master of the Arabs and the non Arabs",
           }),
           new DhikrEntryModel({
-            arabic: "نَبِيِّ الْحَرَمَيْنِ",
-            translit: "nabiyyil ḥaramayn",
-            translation: "the Prophet of the two Holy Sanctuaries",
+            arabic: "نَبِيِّ الْحَرَمَيْنِ مَحْبُوبٍ عِنْدَ رَبِّ الْمَشْرِقَيْنِ وَالْمَغْرِبَيْن",
+            translit:
+              "nabiyyil ḥaramayn, maḥbūbin ‛inda rabbil mashriqayni wal maghribayn",
+            translation:
+              "the Prophet of the two Holy Sanctuaries, beloved of the Lord of the two easts and the two wests.",
           }),
           new DhikrEntryModel({
-            arabic:
-              "مَحْبُوبٍ عِنْدَ رَبِّ الْمَشْرِقَيْنِ وَالْمَغْرِبَيْن * يَا أَيُّهَا الْمُشْتَاقُونَ لِنُورِ جَمَالِهِ صَلُّوْا عَلَيْهِ وَسَلِّمُوا تَسَلِيما",
+            arabic: "يَا أَيُّهَا الْمُشْتَاقُونَ لِنُورِ جَمَالِهِ صَلُّوْا عَلَيْهِ وَسَلِّمُوا تَسَلِيما",
             translit:
-              "maḥbūbin ‛inda rabbil mashriqayni wal maghribayn, yā ayyuhal mushtāqūna li nūri jamālihī ṣallū ‛alayhi wa sallimū taslīmā",
+              "yā ayyuhal mushtāqūna li nūri jamālihī ṣallū ‛alayhi wa sallimū taslīmā",
             translation:
-              "beloved of the Lord of the two easts and the two wests. O those who are yearning for the light of his beauty, bestow prayers and salutations upon him.",
+              "O those who are yearning for the light of his beauty, bestow prayers and salutations upon him.",
           }),
         ],
       }),
@@ -375,8 +359,7 @@ export default [
     ],
   }),
   new WirdModel({
-    title:
-      "Ṣalāt at-Tāj (The Prayer of the Crown) by Sayyiduna Shaykh Abu Bakr bin Salim",
+    title: "",
     entries: [
       new DhikrModel({
         entries: [
