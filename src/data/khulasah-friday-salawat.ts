@@ -7,7 +7,7 @@ import {
 
 export default [
   new WirdModel({
-    title: "Salawat",
+    title: "Ṣalātul Ibrāhīmiyya",
     entries: [
       new DhikrModel({
         entries: [
