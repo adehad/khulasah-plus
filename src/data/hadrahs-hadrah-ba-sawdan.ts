@@ -15,12 +15,13 @@ export default [
         title: "Tahleel",
         entries: [
           new QasidaVerseModel({
+            repeat: 3,
             chorus: false,
             entries: [
               new QasidaEntryModel({
-                arabic: "لَا إِلَهَ إِلَّا اللَّه (3x)",
-                translit: "Lā ilāha illallāh (3x)",
-                translation: "There is no god but Allah (3x)",
+                arabic: "لَا إِلَهَ إِلَّا اللَّه",
+                translit: "Lā ilāha illallāh",
+                translation: "There is no god but Allah",
               }),
               new QasidaEntryModel({
                 arabic: "لَا مَعْبُودَ إِلَّا اللَّه",
@@ -30,12 +31,13 @@ export default [
             ],
           }),
           new QasidaVerseModel({
+            repeat: 3,
             chorus: false,
             entries: [
               new QasidaEntryModel({
-                arabic: "لَا إِلَهَ إِلَّا اللَّه (3x)",
-                translit: "Lā ilāha illallāh (3x)",
-                translation: "There is no god but Allah (3x)",
+                arabic: "لَا إِلَهَ إِلَّا اللَّه",
+                translit: "Lā ilāha illallāh",
+                translation: "There is no god but Allah",
               }),
               new QasidaEntryModel({
                 arabic: "لَا مَقْصُودَ إِلَّا اللَّه",
@@ -45,12 +47,13 @@ export default [
             ],
           }),
           new QasidaVerseModel({
+            repeat: 3,
             chorus: false,
             entries: [
               new QasidaEntryModel({
-                arabic: "لَا إِلَهَ إِلَّا اللَّه (3x)",
-                translit: "Lā ilāha illallāh (3x)",
-                translation: "There is no god but Allah (3x)",
+                arabic: "لَا إِلَهَ إِلَّا اللَّه",
+                translit: "Lā ilāha illallāh",
+                translation: "There is no god but Allah",
               }),
               new QasidaEntryModel({
                 arabic: "لَا مَوْجُودَ إِلَّا اللَّه",
@@ -60,12 +63,13 @@ export default [
             ],
           }),
           new QasidaVerseModel({
+            repeat: 3,
             chorus: false,
             entries: [
               new QasidaEntryModel({
-                arabic: "لَا إِلَهَ إِلَّا اللَّه (3x)",
-                translit: "Lā ilāha illallāh (3x)",
-                translation: "There is no god but Allah (3x)",
+                arabic: "لَا إِلَهَ إِلَّا اللَّه",
+                translit: "Lā ilāha illallāh",
+                translation: "There is no god but Allah",
               }),
               new QasidaEntryModel({
                 arabic: "لَا مَشْهُودَ إِلَّا اللَّه",
@@ -75,15 +79,16 @@ export default [
             ],
           }),
           new QasidaVerseModel({
+            repeat: 3,
             chorus: false,
             entries: [
               new QasidaEntryModel({
                 arabic:
-                  "اللَّهُمَّ يَا كَافِيَ الْبَلَاء اِكْفِنَا الْبَلَاء قَبْلَ نُزُولِهِ مِنَ السَّمَاء يَا اللَّه يَا اللَّه يَا اللَّه يَا اللَّه يَا اللَّه يَا اللَّه يَا اللَّه (3x)",
+                  "اللَّهُمَّ يَا كَافِيَ الْبَلَاء اِكْفِنَا الْبَلَاء قَبْلَ نُزُولِهِ مِنَ السَّمَاء يَا اللَّه يَا اللَّه يَا اللَّه يَا اللَّه يَا اللَّه يَا اللَّه يَا اللَّه",
                 translit:
-                  "Allāhumma yā kāfiyal-balā’, ikfinal-balā’a qabla nuzūlihī minas-samā’. Yā Allāh, yā Allāh, yā Allāh, yā Allāh, yā Allāh, yā Allāh, yā Allāh (3x)",
+                  "Allāhumma yā kāfiyal-balā’, ikfinal-balā’a qabla nuzūlihī minas-samā’. Yā Allāh, yā Allāh, yā Allāh, yā Allāh, yā Allāh, yā Allāh, yā Allāh",
                 translation:
-                  "O Allah, O Sufficer against affliction, suffice us against affliction before it descends from the sky. O Allah, O Allah, O Allah, O Allah, O Allah, O Allah, O Allah (3x)",
+                  "O Allah, O Sufficer against affliction, suffice us against affliction before it descends from the sky. O Allah, O Allah, O Allah, O Allah, O Allah, O Allah, O Allah",
               }),
             ],
           }),
@@ -5087,6 +5092,7 @@ export default [
             ],
           }),
           new QasidaVerseModel({
+            repeat: 3,
             chorus: false,
             entries: [
               new QasidaEntryModel({
@@ -5112,6 +5118,7 @@ export default [
             ],
           }),
           new QasidaVerseModel({
+            repeat: 3,
             chorus: true,
             entries: [
               new QasidaEntryModel({

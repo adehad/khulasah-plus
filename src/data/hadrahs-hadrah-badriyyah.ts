@@ -237,6 +237,7 @@ export default [
             ],
           }),
           new QasidaVerseModel({
+            repeat: 100,
             chorus: false,
             entries: [
               new QasidaEntryModel({
@@ -253,6 +254,7 @@ export default [
             ],
           }),
           new QasidaVerseModel({
+            repeat: 100,
             chorus: false,
             entries: [
               new QasidaEntryModel({
@@ -266,6 +268,7 @@ export default [
             ],
           }),
           new QasidaVerseModel({
+            repeat: 20,
             chorus: false,
             entries: [
               new QasidaEntryModel({
@@ -276,6 +279,7 @@ export default [
             ],
           }),
           new QasidaVerseModel({
+            repeat: 40,
             chorus: false,
             entries: [
               new QasidaEntryModel({
@@ -291,6 +295,7 @@ export default [
             ],
           }),
           new QasidaVerseModel({
+            repeat: 40,
             chorus: false,
             entries: [
               new QasidaEntryModel({
@@ -624,6 +629,7 @@ export default [
             ],
           }),
           new QasidaVerseModel({
+            repeat: 3,
             chorus: false,
             entries: [
               new QasidaEntryModel({
@@ -2774,6 +2780,7 @@ export default [
             ],
           }),
           new QasidaVerseModel({
+            repeat: 3,
             chorus: false,
             entries: [
               new QasidaEntryModel({
