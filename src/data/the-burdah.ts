@@ -40,7 +40,7 @@ export default [
             translation: "Chapter One",
           }),
           new QasidaEntryModel({
-            arabic: "سَادَتِنَا آلِهِ وَصَحْبِهِ الْکِرَمِ",
+            arabic: "سَادَتِنَا آلِهِ وَصَحْبِهِ الْكِرَمِ",
             translit: "sādatinā ālihī wa ṣaḥbihil kiram",
             translation: "our masters, his family and his noble companions.",
           }),
@@ -564,7 +564,7 @@ export default [
         chorus: false,
         entries: [
           new QasidaEntryModel({
-            arabic: "وَکَيْفَ تَدْعُو إِلَی الدُّنْيَا ضَرُورَةُ مَنْ",
+            arabic: "وَكَيْفَ تَدْعُو إِلَى الدُّنْيَا ضَرُورَةُ مَنْ",
             translit: "Wa kayfa tad‛ū ilad dunyā ḍarūratu man",
             translation:
               "How could it tempt to this world—the “poverty” of him who",
@@ -1556,7 +1556,7 @@ export default [
               "So wise and clear, that they leave no room for a single doubt",
           }),
           new QasidaEntryModel({
-            arabic: "لِذِي شِقَاقٍ وَمَا تَبْغِينَ مِنْ حَکَمِ",
+            arabic: "لِذِي شِقَاقٍ وَمَا تَبْغِينَ مِنْ حَكَمِ",
             translit: "Lidhī shiqāqin wa mā tabghīna min ḥakam",
             translation: "To an opponent and have no need for a referee.",
           }),
@@ -1654,7 +1654,7 @@ export default [
             translation: "If you recite them in worry of the fire of Hell,",
           }),
           new QasidaEntryModel({
-            arabic: "أَطْفَأْتَ حَرَّ لَظَی مِنْ وِرْدِهَا الشَّبِمِ",
+            arabic: "أَطْفَأْتَ حَرَّ لَظَى مِنْ وِرْدِهَا الشَّبِمِ",
             translit: "Aṭfa’ta ḥarra laẓā min wirdihash shabim",
             translation:
               "From their cool fountain you douse the burn of Hell utterly.",

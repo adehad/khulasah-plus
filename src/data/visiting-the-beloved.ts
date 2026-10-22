@@ -1511,7 +1511,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "اللَّهُمَّ وَارْحَمْ أُمَّةَ سَيِّدِنَا مُحَمَّدٍ، وَفَرِّجْ کُرُوبَهُم وَاجْمَعْ كَلِمَتَهُم، وَوَحِّدْ صَفَّهُم، وَانْصُرْهُم عَلَى عَدُوِّهِم",
+              "اللَّهُمَّ وَارْحَمْ أُمَّةَ سَيِّدِنَا مُحَمَّدٍ، وَفَرِّجْ كُرُوبَهُم وَاجْمَعْ كَلِمَتَهُم، وَوَحِّدْ صَفَّهُم، وَانْصُرْهُم عَلَى عَدُوِّهِم",
             translit:
               "Allāhumma warḥam ummata sayyidinā Muḥammad, wa farrij kurūbahum wajma‛ kalimatahum, wa waḥḥid ṣaffahum, wanṣurhum ‛alā ‛aduwwihim",
             translation:
