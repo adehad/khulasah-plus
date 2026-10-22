@@ -19,12 +19,22 @@ export default [
             translation:
               "Paradise and its bliss is happiness for whoever sends blessings, peace and benedictions upon him",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيم",
             translit: "Bismillāhir raḥmānir raḥīm",
             translation:
               "In the name of Allāh, the Most Gracious, the Most Merciful",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic:
               "أَبْتَدِئُ الْإِمْلَاءَ بِاسْمِ الذَّاتِ الْعَلِيَّة، مُسْتَدِرًّا فَيْضَ الْبَرَكَاتِ عَلَى مَا أَنَالَهُ وَأَوْلَاه، وَأُثَنِّي بِحَمْدٍ مَوَارِدُهُ سَائِغَةٌ هَنِيَّة، مُمْتَطِيًا مِنَ الشُّكْرِ الْجَمِيلِ مَطَايَاه، وَأُصَلِّي وَأُسَلِّمُ عَلَى النُّورِ الْمَوْصُوفِ بِالتَّقَدُّمِ وَالْأَوَّلِيَّة، المُنْتَقِلِ فِي الْغُرَرِ الْكَرِيمَةِ وَالْجِبَاه، وَأَسْتَمْنِحُ اللَّهَ تَعَالَى رِضْوَانًا يَخُصُّ الْعِتْرَةَ الطَّاهِرَةَ النَّبَوِيَّة، وَيَعُمُّ الصَّحَابَةَ وَالْأَتْبَاعَ وَمَنْ وَالَاه، وَأَسْتَجْدِيهِ هِدَايَةً لِسُلُوكِ السُّبُلِ الْوَاضِحَةِ الْجَلِيَّةِ، وَحِفْظًا مِنَ الْغَوَايَةِ فِي خِطَطِ الْخَطَأِ وَخُطَاه، وَأَنْشُرُ مِنْ قِصَّةِ الْمَوْلِدِ النَّبَوِيِّ بُرُودًا حِسَانًا عَبْقَرِيَّة، نَاظِمًا مِنَ النَّسَبِ الشَّرِيفِ عِقْدًا تُحَلَّى الْمَسَامِعُ بِحُلَاه، وَأَسْتَعِيْنُ بِحَوْلِ اللَّهِ تَعَالَى وَقُوَّتِهِ الْقَوِيَّة، فَإِنَّهُ لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّهِ",
@@ -33,6 +43,11 @@ export default [
             translation:
               "I begin the dictation in the name of the Most Exalted Essence, seeking the abundant flow of blessings upon what He has granted and bestowed. I follow it with praise whose springs are sweet and pleasant, riding the finest mounts of beautiful gratitude. I send blessings and peace upon the Light, described by precedence and primacy, which was passed on through noble foreheads and brows. I ask Allāh the Exalted for a pleasure that is special to the pure family of the Prophet and that embraces the Companions, the followers and all who support him. I beseech Him for guidance to walk the clear and evident paths, and for protection from error in its tracks and its steps. I unfold from the story of the Prophetic birth beautiful and wondrous mantles, stringing from the noble lineage a necklace whose ornaments adorn the ears. I seek help through the power of Allāh the Exalted and His mighty strength, for there is no power and no strength except through Allāh.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "عَطِّرِ اللَّهُمَّ قَبْرَهُ الْكَرِيم",
             translit: "‛Aṭṭiril lāhumma qabrahul karīm",
@@ -43,6 +58,11 @@ export default [
             translit: "bi‛arfin shadhiyyin min ṣalātin wa taslīm",
             translation: "with a fragrant scent of blessings and peace",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِه",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
@@ -62,6 +82,11 @@ export default [
             translation:
               "And now I say: he is our master Muḥammad, son of ‛Abdullāh, son of ‛Abd al-Muṭṭalib, whose name was Shaybat al-Ḥamd, for his lofty qualities were praised; son of Hāshim, whose name was ‛Amr; son of ‛Abd Manāf, whose name was al-Mughīrah, to whose heights ascent is attributed; son of Quṣayy, whose name was Mujammi‛, who was called Quṣayy because he lived far away in the distant lands of Quḍā‛ah, until Allāh the Exalted returned him to the Sacred Sanctuary, and he protected its protected ground; son of Kilāb, whose name was Ḥakīm; son of Murrah, son of Ka‛b, son of Lu’ayy, son of Ghālib, son of Fihr, whose name was Quraysh, and to him the Qurashī clans are traced; and those above him were Kinānī, as many have inclined to and accepted; son of Mālik, son of an-Naḍr, son of Kinānah, son of Khuzaymah, son of Mudrikah, son of Ilyās, who was the first to send sacrificial camels to the Sanctuary's courts, and in whose loins the Prophet, may Allāh bless him and his family and grant them peace, was heard remembering Allāh the Exalted and answering His call; son of Muḍar, son of Nizār, son of Ma‛add, son of ‛Adnān. This is a string whose pearls the fingers of the exalted Sunnah have arranged; its extension up to Ibrāhīm the Friend of Allāh, the Lawgiver withheld from and declined; and ‛Adnān, without doubt, according to the scholars of genealogy, traces his lineage and belonging to the one to be sacrificed, Ismā‛īl. How magnificent a necklace, whose radiant stars shine! And how could it not be so, when the most noble master, may Allāh bless him and his family and grant them peace, is its chosen central jewel.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "نَسَبٌ تَحْسِبُ الْعُلَا بِحُلَاهُ",
             translit: "Nasabun taḥsabul ‛ulā biḥulāh",
@@ -74,6 +99,11 @@ export default [
             translation:
               "with which Gemini has adorned it, as a necklace of its stars",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "حَبَّذَا عِقْدُ سُؤْدَدٍ وَفَخَارٍ",
             translit: "Ḥabbadhā ‛iqdu su’dudin wa fakhār",
@@ -84,6 +114,11 @@ export default [
             translit: "Anta fīhil yatīmatul ‛aṣmā’",
             translation: "You are in it the unique, unblemished pearl",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic:
               "وَأَكْرِمْ بِهِ مِنْ نَسَبٍ طَهَّرَهُ اللَّهُ تَعَالَى مِنْ سِفَاحِ الْجَاهِلِيَّة, أَوْرَدَ الزَّيْنُ الْعِرَاقِيُّ وارِدَهُ فِي مَوْرِدِهِ الْهَنِيِّ وَرَوَاه",
@@ -92,6 +127,11 @@ export default [
             translation:
               "And how honoured is a lineage that Allāh the Exalted purified from the fornication of the Age of Ignorance; Zayn ad-Dīn al-‛Irāqī brought its source to its pleasant spring and narrated it",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "حَفِظَ الْإلٰهُ كَرَامَةً لِمُحَمَّدٍ",
             translit: "Ḥafiẓal ilāhu karāmatan liMuḥammadin",
@@ -102,6 +142,11 @@ export default [
             translit: "Ābā’ahul amjāda ṣawnan lismih",
             translation: "his noble forefathers, to safeguard his name",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "تَرَكُوا السِّفَاحَ فَلَمْ يُصِبْهُمْ عَارُهُ",
             translit: "Tarakus sifāḥa fa lam yuṣibhum ‛āruh",
@@ -113,6 +158,11 @@ export default [
             translit: "Min Ādamin wa ilā abīhi wa ummih",
             translation: "from Ādam down to his father and his mother",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic:
               "سَرَاةٌ سَرَى نُورُ النُّبُوَّةِ فِي أَسَارِيرِ غُرَرِهِمُ الْبَهِيَّة, وَبَدَرَ بَدْرُهُ فِي جَبِينِ جَدِّهِ عَبْدِ الْمُطَّلِبِ وَابْنِهِ عَبْدِ اللَّه",
@@ -121,6 +171,11 @@ export default [
             translation:
               "Noble leaders, through whom the light of prophethood travelled, in the radiant lines of their brilliant foreheads; and his full moon rose in the forehead of his grandfather ‛Abd al-Muṭṭalib and of his son ‛Abdullāh",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "عَطِّرِ اللَّهُمَّ قَبْرَهُ الْكَرِيم",
             translit: "‛Aṭṭiril lāhumma qabrahul karīm",
@@ -131,6 +186,11 @@ export default [
             translit: "bi‛arfin shadhiyyin min ṣalātin wa taslīm",
             translation: "with a fragrant scent of blessings and peace",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِه",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
@@ -150,6 +210,11 @@ export default [
             translation:
               "And when Allāh the Exalted willed to bring forth his Muḥammadan reality, and to manifest him in body and spirit, in his form and in his meaning, He moved him to his abode from the pearl-shell of Āminah az-Zuhriyyah, and the Near, the Responsive singled her out to be the mother of His chosen one. It was proclaimed in the heavens and the earth that she carried his essential lights, and every lover longed for the rising breeze of his early dawn. The earth, after long drought, was clothed with plants in garments of green silk; the fruits ripened and the trees lowered their fruit to the picker. Every beast of Quraysh spoke of the pregnancy in the eloquent tongue of Arabic; the thrones and the idols fell upon their faces and mouths. The wild animals of the east and the west and the creatures of the sea rejoiced, and the worlds drank from joy the cup of its wine. The jinn gave glad tidings of the shade of his era; soothsaying was violated and monasticism trembled. Every learned scholar spoke of his news and was lost in the beauty of his adornment. His mother was visited in a dream and it was said to her: 'You have conceived the master of the worlds and the best of creation. So when you give birth to him, name him Muḥammad, for his end will be praised.'",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "عَطِّرِ اللَّهُمَّ قَبْرَهُ الْكَرِيم",
             translit: "‛Aṭṭiril lāhumma qabrahul karīm",
@@ -160,6 +225,11 @@ export default [
             translit: "bi‛arfin shadhiyyin min ṣalātin wa taslīm",
             translation: "with a fragrant scent of blessings and peace",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِه",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
@@ -194,6 +264,11 @@ export default [
             translit: "Asfarat ‛anhu laylatun gharrā’",
             translation: "A radiant night unveiled him",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "لَيْلَةُ الْمَوْلِدِ الَّذِي كَانَ لِلدِّيــ",
             translit: "Laylatul mawlidil ladhī kāna lid dī",
@@ -204,6 +279,11 @@ export default [
             translit: "Ni surūrun biyawmihī wazdihā’",
             translation: "joy at its day, and splendour",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَوْمَ نَالَتْ بِوَضْعِهِ ابْنَةُ وَهْبٍ",
             translit: "Yawma nālat biwaḍ‛ihi bnatu Wahbin",
@@ -215,6 +295,11 @@ export default [
             translit: "Min fakhārin mā lam tanalhun nisā’",
             translation: "an honour that no other women have attained",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "وَأَتَتْ قَوْمَهَا بِأَفْضَلَ مِمَّا",
             translit: "Wa atat qawmahā bi’afḍala mimmā",
@@ -226,6 +311,11 @@ export default [
             translit: "Ḥamalat qablu Maryamul ‛Adhrā’",
             translation: "Maryam the Virgin had borne before",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "مَوْلِدٌ كَانَ مِنْهُ فِي طَالِعِ الْكُفْــ",
             translit: "Mawlidun kāna minhu fī ṭāli‛il kuf",
@@ -236,6 +326,11 @@ export default [
             translit: "ri wabālun ‛alayhimu wa wabā’",
             translation: "came ruin and plague upon them",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "وَتَوَالَتْ بُشْرَى الْهَوَاتِفِ أَنْ قَدْ",
             translit: "Wa tawālat bushral hawātifi an qad",
@@ -247,6 +342,11 @@ export default [
             translit: "Wulidal Muṣṭafā wa ḥaqqal hanā’",
             translation: "the Chosen One has been born, and joy is due",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic:
               "هٰذَا؛ وَقَدِ اسْتَحْسَنَ الْقِيَامَ عِنْدَ ذِكْرِ مَوْلِدِهِ الشَّرِيفِ أَئِمَّةٌ ذَوُو رِوَايَةٍ وَرَوِيَّة، فَطُوبَى لِمَنْ كَانَ تَعْظِيمُهُ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ غَايَةَ مَرَامِهِ وَمَرْمَاه",
@@ -255,6 +355,11 @@ export default [
             translation:
               "This is so; and imams of both narration and reflection have regarded standing at the mention of his noble birth as good. So glad tidings to whoever's highest aim and goal is to honour him, may Allāh bless him and his family and grant them peace",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "عَطِّرِ اللَّهُمَّ قَبْرَهُ الْكَرِيم",
             translit: "‛Aṭṭiril lāhumma qabrahul karīm",
@@ -265,6 +370,11 @@ export default [
             translit: "bi‛arfin shadhiyyin min ṣalātin wa taslīm",
             translation: "with a fragrant scent of blessings and peace",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِه",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
@@ -284,6 +394,11 @@ export default [
             translation:
               "He came forth, may Allāh bless him and his family and grant them peace, placing his hands on the ground and raising his head toward the lofty heavens, signalling by that raising his eminence and elevation, and pointing to the height of his rank above all creation, and that he is the beloved whose natures and character are good. His mother called ‛Abd al-Muṭṭalib while he was circling that Sacred House. He hurried to her, looked at him, and attained the utmost of joy. He brought him into the radiant Ka‛bah and stood supplicating with sincere intention, thanking Allāh the Exalted for what He had favoured and given him. He was born, may Allāh bless him and his family and grant them peace, clean, circumcised, with the umbilical cord already cut by the hand of divine power, fragrant and anointed, his eyes lined with the kohl of care. It is said that his grandfather circumcised him after seven full nights, held a feast, fed people, named him Muḥammad and honoured his dwelling.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "عَطِّرِ اللَّهُمَّ قَبْرَهُ الْكَرِيم",
             translit: "‛Aṭṭiril lāhumma qabrahul karīm",
@@ -294,6 +409,11 @@ export default [
             translit: "bi‛arfin shadhiyyin min ṣalātin wa taslīm",
             translation: "with a fragrant scent of blessings and peace",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِه",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
@@ -313,6 +433,11 @@ export default [
             translation:
               "At his birth, may Allāh bless him and his family and grant them peace, extraordinary and unseen wonders appeared, as a prelude to his prophethood and a proclamation that he is the chosen and elect of Allāh the Exalted. The heaven was increased in protection, and the rebellious ones with satanic souls were driven away from it; the shining stars pelted every accursed one at the moment of his ascent. The radiant stars hung down toward him, may Allāh bless him and his family and grant them peace, and the valleys and hills of the Sanctuary were lit by their light. A light came out with him by which the palaces of Syria, of the Caesars, were illuminated, so that it was seen by one whose home and dwelling were the plains of Makkah. The arch of the Persian palace at al-Madā’in, which Anūshirwān had raised high and levelled, split open, and fourteen of its upper balconies fell. The kingdom of Chosroes was shattered by the terror that struck and overcame him. The worshipped fires in the Persian kingdoms died out at the rising of his luminous full moon and the shining of his face. The lake of Sāwah, which lay between Hamadhān and Qum in the non-Arab lands, dried up, when the downpour of its raging waves ceased and those springs of water dried. The valley of Samāwah overflowed, a wilderness in the desert and barren land, in which there had never been water to quench the thirsty throat. His birth, may Allāh bless him and his family and grant them peace, was at the place known as the ‛Irāṣ of Makkah, in the city whose trees are not cut and whose grass is not plucked. There is disagreement about the year of his birth, its month and its day, according to narrated opinions of the scholars; the stronger view is that it was shortly before dawn on Monday, the twelfth of Rabī‛ al-Awwal, in the Year of the Elephant, which Allāh the Exalted turned away from the Sanctuary and protected.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "عَطِّرِ اللَّهُمَّ قَبْرَهُ الْكَرِيم",
             translit: "‛Aṭṭiril lāhumma qabrahul karīm",
@@ -323,6 +448,11 @@ export default [
             translit: "bi‛arfin shadhiyyin min ṣalātin wa taslīm",
             translation: "with a fragrant scent of blessings and peace",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِه",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
@@ -342,6 +472,11 @@ export default [
             translation:
               "His mother nursed him, may Allāh bless him and his family and grant them peace, for some days, and then Thuwaybah al-Aslamiyyah nursed him, whom Abū Lahab freed when she brought him the good news at the time of his birth, peace and blessings be upon him. She nursed him together with her son Masrūḥ and Abū Salamah, and she was tender towards him, and she had nursed Ḥamzah before him, who was praised for his night journeys in support of the religion. The Prophet, may Allāh bless him and his family and grant them peace, used to send her gifts and clothing from Madīnah, for which she was well worthy, until the harbinger of death brought her body to the grave and covered it. It is said she died on the religion of her people, the ignorant group, and it is said she accepted Islam; Ibn Mandah established the difference of opinion and related it. Then the young woman Ḥalīmah as-Sa‛diyyah nursed him. Each of the people had refused to take him, because of her poverty, and had turned her away. Her livelihood flourished after barrenness before evening, and her breasts overflowed with abundant milk; the right gave him its milk and the other gave its milk to his brother. After thinness and poverty she became rich, her old she-camel and her sheep grew fat, every distress and calamity was removed from her side, and happiness embroidered the mantle of her pleasant life and adorned it.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "عَطِّرِ اللَّهُمَّ قَبْرَهُ الْكَرِيم",
             translit: "‛Aṭṭiril lāhumma qabrahul karīm",
@@ -352,6 +487,11 @@ export default [
             translit: "bi‛arfin shadhiyyin min ṣalātin wa taslīm",
             translation: "with a fragrant scent of blessings and peace",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِه",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
@@ -371,6 +511,11 @@ export default [
             translation:
               "He, may Allāh bless him and his family and grant them peace, grew in a day as a boy grows in a month, through divine care. He stood on his feet at three months, walked at five, and in nine months his strength was matched by eloquent speech. The two angels split open his noble chest near her and took out from it a clot of blood; they removed from it the share of Satan, washed it with snow, filled it with wisdom and the meanings of faith, then stitched it and sealed it with the seal of prophethood. They weighed him, and he outweighed a thousand of his community, the community of goodness. He, may Allāh bless him and his family and grant them peace, grew up in the most perfect of qualities from the state of his childhood. Then she returned him to his mother, though she was reluctant to part with him, fearing that some misfortune would befall him. Ḥalīmah came to him in the days of Khadījah, the lady of good pleasure, and he bestowed upon her from his abundant gifts with generosity. She came to him on the day of Ḥunayn, and he stood up for her, overcome with joy, and spread out for her from his noble cloak the carpet of his kindness and generosity. The sound account is that she accepted Islam with her husband, her sons and her offspring, and a group of trustworthy narrators have counted both of them among the Companions.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "عَطِّرِ اللَّهُمَّ قَبْرَهُ الْكَرِيم",
             translit: "‛Aṭṭiril lāhumma qabrahul karīm",
@@ -381,6 +526,11 @@ export default [
             translit: "bi‛arfin shadhiyyin min ṣalātin wa taslīm",
             translation: "with a fragrant scent of blessings and peace",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِه",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
@@ -400,6 +550,11 @@ export default [
             translation:
               "When he, may Allāh bless him and his family and grant them peace, reached four years of age, his mother took him out to the city of the Prophet. Then she returned, and death overtook her at al-Abwā' or at the valley of al-Ḥajūn. His nurse Umm Ayman the Abyssinian carried him, whom he later married to Zayd ibn Ḥārithah, his freed servant. She brought him to his grandfather ‛Abd al-Muṭṭalib, who embraced him, was moved to tenderness for him and raised him in rank. He said: 'My son here will have a great station. Well done, well done to whoever honours him and takes him as an ally.' In his childhood his noble self never complained of hunger or thirst, and often he went out in the morning and drank from the water of Zamzam, which filled him and quenched his thirst. When the mounts of death were made to kneel at the courtyard of his grandfather ‛Abd al-Muṭṭalib, his uncle Abū Ṭālib, the full brother of his father ‛Abdullāh, took charge of him. He took up his guardianship with strong resolve, aspiration and zeal, put him before himself and his own sons, and raised him. When he reached twelve years of age, his uncle travelled with him to the lands of Syria, and the monk Baḥīrā recognised in him the marks of prophethood that he held and embodied. He said: 'I see him as the master of the worlds, the Messenger of Allāh and His Prophet. The trees and the stones have prostrated to him, and they prostrate only to a devoted prophet. We find his description in the ancient heavenly scriptures, and between his shoulders is the seal of prophethood, which light has enveloped and risen above.' He told his uncle to return him to Makkah, fearing for him from the people of the Jewish religion, so he returned with him and did not pass beyond Buṣrā in the holy land of Syria.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "عَطِّرِ اللَّهُمَّ قَبْرَهُ الْكَرِيم",
             translit: "‛Aṭṭiril lāhumma qabrahul karīm",
@@ -410,6 +565,11 @@ export default [
             translit: "bi‛arfin shadhiyyin min ṣalātin wa taslīm",
             translation: "with a fragrant scent of blessings and peace",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِه",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
@@ -429,6 +589,11 @@ export default [
             translation:
               "When he, may Allāh bless him and his family and grant them peace, was twenty-five years old, he travelled to Buṣrā on a trading venture for the young Khadījah, with her servant Maysarah accompanying him, serving him and attending to what concerned him. He, may Allāh bless him and his family and grant them peace, halted beneath a tree by the hermitage of Nasṭūrā, a Christian monk. The monk recognised him when its spreading shade inclined toward him and sheltered him, and said: 'No one has ever stopped beneath this tree except a prophet of pure attributes, and a messenger whom Allāh the Exalted has singled out with virtues and favoured.' Then he said to Maysarah: 'Is there redness in his eyes?' seeking confirmation of the hidden sign. He answered: 'Yes.' So what the monk had supposed of him proved true. He said to Maysarah: 'Do not leave him; be with him with sincere resolve and good intent, for he is among those whom Allāh the Exalted has honoured with prophethood and chosen.' Then he returned to Makkah, and Khadījah saw him coming while she was among women in an upper chamber, with two angels over his noble head shading him from the heat of the sun. Maysarah told her that he had seen this throughout the whole journey, and what the monk had said and entrusted to him as a charge. Allāh the Exalted multiplied and increased the profit of that trade. So it became clear to Khadījah, from what she had seen and heard, that he was the Messenger of Allāh the Exalted to creation, whom Allāh the Exalted had singled out with His nearness and chosen. She proposed to him for her pure self, that she might inhale the sweet fragrance of faith in him. He told his uncles what this devout, pious woman had invited him to; they desired her for her virtue, religion, beauty, wealth, standing and lineage, each of which the people long for. Abū Ṭālib delivered the address and praised him, may Allāh bless him and his family and grant them peace, after praising Allāh the Exalted with lofty praises, and said: 'By Allāh, he will have a great tidings, for which his night journey will be praised.' So her father gave her in marriage to him, peace and blessings be upon him; it is also said her uncle, or her brother, because of her earlier eternal good fortune. She bore him all his children, may Allāh bless him and his family and grant them peace, except the one he named after the Friend of Allāh.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "عَطِّرِ اللَّهُمَّ قَبْرَهُ الْكَرِيم",
             translit: "‛Aṭṭiril lāhumma qabrahul karīm",
@@ -439,6 +604,11 @@ export default [
             translit: "bi‛arfin shadhiyyin min ṣalātin wa taslīm",
             translation: "with a fragrant scent of blessings and peace",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِه",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
@@ -458,6 +628,11 @@ export default [
             translation:
               "When he, may Allāh bless him and his family and grant them peace, reached thirty-five years of age, Quraysh rebuilt the Ka‛bah because it had cracked from the floods of the valley. They disputed over who would lift the Black Stone, each wanting to lift it and hoping for the honour. Argument and talk grew, they swore to fight, and partisanship strengthened. Then they called one another to fairness and entrusted the matter to a man of sound judgement and deliberation, and he ruled that the first person to enter by the gate of the Shaybī keepers should be made arbiter. The Prophet, may Allāh bless him and his family and grant them peace, was the first to enter. They said: 'This is the Trustworthy; we all accept him and are pleased with him.' They told him that they were content that he be the judge in this grave matter and its steward. He placed the stone on a cloth, then ordered that all the tribes lift it together to its place. They raised it to its resting place at the corner of that building, and he, may Allāh bless him and his family and grant them peace, placed it with his noble hand in its position where it is now, and built it up.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "عَطِّرِ اللَّهُمَّ قَبْرَهُ الْكَرِيم",
             translit: "‛Aṭṭiril lāhumma qabrahul karīm",
@@ -468,6 +643,11 @@ export default [
             translit: "bi‛arfin shadhiyyin min ṣalātin wa taslīm",
             translation: "with a fragrant scent of blessings and peace",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِه",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
@@ -487,6 +667,11 @@ export default [
             translation:
               "When he, may Allāh bless him and his family and grant them peace, completed forty years, according to the most agreed opinion of the people of knowledge, Allāh the Exalted sent him to the worlds as a bearer of good news and a warner, and embraced them with His mercy. For up to six months he was begun with true and clear dreams, so that he saw no dream except that it came true like the splitting of the dawn whose light shines. He was begun with dreams only as training for human strength, so that the angel would not surprise him with the plain proclamation of prophethood so that his strength could not bear it. Seclusion was made dear to him, and he would worship in Ḥirā' for a number of nights, until the plain truth came to him there and met him. That was on a Monday, on the seventeenth night gone of the month of the Night of Power, and there are other opinions: the seventh or the twenty-fourth of it, or the eighth of the month of his birth, in which the full moon of his face appeared. The angel said to him: 'Read.' He said: 'I am not one who reads.' He pressed him with a strong pressing. Then he said to him: 'Read.' He said: 'I am not one who reads.' He pressed him a second time until he reached the limit of his strength and he pressed him. Then he said to him: 'Read.' He said: 'I am not one who reads.' He pressed him a third time, so that he would turn with his whole being to what was to be cast to him, face it with earnestness and effort and receive it. Then the revelation paused for three years or thirty months, so that he would yearn to breathe in those fragrant breezes. Then there was revealed to him: 'O you who are wrapped up in your cloak,' and Jibrīl came to him with it and called out to him. So in the revelation of 'Read in the name of your Lord' preceding it there is evidence that his prophethood had priority, and that it preceded his mission with glad tidings and warning to whoever he called.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "عَطِّرِ اللَّهُمَّ قَبْرَهُ الْكَرِيم",
             translit: "‛Aṭṭiril lāhumma qabrahul karīm",
@@ -497,6 +682,11 @@ export default [
             translit: "bi‛arfin shadhiyyin min ṣalātin wa taslīm",
             translation: "with a fragrant scent of blessings and peace",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِه",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
@@ -516,6 +706,11 @@ export default [
             translation:
               "The first to believe in him, may Allāh bless him and his family and grant them peace, among men was Abū Bakr, the companion of the cave and the Truthful; among boys, ‛Alī; among women, Khadījah, by whom Allāh steadied his heart and protected him; among freed servants, Zayd ibn Ḥārithah; and among slaves, Bilāl, whom Umayyah tortured for Allāh's sake, and whose master Abū Bakr granted him what freedom he granted. Then ‛Uthmān, Sa‛d, Sa‛īd, Ṭalḥah, Ibn ‛Awf and his cousin Ṣafiyyah accepted Islam, and others whom aṣ-Ṣiddīq had given to drink of the pure wine of belief. His worship, may Allāh bless him and his family and grant them peace, and that of his Companions remained hidden until there was revealed to him 'So proclaim openly what you are commanded', and he openly called creation to Allāh. His people did not distance themselves from him until he criticised their gods and commanded the abandonment of all but the Oneness. Then they dared to confront him with enmity and harm. Affliction grew severe upon the Muslims, so in the fifth year they emigrated to the land of the Negus. His uncle Abū Ṭālib protected him, so each of the people feared him and avoided him. Standing for part of the night hours was made obligatory upon him, then abrogated by the words of Allāh the Exalted: 'So recite what is easy of it, and establish the prayer'; two rak‛ahs in the morning and two in the evening were made obligatory, then abrogated by the obligation of the five prayers on the night of his night journey. Abū Ṭālib died in the middle of Shawwāl in the tenth year of the mission, and the loss grew great with his death. Khadījah followed him after three days, and affliction tightened its firm handles upon the Muslims. Quraysh inflicted every harm upon him, may Allāh bless him and his family and grant them peace. He went to Ṭā’if to call Thaqīf, but they did not show him the hospitality of a good response. They incited the fools and slaves against him, who insulted him with foul tongues and stoned him until his sandals were stained with blood. Then he returned to Makkah grieved, and the angel of the mountains asked him about destroying its people, the partisans. He said: 'I hope that Allāh will bring forth from their loins those who will take Him as their Lord.'",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "عَطِّرِ اللَّهُمَّ قَبْرَهُ الْكَرِيم",
             translit: "‛Aṭṭiril lāhumma qabrahul karīm",
@@ -526,6 +721,11 @@ export default [
             translit: "bi‛arfin shadhiyyin min ṣalātin wa taslīm",
             translation: "with a fragrant scent of blessings and peace",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِه",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
@@ -545,6 +745,11 @@ export default [
             translation:
               "Then he was taken on the night journey, in spirit and body, may Allāh bless him and his family and grant them peace, while awake, from the Sacred Mosque to the Farthest Mosque and its holy precincts. He was raised up to the heavens, and in the first he saw Ādam, whom dignity had enveloped and risen above. In the second he saw ‛Īsā son of Maryam, the devoted, pious and pure, and the son of his maternal aunt, Yaḥyā, who was given judgement in his childhood. In the third he saw Yūsuf the Truthful in his form of beauty; in the fourth, Idrīs, whose station Allāh raised and exalted; in the fifth, Hārūn, beloved among the Israelite nation; in the sixth, Mūsā, whom Allāh the Exalted addressed and conversed with; and in the seventh, Ibrāhīm, who came to his Lord with a sound heart and good intention, and whom Allāh protected from the fire of Nimrod and kept safe. Then he was raised to the Lote Tree of the Furthest Boundary, until he heard the scratching of the pens writing the decreed matters, to the station of direct encounter, in which Allāh brought him near and drew him closer. He lifted for him the veils of the lights of majesty and showed him with the eyes of his head from the Presence of Lordship what He showed him, and spread for him the carpet of majesty in the manifestations of the Essence. He made fifty prayers obligatory upon him and upon his community, then the cloud of grace poured, and they were reduced to five in practice, with the reward of the fifty, as He willed in eternity and decreed. Then he returned within his night, and aṣ-Ṣiddīq believed him about his night journey, as did every person of intellect and reflection. Quraysh denied him, and those whom Satan had led astray and misguided turned back.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "عَطِّرِ اللَّهُمَّ قَبْرَهُ الْكَرِيم",
             translit: "‛Aṭṭiril lāhumma qabrahul karīm",
@@ -555,6 +760,11 @@ export default [
             translit: "bi‛arfin shadhiyyin min ṣalātin wa taslīm",
             translation: "with a fragrant scent of blessings and peace",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِه",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
@@ -574,6 +784,11 @@ export default [
             translation:
               "Then he presented himself, may Allāh bless him and his family and grant them peace, to the tribes as the Messenger of Allāh in the days of the pilgrimage season. Six of the Anṣār believed in him, whom Allāh chose with His pleasure. The following year twelve men of them performed pilgrimage and pledged to him a true pledge. Then they departed, Islam appeared in Madīnah, and it became his stronghold and refuge. In the third year seventy or seventy-three men and two women of the tribes of Aws and Khazraj came to him; they pledged to him, and he appointed over them twelve leaders, noble chiefs. Then those of the Islamic faith migrated to them from Makkah, and left their homelands out of desire for what has been prepared for whoever abandons disbelief and opposes it. Quraysh feared that he, may Allāh bless him and his family and grant them peace, would join his Companions at once, so they plotted to kill him, but Allāh the Exalted protected him from their scheme and saved him. He, may Allāh bless him and his family and grant them peace, was given permission to emigrate, so the polytheists watched him in order to bring him, as they imagined, to the pools of death. He came out upon them, threw dust over their heads and scattered it. He headed for the Cave of Thawr, and aṣ-Ṣiddīq won in it the honour of being his companion. They stayed in it three nights, with the doves and spiders guarding its precinct. Then they left it on Monday night, he, may Allāh bless him and his family and grant them peace, upon the best of mounts. Surāqah confronted him, so he supplicated to Allāh and called upon Him, and the legs of his swift horse sank into the hard, firm ground. He asked him for safe conduct, and he granted it to him.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "عَطِّرِ اللَّهُمَّ قَبْرَهُ الْكَرِيم",
             translit: "‛Aṭṭiril lāhumma qabrahul karīm",
@@ -584,6 +799,11 @@ export default [
             translit: "bi‛arfin shadhiyyin min ṣalātin wa taslīm",
             translation: "with a fragrant scent of blessings and peace",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِه",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
@@ -603,6 +823,11 @@ export default [
             translation:
               "He passed, may Allāh bless him and his family and grant them peace, by Qudayd, to Umm Ma‛bad al-Khuzā‛iyyah, and wished to buy meat or milk from her, but her tent held nothing of that. He looked at a sheep in the tent that hardship had kept back from grazing, and asked her permission to milk it. She gave leave and said: 'If it had any milk, we would have had it.' So he stroked its udder and called upon Allāh, his Lord and Protector. It flowed, and he milked it and gave all the people to drink until they were satisfied. Then he milked again, filled the vessel and left it with her as a clear sign. Abū Ma‛bad came and saw the milk, and his amazement went to its utmost. He said: 'Where did you get this, when there is no milch animal in the house that gives a drop of milk?' She said: 'A blessed man passed by us, such and such in his body and meaning.' He said: 'This is the man of Quraysh', and swore with every oath that if he saw him he would believe in him, follow him and obey him. He arrived in Madīnah on Monday, the twelfth of Rabī‛ al-Awwal, and its pure regions shone with light because of him. The Anṣār met him, and he stayed at Qubā’ and founded its mosque upon piety.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "عَطِّرِ اللَّهُمَّ قَبْرَهُ الْكَرِيم",
             translit: "‛Aṭṭiril lāhumma qabrahul karīm",
@@ -613,6 +838,11 @@ export default [
             translit: "bi‛arfin shadhiyyin min ṣalātin wa taslīm",
             translation: "with a fragrant scent of blessings and peace",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِه",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
@@ -632,6 +862,11 @@ export default [
             translation:
               "He, may Allāh bless him and his family and grant them peace, was the most perfect of people in form and character, possessing exalted essence and attributes. He was of medium height, of fair complexion tinged with red, wide-eyed, with deeply dark eyes, long eyelashes, and fine, slender eyebrows; with spaced teeth, a wide and beautiful mouth, a broad forehead, and a crescent-shaped brow; with smooth cheeks, a slight curve visible in his nose, and a fine, high nose-bridge; broad between the shoulders, with full palms, large joints, little flesh on the heel, a thick beard, a large head, and hair reaching to the earlobe. Between his shoulders was the seal of prophethood, which light had enveloped and risen above. His sweat was like pearls and his fragrance sweeter than musky breezes. He walked leaning forward as though descending a slope he had climbed. He would shake hands with the one who greeted him with his noble hand, and that person would find in it a fragrance of narcissus the rest of the day; he would place it on the head of a child, and that child would be recognised by his touch among the other children and be marked out. His noble face shone like the moon on the night of the full moon. His describer says: 'I never saw before him or after him one like him, nor any human being who sees him.'",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "عَطِّرِ اللَّهُمَّ قَبْرَهُ الْكَرِيم",
             translit: "‛Aṭṭiril lāhumma qabrahul karīm",
@@ -642,6 +877,11 @@ export default [
             translit: "bi‛arfin shadhiyyin min ṣalātin wa taslīm",
             translation: "with a fragrant scent of blessings and peace",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِه",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
@@ -661,6 +901,11 @@ export default [
             translation:
               "He, may Allāh bless him and his family and grant them peace, was extremely modest and humble. He mended his sandals, patched his garment, milked his sheep and served his family in a noble manner. He loved the poor and the needy, sat with them, visited their sick and followed their funerals, and he did not look down on a poor person whom poverty had left destitute and wretched. He accepted excuses and did not confront anyone with what he disliked, and he walked with the widow and with servants. He did not fear kings, and he became angry for Allāh the Exalted and pleased for His pleasure. He walked behind his Companions and said: 'Leave my back to the spiritual angels.' He rode the camel, the horse, the mule and a donkey that one of the kings had gifted to him. He tied a stone around his belly from hunger, though he had been given the keys to the earthly treasuries, and the mountains sought to turn into gold for him, but he refused. He, may Allāh bless him and his family and grant them peace, spoke little idle talk, greeted first whoever he met, prolonged the prayer and shortened the Friday sermons. He befriended people of rank, honoured people of virtue, and joked, but said nothing except the truth, which Allāh the Exalted loves and is pleased with. Here the steed of speech has halted us from galloping in the arena of eloquence, and the traveller of dictation has reached the end of his journey in the wastes of explanation.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "عَطِّرِ اللَّهُمَّ قَبْرَهُ الْكَرِيم",
             translit: "‛Aṭṭiril lāhumma qabrahul karīm",
@@ -671,6 +916,11 @@ export default [
             translit: "bi‛arfin shadhiyyin min ṣalātin wa taslīm",
             translation: "with a fragrant scent of blessings and peace",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِه",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
@@ -690,6 +940,11 @@ export default [
             translation:
               "O Allāh, O You who extend both hands with giving, O You who suffice the servant whenever his hands are raised to You; O You who are exalted in Your essence and Your attributes of Oneness, above having any likenesses or equals in them; O You who alone are Everlasting, Ancient and Eternal; O You in whom alone hope is placed and upon none other is reliance; O You to whose self-subsisting power creation leans, and who by His grace guides whoever seeks guidance from Him. We ask You, O Allāh, by Your sacred lights, which have removed the darkness of doubt, and we seek nearness to You by the nobility of the Muḥammadan essence, he who is the last of the prophets in form and the first of them in meaning; and by his family, the stars of the security of creation and the ship of safety and salvation; and by his Companions, the people of guidance and excellence, who gave their lives for Allāh seeking bounty from Allāh; and by the bearers of his law, those of merit and distinction, who rejoice in a favour and bounty from Allāh: that You grant us success in words and deeds for sincerity of intention, grant every one of those present his request and wish, free us from the captivity of desires and the ailments of the heart, fulfil for us the hopes we have in You, suffice us against every darkness and affliction, and not make us among those whom desire has drawn away. Conceal for each of us his fault, his incapacity, his inarticulateness and his weakness; make easy for us those righteous deeds whose summit is hard to reach; bring near to us from good certainty clusters of ripe, hanging fruit; erase from us every sin we have committed; and encompass this gathering of ours from the treasuries of Your lofty gifts with mercy and forgiveness, and make us ever independent of all other than You. O Allāh, You have appointed for every asker a station and a distinction, and for every hoper what he hoped and wished for in You. We have asked You, hoping for Your gifts from Your presence, so fulfil for us what we hoped from You. O Allāh, secure our fears, set right the shepherds and the flock, and magnify the reward of whoever brought about this good on this day and set it in motion. O Allāh, make this town and all the lands of the Muslims secure and prosperous, and give us rain whose flowing shower reaches the desert and its hills. Forgive the weaver of these embroidered mantles of the Mawlid, Ja‛far, whose lineage and belonging is to al-Barzanjī; grant him success in Your nearness, hope and aspiration; place his resting place and dwelling among those brought near; conceal his fault, his incapacity, his inarticulateness and his weakness; and forgive its writer, its reader and whoever lent it his ear and listened. O Allāh, send blessings and peace upon the first to receive the manifestation from the universal reality, and upon his family, his Companions and all who supported him and took him as an ally, for as long as ears are adorned with pearl earrings from his pearl-like description, and the breasts of lofty gatherings are adorned with necklaces of its ornaments.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic:
               "وَأفْضَلُ الصَّلَاةِ وَأَتَمُّ التَّسْلِيمِ عَلَى سَيِّدِنَا وَمَوْلَانَا مُحَمَّدٍ خَاتِمِ الْأَنْبِيَاءِ وَالْمُرْسَلِينَ، وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِينَ",
@@ -698,6 +953,11 @@ export default [
             translation:
               "And the best of blessings and the most complete peace upon our master and leader Muḥammad, the Seal of the Prophets and Messengers, and upon his family and all his Companions",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QuranEntryModel({
             arabic:
               "سُبْحَـٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ ۝ وَسَلَـٰمٌ عَلَى ٱلْمُرْسَلِينَ ۝ وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",

@@ -22,6 +22,11 @@ export default [
             translit: "Yā rabbi ṣalli ‛alayhi wa sallim",
             translation: "O Lord, send blessings upon him and grant him peace",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
             translit: "Yā rabbi ṣalli ‛alā Muḥammad",
@@ -32,6 +37,11 @@ export default [
             translit: "Yā rabbi ballighhul wasīlah",
             translation: "O Lord, convey him to the Wasīlah",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
             translit: "Yā rabbi ṣalli ‛alā Muḥammad",
@@ -42,6 +52,11 @@ export default [
             translit: "Yā rabbi khuṣṣahū bil faḍīlah",
             translation: "O Lord, favour him with the Faḍīlah",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
             translit: "Yā rabbi ṣalli ‛alā Muḥammad",
@@ -52,6 +67,11 @@ export default [
             translit: "Yā rabbi war ḍa ‛aniṣ ṣaḥābah",
             translation: "O Lord, be pleased with the Companions",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
             translit: "Yā rabbi ṣalli ‛alā Muḥammad",
@@ -62,6 +82,11 @@ export default [
             translit: "Yā rabbi war ḍa ‛anis sulālah",
             translation: "O Lord, be pleased with his descendants",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
             translit: "Yā rabbi ṣalli ‛alā Muḥammad",
@@ -72,6 +97,11 @@ export default [
             translit: "Yā rabbi war ḍa ‛anil mashāyikh",
             translation: "O Lord, be pleased with the teachers",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
             translit: "Yā rabbi ṣalli ‛alā Muḥammad",
@@ -82,6 +112,11 @@ export default [
             translit: "Yā rabbi farḥam wālidīnā",
             translation: "O Lord, have mercy on our parents",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
             translit: "Yā rabbi ṣalli ‛alā Muḥammad",
@@ -92,6 +127,11 @@ export default [
             translit: "Yā rabbi warḥamnā jamī‛ā",
             translation: "O Lord, and have mercy on us all",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
             translit: "Yā rabbi ṣalli ‛alā Muḥammad",
@@ -102,6 +142,11 @@ export default [
             translit: "Yā rabbi warḥam kulla muslim",
             translation: "O Lord, and have mercy on every Muslim",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
             translit: "Yā rabbi ṣalli ‛alā Muḥammad",
@@ -112,6 +157,11 @@ export default [
             translit: "Yā rabbi waghfir li kulli mudhnib",
             translation: "O Lord, and forgive every sinner",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
             translit: "Yā rabbi ṣalli ‛alā Muḥammad",
@@ -122,6 +172,11 @@ export default [
             translit: "Yā rabbi lā taqṭa‛ rajānā",
             translation: "O Lord, do not cut off our hope",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
             translit: "Yā rabbi ṣalli ‛alā Muḥammad",
@@ -132,6 +187,11 @@ export default [
             translit: "Yā rabbi yā sāmi‛ du‛ānā",
             translation: "O Lord, O Hearer of our supplication",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
             translit: "Yā rabbi ṣalli ‛alā Muḥammad",
@@ -142,6 +202,11 @@ export default [
             translit: "Yā rabbi ballighnā nazūruh",
             translation: "O Lord, grant that we reach him and visit him",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
             translit: "Yā rabbi ṣalli ‛alā Muḥammad",
@@ -152,6 +217,11 @@ export default [
             translit: "Yā rabbi taghshānā binūrih",
             translation: "O Lord, cover us with his light",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
             translit: "Yā rabbi ṣalli ‛alā Muḥammad",
@@ -162,6 +232,11 @@ export default [
             translit: "Yā rabbi ḥifẓānak wa amānak",
             translation: "O Lord, we ask for Your protection and Your safety",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
             translit: "Yā rabbi ṣalli ‛alā Muḥammad",
@@ -172,6 +247,11 @@ export default [
             translit: "Yā rabbi waskinnā jinānak",
             translation: "O Lord, and let us dwell in Your Gardens",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
             translit: "Yā rabbi ṣalli ‛alā Muḥammad",
@@ -182,6 +262,11 @@ export default [
             translit: "Yā rabbi ajirnā min ‛adhābik",
             translation: "O Lord, protect us from Your punishment",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
             translit: "Yā rabbi ṣalli ‛alā Muḥammad",
@@ -192,6 +277,11 @@ export default [
             translit: "Yā rabbi warzuqnash shahādah",
             translation: "O Lord, and grant us martyrdom",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
             translit: "Yā rabbi ṣalli ‛alā Muḥammad",
@@ -202,6 +292,11 @@ export default [
             translit: "Yā rabbi ḥiṭnā bis sa‛ādah",
             translation: "O Lord, surround us with happiness",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
             translit: "Yā rabbi ṣalli ‛alā Muḥammad",
@@ -212,6 +307,11 @@ export default [
             translit: "Yā rabbi waṣliḥ kulla muṣliḥ",
             translation: "O Lord, and bring success to every reformer",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
             translit: "Yā rabbi ṣalli ‛alā Muḥammad",
@@ -222,6 +322,11 @@ export default [
             translit: "Yā rabbi wakfi kulla mu’dhī",
             translation: "O Lord, and spare us from every one who harms",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
             translit: "Yā rabbi ṣalli ‛alā Muḥammad",
@@ -232,6 +337,11 @@ export default [
             translit: "Yā rabbi adhiqnā barda ‛afwik",
             translation: "O Lord, let us taste the coolness of Your pardon",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
             translit: "Yā rabbi ṣalli ‛alā Muḥammad",
@@ -243,6 +353,11 @@ export default [
             translation:
               "O Lord, we conclude with the Intercessor whose intercession is accepted",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
@@ -260,6 +375,11 @@ export default [
             translation:
               "In the name of Allāh, the Most Gracious, the Most Merciful",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QuranEntryModel({
             arabic:
               "إِنَّا فَتَحْنَا لَكَ فَتْحًا مُّبِينًا ۝ لِّيَغْفِرَ لَكَ ٱللَّهُ مَا تَقَدَّمَ مِن ذَنۢبِكَ وَمَا تَأَخَّرَ وَيُتِمَّ نِعْمَتَهُۥ عَلَيْكَ وَيَهْدِيَكَ صِرَٰطًا مُّسْتَقِيمًا ۝ وَيَنصُرَكَ ٱللَّهُ نَصْرًا عَزِيزًا",
@@ -290,6 +410,11 @@ export default [
             verse: 56,
             surah: 33,
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
@@ -307,39 +432,175 @@ export default [
             translation:
               "In the name of Allāh, the Most Gracious, the Most Merciful",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
-            arabic:
-              "ٱلْحَمْدُ لِلَّهِ الْقَوِيِّ الْغَالِبْ * الْوَلِيِّ الطَّالِبْ * الْبَّاعِثِ الْوَارِثِ الْمَانِحِ السَّالِبْ * عَالِمِ الْكَائِنِ وَالْبَائِنِ وَالزَّائِلِ وَالذَّاهِبْ * يُسَبِّحُهُ الْآفِلُ وَالْمَائِلُ وَالطَّالِعُ وَالْغَارِبْ * وَيُوَحِّدُهُ النَّاطِقُ وَالصَّامِتُ وَالْجَامِدُ وَالذَّائِبْ * يَضْرِبُ بِعَدْلِهِ السَّاكِنُ وَيَسْكُنُ بِفَضْلِهِ الضَّارِبْ * (لَا إِلَهَ إِلَّا اللَّهُ).",
-            translit:
-              "Alḥamdulillāhil qawiyyil ghālib, al-waliyyiṭ ṭālib, al-bā‛ithil wārithil māniḥis sālib, ‛ālimil kā’ini wal bā’ini waz zā’ili wadh dhāhib, yusabbiḥuhul āfilu wal mā’ilu waṭ ṭāli‛u wal ghārib, wa yuwaḥḥiduhun nāṭiqu waṣ ṣāmitu wal jāmidu wadh dhā’ib, yaḍribu bi‛adlihis sākinu wa yaskunu bifaḍlihiḍ ḍārib. (Lā ilāha illallāh).",
+            arabic: "ٱلْحَمْدُ لِلَّهِ الْقَوِيِّ الْغَالِبْ",
+            translit: "Alḥamdulillāhil qawiyyil ghālib,",
             translation:
               "Praise be to Allāh, the Strong, the Prevailing; the Protector, the Seeker; the Resurrector, the Inheritor, the Bestower and the Withholder; the Knower of what is present and what is distant, of what perishes and what departs. The setting, the declining, the rising and the going down glorify Him; the speaking and the silent, the solid and the dissolving declare His oneness. By His justice the still one is set in motion, and by His favour the one in motion is stilled. (There is no god but Allāh.)",
           }),
           new QasidaEntryModel({
-            arabic:
-              "حَكِيْمٌ أَظْهَرَ بَدِيْعَ حِكَمِهِ وَالْعَجَائِبْ * فِي تَرْتِيبِ تَرْكِيبِ هَذِهِ الْقَوَالِبْ * خَلَقَ مُخًّا وَعَظْمًا وَعَضُدًا وَعُرُوقًا وَلَحْمًا وَجِلْدًا وَشَعْرًا بِنَظْمٍ مُؤْتَلِفٍ مُتَرَاكِبْ * مِنْ مَاءٍ دَافِقٍ يَخْرُجُ مِنْ بَيْنِ الصُّلْبِ وَالتَّرَائِبْ * (لاَ إِلهَ إِلَّا اللَّهُ).",
+            arabic: "الْوَلِيِّ الطَّالِبْ",
+            translit: "al-waliyyiṭ ṭālib,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "الْبَّاعِثِ الْوَارِثِ الْمَانِحِ السَّالِبْ",
+            translit: "al-bā‛ithil wārithil māniḥis sālib,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "عَالِمِ الْكَائِنِ وَالْبَائِنِ وَالزَّائِلِ وَالذَّاهِبْ",
+            translit: "‛ālimil kā’ini wal bā’ini waz zā’ili wadh dhāhib,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "يُسَبِّحُهُ الْآفِلُ وَالْمَائِلُ وَالطَّالِعُ وَالْغَارِبْ",
+            translit: "yusabbiḥuhul āfilu wal mā’ilu waṭ ṭāli‛u wal ghārib,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَيُوَحِّدُهُ النَّاطِقُ وَالصَّامِتُ وَالْجَامِدُ وَالذَّائِبْ",
             translit:
-              "Ḥakīmun aẓhara badī‛a ḥikamihī wal ‛ajā’ib, fī tartībi tarkībi hādhihil qawālib, khalaqa mukhkhan wa ‛aẓman wa ‛aḍudan wa ‛urūqan wa laḥman wa jildan wa sha‛ran binaẓmim mu’talifim mutarākib, min mā’in dāfiqin yakhruju min bayniṣ ṣulbi wat tarā’ib. (Lā ilāha illallāh).",
+              "wa yuwaḥḥiduhun nāṭiqu waṣ ṣāmitu wal jāmidu wadh dhā’ib,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "يَضْرِبُ بِعَدْلِهِ السَّاكِنُ وَيَسْكُنُ بِفَضْلِهِ الضَّارِبْ",
+            translit: "yaḍribu bi‛adlihis sākinu wa yaskunu bifaḍlihiḍ ḍārib.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "(لَا إِلَهَ إِلَّا اللَّهُ).",
+            translit: "(Lā ilāha illallāh).",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
+          new QasidaEntryModel({
+            arabic: "حَكِيْمٌ أَظْهَرَ بَدِيْعَ حِكَمِهِ وَالْعَجَائِبْ",
+            translit: "Ḥakīmun aẓhara badī‛a ḥikamihī wal ‛ajā’ib,",
             translation:
               "He is Wise; He has shown the wonders of His wisdom and the marvels in the arrangement and composition of these forms. He created marrow, bone, arm, veins, flesh, skin and hair in a harmonious and layered order, from gushing fluid that issues from between the backbone and the ribs. (There is no god but Allāh.)",
           }),
           new QasidaEntryModel({
+            arabic: "فِي تَرْتِيبِ تَرْكِيبِ هَذِهِ الْقَوَالِبْ",
+            translit: "fī tartībi tarkībi hādhihil qawālib,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
             arabic:
-              "كَرِيمٌ بَسَطَ لِخَلْقِهِ بِسَاطَ كَرَمِهِ وَالْمَوَاهِبْ * يَنْزِلُ فِي كُلِّ لَيْلَةٍ إِلَى سَمَاءِ الدُّنْيَا وَيُنَادِي: هَلْ مِنْ مُسْتَغْفِرٍ؟ هَلْ مِنْ تَائِبْ؟  (تَائِبُونَ إِلَى ٱللَّه) * هَلْ مِنْ طَالِبِ حَاجَةٍ فَأُنِيلَهُ الْمَطَالِبْ؟ * فَلَوْ رَأَيْتَ الْخُدَّامَ قِيَامًا عَلَى الْأَقْدَامِ وَقَدْ جَادُوا بِالدُّمُوعِ السَّوَاكِبْ * وَالْقَوْمَ بَيْنَ نَادِمٍ وَتَائِبْ * وَخَائِفٍ لِنَفْسِهِ يُعَاتِبْ * وَآبِقٍ مِنَ الذُّنُوبِ إِلَيْهِ هَارِبْ * فَلَا يَزَالُونَ فِي الْاِسْتِغْفَارِ، حَتَّى يَكُفَّ كَفُّ النَّهَارِ ذُيُولَ الْغَيَاهِبْ * فَيَعُودُونَ وَقَدْ فَازُوا بِالْمَطْلُوبِ، وَأَدْرَكُوا رِضَا الْمَحْبُوبِ، وَلَمْ يَعُدْ أَحَدٌ مِنَ الْقَوْمِ وَهُوَ خَائِبْ * (لَا إِلَهَ إِلَّا اللَّهُ).",
+              "خَلَقَ مُخًّا وَعَظْمًا وَعَضُدًا وَعُرُوقًا وَلَحْمًا وَجِلْدًا وَشَعْرًا بِنَظْمٍ مُؤْتَلِفٍ مُتَرَاكِبْ",
             translit:
-              "Karīmun basaṭa likhalqihī bisāṭa karamihī wal mawāhib, yanzilu fī kulli laylatin ilā samā’id dunyā wa yunādī: hal min mustaghfir? Hal min tā’ib? (Tā’ibūna ilallāh) hal min ṭālibi ḥājatin fa unīlahul maṭālib? Falaw ra’aytal khuddāma qiyāman ‛alal aqdāmi wa qad jādū biddumū‛is sawākib, wal qawma bayna nādimin wa tā’ib, wa khā’ifin linafsihī yu‛ātib, wa ābiqin minadh dhunūbi ilayhi hārib, falā yazālūna fil istighfāri ḥattā yakuffa kaffun nahāri dhuyūlal ghayāhib, fa ya‛ūdūna wa qad fāzū bil maṭlūbi wa adrakū riḍal maḥbūb, wa lam ya‛ud aḥadun minal qawmi wa huwa khā’ib. (Lā ilāha illallāh).",
+              "khalaqa mukhkhan wa ‛aẓman wa ‛aḍudan wa ‛urūqan wa laḥman wa jildan wa sha‛ran binaẓmim mu’talifim mutarākib,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "مِنْ مَاءٍ دَافِقٍ يَخْرُجُ مِنْ بَيْنِ الصُّلْبِ وَالتَّرَائِبْ",
+            translit:
+              "min mā’in dāfiqin yakhruju min bayniṣ ṣulbi wat tarā’ib.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "(لاَ إِلهَ إِلَّا اللَّهُ).",
+            translit: "(Lā ilāha illallāh).",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
+          new QasidaEntryModel({
+            arabic: "كَرِيمٌ بَسَطَ لِخَلْقِهِ بِسَاطَ كَرَمِهِ وَالْمَوَاهِبْ",
+            translit: "Karīmun basaṭa likhalqihī bisāṭa karamihī wal mawāhib,",
             translation:
               "He is Generous; He has spread out for His creation the carpet of His generosity and gifts. Every night He descends to the lowest heaven and calls out: Is there anyone seeking forgiveness? Is there anyone repenting? (We repent to Allāh.) Is there anyone asking for a need, that I may grant him what he asks? If you were to see the servants standing on their feet, pouring forth streaming tears, the people between the remorseful and the repentant, one fearful, reproaching himself, another fleeing from his sins towards Him, they do not cease seeking forgiveness until the hand of the day gathers up the hems of the darkness. Then they return, having attained what they sought and gained the pleasure of the Beloved, and not one of the people returns disappointed. (There is no god but Allāh.)",
           }),
           new QasidaEntryModel({
             arabic:
-              "فَسُبْحَانَهُ وَتَعَالَى مِنْ مَلِكٍ أَوْجَدَ نُوْرَ نَبِيِّهِ مُحَمَّدٍ صَلَّى اللَّهُ عَلَيهِ وَآلِهِ وَسَلَّمَ مِنْ نُورِهِ قَبْلَ أَنْ يَخْلُقَ آدَمَ مِنَ الطَّيْنِ اللَّازِبْ * وَعَرَضَ فَخْرَهُ عَلَى الْأَشْيَاءِ وَقَالَ: هَذَا سَيِّدُ الْأَنْبِيَاءِ وَأَجَلُّ الْأَصْفِيَاءِ وَأَكْرَمُ الْحَبَائِبْ *",
+              "يَنْزِلُ فِي كُلِّ لَيْلَةٍ إِلَى سَمَاءِ الدُّنْيَا وَيُنَادِي: هَلْ مِنْ مُسْتَغْفِرٍ؟ هَلْ مِنْ تَائِبْ؟  (تَائِبُونَ إِلَى ٱللَّه)",
+            translit: "yanzilu fī kulli laylatin ilā samā’id dunyā wa yunādī:",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "هَلْ مِنْ طَالِبِ حَاجَةٍ فَأُنِيلَهُ الْمَطَالِبْ؟",
             translit:
-              "Fa subḥānahū wa ta‛ālā min malikin awjada nūra nabiyyihī Muḥammadin ṣallallāhu ‛alayhi wa ālihī wa sallama min nūrihī qabla an yakhluqa Ādama minaṭ ṭīnil lāzib, wa ‛araḍa fakhrahū ‛alal ashyā’i wa qāl: hādhā sayyidul anbiyā’i wa ajallul aṣfiyā’i wa akramul ḥabā’ib.",
+              "hal min mustaghfir? Hal min tā’ib? (Tā’ibūna ilallāh) hal min ṭālibi ḥājatin fa unīlahul maṭālib? Falaw ra’aytal khuddāma qiyāman ‛alal aqdāmi wa qad jādū biddumū‛is sawākib,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "فَلَوْ رَأَيْتَ الْخُدَّامَ قِيَامًا عَلَى الْأَقْدَامِ وَقَدْ جَادُوا بِالدُّمُوعِ السَّوَاكِبْ",
+            translit: "wal qawma bayna nādimin wa tā’ib,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَالْقَوْمَ بَيْنَ نَادِمٍ وَتَائِبْ",
+            translit: "wa khā’ifin linafsihī yu‛ātib,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَخَائِفٍ لِنَفْسِهِ يُعَاتِبْ",
+            translit: "wa ābiqin minadh dhunūbi ilayhi hārib,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَآبِقٍ مِنَ الذُّنُوبِ إِلَيْهِ هَارِبْ",
+            translit:
+              "falā yazālūna fil istighfāri ḥattā yakuffa kaffun nahāri dhuyūlal ghayāhib,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "فَلَا يَزَالُونَ فِي الْاِسْتِغْفَارِ، حَتَّى يَكُفَّ كَفُّ النَّهَارِ ذُيُولَ الْغَيَاهِبْ",
+            translit:
+              "fa ya‛ūdūna wa qad fāzū bil maṭlūbi wa adrakū riḍal maḥbūb,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "فَيَعُودُونَ وَقَدْ فَازُوا بِالْمَطْلُوبِ، وَأَدْرَكُوا رِضَا الْمَحْبُوبِ، وَلَمْ يَعُدْ أَحَدٌ مِنَ الْقَوْمِ وَهُوَ خَائِبْ",
+            translit: "wa lam ya‛ud aḥadun minal qawmi wa huwa khā’ib.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "(لَا إِلَهَ إِلَّا اللَّهُ).",
+            translit: "(Lā ilāha illallāh).",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
+          new QasidaEntryModel({
+            arabic:
+              "فَسُبْحَانَهُ وَتَعَالَى مِنْ مَلِكٍ أَوْجَدَ نُوْرَ نَبِيِّهِ مُحَمَّدٍ صَلَّى اللَّهُ عَلَيهِ وَآلِهِ وَسَلَّمَ مِنْ نُورِهِ قَبْلَ أَنْ يَخْلُقَ آدَمَ مِنَ الطَّيْنِ اللَّازِبْ",
+            translit:
+              "Fa subḥānahū wa ta‛ālā min malikin awjada nūra nabiyyihī Muḥammadin ṣallallāhu ‛alayhi wa ālihī wa sallama min nūrihī qabla an yakhluqa Ādama minaṭ ṭīnil lāzib,",
             translation:
               "Glory be to Him, Exalted is He, a King Who brought the light of His Prophet Muhammad, may Allāh bless him and his family and grant them peace, into being from His light before He created Ādam from sticky clay, and presented his glory to all things and said: This is the master of the prophets, the most majestic of the chosen, and the most noble of the beloved ones.",
           }),
           new QasidaEntryModel({
+            arabic:
+              "وَعَرَضَ فَخْرَهُ عَلَى الْأَشْيَاءِ وَقَالَ: هَذَا سَيِّدُ الْأَنْبِيَاءِ وَأَجَلُّ الْأَصْفِيَاءِ وَأَكْرَمُ الْحَبَائِبْ",
+            translit:
+              "wa ‛araḍa fakhrahū ‛alal ashyā’i wa qāl: hādhā sayyidul anbiyā’i wa ajallul aṣfiyā’i wa akramul ḥabā’ib.",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
+          new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
             translation:
@@ -352,13 +613,64 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic:
-              "قِيلَ: هُوَ آدَمُ (عَلَيْهِ السَّلَام)؟، قَالَ: آدَمُ بِهِ أُنِيلُهُ أَعْلَى الْمَرَاتِبِ * قِيلَ: هُوَ نُوحٌ (عَلَيْهِ السَّلَام)؟، قَالَ: نُوحٌ بِهِ يَنْجُو مِنَ الْغَرَقِ وَيَهْلِكُ مَنْ خَالَفَهُ مِنَ الْأَهْلِ وَالْأَقَارِبِ * قِيلَ: هُوَ إِبْرَِاهِيمُ (عَلَيْهِ السَّلَام)؟، قَالَ: إِبْرَاهِيمُ بِهِ تَقُومُ حُجَّتُهُ عَلَى عُبَّادِ الْأَصْنَامِ وَالْكَوَاكِبِ * قِيلَ: هُوَ مُوسَى (عَلَيْهِ السَّلَام)؟، قَالَ: مُوسَى أَخُوهُ وَلَكِنْ هَذَا حَبِيبٌ وَمُوسَى كَلِيمٌ وَمُخَاطِبٌ * قِيلَ: هُوَ عِيسَى (عَلَيْهِ السَّلَام)؟، قَالَ: عِيسَى يُبَشِّرُ بِهِ وَهُوَ بَيْنَ يَدَيْ نُبُوَّتِهِ كَالْحَاجِبْ * قِيلَ: فَمَنْ هَذَا الْحَبِيبُ الْكَرِيمُ الَّذِي أَلْبَسْتَهُ حُلَّةَ الْوَقَارِ، وَتَوَّجْتَهُ بِتِيجَانِ الْمَهَابَةِ وَالِْافْتِخَارِ، وَنَشَرْتَ عَلَى رَأْسِهِ الْعَصَائِبْ؟ * قَالَ: هُوَ نَبِيٌّ اسْتَخَرْتُهُ مِنْ لُؤَيِّ ابْنِ غَالِبْ * يَمُوتُ أَبُوهُ وَأُمُّهُ وَيَكْفُلُهُ جَدُّهُ ثُمَّ عَمُّهُ الشَّقِيقُ أَبُو طَالِبْ *",
+              "قِيلَ: هُوَ آدَمُ (عَلَيْهِ السَّلَام)؟، قَالَ: آدَمُ بِهِ أُنِيلُهُ أَعْلَى الْمَرَاتِبِ",
             translit:
-              "Qīl: huwa Ādamu (‛alayhis salām)? Qāla: Ādamu bihī unīluhū a‛lal marātib. Qīl: huwa Nūḥun (‛alayhis salām)? Qāla: Nūḥun bihī yanjū minal gharaqi wa yahliku man khālafahū minal ahli wal aqārib. Qīl: huwa Ibrāhīmu (‛alayhis salām)? Qāla: Ibrāhīmu bihī taqūmu ḥujjatuhū ‛alā ‛ubbādil aṣnāmi wal kawākib. Qīl: huwa Mūsā (‛alayhis salām)? Qāla: Mūsā akhūhu wa lākin hādhā ḥabībun wa Mūsā kalīmun wa mukhāṭib. Qīl: huwa ‛Īsā (‛alayhis salām)? Qāla: ‛Īsā yubashshiru bihī wa huwa bayna yaday nubuwwatihī kal ḥājib. Qīl: faman hādhal ḥabībul karīmul ladhī albastahū ḥullatal waqāri wa tawwajtahū bitījānil mahābati wal iftikhāri wa nasharta ‛alā ra’sihil ‛aṣā’ib? Qāla: huwa nabiyyun istakhartuhū min Lu’ayyibni Ghālib, yamūtu abūhu wa ummuhū wa yakfuluhū jadduhū thumma ‛ammuhush shaqīqu Abū Ṭālib.",
+              "Qīl: huwa Ādamu (‛alayhis salām)? Qāla: Ādamu bihī unīluhū a‛lal marātib. Qīl:",
             translation:
               "It was said: Is it Ādam (peace be upon him)? He said: Ādam, through him I grant the highest ranks. It was said: Is it Nūḥ (peace be upon him)? He said: Nūḥ, through him one is saved from the flood, while whoever opposes him among family and relatives perishes. It was said: Is it Ibrāhīm (peace be upon him)? He said: Ibrāhīm, through him his argument is established against the worshippers of idols and stars. It was said: Is it Mūsā (peace be upon him)? He said: Mūsā is his brother, but this one is a beloved friend, while Mūsā is one who was spoken to and addressed. It was said: Is it ‛Īsā (peace be upon him)? He said: ‛Īsā gives glad tidings of him, and before his prophethood he is like a chamberlain. It was said: Then who is this noble Beloved whom You have clothed in a robe of dignity, crowned with the crowns of awe and glory, and over whose head You have spread turbans? He said: He is a prophet whom I have chosen from Lu’ayy son of Ghālib. His father and mother die, his grandfather takes him into his care, and then his full uncle Abū Ṭālib.",
           }),
           new QasidaEntryModel({
+            arabic:
+              "قِيلَ: هُوَ نُوحٌ (عَلَيْهِ السَّلَام)؟، قَالَ: نُوحٌ بِهِ يَنْجُو مِنَ الْغَرَقِ وَيَهْلِكُ مَنْ خَالَفَهُ مِنَ الْأَهْلِ وَالْأَقَارِبِ",
+            translit:
+              "huwa Nūḥun (‛alayhis salām)? Qāla: Nūḥun bihī yanjū minal gharaqi wa yahliku man khālafahū minal ahli wal aqārib. Qīl:",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "قِيلَ: هُوَ إِبْرَِاهِيمُ (عَلَيْهِ السَّلَام)؟، قَالَ: إِبْرَاهِيمُ بِهِ تَقُومُ حُجَّتُهُ عَلَى عُبَّادِ الْأَصْنَامِ وَالْكَوَاكِبِ",
+            translit:
+              "huwa Ibrāhīmu (‛alayhis salām)? Qāla: Ibrāhīmu bihī taqūmu ḥujjatuhū ‛alā ‛ubbādil aṣnāmi wal kawākib. Qīl:",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "قِيلَ: هُوَ مُوسَى (عَلَيْهِ السَّلَام)؟، قَالَ: مُوسَى أَخُوهُ وَلَكِنْ هَذَا حَبِيبٌ وَمُوسَى كَلِيمٌ وَمُخَاطِبٌ",
+            translit:
+              "huwa Mūsā (‛alayhis salām)? Qāla: Mūsā akhūhu wa lākin hādhā ḥabībun wa Mūsā kalīmun wa mukhāṭib.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "قِيلَ: هُوَ عِيسَى (عَلَيْهِ السَّلَام)؟، قَالَ: عِيسَى يُبَشِّرُ بِهِ وَهُوَ بَيْنَ يَدَيْ نُبُوَّتِهِ كَالْحَاجِبْ",
+            translit:
+              "Qīl: huwa ‛Īsā (‛alayhis salām)? Qāla: ‛Īsā yubashshiru bihī wa huwa bayna yaday nubuwwatihī kal ḥājib.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "قِيلَ: فَمَنْ هَذَا الْحَبِيبُ الْكَرِيمُ الَّذِي أَلْبَسْتَهُ حُلَّةَ الْوَقَارِ، وَتَوَّجْتَهُ بِتِيجَانِ الْمَهَابَةِ وَالِْافْتِخَارِ، وَنَشَرْتَ عَلَى رَأْسِهِ الْعَصَائِبْ؟",
+            translit:
+              "Qīl: faman hādhal ḥabībul karīmul ladhī albastahū ḥullatal waqāri wa tawwajtahū bitījānil mahābati wal iftikhāri wa nasharta ‛alā ra’sihil ‛aṣā’ib? Qāla:",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "قَالَ: هُوَ نَبِيٌّ اسْتَخَرْتُهُ مِنْ لُؤَيِّ ابْنِ غَالِبْ",
+            translit: "huwa nabiyyun istakhartuhū min Lu’ayyibni Ghālib,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "يَمُوتُ أَبُوهُ وَأُمُّهُ وَيَكْفُلُهُ جَدُّهُ ثُمَّ عَمُّهُ الشَّقِيقُ أَبُو طَالِبْ",
+            translit:
+              "yamūtu abūhu wa ummuhū wa yakfuluhū jadduhū thumma ‛ammuhush shaqīqu Abū Ṭālib.",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
+          new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
             translation:
@@ -371,13 +683,91 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic:
-              "يُبْعَثُ مِنْ تِهَامَةَ، بَيْنَ يَدَيِ الْقِيَامَةِ، فِي ظَهْرِهِ عَلَامَةٌ، تُظِلُّهُ الْغَمَامَةُ، تُطِيعُهُ السَّحَائِبُ * فَجْرِيُّ الْجَبِينُ، لَيْلِيُّ الذَّوَائِبْ * أَلِفِيُّ الْأَنْفِ، مِيمِيُّ الْفَمِ، نُونِيُّ الْحَاجِبْ * سَمْعُهُ يَسْمَعُ صَرِيرَ الْقَلَمِ، بَصَرُهُ إِلَى السَّبْعِ الطِّبَاقِ ثَاقِبْ * قَدَمَاهُ قَبَّلَهُمَا الْبَعِيرُ فَأَزَالَا مَا اشْتَكَاهُ مِنَ الْمِحَنِ وَالنَّوَائِبْ * آمَنَ بِهِ الضَّبُّ وَسَلَّمَتْ عَلَيْهِ الْأَشْجَارُ وَخَاطَبَتْهُ الْأَحْجَارُ وَحَنَّ إِلَيْهِ الْجِذْعُ حَنِينَ حَزِينٍ نَادِبْ * يَدَاهُ تَظْهَرُ بَرَكَتُهُمَا فِي الْمَطَاعِمِ وَالْمَشَارِبِ * قَلْبُهُ لَا يَغْفُلُ وَلَا يَنَامُ وَلَكِنْ لِلْخِدْمَةِ عَلَى الدَّوَامِ مُرَاقِبْ * إِنْ أُوذِيَ يَعْفُ وَلَا يُعَاقِبْ * وَإِنْ خُوصِمَ يَصْمُتْ وَلَا يُجَاوِبْ * أَرْفَعُهُ إِلَى أَشْرَفِ الْمَرَاتِبِ * فِي رَكْبَةٍ لَا تَنْبَغِي قَبْلَهُ وَلَا بَعْدَهُ لِرَاكِبْ * فِي مَوْكِبٍ مِنَ الْمَلَائِكَةِ يَفُوقُ عَلَى سَائِرِ الْمَوَاكِب * فَإِذَا ارْتَقَى عَلَى الْكَوْنَيْنِ وَانْفَصَلَ عَنِ الْعَالَمَيْنِ وَوَصَلَ إِلَى قَابِ قَوْسَيْنِ، كُنْتُ لَهُ أَنَا النَّدِيمَ وَالْمُخَاطِبْ *",
+              "يُبْعَثُ مِنْ تِهَامَةَ، بَيْنَ يَدَيِ الْقِيَامَةِ، فِي ظَهْرِهِ عَلَامَةٌ، تُظِلُّهُ الْغَمَامَةُ، تُطِيعُهُ السَّحَائِبُ",
             translit:
-              "Yub‛athu min Tihāmah, bayna yadayil qiyāmah, fī ẓahrihī ‛alāmah, tuẓilluhul ghamāmah, tuṭī‛uhus saḥā’ib. Fajriyyul jabīn, laylīyyudh dhawā’ib. Alifiyyul anf, mīmiyyul fam, nūniyyul ḥājib. Sam‛uhū yasma‛u ṣarīral qalam, baṣaruhū ilas sab‛iṭ ṭibāqi thāqib. Qadamāhu qabbalahumal ba‛īru fa azālā mashtakāhu minal miḥani wan nawā’ib. Āmana bihiḍ ḍabbu wa sallamat ‛alayhil ashjāru wa khāṭabat-hul aḥjāru wa ḥanna ilayhil jidh‛u ḥanīna ḥazīnin nādib. Yadāhu taẓharu barakatuhumā fil maṭā‛imi wal mashārib. Qalbuhū lā yaghfulu wa lā yanāmu wa lākin lil khidmati ‛alad dawāmi murāqib. In ūdhiya ya‛fu wa lā yu‛āqib, wa in khūṣima yaṣmut wa lā yujāwib. Arfa‛uhū ilā ashrafil marātib, fī rakbatin lā tanbaghī qablahū wa lā ba‛dahū lirākib, fī mawkibin minal malā’ikati yafūqu ‛alā sā’iril mawākib. Fa idhartaqā ‛alal kawnayni wanfaṣala ‛anil ‛ālamayni wa waṣala ilā qābi qawsayn, kuntu lahū anan nadīma wal mukhāṭib.",
+              "Yub‛athu min Tihāmah, bayna yadayil qiyāmah, fī ẓahrihī ‛alāmah, tuẓilluhul ghamāmah, tuṭī‛uhus saḥā’ib. Fajriyyul jabīn,",
             translation:
               "He will be sent from Tihāmah, before the Hour; on his back is a sign, the cloud shades him, the clouds obey him. His brow is like the dawn, his locks like the night. His nose is like an alif, his mouth like a mīm, his eyebrow like a nūn. His hearing hears the scratching of the pen; his sight pierces the seven layers. The camel kissed his two feet and so was relieved of what it had complained of in hardships and misfortunes. The lizard believed in him, the trees greeted him, the stones addressed him, and the palm trunk yearned for him with the yearning of a sorrowful mourner. The blessing of his two hands shows in food and drink. His heart neither neglects nor sleeps, but is ever watchful in service. If he is harmed he pardons and does not punish; if he is disputed with he is silent and does not retort. I raise him to the noblest of ranks, on a mount that is not fitting for any rider before or after him, in a procession of angels surpassing all other processions. Then when he ascends above the two worlds, separates from the two realms and reaches the distance of two bows' length, I Myself will be his intimate companion and interlocutor.",
           }),
           new QasidaEntryModel({
+            arabic: "فَجْرِيُّ الْجَبِينُ، لَيْلِيُّ الذَّوَائِبْ",
+            translit: "laylīyyudh dhawā’ib. Alifiyyul anf,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "أَلِفِيُّ الْأَنْفِ، مِيمِيُّ الْفَمِ، نُونِيُّ الْحَاجِبْ",
+            translit:
+              "mīmiyyul fam, nūniyyul ḥājib. Sam‛uhū yasma‛u ṣarīral qalam,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "سَمْعُهُ يَسْمَعُ صَرِيرَ الْقَلَمِ، بَصَرُهُ إِلَى السَّبْعِ الطِّبَاقِ ثَاقِبْ",
+            translit: "baṣaruhū ilas sab‛iṭ ṭibāqi thāqib.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "قَدَمَاهُ قَبَّلَهُمَا الْبَعِيرُ فَأَزَالَا مَا اشْتَكَاهُ مِنَ الْمِحَنِ وَالنَّوَائِبْ",
+            translit:
+              "Qadamāhu qabbalahumal ba‛īru fa azālā mashtakāhu minal miḥani wan nawā’ib.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "آمَنَ بِهِ الضَّبُّ وَسَلَّمَتْ عَلَيْهِ الْأَشْجَارُ وَخَاطَبَتْهُ الْأَحْجَارُ وَحَنَّ إِلَيْهِ الْجِذْعُ حَنِينَ حَزِينٍ نَادِبْ",
+            translit:
+              "Āmana bihiḍ ḍabbu wa sallamat ‛alayhil ashjāru wa khāṭabat-hul aḥjāru wa ḥanna ilayhil jidh‛u ḥanīna ḥazīnin nādib.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "يَدَاهُ تَظْهَرُ بَرَكَتُهُمَا فِي الْمَطَاعِمِ وَالْمَشَارِبِ",
+            translit: "Yadāhu taẓharu barakatuhumā fil maṭā‛imi wal mashārib.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "قَلْبُهُ لَا يَغْفُلُ وَلَا يَنَامُ وَلَكِنْ لِلْخِدْمَةِ عَلَى الدَّوَامِ مُرَاقِبْ",
+            translit:
+              "Qalbuhū lā yaghfulu wa lā yanāmu wa lākin lil khidmati ‛alad dawāmi murāqib.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "إِنْ أُوذِيَ يَعْفُ وَلَا يُعَاقِبْ",
+            translit: "In ūdhiya ya‛fu wa lā yu‛āqib,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَإِنْ خُوصِمَ يَصْمُتْ وَلَا يُجَاوِبْ",
+            translit: "wa in khūṣima yaṣmut wa lā yujāwib.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "أَرْفَعُهُ إِلَى أَشْرَفِ الْمَرَاتِبِ",
+            translit: "Arfa‛uhū ilā ashrafil marātib,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "فِي رَكْبَةٍ لَا تَنْبَغِي قَبْلَهُ وَلَا بَعْدَهُ لِرَاكِبْ",
+            translit: "fī rakbatin lā tanbaghī qablahū wa lā ba‛dahū lirākib,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "فِي مَوْكِبٍ مِنَ الْمَلَائِكَةِ يَفُوقُ عَلَى سَائِرِ الْمَوَاكِب",
+            translit:
+              "fī mawkibin minal malā’ikati yafūqu ‛alā sā’iril mawākib.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "فَإِذَا ارْتَقَى عَلَى الْكَوْنَيْنِ وَانْفَصَلَ عَنِ الْعَالَمَيْنِ وَوَصَلَ إِلَى قَابِ قَوْسَيْنِ، كُنْتُ لَهُ أَنَا النَّدِيمَ وَالْمُخَاطِبْ",
+            translit:
+              "Fa idhartaqā ‛alal kawnayni wanfaṣala ‛anil ‛ālamayni wa waṣala ilā qābi qawsayn, kuntu lahū anan nadīma wal mukhāṭib.",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
+          new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
             translation:
@@ -389,13 +779,29 @@ export default [
         chorus: false,
         entries: [
           new QasidaEntryModel({
-            arabic:
-              "ثُمَّ أَرُدُّهُ مِنَ العَرْشِ قَبْلَ أَنْ يَبْرُدَ الْفَرْشُ، وَقَدْ نَالَ جَمِيْعَ المَآرِبْ * فَإِذَا شُرِّفَتْ تُرْبَةُ طَيْبَةَ مِنْهُ بِأَشْرَفِ قَالِبْ * سَعَتْ إِلَيْهِ أَرْوَاحُ الْمُحِبِّينَ عَلَى الأَقْدَامِ وَالنَّجَائِبِ *",
+            arabic: "ثُمَّ أَرُدُّهُ مِنَ العَرْشِ قَبْلَ أَنْ يَبْرُدَ الْفَرْشُ، وَقَدْ نَالَ جَمِيْعَ المَآرِبْ",
             translit:
-              "Thumma aruddūhū minal ‛arshi qabla an yabrudal farshu wa qad nāla jamī‛al ma’ārib. Fa idhā shurrifat turbatu Ṭaybata minhu bi ashrafi qālib, sa‛at ilayhi arwāḥul muḥibbīna ‛alal aqdāmi wan najā’ib.",
+              "Thumma aruddūhū minal ‛arshi qabla an yabrudal farshu wa qad nāla jamī‛al ma’ārib.",
             translation:
               "Then I return him from the Throne before the bedding has cooled, having attained all his aims. So when the soil of Ṭaybah is honoured by him, in the noblest of forms, the souls of the lovers hasten to him on foot and on swift camels.",
           }),
+          new QasidaEntryModel({
+            arabic: "فَإِذَا شُرِّفَتْ تُرْبَةُ طَيْبَةَ مِنْهُ بِأَشْرَفِ قَالِبْ",
+            translit:
+              "Fa idhā shurrifat turbatu Ṭaybata minhu bi ashrafi qālib,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "سَعَتْ إِلَيْهِ أَرْوَاحُ الْمُحِبِّينَ عَلَى الأَقْدَامِ وَالنَّجَائِبِ",
+            translit:
+              "sa‛at ilayhi arwāḥul muḥibbīna ‛alal aqdāmi wan najā’ib.",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "صَلَاةُ اللَّهِ مَا لَاحَتْ كَوَاكِبْ",
             translit: "Ṣalātullāhi mā lāḥat kawākib",
@@ -406,6 +812,11 @@ export default [
             translit: "‛Alā Aḥmada khayri man rakiban najā’ib",
             translation: "upon Aḥmad, the best of those who rode swift camels.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "حَدَا حَادِي السُّـرَى بِاسْمِ الْحَبَائِبْ",
             translit: "Ḥadā ḥādis surā bismil ḥabā’ib",
@@ -417,6 +828,11 @@ export default [
             translit: "Fa hazzas sukru a‛ṭāfar rakā’ib",
             translation: "and rapture shook the sides of the mounts.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "أَلَمْ تَرَهَا وَقَدْ مَدَّتْ خُطَاهَا",
             translit: "Alam tarahā wa qad maddat khuṭāhā",
@@ -427,6 +843,11 @@ export default [
             translit: "Wa sālat min madāmi‛ihā saḥā’ib",
             translation: "while clouds of tears flowed from their eyes,",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "وَمَالَتْ لِلْحِمَى طَرَبًا وَحَنَّتْ",
             translit: "Wa mālat lil ḥimā ṭarabaw wa ḥannat",
@@ -438,6 +859,11 @@ export default [
             translit: "Ilā tilkal ma‛ālimi wal malā‛ib",
             translation: "for those landmarks and meadows?",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "فَدَعْ جَذْبَ الزِّمَامِ وَلَا تَسُقْهَا",
             translit: "Fada‛ jadhbaz zimāmi wa lā tasuqhā",
@@ -449,6 +875,11 @@ export default [
             translation:
               "for the leader of their longing draws them to the encampment.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "فَهِمْ طَرَبًا كَمَا هَامَتْ وَإِلَّا",
             translit: "Fa him ṭarabān kamā hāmat wa illā",
@@ -459,6 +890,11 @@ export default [
             translit: "Fa innaka fī ṭarīqil ḥubbi kādhib",
             translation: "you are false in the path of love.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "أَمَا هَذَا الْعَقِيقُ بَدَا وَهَذِي",
             translit: "Amā hādhal ‛aqīqu badā wa hādhī",
@@ -470,6 +906,11 @@ export default [
             translit: "Qibābul ḥayyi lāḥat wal maḍārib",
             translation: "domes of the encampment, shining, and the tents?",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "وَتِلْكَ الْقُبَّةُ الْخَضْـرَا وَفِيهَا",
             translit: "Wa tilkal qubbatul khaḍrā’u wa fīhā",
@@ -480,6 +921,11 @@ export default [
             translit: "Nabiyyun nūruhū yajlul ghayāhib",
             translation: "a prophet whose light dispels the darknesses.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "وَقَدْ صَحَّ الرِّضَا وَدَنَا التَّلَاقِي",
             translit: "Wa qad ṣaḥḥar riḍā wa danat talāqī",
@@ -490,6 +936,11 @@ export default [
             translit: "Wa qad jā’al hanā’u min kulli jānib",
             translation: "and joy has come from every side.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "فَقُلْ لِلنَّفْسِ: دُونَكِ وَالتَّمَلِي",
             translit: "Faqul lin nafsi dūnakit tamallī",
@@ -501,6 +952,11 @@ export default [
             translation:
               "for today there is no barrier between you and the Beloved.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "تَمَلَّي بِالْحَبِيبِ بِكُلِّ قَصْدٍ",
             translit: "Tamallā bil ḥabībi bikulli qaṣd",
@@ -512,6 +968,11 @@ export default [
             translation:
               "for joy has been attained and the opposite is absent.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "نَبِيُّ اللَّهِ خَيْرُ الْخَلْقِ جَمْعًا",
             translit: "Nabiyyullāhi khayrul khalqi jam‛an",
@@ -522,6 +983,11 @@ export default [
             translit: "Lahū a‛lal manāṣibi wal marātib",
             translation: "has the highest offices and ranks;",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "لَهُ الْجَاهُ الرَّفِيعُ لَهُ الْمَعَالِي",
             translit: "Lahul jāhur rafī‛u lahul ma‛ālī",
@@ -532,6 +998,11 @@ export default [
             translit: "Lahush sharaful mu’abbadu wal manāqib",
             translation: "to him belong everlasting honour and virtues.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "فَلَوْ أَنَّا سَعَيْنَا كُلَّ يَوْمٍ",
             translit: "Falaw annā sa‛aynā kulla yawmin",
@@ -542,6 +1013,11 @@ export default [
             translit: "‛Alal aḥdāqi lā fawqan najā’ib",
             translation: "upon our eyes, not upon swift camels,",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "وَلَوْ أَنَّا عَمِلْنَا كُلَّ حِينٍ",
             translit: "Wa law annā ‛amilnā kulla ḥīnin",
@@ -552,6 +1028,11 @@ export default [
             translit: "Li Aḥmada mawlidan qad kāna wājib",
             translation: "a mawlid for Aḥmad, it would indeed be a duty,",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "عَلَيْهِ مِنَ الْمُهَيْمِنِ كُلَّ وَقْتٍ",
             translit: "‛Alayhi minal muhayminī kulla waqtin",
@@ -563,6 +1044,11 @@ export default [
             translation:
               "blessings, as long as the light of the stars appears,",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "تَعُمُّ الْآلَ وَالْأَصْحَابَ طُرًّا",
             translit: "Ta‛ummul āla wal aṣḥāba ṭurran",
@@ -573,6 +1059,11 @@ export default [
             translit: "Jamī‛ahumu wa ‛itratahul aṭā’ib",
             translation: "all of them, and his pure kin.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
@@ -586,12 +1077,50 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic:
-              "فَسُبْحَانَ مَنْ خَصَّهُ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ بِأَشْرَفِ الْمَنَاصِبِ وَالْمَرَاتِبْ * أَحْمَدُهُ عَلَى مَا مَنَحَ مِنَ الْمَوَاهِبْ * وَأَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ  وَحْدَهُ لَا شَرِيكَ لَهُ رَبُّ الْمَشَارِقِ وَالْمَغَارِبْ * وَأَشْهَدُ أَنَّ سَيِّدَنَا مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ الْمَبْعُوثُ إِلَى سَائِرِ الْأَعَاجِمِ وَالْأَعَارِبْ * صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ وَعَلَى آلِهِ وَأَصْحَابِهِ أُولِى الْمَآثِرِ وَالْمَنَاقِبِ * صَلَاةً وَسَلَامًا دَائِمَيْنَ مُتَلَازِمَيْنِ يَأْتِي قَائِلُهُمَا يَوْمَ الْقِيَامَةِ غَيْرَ خَائِبْ *",
+              "فَسُبْحَانَ مَنْ خَصَّهُ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ بِأَشْرَفِ الْمَنَاصِبِ وَالْمَرَاتِبْ",
             translit:
-              "Fa subḥāna man khaṣṣahū ṣallallāhu ‛alayhi wa ālihī wa sallama bi ashrafil manāṣibi wal marātib. Aḥmaduhū ‛alā mā manaḥa minal mawāhib. Wa ashhadu an lā ilāha illallāhu waḥdahū lā sharīka lahū rabbul mashāriqi wal maghārib. Wa ashhadu anna sayyidanā Muḥammadan ‛abduhū wa rasūluhul mab‛ūthu ilā sā’iril a‛jāmi wal a‛ārib. Ṣallallāhu ‛alayhi wa ālihī wa sallama wa ‛alā ālihī wa aṣḥābihī ūlil ma’āthiri wal manāqib, ṣalātan wa salāman dā’imayni mutalāzimayni ya’tī qā’iluhumā yawmal qiyāmati ghayra khā’ib.",
+              "Fa subḥāna man khaṣṣahū ṣallallāhu ‛alayhi wa ālihī wa sallama bi ashrafil manāṣibi wal marātib.",
             translation:
               "Glory be to Him Who distinguished him, may Allāh bless him and his family and grant them peace, with the noblest of offices and ranks. I praise Him for the gifts He has bestowed. I bear witness that there is no god but Allāh alone, without partner, Lord of the easts and the wests, and I bear witness that our master Muhammad is His servant and Messenger, sent to all non-Arabs and Arabs, may Allāh bless him and his family and grant them peace, and upon his family and companions, possessors of noble deeds and virtues; blessings and peace, constant and inseparable, whose sayer will come on the Day of Resurrection not disappointed.",
           }),
+          new QasidaEntryModel({
+            arabic: "أَحْمَدُهُ عَلَى مَا مَنَحَ مِنَ الْمَوَاهِبْ",
+            translit: "Aḥmaduhū ‛alā mā manaḥa minal mawāhib.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "وَأَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ  وَحْدَهُ لَا شَرِيكَ لَهُ رَبُّ الْمَشَارِقِ وَالْمَغَارِبْ",
+            translit:
+              "Wa ashhadu an lā ilāha illallāhu waḥdahū lā sharīka lahū rabbul mashāriqi wal maghārib.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "وَأَشْهَدُ أَنَّ سَيِّدَنَا مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ الْمَبْعُوثُ إِلَى سَائِرِ الْأَعَاجِمِ وَالْأَعَارِبْ",
+            translit:
+              "Wa ashhadu anna sayyidanā Muḥammadan ‛abduhū wa rasūluhul mab‛ūthu ilā sā’iril a‛jāmi wal a‛ārib.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ وَعَلَى آلِهِ وَأَصْحَابِهِ أُولِى الْمَآثِرِ وَالْمَنَاقِبِ",
+            translit:
+              "Ṣallallāhu ‛alayhi wa ālihī wa sallama wa ‛alā ālihī wa aṣḥābihī ūlil ma’āthiri wal manāqib,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "صَلَاةً وَسَلَامًا دَائِمَيْنَ مُتَلَازِمَيْنِ يَأْتِي قَائِلُهُمَا يَوْمَ الْقِيَامَةِ غَيْرَ خَائِبْ",
+            translit:
+              "ṣalātan wa salāman dā’imayni mutalāzimayni ya’tī qā’iluhumā yawmal qiyāmati ghayra khā’ib.",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
@@ -609,15 +1138,37 @@ export default [
             translation:
               "In the name of Allāh, the Most Gracious, the Most Merciful",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic:
-              "أَوَّلُ مَا نَسْتَفْتِحُ بِإِيرَادِ حَدِيثَيْنِ وَرَدَا فِي نَبِيٍّ كَانَ قَدْرُهُ عَظِيمًا، وَنَسَبُهُ كَرِيمًا، وَصِرَاطُهُ مُسْتَقِيمًا * قَالَ فِي حَقِّهِ مَنْ لَمْ يَزَلْ سَمِيعًا عَلِيمًا * ﴿ إِنَّ ٱللَّهَ وَمَلَائِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ يَا أَيُّهَا الَّذِيْنَ آمَنُوا صَلُّوا عَلَيْهِ وَسَلِّمُوا تَسْلِيمًا ﴾",
+              "أَوَّلُ مَا نَسْتَفْتِحُ بِإِيرَادِ حَدِيثَيْنِ وَرَدَا فِي نَبِيٍّ كَانَ قَدْرُهُ عَظِيمًا، وَنَسَبُهُ كَرِيمًا، وَصِرَاطُهُ مُسْتَقِيمًا",
             translit:
-              "Awwalu mā nastaftiḥu bi īrādi ḥadīthayni waradā fī nabiyyin kāna qadruhū ‛aẓīmā wa nasabuhū karīmā wa ṣirāṭuhū mustaqīmā. Qāla fī ḥaqqihī man lam yazal samī‛an ‛alīmā: Innallāha wa malā’ikatahū yuṣallūna ‛alan nabiyy, yā ayyuhal ladhīna āmanū ṣallū ‛alayhi wa sallimū taslīmā.",
+              "Awwalu mā nastaftiḥu bi īrādi ḥadīthayni waradā fī nabiyyin kāna qadruhū ‛aẓīmā wa nasabuhū karīmā wa ṣirāṭuhū mustaqīmā.",
             translation:
               "The first thing with which we begin is the citing of two hadiths that came concerning a prophet whose rank is great, whose lineage is noble and whose path is straight. He Who has always been All-Hearing and All-Knowing said concerning him: Indeed Allāh and His angels send blessings upon the Prophet. O you who believe, send blessings upon him and greet him with peace.",
           }),
           new QasidaEntryModel({
+            arabic: "قَالَ فِي حَقِّهِ مَنْ لَمْ يَزَلْ سَمِيعًا عَلِيمًا",
+            translit: "Qāla fī ḥaqqihī man lam yazal samī‛an ‛alīmā:",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "﴿ إِنَّ ٱللَّهَ وَمَلَائِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ يَا أَيُّهَا الَّذِيْنَ آمَنُوا صَلُّوا عَلَيْهِ وَسَلِّمُوا تَسْلِيمًا ﴾",
+            translit:
+              "Innallāha wa malā’ikatahū yuṣallūna ‛alan nabiyy, yā ayyuhal ladhīna āmanū ṣallū ‛alayhi wa sallimū taslīmā.",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
+          new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
             translation:
@@ -630,13 +1181,51 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic:
-              "(الْحَدِيثُ الْأَوَّلُ) عَنْ بَحْرِ الْعِلْمِ الدَّافِقْ، وَلِسَانِ الْقُرْآنِ النَّاطِقْ، أَوْحَدِ عُلَمَاءِ النَّاسِ، سَيِّدِنَا عَبْدِ اللَّهِ بْنِ سَيِّدِنَا الْعَبَّاسِ رَضِيَ اللَّهُ عَنْهُمَا عَنْ رَسُولِ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وآلِهِ وَسَلَّمَ أَنَّهُ قَالَ: إِنَّ قُرَيْشًا كَانَتْ نُوراً بَيْنَ يَدَيِ اللَّهِ عَزَّ وَجَلَّ قَبْلَ أَنْ يَخْلُقَ آدَمَ (عَلَيْهِ السَّلَام) بِأَلْفَيْ عَامٍ، يُسَبِّحُ اللَّهَ ذَلِكَ النُّورُ وَتُسَبِّحُ الْمَلَائِكَةُ بِتَسْبِيحِهِ * فَلَمَّا خَلَقَ اللَّهُ آدَمَ (عَلَيْهِ السَّلَام) أَوْدَعَ ذَلِكَ النُّورَ فِي طِينَتِهِ * قَالَ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ: فَأَهْبَطَنِيَ اللَّهُ عَزَّ وَجَلَّ إِلَى الْأَرْضِ فِي ظَهْرِ آدَمَ (عَلَيْهِ السَّلَام) * وَحَمَلَنِي فِي السَّفِينَةِ فِي صُلْبِ نُوحٍ (عَلَيْهِ السَّلَام) * وَجَعَلَنِي فِي صُلْبِ الْخَلِيلِ إِبْرَاهِيمَ (عَلَيْهِ السَّلَام) حِينَ قُذِفَ بِهِ فِي النَّارِ* وَلَمْ يَزَلِ اللَّهُ عَزَّ وَجَلَّ يُنْقِلُنِي مِنَ الْأَصْلَابِ الطَّاهِرَةِ إِلَى الْأَرْحَامِ الزَّكِيَّةِ الْفَاخِرَةِ حَتَّى أَخْرَجَنِيَ اللَّهُ مِنْ بَيْنِ أَبَوَيَّ وَهُمَا لَمْ يَلْتَقِيَا عَلَى سِفَاحٍ قَطّْ *",
+              "(الْحَدِيثُ الْأَوَّلُ) عَنْ بَحْرِ الْعِلْمِ الدَّافِقْ، وَلِسَانِ الْقُرْآنِ النَّاطِقْ، أَوْحَدِ عُلَمَاءِ النَّاسِ، سَيِّدِنَا عَبْدِ اللَّهِ بْنِ سَيِّدِنَا الْعَبَّاسِ رَضِيَ اللَّهُ عَنْهُمَا عَنْ رَسُولِ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وآلِهِ وَسَلَّمَ أَنَّهُ قَالَ: إِنَّ قُرَيْشًا كَانَتْ نُوراً بَيْنَ يَدَيِ اللَّهِ عَزَّ وَجَلَّ قَبْلَ أَنْ يَخْلُقَ آدَمَ (عَلَيْهِ السَّلَام) بِأَلْفَيْ عَامٍ، يُسَبِّحُ اللَّهَ ذَلِكَ النُّورُ وَتُسَبِّحُ الْمَلَائِكَةُ بِتَسْبِيحِهِ",
             translit:
-              "(Al-ḥadīthul awwal) ‛an baḥril ‛ilmid dāfiq, wa lisānil qur’ānin nāṭiq, awḥadi ‛ulamā’in nās, sayyidinā ‛Abdillāhibni sayyidinal ‛Abbās raḍiyallāhu ‛anhumā, ‛an rasūlillāhi ṣallallāhu ‛alayhi wa ālihī wa sallama annahū qāl: Inna Qurayshan kānat nūran bayna yadayillāhi ‛azza wa jalla qabla an yakhluqa Ādama (‛alayhis salām) bi alfay ‛ām, yusabbiḥullāha dhālikan nūru wa tusabbiḥul malā’ikatu bitasbīḥih. Falammā khalaqallāhu Ādama (‛alayhis salām) awda‛a dhālikan nūra fī ṭīnatih. Qāla ṣallallāhu ‛alayhi wa ālihī wa sallam: Fa ahbaṭaniyallāhu ‛azza wa jalla ilal arḍi fī ẓahri Ādama (‛alayhis salām), wa ḥamalanī fis safīnati fī ṣulbi Nūḥin (‛alayhis salām), wa ja‛alanī fī ṣulbil khalīli Ibrāhīma (‛alayhis salām) ḥīna qudhifa bihī fin nār. Wa lam yazalillāhu ‛azza wa jalla yunqilunī minal aṣlābiṭ ṭāhirati ilal arḥāmiz zakiyyatil fākhirati ḥattā akhrajaniyallāhu min bayna abawayya wa humā lam yaltaqiyā ‛alā sifāḥin qaṭṭ.",
+              "(Al-ḥadīthul awwal) ‛an baḥril ‛ilmid dāfiq, wa lisānil qur’ānin nāṭiq, awḥadi ‛ulamā’in nās, sayyidinā ‛Abdillāhibni sayyidinal ‛Abbās raḍiyallāhu ‛anhumā, ‛an rasūlillāhi ṣallallāhu ‛alayhi wa ālihī wa sallama annahū qāl: Inna Qurayshan kānat nūran bayna yadayillāhi ‛azza wa jalla qabla an yakhluqa Ādama (‛alayhis salām) bi alfay ‛ām, yusabbiḥullāha dhālikan nūru wa tusabbiḥul malā’ikatu bitasbīḥih.",
             translation:
               "(The first hadith) On the authority of the overflowing sea of knowledge, the speaking tongue of the Qur’ān, the most unique of the scholars of the people, our master ‛Abdullāh son of our master al-‛Abbās, may Allāh be pleased with them both, from the Messenger of Allāh, may Allāh bless him and his family and grant them peace, that he said: Quraysh was a light before Allāh, Mighty and Majestic, two thousand years before He created Ādam (peace be upon him); that light glorified Allāh and the angels glorified Him with its glorification. When Allāh created Ādam (peace be upon him), He deposited that light in his clay. The Prophet, may Allāh bless him and his family and grant them peace, said: Then Allāh, Mighty and Majestic, sent me down to earth in the loins of Ādam (peace be upon him), carried me in the ark in the loins of Nūḥ (peace be upon him), and placed me in the loins of the Friend, Ibrāhīm (peace be upon him), when he was cast into the fire. Allāh, Mighty and Majestic, continued to transfer me from pure loins to pure and glorious wombs until Allāh brought me forth from between my parents, who never met in fornication at all.",
           }),
           new QasidaEntryModel({
+            arabic: "فَلَمَّا خَلَقَ اللَّهُ آدَمَ (عَلَيْهِ السَّلَام) أَوْدَعَ ذَلِكَ النُّورَ فِي طِينَتِهِ",
+            translit:
+              "Falammā khalaqallāhu Ādama (‛alayhis salām) awda‛a dhālikan nūra fī ṭīnatih. Qāla ṣallallāhu ‛alayhi wa ālihī wa sallam:",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "قَالَ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ: فَأَهْبَطَنِيَ اللَّهُ عَزَّ وَجَلَّ إِلَى الْأَرْضِ فِي ظَهْرِ آدَمَ (عَلَيْهِ السَّلَام)",
+            translit:
+              "Fa ahbaṭaniyallāhu ‛azza wa jalla ilal arḍi fī ẓahri Ādama (‛alayhis salām),",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَحَمَلَنِي فِي السَّفِينَةِ فِي صُلْبِ نُوحٍ (عَلَيْهِ السَّلَام)",
+            translit:
+              "wa ḥamalanī fis safīnati fī ṣulbi Nūḥin (‛alayhis salām),",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "وَجَعَلَنِي فِي صُلْبِ الْخَلِيلِ إِبْرَاهِيمَ (عَلَيْهِ السَّلَام) حِينَ قُذِفَ بِهِ فِي النَّارِ",
+            translit:
+              "wa ja‛alanī fī ṣulbil khalīli Ibrāhīma (‛alayhis salām) ḥīna qudhifa bihī fin nār.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "وَلَمْ يَزَلِ اللَّهُ عَزَّ وَجَلَّ يُنْقِلُنِي مِنَ الْأَصْلَابِ الطَّاهِرَةِ إِلَى الْأَرْحَامِ الزَّكِيَّةِ الْفَاخِرَةِ حَتَّى أَخْرَجَنِيَ اللَّهُ مِنْ بَيْنِ أَبَوَيَّ وَهُمَا لَمْ يَلْتَقِيَا عَلَى سِفَاحٍ قَطّْ",
+            translit:
+              "Wa lam yazalillāhu ‛azza wa jalla yunqilunī minal aṣlābiṭ ṭāhirati ilal arḥāmiz zakiyyatil fākhirati ḥattā akhrajaniyallāhu min bayna abawayya wa humā lam yaltaqiyā ‛alā sifāḥin qaṭṭ.",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
+          new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
             translation:
@@ -648,13 +1237,44 @@ export default [
         chorus: false,
         entries: [
           new QasidaEntryModel({
-            arabic:
-              "(الْحَدِيثُ الثَّانِي) عَنْ عَطَاءِ بِنْ يَسَارٍ عَنْ كَعْبِ الْأَحْبَارِ * قَالَ: عَلَّمَنِي أَبِي التَّوْرَاةَ إِلَّا سِفْرًا وَاحِدًا كَانَ يَخْتِمُهُ وَيُدْخِلُهُ الصُّنْدُوقَ * فَلَمَّا مَاتَ أَبِي فَتَحْتُهُ، فَإِذَا فِيهِ نَبِيٌّ يَخْرُجُ آخِرَ الزَّمَانِ، مَوْلِدُهُ بِمَكَّةَ، وَهِجْرَتُهُ بِالْمَدِينَةِ، وَسُلْطَانُهُ بِالشَّامِ * يَقُصُّ شَعْرَهُ وَيَتَّزِرُ عَلَى وَسَطِهِ، يَكُونُ خَيْرَ الْأَنْبِيَاءِ، وَأُمَّتُهُ خَيْرَ الْأُمَمِ، يُكَّبِرُونَ اللَّهَ تَعَالَى عَلَى كُلِّ شَرَفٍ، يَصُفُّونَ فِي الصَّلَاةِ كَصُفُوفِهِمْ فِي الْقِتَالِ، قُلُوبُهُمْ مَصَاحِفُهُمْ، يَحْمَدُونَ اللَّهَ تَعَالَى عَلَى كُلِّ شِدَّةٍ وَرَخَاءٍ * ثُلُثٌ يَدْخُلُونَ الْجَنَّةَ بِغَيْرِ حِسَابٍ (اللَّهُمَّ اجْعَلْنَا مِنْهُمْ).",
+            arabic: "(الْحَدِيثُ الثَّانِي) عَنْ عَطَاءِ بِنْ يَسَارٍ عَنْ كَعْبِ الْأَحْبَارِ",
             translit:
-              "(Al-ḥadīthuth thānī) ‛an ‛Aṭā’ibni Yasār ‛an Ka‛bil Aḥbār. Qāl: ‛Allamanī abit tawrāta illā sifran wāḥidan kāna yakhtimuhū wa yudkhiluhuṣ ṣundūq. Falammā māta abī fataḥtuhū, fa idhā fīhi nabiyyun yakhruju ākhiraz zamān, mawliduhū bi Makkah, wa hijratuhū bil Madīnah, wa sulṭānuhū bish Shām. Yaquṣṣu sha‛rahū wa yattaziru ‛alā wasaṭih, yakūnu khayral anbiyā’i wa ummatuhū khayral umam, yukabbirūnallāha ta‛ālā ‛alā kulli sharaf, yaṣuffūna fiṣ ṣalāti kaṣufūfihim fil qitāl, qulūbuhum maṣāḥifuhum, yaḥmadūnallāha ta‛ālā ‛alā kulli shiddatin wa rakhā’. Thuluthun yadkhulūnal jannata bighayri ḥisāb. (Allāhummaj‛alnā minhum).",
+              "(Al-ḥadīthuth thānī) ‛an ‛Aṭā’ibni Yasār ‛an Ka‛bil Aḥbār. Qāl:",
             translation:
               "(The second hadith) On the authority of ‛Aṭā’ son of Yasār, from Ka‛b al-Aḥbār, who said: My father taught me the Torah except for one scroll, which he would seal and place in a chest. When my father died I opened it, and in it was a prophet who comes forth at the end of time, his birthplace in Makkah, his migration to Madīnah and his dominion in Shām. He trims his hair and wraps a waist-cloth around his middle. He is the best of the prophets and his nation the best of nations; they proclaim Allāh's greatness on every height, they line up in prayer as they line up in battle, their hearts are their scrolls, and they praise Allāh, Exalted is He, in every hardship and ease. A third of them enter Paradise without reckoning. (O Allāh, make us among them.)",
           }),
+          new QasidaEntryModel({
+            arabic:
+              "قَالَ: عَلَّمَنِي أَبِي التَّوْرَاةَ إِلَّا سِفْرًا وَاحِدًا كَانَ يَخْتِمُهُ وَيُدْخِلُهُ الصُّنْدُوقَ",
+            translit:
+              "‛Allamanī abit tawrāta illā sifran wāḥidan kāna yakhtimuhū wa yudkhiluhuṣ ṣundūq.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "فَلَمَّا مَاتَ أَبِي فَتَحْتُهُ، فَإِذَا فِيهِ نَبِيٌّ يَخْرُجُ آخِرَ الزَّمَانِ، مَوْلِدُهُ بِمَكَّةَ، وَهِجْرَتُهُ بِالْمَدِينَةِ، وَسُلْطَانُهُ بِالشَّامِ",
+            translit:
+              "Falammā māta abī fataḥtuhū, fa idhā fīhi nabiyyun yakhruju ākhiraz zamān, mawliduhū bi Makkah, wa hijratuhū bil Madīnah,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "يَقُصُّ شَعْرَهُ وَيَتَّزِرُ عَلَى وَسَطِهِ، يَكُونُ خَيْرَ الْأَنْبِيَاءِ، وَأُمَّتُهُ خَيْرَ الْأُمَمِ، يُكَّبِرُونَ اللَّهَ تَعَالَى عَلَى كُلِّ شَرَفٍ، يَصُفُّونَ فِي الصَّلَاةِ كَصُفُوفِهِمْ فِي الْقِتَالِ، قُلُوبُهُمْ مَصَاحِفُهُمْ، يَحْمَدُونَ اللَّهَ تَعَالَى عَلَى كُلِّ شِدَّةٍ وَرَخَاءٍ",
+            translit:
+              "wa sulṭānuhū bish Shām. Yaquṣṣu sha‛rahū wa yattaziru ‛alā wasaṭih, yakūnu khayral anbiyā’i wa ummatuhū khayral umam, yukabbirūnallāha ta‛ālā ‛alā kulli sharaf, yaṣuffūna fiṣ ṣalāti kaṣufūfihim fil qitāl, qulūbuhum maṣāḥifuhum, yaḥmadūnallāha ta‛ālā ‛alā kulli shiddatin wa rakhā’.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "ثُلُثٌ يَدْخُلُونَ الْجَنَّةَ بِغَيْرِ حِسَابٍ (اللَّهُمَّ اجْعَلْنَا مِنْهُمْ).",
+            translit:
+              "Thuluthun yadkhulūnal jannata bighayri ḥisāb. (Allāhummaj‛alnā minhum).",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic:
               "وَثُلُثٌ يَأْتُونَ بِذُنُوبهِمْ وَخَطَايَاهُمْ فَيُغْفَرُ لَهُمْ (اللَّهُمَّ اغْفِرْ لَنَا وَلَهُمْ).",
@@ -663,15 +1283,36 @@ export default [
             translation:
               "And a third come with their sins and their errors and are forgiven. (O Allāh, forgive us and them.)",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
-            arabic:
-              "وَثُلُثٌ يَأْتُونَ بِذُنُوبٍ وَخَطَايَا عِظَامٍ * فَيَقُولُ اللَّهُ تَعَالَى لِلْمَلَائِكَةِ: إِذْهَبُوا فَزِنُوهُمْ،  فَيَقُولُونَ:  يَا رَبَّنَا وَجَدْنَاهُمْ أَسْرَفُوا عَلى أَنْفُسِهِمْ وَوَجَدْنَا أَعْمَالَهُمْ مِنَ الذُّنُوبِ كَأَمْثَالِ الْجِبَالِ، غَيْرَ أَنَّهُمْ يَشْهَدُونَ أَنْ لَا إِلَهَ إِلَّا اللَّهُ، وَأَنَّ مُحَمَّدًا رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ * (أَشْهَدُ أَنْ لَآ إِلَـٰهَ إِلَّا ٱللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ)",
-            translit:
-              "Wa thuluthun ya’tūna bidhunūbin wa khaṭāyā ‛iẓām. Fa yaqūlullāhu ta‛ālā lil malā’ikah: idhhabū fazinūhum. Fa yaqūlūn: yā rabbanā wajadnāhum asrafū ‛alā anfusihim wa wajadnā a‛mālahum minadh dhunūbi ka amthālil jibāl, ghayra annahum yashhadūna an lā ilāha illallāh wa anna Muḥammadar rasūlullāhi ṣallallāhu ‛alayhi wa ālihī wa sallam. (Ashhadu an lā ilāha illallāh wa ashhadu anna Muḥammadar rasūlullāh)",
+            arabic: "وَثُلُثٌ يَأْتُونَ بِذُنُوبٍ وَخَطَايَا عِظَامٍ",
+            translit: "Wa thuluthun ya’tūna bidhunūbin wa khaṭāyā ‛iẓām.",
             translation:
               "And a third come with great sins and errors. Allāh, Exalted is He, says to the angels: Go and weigh them. They say: Our Lord, we found that they have been extravagant against themselves, and we found their deeds, in sins, like mountains, except that they bear witness that there is no god but Allāh and that Muhammad is the Messenger of Allāh, may Allāh bless him and his family and grant them peace. (I bear witness that there is no god but Allāh, and I bear witness that Muhammad is the Messenger of Allāh.)",
           }),
           new QasidaEntryModel({
+            arabic:
+              "فَيَقُولُ اللَّهُ تَعَالَى لِلْمَلَائِكَةِ: إِذْهَبُوا فَزِنُوهُمْ،  فَيَقُولُونَ:  يَا رَبَّنَا وَجَدْنَاهُمْ أَسْرَفُوا عَلى أَنْفُسِهِمْ وَوَجَدْنَا أَعْمَالَهُمْ مِنَ الذُّنُوبِ كَأَمْثَالِ الْجِبَالِ، غَيْرَ أَنَّهُمْ يَشْهَدُونَ أَنْ لَا إِلَهَ إِلَّا اللَّهُ، وَأَنَّ مُحَمَّدًا رَسُولُ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ",
+            translit:
+              "Fa yaqūlullāhu ta‛ālā lil malā’ikah: idhhabū fazinūhum. Fa yaqūlūn: yā rabbanā wajadnāhum asrafū ‛alā anfusihim wa wajadnā a‛mālahum minadh dhunūbi ka amthālil jibāl, ghayra annahum yashhadūna an lā ilāha illallāh wa anna Muḥammadar rasūlullāhi ṣallallāhu ‛alayhi wa ālihī wa sallam.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "(أَشْهَدُ أَنْ لَآ إِلَـٰهَ إِلَّا ٱللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا رَسُولُ اللَّهِ)",
+            translit:
+              "(Ashhadu an lā ilāha illallāh wa ashhadu anna Muḥammadar rasūlullāh)",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
+          new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
             translation:
@@ -684,13 +1325,55 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic:
-              "فَيَقُولُ الْحَقُّ: -وَعِزَّتِي وَجَلَالِي- لَا جَعَلْتُ مَنْ أَخْلَصَ لِي بِالشَّهَادَةِ كَمَنْ كَذَّبَ بِي، اَدْخِلُوهُمُ الْجَنَّةَ بِرَحْمَتِي * يَا أَعَزَّ جَوَاهِرِ الْعُقُودِ * وَخُلَاصَةَ إِكْسِيرِ سِرِّ الْوُجُودِ * مَادِحُكَ قَاصِرٌ وَلَوْ جَاءَ بِبَذْلِ الْمَجْهُودِ * وَوَاصِفُكَ عَاجِزٌ عَنْ حَصْرِ مَا حَوَيْتَ مِنْ خِصَالِ الْكَرَمِ وَالْجُودِ * الْكَوْنُ إِشَارَةٌ وَأَنْتَ الْمَقْصُودُ * يَا أَشْرَفَ مَنْ نَالَ الْمَقَامَ الْمَحْمُوْدَ * وَجَاءَتْ رُسُلٌ مِنْ قَبْلِكَ لَكِنَّهُمْ بِالرِّفْعَةِ وَالْعُلَى لَكَ شُهُوْدٌ *",
+              "فَيَقُولُ الْحَقُّ: -وَعِزَّتِي وَجَلَالِي- لَا جَعَلْتُ مَنْ أَخْلَصَ لِي بِالشَّهَادَةِ كَمَنْ كَذَّبَ بِي، اَدْخِلُوهُمُ الْجَنَّةَ بِرَحْمَتِي",
             translit:
-              "Fa yaqūlul Ḥaqq: wa ‛izzatī wa jalālī, lā ja‛altu man akhlaṣa lī bish shahādati kaman kadhdhaba bī, adkhilūhumul jannata biraḥmatī. Yā a‛azza jawāhiril ‛uqūd, wa khulāṣata iksīri sirril wujūd, mādiḥuka qāṣirun wa law jā’a bibadhlil majhūd, wa wāṣifuka ‛ājizun ‛an ḥaṣri mā ḥawayta min khiṣālil karami wal jūd, al-kawnu ishāratun wa antal maqṣūd, yā ashrafa man nālal maqāmal maḥmūd, wa jā’at rusulun min qablika lākinnahum bir rif‛ati wal ‛ulā laka shuhūd.",
+              "Fa yaqūlul Ḥaqq: wa ‛izzatī wa jalālī, lā ja‛altu man akhlaṣa lī bish shahādati kaman kadhdhaba bī, adkhilūhumul jannata biraḥmatī.",
             translation:
               "The Truth says: By My might and My majesty, I will not make one who was sincere to Me in the testimony like one who denied Me; admit them into Paradise by My mercy. O most precious of necklace jewels, essence of the elixir of the secret of existence, the one who praises you falls short even if he exerts all his effort, and the one who describes you is unable to encompass the qualities of generosity and bounty you embrace. Creation is an indication and you are the one intended. O noblest of those who attained the Praised Station, messengers came before you, yet they are witnesses to your elevation and loftiness.",
           }),
           new QasidaEntryModel({
+            arabic: "يَا أَعَزَّ جَوَاهِرِ الْعُقُودِ",
+            translit: "Yā a‛azza jawāhiril ‛uqūd,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَخُلَاصَةَ إِكْسِيرِ سِرِّ الْوُجُودِ",
+            translit: "wa khulāṣata iksīri sirril wujūd,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "مَادِحُكَ قَاصِرٌ وَلَوْ جَاءَ بِبَذْلِ الْمَجْهُودِ",
+            translit: "mādiḥuka qāṣirun wa law jā’a bibadhlil majhūd,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَوَاصِفُكَ عَاجِزٌ عَنْ حَصْرِ مَا حَوَيْتَ مِنْ خِصَالِ الْكَرَمِ وَالْجُودِ",
+            translit:
+              "wa wāṣifuka ‛ājizun ‛an ḥaṣri mā ḥawayta min khiṣālil karami wal jūd,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "الْكَوْنُ إِشَارَةٌ وَأَنْتَ الْمَقْصُودُ",
+            translit: "al-kawnu ishāratun wa antal maqṣūd,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "يَا أَشْرَفَ مَنْ نَالَ الْمَقَامَ الْمَحْمُوْدَ",
+            translit: "yā ashrafa man nālal maqāmal maḥmūd,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَجَاءَتْ رُسُلٌ مِنْ قَبْلِكَ لَكِنَّهُمْ بِالرِّفْعَةِ وَالْعُلَى لَكَ شُهُوْدٌ",
+            translit:
+              "wa jā’at rusulun min qablika lākinnahum bir rif‛ati wal ‛ulā laka shuhūd.",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
+          new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
             translation:
@@ -703,13 +1386,55 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic:
-              "أَحْضِرُوا قُلُوبَكُمْ يَا مَعْشَرَ ذَوِي الْأَلْبَابِ، حَتَّى أَجْلُوَ لَكُمْ عَرَائِسَ مَعَانِي أَجَلِّ الْأَحْبَابِ، الْمَخْصُوصِ بِأَشْرَفِ الْأَلْقَابِ، الرَّاقِي إِلَى حَضْرَةِ الْمَلِكِ الْوَهَّابِ، حَتَّى نَظَرَ إِلَى جَمَالِهِ بِلَا سِتْرٍ وَلَا حِجَابٍ * فَلَمَّا آنَ أَوَانُ ظُهُورِ شَمْسِ الرِّسَالَةِ فِي سَمَاءِ الْجَلَالَةِ * خَرَجَ بِهِ مَرْسُومُ الْجَلِيلِ، لِنَقِيبِ الْمَمْلَكَةِ جِبْرِيل * يَا جِبْرِيلُ نَادِ فِي سَائِرِ الْمَخْلُوقَاتِ، مِنْ أَهْلِ الْأَرْضِ وَالسَّمَوَاتِ، بِالتَّهَانِي وَالْبِشَارَاتِ* فَإِنَّ النُّورَ الْمَصُونَ، وَالسِّرَّ الْمَكْنُونَ، الَّذِي أَوْجَدْتُهُ قَبْلَ وُجُودِ الْأَشْيَاءِ، وَإِبْدَاعِ الْأَرْضِ وَالسَّمَاءِ، أَنْقُلُهُ فِي هَذِهِ اللَّيْلَةِ إِلَى بَطْنِ أُمِّهِ مَسْرُورًا * أَمْلَأُ بِهِ الْكَوْنَ نُورًا * وَأَكْفُلُهُ يَتِيمًا * وَأُطَهِّرُهُ وَأَهْلَ بَيْتِهِ تَطْهِيرًا *",
+              "أَحْضِرُوا قُلُوبَكُمْ يَا مَعْشَرَ ذَوِي الْأَلْبَابِ، حَتَّى أَجْلُوَ لَكُمْ عَرَائِسَ مَعَانِي أَجَلِّ الْأَحْبَابِ، الْمَخْصُوصِ بِأَشْرَفِ الْأَلْقَابِ، الرَّاقِي إِلَى حَضْرَةِ الْمَلِكِ الْوَهَّابِ، حَتَّى نَظَرَ إِلَى جَمَالِهِ بِلَا سِتْرٍ وَلَا حِجَابٍ",
             translit:
               "Aḥḍirū qulūbakum yā ma‛shara dhawil albāb, ḥattā ajluwa lakum ‛arā’isa ma‛ānī ajallil aḥbāb, al-makhṣūṣi bi ashrafil alqāb, ar-rāqī ilā ḥaḍratil malikil wahhāb, ḥattā naẓara ilā jamālihī bilā sitrin wa lā ḥijāb. Falammā āna awānu ẓuhūri shamsir risālati fī samā’il jalālah, kharaja bihī marsūmul jalīl, li naqībil mamlakati Jibrīl: yā Jibrīlu nādi fī sā’iril makhlūqāt, min ahlil arḍi was samawāt, bit tahānī wal bishārāt, fa innan nūral maṣūn, was sirral maknūn, alladhī awjadtuhū qabla wujūdil ashyā’, wa ibdā‛il arḍi was samā’, anquluhū fī hādhihil laylati ilā baṭni ummihī masrūrā, amla’u bihil kawna nūrā, wa akfuluhū yatīmā, wa uṭahhiruhū wa ahla baytihī taṭhīrā.",
             translation:
               "Bring your hearts present, O assembly of those with understanding, so that I may unveil for you the brides of meanings of the most majestic of the beloved ones, the one distinguished with the noblest of titles, who ascended to the presence of the Bestowing King until he gazed upon His beauty without veil or screen. When the time came for the sun of the Message to appear in the sky of Majesty, a decree from the Majestic went out to the chief of the realm, Jibrīl: O Jibrīl, call out to all creatures, among the people of the earth and the heavens, with congratulations and glad tidings: the guarded light and the hidden secret, which I brought into being before the existence of things and the creation of earth and sky, I transfer this night into the womb of his mother, joyful. I fill creation with light by him, I take him under My care as an orphan, and I purify him and the people of his house with a thorough purification.",
           }),
           new QasidaEntryModel({
+            arabic: "فَلَمَّا آنَ أَوَانُ ظُهُورِ شَمْسِ الرِّسَالَةِ فِي سَمَاءِ الْجَلَالَةِ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "خَرَجَ بِهِ مَرْسُومُ الْجَلِيلِ، لِنَقِيبِ الْمَمْلَكَةِ جِبْرِيل",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "يَا جِبْرِيلُ نَادِ فِي سَائِرِ الْمَخْلُوقَاتِ، مِنْ أَهْلِ الْأَرْضِ وَالسَّمَوَاتِ، بِالتَّهَانِي وَالْبِشَارَاتِ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "فَإِنَّ النُّورَ الْمَصُونَ، وَالسِّرَّ الْمَكْنُونَ، الَّذِي أَوْجَدْتُهُ قَبْلَ وُجُودِ الْأَشْيَاءِ، وَإِبْدَاعِ الْأَرْضِ وَالسَّمَاءِ، أَنْقُلُهُ فِي هَذِهِ اللَّيْلَةِ إِلَى بَطْنِ أُمِّهِ مَسْرُورًا",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "أَمْلَأُ بِهِ الْكَوْنَ نُورًا",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَأَكْفُلُهُ يَتِيمًا",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَأُطَهِّرُهُ وَأَهْلَ بَيْتِهِ تَطْهِيرًا",
+            translit: "",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
+          new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
             translation:
@@ -721,25 +1446,57 @@ export default [
         chorus: false,
         entries: [
           new QasidaEntryModel({
-            arabic:
-              "فَاهْتَزَّ الْعَرْشُ طَرَبًا وَاسْتِبْشَارًا * وَازْدَادَ الْكُرْسِيُّ هَيْبَةً وَوَقَارًا * وَامْتَلَأَتِ السَّمَوَاتُ أَنْوَارًا، وَضَجَّتِ الْمَلَائِكَةُ تَهْلِيلًا وَتَمْجِيدًا وَاسْتِغْفَارًا * [سُبْحَانَ ٱللَّهِ وَٱلْحَمْدُ لِلَّهِ وَلَا إِلَهَ إِلَّا ٱللَّهُ وَٱللَّهُ أَكْبَر] (4) *",
-            translit:
-              "Fahtazzal ‛arshu ṭarabaw wastibshārā, wazdādal kursiyyu haybataw wa waqārā, wamtala’atis samāwātu anwārā, wa ḍajjatil malā’ikatu tahlīlaw wa tamjīdaw wa istighfārā. [Subḥānallāhi walḥamdulillāhi wa lā ilāha illallāhu wallāhu akbar] (4).",
+            arabic: "فَاهْتَزَّ الْعَرْشُ طَرَبًا وَاسْتِبْشَارًا",
+            translit: "Fahtazzal ‛arshu ṭarabaw wastibshārā,",
             translation:
               "The Throne trembled with joy and glad tidings; the Footstool increased in awe and dignity; the heavens were filled with lights; and the angels resounded with declarations of oneness, glorification and seeking forgiveness. [Glory be to Allāh, praise be to Allāh, there is no god but Allāh, and Allāh is the Greatest] (4).",
           }),
           new QasidaEntryModel({
+            arabic: "وَازْدَادَ الْكُرْسِيُّ هَيْبَةً وَوَقَارًا",
+            translit: "wazdādal kursiyyu haybataw wa waqārā,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
             arabic:
-              "وَلَمْ تَزَلْ أُمُّهُ تَرَى أَنْوَاعًا مِنْ فَخْرِهِ وَفَضْلِهِ، إِلَى نِهَايَةِ تَمَامِ حَمْلِهِ * فَلَمَّا اشْتَدَّ بِهَا الطَّلْقُ بِإِذْنِ رَبِّ الْخَلْقِ * وَضَعَتِ الْحَبِيبَ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ سَاجِدًا شَاكِرًا حَامِدًا كَأَنَّهُ الْبَدْرُ فِي تَمَامِهِ *",
+              "وَامْتَلَأَتِ السَّمَوَاتُ أَنْوَارًا، وَضَجَّتِ الْمَلَائِكَةُ تَهْلِيلًا وَتَمْجِيدًا وَاسْتِغْفَارًا",
             translit:
-              "Wa lam tazal ummuhū tarā anwā‛am min fakhrihī wa faḍlihī ilā nihāyati tamāmi ḥamlih. Falammashtadda bihaṭ ṭalqu bi idhni rabbil khalq, waḍa‛atil ḥabība ṣallallāhu ‛alayhi wa ālihī wa sallama sājidan shākiran ḥāmidan ka annahul badru fī tamāmih.",
-            translation:
-              "His mother continued to see kinds of his glory and excellence until the end of his full term. When labour pains grew strong upon her, by the leave of the Lord of creation, she gave birth to the Beloved, may Allāh bless him and his family and grant them peace, prostrating, thankful and praising, as though he were the full moon at its fullness.",
+              "wamtala’atis samāwātu anwārā, wa ḍajjatil malā’ikatu tahlīlaw wa tamjīdaw wa istighfārā.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "[سُبْحَانَ ٱللَّهِ وَٱلْحَمْدُ لِلَّهِ وَلَا إِلَهَ إِلَّا ٱللَّهُ وَٱللَّهُ أَكْبَر] (4)",
+            translit:
+              "[Subḥānallāhi walḥamdulillāhi wa lā ilāha illallāhu wallāhu akbar] (4).",
+            translation: "",
           }),
         ],
       }),
       new QasidaVerseModel({
         chorus: false,
+        entries: [
+          new QasidaEntryModel({
+            arabic: "وَلَمْ تَزَلْ أُمُّهُ تَرَى أَنْوَاعًا مِنْ فَخْرِهِ وَفَضْلِهِ، إِلَى نِهَايَةِ تَمَامِ حَمْلِهِ",
+            translit:
+              "Wa lam tazal ummuhū tarā anwā‛am min fakhrihī wa faḍlihī ilā nihāyati tamāmi ḥamlih.",
+            translation:
+              "His mother continued to see kinds of his glory and excellence until the end of his full term. When labour pains grew strong upon her, by the leave of the Lord of creation, she gave birth to the Beloved, may Allāh bless him and his family and grant them peace, prostrating, thankful and praising, as though he were the full moon at its fullness.",
+          }),
+          new QasidaEntryModel({
+            arabic: "فَلَمَّا اشْتَدَّ بِهَا الطَّلْقُ بِإِذْنِ رَبِّ الْخَلْقِ",
+            translit: "Falammashtadda bihaṭ ṭalqu bi idhni rabbil khalq,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "وَضَعَتِ الْحَبِيبَ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ سَاجِدًا شَاكِرًا حَامِدًا كَأَنَّهُ الْبَدْرُ فِي تَمَامِهِ",
+            translit:
+              "waḍa‛atil ḥabība ṣallallāhu ‛alayhi wa ālihī wa sallama sājidan shākiran ḥāmidan ka annahul badru fī tamāmih.",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
         entries: [
           new QasidaEntryModel({
             arabic: "صَلَّى اللَّه عَلَى مُحَمَّدْ",
@@ -751,6 +1508,11 @@ export default [
             translit: "Ṣallallāhu ‛alayhi wa sallam",
             translation: "May Allāh bless him and grant him peace",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا نَبِي سَلَامْ عَلَيْكَ",
             translit: "Yā nabiyyu salāmun ‛alayk",
@@ -761,6 +1523,11 @@ export default [
             translit: "Yā rasūlu salāmun ‛alayk",
             translation: "O Messenger, peace be upon you",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا حَبِيبْ سَلَامْ عَلَيْكَ",
             translit: "Yā ḥabību salāmun ‛alayk",
@@ -771,6 +1538,11 @@ export default [
             translit: "Ṣalawātullāhi ‛alayk",
             translation: "The blessings of Allāh be upon you",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "أَشْرَقَ الْكَوْنُ ابْتِهَاجًا",
             translit: "Ashraqal kawnu ibtihājā",
@@ -781,6 +1553,11 @@ export default [
             translit: "Biwujūdil muṣṭafā Aḥmad",
             translation: "at the coming into being of the Chosen One, Aḥmad.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "وَلِأَهْلِ الْكَوْنِ أُنْـسٌ",
             translit: "Wa li ahlil kawni unsun",
@@ -792,6 +1569,11 @@ export default [
             translit: "Wa surūrun qad tajaddad",
             translation: "and joy that has been renewed.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "فَاطْرَبُوا يَا اهْلَ الْمَثَانِي",
             translit: "Faṭrabū yā ahlal mathānī",
@@ -802,6 +1584,11 @@ export default [
             translit: "Fahazārul yumni gharrad",
             translation: "for the nightingale of good fortune has sung,",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "وَاسْتَضِيئُوا بِجَمَالٍ",
             translit: "Wastaḍī’ū bijamālin",
@@ -812,6 +1599,11 @@ export default [
             translit: "Fāqa fil ḥusni tafarrad",
             translation: "that surpassed in loveliness and stands unique.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "وَلَنَا الْبُشْـرَى بِسَعْـدٍ",
             translit: "Wa lanal bushrā bisa‛din",
@@ -822,6 +1614,11 @@ export default [
             translit: "Mustamirrin laysa yanfad",
             translation: "that continues and never runs out,",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "حَيْثُ أُوتِينَـا عَطَـاءً",
             translit: "Ḥaythu ūtīnā ‛aṭā’an",
@@ -832,6 +1629,11 @@ export default [
             translit: "Jama‛al fakhral mu’abbad",
             translation: "that gathered everlasting glory.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "فَلِرَبِّي كُـلُّ حَـمْـدٍ",
             translit: "Falirabbī kullu ḥamdin",
@@ -842,6 +1644,11 @@ export default [
             translit: "Jalla an yaḥṣurahul ‛add",
             translation: "too great for counting to encompass,",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "إِذْ حَبَانَا بوُجُودِ الْـ",
             translit: "Idh ḥabānā bi wujūdil",
@@ -852,6 +1659,11 @@ export default [
             translit: "Muṣṭafal hādī Muḥammad",
             translation: "the Chosen One, the Guide, Muhammad.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "مَرْحَبًا مَرْحَبًا يَا نُورَ عَيْنِي",
             translit: "Marḥaban marḥaban yā nūra ‛aynī",
@@ -862,6 +1674,11 @@ export default [
             translit: "Marḥaban marḥaban jaddal Ḥusayn",
             translation: "welcome, welcome, grandfather of Ḥusayn.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا رَسُـولَ اللَّهِ أَهْـلًا",
             translit: "Yā rasūlallāhi ahlan",
@@ -872,6 +1689,11 @@ export default [
             translit: "Bika innā bika nus‛ad",
             translation: "through you indeed we are made happy,",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "وَبِجَاهِـهْ يَا إِلٰهِـي",
             translit: "Wa bijāhihī yā ilāhī",
@@ -882,6 +1704,11 @@ export default [
             translit: "Jud wa balligh kulla maqṣad",
             translation: "be generous and grant us every aim,",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "وَاهْدِنَا نَهْجَ سَبِيلِه",
             translit: "Wahdinā nahja sabīlih",
@@ -893,6 +1720,11 @@ export default [
             translation:
               "so that through him we may be made happy and rightly guided.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "رَبِّ فَاغْفِرْ لِي ذُنُوبِي يَا اللَّهُ",
             translit: "Rabbi faghfir lī dhunūbī yā Allāh",
@@ -903,6 +1735,11 @@ export default [
             translit: "Bibarakatil hādī Muḥammad yā Allāh",
             translation: "by the blessing of the Guide, Muhammad, O Allāh.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "رَبِّ بَلِّغْنَا بِجَـاهِـه",
             translit: "Rabbi ballighnā bijāhihī",
@@ -913,6 +1750,11 @@ export default [
             translit: "Fī jiwārihī khayra maq‛ad",
             translation: "to the best seat in his neighbourhood.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "وَصَـلَاةُ اللَّهِ تَغْشَـى",
             translit: "Wa ṣalātullāhi taghshā",
@@ -923,6 +1765,11 @@ export default [
             translit: "Ashrafar rusuli Muḥammad",
             translation: "the noblest of the messengers, Muhammad,",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "وَسَلَامٌ مُسْتَـمِـرٌّ",
             translit: "Wa salāmun mustamirrun",
@@ -933,6 +1780,11 @@ export default [
             translit: "Kulla ḥīnin yatajaddad",
             translation: "ever renewing at every moment.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "صَلَّى اللَّه عَلَى مُحَمَّدْ",
             translit: "Ṣallallāhu ‛alā Muḥammad",
@@ -943,6 +1795,11 @@ export default [
             translit: "Ṣallallāhu ‛alayhi wa sallam",
             translation: "May Allāh bless him and grant him peace",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "رَبِّ فَاجْعَلْ مُجْتَمَعْنَا",
             translit: "Rabbi faj‛al mujtama‛anā",
@@ -953,6 +1810,11 @@ export default [
             translit: "Ghāyatuhū ḥusnul khitām",
             translation: "have as its goal a good ending,",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "وَاعْطِنَا مَا قَدْ سَأَلْنَا",
             translit: "Wa a‛ṭinā mā qad sa’alnā",
@@ -963,6 +1825,11 @@ export default [
             translit: "Min ‛aṭāyākal jisām",
             translation: "of Your great gifts,",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "وَاكْرِمِ الْأَرْوَاحَ مِنَّا",
             translit: "Wa akrimil arwāḥa minnā",
@@ -973,6 +1840,11 @@ export default [
             translit: "Biliqā’i khayril anām",
             translation: "with meeting the best of mankind,",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "وَابْلِغِ الْمُخْتَارَ عَنَّا",
             translit: "Wa ablighil mukhtāra ‛annā",
@@ -983,6 +1855,242 @@ export default [
             translit: "Min ṣalātin wa salām",
             translation: "blessings and peace.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
+          new QasidaEntryModel({
+            arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
+            translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
+            translation:
+              "O Allāh, bestow blessings, peace and abundant blessing upon him and upon his family",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
+          new QasidaEntryModel({
+            arabic: "وَوُلِدَ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ مَخْتُونًا بِيَدِ الْعِنَايَةْ",
+            translit:
+              "Wa wulida ṣallallāhu ‛alayhi wa ālihī wa sallama makhtūnan biyadil ‛ināyah,",
+            translation:
+              "He was born, may Allāh bless him and his family and grant them peace, already circumcised by the hand of care, his eyes adorned with the kohl of guidance. The expanse shone with his radiance, the universe sparkled and lit up from his light, and those of creation who remained entered the pact of allegiance to him as those who had passed had entered it. The first virtue of the miracles was the extinguishing of the fire of Persia and the falling of the battlements, and the devils were struck from the sky with burning meteors, and every tyrant among the jinn returned, humbled and submissive despite the might of his dominion, because of the dazzling light that gleamed from his radiance and the brilliant illumination that shone from his splendour, until he was presented to the wet nurses.",
+          }),
+          new QasidaEntryModel({
+            arabic: "مَكْحُولًا بِكُحْلِ الْهِدَايَةْ",
+            translit: "makḥūlan bikuḥlil hidāyah,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "فَأَشْرَقَ بِبَهَائِهِ الْفَضَاء",
+            translit: "fa ashraqa bibahā’ihil faḍā’,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَتَلَأْلَأَ الْكَوْنُ مِنْ نُورِهِ وَأَضَاء",
+            translit: "wa tala’la’al kawnu min nūrihī wa aḍā’,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَدَخَلَ فِي عَقْدِ بَيْعَتِهِ مَنْ بَقِيَ مِنَ الْخَلَائِقِ كَمَا دَخَلَ فِيهَا مَنْ مَضَى",
+            translit:
+              "wa dakhala fī ‛aqdi bay‛atihī man baqiya minal khalā’iqi kamā dakhala fīhā man maḍā.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "أَوَّلُ فَضِيلَةِ الْمُعْجِزَاتْ",
+            translit: "Awwalu faḍīlatil mu‛jizāt,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "بِخُمُودِ نَارِ فَارِسَ وَسُقُوطِ الشُّرُفَاتْ",
+            translit: "bikhumūdi nāri Fārisa wa suqūṭish shurufāt,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَرُمِيَتِ الشَّيَاطِينُ مِنَ السَّمَاءِ بِالشُّهُبِ الْمُحْرِقَاتْ",
+            translit:
+              "wa rumiyatish shayāṭīnu minas samā’i bish shuhubil muḥriqāt,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَرَجَعَ كُلُّ جَبَّارٍ مِنَ الْجِنِّ وَهُوَ بِصَوْلَةِ سَلْطَنَتِهِ ذَلِيلٌ خَاضِعْ",
+            translit:
+              "wa raja‛a kullu jabbārin minal jinni wa huwa biṣawlati salṭanatihī dhalīlun khāḍi‛,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "لِمَا تَأَلَّقَ مِنْ سَنَاهُ النُّورُ السَّاطِعْ",
+            translit: "limā ta’allaqa min sanāhun nūrus sāṭi‛,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَأَشْرَقَ مِنْ بَهَائِهِ الضِّيَاءُ اللاَّمِعْ",
+            translit: "wa ashraqa min bahā’ihiḍ ḍiyā’ul lāmi‛,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "حَتَّى عُرِضَ عَلَى الْمَرَاضِعْ",
+            translit: "ḥattā ‛uriḍa ‛alal marāḍi‛.",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
+          new QasidaEntryModel({
+            arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
+            translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
+            translation:
+              "O Allāh, bestow blessings, peace and abundant blessing upon him and upon his family",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
+          new QasidaEntryModel({
+            arabic: "قِيلَ: مَنْ يَكْفُلُ هَذِهِ الدُّرَّةَ الْيَتِيمَةْ",
+            translit: "Qīl: man yakfulu hādhihid durratal yatīmah,",
+            translation:
+              "It was said: Who will take care of this orphan pearl, for which no price can be found? The birds said: We will take care of him and gain from his great aspiration. The wild beasts said: We are more deserving of that, so that we may gain his honour and esteem. It was said: O communities, be still, for Allāh has decreed in His ancient, prior wisdom that His Prophet Muhammad, may Allāh bless him and his family and grant them peace, will be nursed by Ḥalīmah the forbearing.",
+          }),
+          new QasidaEntryModel({
+            arabic: "الَّتِي لَا تُوجَدُ لَهَا قِيمَةْ؟",
+            translit: "allatī lā tūjadu lahā qīmah? Qālatiṭ ṭuyūr:",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "قَالَتِ الطُّيُورُ: نَحْنُ نَكْفُلُهُ وَنَغْتَنِمُ هِمَّتَهُ الْعَظِيمَةْ",
+            translit: "naḥnu nakfuluhū wa naghtanimu himmatahul ‛aẓīmah.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "قَالَتِ الْوُحُوشُ: نَحْنُ أَوْلَى بِذَلِكَ لِكَيْ نَنَالَ شَرَفَهُ وَتَعْظِيمَهْ",
+            translit:
+              "Qālatil wuḥūsh: naḥnu awlā bidhālika likay nanāla sharafahū wa ta‛ẓīmah.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "قِيلَ: يَا مَعْشَرَ الْأُمَمِ اسْكُنُوا فَإِنَّ اللَّهَ قَدْ حَكَمَ فِي سَابِقِ حِكْمَتِهِ الْقَدِيمَةْ",
+            translit:
+              "Qīl: yā ma‛asharal umamis kunū fa innallāha qad ḥakama fī sābiqi ḥikmatihil qadīmah,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "بِأَنَّ نَبِيَّهُ مُحَمَّدًا صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ يَكُونُ رَضِيعًا لِحَلِيمَةَ الْحَلِيمَةْ",
+            translit:
+              "bi anna nabiyyahū Muḥammadan ṣallallāhu ‛alayhi wa ālihī wa sallama yakūnu raḍī‛an liḥalīmatal ḥalīmah.",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
+          new QasidaEntryModel({
+            arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
+            translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
+            translation:
+              "O Allāh, bestow blessings, peace and abundant blessing upon him and upon his family",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
+          new QasidaEntryModel({
+            arabic: "ثُمَّ أَعْرَضَ عَنْهُ مَرَاضِعُ الْإِنْسِ لِمَا سَبَقَ فِي طَيِّ الْغَيْبْ",
+            translit:
+              "Thumma a‛raḍa ‛anhu marāḍi‛ul insi limā sabaqa fī ṭayyil ghayb,",
+            translation:
+              "Then the human wet nurses turned away from him, because of what had been decreed in the folds of the unseen of good fortune for Ḥalīmah daughter of Abū Dhu’ayb. When her gaze fell upon him she hurried to him, placed him in her lap and pressed him to her chest. He beamed at her, smiling, and a light came out of his mouth that reached the sky. She carried him to her mount and travelled with him to her people. When she arrived with him at her dwelling, she witnessed his blessing upon her flock, and every day she saw a proof from him and raised his rank and standing, until he was enfolded in the garment of kindness and safety and entered among his brothers with the boys.",
+          }),
+          new QasidaEntryModel({
+            arabic: "مِنَ السَّعَادَةِ لِحَلِيمَةَ بِنْتِ أَبِي ذُؤَيْبْ",
+            translit: "minas sa‛ādati liḥalīmata binti Abī Dhu’ayb.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "فَلَمَّا وَقَعَ نَظَرُهَا عَلَيْهْ",
+            translit: "Falammā waqa‛a naẓaruhā ‛alayh,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "بَادَرَتْ مُسْرِعَةً إِلَيْهْ",
+            translit: "bādarat musri‛atan ilayh,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَوَضَعَتْهُ فِي حِجْرِهَا",
+            translit: "wa waḍa‛athu fī ḥijrihā,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَضَمَّتْهُ إِلَى صَدْرِهَا",
+            translit: "wa ḍammathu ilā ṣadrihā,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "فَهَشَّ لَهَا مُتَبَسِّمًا",
+            translit: "fa hashsha lahā mutabassimā,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "فَخَرَجَ مِنْ ثَغْرِهِ نُورٌ لَحِقَ بِالسَّمَاء",
+            translit: "fa kharaja min thaghrihī nūrun laḥiqa bis samā’,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "فَحَمَلَتْهُ إِلَى رَحْلِهَا",
+            translit: "fa ḥamalathu ilā raḥlihā,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَارْتَحَلَتْ بِهِ إِلَى أَهْلِهَا",
+            translit: "wartaḥalat bihī ilā ahlihā.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "فَلَمَّا وَصَلَتْ بِهِ إِلَى مُقَامِهَا",
+            translit: "Falammā waṣalat bihī ilā muqāmihā,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "عَايَنَتْ بَرَكَتَهُ عَلَى أَغْنَامِهَا",
+            translit: "‛āyanat barakatahū ‛alā aghnāmihā,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَكَانَتْ كُلَّ يَوْمٍ تَرَى مِنْهُ بُرْهَانًا",
+            translit: "wa kānat kulla yawmin tarā minhu burhānā,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَتَرْفَعُ لَهُ قَدْرًا وَشَأْنًا",
+            translit: "wa tarfa‛u lahū qadran wa sha’nā,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "حَتَّى انْدَرَجَ فِي حُلَّةِ اللُّطْفِ وَالْأَمَانْ",
+            translit: "ḥattā indaraja fī ḥullatil luṭfi wal amān,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَدَخَلَ بَيْنَ إِخْوَتِهِ مَعَ الصِّبْيَانْ",
+            translit: "wa dakhala bayna ikhwatihī ma‛aṣ ṣibyān.",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
@@ -996,144 +2104,708 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic:
-              "وَوُلِدَ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ مَخْتُونًا بِيَدِ الْعِنَايَةْ * مَكْحُولًا بِكُحْلِ الْهِدَايَةْ * فَأَشْرَقَ بِبَهَائِهِ الْفَضَاء * وَتَلَأْلَأَ الْكَوْنُ مِنْ نُورِهِ وَأَضَاء * وَدَخَلَ فِي عَقْدِ بَيْعَتِهِ مَنْ بَقِيَ مِنَ الْخَلَائِقِ كَمَا دَخَلَ فِيهَا مَنْ مَضَى * أَوَّلُ فَضِيلَةِ الْمُعْجِزَاتْ * بِخُمُودِ نَارِ فَارِسَ وَسُقُوطِ الشُّرُفَاتْ * وَرُمِيَتِ الشَّيَاطِينُ مِنَ السَّمَاءِ بِالشُّهُبِ الْمُحْرِقَاتْ * وَرَجَعَ كُلُّ جَبَّارٍ مِنَ الْجِنِّ وَهُوَ بِصَوْلَةِ سَلْطَنَتِهِ ذَلِيلٌ خَاضِعْ * لِمَا تَأَلَّقَ مِنْ سَنَاهُ النُّورُ السَّاطِعْ * وَأَشْرَقَ مِنْ بَهَائِهِ الضِّيَاءُ اللاَّمِعْ * حَتَّى عُرِضَ عَلَى الْمَرَاضِعْ *",
-            translit:
-              "Wa wulida ṣallallāhu ‛alayhi wa ālihī wa sallama makhtūnan biyadil ‛ināyah, makḥūlan bikuḥlil hidāyah, fa ashraqa bibahā’ihil faḍā’, wa tala’la’al kawnu min nūrihī wa aḍā’, wa dakhala fī ‛aqdi bay‛atihī man baqiya minal khalā’iqi kamā dakhala fīhā man maḍā. Awwalu faḍīlatil mu‛jizāt, bikhumūdi nāri Fārisa wa suqūṭish shurufāt, wa rumiyatish shayāṭīnu minas samā’i bish shuhubil muḥriqāt, wa raja‛a kullu jabbārin minal jinni wa huwa biṣawlati salṭanatihī dhalīlun khāḍi‛, limā ta’allaqa min sanāhun nūrus sāṭi‛, wa ashraqa min bahā’ihiḍ ḍiyā’ul lāmi‛, ḥattā ‛uriḍa ‛alal marāḍi‛.",
-            translation:
-              "He was born, may Allāh bless him and his family and grant them peace, already circumcised by the hand of care, his eyes adorned with the kohl of guidance. The expanse shone with his radiance, the universe sparkled and lit up from his light, and those of creation who remained entered the pact of allegiance to him as those who had passed had entered it. The first virtue of the miracles was the extinguishing of the fire of Persia and the falling of the battlements, and the devils were struck from the sky with burning meteors, and every tyrant among the jinn returned, humbled and submissive despite the might of his dominion, because of the dazzling light that gleamed from his radiance and the brilliant illumination that shone from his splendour, until he was presented to the wet nurses.",
-          }),
-          new QasidaEntryModel({
-            arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
-            translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
-            translation:
-              "O Allāh, bestow blessings, peace and abundant blessing upon him and upon his family",
-          }),
-          new QasidaEntryModel({
-            arabic:
-              "قِيلَ: مَنْ يَكْفُلُ هَذِهِ الدُّرَّةَ الْيَتِيمَةْ * الَّتِي لَا تُوجَدُ لَهَا قِيمَةْ؟ * قَالَتِ الطُّيُورُ: نَحْنُ نَكْفُلُهُ وَنَغْتَنِمُ هِمَّتَهُ الْعَظِيمَةْ * قَالَتِ الْوُحُوشُ: نَحْنُ أَوْلَى بِذَلِكَ لِكَيْ نَنَالَ شَرَفَهُ وَتَعْظِيمَهْ * قِيلَ: يَا مَعْشَرَ الْأُمَمِ اسْكُنُوا فَإِنَّ اللَّهَ قَدْ حَكَمَ فِي سَابِقِ حِكْمَتِهِ الْقَدِيمَةْ * بِأَنَّ نَبِيَّهُ مُحَمَّدًا صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ يَكُونُ رَضِيعًا لِحَلِيمَةَ الْحَلِيمَةْ *",
-            translit:
-              "Qīl: man yakfulu hādhihid durratal yatīmah, allatī lā tūjadu lahā qīmah? Qālatiṭ ṭuyūr: naḥnu nakfuluhū wa naghtanimu himmatahul ‛aẓīmah. Qālatil wuḥūsh: naḥnu awlā bidhālika likay nanāla sharafahū wa ta‛ẓīmah. Qīl: yā ma‛asharal umamis kunū fa innallāha qad ḥakama fī sābiqi ḥikmatihil qadīmah, bi anna nabiyyahū Muḥammadan ṣallallāhu ‛alayhi wa ālihī wa sallama yakūnu raḍī‛an liḥalīmatal ḥalīmah.",
-            translation:
-              "It was said: Who will take care of this orphan pearl, for which no price can be found? The birds said: We will take care of him and gain from his great aspiration. The wild beasts said: We are more deserving of that, so that we may gain his honour and esteem. It was said: O communities, be still, for Allāh has decreed in His ancient, prior wisdom that His Prophet Muhammad, may Allāh bless him and his family and grant them peace, will be nursed by Ḥalīmah the forbearing.",
-          }),
-          new QasidaEntryModel({
-            arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
-            translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
-            translation:
-              "O Allāh, bestow blessings, peace and abundant blessing upon him and upon his family",
-          }),
-          new QasidaEntryModel({
-            arabic:
-              "ثُمَّ أَعْرَضَ عَنْهُ مَرَاضِعُ الْإِنْسِ لِمَا سَبَقَ فِي طَيِّ الْغَيْبْ * مِنَ السَّعَادَةِ لِحَلِيمَةَ بِنْتِ أَبِي ذُؤَيْبْ * فَلَمَّا وَقَعَ نَظَرُهَا عَلَيْهْ * بَادَرَتْ مُسْرِعَةً إِلَيْهْ * وَوَضَعَتْهُ فِي حِجْرِهَا * وَضَمَّتْهُ إِلَى صَدْرِهَا * فَهَشَّ لَهَا مُتَبَسِّمًا * فَخَرَجَ مِنْ ثَغْرِهِ نُورٌ لَحِقَ بِالسَّمَاء * فَحَمَلَتْهُ إِلَى رَحْلِهَا * وَارْتَحَلَتْ بِهِ إِلَى أَهْلِهَا * فَلَمَّا وَصَلَتْ بِهِ إِلَى مُقَامِهَا * عَايَنَتْ بَرَكَتَهُ عَلَى أَغْنَامِهَا * وَكَانَتْ كُلَّ يَوْمٍ تَرَى مِنْهُ بُرْهَانًا * وَتَرْفَعُ لَهُ قَدْرًا وَشَأْنًا * حَتَّى انْدَرَجَ فِي حُلَّةِ اللُّطْفِ وَالْأَمَانْ * وَدَخَلَ بَيْنَ إِخْوَتِهِ مَعَ الصِّبْيَانْ *",
-            translit:
-              "Thumma a‛raḍa ‛anhu marāḍi‛ul insi limā sabaqa fī ṭayyil ghayb, minas sa‛ādati liḥalīmata binti Abī Dhu’ayb. Falammā waqa‛a naẓaruhā ‛alayh, bādarat musri‛atan ilayh, wa waḍa‛athu fī ḥijrihā, wa ḍammathu ilā ṣadrihā, fa hashsha lahā mutabassimā, fa kharaja min thaghrihī nūrun laḥiqa bis samā’, fa ḥamalathu ilā raḥlihā, wartaḥalat bihī ilā ahlihā. Falammā waṣalat bihī ilā muqāmihā, ‛āyanat barakatahū ‛alā aghnāmihā, wa kānat kulla yawmin tarā minhu burhānā, wa tarfa‛u lahū qadran wa sha’nā, ḥattā indaraja fī ḥullatil luṭfi wal amān, wa dakhala bayna ikhwatihī ma‛aṣ ṣibyān.",
-            translation:
-              "Then the human wet nurses turned away from him, because of what had been decreed in the folds of the unseen of good fortune for Ḥalīmah daughter of Abū Dhu’ayb. When her gaze fell upon him she hurried to him, placed him in her lap and pressed him to her chest. He beamed at her, smiling, and a light came out of his mouth that reached the sky. She carried him to her mount and travelled with him to her people. When she arrived with him at her dwelling, she witnessed his blessing upon her flock, and every day she saw a proof from him and raised his rank and standing, until he was enfolded in the garment of kindness and safety and entered among his brothers with the boys.",
-          }),
-          new QasidaEntryModel({
-            arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
-            translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
-            translation:
-              "O Allāh, bestow blessings, peace and abundant blessing upon him and upon his family",
-          }),
-          new QasidaEntryModel({
-            arabic:
-              "فَبَيْنَمَا هُوَ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ ذَاتَ يَوْمٍ نَاءٍ عَنِ الْأَوْطَانِ، إِذْ أَقْبَلَ عَلَيْهِ ثَلَاثَةُ نَفَرْ * كَأَنَّ وُجُوهَهُمُ الشَّمْسُ وَالْقَمَرُ* فَانْطَلَقَ الصِّبْيَانُ هَرَبًا * وَوَقَفَ النَّبِيُّ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ مُتَعَجِّبًا * فَأَضْجَعُوهُ عَلَى الْأَرْضِ إِضْجَاعًا خَفِيفًا * وَشَقُّوا بَطْنَهُ شَقًّا لَطِيفًا * ثُمَّ أَخْرَجُوا قَلْبَ سَيِّدِ وَلَدِ عَدْنَانْ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ * وَشَرَحُوهُ بِسِكِّينِ الْإِحْسَانْ * وَنَزَعُوا مِنْهُ حَظَّ الشَّيْطَانْ * وَمَلَؤُوهُ بِالْحِلْمِ وَالْعِلْمِ وَالْيَقِينِ وَالرِّضْوَانْ * وَأَعَادُوهُ إِلَى مَكَانِهِ فَقَامَ الْحَبِيبُ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ سَوِيًّا كَمَا كَانْ *",
+              "فَبَيْنَمَا هُوَ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ ذَاتَ يَوْمٍ نَاءٍ عَنِ الْأَوْطَانِ، إِذْ أَقْبَلَ عَلَيْهِ ثَلَاثَةُ نَفَرْ",
             translit:
               "Fabaynamā huwa ṣallallāhu ‛alayhi wa ālihī wa sallama dhāta yawmin nā’in ‛anil awṭān, idh aqbala ‛alayhi thalāthatu nafar, ka anna wujūhahumush shamsu wal qamar, fanṭalaqaṣ ṣibyānu harabā, wa waqafan nabiyyu ṣallallāhu ‛alayhi wa ālihī wa sallama muta‛ajjibā, fa aḍja‛ūhu ‛alal arḍi iḍjā‛an khafīfā, wa shaqqū baṭnahū shaqqan laṭīfā, thumma akhrajū qalba sayyidi waladi ‛adnān ṣallallāhu ‛alayhi wa ālihī wa sallam, wa sharaḥūhu bisikkīnil iḥsān, wa naza‛ū minhu ḥaẓẓash shayṭān, wa mala’ūhu bil ḥilmi wal ‛ilmi wal yaqīni war riḍwān, wa a‛ādūhu ilā makānihī faqāmal ḥabību ṣallallāhu ‛alayhi wa ālihī wa sallama sawiyyan kamā kān.",
             translation:
               "One day, while he, may Allāh bless him and his family and grant them peace, was far from home, three men came upon him, their faces like the sun and the moon. The boys ran away in flight, and the Prophet, may Allāh bless him and his family and grant them peace, stood in wonder. They laid him gently on the ground, split open his belly with a light cut, then took out the heart of the master of the descendants of ‛Adnān, may Allāh bless him and his family and grant them peace, opened it with the knife of excellence, removed from it the share of Satan, filled it with forbearance, knowledge, certainty and good pleasure, and returned it to its place; and the Beloved, may Allāh bless him and his family and grant them peace, stood up whole as he had been.",
           }),
           new QasidaEntryModel({
+            arabic: "كَأَنَّ وُجُوهَهُمُ الشَّمْسُ وَالْقَمَرُ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "فَانْطَلَقَ الصِّبْيَانُ هَرَبًا",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَوَقَفَ النَّبِيُّ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ مُتَعَجِّبًا",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "فَأَضْجَعُوهُ عَلَى الْأَرْضِ إِضْجَاعًا خَفِيفًا",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَشَقُّوا بَطْنَهُ شَقًّا لَطِيفًا",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "ثُمَّ أَخْرَجُوا قَلْبَ سَيِّدِ وَلَدِ عَدْنَانْ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَشَرَحُوهُ بِسِكِّينِ الْإِحْسَانْ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَنَزَعُوا مِنْهُ حَظَّ الشَّيْطَانْ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَمَلَؤُوهُ بِالْحِلْمِ وَالْعِلْمِ وَالْيَقِينِ وَالرِّضْوَانْ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "وَأَعَادُوهُ إِلَى مَكَانِهِ فَقَامَ الْحَبِيبُ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ سَوِيًّا كَمَا كَانْ",
+            translit: "",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
+          new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
             translation:
               "O Allāh, bestow blessings, peace and abundant blessing upon him and upon his family",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic:
-              "فَقَالَتِ الْمَلَائِكَةُ: يَا حَبِيبَ ٱلرَّحْمَٰنِ لَوْ عَلِمْتَ مَا يُرَادُ بِكَ مِنَ الْخَيْرْ * لَعَرَفْتَ قَدْرَ مَنْزِلَتِكَ عَلَى الْغَيْرْ * وَازْدَدْتَ فَرَحًا وَسُرُورًا * وَبَهْجَةً وَنُورًا * يَا مُحَمَّدُ أَبْشِرْ فَقَدْ نُشِرَتْ فِي الْكَائِنَاتِ أَعْلَامُ عُلُومِكْ * وَتَبَاشَرَتِ الْمَخْلُوقَاتُ بِقُدُومِكْ * وَلَمْ يَبْقَ شَيْءٌ مِمَّا خَلَقَ اللَّهُ تَعَالَى إِلَّا جَاءَ لِأَمْرِكَ طَائِعًا * وَلِمَقَامِكَ سَامِعًا * فَسَيَأْتِيكَ الْبَعِيرُ * بِذِمَامِكَ يَسْتَجِيرُ * وَالضَّبُّ وَالْغَزَالَةْ * يَشْهَدَانِ لَكَ بِالرِّسَالَةْ * وَالشَّجَرُ وَالْقَمَرُ وَالذِّئْب * يَنْطِقُونَ بِنُبُوَّتِكَ عَنْ قَرِيبْ * وَمَرْكَبُكَ الْبُرَاقْ * إِلَى جَمَالِكَ مُشْتَاقْ * وَجِبْرِيلُ شَاوُوشُ مَمْلَكَتِكَ قَدْ أَعْلَنَ بِذِكْرِكَ فِي الْآفَاقْ * وَالْقَمَرُ مَأْمُورٌ لَكَ بِالْاِنْشِقَاق *",
+              "فَقَالَتِ الْمَلَائِكَةُ: يَا حَبِيبَ ٱلرَّحْمَٰنِ لَوْ عَلِمْتَ مَا يُرَادُ بِكَ مِنَ الْخَيْرْ",
             translit:
               "Fa qālatil malā’ikah: yā ḥabībar raḥmān, law ‛alimta mā yurādu bika minal khayr, la‛arafta qadra manzilatika ‛alal ghayr, wa zdadta faraḥaw wa surūrā, wa bahjataw wa nūrā. Yā Muḥammadu abshir, faqad nushirat fil kā’ināti a‛lāmu ‛ulūmik, wa tabāsharatil makhlūqātu biqudūmik, wa lam yabqa shay’un mimmā khalaqallāhu ta‛ālā illā jā’a li amrika ṭā’i‛ā, wa li maqāmika sāmi‛ā. Fa sayatīkal ba‛īr, bidhimāmika yastajīr, waḍ ḍabbu wal ghazālah, yashhadāni laka bir risālah, wash shajaru wal qamaru wadh dhi’b, yanṭiqūna binubuwwatika ‛an qarīb. Wa markabukal Burāq, ilā jamālika mushtāq, wa Jibrīlu shāwūshu mamlakatika qad a‛lana bidhikrika fil āfāq, wal qamaru ma’mūrun laka bil inshiqāq.",
             translation:
               "The angels said: O Beloved of the Most Merciful, if you knew the good that is intended for you, you would know the measure of your station above others and would grow in joy and delight, in gladness and light. O Muhammad, rejoice! The banners of your knowledge have been spread through creation, creatures have rejoiced at your arrival, and nothing that Allāh, Exalted is He, created remains except that it has come obedient to your command and attentive to your station. The camel will come to you seeking protection in your care; the lizard and the gazelle will testify for you to the Message; the tree, the moon and the wolf will soon speak of your prophethood. Your mount, the Burāq, longs for your beauty; Jibrīl, the herald of your realm, has proclaimed your mention across the horizons; and the moon is commanded for you to split.",
           }),
           new QasidaEntryModel({
+            arabic: "لَعَرَفْتَ قَدْرَ مَنْزِلَتِكَ عَلَى الْغَيْرْ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَازْدَدْتَ فَرَحًا وَسُرُورًا",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَبَهْجَةً وَنُورًا",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "يَا مُحَمَّدُ أَبْشِرْ فَقَدْ نُشِرَتْ فِي الْكَائِنَاتِ أَعْلَامُ عُلُومِكْ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَتَبَاشَرَتِ الْمَخْلُوقَاتُ بِقُدُومِكْ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَلَمْ يَبْقَ شَيْءٌ مِمَّا خَلَقَ اللَّهُ تَعَالَى إِلَّا جَاءَ لِأَمْرِكَ طَائِعًا",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَلِمَقَامِكَ سَامِعًا",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "فَسَيَأْتِيكَ الْبَعِيرُ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "بِذِمَامِكَ يَسْتَجِيرُ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَالضَّبُّ وَالْغَزَالَةْ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "يَشْهَدَانِ لَكَ بِالرِّسَالَةْ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَالشَّجَرُ وَالْقَمَرُ وَالذِّئْب",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "يَنْطِقُونَ بِنُبُوَّتِكَ عَنْ قَرِيبْ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَمَرْكَبُكَ الْبُرَاقْ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "إِلَى جَمَالِكَ مُشْتَاقْ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَجِبْرِيلُ شَاوُوشُ مَمْلَكَتِكَ قَدْ أَعْلَنَ بِذِكْرِكَ فِي الْآفَاقْ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَالْقَمَرُ مَأْمُورٌ لَكَ بِالْاِنْشِقَاق",
+            translit: "",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
+          new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
             translation:
               "O Allāh, bestow blessings, peace and abundant blessing upon him and upon his family",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
-            arabic:
-              "وَكُلُّ مَنْ فِي الْكَوْنِ مُتَشَوِّقٌ لِظُهُورِكْ * مُنْتَظِرٌ لِإِشْرَاقِ نُورِكْ * فَبَيْنَمَا الْحَبِيبُ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ مُنْصِتٌ لِسَمَاعِ تِلْكَ الْأَشْبَاحْ * وَوَجْهُهُ مُتَهَلِّلٌ كَنُورِ الصَّبَاحْ * إِذْ أَقْبَلَتْ حَلِيمَةُ مُعْلِنَةً باِلصِّيَاحْ * تَقُولُ: وَا غَرِيبَاهُ، فَقَالَتِ الْمَلَائِكَةُ: يَا مُحَمَّدُ مَا أَنْتَ بِغَرِيبْ * بَلْ أَنْتَ مِنَ اللَّهِ قَرِيبْ * وَأَنْتَ لَهُ صَفِيٌّ وَحَبِيبْ * قَالَتْ حَلِيمَةُ: وَا وَحِيدَاهُ * فَقَالَتِ الْمَلَائِكَةُ: يَا مُحَمَّدُ مَا أَنْتَ بِوَحِيدْ * بَلْ أَنْتَ صَاحِبُ التَّأْيِيدْ * وَأَنِيسُكَ الْحَمِيدُ الْمَجِيدْ * وَإِخْوَانُكَ إِخْوَانُكَ مِنَ الْمَلَائِكَةِ وَأَهْلِ التَّوْحِيدْ * قَالَتْ حَلِيمَةُ: وَا يَتِيمَاهُ * فَقَالَتِ الْمَلَائِكَةُ: لِلَّهِ دَرُّكَ مِنْ يَتِيمْ * فَإِنَّ قَدْرَكَ عِنْدَ اللَّهِ عَظِيمٌ *",
-            translit:
-              "Wa kullu man fil kawni mutashawwiqun li ẓuhūrik, muntaẓirun li ishrāqi nūrik. Fa baynamal ḥabību ṣallallāhu ‛alayhi wa ālihī wa sallama munṣitun li samā‛i tilkal ashbāḥ, wa wajhuhū mutahallilun ka nūriṣ ṣabāḥ, idh aqbalat Ḥalīmatu mu‛linatan biṣ ṣiyāḥ, taqūl: Wā gharībāh. Fa qālatil malā’ikah: yā Muḥammadu mā anta bi gharīb, bal anta minallāhi qarīb, wa anta lahū ṣafiyyun wa ḥabīb. Qālat Ḥalīmah: Wā waḥīdāh. Fa qālatil malā’ikah: yā Muḥammadu mā anta biwaḥīd, bal anta ṣāḥibut ta’yīd, wa anīsukal ḥamīdul majīd, wa ikhwānuka ikhwānuka minal malā’ikati wa ahlit tawḥīd. Qālat Ḥalīmah: Wā yatīmāh. Fa qālatil malā’ikah: lillāhi darruka min yatīm, fa inna qadraka ‛indallāhi ‛aẓīm.",
+            arabic: "وَكُلُّ مَنْ فِي الْكَوْنِ مُتَشَوِّقٌ لِظُهُورِكْ",
+            translit: "Wa kullu man fil kawni mutashawwiqun li ẓuhūrik,",
             translation:
               "Everyone in the universe longs for your appearance and awaits the shining of your light. While the Beloved, may Allāh bless him and his family and grant them peace, was listening quietly to those figures, his face radiant like the light of morning, Ḥalīmah came, crying out and saying: O, the stranger! The angels said: O Muhammad, you are not a stranger; rather you are close to Allāh, and you are His chosen one and beloved. Ḥalīmah said: O, the lonely one! The angels said: O Muhammad, you are not alone; rather you are the one granted support, your companion is the Praiseworthy, the Glorious, and your brothers are from the angels and the people of oneness. Ḥalīmah said: O, the orphan! The angels said: How excellent you are, as an orphan, for your standing with Allāh is great.",
           }),
           new QasidaEntryModel({
+            arabic: "مُنْتَظِرٌ لِإِشْرَاقِ نُورِكْ",
+            translit: "muntaẓirun li ishrāqi nūrik.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "فَبَيْنَمَا الْحَبِيبُ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ مُنْصِتٌ لِسَمَاعِ تِلْكَ الْأَشْبَاحْ",
+            translit:
+              "Fa baynamal ḥabību ṣallallāhu ‛alayhi wa ālihī wa sallama munṣitun li samā‛i tilkal ashbāḥ,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَوَجْهُهُ مُتَهَلِّلٌ كَنُورِ الصَّبَاحْ",
+            translit: "wa wajhuhū mutahallilun ka nūriṣ ṣabāḥ,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "إِذْ أَقْبَلَتْ حَلِيمَةُ مُعْلِنَةً باِلصِّيَاحْ",
+            translit: "idh aqbalat Ḥalīmatu mu‛linatan biṣ ṣiyāḥ,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "تَقُولُ: وَا غَرِيبَاهُ، فَقَالَتِ الْمَلَائِكَةُ: يَا مُحَمَّدُ مَا أَنْتَ بِغَرِيبْ",
+            translit: "taqūl: Wā gharībāh. Fa qālatil malā’ikah:",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "بَلْ أَنْتَ مِنَ اللَّهِ قَرِيبْ",
+            translit:
+              "yā Muḥammadu mā anta bi gharīb, bal anta minallāhi qarīb,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَأَنْتَ لَهُ صَفِيٌّ وَحَبِيبْ",
+            translit: "wa anta lahū ṣafiyyun wa ḥabīb.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "قَالَتْ حَلِيمَةُ: وَا وَحِيدَاهُ",
+            translit: "Qālat Ḥalīmah:",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "فَقَالَتِ الْمَلَائِكَةُ: يَا مُحَمَّدُ مَا أَنْتَ بِوَحِيدْ",
+            translit:
+              "Wā waḥīdāh. Fa qālatil malā’ikah: yā Muḥammadu mā anta biwaḥīd,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "بَلْ أَنْتَ صَاحِبُ التَّأْيِيدْ",
+            translit: "bal anta ṣāḥibut ta’yīd,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَأَنِيسُكَ الْحَمِيدُ الْمَجِيدْ",
+            translit: "wa anīsukal ḥamīdul majīd,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَإِخْوَانُكَ إِخْوَانُكَ مِنَ الْمَلَائِكَةِ وَأَهْلِ التَّوْحِيدْ",
+            translit:
+              "wa ikhwānuka ikhwānuka minal malā’ikati wa ahlit tawḥīd.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "قَالَتْ حَلِيمَةُ: وَا يَتِيمَاهُ",
+            translit: "Qālat Ḥalīmah:",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "فَقَالَتِ الْمَلَائِكَةُ: لِلَّهِ دَرُّكَ مِنْ يَتِيمْ",
+            translit:
+              "Wā yatīmāh. Fa qālatil malā’ikah: lillāhi darruka min yatīm,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "فَإِنَّ قَدْرَكَ عِنْدَ اللَّهِ عَظِيمٌ",
+            translit: "fa inna qadraka ‛indallāhi ‛aẓīm.",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
+          new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
             translation:
               "O Allāh, bestow blessings, peace and abundant blessing upon him and upon his family",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
-            arabic:
-              "فَلَمَّا رَأَتْهُ حَلِيمَةُ سَالِمًا مِنَ الْأَهْوَالْ * رَجَعَتْ بِهِ مَسْرُورَةً إِلَى الْأَطْلَالْ * ثُمَّ قَصَّتْ خَبَرَهُ عَلَى بَعْضِ الْكُهَّانْ * وَأَعَادَتْ عَلَيْهِ مَا تَمَّ مِنْ أَمْرِهِ وَمَا كَانْ * فَقَالَ لَهُ الْكَاهِنُ: يَا ابْنَ زَمْزَمَ وَالْمَقَامْ * وَالرُّكْنِ وَالْبَيْتِ الْحَرَامْ * أَفِي الْيَقَظَةِ رَأَيْتَ هَذَا أَمْ فِي الْمَنَامْ؟ *  فَقَالَ: بَلْ -وَحُرْمَةِ الْمَلِكِ الْعَلَّامْ- * شَاهَدْتُهُمْ كِفَاحًا لَا أَشُكُّ فِي ذَلِكَ وَلَا أُضَامْ * فَقَالَ لَهُ الْكَاهِنُ: أَبْشِرْ أَيُّهَا الْغُلَامْ * فَأَنْتَ صَاحِبُ الْأَعْلَامْ * وَنُبُوَّتُكَ لِلْأَنْبِيَاءِ قُفْلٌ وَخِتَامْ * عَلَيْكَ يَنْزِلُ جِبْرِيلْ * وَعَلَى بِسَاطِ الْقُدْسِ يُخَاطِبُكَ الْجَلِيلْ * وَمَنْ ذَا الَّذِي يَحْصُرُ مَا حَوَيْتَ مِنَ التَّفْضِيلْ؟! * وَعَنْ بَعْضِ وَصْفِ مَعْنَاكَ يَقْصُرُ لِسَانُ الْمَادِحِ الْمُطِيلْ *",
+            arabic: "فَلَمَّا رَأَتْهُ حَلِيمَةُ سَالِمًا مِنَ الْأَهْوَالْ",
             translit:
               "Falammā ra’athu Ḥalīmatu sālimam minal ahwāl, raja‛at bihī masrūratan ilal aṭlāl. Thumma qaṣṣat khabarahū ‛alā ba‛ḍil kuhhān, wa a‛ādat ‛alayhi mā tamma min amrihī wa mā kān. Fa qāla lahul kāhin: yabna Zamzama wal maqām, war rukni wal baytil ḥarām, afil yaqaẓati ra’ayta hādhā am fil manām? Fa qāl: bal, wa ḥurmatil malikil ‛allām, shāhadtuhum kifāḥā, lā ashukku fī dhālika wa lā uḍām. Fa qāla lahul kāhin: abshir ayyuhal ghulām, fa anta ṣāḥibul a‛lām, wa nubuwwatuka lil anbiyā’i qufluw wa khitām. ‛Alayka yanzilu Jibrīl, wa ‛alā bisāṭil quddusi yukhāṭibukal jalīl, wa man dhal ladhī yaḥṣuru mā ḥawayta minat tafḍīl? Wa ‛an ba‛ḍi waṣfi ma‛nāka yaqṣuru lisānul mādiḥil muṭīl.",
             translation:
               "When Ḥalīmah saw him safe from the terrors, she returned with him, joyful, to the encampment. Then she told his story to one of the soothsayers and related to him what had happened. The soothsayer said to him: O son of Zamzam and the Maqām, the Corner and the Sacred House, did you see this while awake or in a dream? He said: Rather, by the sanctity of the All-Knowing King, I saw them face to face; I have no doubt about it and I am not wronged. The soothsayer said to him: Rejoice, O boy, for you are the bearer of banners, and your prophethood is a lock and seal for the prophets. Jibrīl will descend upon you, the Majestic will address you upon the carpet of holiness, and who can encompass the excellence you embody? The tongue of the praiser, however long he speaks, falls short of describing even some of your meaning.",
           }),
           new QasidaEntryModel({
+            arabic: "رَجَعَتْ بِهِ مَسْرُورَةً إِلَى الْأَطْلَالْ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "ثُمَّ قَصَّتْ خَبَرَهُ عَلَى بَعْضِ الْكُهَّانْ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَأَعَادَتْ عَلَيْهِ مَا تَمَّ مِنْ أَمْرِهِ وَمَا كَانْ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "فَقَالَ لَهُ الْكَاهِنُ: يَا ابْنَ زَمْزَمَ وَالْمَقَامْ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَالرُّكْنِ وَالْبَيْتِ الْحَرَامْ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "أَفِي الْيَقَظَةِ رَأَيْتَ هَذَا أَمْ فِي الْمَنَامْ؟",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "فَقَالَ: بَلْ -وَحُرْمَةِ الْمَلِكِ الْعَلَّامْ-",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "شَاهَدْتُهُمْ كِفَاحًا لَا أَشُكُّ فِي ذَلِكَ وَلَا أُضَامْ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "فَقَالَ لَهُ الْكَاهِنُ: أَبْشِرْ أَيُّهَا الْغُلَامْ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "فَأَنْتَ صَاحِبُ الْأَعْلَامْ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَنُبُوَّتُكَ لِلْأَنْبِيَاءِ قُفْلٌ وَخِتَامْ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "عَلَيْكَ يَنْزِلُ جِبْرِيلْ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَعَلَى بِسَاطِ الْقُدْسِ يُخَاطِبُكَ الْجَلِيلْ",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَمَنْ ذَا الَّذِي يَحْصُرُ مَا حَوَيْتَ مِنَ التَّفْضِيلْ؟!",
+            translit: "",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَعَنْ بَعْضِ وَصْفِ مَعْنَاكَ يَقْصُرُ لِسَانُ الْمَادِحِ الْمُطِيلْ",
+            translit: "",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
+          new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
             translation:
               "O Allāh, bestow blessings, peace and abundant blessing upon him and upon his family",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
-            arabic:
-              "وَكَانَ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ أَحْسَنَ النَّاسِ خَلْقًّا وَخُلُقًا * وَأَهْدَاهُمْ إِلَى الْحَقِّ طُرُقًا * كَانَ خُلُقُهُ الْقُرْآنْ * وَشِيمَتُهُ الْغُفْرَانْ * يَنْصَحُ لِلْإِنْسَانْ * وَيَفْسَحُ فِي الْإِحْسَانْ * وَيَعْفُو عَنِ الذَّنْبِ إِذَا كَانَ فِي حَقِّهِ وَسَبَبِهْ * فَإِذَا ضُيِّعَ حَقُّ اللَّهِ لَمْ يَقُمْ أَحَدٌ لِغَضَبِهْ * مَنْ رَآهُ بَدِيهَةً هَابَهْ * وَإِذَا دَعَاهُ الْمِسْكِينُ أَجَابَهْ * يَقُولُ الْحَقَّ وَلَوْ كَانَ مُرًّا * وَلَا يُضْمِرُ لِمُسْلِمٍ غِشًّا وَلَا ضُرًّا * مَنْ نَظَرَ فِي وَجْهِهِ عَلِمَ أَنَّهُ لَيْسَ بِوَجْهِ كَذَّابْ * وَكَانَ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ لَيْسَ بِغَمَّازٍ وَلَا عَيَّابْ * إِذَا سُرَّ فَكَأَنَّ وَجْهَهُ قِطْعَةُ قَمَرْ * وَإِذَا كَلَّمَ النَّاسَ فَكَأَنَّمَا يَجْنُونَ مِنْ كَلَامِهِ أَحْلَى ثَمـَرْ * وَإِذَا تَبَسَّمَ تَبَسَّمَ عَنْ مِثْلِ حَبِّ الْغَمَامْ * وَإِذَا تَكَلَّمَ فَكَأَنَّمَا الدُّرُّ يَسْقُطُ مِنْ ذَلِكَ الْكَلَامْ * وَإِذَا تَحَدَّثَ فَكَأَنَّ الْمِسْكَ يَخْرُجُ مِنْ فِيهْ * وَإِذَا مَرَّ بِطَرِيقٍ عُرِفَ مِنْ طِيبِهِ أَنَّهُ قَدْ مَرَّ فِيهْ * وَإِذَا جَلَسَ فِي مَجْلِسٍ بَقِيَ طِيبُهُ فِيهِ أَيَّامًا وَإِنْ تَغَيَّبْ * وَيُوجَدُ مِنْهُ أَحْسَنُ رَائِحَةٍ وَإِنْ لَمْ يَكُنْ قَدْ تَطَيَّبْ * وَإِذَا مَشَى بَيْنَ أَصْحَابِهِ فَكَأَنَّهُ الْقَمَرُ بَيْنَ النُّجُومِ الزُّهْرْ * وَإِذَا أَقْبَلَ لَيْلًا فَكَأَنَّ النَّاسَ مِنْ نُورِهِ فِي أَوَانِ الظُّهْرْ * وَكَانَ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ أَجْوَدَ بِالْخَيْرِ مِنَ الرِّيحِ الْمُرْسَلَةْ * وَكَانَ يَرْفُقُ بِالْيَتِيمِ وَالْأَرْمَلَةْ * قَالَ بَعْضُ وَاصِفِيهِ: مَا رَأَيْتُ مِنْ ذِي لِمَّةٍ سَوْدَاءَ، فِي حُلَّةٍ حَمْرَاءَ، أَحْسَنَ مِنْ رَسُولِ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ *",
+            arabic: "وَكَانَ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ أَحْسَنَ النَّاسِ خَلْقًّا وَخُلُقًا",
             translit:
-              "Wa kāna ṣallallāhu ‛alayhi wa ālihī wa sallama aḥsanan nāsi khalqan wa khuluqā, wa ahdāhum ilal ḥaqqi ṭuruqā. Kāna khuluquhul qur’ān, wa shīmatuhul ghufrān, yanṣaḥu lil insān, wa yafsaḥu fil iḥsān, wa ya‛fū ‛anidh dhanbi idhā kāna fī ḥaqqihī wa sababih, fa idhā ḍuyyi‛a ḥaqqullāhi lam yaqum aḥadun lighaḍabih. Man ra’āhu badīhatan hābah, wa idhā da‛āhul miskīnu ajābah. Yaqūlul ḥaqqa wa law kāna murrā, wa lā yuḍmiru limuslimin ghishshan wa lā ḍurrā. Man naẓara fī wajhihī ‛alima annahū laysa biwajhi kadhdhāb. Wa kāna ṣallallāhu ‛alayhi wa ālihī wa sallama laysa bighammāzin wa lā ‛ayyāb. Idhā surra fa ka anna wajhahū qiṭ‛atu qamar, wa idhā kallaman nāsa fa ka annamā yajnūna min kalāmihī aḥlā thamar, wa idhā tabassama tabassama ‛am mithli ḥabbil ghamām, wa idhā takallama fa ka annamad durru yasquṭu min dhālikal kalām, wa idhā taḥaddatha fa ka annal miska yakhruju min fīh, wa idhā marra biṭarīqin ‛urifa min ṭībihī annahū qad marra fīh, wa idhā jalasa fī majlisin baqiya ṭībuhū fīhi ayyāman wa in taghayyab, wa yūjadu minhu aḥsanu rā’iḥatin wa in lam yakun qad taṭayyab, wa idhā mashā bayna aṣḥābihī fa ka annahul qamaru baynan nujūmiz zuhr, wa idhā aqbala laylan fa ka annan nāsa min nūrihī fī awāniẓ ẓuhr. Wa kāna ṣallallāhu ‛alayhi wa ālihī wa sallama ajwada bil khayri minar rīḥil mursalah, wa kāna yarfuqu bil yatīmi wal armalah. Qāla ba‛ḍu wāṣifīh: mā ra’aytu min dhī limmatin sawdā’a fī ḥullatin ḥamrā’a aḥsana min rasūlillāhi ṣallallāhu ‛alayhi wa ālihī wa sallam.",
+              "Wa kāna ṣallallāhu ‛alayhi wa ālihī wa sallama aḥsanan nāsi khalqan wa khuluqā,",
             translation:
               "He, may Allāh bless him and his family and grant them peace, was the most beautiful of people in form and character, and the best guided of them to the paths of truth. His character was the Qur’ān and his nature was forgiveness. He gave sincere advice to people, was wide in excellence, and pardoned a wrong when it was against himself and his own cause; but when the right of Allāh was neglected, no one could stand before his anger. Whoever saw him suddenly was awed by him, and when the poor man called on him he answered. He spoke the truth even if bitter, and bore no deceit or harm towards any Muslim. Whoever looked at his face knew that it was not the face of a liar. He, may Allāh bless him and his family and grant them peace, was not a slanderer nor a fault-finder. When he was pleased his face was like a piece of the moon; when he spoke to people it was as if they were picking the sweetest fruit from his words; when he smiled he smiled showing teeth like hailstones; when he spoke it was as if pearls were falling from that speech; when he talked it was as if musk came from his mouth; when he passed along a road it was known from its fragrance that he had passed there; when he sat in a gathering his fragrance remained there for days even after he was gone; the finest scent was found from him though he had not perfumed himself. When he walked among his companions he was like the moon among the shining stars, and when he came by night it was as if the people were in the light of midday from his light. He, may Allāh bless him and his family and grant them peace, was more generous in good than the sent wind, and was gentle with the orphan and the widow. One of those who described him said: I have never seen anyone with black locks, in a red garment, more beautiful than the Messenger of Allāh, may Allāh bless him and his family and grant them peace.",
           }),
           new QasidaEntryModel({
+            arabic: "وَأَهْدَاهُمْ إِلَى الْحَقِّ طُرُقًا",
+            translit: "wa ahdāhum ilal ḥaqqi ṭuruqā.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "كَانَ خُلُقُهُ الْقُرْآنْ",
+            translit: "Kāna khuluquhul qur’ān,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَشِيمَتُهُ الْغُفْرَانْ",
+            translit: "wa shīmatuhul ghufrān,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "يَنْصَحُ لِلْإِنْسَانْ",
+            translit: "yanṣaḥu lil insān,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَيَفْسَحُ فِي الْإِحْسَانْ",
+            translit: "wa yafsaḥu fil iḥsān,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَيَعْفُو عَنِ الذَّنْبِ إِذَا كَانَ فِي حَقِّهِ وَسَبَبِهْ",
+            translit: "wa ya‛fū ‛anidh dhanbi idhā kāna fī ḥaqqihī wa sababih,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "فَإِذَا ضُيِّعَ حَقُّ اللَّهِ لَمْ يَقُمْ أَحَدٌ لِغَضَبِهْ",
+            translit: "fa idhā ḍuyyi‛a ḥaqqullāhi lam yaqum aḥadun lighaḍabih.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "مَنْ رَآهُ بَدِيهَةً هَابَهْ",
+            translit: "Man ra’āhu badīhatan hābah,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَإِذَا دَعَاهُ الْمِسْكِينُ أَجَابَهْ",
+            translit: "wa idhā da‛āhul miskīnu ajābah.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "يَقُولُ الْحَقَّ وَلَوْ كَانَ مُرًّا",
+            translit: "Yaqūlul ḥaqqa wa law kāna murrā,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَلَا يُضْمِرُ لِمُسْلِمٍ غِشًّا وَلَا ضُرًّا",
+            translit: "wa lā yuḍmiru limuslimin ghishshan wa lā ḍurrā.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "مَنْ نَظَرَ فِي وَجْهِهِ عَلِمَ أَنَّهُ لَيْسَ بِوَجْهِ كَذَّابْ",
+            translit:
+              "Man naẓara fī wajhihī ‛alima annahū laysa biwajhi kadhdhāb.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَكَانَ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ لَيْسَ بِغَمَّازٍ وَلَا عَيَّابْ",
+            translit:
+              "Wa kāna ṣallallāhu ‛alayhi wa ālihī wa sallama laysa bighammāzin wa lā ‛ayyāb.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "إِذَا سُرَّ فَكَأَنَّ وَجْهَهُ قِطْعَةُ قَمَرْ",
+            translit: "Idhā surra fa ka anna wajhahū qiṭ‛atu qamar,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَإِذَا كَلَّمَ النَّاسَ فَكَأَنَّمَا يَجْنُونَ مِنْ كَلَامِهِ أَحْلَى ثَمـَرْ",
+            translit:
+              "wa idhā kallaman nāsa fa ka annamā yajnūna min kalāmihī aḥlā thamar,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَإِذَا تَبَسَّمَ تَبَسَّمَ عَنْ مِثْلِ حَبِّ الْغَمَامْ",
+            translit: "wa idhā tabassama tabassama ‛am mithli ḥabbil ghamām,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَإِذَا تَكَلَّمَ فَكَأَنَّمَا الدُّرُّ يَسْقُطُ مِنْ ذَلِكَ الْكَلَامْ",
+            translit:
+              "wa idhā takallama fa ka annamad durru yasquṭu min dhālikal kalām,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَإِذَا تَحَدَّثَ فَكَأَنَّ الْمِسْكَ يَخْرُجُ مِنْ فِيهْ",
+            translit: "wa idhā taḥaddatha fa ka annal miska yakhruju min fīh,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَإِذَا مَرَّ بِطَرِيقٍ عُرِفَ مِنْ طِيبِهِ أَنَّهُ قَدْ مَرَّ فِيهْ",
+            translit:
+              "wa idhā marra biṭarīqin ‛urifa min ṭībihī annahū qad marra fīh,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَإِذَا جَلَسَ فِي مَجْلِسٍ بَقِيَ طِيبُهُ فِيهِ أَيَّامًا وَإِنْ تَغَيَّبْ",
+            translit:
+              "wa idhā jalasa fī majlisin baqiya ṭībuhū fīhi ayyāman wa in taghayyab,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَيُوجَدُ مِنْهُ أَحْسَنُ رَائِحَةٍ وَإِنْ لَمْ يَكُنْ قَدْ تَطَيَّبْ",
+            translit:
+              "wa yūjadu minhu aḥsanu rā’iḥatin wa in lam yakun qad taṭayyab,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَإِذَا مَشَى بَيْنَ أَصْحَابِهِ فَكَأَنَّهُ الْقَمَرُ بَيْنَ النُّجُومِ الزُّهْرْ",
+            translit:
+              "wa idhā mashā bayna aṣḥābihī fa ka annahul qamaru baynan nujūmiz zuhr,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَإِذَا أَقْبَلَ لَيْلًا فَكَأَنَّ النَّاسَ مِنْ نُورِهِ فِي أَوَانِ الظُّهْرْ",
+            translit:
+              "wa idhā aqbala laylan fa ka annan nāsa min nūrihī fī awāniẓ ẓuhr.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَكَانَ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ أَجْوَدَ بِالْخَيْرِ مِنَ الرِّيحِ الْمُرْسَلَةْ",
+            translit:
+              "Wa kāna ṣallallāhu ‛alayhi wa ālihī wa sallama ajwada bil khayri minar rīḥil mursalah,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَكَانَ يَرْفُقُ بِالْيَتِيمِ وَالْأَرْمَلَةْ",
+            translit: "wa kāna yarfuqu bil yatīmi wal armalah.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic:
+              "قَالَ بَعْضُ وَاصِفِيهِ: مَا رَأَيْتُ مِنْ ذِي لِمَّةٍ سَوْدَاءَ، فِي حُلَّةٍ حَمْرَاءَ، أَحْسَنَ مِنْ رَسُولِ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ",
+            translit:
+              "Qāla ba‛ḍu wāṣifīh: mā ra’aytu min dhī limmatin sawdā’a fī ḥullatin ḥamrā’a aḥsana min rasūlillāhi ṣallallāhu ‛alayhi wa ālihī wa sallam.",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
+          new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
             translation:
               "O Allāh, bestow blessings, peace and abundant blessing upon him and upon his family",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
-            arabic:
-              "وَقِيلَ لِبَعْضِهِمْ: كَأَنَّ وَجْهَهُ الْقَمَرْ * فَقَالَ: بَلْ أَضْوَءُ مِنَ الْقَمَرْ * إِذَا لَمْ يَحُلْ دُوْنَهُ الْغَمَامْ * قَدْ غَشِيَهُ الْجَلَالْ * وَانْتَهَى إِلَيْهِ الْكَمَالْ *  قَالَ بَعْضُ وَاصِفِيهِ: مَا رَأَيْتُ قَبْلَهُ وَلَا بَعْدَهُ مِثْلَهْ * فَيَعْجِزُ لِسَانُ الْبَلِيغِ إِذَا أَرَادَ أَنْ يُحْصِيَ فَضْلَـهْ * فَسُبْحَانَ مَنْ خَصَّهُ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ بِالْمَحَلِّ الْأَسْنَى * وَأَسْرَى بِهِ إِلَى قَابِ قَوْسَيْنِ أَوْ أَدْنَى * وَأَيَّدَهُ بِالْمُعْجِزَاتِ الَّتِي لَا تُحْصَى * وَأَوْفَاهُ مِنْ خِصَالِ الْكَمَالِ مَا يَجِلُّ أَنْ يُسْتَقْصَى * وَأَعْطَاهُ خَمْسًا لَمْ يُعْطِهِنَّ أَحَدًا قَبْلَهْ * وَآتَاهُ جَوَامِعَ الْكَلِمِ فَلَمْ يُدْرِكْ أَحَدٌ فَضْلَهْ * وَكَانَ لَهُ فِي كُلِّ مَقَامٍ عِنْدَهُ مَقَالْ * وَلِكُلِّ كَمَالٍ مِنْهُ كَمَالْ * لَا يَحُورُ فِي سُؤَالٍ وَلَا جَوَابْ * وَلَا يَجُولُ لِسَانُهُ إِلَّا فِي صَوَابْ *",
-            translit:
-              "Wa qīla liba‛ḍihim: ka anna wajhahul qamar. Fa qāl: bal aḍwa’u minal qamar, idhā lam yaḥul dūnahul ghamām. Qad ghashiyahul jalāl, wantahā ilayhil kamāl. Qāla ba‛ḍu wāṣifīh: mā ra’aytu qablahū wa lā ba‛dahū mithlah, fa ya‛jizu lisānul balīghi idhā arāda an yuḥṣiya faḍlah. Fa subḥāna man khaṣṣahū ṣallallāhu ‛alayhi wa ālihī wa sallama bil maḥallil asnā, wa asrā bihī ilā qābi qawsayni aw adnā, wa ayyadahū bil mu‛jizātil latī lā tuḥṣā, wa awfāhu min khiṣālil kamāli mā yajillu an yustaqṣā, wa a‛ṭāhu khamsan lam yu‛ṭihinna aḥadan qablah, wa ātāhu jawāmi‛al kalimi falam yudrik aḥadun faḍlah. Wa kāna lahū fī kulli maqāmin ‛indahū maqāl, wa likulli kamālin minhu kamāl, lā yaḥūru fī su’ālin wa lā jawāb, wa lā yajūlu lisānuhū illā fī ṣawāb.",
+            arabic: "وَقِيلَ لِبَعْضِهِمْ: كَأَنَّ وَجْهَهُ الْقَمَرْ",
+            translit: "Wa qīla liba‛ḍihim: ka anna wajhahul qamar.",
             translation:
               "Someone said to one of them: His face is like the moon. He said: Rather, it is brighter than the moon when no cloud comes between. Majesty had covered him and perfection had reached him. One of those who described him said: I have never seen the like of him, before or after, and the tongue of the eloquent is unable when he wishes to count his excellence. Glory be to Him Who distinguished him, may Allāh bless him and his family and grant them peace, with the loftiest station, took him by night to the distance of two bows' length or nearer, supported him with countless miracles, gave him of the qualities of perfection what is too great to be exhausted, granted him five things given to no one before him, and gave him comprehensive speech so that no one reached his excellence. In every setting he had a fitting word, and every perfection of his had a further perfection; he was never at a loss in question or answer, and his tongue never moved except in what is right.",
           }),
           new QasidaEntryModel({
+            arabic: "فَقَالَ: بَلْ أَضْوَءُ مِنَ الْقَمَرْ",
+            translit: "Fa qāl: bal aḍwa’u minal qamar,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "إِذَا لَمْ يَحُلْ دُوْنَهُ الْغَمَامْ",
+            translit: "idhā lam yaḥul dūnahul ghamām.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "قَدْ غَشِيَهُ الْجَلَالْ",
+            translit: "Qad ghashiyahul jalāl,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَانْتَهَى إِلَيْهِ الْكَمَالْ",
+            translit: "wantahā ilayhil kamāl.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "قَالَ بَعْضُ وَاصِفِيهِ: مَا رَأَيْتُ قَبْلَهُ وَلَا بَعْدَهُ مِثْلَهْ",
+            translit:
+              "Qāla ba‛ḍu wāṣifīh: mā ra’aytu qablahū wa lā ba‛dahū mithlah,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "فَيَعْجِزُ لِسَانُ الْبَلِيغِ إِذَا أَرَادَ أَنْ يُحْصِيَ فَضْلَـهْ",
+            translit:
+              "fa ya‛jizu lisānul balīghi idhā arāda an yuḥṣiya faḍlah.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "فَسُبْحَانَ مَنْ خَصَّهُ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ بِالْمَحَلِّ الْأَسْنَى",
+            translit:
+              "Fa subḥāna man khaṣṣahū ṣallallāhu ‛alayhi wa ālihī wa sallama bil maḥallil asnā,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَأَسْرَى بِهِ إِلَى قَابِ قَوْسَيْنِ أَوْ أَدْنَى",
+            translit: "wa asrā bihī ilā qābi qawsayni aw adnā,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَأَيَّدَهُ بِالْمُعْجِزَاتِ الَّتِي لَا تُحْصَى",
+            translit: "wa ayyadahū bil mu‛jizātil latī lā tuḥṣā,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَأَوْفَاهُ مِنْ خِصَالِ الْكَمَالِ مَا يَجِلُّ أَنْ يُسْتَقْصَى",
+            translit: "wa awfāhu min khiṣālil kamāli mā yajillu an yustaqṣā,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَأَعْطَاهُ خَمْسًا لَمْ يُعْطِهِنَّ أَحَدًا قَبْلَهْ",
+            translit: "wa a‛ṭāhu khamsan lam yu‛ṭihinna aḥadan qablah,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَآتَاهُ جَوَامِعَ الْكَلِمِ فَلَمْ يُدْرِكْ أَحَدٌ فَضْلَهْ",
+            translit: "wa ātāhu jawāmi‛al kalimi falam yudrik aḥadun faḍlah.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَكَانَ لَهُ فِي كُلِّ مَقَامٍ عِنْدَهُ مَقَالْ",
+            translit: "Wa kāna lahū fī kulli maqāmin ‛indahū maqāl,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَلِكُلِّ كَمَالٍ مِنْهُ كَمَالْ",
+            translit: "wa likulli kamālin minhu kamāl,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "لَا يَحُورُ فِي سُؤَالٍ وَلَا جَوَابْ",
+            translit: "lā yaḥūru fī su’ālin wa lā jawāb,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَلَا يَجُولُ لِسَانُهُ إِلَّا فِي صَوَابْ",
+            translit: "wa lā yajūlu lisānuhū illā fī ṣawāb.",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
+          new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
             translation:
               "O Allāh, bestow blessings, peace and abundant blessing upon him and upon his family",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
-            arabic:
-              "وَمَا عَسَى أَنْ يُقَالَ فِيمَنْ وَصَفَهُ الْقُرْآنْ * وَأَعْرَبَ عَنْ فَضَائِلِهِ التَّوْرَاةُ وَالْإِنْجِيلُ وَالزَّبُورُ وَالْفُرْقَانْ * وَجَمَعَ اللَّهُ لَهُ بَيْنَ رُؤْيَتِهِ وَكَلَامِهْ * وَقَرَنَ اسْمَهُ مَعَ اسْمِهِ تَنْبِيهًا عَلَى عُلُوِّ مَقَامِهْ * وَجَعَلَهُ رَحْمَةً لِلْعَالَمِينَ وَنُورًا * وَمَلَأَ بِمَوْلِدِهِ الْقُلُوبَ سُرُورًا *",
-            translit:
-              "Wa mā ‛asā an yuqāla fīman waṣafahul qur’ān, wa a‛raba ‛an faḍā’ilihit tawrātu wal injīlu waz zabūru wal furqān, wa jama‛allāhu lahū bayna ru’yatihī wa kalāmih, wa qarana ismahū ma‛a ismihī tanbīhan ‛alā ‛uluwwi maqāmih, wa ja‛alahū raḥmatan lil ‛ālamīna wa nūrā, wa mala’a bimawlidihil qulūba surūrā.",
+            arabic: "وَمَا عَسَى أَنْ يُقَالَ فِيمَنْ وَصَفَهُ الْقُرْآنْ",
+            translit: "Wa mā ‛asā an yuqāla fīman waṣafahul qur’ān,",
             translation:
               "What can be said of one whom the Qur’ān described, whose merits were made plain by the Torah, the Gospel, the Psalms and the Criterion; for whom Allāh combined seeing Him and speaking with Him; whose name He joined with His own name as a sign of the loftiness of his station; whom He made a mercy to the worlds and a light; and with whose birth He filled hearts with joy.",
           }),
           new QasidaEntryModel({
+            arabic: "وَأَعْرَبَ عَنْ فَضَائِلِهِ التَّوْرَاةُ وَالْإِنْجِيلُ وَالزَّبُورُ وَالْفُرْقَانْ",
+            translit:
+              "wa a‛raba ‛an faḍā’ilihit tawrātu wal injīlu waz zabūru wal furqān,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَجَمَعَ اللَّهُ لَهُ بَيْنَ رُؤْيَتِهِ وَكَلَامِهْ",
+            translit: "wa jama‛allāhu lahū bayna ru’yatihī wa kalāmih,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَقَرَنَ اسْمَهُ مَعَ اسْمِهِ تَنْبِيهًا عَلَى عُلُوِّ مَقَامِهْ",
+            translit:
+              "wa qarana ismahū ma‛a ismihī tanbīhan ‛alā ‛uluwwi maqāmih,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَجَعَلَهُ رَحْمَةً لِلْعَالَمِينَ وَنُورًا",
+            translit: "wa ja‛alahū raḥmatan lil ‛ālamīna wa nūrā,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَمَلَأَ بِمَوْلِدِهِ الْقُلُوبَ سُرُورًا",
+            translit: "wa mala’a bimawlidihil qulūba surūrā.",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
+          new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
             translation:
               "O Allāh, bestow blessings, peace and abundant blessing upon him and upon his family",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "يَا بَدْرَ تِمٍّ حَازَ كُلَّ كَمَالِ",
             translit: "Yā badra timmin ḥāza kulla kamāl",
@@ -1144,6 +2816,11 @@ export default [
             translit: "Mādhā yu‛abbiru ‛an ‛ulāka maqālī",
             translation: "what can my speech express of your loftiness?",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "أَنْتَ الَّذِي أَشْرَقْتَ فِي أُفُقِ الْعُلَا",
             translit: "Antal ladhī ashraqta fī ufuqil ‛ulā",
@@ -1154,6 +2831,11 @@ export default [
             translit: "Fa maḥawta bil anwāri kulla ḍalāl",
             translation: "and erased with lights every misguidance,",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "وَبِكَ اسْتَنَارَ الْكَوْنُ يَا عَلَمَ الْهُدَى",
             translit: "Wa bika stanāral kawnu yā ‛alamal hudā",
@@ -1165,6 +2847,11 @@ export default [
             translit: "Bin nūri wal in‛āmi wal ifḍāl",
             translation: "with light, favour and bounty.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "صَلَّى عَلَيْكَ اللَّهُ رَبِّي دَائِمًا",
             translit: "Ṣallā ‛alaykallāhu rabbī dā’imā",
@@ -1175,6 +2862,11 @@ export default [
             translit: "Abadan ma‛al ibkāri wal āṣāl",
             translation: "forever, morning and evening.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "وَعَلَى جَمِيعِ الْآلِ وَالْأَصْحَابِ مَنْ",
             translit: "Wa ‛alā jamī‛il āli wal aṣḥābi man",
@@ -1186,6 +2878,11 @@ export default [
             translation:
               "the Lord of Highness has distinguished with perfection.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: true,
+        entries: [
           new QasidaEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَيْهِ وَعَلَى آلِهِ",
             translit: "Allāhumma ṣalli wa sallim wa bārik ‛alayhi wa ‛alā ālih",
@@ -1203,110 +2900,328 @@ export default [
             translation:
               "In the name of Allāh, the Most Gracious, the Most Merciful",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
-            arabic:
-              "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ *  اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِين * جَعَلَنِيَ اللَّهُ وَإِيَّاكُمْ مِمَّنْ يَسْتَوْجِبُ شَفَاعَتَه * وَيَرْجُو مِنَ اللَّهِ رَحْمَتَهُ وَرَأْفَتَه",
-            translit:
-              "Alḥamdulillāhi rabbil ‛ālamīn. Allāhumma ṣalli wa sallim wa bārik ‛alā sayyidinā Muḥammadin wa ‛alā ālihī wa ṣaḥbihī ajma‛īn. Ja‛alaniyallāhu wa iyyākum mimman yastawjibu shafā‛atah, wa yarjū minallāhi raḥmatahū wa ra’fatah.",
+            arabic: "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+            translit: "Alḥamdulillāhi rabbil ‛ālamīn.",
             translation:
               "Praise be to Allāh, Lord of the worlds. O Allāh, bestow blessings, peace and abundant blessing upon our master Muhammad and upon all his family and companions. May Allāh make me and you among those who deserve his intercession and who hope from Allāh for His mercy and compassion.",
           }),
           new QasidaEntryModel({
-            arabic:
-              "اللَّهُمَّ بِحُرْمَةِ هَذَا النَّبِيِّ الْكَرِيم * وَآلِهِ وَأَصْحَابِهِ السَّالِكِينَ عَلَى نَهْجِهِ الْقَوِيم * اِجْعَلْنَا مِنْ خِيَارِ أُمَّتِه * وَاسْتُرْنَا بِذَيْلِ حُرْمَتِه * وَاحْشُرْنَا غَدًا فِي زُمْرَتِه * وَاسْتَعْمِلْ أَلْسِنَتَنَا فِي مَدْحِهِ وَنُصْرَتِه * وَأَحْيِنَا مُتَمَسِّكِينَ بِسُنَّتِهِ وَطَاعَتِه * وَأَمِتْنَا اللَّهُمَّ عَلَى حُبِّهِ وَجَمَاعَتِه",
+            arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِين",
             translit:
-              "Allāhumma biḥurmati hādhan nabiyyil karīm, wa ālihī wa aṣḥābihis sālikīna ‛alā nahjihil qawīm, aj‛alnā min khiyāri ummatih, wasturnā bidhayli ḥurmatih, waḥshurnā ghadan fī zumratih, wasta‛mil alsinatanā fī madḥihī wa nuṣratih, wa aḥyinā mutamassikīna bisunnatihī wa ṭā‛atih, wa amitnā Allāhumma ‛alā ḥubbihī wa jamā‛atih",
+              "Allāhumma ṣalli wa sallim wa bārik ‛alā sayyidinā Muḥammadin wa ‛alā ālihī wa ṣaḥbihī ajma‛īn.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "جَعَلَنِيَ اللَّهُ وَإِيَّاكُمْ مِمَّنْ يَسْتَوْجِبُ شَفَاعَتَه",
+            translit:
+              "Ja‛alaniyallāhu wa iyyākum mimman yastawjibu shafā‛atah,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَيَرْجُو مِنَ اللَّهِ رَحْمَتَهُ وَرَأْفَتَه",
+            translit: "wa yarjū minallāhi raḥmatahū wa ra’fatah.",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
+          new QasidaEntryModel({
+            arabic: "اللَّهُمَّ بِحُرْمَةِ هَذَا النَّبِيِّ الْكَرِيم",
+            translit: "Allāhumma biḥurmati hādhan nabiyyil karīm,",
             translation:
               "O Allāh, by the sanctity of this noble Prophet and his family and companions who followed his upright way, make us among the best of his nation, cover us with the hem of his sanctity, gather us tomorrow in his company, employ our tongues in praising and supporting him, let us live holding fast to his Sunnah and obedience, and let us die, O Allāh, upon love of him and of his community.",
           }),
           new QasidaEntryModel({
-            arabic:
-              "اللَّهُمَّ أَدْخِلْنَا مَعَهُ الْجَنَّةَ فَإِنَّهُ أَوَّلُ مَنْ يَدْخُلُهَا * وَأَنْزِلْنَا مَعَهُ فِي قُصُورِهَا * فَإِنَّهُ أَوَّلُ مَنْ يَنْزِلُهَا * وَارْحَمْنَا يَوْمَ يَشْفَعُ لِلْخَلَائِقِ فَتَرْحَمُهَا",
+            arabic: "وَآلِهِ وَأَصْحَابِهِ السَّالِكِينَ عَلَى نَهْجِهِ الْقَوِيم",
+            translit: "wa ālihī wa aṣḥābihis sālikīna ‛alā nahjihil qawīm,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "اِجْعَلْنَا مِنْ خِيَارِ أُمَّتِه",
+            translit: "aj‛alnā min khiyāri ummatih,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَاسْتُرْنَا بِذَيْلِ حُرْمَتِه",
+            translit: "wasturnā bidhayli ḥurmatih,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَاحْشُرْنَا غَدًا فِي زُمْرَتِه",
+            translit: "waḥshurnā ghadan fī zumratih,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَاسْتَعْمِلْ أَلْسِنَتَنَا فِي مَدْحِهِ وَنُصْرَتِه",
+            translit: "wasta‛mil alsinatanā fī madḥihī wa nuṣratih,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَأَحْيِنَا مُتَمَسِّكِينَ بِسُنَّتِهِ وَطَاعَتِه",
+            translit: "wa aḥyinā mutamassikīna bisunnatihī wa ṭā‛atih,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَأَمِتْنَا اللَّهُمَّ عَلَى حُبِّهِ وَجَمَاعَتِه",
+            translit: "wa amitnā Allāhumma ‛alā ḥubbihī wa jamā‛atih",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
+          new QasidaEntryModel({
+            arabic: "اللَّهُمَّ أَدْخِلْنَا مَعَهُ الْجَنَّةَ فَإِنَّهُ أَوَّلُ مَنْ يَدْخُلُهَا",
             translit:
-              "Allāhumma adkhilnā ma‛ahul jannah fa innahū awwalu man yadkhuluhā, wa anzilnā ma‛ahū fī quṣūrihā, fa innahū awwalu man yanziluhā, warḥamnā yawma yashfa‛u lil khalā’iqi fatarḥamuhā",
+              "Allāhumma adkhilnā ma‛ahul jannah fa innahū awwalu man yadkhuluhā,",
             translation:
               "O Allāh, admit us with him into Paradise, for he is the first to enter it; settle us with him in its palaces, for he is the first to settle in it; and have mercy on us on the day he intercedes for creation so that You have mercy on them.",
           }),
           new QasidaEntryModel({
-            arabic:
-              "اللَّهُمَّ ارْزُقْنَا زِيَارَتَهُ فِي كُلِّ سَنَة * وَلَا تَجْعَلْنَا مَعَ الْغَافِلِينَ عَنْكَ وَلَا عَنْهُ قَدْرَ سِنَة",
-            translit:
-              "Allāhummarzuqnā ziyāratahū fī kulli sanah, wa lā taj‛alnā ma‛al ghāfilīna ‛anka wa lā ‛anhu qadra sinah",
+            arabic: "وَأَنْزِلْنَا مَعَهُ فِي قُصُورِهَا",
+            translit: "wa anzilnā ma‛ahū fī quṣūrihā,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "فَإِنَّهُ أَوَّلُ مَنْ يَنْزِلُهَا",
+            translit: "fa innahū awwalu man yanziluhā,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَارْحَمْنَا يَوْمَ يَشْفَعُ لِلْخَلَائِقِ فَتَرْحَمُهَا",
+            translit: "warḥamnā yawma yashfa‛u lil khalā’iqi fatarḥamuhā",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
+          new QasidaEntryModel({
+            arabic: "اللَّهُمَّ ارْزُقْنَا زِيَارَتَهُ فِي كُلِّ سَنَة",
+            translit: "Allāhummarzuqnā ziyāratahū fī kulli sanah,",
             translation:
               "O Allāh, grant us visiting him every year, and do not place us among those heedless of You or of him, even for the span of a nap.",
           }),
           new QasidaEntryModel({
-            arabic:
-              "اللَّهُمَّ لَا تَجْعَلْ فِي مَجْلِسِنَا هَذَا أَحَدًا إِلَّا وَغَسَلْتَ بِمَاءِ التَّوْبَةِ ذُنُوبَهُ * وَسَتَرْتَ بِرِدَاءِ الْمَغْفِرَةِ عُيُوبَهُ",
+            arabic: "وَلَا تَجْعَلْنَا مَعَ الْغَافِلِينَ عَنْكَ وَلَا عَنْهُ قَدْرَ سِنَة",
             translit:
-              "Allāhumma lā taj‛al fī majlisinā hādhā aḥadan illā wa ghasalta bimā’it tawbati dhunūbah, wa satarta biridā’il maghfirati ‛uyūbah",
+              "wa lā taj‛alnā ma‛al ghāfilīna ‛anka wa lā ‛anhu qadra sinah",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
+          new QasidaEntryModel({
+            arabic:
+              "اللَّهُمَّ لَا تَجْعَلْ فِي مَجْلِسِنَا هَذَا أَحَدًا إِلَّا وَغَسَلْتَ بِمَاءِ التَّوْبَةِ ذُنُوبَهُ",
+            translit:
+              "Allāhumma lā taj‛al fī majlisinā hādhā aḥadan illā wa ghasalta bimā’it tawbati dhunūbah,",
             translation:
               "O Allāh, leave no one in this gathering of ours without having washed his sins with the water of repentance and covered his faults with the cloak of forgiveness.",
           }),
           new QasidaEntryModel({
+            arabic: "وَسَتَرْتَ بِرِدَاءِ الْمَغْفِرَةِ عُيُوبَهُ",
+            translit: "wa satarta biridā’il maghfirati ‛uyūbah",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
+          new QasidaEntryModel({
             arabic:
-              "اللَّهُمَّ إِنَّهُ كَانَ مَعَنَا فِي السَّنَةِ الْمَاضِيَةِ إِخْوَانٌ (رَحِمَهُمُ اللَّهُ) مَنَعَهُمُ الْقَضَاءُ عَنَ الْوُصُولِ إِلَى مِثْلِهَا * فَلَا تَحْرِمْهُمْ مِنْ ثَوَابِ هَذِهِ السَّاعَةِ وَفَضْلِهَا",
+              "اللَّهُمَّ إِنَّهُ كَانَ مَعَنَا فِي السَّنَةِ الْمَاضِيَةِ إِخْوَانٌ (رَحِمَهُمُ اللَّهُ) مَنَعَهُمُ الْقَضَاءُ عَنَ الْوُصُولِ إِلَى مِثْلِهَا",
             translit:
-              "Allāhumma innahū kāna ma‛anā fis sanatil māḍiyati ikhwānun (raḥimahumullāh) mana‛ahumul qaḍā’u ‛anil wuṣūli ilā mithlihā, falā taḥrimhum min thawābi hādhihis sā‛ati wa faḍlihā",
+              "Allāhumma innahū kāna ma‛anā fis sanatil māḍiyati ikhwānun (raḥimahumullāh) mana‛ahumul qaḍā’u ‛anil wuṣūli ilā mithlihā,",
             translation:
               "O Allāh, last year there were brothers with us (may Allāh have mercy on them) whom decree prevented from reaching the like of this; so do not deprive them of the reward and merit of this hour.",
           }),
           new QasidaEntryModel({
-            arabic:
-              "اللَّهُمَّ ارْحَمْنَا إِذَا صِرْنَا مِنْ أَصْحَابِ الْقُبُور * وَوَفِّقْنَا لِعَمَلٍ صَالِحٍ يَبْقَى سَنَاهُ عَلَى مَمَرِّ الدُّهُور",
-            translit:
-              "Allāhummarḥamnā idhā ṣirnā min aṣḥābil qubūr, wa waffiqnā li‛amalin ṣāliḥin yabqā sanāhu ‛alā mamarrid duhūr",
+            arabic: "فَلَا تَحْرِمْهُمْ مِنْ ثَوَابِ هَذِهِ السَّاعَةِ وَفَضْلِهَا",
+            translit: "falā taḥrimhum min thawābi hādhihis sā‛ati wa faḍlihā",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
+          new QasidaEntryModel({
+            arabic: "اللَّهُمَّ ارْحَمْنَا إِذَا صِرْنَا مِنْ أَصْحَابِ الْقُبُور",
+            translit: "Allāhummarḥamnā idhā ṣirnā min aṣḥābil qubūr,",
             translation:
               "O Allāh, have mercy on us when we become among the inhabitants of the graves, and enable us to do righteous deeds whose radiance remains as ages pass.",
           }),
           new QasidaEntryModel({
-            arabic:
-              "اللَّهُمَّ اجْعَلْنَا لِآلَائِكَ ذَاكِرِين * وَلِنَعْمَائِكَ شَاكِرِين * وَلِيَوْمِ لِقَائِكَ مِنَ الذَّاكِرِين * وَأَحْيِنَا بِطَاعَتِكَ مَشْغُولِين * وَإِذَا تَوَفَّيْتَنَا فَتَوَفَّنَا غَيْرَ مَفْتُونِينَ وَلَا مَخْذُولِين * وَاخْتِمْ لَنَا مِنْكَ بِخَيْرٍ أَجْمَعِين",
+            arabic: "وَوَفِّقْنَا لِعَمَلٍ صَالِحٍ يَبْقَى سَنَاهُ عَلَى مَمَرِّ الدُّهُور",
             translit:
-              "Allāhummaj‛alnā li ālā’ika dhākirīn, wa lini‛mā’ika shākirīn, wa li yawmi liqā’ika minadh dhākirīn, wa aḥyinā biṭā‛atika mashghūlīn, wa idhā tawaffaytanā fatawaffanā ghayra maftūnīna wa lā makhdhūlīn, wakhtim lanā minka bikhayrin ajma‛īn",
+              "wa waffiqnā li‛amalin ṣāliḥin yabqā sanāhu ‛alā mamarrid duhūr",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
+          new QasidaEntryModel({
+            arabic: "اللَّهُمَّ اجْعَلْنَا لِآلَائِكَ ذَاكِرِين",
+            translit: "Allāhummaj‛alnā li ālā’ika dhākirīn,",
             translation:
               "O Allāh, make us mindful of Your bounties, grateful for Your favours, and among those who remember on the Day of meeting You; keep us occupied in obedience to You while we live; when You take us in death, take us not tried by tribulation nor forsaken; and seal for all of us an end with goodness from You.",
           }),
           new QasidaEntryModel({
-            arabic:
-              "اللَّهُمَّ اكْفِنَا شَرَّ الظُّلْمِ وَالظَّالِمِين * وَاجْعَلْنَا مِنْ فِتْنَةِ هَذِهِ الدُّنْيَا سَالِمِين",
+            arabic: "وَلِنَعْمَائِكَ شَاكِرِين",
+            translit: "wa lini‛mā’ika shākirīn,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَلِيَوْمِ لِقَائِكَ مِنَ الذَّاكِرِين",
+            translit: "wa li yawmi liqā’ika minadh dhākirīn,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَأَحْيِنَا بِطَاعَتِكَ مَشْغُولِين",
+            translit: "wa aḥyinā biṭā‛atika mashghūlīn,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَإِذَا تَوَفَّيْتَنَا فَتَوَفَّنَا غَيْرَ مَفْتُونِينَ وَلَا مَخْذُولِين",
             translit:
-              "Allāhummakfinā sharraẓ ẓulmi waẓ ẓālimīn, waj‛alnā min fitnati hādhihid dunyā sālimīn",
+              "wa idhā tawaffaytanā fatawaffanā ghayra maftūnīna wa lā makhdhūlīn,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَاخْتِمْ لَنَا مِنْكَ بِخَيْرٍ أَجْمَعِين",
+            translit: "wakhtim lanā minka bikhayrin ajma‛īn",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
+          new QasidaEntryModel({
+            arabic: "اللَّهُمَّ اكْفِنَا شَرَّ الظُّلْمِ وَالظَّالِمِين",
+            translit: "Allāhummakfinā sharraẓ ẓulmi waẓ ẓālimīn,",
             translation:
               "O Allāh, spare us the evil of injustice and the unjust, and keep us safe from the trial of this world.",
           }),
           new QasidaEntryModel({
-            arabic:
-              "اللَّهُمَّ اجْعَلْ هَذَا الرَّسُولَ الْكَرِيمَ لَنَا شَفِيعًا * وَارْزُقْنَا بِهِ يَوْمَ الْقِيَامَةِ مَقَامًا رَفِيعًا",
-            translit:
-              "Allāhummaj‛al hādhar rasūlal karīma lanā shafī‛ā, warzuqnā bihī yawmal qiyāmati maqāman rafī‛ā",
+            arabic: "وَاجْعَلْنَا مِنْ فِتْنَةِ هَذِهِ الدُّنْيَا سَالِمِين",
+            translit: "waj‛alnā min fitnati hādhihid dunyā sālimīn",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
+          new QasidaEntryModel({
+            arabic: "اللَّهُمَّ اجْعَلْ هَذَا الرَّسُولَ الْكَرِيمَ لَنَا شَفِيعًا",
+            translit: "Allāhummaj‛al hādhar rasūlal karīma lanā shafī‛ā,",
             translation:
               "O Allāh, make this noble Messenger an intercessor for us, and through him grant us a lofty station on the Day of Resurrection.",
           }),
           new QasidaEntryModel({
+            arabic: "وَارْزُقْنَا بِهِ يَوْمَ الْقِيَامَةِ مَقَامًا رَفِيعًا",
+            translit: "warzuqnā bihī yawmal qiyāmati maqāman rafī‛ā",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
+          new QasidaEntryModel({
             arabic:
-              "اللَّهُمَّ اسْقِنَا مِنْ حَوْضِ نَبِيِّكَ مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ شَرْبَةً هَنِيئَةً مَرِيئَةً لَا نَظْمَأُ بَعْدَهَا أَبَدًا * وَاحْشُرْنَا تَحْتَ لِوَائِهِ غَدًا",
+              "اللَّهُمَّ اسْقِنَا مِنْ حَوْضِ نَبِيِّكَ مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ شَرْبَةً هَنِيئَةً مَرِيئَةً لَا نَظْمَأُ بَعْدَهَا أَبَدًا",
             translit:
-              "Allāhummasqinā min ḥawḍi nabiyyika Muḥammadin ṣallallāhu ‛alayhi wa ālihī wa sallama sharbatan hanī’atan marī’atan lā naẓma’u ba‛dahā abadā, waḥshurnā taḥta liwā’ihī ghadā",
+              "Allāhummasqinā min ḥawḍi nabiyyika Muḥammadin ṣallallāhu ‛alayhi wa ālihī wa sallama sharbatan hanī’atan marī’atan lā naẓma’u ba‛dahā abadā,",
             translation:
               "O Allāh, give us to drink from the Pool of Your Prophet Muhammad, may Allāh bless him and his family and grant them peace, a pleasant and wholesome drink after which we shall never thirst, and gather us beneath his banner tomorrow.",
           }),
           new QasidaEntryModel({
+            arabic: "وَاحْشُرْنَا تَحْتَ لِوَائِهِ غَدًا",
+            translit: "waḥshurnā taḥta liwā’ihī ghadā",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
+          new QasidaEntryModel({
             arabic:
-              "اللَّهُمَّ اغْفِرِ لَنَا بِهِ وَلِأَبَائِنَا وَلِأُمَّهَاتِنَا وَلِمَشَايِخِنَا وَلِمُعَلِّمِينَا وَذَوِي الْحُقُوقِ عَلَيْنَا * وَلِمَنْ أَجْرَى هَذَا الْخَيْرَ فِي هَذِهِ السَّاعَةِ * وَلِجَمِيعِ الْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ * وَالْمُسْلِمِينَ وَالْمُسْلِمَات * الْأَحْيَاءِ مِنْهُمْ وَالْأَمْوَات",
+              "اللَّهُمَّ اغْفِرِ لَنَا بِهِ وَلِأَبَائِنَا وَلِأُمَّهَاتِنَا وَلِمَشَايِخِنَا وَلِمُعَلِّمِينَا وَذَوِي الْحُقُوقِ عَلَيْنَا",
             translit:
-              "Allāhummaghfir lanā bihī wa li ābā’inā wa li ummahātinā wa limashāyikhinā wa limu‛allimīnā wa dhawil ḥuqūqi ‛alaynā, wa liman ajrā hādhal khayra fī hādhihis sā‛ah, wa lijamī‛il mu’minīna wal mu’mināt, wal muslimīna wal muslimāt, al-aḥyā’i minhum wal amwāt",
+              "Allāhummaghfir lanā bihī wa li ābā’inā wa li ummahātinā wa limashāyikhinā wa limu‛allimīnā wa dhawil ḥuqūqi ‛alaynā,",
             translation:
               "O Allāh, forgive us through him, and our fathers, our mothers, our teachers, our instructors and those who have rights over us, and whoever brought about this good in this hour, and all believing men and women, Muslim men and women, the living among them and the dead.",
           }),
           new QasidaEntryModel({
-            arabic:
-              "إِنَّكَ مُجِيبُ الدَّعَوَات * وَقَاضِي الْحَاجَات * وَغَافِرُ الذُّنُوبِ وَالْخَطِيئَاتِ *  [يَا أَرْحَمَ الرَّاحِمِينَ (ثلاثا)]",
-            translit:
-              "Innaka mujību ad-da‛awāt, wa qāḍil ḥājāt, wa ghāfirudh dhunūbi wal khaṭī’āt. [Yā arḥamar rāḥimīn (thalāthan)]",
+            arabic: "وَلِمَنْ أَجْرَى هَذَا الْخَيْرَ فِي هَذِهِ السَّاعَةِ",
+            translit: "wa liman ajrā hādhal khayra fī hādhihis sā‛ah,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَلِجَمِيعِ الْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ",
+            translit: "wa lijamī‛il mu’minīna wal mu’mināt,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَالْمُسْلِمِينَ وَالْمُسْلِمَات",
+            translit: "wal muslimīna wal muslimāt,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "الْأَحْيَاءِ مِنْهُمْ وَالْأَمْوَات",
+            translit: "al-aḥyā’i minhum wal amwāt",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
+          new QasidaEntryModel({
+            arabic: "إِنَّكَ مُجِيبُ الدَّعَوَات",
+            translit: "Innaka mujību ad-da‛awāt,",
             translation:
               "Indeed You are the Answerer of supplications, the Fulfiller of needs, and the Forgiver of sins and wrongs. [O Most Merciful of the merciful (three times)]",
           }),
+          new QasidaEntryModel({
+            arabic: "وَقَاضِي الْحَاجَات",
+            translit: "wa qāḍil ḥājāt,",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "وَغَافِرُ الذُّنُوبِ وَالْخَطِيئَاتِ",
+            translit: "wa ghāfirudh dhunūbi wal khaṭī’āt.",
+            translation: "",
+          }),
+          new QasidaEntryModel({
+            arabic: "[يَا أَرْحَمَ الرَّاحِمِينَ (ثلاثا)]",
+            translit: "[Yā arḥamar rāḥimīn (thalāthan)]",
+            translation: "",
+          }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QasidaEntryModel({
             arabic: "وَصَلَّى اللَّهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّم",
             translit:
@@ -1314,6 +3229,11 @@ export default [
             translation:
               "And may Allāh bless our master Muhammad and his family and companions and grant them peace.",
           }),
+        ],
+      }),
+      new QasidaVerseModel({
+        chorus: false,
+        entries: [
           new QuranEntryModel({
             arabic:
               "سُبْحَـٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ ۝ وَسَلَـٰمٌ عَلَى ٱلْمُرْسَلِينَ ۝ وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
