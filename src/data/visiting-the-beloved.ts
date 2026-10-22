@@ -406,19 +406,21 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({
+    ],
+  }),
+  new QasidaModel({
+    title: "",
+    entries: [
+      new QasidaVerseModel({
+        chorus: false,
         entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "كَمْ أَبْرَأَتْ وَصِباً بِاللَّمْسِ رَاحَتُهُ",
             translit: "Kam abra’at waṣiban bil lamsi rāḥatuh",
             translation:
               "How many a sick person has been healed by the touch of his palm,",
           }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
+          new QasidaEntryModel({
             arabic: "وَأَطْلَقَتْ أَرِباً مِنْ رِبْقَةِ اللَّمَمِ",
             translit: "Wa aṭlaqat ariban min ribqatil lamam",
             translation:
@@ -426,6 +428,11 @@ export default [
           }),
         ],
       }),
+    ],
+  }),
+  new WirdModel({
+    title: "",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
