@@ -3892,6 +3892,7 @@ export default [
     title: "",
     entries: [
       new DhikrModel({
+        repeat: 27,
         entries: [
           new DhikrEntryModel({
             arabic:
@@ -3907,9 +3908,9 @@ export default [
             translation: "and I repent to Him.",
           }),
           new DhikrEntryModel({
-            arabic: "رَبِّ اغْفِرْ لِي (27)",
-            translit: "Rabbighfir lī (27)",
-            translation: "My Lord, forgive me (27 times).",
+            arabic: "رَبِّ اغْفِرْ لِي",
+            translit: "Rabbighfir lī",
+            translation: "My Lord, forgive me",
           }),
         ],
       }),

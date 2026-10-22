@@ -5,6 +5,7 @@ export default [
     title: "Istighfar",
     entries: [
       new DhikrModel({
+        repeat: 27,
         entries: [
           new DhikrEntryModel({
             arabic:
@@ -20,9 +21,9 @@ export default [
             translation: "I repent to Him.",
           }),
           new DhikrEntryModel({
-            arabic: "رَبِّ اغْفِرْ لِي (27)",
-            translit: "Rabbigh fir lī (27).",
-            translation: "O Lord forgive me! (27 times)",
+            arabic: "رَبِّ اغْفِرْ لِي",
+            translit: "Rabbigh fir lī",
+            translation: "O Lord forgive me!",
           }),
         ],
       }),

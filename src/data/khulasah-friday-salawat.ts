@@ -298,6 +298,7 @@ export default [
         ],
       }),
       new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّم عَلَى سَيِّدِنَا مُحَمَّدٍ نُورِكَ السَّارِي",
@@ -318,10 +319,9 @@ export default [
             translation: "and join me with him in all my states",
           }),
           new DhikrEntryModel({
-            arabic: "وَعَلَى آلِهِ وَصَحْبِهِ يَا نُور (3)",
-            translit: "wa ‛alā ālihī wa ṣaḥbihī yā nūr (3)",
-            translation:
-              "and upon his family and companions, O Light! (3 times)",
+            arabic: "وَعَلَى آلِهِ وَصَحْبِهِ يَا نُور",
+            translit: "wa ‛alā ālihī wa ṣaḥbihī yā nūr",
+            translation: "and upon his family and companions, O Light!",
           }),
         ],
       }),
@@ -459,10 +459,10 @@ export default [
               "and send blessings on all his brethren from the prophets and the righteous",
           }),
           new DhikrEntryModel({
-            arabic: "إِلَى يَوْمِ الدِّين يَا أَرْحَمَ الرَّاحِمِين (7)",
-            translit: "ilā yawmid dīn, yā arḥamar rāḥimīn (7)",
-            translation:
-              "until the Day of Judgement, O Most Merciful. (7 times)",
+            arabic: "إِلَى يَوْمِ الدِّين يَا أَرْحَمَ الرَّاحِمِين",
+            translit: "ilā yawmid dīn, yā arḥamar rāḥimīn",
+            translation: "until the Day of Judgement, O Most Merciful.",
+            repeat: 7,
           }),
         ],
       }),

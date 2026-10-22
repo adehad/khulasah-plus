@@ -169,6 +169,7 @@ export default [
         ],
       }),
       new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "سُبْحَانَ اللَّهِ",
@@ -190,11 +191,11 @@ export default [
           }),
           new DhikrEntryModel({
             arabic:
-              "أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيَّ الْقَيُّومَ وَأَتُوبُ إِلَيْهِ (3)",
+              "أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيَّ الْقَيُّومَ وَأَتُوبُ إِلَيْهِ",
             translit:
-              "Astaghfirullāhal ‛aẓīmal ladhī lā ilāha illā huwal ḥayyal qayyūma wa atūbu ilayh (3)",
+              "Astaghfirullāhal ‛aẓīmal ladhī lā ilāha illā huwal ḥayyal qayyūma wa atūbu ilayh",
             translation:
-              "I ask forgiveness of Allāh, the Mighty; there is no god, but He; He is the Ever-Living, the Self-Subsisting, and I turn to Him (in repentance). (3 times)",
+              "I ask forgiveness of Allāh, the Mighty; there is no god, but He; He is the Ever-Living, the Self-Subsisting, and I turn to Him (in repentance).",
           }),
         ],
       }),
