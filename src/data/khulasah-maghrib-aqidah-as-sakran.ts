@@ -120,14 +120,13 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "وَأَنَّ عِيسَى عَبْدُ اللَّهِ وَرَسُولُهُ وَابْنُ أَمَتِهِ",
-            translit:
-              "wa anna ʿĪsā ʿabdu l-Lāhi wa rasūluh wa ibnu amatih wa kalimatuhu alqāhā ilā Maryam wa rūḥun minh",
+            translit: "wa anna ʿĪsā ʿabdu l-Lāhi wa rasūluh wa ibnu amatih",
             translation:
               "and that Jesus is the servant of Allah and His Messenger, the son of His maidservant,",
           }),
           new DhikrEntryModel({
             arabic: "وَكَلِمَتُهُ أَلْقَاهَا إِلَى مَرْيَمَ وَرُوحٌ مِنْهُ",
-            translit: "wa anna al-Jannata ḥaqq wa rūḥun minh",
+            translit: "wa kalimatuhu alqāhā ilā Maryam wa rūḥun minh",
             translation:
               "and His Word which He cast to Mary, and a spirit from Him,",
           }),

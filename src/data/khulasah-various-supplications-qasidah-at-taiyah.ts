@@ -219,8 +219,7 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "مُحَمَّدٍ الْمَخْصُوصِ مِنْكَ بِفَضْلِكَ الْـــ",
-            translit:
-              "Muḥammadin almakhṣūṣi minka bifaḍlikal ‛aẓīmi wa inzālil Kitābi wa ḥikmati.",
+            translit: "Muḥammadin almakhṣūṣi minka bifaḍlikal-",
             translation: "Muḥammad, whom You selected for Your immense grace,",
           }),
           new QasidaEntryModel({

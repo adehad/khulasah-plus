@@ -176,19 +176,20 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "ٱللَّهُمَّ أَنْتَ رَبِّي لَا إِلَهَ إِلَّا أَنْتَ خَلَقْتَنِي",
-            translit: "Allāhumma anta Rabbī lā ilāha illā anta",
+            translit: "Allāhumma anta Rabbī lā ilāha illā anta khalaqtanī",
             translation:
               "O Allah! You are my Lord, there is no god but You, You created me",
           }),
           new DhikrEntryModel({
             arabic: "وَأَنَا عَبْدُكَ وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا ٱسْتَطَعْتُ",
-            translit: "khalaqtanī wa anā ʿabduka",
+            translit:
+              "wa anā ʿabduka wa anā ʿalā ʿahdika wa waʿdika ma astaṭaʿtu",
             translation:
               "and I am Your slave. I uphold Your pledge and promise as well as I can;",
           }),
           new DhikrEntryModel({
             arabic: "أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ",
-            translit: "wa anā ʿalā ʿahdika wa waʿdika ma astaṭaʿtu",
+            translit: "aʿūdhu bika min sharri mā ṣanaʿtu",
             translation:
               "I seek Your protection against the evil that I have done;",
           }),
@@ -196,7 +197,7 @@ export default [
             arabic:
               "أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ وَأَبُوءُ بِذَنْبِي فَٱغْفِرْ لِي فَإِنَّهُ لَا يَغْفِرُ ٱلذُّنُوبَ إِلَّا أَنْتَ",
             translit:
-              "aʿūdhu bika min sharri mā ṣanaʿtu, abūʾu laka bi niʿmatika ʿalayya wa abūʾu bi dhanbī, faghfir lī, faʾinnahu lā yaghfir udh-dhunūba illā anta.",
+              "abūʾu laka bi niʿmatika ʿalayya wa abūʾu bi dhanbī, faghfir lī, faʾinnahu lā yaghfir udh-dhunūba illā anta.",
             translation:
               "I acknowledge Your favors upon me and I acknowledge my sin, so forgive me, for none forgives sin except You.",
           }),
@@ -338,14 +339,14 @@ export default [
           new DhikrEntryModel({
             arabic:
               "ٱللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ وَمِنْ خَلْفِي وَعَنْ يَمِينِي وَعَنْ شِمَالِي وَمِنْ فَوْقِي",
-            translit: "Allāhumma iḥfaẓnī min bayni yadayya wa min khalfī",
+            translit:
+              "Allāhumma iḥfaẓnī min bayni yadayya wa min khalfī wa ʿan yamīnī wa ʿan shimālī wa min fawqī",
             translation:
               "O Allah! Protect me from [the evil] in front of me and behind me, on my right and my left, and from above me;",
           }),
           new DhikrEntryModel({
             arabic: "وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي",
-            translit:
-              "wa ʿan yamīnī wa ʿan shimālī wa min fawqī, wa aʿūdhu bi-ʿaẓamatika an ughtāla min taḥtī.",
+            translit: "wa aʿūdhu bi-ʿaẓamatika an ughtāla min taḥtī.",
             translation:
               "and I take refuge in Your Greatness from the unexpected harm from below me.",
           }),

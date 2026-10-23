@@ -1214,7 +1214,7 @@ export default [
           new QasidaEntryModel({
             arabic: "فَلَمَّا خَلَقَ اللَّهُ آدَمَ (عَلَيْهِ السَّلَام) أَوْدَعَ ذَلِكَ النُّورَ فِي طِينَتِهِ",
             translit:
-              "Falammā khalaqallāhu Ādama (‛alayhis salām) awda‛a dhālikan nūra fī ṭīnatih. Qāla ṣallallāhu ‛alayhi wa ālihī wa sallam:",
+              "Falammā khalaqallāhu Ādama (‛alayhis salām) awda‛a dhālikan nūra fī ṭīnatih.",
             translation:
               "When Allāh created Ādam (peace be upon him), He deposited that light in his clay.",
           }),
@@ -1222,7 +1222,7 @@ export default [
             arabic:
               "قَالَ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ: فَأَهْبَطَنِيَ اللَّهُ عَزَّ وَجَلَّ إِلَى الْأَرْضِ فِي ظَهْرِ آدَمَ (عَلَيْهِ السَّلَام)",
             translit:
-              "Fa ahbaṭaniyallāhu ‛azza wa jalla ilal arḍi fī ẓahri Ādama (‛alayhis salām),",
+              "Qāla ṣallallāhu ‛alayhi wa ālihī wa sallam: Fa ahbaṭaniyallāhu ‛azza wa jalla ilal arḍi fī ẓahri Ādama (‛alayhis salām),",
             translation:
               "The Prophet, may Allāh bless him and his family and grant them peace, said: Then Allāh, Mighty and Majestic, sent me down to earth in the loins of Ādam (peace be upon him),",
           }),

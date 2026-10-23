@@ -170,7 +170,8 @@ export default [
           new DhikrEntryModel({
             arabic:
               "تَحَصَّنْتُ بِٱللَّهِ وَبِأَسْمَاءِ ٱللَّهِ وَبِآيَاتِ ٱللَّهِ وَمَلَائِكَةِ ٱللَّهِ وَأَنْبِيَاءِ ٱللَّهِ وَرُسُلِ ٱللَّهِ وَالصَّالِحِينَ مِن عِبَادِ ٱللَّهِ",
-            translit: "Taḥaṣṣantu billāh, wa bi’asmā’illāh",
+            translit:
+              "Taḥaṣṣantu billāh, wa bi’asmā’illāh, wa bi’āyātillāh, wa malā’ikatillāh, wa ambiyā’illāh, wa rusulillāh, waṣṣāliḥīna min ‛ibādillāh;",
             translation:
               "I have taken refuge in Allāh, in the names of Allāh, in the signs of Allāh, in the angels of Allāh, in the prophets of Allāh, in the messengers of Allāh, and in the righteous servants of Allāh;",
           }),
@@ -178,7 +179,7 @@ export default [
             arabic:
               "حَصَّنْتُ نَفْسِي بِـ( لَا إِلَهَ إِلَّا اللَّهُ مُحَمَّدٌ رَسُولُ ٱللَّهِ صَلَّى اللَّهُ عَلَيهِ وَآلِهِ وَسَلَّم )",
             translit:
-              "wa bi’āyātillāh, wa malā’ikatillāh, wa ambiyā’illāh, wa rusulillāh, waṣṣāliḥīna min ‛ibādillāh; Ḥaṣṣantu nafsī bi (lā ilāha illallāh, Muḥammadur rasūlullāhi ṣallallāhu ‛alayhi wa ālihī wa sallam).",
+              "Ḥaṣṣantu nafsī bi (lā ilāha illallāh, Muḥammadur rasūlullāhi ṣallallāhu ‛alayhi wa ālihī wa sallam).",
             translation:
               "I have fortified myself with: “There is no god but Allāh, Muhammad is the Messenger of Allāh, may Allāh bless him and his family and grant them peace.”",
           }),

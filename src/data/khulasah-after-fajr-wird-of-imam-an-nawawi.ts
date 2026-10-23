@@ -335,14 +335,14 @@ export default [
             arabic:
               "اللَّهُمَّ اجْعَلْنِي وَإِيَّاهُمْ فِي حِفْظِكَ وَعِيَاذِكَ وَعِبَادِكَ وَعِيَالِكَ وَجِوَارِكَ وَأَمْنِكَ وَأَمَانَتِكَ وَحِزْبِكَ وَحِرْزِكَ وَكَنَفِكَ وَسَتْرِكَ وَلُطْفِكَ مِنْ كُلِّ شَيْطَانٍ وَسُلْطَانٍ وَإِنْسٍ وَجَانٍّ وَبَاغٍ وَحَاسِدٍ وَسَبُعٍ وَحَيَّةٍ وَعَقْرَبٍ",
             translit:
-              "Allāhummaj‛alnī wa iyyāhum fī ḥifẓika wa ‛iyādhika wa ‛ibādika wa ‛iyālika wa jiwārika wa amnika wa amānatika wa ḥizbika wa ḥirzika wa kanafika wa sitrika wa luṭfika min kulli shayṭānin wa sulṭān",
+              "Allāhummaj‛alnī wa iyyāhum fī ḥifẓika wa ‛iyādhika wa ‛ibādika wa ‛iyālika wa jiwārika wa amnika wa amānatika wa ḥizbika wa ḥirzika wa kanafika wa sitrika wa luṭfika min kulli shayṭānin wa sulṭān wa insin wa jānn, wa bāghin wa ḥāsidin, wa sabu‛in wa ḥayyatin wa ‛aqrabin",
             translation:
               "O Allāh, place me and them in Your safekeeping, Your refuge, Your servants, Your charge, Your protection, Your security, Your trust, Your party, Your stronghold, Your shelter, Your covering and Your gentleness, away from every devil and ruler, human and jinn, aggressor and envier, predator, snake and scorpion,",
           }),
           new DhikrEntryModel({
             arabic: "وَمِنْ شَرِّ كُلِّ دَابَّةٍ أَنْتَ آخِذٌ بِنَاصِيَتِهَا",
             translit:
-              "wa insin wa jānn, wa bāghin wa ḥāsidin, wa sabu‛in wa ḥayyatin wa ‛aqrabin, wa min sharri kulli dābbatin anta ākhidhum bi nāṣiyatihā",
+              "wa min sharri kulli dābbatin anta ākhidhun bi nāṣiyatihā",
             translation:
               "and from the evil of every creature whose forelock You hold.",
           }),

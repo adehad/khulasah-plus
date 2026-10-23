@@ -130,13 +130,13 @@ export default [
           }),
           new QasidaEntryModel({
             arabic: "بِ﴿كٓهيعٓصٓ﴾",
-            translit: "Bi Kāf Hā Yā",
-            translation: "By the honour of Kāf Hā Yā",
+            translit: "Bi Kāf Hā Yā ‘Ayn Ṣād",
+            translation: "By the honour of Kāf Hā Yā ‘Ayn Ṣād",
           }),
           new QasidaEntryModel({
             arabic: "فِى الْحَالِ وَلَّوْا خَائِبِين",
-            translit: "‘Ayn Ṣād, Fil ḥāli wallaw khā’ibīn",
-            translation: "‘Ayn Ṣād may they immediately fail miserably.",
+            translit: "Fil ḥāli wallaw khā’ibīn",
+            translation: "may they immediately fail miserably.",
           }),
         ],
       }),
@@ -251,12 +251,12 @@ export default [
           }),
           new QasidaEntryModel({
             arabic: "وَكُلُّ ذَنْبٍ عِنْدَنا",
-            translit: "wa kulla dhambin",
+            translit: "wa kulla dhambin ‘indanā,",
             translation: "each and every sin of ours.",
           }),
           new QasidaEntryModel({
             arabic: "وَامْنُنْ بِتَوْبَةٍ لَنَا",
-            translit: "‘indanā, wamnun bitawbatin lanā.",
+            translit: "wamnun bitawbatin lanā.",
             translation: "Accept our repentance,",
           }),
           new QasidaEntryModel({

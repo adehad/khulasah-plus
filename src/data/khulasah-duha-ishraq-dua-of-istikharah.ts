@@ -178,14 +178,14 @@ export default [
             arabic:
               "فِي دِينِنَا وَدُنْيَانَا وَأُخْرَانَا وَمَعَادِنَا وَمَعَاشِنَا وَعَاقِبَةِ أُمُورِنَا عَاجِلِهَا وَآجِلِهَا فَاقْدِرهُ لَنَا",
             translit:
-              "fī dīninā wa dunyānā wa ukhrānā wa ma‛ādinā wa ma‛āshinā wa ‛āqibati umūrinā ‛ājilihā wa ājilihā",
+              "fī dīninā wa dunyānā wa ukhrānā wa ma‛ādinā wa ma‛āshinā wa ‛āqibati umūrinā ‛ājilihā wa ājilihā faqdirhu lanā",
             translation:
-              "in our religion, in our life, in the hereafter, in our ultimate return, and our livelihood, and the outcome of our affairs, now or later,",
+              "in our religion, in our life, in the hereafter, in our ultimate return, and our livelihood, and the outcome of our affairs, now or later, then ordain it for us,",
           }),
           new DhikrEntryModel({
             arabic: "وَيَسِّرهُ لَنَا",
-            translit: "faqdirhu lanā wa yassirhu lanā",
-            translation: "then ordain it for us and make it easy for us,",
+            translit: "wa yassirhu lanā",
+            translation: "and make it easy for us,",
           }),
           new DhikrEntryModel({
             arabic: "ثُمَّ بَارِك لَنَا فِيهِ",

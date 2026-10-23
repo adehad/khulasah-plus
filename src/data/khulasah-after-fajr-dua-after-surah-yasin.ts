@@ -76,7 +76,8 @@ export default [
           new DhikrEntryModel({
             arabic:
               "اللَّهُمَّ اجْعَلْنَا وَإِيَّاهُمْ فِي كَنَفِكَ وَأَمَانِكَ وعِيَاذِكَ مِنْ كُلِّ شَيْطَانٍ مَرِيدٍ",
-            translit: "wa amānika wa ‛iyādhika min kulli shayṭānim marīd",
+            translit:
+              "Allāhummaj‛alnā wa iyyāhum fī kanafika wa amānika wa ‛iyādhika min kulli shayṭānim marīd",
             translation:
               "O Allāh! Place us and them in Your protection, Your safety, Your security, and Your sanctuary, from any rebellious Satan,",
           }),

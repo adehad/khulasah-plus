@@ -453,7 +453,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "مِمَّا لَا يَعْلَمُ عِلْمَهُ إِلَّا أَنْتَ",
-            translit: "mimmā lā yaʿlamu illā anta",
+            translit: "mimmā lā yaʿlamu ʿilmahu illā anta",
             translation: "whose knowledge no one knows except You",
           }),
           new DhikrEntryModel({

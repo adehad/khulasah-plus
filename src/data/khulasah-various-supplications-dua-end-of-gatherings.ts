@@ -178,7 +178,7 @@ export default [
             arabic:
               "ولَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ الْعَلِيِّ الْعَظِيمِ. وَصَلَّى اللَّهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ",
             translit:
-              "wa ṣallallāhu ‛alā sayyidinā Muḥammadin wa ‛alā ālihī wa ṣaḥbihī wa sallam",
+              "Wa lā ḥawla wa lā quwwata illā billāhil ‛aliyyil ‛aẓīm. wa ṣallallāhu ‛alā sayyidinā Muḥammadin wa ‛alā ālihī wa ṣaḥbihī wa sallam",
             translation:
               "and may blessings and peace be upon our master Muḥammad his family and companions",
           }),
@@ -315,7 +315,7 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "فَضْلاً وَجُودًا مَنَّا",
-            translit: "Faḍlan wa jūdan minnā lā biktisābi minnā",
+            translit: "Faḍlan wa jūdan minnā",
             translation: "Out of Your grace, Your generosity and Your favour,",
           }),
           new QasidaEntryModel({
@@ -330,7 +330,7 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "بِالْمُصْطَفَى الرَّسُولِ",
-            translit: "Bil Muṣṭafar-rasūli naḥẓā bikulli sūl",
+            translit: "Bil Muṣṭafar-rasūli",
             translation: "Through the Messenger, the Chosen One,",
           }),
           new QasidaEntryModel({
@@ -345,9 +345,8 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "صَلَّى وَسَلَّم رَبِّي",
-            translit: "Ṣallā wa sallama Rabbi ‘alayhi ‘addal ḥabbi",
-            translation:
-              "My Lord send peace and blessings upon him as much as the number of grains",
+            translit: "Ṣallā wa sallama Rabbī",
+            translation: "My Lord send peace and blessings",
           }),
           new QasidaEntryModel({
             arabic: "عَلَيْهِ عَدَّ الْحَبِّ",
@@ -366,7 +365,7 @@ export default [
           }),
           new QasidaEntryModel({
             arabic: "عِدَادَ طَشِّ السُّحْبِ",
-            translit: "Wa ālihī waṣṣaḥbi ‘idāda ṭash- shis suḥbi",
+            translit: "‘idāda ṭash- shis suḥbi",
             translation: "as much as rain falls from the clouds",
           }),
         ],

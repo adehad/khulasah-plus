@@ -318,23 +318,23 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "وَكُلَّ مَحَلٍّ لِلْخَلْقِ",
-            translit: "wa kulla maḥallin lil khalqi; yamīlu bī ilā ma‛ṣiyatika",
+            translit: "wa kulla maḥallin lil khalqi",
             translation: "and every place given to creation in it",
           }),
           new DhikrEntryModel({
             arabic: "يَمِيلُ بِي إِلَى مَعْصِيَتِكَ",
-            translit: "aw yash-ghalunī ‛an ṭā‛atika",
+            translit: "yamīlu bī ilā ma‛ṣiyatika",
             translation: "that would incline me towards disobeying You,",
           }),
           new DhikrEntryModel({
             arabic: "أَوْ يَشْغَلُنِي عَنْ طَاعَتِكَ",
-            translit:
-              "aw yaḥūlu baynī wa baynat taḥaqquqi bima‛rifatikal khāṣṣah",
+            translit: "aw yash-ghalunī ‛an ṭā‛atika",
             translation: "or distract me from obeying You,",
           }),
           new DhikrEntryModel({
             arabic: "أَوْ يَحُولُ بَيْنِي وَبَيْنَ التَّحَقُّقِ بَمَعْرِفَتِكَ الْخَاصَّةِ",
-            translit: "wa maḥabbatikal khāliṣah",
+            translit:
+              "aw yaḥūlu baynī wa baynat taḥaqquqi bima‛rifatikal khāṣṣah",
             translation:
               "or come between me and attaining Your special knowledge",
           }),
@@ -342,7 +342,7 @@ export default [
             arabic:
               "وَمَحَبَّتِكَ الْخَالِصَةِ. وَصَلَّى اللَّهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ",
             translit:
-              "wa ṣallallāhu ‛alā sayyidinā Muḥammadin wa ‛alā ālihī wa ṣaḥbihī wa sallam",
+              "wa maḥabbatikal khāliṣah. wa ṣallallāhu ‛alā sayyidinā Muḥammadin wa ‛alā ālihī wa ṣaḥbihī wa sallam",
             translation:
               "and Your pure love. And may Allāh bless our master Muḥammad, and his family and companions, and grant them peace.",
           }),

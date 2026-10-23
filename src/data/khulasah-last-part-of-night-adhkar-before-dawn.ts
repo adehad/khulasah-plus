@@ -1608,8 +1608,7 @@ export default [
           }),
           new QasidaEntryModel({
             arabic: "وَبِانْكِسَارِه وَفَقْرِه",
-            translit:
-              "wa binkisārihī wa faqrihī, Fahzim biyusrika ‛usrihī, bimaḥḍi jūdik wal’afḍāl",
+            translit: "wa binkisārihī wa faqrihī",
             translation: "with his brokenness and his poverty;",
           }),
           new QasidaEntryModel({
@@ -1669,8 +1668,7 @@ export default [
           }),
           new QasidaEntryModel({
             arabic: "عَلَوْتَ عَنْ ضَرْبِ الْاَمْثَال",
-            translit:
-              "Fa’anta mawlal mawālī, almunfarid bilkamāl. Wa bil‛ulā watta‛ālī, ‛alawta ‛an ḍarbil amthāl.",
+            translit: "‛alawta ‛an ḍarbil amthāl",
             translation: "You are exalted above any likeness being struck.",
           }),
         ],
@@ -2226,8 +2224,7 @@ export default [
           }),
           new QasidaEntryModel({
             arabic: "وَالصَّحْبِ وَالتَّابِعِين",
-            translit:
-              "Thummaṣṣalātu wassalām, ‛alā shafī‛il anām. Wal’āli ni‛mal kirām, waṣṣaḥḥibi wattābi‛īn.",
+            translit: "waṣṣaḥḥibi wattābi‛īn.",
             translation:
               "Poem of al-Habib Ali bin Muhammad al-Habashi - Rabbi inni",
           }),
@@ -3179,44 +3176,44 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "وَأَنْتَ لَمْ تَزَلْ لِذَلِكَ أَهْلًا ؛ يَا مُيَسِّرَ كُلِّ عَسِيرٍ",
-            translit: "wa anta lam tazal lidhālika ahlā",
+            translit:
+              "wa anta lam tazal lidhālika ahlā; yā muyassira kulli ‛asīr",
             translation:
               "and You have always been worthy of that; O Facilitator of every difficulty,",
           }),
           new DhikrEntryModel({
             arabic: "وَيَا جَابِرَ كُلِّ كَسِيرٍ",
-            translit: "yā muyassira kulli ‛asīr",
+            translit: "wa yā jābira kulli kasīr",
             translation: "and O Mender of every broken one,",
           }),
           new DhikrEntryModel({
             arabic: "وَيَا صَاحِبَ كُلِّ فَرِيدٍ",
-            translit: "wa yā jābira kulli kasīr",
+            translit: "wa yā ṣāḥiba kulli farīd",
             translation: "and O Companion of every solitary one,",
           }),
           new DhikrEntryModel({
             arabic: "وَيَا مُغْنِيَ كُلِّ فَقِيرٍ",
-            translit: "wa yā ṣāḥiba kulli farīd",
+            translit: "wa yā mughniya kulli faqīr",
             translation: "and O Enricher of every poor one,",
           }),
           new DhikrEntryModel({
             arabic: "وَيَا مُقَوِّيَ كُلِّ ضَعِيفٍ",
-            translit: "wa yā mughniya kulli faqīr",
+            translit: "wa yā muqawwiya kulli ḍa‛īf",
             translation: "and O Strengthener of every weak one,",
           }),
           new DhikrEntryModel({
             arabic: "وَيَا مَأْمَنَ كُلِّ مَخِيفٍ",
-            translit: "wa yā muqawwiya kulli ḍa‛īf",
+            translit: "wa yā ma’mana kulli makhīf",
             translation: "and O Refuge of every fearful one,",
           }),
           new DhikrEntryModel({
             arabic: "يَسِّر عَلَيْنَا كُلَّ عَسِيرٍ",
-            translit: "wa yā ma’mana kulli makhīf",
+            translit: "yassir ‛alaynā kulla ‛asīr",
             translation: "make easy for us every difficulty,",
           }),
           new DhikrEntryModel({
             arabic: "فَتَيْسِيرُ الْعَسِيرِ عَلَيْكَ يَسِيرٌ",
-            translit:
-              "yassir ‛alaynā kulla ‛asīr, fataysīrul ‛asīri ‛alayka yasīr.",
+            translit: "fataysīrul ‛asīri ‛alayka yasīr.",
             translation: "for making the difficult easy is simple for You.",
           }),
         ],
@@ -3405,7 +3402,7 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "يَا عُمْدَتِي يَا عُدَّتِي",
-            translit: "Yā 'Umdati yā 'Uddati yā Munqidhi min shiddati⁣",
+            translit: "Yā 'Umdati yā 'Uddati",
             translation: "O my support, O my provision,",
           }),
           new QasidaEntryModel({
@@ -3420,7 +3417,7 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "وَجَّهْتُ لَكَ وِجْهَتِي",
-            translit: "Wajjahtu laka wijhati 'ajjil bighauthi yā 'aẓīm⁣",
+            translit: "Wajjahtu laka wijhati",
             translation: "I have turned my face toward You,",
           }),
           new QasidaEntryModel({
@@ -3435,7 +3432,7 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "وَسَخِّرِ الْأَسبَابَا",
-            translit: "Wa sakh-khiril asbābā wa dhalliliṣ ṣi'ābā⁣",
+            translit: "Wa sakh-khiril asbābā",
             translation: "And subjugate the means,",
           }),
           new QasidaEntryModel({
@@ -3450,7 +3447,7 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "وَافْتَحْ لَنَا الْأَبْوَابَا",
-            translit: "Waftaḥ lanal abwābā bin naṣri minka yā Karīm⁣",
+            translit: "Waftaḥ lanal abwābā",
             translation: "And open for us the doors",
           }),
           new QasidaEntryModel({
@@ -3465,7 +3462,7 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "وَرُدَّ كَيْدَ الْكَائِدِ",
-            translit: "Wa rudda kaidal kā-idi wa kulla ṭāghin māridi⁣",
+            translit: "Wa rudda kaidal kā-idi",
             translation: "And repel the scheme of the schemer",
           }),
           new QasidaEntryModel({
@@ -3480,7 +3477,7 @@ export default [
         entries: [
           new QasidaEntryModel({
             arabic: "وَحَاسِدٍ مُعَانِدِ",
-            translit: "wa ḥāsidin mu'ānidi bi ḥaqqi sirri (Ṭā sīn mīm)⁣",
+            translit: "wa ḥāsidin mu'ānidi",
             translation: "Istighfar",
           }),
           new QasidaEntryModel({

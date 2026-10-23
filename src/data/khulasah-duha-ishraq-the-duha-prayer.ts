@@ -8,15 +8,15 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
-            translit:
-              "Alḥamdulillāhi rabbil ‛ālamīn. Allāhumma ṣalli ‛alā sayyidinā Muḥammadin",
+            translit: "Alḥamdulillāhi rabbil ‛ālamīn.",
             translation: "Praise be to Allāh, Lord of the Worlds",
           }),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَآلِهِ وَسَلِّم",
-            translit: "wa ālihī wa sallim",
+            translit:
+              "Allāhumma ṣalli ‛alā sayyidinā Muḥammadin wa ālihī wa sallim",
             translation:
-              "O Allāh! Bestow blessings and peace upon our master Muḥammad",
+              "O Allāh! Bestow blessings and peace upon our master Muḥammad and his family.",
           }),
           new DhikrEntryModel({
             arabic:
@@ -24,7 +24,7 @@ export default [
             translit:
               "yā allāhu, yā waḥidu, yā aḥadu, yā wājidu, yā jawwād; infaḥnā minka bi nafḥati khayrin",
             translation:
-              "and his family. O Allāh, the One and the Unique, O Creator, O the Most Generous; blow upon us from Yourself a breeze of goodness.",
+              "O Allāh, the One and the Unique, O Creator, O the Most Generous; blow upon us from Yourself a breeze of goodness.",
             repeat: 3,
           }),
         ],

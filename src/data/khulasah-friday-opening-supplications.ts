@@ -77,24 +77,24 @@ export default [
           imran_18(),
           new DhikrEntryModel({
             arabic: "وَأَنَا أَشْهَدُ بِمَا شَهِدَ اللَّهُ بِهِ وَأُشْهِدُ اللَّهَ عَلَى ذَلِكَ",
-            translit: "Wa ana ash-hadu bimā shahidallāhu bihī",
+            translit:
+              "Wa ana ash-hadu bimā shahidallāhu bihī wa ush-hidullāha ‛alā dhālika",
             translation:
               "I bear witness to what Allah has borne witness to, and I call Allah to witness to that,",
           }),
           new DhikrEntryModel({
             arabic: "وَأَسْتَوْدِعُ اللَّهَ هَذِهِ الشَّهَادَةَ",
-            translit: "wa ush-hidullāha ‛alā dhālika",
+            translit: "wa astawdi‛ullāha hādhihish-shahādah",
             translation: "and I entrust this testimony to Allah,",
           }),
           new DhikrEntryModel({
             arabic: "وَهِيَ لِي عِنْدَ اللَّهِ وَدِيعَةٌ",
-            translit: "wa astawdi‛ullāha hādhihish-shahādah",
+            translit: "wa hiya lī ‛indallāhi wadī‛atun",
             translation: "and it is, with Allah, a trust for me.",
           }),
           new DhikrEntryModel({
             arabic: "أَسْأَلُهُ حِفْظَهَا حَتَّى يَتَوَفَّانِي عَلَيْهَا",
-            translit:
-              "wa hiya lī ‛indallāhi wadī‛atun as'aluhū ḥifẓahā ḥattā yatawaffānī ‛alayhā",
+            translit: "as'aluhū ḥifẓahā ḥattā yatawaffānī ‛alayhā",
             translation:
               "I ask Him to preserve it until He takes me in death upon it.",
           }),

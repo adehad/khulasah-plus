@@ -1081,9 +1081,8 @@ const shimmeringLight = [
               }),
               new QasidaEntryModel({
                 arabic: "وَتَجَلَّتِ الْأَنْوَارُ مِنْ كُلِّ الْجِهَـــا",
-                translit: "wa-taja l-la n-nuwāru min kulli l-jihā(ti)",
-                translation:
-                  "The time of the birth of the Accepted Intercessor had come.",
+                translit: "wa-tajallati l-anwāru min kulli l-jihā(ti)",
+                translation: "Lights manifested from every direction,",
               }),
               new QasidaEntryModel({
                 arabic: "ـــتِ فَوَقْتُ مِيلَادِ الْمُشَفَّعِ حَانَا",
@@ -1103,8 +1102,7 @@ const shimmeringLight = [
               }),
               new QasidaEntryModel({
                 arabic: "ظَهَرَ الْحَبِيبُ مُكَرَّمًا وَمُصَانَا",
-                translit:
-                  "ẓahara l-ḥabību mukarraman wa-muṣānā maḥallu l-maqāmi",
+                translit: "ẓahara l-ḥabību mukarraman wa-muṣānā",
                 translation: "The Beloved, honored and protected, appeared.",
               }),
             ],
@@ -2324,7 +2322,7 @@ const shimmeringLight = [
               }),
               new QasidaEntryModel({
                 arabic: "وِي الْقَوْلُ مِنَّا أَوْ يَكُونُ ثَنَانَا",
-                translit: "wa-īnna minnā qawlun amyakūnu thanānā",
+                translit: "wī l-qawlu minnā aw yakūnu thanānā",
                 translation:
                   "Could our statements of praise ever measure up to His?",
               }),

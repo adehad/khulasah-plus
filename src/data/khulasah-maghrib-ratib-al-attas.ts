@@ -599,7 +599,7 @@ export default [
             arabic:
               "اللَّهُمَّ إِنَّا نَسْتَحْفِظُكَ وَنَسْتَوْدِعُكَ أَدْيَانَنَا وَأَنْفُسَنَا وَأَمْوَالَنَا وَأَهْـلَنَا وَكُلَّ شَيْءٍ أَعْطَيْتَنَا",
             translit:
-              "Allāhumma innā nastaḥfiẓuka wa nastawdi‛uka adyānanā wa anfusanā",
+              "Allāhumma innā nastaḥfiẓuka wa nastawdi‛uka adyānanā wa anfusanā wa amwālanā wa ahlanā, wa kulla shay’in a‛ṭaytanā",
             translation:
               "O Allāh, we ask You to guard and we entrust to You our religion, our selves, our wealth, our families and everything You have given us.",
           }),
@@ -607,7 +607,7 @@ export default [
             arabic:
               "اللَّهُمَّ اجْعَلْنَا وَإِيَّاهُمْ فِي كَنَفِكَ وَأَمَانِكَ وَعِيَاذِكَ مِنْ كُلِّ شَيْطَانٍ مَرِيدٍ وَجَبَّارٍ عَنِيدٍ وَذِي عَيْنٍ وَذِي بَغْيٍ وَذِي حَسَدٍ وَمِنْ شَرِّ كُلِّ ذِي شَرٍّ إِنَّكَ عَلَى كُلِّ شَيْىءٍ قَدِيرٌ",
             translit:
-              "wa amwālanā wa ahlanā, wa kulla shay’in a‛ṭaytanā, Allāhummaj‛alnā wa iyyāhum fī kanafika wa amānika wa ‛iyādhika min kulli shayṭānim marīd, wa jabbārin ‛anīd, wa dhī ‛aynin wa dhī baghyin wa dhī ḥasadin, wa min sharri kulli dhī sharr, innaka ‛alā kulli shay’in qadīr.",
+              "Allāhummaj‛alnā wa iyyāhum fī kanafika wa amānika wa ‛iyādhika min kulli shayṭānim marīd, wa jabbārin ‛anīd, wa dhī ‛aynin wa dhī baghyin wa dhī ḥasadin, wa min sharri kulli dhī sharr, innaka ‛alā kulli shay’in qadīr.",
             translation:
               "O Allāh, place us and them in Your protection, Your safety and Your refuge from every rebellious devil, every obstinate tyrant, the evil eye, the transgressor and the envier, and from the evil of everyone who does evil. Indeed You have power over all things.",
           }),

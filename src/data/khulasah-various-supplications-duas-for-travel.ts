@@ -78,48 +78,48 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "وَأَنْ تُبَلِّغَنَا مَقْصِدَنَا",
-            translit:
-              "wa an tuballighanā maqṣadan Allāhumma innā na‛ūdhu bika min wa‛thā’is safari,",
+            translit: "wa an tuballighanā maqṣadanā,",
             translation: "and to let us reach our destination.",
           }),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ إِنَّا نَعُوذُ بِكَ مِنْ وَعْثَاءِ السَّفَرِ",
-            translit: "wa ka’ābatil munqalabi,",
+            translit: "Allāhumma innā na‛ūdhu bika min wa‛thā’is safari,",
             translation:
               "O Allāh! We seek refuge in You from the difficulties of this journey",
           }),
           new DhikrEntryModel({
             arabic: "وَكَآبَةِ الْمُنْقَلَبِ",
-            translit:
-              "Wa sū’il manẓari fil’ahli wal māli wal waladi wal aṣḥābi.",
+            translit: "wa ka’ābatil munqalabi",
             translation:
               "and from (our) returning to (our) dwelling(s) and seeing what may grieve us",
           }),
           new DhikrEntryModel({
             arabic: "وَسُوءِ الْمَنْظَرِ فِي الْأَهْلِ وَالْمَالِ وَالْوَلَدِ وَالْأَصْحَابِ",
-            translit: "Allāhummaj‛alnā wa iyyāhum fī jawārika,",
+            translit:
+              "wa sū’il manẓari fil’ahli wal māli wal waladi wal aṣḥābi.",
             translation:
               "and the wicked sights (in store for us) in our family, wealth, children and friends.",
           }),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ اجْعَلْنَا وَإِيَّاهُمْ فِي جِوَارِكَ",
-            translit: "wa lā taslubnā wa iyyāhum ni‛mataka,",
+            translit: "Allāhummaj‛alnā wa iyyāhum fī jawārika,",
             translation: "O Allāh! Place us and them in Your protection",
           }),
           new DhikrEntryModel({
             arabic: "وَلَا تَسْلُبنَا وَإِيَّاهُمْ نِعْمَتَكَ",
-            translit: "wa lā tughayyir mā binā wa bihim min ‛āfiyatika,",
+            translit: "wa lā taslubnā wa iyyāhum ni‛mataka,",
             translation: "and do not withhold Your blessings from us",
           }),
           new DhikrEntryModel({
             arabic: "وَلَا تُغَيِّر مَا بِنَا وَبِهِم مِنْ عَافِيَتِكَ",
-            translit: "wa ṣallallāhu ‛alā sayyidinā Muḥammad,",
+            translit: "wa lā tughayyir mā binā wa bihim min ‛āfiyatika,",
             translation:
               "and do not change our and their (condition) from the health and safety that You have granted.",
           }),
           new DhikrEntryModel({
             arabic: "وَصَلَّى اللَّهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَآلِهِ وَسَلَّمَ",
-            translit: "wa ālihī wa ṣaḥbihī wa sallam,",
+            translit:
+              "wa ṣallallāhu ‛alā sayyidinā Muḥammad, wa ālihī wa sallam,",
             translation:
               "And may the blessings and peace of Allāh be upon our master Muḥammad and his family.",
           }),
@@ -195,35 +195,35 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "فَإِنِّي لَمْ أَخْرُجْ أَشَرًا وَلَا بَطَرًا وَلَا رِيَاءً وَلَا سُمْعَةً",
-            translit: "fa’innī lam akhruj asharan wa lā baṭaran",
+            translit:
+              "fa’innī lam akhruj asharan wa lā baṭaran wa lā riyā’an wa lā sum‛atan",
             translation:
               "for I did not leave (my house in a state of) insolence, or arrogance, or hypocrisy, or seeking fame.",
           }),
           new DhikrEntryModel({
             arabic: "بَلْ خَرَجتُ اتِّقَاءَ سَخَطِكَ وَابْتِغَاءَ مَرْضَاتِكَ",
-            translit: "wa lā riyā’an wa lā sum‛atan",
+            translit: "bal kharajtu ittiqā’a sakhaṭika wabtighā’a marḍātika",
             translation:
               "But I have left (my house) in fear of Your punishment and seeking Your pleasure.",
           }),
           new DhikrEntryModel({
             arabic: "أَسْأَلُكَ أَن تُعِيذَنِي مِنَ النَّارِ",
-            translit: "bal kharajtu ittiqā’a sakhaṭika",
+            translit: "As’aluka an tu‛īdhanī minannāri",
             translation: "I ask You to protect me from the Hellfire",
           }),
           new DhikrEntryModel({
             arabic: "وَتُدْخِلَنِي الْجَنَّةَ",
-            translit: "wabtighā’a marḍātika. As’aluka an tu‛īdhanī minannāri",
+            translit: "wa tudkhilanil jannata",
             translation: "to admit me into Paradise",
           }),
           new DhikrEntryModel({
             arabic: "وَتَغْفِرَ لِي ذُنُوبِي",
-            translit: "wa tudkhilanil jannata",
+            translit: "wa taghfira lī dhunūbī",
             translation: "and to forgive my sins",
           }),
           new DhikrEntryModel({
             arabic: "فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ",
-            translit:
-              "wa taghfira lī dhunūbī, fa’innahū lā yaghfirudh dhunūba illā anta.",
+            translit: "fa’innahū lā yaghfirudh dhunūba illā anta.",
             translation: "for none can forgive sins, but You.",
           }),
         ],
@@ -566,20 +566,20 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "وَنَعُوذُ بِكَ مِنْ شُرُورِهِمْ",
-            translit:
-              "wa na‛ūdhu bika min shurūrihim. Allāhumma rabbas samāwāti wa rabbal ‛arshil ‛aẓīm",
+            translit: "wa na‛ūdhu bika min shurūrihim.",
             translation: "and we seek refuge in You from their evils.",
           }),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ رَبَّ السَّمَاوَاتِ وَرَبَّ الْعَرْشِ الْعَظِيم",
-            translit: "kun lī jāran min sharri hā’ulā’i",
+            translit: "Allāhumma rabbas samāwāti wa rabbal ‛arshil ‛aẓīm",
             translation:
               "O Allāh! Lord of the Heavens and Lord of the Honoured Throne",
           }),
           new DhikrEntryModel({
             arabic:
               "كُن لِي جَارًا مِنْ شَرِّ هَؤُلَاءِ وَمِنْ شَرِّ الْجِنِّ وَالْإِنْسِ وَأَعْوَانِهِمْ وَأَتْبَاعِهِمْ",
-            translit: "wa min sharril jinni wal insi wa a‛wānihim wa atbā‛ihim",
+            translit:
+              "kun lī jāran min sharri hā’ulā’i wa min sharril jinni wal insi wa a‛wānihim wa atbā‛ihim",
             translation:
               "be to me a protection from their evil, and from the evil of jinn and mankind, and from the evil of their helpers and followers.",
           }),

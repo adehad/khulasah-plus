@@ -625,7 +625,7 @@ export default [
             arabic:
               "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا تُحِبُّ وَتَرْضَاهُ لَهُ.",
             translit:
-              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin kamā tuḥibbu wa tarḍāhu lahu.",
+              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin kamā tuḥibbu wa tarḍāhu lahu.",
             translation:
               "O Allah, bless Our Master Muhammad and the family of Our Master Muhammad as You love and are pleased with him.",
           }),

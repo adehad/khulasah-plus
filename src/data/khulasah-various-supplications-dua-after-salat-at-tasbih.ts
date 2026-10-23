@@ -91,7 +91,8 @@ export default [
           new DhikrEntryModel({
             arabic:
               "سُبْحَانَ خَالِقِ النُّورِ. وَصَلَّى اللَّهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَآلِهِ وَصَحْبِهِ وَسَلَّمَ",
-            translit: "subḥāna Khāliqin nūr.",
+            translit:
+              "subḥāna Khāliqin nūr. Wa ṣallallāhu ‛alā sayyidinā Muḥammadin wa ālihī wa ṣaḥbihī wa sallam",
             translation: "Holy be You, the Creator of light.",
           }),
         ],
