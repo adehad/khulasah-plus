@@ -953,9 +953,9 @@ export function ahzab_11_12(
     entries: [
       new QuranEntryModel({
         arabic: "… ٱبۡتُلِيَ ٱلۡمُؤۡمِنُونَ وَزُلۡزِلُواْ زِلۡزَالٗا شَدِيدٗا",
-        translit: "(Faqad)i-btuliya-l-mu'minūna wa zulzilū zilzālan shadīdan",
+        translit: "… ibtuliya-l-mu'minūna wa zulzilū zilzālan shadīdan",
         translation:
-          "(There,) the believers were tried and shaken with a mighty shaking.",
+          "… the believers were tried and shaken with a mighty shaking.",
         verse: 11,
       }),
       new QuranEntryModel({

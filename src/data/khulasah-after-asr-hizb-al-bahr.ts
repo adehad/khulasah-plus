@@ -55,6 +55,11 @@ const hizbAlBahrContent = [
             translation:
               "We ask You for protection in our movements and our stillness, in our words and our desires, and our thoughts; from the doubts and the suspicions and the illusions that veil our hearts from contemplating the unseen.",
           }),
+          new DhikrEntryModel({
+            arabic: "فَقَدِ",
+            translit: "faqad",
+            translation: "for indeed,",
+          }),
         ],
       }),
       ahzab_11_12(1, "", false),
