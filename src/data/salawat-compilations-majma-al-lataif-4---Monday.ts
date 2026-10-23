@@ -1,10 +1,12 @@
-import { an_am_153, qaf_35, tawbah_128 } from "@/data/shared/quran-partial";
 import {
-  DhikrEntryModel,
-  DhikrModel,
-  QuranDhikrEntryModel,
-  WirdModel,
-} from "@/models/recitation";
+  an_am_153,
+  duha_4,
+  qaf_35,
+  qalam_4,
+  ra_d_19,
+  tawbah_128,
+} from "@/data/shared/quran-partial";
+import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
@@ -236,16 +238,7 @@ export default [
             translation:
               "and as long as the fingertips of love write a letter from the tears of longing.",
           }),
-          new QuranDhikrEntryModel({
-            arabic:
-              "أَفَمَن يَعْلَمُ أَنَّمَآ أُنزِلَ إِلَيْكَ مِن رَّبِّكَ ٱلْحَقُّ كَمَنْ هُوَ أَعْمَىٰٓ ۚ إِنَّمَا يَتَذَكَّرُ أُو۟لُوا۟ ٱلْأَلْبَٰبِ",
-            translit:
-              "Afaman ya‛lamu annamā unzila ilayka mir rabbikal ḥaqqu kaman huwa a‛mā, innamā yatadhakkaru ulul albāb",
-            translation:
-              "Then is he who knows that what has been revealed to you from your Lord is the truth like one who is blind? They will only be reminded who are people of understanding -",
-            verse: 19,
-            surah: 13,
-          }),
+          ra_d_19(),
         ],
       }),
       new DhikrModel({
@@ -699,13 +692,7 @@ export default [
             translation:
               "who gathers the ranks of perfection with their manifestations, by the testimony of",
           }),
-          new QuranDhikrEntryModel({
-            arabic: "وَإِنَّكَ لَعَلَىٰ خُلُقٍ عَظِيمٍ",
-            translit: "Wa innaka la‛alā khuluqin ‛aẓīm",
-            translation: "And indeed, you are of a great moral character.",
-            verse: 4,
-            surah: 68,
-          }),
+          qalam_4(),
           new DhikrEntryModel({
             arabic: "سَيِّدِي وَحَبِيبِي رَسُولِ اللَّهِ وَعَبْدِهِ مُحَمَّدٍ الصَّادِقِ الْأَمِين",
             translit:
@@ -904,14 +891,7 @@ export default [
             translation:
               "and the locus of the affairs of verification in the sphere of",
           }),
-          new QuranDhikrEntryModel({
-            arabic: "وَلَلْـَٔاخِرَةُ خَيْرٌ لَّكَ مِنَ ٱلْأُولَىٰ",
-            translit: "Wa lal ākhiratu khayrul laka minal ūlā",
-            translation:
-              "And the Hereafter is better for you than the first [life].",
-            verse: 4,
-            surah: 93,
-          }),
+          duha_4(),
           new DhikrEntryModel({
             arabic:
               "سَيِّدِي رَسُولِ اللَّهِ مُحَمَّدِ بْنِ عَبْدِ اللَّهِ الَّذِي جَاءَ بِالصِّدْقِ وَكَانَ أَصْدَقَ الصَّادِقِين",

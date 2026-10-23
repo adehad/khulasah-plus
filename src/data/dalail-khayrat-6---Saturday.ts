@@ -1,10 +1,5 @@
-import { anbiya_87 } from "@/data/shared/quran-partial";
-import {
-  DhikrEntryModel,
-  DhikrModel,
-  QuranDhikrEntryModel,
-  WirdModel,
-} from "@/models/recitation";
+import { anbiya_87, saffat_96 } from "@/data/shared/quran-partial";
+import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
@@ -1360,13 +1355,7 @@ export default [
             translit: "yā man qāla wa qawlul ḥaqqu:",
             translation: "O You who said, and whose word is Truth:",
           }),
-          new QuranDhikrEntryModel({
-            arabic: "وَاللَّهُ خَلَقَكُمْ وَمَا تَعْمَلُونَ",
-            translit: "wAllahu khalaqakum wa mā taʿmalūna",
-            translation: "And Allah created you and what you do",
-            surah: 37,
-            verse: 96,
-          }),
+          saffat_96(),
           new DhikrEntryModel({
             arabic: "وَلَا يَصْدُرُ عَنْ أَحَدٍ مِنْ عَبِيدِهِ قَوْلٌ وَلَا فِعْلٌ وَلَا حَرَكَةٌ وَلَا سُكُونٌ",
             translit:

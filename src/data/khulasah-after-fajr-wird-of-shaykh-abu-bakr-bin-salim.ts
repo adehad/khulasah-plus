@@ -1,9 +1,9 @@
 import {
-  DhikrEntryModel,
-  DhikrModel,
-  QuranDhikrEntryModel,
-  WirdModel,
-} from "@/models/recitation";
+  saffat_180,
+  saffat_181,
+  saffat_182,
+} from "@/data/shared/quran-partial";
+import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
@@ -298,28 +298,9 @@ export default [
       }),
       new DhikrModel({
         entries: [
-          new QuranDhikrEntryModel({
-            arabic: "سُبْحَٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ",
-            translit: "Subḥāna rabbika rabbil ‛izzati ‛ammā yaṣifūn.",
-            translation:
-              "Exalted is your Lord, the Lord of might, above what they describe.",
-            verse: 180,
-            surah: 37,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَسَلَٰمٌ عَلَى ٱلْمُرْسَلِينَ",
-            translit: "Wa salāmun ‛alal mursalīn.",
-            translation: "And peace upon the messengers.",
-            verse: 181,
-            surah: 37,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
-            translit: "Walḥamdu lillāhi rabbil ‛ālamīn.",
-            translation: "And praise to Allāh, Lord of the worlds.",
-            verse: 182,
-            surah: 37,
-          }),
+          saffat_180(),
+          saffat_181(),
+          saffat_182(),
           new DhikrEntryModel({
             arabic: "عَدَدَ خَلْقِهِ، وَرِضَى نَفْسِهِ، وَزِنَةَ عَرْشِهِ، وَمِدَادَ كَلِمَاتِهِ",
             translit:

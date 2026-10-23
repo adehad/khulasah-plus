@@ -1,11 +1,13 @@
 import { ikhlas } from "@/data/shared/quran";
-import { ghafir_44, hud_56 } from "@/data/shared/quran-partial";
 import {
-  DhikrEntryModel,
-  DhikrModel,
-  QuranDhikrEntryModel,
-  WirdModel,
-} from "@/models/recitation";
+  a_raf_196_verse,
+  ghafir_44,
+  hud_56,
+  isra_45,
+  isra_46,
+  tawbah_129_verse,
+} from "@/data/shared/quran-partial";
+import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
@@ -410,52 +412,11 @@ export default [
         ],
       }),
       new DhikrModel({
-        entries: [
-          new QuranDhikrEntryModel({
-            arabic: "إِنَّ وَلِيِّيَ ٱللَّهُ ٱلَّذِى نَزَّلَ ٱلْكِتَٰبَ ۖ وَهُوَ يَتَوَلَّى ٱلصَّٰلِحِينَ",
-            translit:
-              "Inna waliyyi yallāhul ladhī nazzalal kitāb, wa huwa yatawallaṣ ṣāliḥīn.",
-            translation:
-              "Indeed, my protector is Allāh, who has sent down the Book; and He is an ally to the righteous.",
-            surah: 7,
-            verse: 196,
-          }),
-          new QuranDhikrEntryModel({
-            arabic:
-              "وَإِذَا قَرَأْتَ ٱلْقُرْءَانَ جَعَلْنَا بَيْنَكَ وَبَيْنَ ٱلَّذِينَ لَا يُؤْمِنُونَ بِٱلْآخِرَةِ حِجَابًا مَّسْتُورًا",
-            translit:
-              "Wa'idhā qara'tal qur'āna ja‛alnā baynaka wa baynal ladhīna lā yu'minūna bil'ākhirati ḥijābam mastūrā.",
-            translation:
-              "And when you recite the Qur’ān, We put between you and those who do not believe in the Hereafter a concealed partition.",
-            surah: 17,
-            verse: 45,
-          }),
-          new QuranDhikrEntryModel({
-            arabic:
-              "وَجَعَلْنَا عَلَىٰ قُلُوبِهِمْ أَكِنَّةً أَن يَفْقَهُوهُ وَفِىٓ ءَاذَانِهِمْ وَقْرًا ۚ وَإِذَا ذَكَرْتَ رَبَّكَ فِى ٱلْقُرْءَانِ وَحْدَهُۥ وَلَّوْا۟ عَلَىٰٓ أَدْبَٰرِهِمْ نُفُورًا",
-            translit:
-              "Wa ja‛alnā ‛alā qulūbihim akinnatan ayyafqahūhu wa fī ādhānihim waqrā. Wa'idhā dhakarta rabbaka fil qur'āni waḥdahū wallaw ‛alā adbārihim nufūrā.",
-            translation:
-              "And We have placed over their hearts coverings, lest they understand it, and in their ears deafness. And when you mention your Lord alone in the Qur’ān, they turn back in aversion.",
-            surah: 17,
-            verse: 46,
-          }),
-        ],
+        entries: [a_raf_196_verse(), isra_45(), isra_46()],
       }),
       new DhikrModel({
         repeat: 7,
-        entries: [
-          new QuranDhikrEntryModel({
-            arabic:
-              "فَإِن تَوَلَّوْا۟ فَقُلْ حَسْبِىَ ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَهُوَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيمِ",
-            translit:
-              "Fa'in tawallaw faqul ḥasbiyallāhu lā ilāha illā huwa, ‛alayhi tawakkaltu wa huwa rabbul ‛arshil ‛aẓīm.",
-            translation:
-              'But if they turn away, [O Muḥammad], say, "Sufficient for me is Allāh; there is no deity except Him. On Him I have relied, and He is the Lord of the Great Throne."',
-            surah: 9,
-            verse: 129,
-          }),
-        ],
+        entries: [tawbah_129_verse()],
       }),
       new DhikrModel({
         entries: [

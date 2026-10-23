@@ -1,9 +1,9 @@
+import { baqarah_201_q } from "@/data/shared/quran-partial";
 import {
   QasidaChapterModel,
   QasidaEntryModel,
   QasidaModel,
   QasidaVerseModel,
-  QuranEntryModel,
 } from "@/models/recitation";
 
 export default [
@@ -1688,16 +1688,7 @@ export default [
           new QasidaVerseModel({
             chorus: false,
             entries: [
-              new QuranEntryModel({
-                arabic:
-                  "… رَبَّنَآ ءَاتِنَا فِى ٱلدُّنْيَا حَسَنَةً وَفِى الآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ ٱلنَّارِ",
-                translit:
-                  "… Rabbanā ātinā fid dunyā ḥasanatan wa fil ākhirati ḥasanatan wa qinā ‛adhāban nār",
-                translation:
-                  "… Our Lord, give us in this world [that which is] good and in the Hereafter [that which is] good and protect us from the punishment of the Fire.",
-                verse: 201,
-                surah: 2,
-              }),
+              baqarah_201_q(),
               new QasidaEntryModel({
                 arabic: "صَدَقَ اللَّهُ الْعَظِيم",
                 translit: "Ṣadaqallāhul ‛aẓīm",

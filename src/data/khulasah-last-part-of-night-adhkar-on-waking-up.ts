@@ -1,10 +1,19 @@
-import { nisa_64 } from "@/data/shared/quran-partial";
 import {
-  DhikrEntryModel,
-  DhikrModel,
-  QuranDhikrEntryModel,
-  WirdModel,
-} from "@/models/recitation";
+  imran_190,
+  imran_191,
+  imran_192,
+  imran_193_verse,
+  imran_194,
+  imran_195,
+  imran_196,
+  imran_197,
+  imran_198,
+  imran_199,
+  imran_200,
+  nisa_64,
+  nisa_110,
+} from "@/data/shared/quran-partial";
+import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
@@ -193,112 +202,17 @@ export default [
       }),
       new DhikrModel({
         entries: [
-          new QuranDhikrEntryModel({
-            arabic:
-              "إِنَّ فِى خَلْقِ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ وَٱخْتِلَٰفِ ٱلَّيْلِ وَٱلنَّهَارِ لَـَٔايَٰتٍ لِّأُو۟لِى ٱلْأَلْبَٰبِ",
-            translit:
-              "Inna fī khalqis samāwāti wal arḍi wakhtilāfil layli wan nahāri la’āyātin li’ulil albāb,",
-            translation:
-              "Indeed, in the creation of the heavens and the earth and the alternation of the night and the day are signs for those of understanding -",
-            verse: 190,
-            surah: 3,
-          }),
-          new QuranDhikrEntryModel({
-            arabic:
-              "ٱلَّذِينَ يَذْكُرُونَ ٱللَّهَ قِيَٰمًا وَقُعُودًا وَعَلَىٰ جُنُوبِهِمْ وَيَتَفَكَّرُونَ فِى خَلْقِ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ رَبَّنَا مَا خَلَقْتَ هَٰذَا بَٰطِلًا سُبْحَٰنَكَ فَقِنَا عَذَابَ ٱلنَّارِ",
-            translit:
-              "alladhīna yadhkurūnallāha qiyāmaw wa qu‛ūdaw wa ‛alā junūbihim wa yatafakkarūna fī khalqis samāwāti wal arḍ, rabbanā mā khalaqta hādhā bāṭilā, subḥānaka faqinā ‛adhāban nār.",
-            translation:
-              'Who remember Allāh while standing or sitting or [lying] on their sides and give thought to the creation of the heavens and the earth, [saying], "Our Lord, You did not create this aimlessly; exalted are You [above such a thing]; then protect us from the punishment of the Fire.',
-            verse: 191,
-            surah: 3,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "رَبَّنَآ إِنَّكَ مَن تُدْخِلِ ٱلنَّارَ فَقَدْ أَخْزَيْتَهُۥ ۖ وَمَا لِلظَّٰلِمِينَ مِنْ أَنصَارٍ",
-            translit:
-              "Rabbanā innaka man tudkhilin nāra faqad akhzaytah, wa mā liẓẓālimīna min anṣār.",
-            translation:
-              "Our Lord, indeed whoever You admit to the Fire - You have disgraced him, and for the wrongdoers there are no helpers.",
-            verse: 192,
-            surah: 3,
-          }),
-          new QuranDhikrEntryModel({
-            arabic:
-              "رَّبَّنَآ إِنَّنَا سَمِعْنَا مُنَادِيًا يُنَادِى لِلْإِيمَٰنِ أَنْ ءَامِنُوا۟ بِرَبِّكُمْ فَـَٔامَنَّا ۚ رَبَّنَا فَٱغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّـَٔاتِنَا وَتَوَفَّنَا مَعَ ٱلْأَبْرَارِ",
-            translit:
-              "Rabbanā innanā sami‛nā munādiyay yunādī lil īmāni an āminū birabbikum fa āmannā, rabbanā faghfir lanā dhunūbanā wa kaffir ‛annā sayyi’ātinā wa tawaffanā ma‛al abrār.",
-            translation:
-              "Our Lord, indeed we have heard a caller [i.e., Prophet Muḥammad (ﷺ)] calling to faith, [saying], 'Believe in your Lord,' and we have believed. Our Lord, so forgive us our sins and remove from us our misdeeds and cause us to die among the righteous.",
-            verse: 193,
-            surah: 3,
-          }),
-          new QuranDhikrEntryModel({
-            arabic:
-              "رَبَّنَا وَءَاتِنَا مَا وَعَدتَّنَا عَلَىٰ رُسُلِكَ وَلَا تُخْزِنَا يَوْمَ ٱلْقِيَٰمَةِ ۗ إِنَّكَ لَا تُخْلِفُ ٱلْمِيعَادَ",
-            translit:
-              "Rabbanā wa ātinā mā wa‛adttanā ‛alā rusulika wa lā tukhzinā yawmal qiyāmah, innaka lā tukhliful mī‛ād.",
-            translation:
-              'Our Lord, and grant us what You promised us through Your messengers and do not disgrace us on the Day of Resurrection. Indeed, You do not fail in [Your] promise."',
-            verse: 194,
-            surah: 3,
-          }),
-          new QuranDhikrEntryModel({
-            arabic:
-              "فَٱسْتَجَابَ لَهُمْ رَبُّهُمْ أَنِّى لَآ أُضِيعُ عَمَلَ عَٰمِلٍ مِّنكُم مِّن ذَكَرٍ أَوْ أُنثَىٰ ۖ بَعْضُكُم مِّنۢ بَعْضٍ ۖ فَٱلَّذِينَ هَاجَرُوا۟ وَأُخْرِجُوا۟ مِن دِيَٰرِهِمْ وَأُوذُوا۟ فِى سَبِيلِى وَقَٰتَلُوا۟ وَقُتِلُوا۟ لَأُكَفِّرَنَّ عَنْهُمْ سَيِّـَٔاتِهِمْ وَلَأُدْخِلَنَّهُمْ جَنَّٰتٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ ثَوَابًا مِّنْ عِندِ ٱللَّهِ ۗ وَٱللَّهُ عِندَهُۥ حُسْنُ ٱلثَّوَابِ",
-            translit:
-              "Fastajāba lahum rabbuhum annī lā uḍī‛u ‛amala ‛āmilim minkum min dhakarin aw unthā, ba‛ḍukum mim ba‛ḍ, fal ladhīna hājarū wa ukhrijū min diyārihim wa ūdhū fī sabīlī wa qātalū wa qutilū la ukaffiranna ‛anhum sayyi’ātihim wa la udkhilannahum jannātin tajrī min taḥtihal anhāru thawābam min ‛indillāh, wallāhu ‛indahū ḥusnuth thawāb.",
-            translation:
-              'And their Lord responded to them, "Never will I allow to be lost the work of [any] worker among you, whether male or female; you are of one another. So those who emigrated or were evicted from their homes or were harmed in My cause or fought or were killed - I will surely remove from them their misdeeds, and I will surely admit them to gardens beneath which rivers flow as reward from Allāh, and Allāh has with Him the best reward."',
-            verse: 195,
-            surah: 3,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "لَا يَغُرَّنَّكَ تَقَلُّبُ ٱلَّذِينَ كَفَرُوا۟ فِى ٱلْبِلَٰدِ",
-            translit: "Lā yaghurrannaka taqallubul ladhīna kafarū fil bilād,",
-            translation:
-              "Be not deceived by the [uninhibited] movement of the disbelievers throughout the land.",
-            verse: 196,
-            surah: 3,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "مَتَٰعٌ قَلِيلٌ ثُمَّ مَأْوَىٰهُمْ جَهَنَّمُ ۚ وَبِئْسَ ٱلْمِهَادُ",
-            translit:
-              "matā‛un qalīl, thumma ma’wāhum jahannam, wa bi’sal mihād.",
-            translation:
-              "[It is but] a small enjoyment; then their [final] refuge is Hell, and wretched is the resting place.",
-            verse: 197,
-            surah: 3,
-          }),
-          new QuranDhikrEntryModel({
-            arabic:
-              "لَٰكِنِ ٱلَّذِينَ ٱتَّقَوْا۟ رَبَّهُمْ لَهُمْ جَنَّٰتٌ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَٰرُ خَٰلِدِينَ فِيهَا نُزُلًا مِّنْ عِندِ ٱللَّهِ ۗ وَمَا عِندَ ٱللَّهِ خَيْرٌ لِّلْأَبْرَارِ",
-            translit:
-              "Lākinil ladhīnat taqaw rabbahum lahum jannātun tajrī min taḥtihal anhāru khālidīna fīhā nuzulam min ‛indillāh, wa mā ‛indallāhi khayrul lil abrār.",
-            translation:
-              "But those who feared their Lord will have gardens beneath which rivers flow, abiding eternally therein, as accommodation from Allāh. And that which is with Allāh is best for the righteous.",
-            verse: 198,
-            surah: 3,
-          }),
-          new QuranDhikrEntryModel({
-            arabic:
-              "وَإِنَّ مِنْ أَهْلِ ٱلْكِتَٰبِ لَمَن يُؤْمِنُ بِٱللَّهِ وَمَآ أُنزِلَ إِلَيْكُمْ وَمَآ أُنزِلَ إِلَيْهِمْ خَٰشِعِينَ لِلَّهِ لَا يَشْتَرُونَ بِـَٔايَٰتِ ٱللَّهِ ثَمَنًا قَلِيلًا ۗ أُو۟لَٰٓئِكَ لَهُمْ أَجْرُهُمْ عِندَ رَبِّهِمْ ۗ إِنَّ ٱللَّهَ سَرِيعُ ٱلْحِسَابِ",
-            translit:
-              "Wa inna min ahlil kitābi laman yu’minu billāhi wa mā unzila ilaykum wa mā unzila ilayhim khāshi‛īna lillāhi lā yashtarūna bi āyātillāhi thamanan qalīlā, ulā’ika lahum ajruhum ‛inda rabbihim, innallāha sarī‛ul ḥisāb.",
-            translation:
-              "And indeed, among the People of the Scripture are those who believe in Allāh and what was revealed to you and what was revealed to them, [being] humbly submissive to Allāh. They do not exchange the verses of Allāh for a small price. Those will have their reward with their Lord. Indeed, Allāh is swift in account.",
-            verse: 199,
-            surah: 3,
-          }),
-          new QuranDhikrEntryModel({
-            arabic:
-              "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱصْبِرُوا۟ وَصَابِرُوا۟ وَرَابِطُوا۟ وَٱتَّقُوا۟ ٱللَّهَ لَعَلَّكُمْ تُفْلِحُونَ",
-            translit:
-              "Yā ayyuhal ladhīna āmanuṣ birū wa ṣābirū wa rābiṭū wattaqullāha la‛allakum tufliḥūn.",
-            translation:
-              "O you who have believed, persevere and endure and remain stationed and fear Allāh that you may be successful.",
-            verse: 200,
-            surah: 3,
-          }),
+          imran_190(),
+          imran_191(),
+          imran_192(),
+          imran_193_verse(),
+          imran_194(),
+          imran_195(),
+          imran_196(),
+          imran_197(),
+          imran_198(),
+          imran_199(),
+          imran_200(),
         ],
       }),
     ],
@@ -323,18 +237,7 @@ export default [
       }),
       new DhikrModel({ instruction: "Then recite: Sūrah al-Kāfirūn" }),
       new DhikrModel({
-        entries: [
-          new QuranDhikrEntryModel({
-            arabic:
-              "وَمَن يَعْمَلْ سُوٓءًا أَوْ يَظْلِمْ نَفْسَهُۥ ثُمَّ يَسْتَغْفِرِ ٱللَّهَ يَجِدِ ٱللَّهَ غَفُورًا رَّحِيمًا",
-            translit:
-              "Wa may ya‛mal sū'an aw yaẓlim nafsahū, thumma yastaghfirillāha yajidillāha ghafūrarraḥīmā.",
-            translation:
-              "If any one commits an evil deed or has been unjust to his soul, but afterwards ask Allāh for forgiveness, he will find Allāh Oft-Forgiving, Most Merciful.",
-            verse: 110,
-            surah: 4,
-          }),
-        ],
+        entries: [nisa_110()],
         instruction: "In the SECOND RAKAʽAH, after Sūrah al-Fātiḥah recite:",
       }),
       new DhikrModel({

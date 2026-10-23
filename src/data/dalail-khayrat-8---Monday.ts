@@ -1,10 +1,10 @@
-import { ikhlas_3, ikhlas_4, zumar_46 } from "@/data/shared/quran-partial";
 import {
-  DhikrEntryModel,
-  DhikrModel,
-  QuranDhikrEntryModel,
-  WirdModel,
-} from "@/models/recitation";
+  ikhlas_3,
+  ikhlas_4,
+  ra_d_9,
+  zumar_46,
+} from "@/data/shared/quran-partial";
+import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
@@ -474,14 +474,7 @@ export default [
             translit: "dhul-jalāli wal ikrāmi",
             translation: "Master of Majesty and Honour",
           }),
-          new QuranDhikrEntryModel({
-            arabic: "عَالِمُ الغَيْبِ وَالشَّهَادَةِ الكَبِيرُ المُتَعَالِ",
-            translit: "ʿalimul ghaybi wash shahādatil kabīrul mutaʿāli",
-            translation:
-              "the Knower of the Unseen and the Visible, the Great, the Self-Exalted.'",
-            surah: 13,
-            verse: 9,
-          }),
+          ra_d_9(),
           new DhikrEntryModel({
             arabic: "وَأَسْأَلُكَ بِاسْمِكَ العَظِيمِ الأَعْظَمِ الَّذِي إِذَا دُعِيتَ بِهِ أَجَبْتَ",
             translit:

@@ -1,10 +1,21 @@
-import { baqarah_285_286 } from "@/data/shared/quran-partial";
 import {
-  DhikrEntryModel,
-  DhikrModel,
-  QuranDhikrEntryModel,
-  WirdModel,
-} from "@/models/recitation";
+  baqarah_285_286,
+  fatihah_1,
+  fatihah_2,
+  fatihah_3,
+  fatihah_4,
+  fatihah_5,
+  fatihah_6,
+  fatihah_7,
+  hashr_21,
+  hashr_22,
+  hashr_23,
+  hashr_24_verse,
+  saffat_180,
+  saffat_181,
+  saffat_182,
+} from "@/data/shared/quran-partial";
+import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
@@ -28,58 +39,13 @@ export default [
             translit: "A‛ūdhu billāhi minash-shayṭānir rajīm.",
             translation: "I seek refuge in Allāh from the accursed Satan.",
           }),
-          new QuranDhikrEntryModel({
-            arabic: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
-            translit: "Bismillāhir raḥmānir raḥīm.",
-            translation:
-              "In the name of Allāh, the Entirely Merciful, the Especially Merciful.",
-            verse: 1,
-            surah: 1,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
-            translit: "Alḥamdulillāhi rabbil ‛ālamīn.",
-            translation: "[All] praise is [due] to Allāh, Lord of the worlds -",
-            verse: 2,
-            surah: 1,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
-            translit: "Arraḥmānir raḥīm.",
-            translation: "The Entirely Merciful, the Especially Merciful,",
-            verse: 3,
-            surah: 1,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "مَٰلِكِ يَوْمِ ٱلدِّينِ",
-            translit: "Māliki yawmid dīn.",
-            translation: "Sovereign of the Day of Recompense.",
-            verse: 4,
-            surah: 1,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
-            translit: "Iyyāka na‛budu wa iyyāka nasta‛īn.",
-            translation: "It is You we worship and You we ask for help.",
-            verse: 5,
-            surah: 1,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
-            translit: "Ihdinaṣ ṣirāṭal mustaqīm.",
-            translation: "Guide us to the straight path -",
-            verse: 6,
-            surah: 1,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
-            translit:
-              "Ṣirāṭalladhīna an‛amta ‛alayhim, ghayril maghḍūbi ‛alayhim walaḍ ḍāllīn.",
-            translation:
-              "The path of those upon whom You have bestowed favor, not of those who have earned [Your] anger or of those who are astray.",
-            verse: 7,
-            surah: 1,
-          }),
+          fatihah_1(),
+          fatihah_2(),
+          fatihah_3(),
+          fatihah_4(),
+          fatihah_5(),
+          fatihah_6(),
+          fatihah_7(),
           new DhikrEntryModel({
             arabic: "آمِين",
             translit: "Āmīn",
@@ -99,48 +65,7 @@ export default [
         ],
       }),
       new DhikrModel({
-        entries: [
-          new QuranDhikrEntryModel({
-            arabic:
-              "لَوْ أَنزَلْنَا هَٰذَا ٱلْقُرْءَانَ عَلَىٰ جَبَلٍ لَّرَأَيْتَهُۥ خَٰشِعًا مُّتَصَدِّعًا مِّنْ خَشْيَةِ ٱللَّهِ ۚ وَتِلْكَ ٱلْأَمْثَٰلُ نَضْرِبُهَا لِلنَّاسِ لَعَلَّهُمْ يَتَفَكَّرُونَ",
-            translit:
-              "Law anzalnā hādhal qur’āna ‛alā jabalil lara’aytahū khāshi‛am mutaṣaddi‛am min khashyatillāh, wa tilkal amthālu naḍribuhā linnāsi la‛Allāhum yatafakkarūn.",
-            translation:
-              "If We had sent down this Qur’ān upon a mountain, you would have seen it humbled and splitting from fear of Allāh. And these examples We present to the people that perhaps they will give thought.",
-            verse: 21,
-            surah: 59,
-          }),
-          new QuranDhikrEntryModel({
-            arabic:
-              "هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَٰهَ إِلَّا هُوَ ۖ عَٰلِمُ ٱلْغَيْبِ وَٱلشَّهَٰدَةِ ۖ هُوَ ٱلرَّحْمَٰنُ ٱلرَّحِيمُ",
-            translit:
-              "Huwallāhulladhī lā ilāha illā huwa ‛ālimul ghaybi wash- shahādati huwar raḥmānur raḥīm.",
-            translation:
-              "He is Allāh, other than whom there is no deity, Knower of the unseen and the witnessed. He is the Entirely Merciful, the Especially Merciful.",
-            verse: 22,
-            surah: 59,
-          }),
-          new QuranDhikrEntryModel({
-            arabic:
-              "هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَٰمُ ٱلْمُؤْمِنُ ٱلْمُهَيْمِنُ ٱلْعَزِيزُ ٱلْجَبَّارُ ٱلْمُتَكَبِّرُ ۚ سُبْحَٰنَ ٱللَّهِ عَمَّا يُشْرِكُونَ",
-            translit:
-              "Huwallāhulladhī lā ilāha illā huwal malikul quddūsus salāmul muʾminul muhayminul ‛azīzul jabbārul mutakabbir, subḥānallāhi ‛ammā yushrikūn.",
-            translation:
-              "He is Allāh, other than whom there is no deity, the Sovereign, the Pure, the Perfection, the Grantor of Security, the Overseer, the Exalted in Might, the Compeller, the Superior. Exalted is Allāh above whatever they associate with Him.",
-            verse: 23,
-            surah: 59,
-          }),
-          new QuranDhikrEntryModel({
-            arabic:
-              "هُوَ ٱللَّهُ ٱلْخَٰلِقُ ٱلْبَارِئُ ٱلْمُصَوِّرُ ۖ لَهُ ٱلْأَسْمَآءُ ٱلْحُسْنَىٰ ۚ يُسَبِّحُ لَهُۥ مَا فِى ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
-            translit:
-              "Huwallāhul khāliqul bāri’ul musawwiru lahul asmā’ul ḥusnā, yusabbiḥu lahū mā fissamāwāti wal’arḍi wa huwal ‛azīzul ḥakīm.",
-            translation:
-              "He is Allāh, the Creator, the Producer, the Fashioner; to Him belong the best names. Whatever is in the heavens and earth is exalting Him. And He is the Exalted in Might, the Wise.",
-            verse: 24,
-            surah: 59,
-          }),
-        ],
+        entries: [hashr_21(), hashr_22(), hashr_23(), hashr_24_verse()],
       }),
       new DhikrModel({
         entries: [
@@ -710,28 +635,9 @@ export default [
             translation:
               "And O Allāh, by Your majesty and Your beauty, bestow blessings upon our master Muhammad and upon all his family and companions, and grant us perfect following of him, outwardly and inwardly, O Most Merciful of the merciful, by the grace of",
           }),
-          new QuranDhikrEntryModel({
-            arabic: "سُبْحَٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ",
-            translit: "Subḥāna rabbika rabbil ‛izzati ‛ammā yaṣifūn.",
-            translation:
-              "Exalted is your Lord, the Lord of might, above what they describe.",
-            surah: 37,
-            verse: 180,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَسَلَٰمٌ عَلَى ٱلْمُرْسَلِينَ",
-            translit: "Wa salāmun ‛alal mursalīn.",
-            translation: "And peace upon the messengers.",
-            surah: 37,
-            verse: 181,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
-            translit: "Walḥamdu lillāhi rabbil ‛ālamīn.",
-            translation: "And praise to Allāh, Lord of the worlds.",
-            surah: 37,
-            verse: 182,
-          }),
+          saffat_180(),
+          saffat_181(),
+          saffat_182(),
         ],
       }),
     ],

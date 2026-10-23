@@ -1,11 +1,18 @@
-import { kahf_10, qasas_85 } from "@/data/shared/quran-partial";
+import {
+  ahzab_56_verse,
+  fath_3,
+  kahf_10,
+  qasas_85,
+  saffat_180,
+  saffat_181,
+  saffat_182,
+} from "@/data/shared/quran-partial";
 import {
   DhikrEntryModel,
   DhikrModel,
   QasidaEntryModel,
   QasidaModel,
   QasidaVerseModel,
-  QuranDhikrEntryModel,
   WirdModel,
 } from "@/models/recitation";
 
@@ -187,16 +194,7 @@ export default [
       }),
       new DhikrModel({
         entries: [
-          new QuranDhikrEntryModel({
-            arabic:
-              "إِنَّ ٱللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى ٱلنَّبِىِّ ۚ يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ صَلُّوا۟ عَلَيْهِ وَسَلِّمُوا۟ تَسْلِيمًا",
-            translit:
-              "Inna Allāha wa malā’ikatahu yuṣallūna ‛alan-nabiyy. Yā ayyuhal-ladhīna āmanū ṣallū ‛alayhi wasallimū taslīm.",
-            translation:
-              "Indeed, Allah and His angels bestow prayers upon the Prophet. O you who believe, bestow prayers upon him and salute him with abundant greetings of peace.",
-            verse: 56,
-            surah: 33,
-          }),
+          ahzab_56_verse(),
           new DhikrEntryModel({
             arabic: "لَبَّيْكَ اللَّهُمَّ لَبَّيْكَ",
             translit: "Labbayka Allāhumma labbayk.",
@@ -1039,28 +1037,9 @@ export default [
             translation:
               "his Family and Companions, as great in magnitude as the greatness of Your Essence, at every moment and time.",
           }),
-          new QuranDhikrEntryModel({
-            arabic: "سُبْحَٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ",
-            translit: "Subḥāna Rabbika Rabbil-‛izzati ‛ammā yaṣifūn",
-            translation:
-              "Glorified is your Lord, the Lord of Honor, above what they describe.",
-            verse: 180,
-            surah: 37,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَسَلَٰمٌ عَلَى ٱلْمُرْسَلِينَ",
-            translit: "wasalāmun ‛alal-mursalīn",
-            translation: "And may peace be upon the Emissaries,",
-            verse: 181,
-            surah: 37,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
-            translit: "walḥamdu lillāhi Rabbil-‛ālamīn",
-            translation: "and all praise be to Allah, the Lord of the Worlds.",
-            verse: 182,
-            surah: 37,
-          }),
+          saffat_180(),
+          saffat_181(),
+          saffat_182(),
         ],
       }),
       new DhikrModel({
@@ -1498,16 +1477,7 @@ export default [
           }),
           qasas_85(),
           kahf_10(),
-          new QuranDhikrEntryModel({
-            arabic:
-              "إِنَّ ٱللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى ٱلنَّبِىِّ ۚ يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ صَلُّوا۟ عَلَيْهِ وَسَلِّمُوا۟ تَسْلِيمًا",
-            translit:
-              "Inna Allāha wa malā’ikatahu yuṣallūna ‛alan-nabiyy. Yā ayyuhal-ladhīna āmanū ṣallū ‛alayhi wasallimū taslīm.",
-            translation:
-              "Indeed, Allah and His angels bestow prayers upon the Prophet. O you who believe, bestow prayers upon him and salute him with abundant greetings of peace.",
-            verse: 56,
-            surah: 33,
-          }),
+          ahzab_56_verse(),
         ],
       }),
       new DhikrModel({
@@ -2564,13 +2534,7 @@ export default [
             translit: "wanṣurnā bihi wal-muslimīna bi’asrār",
             translation: "all Muslims through the secrets of:",
           }),
-          new QuranDhikrEntryModel({
-            arabic: "ويَنْصُرَكَ ٱللَّهُ نَصْراً عَزِيزاً",
-            translit: "wayanṣurakal-lāhu naṣran ‛azīz",
-            translation: "That Allah may support you with a mighty support.",
-            verse: 3,
-            surah: 48,
-          }),
+          fath_3(),
         ],
       }),
       new DhikrModel({
@@ -3844,28 +3808,9 @@ export default [
             translation:
               "May Allah bestow His prayers and peace upon our master Muhammad, his Family, and his Companions.",
           }),
-          new QuranDhikrEntryModel({
-            arabic: "سُبْحَٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ",
-            translit: "Subḥāna Rabbika Rabbil-‛izzati ‛ammā yaṣifūn",
-            translation:
-              "Glorified is your Lord, the Lord of Honor, above what they describe.",
-            verse: 180,
-            surah: 37,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَسَلَٰمٌ عَلَى ٱلْمُرْسَلِينَ",
-            translit: "wasallāmun ‛alal-mursalīn",
-            translation: "And may peace be upon the Emissaries,",
-            verse: 181,
-            surah: 37,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
-            translit: "walḥamdu lillāhi Rabbil-‛ālamīn",
-            translation: "and all praise be to Allah, the Lord of the Worlds.",
-            verse: 182,
-            surah: 37,
-          }),
+          saffat_180(),
+          saffat_181(),
+          saffat_182(),
           new DhikrEntryModel({
             arabic: "عَدَدَ خَلْقِهِ، وَرِضَى نَفْسِهِ، وَزِنَةَ عَرْشِهِ، وَمِدَادَ كَلِمَاتِهِ",
             translit:

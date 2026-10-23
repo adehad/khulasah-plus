@@ -1,9 +1,5 @@
-import {
-  DhikrEntryModel,
-  DhikrModel,
-  QuranDhikrEntryModel,
-  WirdModel,
-} from "@/models/recitation";
+import { ra_d_39 } from "@/data/shared/quran-partial";
+import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
@@ -91,15 +87,7 @@ export default [
             translation:
               "For You have said, and Your word is the truth, in Your Book revealed upon the tongue of Your sent Prophet:",
           }),
-          new QuranDhikrEntryModel({
-            arabic: "يَمْحُوا۟ ٱللَّهُ مَا يَشَآءُ وَيُثْبِتُ ۖ وَعِندَهُۥٓ أُمُّ ٱلْكِتَٰبِ",
-            translit:
-              "yamḥu'llāhu mā yashā'u wa yuthbitu wa `indahu Ummu'l-Kitāb",
-            translation:
-              "Allāh eliminates what He wills or confirms, and with Him is the Mother of the Book.",
-            verse: 39,
-            surah: 13,
-          }),
+          ra_d_39(),
           new DhikrEntryModel({
             arabic: "إِلَهِي بِالتَّجَلِّي الْأَعْظَمِ فِي لَيْلَةِ النِّصْفِ مِنْ شَعْبَانَ الْمُكَرَّمِ",
             translit:

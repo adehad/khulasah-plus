@@ -1,10 +1,14 @@
-import { baqarah_127, baqarah_128 } from "@/data/shared/quran-partial";
 import {
-  DhikrEntryModel,
-  DhikrModel,
-  QuranDhikrEntryModel,
-  WirdModel,
-} from "@/models/recitation";
+  baqarah_127,
+  baqarah_128,
+  baqarah_163,
+  baqarah_255,
+  ra_d_28,
+  saffat_180,
+  saffat_181,
+  saffat_182,
+} from "@/data/shared/quran-partial";
+import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
@@ -105,30 +109,7 @@ export default [
         ],
       }),
       new DhikrModel({
-        entries: [
-          new QuranDhikrEntryModel({
-            arabic: "سُبْحَٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ",
-            translit: "Subḥāna rabbika rabbil ‛izzati ‛ammā yaṣifūn.",
-            translation:
-              "Exalted is your Lord, the Lord of might, above what they describe.",
-            surah: 37,
-            verse: 180,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَسَلَٰمٌ عَلَى ٱلْمُرْسَلِينَ",
-            translit: "Wa salāmun ‛alal mursalīn.",
-            translation: "And peace upon the messengers.",
-            surah: 37,
-            verse: 181,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
-            translit: "Walḥamdu lillāhi rabbil ‛ālamīn.",
-            translation: "And praise to Allāh, Lord of the worlds.",
-            surah: 37,
-            verse: 182,
-          }),
-        ],
+        entries: [saffat_180(), saffat_181(), saffat_182()],
       }),
       new DhikrModel({
         entries: [
@@ -258,31 +239,10 @@ export default [
         ],
       }),
       new DhikrModel({
-        entries: [
-          new QuranDhikrEntryModel({
-            arabic: "وَإِلَٰهُكُمْ إِلَٰهٌ وَٰحِدٌ ۖ لَّآ إِلَٰهَ إِلَّا هُوَ ٱلرَّحْمَٰنُ ٱلرَّحِيمُ",
-            translit:
-              "Wa ilāhukum ilāhun wāḥidullā ilāha illā huwar raḥmānur raḥīm.",
-            translation:
-              "And your god is one God. There is no deity [worthy of worship] except Him, the Entirely Merciful, the Especially Merciful.",
-            surah: 2,
-            verse: 163,
-          }),
-        ],
+        entries: [baqarah_163()],
       }),
       new DhikrModel({
-        entries: [
-          new QuranDhikrEntryModel({
-            arabic:
-              "ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ ۚ لَا تَأْخُذُهُۥ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُۥ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۗ مَن ذَا ٱلَّذِى يَشْفَعُ عِندَهُۥٓ إِلَّا بِإِذْنِهِۦ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَىْءٍ مِّنْ عِلْمِهِۦٓ إِلَّا بِمَا شَآءَ ۚ وَسِعَ كُرْسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ ۖ وَلَا يَـُٔودُهُۥ حِفْظُهُمَا ۚ وَهُوَ ٱلْعَلِىُّ ٱلْعَظِيمُ",
-            translit:
-              "Allāhu lā ilāha illā huwal ḥayyul qayyūm; lā ta’khudhuhū sinatuw walā nawm; lahū mā fissamāwāti wa mā fil’arḍ, Man dhalladhī yashfa‛u ‛indahū illā bi’idhnihī, ya‛lamu mā bayna aydīhim wa mā khalfahum, wa lā yuḥīṭūna bishay’im min ‛ilmihī illā bimā shā’, wasi‛a kursiyyuhus samāwāti wal arḍ, wa lā ya’ūduhū ḥifẓuhumā, wa huwal ‛aliyyul ‛aẓīm.",
-            translation:
-              "Allāh - there is no deity except Him, the Ever-Living, the Self-Sustaining. Neither drowsiness overtakes Him nor sleep. To Him belongs whatever is in the heavens and whatever is on the earth. Who is it that can intercede with Him except by His permission? He knows what is [presently] before them and what will be after them, and they encompass not a thing of His knowledge except for what He wills. His Kursī extends over the heavens and the earth, and their preservation tires Him not. And He is the Most High, the Most Great.",
-            surah: 2,
-            verse: 255,
-          }),
-        ],
+        entries: [baqarah_255()],
       }),
       new DhikrModel({
         entries: [
@@ -515,30 +475,7 @@ export default [
         ],
       }),
       new DhikrModel({
-        entries: [
-          new QuranDhikrEntryModel({
-            arabic: "سُبْحَٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ",
-            translit: "Subḥāna rabbika rabbil ‛izzati ‛ammā yaṣifūn.",
-            translation:
-              "Exalted is your Lord, the Lord of might, above what they describe.",
-            surah: 37,
-            verse: 180,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَسَلَٰمٌ عَلَى ٱلْمُرْسَلِينَ",
-            translit: "Wa salāmun ‛alal mursalīn.",
-            translation: "And peace upon the messengers.",
-            surah: 37,
-            verse: 181,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
-            translit: "Walḥamdu lillāhi rabbil ‛ālamīn.",
-            translation: "And praise to Allāh, Lord of the worlds.",
-            surah: 37,
-            verse: 182,
-          }),
-        ],
+        entries: [saffat_180(), saffat_181(), saffat_182()],
       }),
       new DhikrModel({
         entries: [
@@ -552,18 +489,7 @@ export default [
         ],
       }),
       new DhikrModel({
-        entries: [
-          new QuranDhikrEntryModel({
-            arabic:
-              "ٱلَّذِينَ ءَامَنُوا۟ وَتَطْمَئِنُّ قُلُوبُهُم بِذِكْرِ ٱللَّهِ ۗ أَلَا بِذِكْرِ ٱللَّهِ تَطْمَئِنُّ ٱلْقُلُوبُ",
-            translit:
-              "Alladhīna āmanū wa taṭma’innu qulūbuhum bi dhikrillāh, alā bi dhikrillāhi taṭma’innul qulūb.",
-            translation:
-              'Those who have believed and whose hearts are assured by the remembrance of Allāh. Unquestionably, by the remembrance of Allāh hearts are assured."',
-            surah: 13,
-            verse: 28,
-          }),
-        ],
+        entries: [ra_d_28()],
       }),
       new DhikrModel({
         entries: [

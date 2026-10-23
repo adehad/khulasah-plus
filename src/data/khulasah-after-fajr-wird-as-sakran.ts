@@ -1,9 +1,17 @@
 import {
-  DhikrEntryModel,
-  DhikrModel,
-  QuranDhikrEntryModel,
-  WirdModel,
-} from "@/models/recitation";
+  baqarah_255,
+  fatihah_1,
+  fatihah_2,
+  fatihah_3,
+  fatihah_4,
+  fatihah_5,
+  fatihah_6,
+  fatihah_7,
+  saffat_180,
+  saffat_181,
+  saffat_182,
+} from "@/data/shared/quran-partial";
+import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
@@ -44,59 +52,13 @@ export default [
             translation:
               "its roof is la hawla wa la quwata illā billāhil ‛aliyyil ‛aẓīm (there is no power nor strength except with Allāh, the Most Exalted, the Mighty). It has completely enveloped us with:",
           }),
-          new QuranDhikrEntryModel({
-            arabic: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
-            translit: "Bismillāhir raḥmānir raḥīm.",
-            translation:
-              "In the Name of Allāh, Most Compassionate, Most Merciful.",
-            surah: 1,
-            verse: 1,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
-            translit: "Alḥamdulillāhi rabbil ‛ālamīn.",
-            translation: "All Praise be to Allāh, Lord of the Universe.",
-            surah: 1,
-            verse: 2,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
-            translit: "Arraḥmānir raḥīm.",
-            translation: "Most Compassionate, Most Merciful.",
-            surah: 1,
-            verse: 3,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "مَٰلِكِ يَوْمِ ٱلدِّينِ",
-            translit: "Māliki yawmid dīn.",
-            translation: "Lord of the Day of Judgement.",
-            surah: 1,
-            verse: 4,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
-            translit: "Iyyāka na‛budu wa iyyāka nasta‛īn.",
-            translation:
-              "You alone do we worship, and to You alone do we turn for help.",
-            surah: 1,
-            verse: 5,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
-            translit: "Ihdinaṣ ṣirāṭal mustaqīm.",
-            translation: "Guide us to the Straight Way.",
-            surah: 1,
-            verse: 6,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
-            translit:
-              "Ṣirāṭal ladhīna an‛amta ‛alayhim, ghayril maghḍūbi ‛alayhim walaḍ ḍāllīn.",
-            translation:
-              "The Way of those on whom You have bestowed Your Grace; not the way of those who have earned your anger, nor of those who went astray.",
-            surah: 1,
-            verse: 7,
-          }),
+          fatihah_1(),
+          fatihah_2(),
+          fatihah_3(),
+          fatihah_4(),
+          fatihah_5(),
+          fatihah_6(),
+          fatihah_7(),
           new DhikrEntryModel({
             arabic: "آمِين",
             translit: "Aamin",
@@ -112,16 +74,7 @@ export default [
             translation:
               "With His Wall (of Protection), with His Wall (of Protection), with His Wall (of Protection). And the Qur'ānic Verse:",
           }),
-          new QuranDhikrEntryModel({
-            arabic:
-              "ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ ۚ لَا تَأْخُذُهُۥ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُۥ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۗ مَن ذَا ٱلَّذِى يَشْفَعُ عِندَهُۥٓ إِلَّا بِإِذْنِهِۦ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَىْءٍ مِّنْ عِلْمِهِۦٓ إِلَّا بِمَا شَآءَ ۚ وَسِعَ كُرْسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ ۖ وَلَا يَـُٔودُهُۥ حِفْظُهُمَا ۚ وَهُوَ ٱلْعَلِىُّ ٱلْعَظِيمُ",
-            translit:
-              "Allāhu lā ilāha illā huwal ḥayyul qayyūm; lā ta'khudhuhū sinatuw wa lā nawm; lahū mā fis samāwāti wa mā fil'arḍ, man dhalladhī yashfa‛u ‛indahū illā bi'idhnihī, ya‛lamu mā bayna aydīhim wa mā khalfahum, wa lā yuḥīṭūna bishay'im min ‛ilmihī illā bimā shā', wasi‛a kursiy yuhus samāwāti wal arḍ, wa lā ya'ūduhū ḥifẓuhumā, wa huwal ‛aliyyul ‛aẓīm.",
-            translation:
-              "Allāh! There is no deity but Him; the Ever-Living, the Self Subsisting, the Eternal One. Neither slumber nor sleep can overtake Him. To Him belongs whatsoever is in the Heavens and whatsoever is on the earth. Who is there that can intercede in His Presence except by His permission? He Knows what will happen to them (His creatures) in this world and what will happen to them in the Hereafter; nor shall they comprehend anything at all of His Knowledge except as He Wills. His Throne extends over the Heavens and the earth, and guarding and preserving it, does not exhaust Him, for He is the Exalted, the All-Mighty.",
-            surah: 2,
-            verse: 255,
-          }),
+          baqarah_255(),
           new DhikrEntryModel({
             arabic: "بِنَا اسْتَدَارَتْ كَمَا اسْتَدَارَتِ الْمَلَائِكَةُ بِمَدِينَةِ الرَّسُولِ",
             translit:
@@ -267,29 +220,9 @@ export default [
       }),
       new DhikrModel({
         entries: [
-          new QuranDhikrEntryModel({
-            arabic: "سُبْحَٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ",
-            translit: "Subḥāna rabbika rabbil ‛izzati ‛ammā yaṣifūn.",
-            translation:
-              "Glory be to your Lord; the Lord of Honour and Power Who is far above what they attribute to Him.",
-            surah: 37,
-            verse: 180,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَسَلَٰمٌ عَلَى ٱلْمُرْسَلِينَ",
-            translit: "Wa salāmun ‛alal mursalīn.",
-            translation: "And peace be on the Messengers.",
-            surah: 37,
-            verse: 181,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
-            translit: "Walḥamdu lillāhi rabbil ‛ālamīn.",
-            translation:
-              "And praise be to Allāh, the Lord and Cherisher of the Worlds.",
-            surah: 37,
-            verse: 182,
-          }),
+          saffat_180(),
+          saffat_181(),
+          saffat_182(),
           new DhikrEntryModel({
             arabic: "فِي كُلِّ لَحْظَةٍ أَبَدًا عَدَدَ خَلْقِهِ وَرِضَى نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ",
             translit:

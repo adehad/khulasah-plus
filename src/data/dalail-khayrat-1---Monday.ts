@@ -1,9 +1,5 @@
-import {
-  DhikrEntryModel,
-  DhikrModel,
-  QuranDhikrEntryModel,
-  WirdModel,
-} from "@/models/recitation";
+import { ahzab_56_verse } from "@/data/shared/quran-partial";
+import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
@@ -386,16 +382,7 @@ export default [
             translit: "wa burhānin ʿaẓīm:",
             translation: "and whose argument is mighty.",
           }),
-          new QuranDhikrEntryModel({
-            arabic:
-              "إِنَّ اللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا",
-            translit:
-              "InnAllaha wa malāʾikatahu yuṣallūna ʿalan nabiyyi yā ayyuhalladhīna āmanū ṣallū ʿalayhi wa sallimū taslīman.",
-            translation:
-              "Allah and His angels call down blessings on the Prophet. O you who believe call down blessings on him and ask for complete peace and safety for him.",
-            surah: 33,
-            verse: 56,
-          }),
+          ahzab_56_verse(),
           new DhikrEntryModel({
             arabic: "لَبَّيْكَ اللَّهُمَّ رَبِّى وَسَعْدَيْكَ صَلَوَاتُ اللَّهِ البَرِّ الرَّحِيمِ",
             translit:

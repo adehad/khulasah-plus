@@ -1,10 +1,14 @@
 import {
+  saffat_180,
+  saffat_181,
+  saffat_182,
+} from "@/data/shared/quran-partial";
+import {
   DhikrEntryModel,
   DhikrModel,
   QasidaEntryModel,
   QasidaModel,
   QasidaVerseModel,
-  QuranDhikrEntryModel,
   WirdModel,
 } from "@/models/recitation";
 
@@ -389,29 +393,9 @@ export default [
     entries: [
       new DhikrModel({
         entries: [
-          new QuranDhikrEntryModel({
-            arabic: "سُبْحَٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ",
-            translit: "Subḥāna rabbika rabbil ‛izzati ‛ammā yaṣifūn",
-            translation:
-              "Glory be to your Lord; the Lord of Honour and Power Who is far above what they attribute to Him",
-            verse: 180,
-            surah: 37,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَسَلَٰمٌ عَلَى ٱلْمُرْسَلِينَ",
-            translit: "Wa salāmun ‛alal mursalīn",
-            translation: "And Peace be on the Messengers",
-            verse: 181,
-            surah: 37,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
-            translit: "walḥamdulillāhi rabbil ‛ālamīn",
-            translation:
-              "And Praise be to Allāh, the Lord and Cherisher of the Worlds",
-            verse: 182,
-            surah: 37,
-          }),
+          saffat_180(),
+          saffat_181(),
+          saffat_182(),
           new DhikrEntryModel({
             arabic: "فِي كُلِّ لَحظَةٍ أَبَداً عَدَدَ خَلقِهِ وَرِضَى نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ",
             translit:

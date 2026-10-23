@@ -1,9 +1,20 @@
 import {
+  ahzab_56_q,
+  fath_1_q,
+  fath_2_q,
+  fath_3_q,
+  fatihah_1_q,
+  saffat_180_q,
+  saffat_181_q,
+  saffat_182_q,
+  tawbah_128_q,
+  tawbah_129_q,
+} from "@/data/shared/quran-partial";
+import {
   QasidaChapterModel,
   QasidaEntryModel,
   QasidaModel,
   QasidaVerseModel,
-  QuranEntryModel,
 } from "@/models/recitation";
 
 const shimmeringLight = [
@@ -230,84 +241,16 @@ const shimmeringLight = [
             ],
           }),
           new QasidaVerseModel({
-            entries: [
-              new QuranEntryModel({
-                arabic: "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ",
-                translit: "bismi-llāhi r-raḥmāni r-raḥīm",
-                translation:
-                  "In the name of Allah, Most Compassionate, Ever-Merciful",
-                verse: 1,
-                surah: 1,
-              }),
-            ],
+            entries: [fatihah_1_q()],
           }),
           new QasidaVerseModel({
-            entries: [
-              new QuranEntryModel({
-                arabic: "إِنَّا فَتَحْنَا لَكَ فَتْحًا مُّبِينًا",
-                translit: "innā fataḥnā laka fatḥan mubīnan",
-                translation:
-                  "Indeed, We have given you, [O Muḥammad], a clear conquest",
-                verse: 1,
-                surah: 48,
-              }),
-              new QuranEntryModel({
-                arabic:
-                  "لِّيَغْفِرَ لَكَ ٱللَّهُ مَا تَقَدَّمَ مِن ذَنۢبِكَ وَمَا تَأَخَّرَ وَيُتِمَّ نِعْمَتَهُۥ عَلَيْكَ وَيَهْدِيَكَ صِرَٰطًا مُّسْتَقِيمًا",
-                translit:
-                  "li-yaghfira laka llāhu mā taqaddama min dhanbika wa-mā taʾakhkhara wa-yutimmu ni‘matahu ʿalayka wa-yahdīka ṣirāṭan mustaqīman",
-                translation:
-                  "That Allāh may forgive for you what preceded of your sin [i.e., errors] and what will follow and complete His favor upon you and guide you to a straight path",
-                verse: 2,
-                surah: 48,
-              }),
-              new QuranEntryModel({
-                arabic: "وَيَنصُرَكَ ٱللَّهُ نَصْرًا عَزِيزًا",
-                translit: "wa-yansuraka llāhu naṣran ʿazīzan",
-                translation:
-                  "And [that] Allāh may aid you with a mighty victory.",
-                verse: 3,
-                surah: 48,
-              }),
-            ],
+            entries: [fath_1_q(), fath_2_q(), fath_3_q()],
           }),
           new QasidaVerseModel({
-            entries: [
-              new QuranEntryModel({
-                arabic:
-                  "لَقَدْ جَآءَكُمْ رَسُولٌ مِّنْ أَنفُسِكُمْ عَزِيزٌ عَلَيْهِ مَا عَنِتُّمْ حَرِيصٌ عَلَيْكُم بِٱلْمُؤْمِنِينَ رَءُوفٌ رَّحِيمٌ",
-                translit:
-                  "laqad jāʾakum rasūlun min anfusikum ʿazīzun ʿalayhi mā ʿanittum ḥarīṣun ʿalaykum bi-l-muʾminīna raʾūfun raḥīm",
-                translation:
-                  "There has certainly come to you a Messenger from among yourselves. Grievous to him is what you suffer; [he is] concerned over you [i.e., your guidance] and to the believers is kind and merciful.",
-                verse: 128,
-                surah: 9,
-              }),
-              new QuranEntryModel({
-                arabic:
-                  "فَإِن تَوَلَّوْا۟ فَقُلْ حَسْبِىَ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَهُوَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيمِ",
-                translit:
-                  "fa-in tawallaw fa-qul ḥasbiyallāhu lā ilāha illā huwa ʿalayhi tawakkaltu wa-huwa rabbu l-ʿarshi l-ʿaẓīm",
-                translation:
-                  'But if they turn away, [O Muḥammad], say, "Sufficient for me is Allāh; there is no deity except Him. On Him I have relied, and He is the Lord of the Great Throne."',
-                verse: 129,
-                surah: 9,
-              }),
-            ],
+            entries: [tawbah_128_q(), tawbah_129_q()],
           }),
           new QasidaVerseModel({
-            entries: [
-              new QuranEntryModel({
-                arabic:
-                  "إِنَّ ٱللَّهَ وَمَلَائِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ يَا أَيُّهَا الَّذِينَ آمَنُوا صَلُّوا عَلَيْهِ وَسَلِّمُوا تَسْلِيمًا",
-                translit:
-                  "innā llāhu wa-malāʾikatuhu yuṣallūna ʿalā n-nabiyy yā ayyuhā alladhīna āmanū ṣallū ʿalayhi wa-sallimū taslīman",
-                translation:
-                  "Indeed, Allah and His angels send blessings upon the Prophet. O you who believe, send blessings upon him and salute him with abundant greetings of peace.",
-                verse: 56,
-                surah: 33,
-              }),
-            ],
+            entries: [ahzab_56_q()],
           }),
           new QasidaVerseModel({
             entries: [
@@ -2657,30 +2600,7 @@ const shimmeringLight = [
             ],
           }),
           new QasidaVerseModel({
-            entries: [
-              new QuranEntryModel({
-                arabic: "سُبْحَـٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ",
-                translit: "subḥāna rabbika rabbi l-ʿizzati ʿammā yaṣifūn",
-                translation:
-                  "Exalted is your Lord, the Lord of might, above what they describe.",
-                verse: 180,
-                surah: 37,
-              }),
-              new QuranEntryModel({
-                arabic: "وَسَلَـٰمٌ عَلَى ٱلْمُرْسَلِينَ",
-                translit: "wa-salāmun ʿalá l-mursalīn",
-                translation: "And peace upon the messengers.",
-                verse: 181,
-                surah: 37,
-              }),
-              new QuranEntryModel({
-                arabic: "وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
-                translit: "wa-l-ḥamdu li-llāhi rabbi l-ʿālamīn",
-                translation: "And praise to Allāh, Lord of the worlds.",
-                verse: 182,
-                surah: 37,
-              }),
-            ],
+            entries: [saffat_180_q(), saffat_181_q(), saffat_182_q()],
           }),
         ],
       }),

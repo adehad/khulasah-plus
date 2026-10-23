@@ -1,8 +1,12 @@
 import {
+  saffat_180_q,
+  saffat_181_q,
+  saffat_182_q,
+} from "@/data/shared/quran-partial";
+import {
   QasidaEntryModel,
   QasidaModel,
   QasidaVerseModel,
-  QuranEntryModel,
 } from "@/models/recitation";
 
 export default [
@@ -1405,30 +1409,7 @@ export default [
       }),
       new QasidaVerseModel({
         chorus: false,
-        entries: [
-          new QuranEntryModel({
-            arabic: "سُبْحَـٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ",
-            translit: "Subḥāna Rabbika Rabbil ‛izzati ‛ammā yaṣifūn.",
-            translation:
-              "Exalted is your Lord, the Lord of might, above what they describe.",
-            verse: 180,
-            surah: 37,
-          }),
-          new QuranEntryModel({
-            arabic: "وَسَلَـٰمٌ عَلَى ٱلْمُرْسَلِينَ",
-            translit: "Wa salāmun ‛alal mursalīn.",
-            translation: "And peace upon the messengers.",
-            verse: 181,
-            surah: 37,
-          }),
-          new QuranEntryModel({
-            arabic: "وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
-            translit: "Walḥamdu lillāhi rabbil ‛ālamīn",
-            translation: "And praise to Allāh, Lord of the worlds.",
-            verse: 182,
-            surah: 37,
-          }),
-        ],
+        entries: [saffat_180_q(), saffat_181_q(), saffat_182_q()],
       }),
     ],
   }),

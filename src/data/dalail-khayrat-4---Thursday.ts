@@ -1,10 +1,10 @@
-import { hashr_10, nisa_69 } from "@/data/shared/quran-partial";
 import {
-  DhikrEntryModel,
-  DhikrModel,
-  QuranDhikrEntryModel,
-  WirdModel,
-} from "@/models/recitation";
+  ahzab_56_verse,
+  hashr_10,
+  mu_minun_118,
+  nisa_69,
+} from "@/data/shared/quran-partial";
+import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
@@ -397,14 +397,7 @@ export default [
             translit: "wa tābiʿ baynanā wa baynahum bil khayrāt.",
             translation: "And make blessings accompany us and them.",
           }),
-          new QuranDhikrEntryModel({
-            arabic: "رَّبِّ اغْفِرْ وَارْحَمْ وَأَنتَ خَيْرُ الرَّٰحِمِينَ",
-            translit: "rabbighfir warḥam wa anta khayrur rāhimīn",
-            translation:
-              "O Lord, forgive and show mercy for You are the best of the Merciful",
-            surah: 23,
-            verse: 118,
-          }),
+          mu_minun_118(),
           new DhikrEntryModel({
             arabic: "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا باللَّهِ العَلِيِّ العَظِيمِ.",
             translit: "wa lā hawlā wa lā quwwata illā biLlāhil ʿaliyyīl ʿazīm.",
@@ -888,16 +881,7 @@ export default [
             translit: "wa qulta waqawlukal ḥaqq:",
             translation: "You said – and Your word is true:",
           }),
-          new QuranDhikrEntryModel({
-            arabic:
-              "إِنَّ اللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا",
-            translit:
-              "inna Allāha wa malāʾikatahu yuṣallūna ʿalan nabiyyi yā ayyuhalladhīna āmanū ṣallū ʿalayhi wa sallimū taslīmā",
-            translation:
-              "Allah and His angels call down blessings on the Prophet. O you who believe! Call down blessings on him and ask for complete peace and safety for him.",
-            surah: 33,
-            verse: 56,
-          }),
+          ahzab_56_verse(),
           new DhikrEntryModel({
             arabic: "وَأَمَرْتَ العِبَادَ بِالصَّلَاةِ عَلَى نَبِيِّهِمْ",
             translit: "wa amartal ʿibāda biṣṣalāti ʿalā nabiyyihim",

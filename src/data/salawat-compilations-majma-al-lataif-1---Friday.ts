@@ -1,9 +1,5 @@
-import {
-  DhikrEntryModel,
-  DhikrModel,
-  QuranDhikrEntryModel,
-  WirdModel,
-} from "@/models/recitation";
+import { qalam_1 } from "@/data/shared/quran-partial";
+import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
@@ -1075,13 +1071,7 @@ export default [
             translation:
               "the locus of the affairs of knowledge of what was and what will be, and the secret of",
           }),
-          new QuranDhikrEntryModel({
-            arabic: "نٓ ۚ وَٱلْقَلَمِ وَمَا يَسْطُرُونَ",
-            translit: "Nūn. Wal qalami wa mā yasṭurūn",
-            translation: "Nūn. By the pen and what they inscribe,",
-            verse: 1,
-            surah: 68,
-          }),
+          qalam_1(),
           new DhikrEntryModel({
             arabic: "سَمِيرِ الْمَعَانِي الْكُلِّيَّة",
             translit: "Samīril ma‛ānil kulliyyah",

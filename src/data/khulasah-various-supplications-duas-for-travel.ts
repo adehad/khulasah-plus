@@ -1,15 +1,18 @@
 import {
   a_raf_43,
+  an_am_13,
+  baqarah_255,
+  hud_41,
+  isra_80,
+  mu_minun_29,
+  mursalat_23,
   nur_61,
   qasas_85,
   zukhruf_13,
+  zukhruf_14,
+  zumar_67,
 } from "@/data/shared/quran-partial";
-import {
-  DhikrEntryModel,
-  DhikrModel,
-  QuranDhikrEntryModel,
-  WirdModel,
-} from "@/models/recitation";
+import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
@@ -257,18 +260,7 @@ export default [
         ],
       }),
       new DhikrModel({
-        entries: [
-          new QuranDhikrEntryModel({
-            arabic:
-              "ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ ۚ لَا تَأْخُذُهُۥ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُۥ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۗ مَن ذَا ٱلَّذِى يَشْفَعُ عِندَهُۥٓ إِلَّا بِإِذْنِهِۦ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَىْءٍ مِّنْ عِلْمِهِۦٓ إِلَّا بِمَا شَآءَ ۚ وَسِعَ كُرْسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ ۖ وَلَا يَـُٔودُهُۥ حِفْظُهُمَا ۚ وَهُوَ ٱلْعَلِىُّ ٱلْعَظِيمُ",
-            translit:
-              "Allāhu lā ilāha illā huwal ḥayyul qayyūm; lā ta’khudhuhū sinatuw wa lā nawm; lahū mā fissamāwāti wa mā fil’arḍ, man dhalladhī yashfa‛u ‛indahū illā bi’idhnihī, ya‛lamu mā bayna aydīhim wa mā khalfahum, wa lā yuḥīṭūna bishay’im min ‛ilmihī illā bimā shā’, wasi‛a kursiy yuhus samāwāti wal’arḍ, wa lā ya’ūduhū ḥifẓuhumā, wa huwal ‛aliyyul ‛aẓīm.",
-            translation:
-              "Allāh! There is no god, but Him; the Ever-Living, the Self Subsisting, the Eternal One. Neither slumber nor sleep can overtake Him. To Him belongs whatsoever is in the Heavens and whatsoever is on the earth. Who is there that can intercede in His Presence, except by His Permission? He Knows what will happen to them (His creatures) in this world, and what will happen to them in the Hereafter; nor shall they comprehend anything at all of His Knowledge except as He Wills. His Throne extends over the Heavens and the earth, and guarding and preserving it, does not exhaust Him, for He is the Exalted, the All-Mighty.",
-            verse: 255,
-            surah: 2,
-          }),
-        ],
+        entries: [baqarah_255()],
       }),
       new DhikrModel({
         entries: [
@@ -360,16 +352,7 @@ export default [
         ],
       }),
       new DhikrModel({
-        entries: [
-          zukhruf_13(),
-          new QuranDhikrEntryModel({
-            arabic: "وَإِنَّآ إِلَىٰ رَبِّنَا لَمُنقَلِبُونَ",
-            translit: "wa innā ilā rabbinā lamunqalibūn",
-            translation: "And to our Lord shall we surely return.",
-            verse: 14,
-            surah: 43,
-          }),
-        ],
+        entries: [zukhruf_13(), zukhruf_14()],
       }),
       new DhikrModel({
         entries: [
@@ -424,40 +407,10 @@ export default [
         ],
       }),
       new DhikrModel({
-        entries: [
-          new QuranDhikrEntryModel({
-            arabic:
-              "وَمَا قَدَرُوا۟ ٱللَّهَ حَقَّ قَدْرِهِۦ وَٱلْأَرْضُ جَمِيعًا قَبْضَتُهُۥ يَوْمَ ٱلْقِيَٰمَةِ وَٱلسَّمَٰوَٰتُ مَطْوِيَّٰتٌۢ بِيَمِينِهِۦ ۚ سُبْحَٰنَهُۥ وَتَعَٰلَىٰ عَمَّا يُشْرِكُونَ",
-            translit:
-              "Wa mā qadarullāha ḥaqqa qadrihī, wal arḍu jamī‘an qabḍatuhū yawmal qiyāmati was samāwātu maṭwiyyātum biyamīnihī, subḥānahū wa ta‘ālā ‘ammā yushrikūn.",
-            translation:
-              "They have not made a just appraisal of Allāh, such as He deserves. And on the Day of Resurrection the whole earth will be grasped by His Hand, with the Heavens folded up in His Right Hand. Glory be to Him! High is He above all that they associate as partners with Him!",
-            verse: 67,
-            surah: 39,
-          }),
-        ],
+        entries: [zumar_67()],
       }),
       new DhikrModel({
-        entries: [
-          new QuranDhikrEntryModel({
-            arabic:
-              "وَقَالَ ٱرْكَبُوا۟ فِيهَا بِسْمِ ٱللَّهِ مَجْر۪ىٰهَا وَمُرْسَىٰهَآ ۚ إِنَّ رَبِّى لَغَفُورٌ رَّحِيمٌ",
-            translit:
-              "Wa qālar kabū fīhā bismillāhi majréhā wa mursāhā, inna rabbi laghafūrur raḥīm.",
-            translation:
-              "Embark on it. In the Name of Allāh it shall set sail and cast anchor. Verily, my Lord is Ever Forgiving, Most Merciful.",
-            verse: 41,
-            surah: 11,
-          }),
-          zukhruf_13(),
-          new QuranDhikrEntryModel({
-            arabic: "وَإِنَّآ إِلَىٰ رَبِّنَا لَمُنقَلِبُونَ",
-            translit: "Wa innā ilā rabbinā lamunqalibūn.",
-            translation: "And to our Lord shall we surely return.",
-            verse: 14,
-            surah: 43,
-          }),
-        ],
+        entries: [hud_41(), zukhruf_13(), zukhruf_14()],
       }),
       new DhikrModel({
         entries: [
@@ -501,16 +454,7 @@ export default [
         ],
       }),
       new DhikrModel({
-        entries: [
-          new QuranDhikrEntryModel({
-            arabic: "فَقَدَرْنَا فَنِعْمَ ٱلْقَٰدِرُونَ",
-            translit: "Faqadarnā fani‘mal qādirūn.",
-            translation:
-              "Thus have We determined (the stages of development); and indeed Our power to determine is excellent.",
-            verse: 23,
-            surah: 77,
-          }),
-        ],
+        entries: [mursalat_23()],
       }),
       new DhikrModel({
         entries: [
@@ -733,17 +677,7 @@ export default [
         ],
       }),
       new DhikrModel({
-        entries: [
-          new QuranDhikrEntryModel({
-            arabic: "وَلَهُۥ مَا سَكَنَ فِى ٱلَّيْلِ وَٱلنَّهَارِ ۚ وَهُوَ ٱلسَّمِيعُ ٱلْعَلِيمُ",
-            translit:
-              "Wa lahū mā sakana fillayli wan nahār, wa huwas samī‘ul ‘alīm.",
-            translation:
-              "And to Him belongs whatever exists in the night and the day, and He is the All-Hearing, the All-Knowing.",
-            verse: 13,
-            surah: 6,
-          }),
-        ],
+        entries: [an_am_13()],
       }),
       new DhikrModel({
         entries: [
@@ -804,27 +738,7 @@ export default [
         ],
       }),
       new DhikrModel({
-        entries: [
-          new QuranDhikrEntryModel({
-            arabic: "رَّبِّ أَنزِلْنِى مُنزَلًا مُّبَارَكًا وَأَنتَ خَيْرُ ٱلْمُنزِلِينَ",
-            translit:
-              "Rabbi anzilnī munzalan mubārakan wa anta khayrul munzilīn.",
-            translation:
-              "My Lord! Let me land with Your blessings in a blessed landing place. For You alone can provide the best of landings.",
-            verse: 29,
-            surah: 23,
-          }),
-          new QuranDhikrEntryModel({
-            arabic:
-              "رَّبِّ أَدْخِلْنِى مُدْخَلَ صِدْقٍ وَأَخْرِجْنِى مُخْرَجَ صِدْقٍ وَٱجْعَل لِّى مِن لَّدُنكَ سُلْطَٰنًا نَّصِيرًا",
-            translit:
-              "Rabbi adkhilnī mudkhala ṣidqiw wa akhrijnī mukhraja ṣidqiw waj‘al lī milladunka sulṭānan naṣīrā.",
-            translation:
-              "O my Lord! Grant me an honourable entrance and an honourable exit and sustain me with Your Power.",
-            verse: 80,
-            surah: 17,
-          }),
-        ],
+        entries: [mu_minun_29(), isra_80()],
       }),
       new DhikrModel({
         entries: [
@@ -982,27 +896,7 @@ export default [
         ],
       }),
       new DhikrModel({
-        entries: [
-          new QuranDhikrEntryModel({
-            arabic:
-              "رَّبِّ أَدْخِلْنِى مُدْخَلَ صِدْقٍ وَأَخْرِجْنِى مُخْرَجَ صِدْقٍ وَٱجْعَل لِّى مِن لَّدُنكَ سُلْطَٰنًا نَّصِيرًا",
-            translit:
-              "Rabbi adkhilnī mudkhala ṣidqiw wa akhrijnī mukhraja ṣidqiw waj’al lī milladunka sulṭānan naṣīrā.",
-            translation:
-              '“O my Lord! Grant me an honourable entrance and an honourable exit and sustain me with Your power."',
-            verse: 80,
-            surah: 17,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "رَّبِّ أَنزِلْنِى مُنزَلًا مُّبَارَكًا وَأَنتَ خَيْرُ ٱلْمُنزِلِينَ",
-            translit:
-              "Rabbi anzilnī munzalan mubārakan wa anta khayrul munzilīn.",
-            translation:
-              '"My Lord! Let me land with Your blessings in a blessed landing place. For You alone can provide the best of landings."',
-            verse: 29,
-            surah: 23,
-          }),
-        ],
+        entries: [isra_80(), mu_minun_29()],
       }),
       new DhikrModel({
         entries: [

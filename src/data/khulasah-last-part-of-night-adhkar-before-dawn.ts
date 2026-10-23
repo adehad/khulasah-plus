@@ -1,8 +1,12 @@
 import {
   anbiya_87,
+  anbiya_87_verse,
   baqarah_201,
   baqarah_286,
   hashr_24,
+  saffat_180,
+  saffat_181,
+  saffat_182,
 } from "@/data/shared/quran-partial";
 import {
   DhikrEntryModel,
@@ -10,7 +14,6 @@ import {
   QasidaEntryModel,
   QasidaModel,
   QasidaVerseModel,
-  QuranDhikrEntryModel,
   WirdModel,
 } from "@/models/recitation";
 
@@ -81,18 +84,7 @@ export default [
         ],
       }),
       new DhikrModel({
-        entries: [
-          new QuranDhikrEntryModel({
-            arabic:
-              "وَذَا ٱلنُّونِ إِذ ذَّهَبَ مُغَٰضِبًۭا فَظَنَّ أَن لَّن نَّقْدِرَ عَلَيْهِ فَنَادَىٰ فِى ٱلظُّلُمَٰتِ أَن لَّآ إِلَٰهَ إِلَّآ أَنتَ سُبْحَٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّٰلِمِينَ",
-            translit:
-              "wa dhān-nūni idh dhahaba mughāḍiban faẓanna an lan naqdira ʿalayhi fanādā fīẓ-ẓulumāti an lā ilāha illā anta sub'ḥānaka innī kuntu minaẓ-ẓālimīn",
-            translation:
-              'And [mention] the man of the fish [i.e., Jonah], when he went off in anger and thought that We would not decree [anything] upon him. And he called out within the darknesses, "There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers."',
-            verse: 87,
-            surah: 21,
-          }),
-        ],
+        entries: [anbiya_87_verse()],
       }),
       new DhikrModel({
         entries: [
@@ -3095,28 +3087,9 @@ export default [
       }),
       new DhikrModel({
         entries: [
-          new QuranDhikrEntryModel({
-            arabic: "سُبْحَٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ",
-            translit: "Subḥāna rabbika rabbil ‛izzati ‛ammā yaṣifūn.",
-            translation:
-              "Exalted is your Lord, the Lord of might, above what they describe.",
-            verse: 180,
-            surah: 37,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَسَلَٰمٌ عَلَى ٱلْمُرْسَلِينَ",
-            translit: "Wa salāmun ‛alal mursalīn.",
-            translation: "And peace upon the messengers.",
-            verse: 181,
-            surah: 37,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
-            translit: "Walḥamdu lillāhi rabbil ‛ālamīn.",
-            translation: "And praise to Allāh, Lord of the worlds.",
-            verse: 182,
-            surah: 37,
-          }),
+          saffat_180(),
+          saffat_181(),
+          saffat_182(),
           new DhikrEntryModel({
             arabic: "عَدَدَ خَلقِهِ، وَرِضَى نَفْسِهِ، وَزِنَةَ عَرْشِهِ، وَمِدَادَ كَلِمَاتِهِ",
             translit:
@@ -3411,28 +3384,9 @@ export default [
       }),
       new DhikrModel({
         entries: [
-          new QuranDhikrEntryModel({
-            arabic: "سُبْحَٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ",
-            translit: "Subḥāna rabbika rabbil ‛izzati ‛ammā yaṣifūn.",
-            translation:
-              "Exalted is your Lord, the Lord of might, above what they describe.",
-            verse: 180,
-            surah: 37,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَسَلَٰمٌ عَلَى ٱلْمُرْسَلِينَ",
-            translit: "Wa salāmun ‛alal mursalīn.",
-            translation: "And peace upon the messengers.",
-            verse: 181,
-            surah: 37,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ",
-            translit: "Walḥamdu lillāhi rabbil ‛ālamīn.",
-            translation: "And praise to Allāh, Lord of the worlds.",
-            verse: 182,
-            surah: 37,
-          }),
+          saffat_180(),
+          saffat_181(),
+          saffat_182(),
           new DhikrEntryModel({
             arabic: "عَدَدَ خَلْقِهِ، وَرِضَى نَفْسِهِ، وَزِنَةَ عَرْشِهِ، وَمِدَادَ كَلِمَاتِهِ",
             translit:

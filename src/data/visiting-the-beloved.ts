@@ -1,8 +1,12 @@
 import {
+  anbiya_107,
   baqarah_201,
   fath_10,
   imran_193,
+  imran_194,
   nisa_64,
+  qalam_4,
+  shura_25,
 } from "@/data/shared/quran-partial";
 import {
   DhikrEntryModel,
@@ -10,7 +14,6 @@ import {
   QasidaEntryModel,
   QasidaModel,
   QasidaVerseModel,
-  QuranDhikrEntryModel,
   WirdModel,
 } from "@/models/recitation";
 
@@ -699,16 +702,7 @@ export default [
             translation:
               "Salutations and peace be upon you, O my master, O Prophet of Allah, O Messenger of Allah, O Beloved of Allah! Our Lord has said, as you have conveyed to us:",
           }),
-          new QuranDhikrEntryModel({
-            arabic:
-              "وَهُوَ ٱلَّذِى يَقْبَلُ ٱلتَّوْبَةَ عَنْ عِبَادِهِۦ وَيَعْفُوا۟ عَنِ ٱلسَّيِّـَٔاتِ وَيَعْلَمُ مَا تَفْعَلُونَ",
-            translit:
-              "Wa huwal ladhī yaqbalut tawbata ‛an ‛ibādihī wa ya‛fū ‛anis sayyi’āti wa ya‛lamu mā taf‛alūn",
-            translation:
-              "It is He who accepts repentance for His servants and pardons evil deeds. He knows everything you do.",
-            verse: 25,
-            surah: 42,
-          }),
+          shura_25(),
         ],
       }),
       new DhikrModel({
@@ -744,14 +738,7 @@ export default [
             translation:
               "Salutations and peace be upon you, O Prophet of Allah, O Messenger of Allah, O Beloved of Allah! Our great God has said about you:",
           }),
-          new QuranDhikrEntryModel({
-            arabic: "وَإِنَّكَ لَعَلَىٰ خُلُقٍ عَظِيمٍ",
-            translit: "Wa innaka la‛alā khuluqin ‛aẓīm",
-            translation:
-              "And indeed, you truly (stand) on an exalted standard of character.",
-            verse: 4,
-            surah: 68,
-          }),
+          qalam_4(),
         ],
       }),
       new DhikrModel({
@@ -792,14 +779,7 @@ export default [
             translation:
               "Salutations and peace be upon you, O Prophet of Allah, O Messenger of Allah, O Beloved of Allah! The Most Compassionate, the Most Merciful has declared about you:",
           }),
-          new QuranDhikrEntryModel({
-            arabic: "وَمَآ أَرْسَلْنَٰكَ إِلَّا رَحْمَةًۭ لِّلْعَٰلَمِينَ",
-            translit: "Wa mā arsalnāka illā raḥmatan lil ‛ālamīn",
-            translation:
-              "We have sent you, [O Beloved], only as a mercy to the worlds.",
-            verse: 107,
-            surah: 21,
-          }),
+          anbiya_107(),
         ],
       }),
       new DhikrModel({
@@ -1302,16 +1282,7 @@ export default [
             translation: "O Allāh, forgive us",
           }),
           imran_193(),
-          new QuranDhikrEntryModel({
-            arabic:
-              "رَبَّنَا وَءَاتِنَا مَا وَعَدتَّنَا عَلَىٰ رُسُلِكَ وَلَا تُخْزِنَا يَوْمَ ٱلْقِيَٰمَةِ ۗ إِنَّكَ لَا تُخْلِفُ ٱلْمِيعَادَ",
-            translit:
-              "Rabbanā wa ātinā mā wa‛adttanā ‛alā rusulika wa lā tukhzinā yawmal qiyāmah, innaka lā tukhliful mī‛ād",
-            translation:
-              "Our Lord! Grant us what You have promised us through Your messengers and do not put us to shame on Judgment Day—for certainly You never fail in Your promise.",
-            verse: 194,
-            surah: 3,
-          }),
+          imran_194(),
         ],
       }),
       new DhikrModel({

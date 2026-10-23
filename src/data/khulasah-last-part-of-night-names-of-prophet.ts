@@ -1,27 +1,12 @@
-import {
-  DhikrEntryModel,
-  DhikrModel,
-  QuranDhikrEntryModel,
-  WirdModel,
-} from "@/models/recitation";
+import { ahzab_56_verse } from "@/data/shared/quran-partial";
+import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
     title: "Names of The Prophet (peace and blessings be upon him)",
     entries: [
       new DhikrModel({
-        entries: [
-          new QuranDhikrEntryModel({
-            arabic:
-              "إِنَّ ٱللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى ٱلنَّبِىِّ ۚ يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ صَلُّوا۟ عَلَيْهِ وَسَلِّمُوا۟ تَسْلِيمًا",
-            translit:
-              "Innallāha wa malā’ikatahū yuṣallūna ‛alan-nabī, yā ayyuhal-ladhīna āmanū ṣallū ‛alayhi wa sallimū taslīmā",
-            translation:
-              "Indeed, Allāh confers blessing upon the Prophet, and His angels [ask Him to do so]. O you who have believed, ask [Allāh to confer] blessing upon him and ask [Allāh to grant him] peace.",
-            verse: 56,
-            surah: 33,
-          }),
-        ],
+        entries: [ahzab_56_verse()],
       }),
       new DhikrModel({
         entries: [

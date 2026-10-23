@@ -1,9 +1,5 @@
-import {
-  DhikrEntryModel,
-  DhikrModel,
-  QuranDhikrEntryModel,
-  WirdModel,
-} from "@/models/recitation";
+import { ahzab_56_verse } from "@/data/shared/quran-partial";
+import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
@@ -11,16 +7,7 @@ export default [
     entries: [
       new DhikrModel({
         entries: [
-          new QuranDhikrEntryModel({
-            arabic:
-              "إِنَّ ٱللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى ٱلنَّبِىِّ ۚ يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ صَلُّوا۟ عَلَيْهِ وَسَلِّمُوا۟ تَسْلِيمًا",
-            translit:
-              "Innallāha wa malā'ikatahū yuṣallūna ‛alan nabiyyi, yā ayyuhalladhīna āmanū ṣallū ‛alayhi wa sallimū taslīmā.",
-            translation:
-              "Verily, Allāh and His angels send salutations upon the Prophet; O you who believe, send salutations and peace upon him.",
-            verse: 56,
-            surah: 33,
-          }),
+          ahzab_56_verse(),
           new DhikrEntryModel({
             arabic: "لَبَّيْكَ اللَّهُمَّ لَبَّيْكَ",
             translit: "Labbayk Allāhumma labbayk…",

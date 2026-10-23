@@ -1,9 +1,15 @@
-import { anbiya_87 } from "@/data/shared/quran-partial";
+import {
+  anbiya_87,
+  anbiya_88,
+  anbiya_89,
+  mu_minun_118,
+  tawbah_128_verse,
+  tawbah_129_verse,
+} from "@/data/shared/quran-partial";
 import {
   DhikrEntryModel,
   DhikrModel,
   ExpandModel,
-  QuranDhikrEntryModel,
   WirdModel,
 } from "@/models/recitation";
 
@@ -444,32 +450,9 @@ export default [
             translation: "I seek Your forgiveness,",
           }),
           anbiya_87(),
-          new QuranDhikrEntryModel({
-            arabic: "فَٱسْتَجَبْنَا لَهُۥ وَنَجَّيْنَٰهُ مِنَ ٱلْغَمِّ ۚ وَكَذَٰلِكَ نُنجِي ٱلْمُؤْمِنِينَ",
-            translit:
-              "Fastajabnā lahū wa najjaynāhu minal-ghamm, wa kadhālika nunjil-mu’minīn",
-            translation:
-              "So We responded to him and delivered him from distress; thus do We deliver those who have faith.",
-            verse: 88,
-            surah: 21,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَزَكَرِيَّآ إِذْ نَادَىٰ رَبَّهُۥ رَبِّ لَا تَذَرْنِى فَرْدًا وَأَنتَ خَيْرُ ٱلْوَٰرِثِينَ",
-            translit:
-              "Wa zakariyyā idh nādā rabbahū rabbi lā tadharnī fardā wa anta khayrul-wārithīn",
-            translation:
-              'And remember Zakariyya, when he cried to his Lord: "O my Lord! Leave me not without offspring, for You are the best of bestowers."',
-            verse: 89,
-            surah: 21,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "رَبِّ ٱغْفِرْ وَٱرْحَمْ وَأَنتَ خَيْرُ ٱلرَّٰحِمِينَ",
-            translit: "Rabbigh-fir war-ḥam wa anta khayrur-rāḥimīn",
-            translation:
-              '"My Lord! Forgive and have mercy, for You are the Best of those who show mercy."',
-            verse: 118,
-            surah: 23,
-          }),
+          anbiya_88(),
+          anbiya_89(),
+          mu_minun_118(),
         ],
       }),
       new DhikrModel({
@@ -679,28 +662,7 @@ export default [
         ],
       }),
       new DhikrModel({
-        entries: [
-          new QuranDhikrEntryModel({
-            arabic:
-              "لَقَدْ جَآءَكُمْ رَسُولٌ مِّنْ أَنفُسِكُمْ عَزِيزٌ عَلَيْهِ مَا عَنِتُّمْ حَرِيصٌ عَلَيْكُم بِٱلْمُؤْمِنِينَ رَءُوفٌ رَّحِيمٌ",
-            translit:
-              "Laqad jā’akum rasūlun min anfusikum ‛azīzun ‛alayhi mā ‛anittum ḥarīṣun ‛alaykum bil-mu’minīna ra’ūfur-raḥīm",
-            translation:
-              "There has come to you a Messenger from among yourselves, grievous to whom is your burden, concerned (is he) for you; for the believers (he is) full of compassion, merciful. If they turn away then say: Allah is sufficient for me; there is no god but He. On Him do I rely; He is the Lord of the Awesome Throne.",
-            verse: 128,
-            surah: 9,
-          }),
-          new QuranDhikrEntryModel({
-            arabic:
-              "فَإِن تَوَلَّوْا۟ فَقُلْ حَسْبِىَ ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَهُوَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيمِ",
-            translit:
-              "Fa in tawallaw faqul ḥasbiyallāhu lā ilāha illā huw, ‛alayhi tawakkaltu wa huwa rabbul-‛arshil-‛aẓīm",
-            translation:
-              'But if they turn away, [O Muḥammad], say, "Sufficient for me is Allāh; there is no deity except Him. On Him I have relied, and He is the Lord of the Great Throne."',
-            verse: 129,
-            surah: 9,
-          }),
-        ],
+        entries: [tawbah_128_verse(), tawbah_129_verse()],
       }),
       new DhikrModel({
         entries: [
