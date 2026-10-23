@@ -12,7 +12,7 @@ import {
 /** end of Al-Baqarah 2:127 — used in khulasah-after-every-prayer-adkhar */
 export function baqarah_127(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… رَبَّنَا تَقَبَّلْ مِنَّآ إِنَّكَ أَنتَ ٱلسَّمِيعُ ٱلْعَلِيمُ",
+    arabic: "… رَبَّنَا تَقَبَّلۡ مِنَّآۖ إِنَّكَ أَنتَ ٱلسَّمِيعُ ٱلۡعَلِيمُ",
     translit: "… Rabbanā taqabbal minnā innaka antas samī‛ul ‛alīm.",
     translation:
       "… Our Lord, accept [this] from us. Indeed, You are the Hearing, the Knowing.",
@@ -26,7 +26,7 @@ export function baqarah_127(repeat = 1, enableCounter?: boolean) {
 /** end of Al-Baqarah 2:128 — used in khulasah-after-every-prayer-adkhar, khulasah-maghrib-ratib-al-haddad */
 export function baqarah_128(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… وَتُبْ عَلَيْنَآ إِنَّكَ أَنتَ ٱلتَّوَّابُ ٱلرَّحِيمُ",
+    arabic: "… وَتُبۡ عَلَيۡنَآۖ إِنَّكَ أَنتَ ٱلتَّوَّابُ ٱلرَّحِيمُ",
     translit: "… wa tub ‛alaynā innaka antat tawwābur raḥīm.",
     translation:
       "… and accept our repentance. Indeed, You are the Accepting of Repentance, the Merciful.",
@@ -40,7 +40,7 @@ export function baqarah_128(repeat = 1, enableCounter?: boolean) {
 /** start of Al-Baqarah 2:186 — used in salawat-compilations-majma-al-lataif-6---Wednesday */
 export function baqarah_186(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "وَإِذَا سَأَلَكَ عِبَادِى عَنِّى فَإِنِّى قَرِيبٌ أُجِيبُ دَعْوَةَ ٱلدَّاعِ إِذَا دَعَانِ …",
+    arabic: "وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌۖ أُجِيبُ دَعۡوَةَ ٱلدَّاعِ إِذَا دَعَانِۖ …",
     translit:
       "Wa idhā sa’alaka ‛ibādī ‛annī fa innī qarībun ujību da‛watad dā‛i idhā da‛ān …",
     translation:
@@ -55,7 +55,7 @@ export function baqarah_186(repeat = 1, enableCounter?: boolean) {
 /** end of Al-Baqarah 2:201 — used in khulasah-last-part-of-night-adhkar-before-dawn, visiting-the-beloved, dua-khatm-al-quran-al-karim */
 export function baqarah_201(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… رَبَّنَآ ءَاتِنَا فِى ٱلدُّنْيَا حَسَنَةً وَفِى ٱلْـَٔاخِرَةِ حَسَنَةً وَقِنَا عَذَابَ ٱلنَّارِ",
+    arabic: "… رَبَّنَآ ءَاتِنَا فِي ٱلدُّنۡيَا حَسَنَةٗ وَفِي ٱلۡأٓخِرَةِ حَسَنَةٗ وَقِنَا عَذَابَ ٱلنَّارِ",
     translit:
       "… Rabbanā ātinā fiddunyā ḥasanatan wa fil ākhirati ḥasanatan wa qinā ‛adhāban nār.",
     translation:
@@ -70,7 +70,7 @@ export function baqarah_201(repeat = 1, enableCounter?: boolean) {
 /** end of Al-Baqarah 2:250 — used in prayers-for-palestine */
 export function baqarah_250(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… رَبَّنَآ أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا وَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَـٰفِرِينَ",
+    arabic: "… رَبَّنَآ أَفۡرِغۡ عَلَيۡنَا صَبۡرٗا وَثَبِّتۡ أَقۡدَامَنَا وَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ",
     translit:
       "… Rabbanā afrigh ‛alaynā ṣabran wathabbit aqdāmanā wanṣurnā ‛alal qawmil kāfirīn.",
     translation:
@@ -85,7 +85,7 @@ export function baqarah_250(repeat = 1, enableCounter?: boolean) {
 /** end of Al-Baqarah 2:256 — used in khulasah-after-fajr-wird-latif */
 export function baqarah_256(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… بِٱلْعُرْوَةِ ٱلْوُثْقَىٰ لَا ٱنفِصَامَ لَهَا وَٱللَّهُ سَمِيعٌ عَلِيمٌ",
+    arabic: "… بِٱلۡعُرۡوَةِ ٱلۡوُثۡقَىٰ لَا ٱنفِصَامَ لَهَاۗ وَٱللَّهُ سَمِيعٌ عَلِيمٌ",
     translit: "… bil ‛urwatil wuthqā lanfiṣāma lahā wallāhu samī‛un ‛alīm.",
     translation:
       "… the most trustworthy handhold with no break in it. And Allāh is Hearing and Knowing.",
@@ -100,7 +100,7 @@ export function baqarah_256(repeat = 1, enableCounter?: boolean) {
 export function baqarah_285_286(repeat = 1, enableCounter?: boolean) {
   return [
     new QuranDhikrEntryModel({
-      arabic: "… غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ ٱلْمَصِيرُ",
+      arabic: "… غُفۡرَانَكَ رَبَّنَا وَإِلَيۡكَ ٱلۡمَصِيرُ",
       translit: "… Ghufrānaka rabbanā wa ilaykal maṣīr.",
       translation:
         "… [We seek] Your forgiveness, our Lord, and to You is the [final] destination.",
@@ -111,7 +111,7 @@ export function baqarah_285_286(repeat = 1, enableCounter?: boolean) {
     }),
     new QuranDhikrEntryModel({
       arabic:
-        "لَا يُكَلِّفُ ٱللَّهُ نَفْسًا إِلَّا وُسْعَهَا ۚ لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا ٱكْتَسَبَتْ ۗ رَبَّنَا لَا تُؤَاخِذْنَآ إِن نَّسِينَآ أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَآ إِصْرًا كَمَا حَمَلْتَهُۥ عَلَى ٱلَّذِينَ مِن قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِۦ ۖ وَٱعْفُ عَنَّا وَٱغْفِرْ لَنَا وَٱرْحَمْنَآ ۚ أَنتَ مَوْلَىٰنَا فَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَـٰفِرِينَ",
+        "لَا يُكَلِّفُ ٱللَّهُ نَفۡسًا إِلَّا وُسۡعَهَاۚ لَهَا مَا كَسَبَتۡ وَعَلَيۡهَا مَا ٱكۡتَسَبَتۡۗ رَبَّنَا لَا تُؤَاخِذۡنَآ إِن نَّسِينَآ أَوۡ أَخۡطَأۡنَاۚ رَبَّنَا وَلَا تَحۡمِلۡ عَلَيۡنَآ إِصۡرٗا كَمَا حَمَلۡتَهُۥ عَلَى ٱلَّذِينَ مِن قَبۡلِنَاۚ رَبَّنَا وَلَا تُحَمِّلۡنَا مَا لَا طَاقَةَ لَنَا بِهِۦۖ وَٱعۡفُ عَنَّا وَٱغۡفِرۡ لَنَا وَٱرۡحَمۡنَآۚ أَنتَ مَوۡلَىٰنَا فَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ",
       translit:
         "Lā yukallifullāhu nafsan illā wus‛ahā, lahā mā kasabat wa ‛alayhā maktasabat, rabbanā lā tu’ākhidhnā in nasīnā aw akhṭa’nā, rabbanā walā taḥmil ‛alaynā iṣran kamā ḥamaltahū ‛alalladhīna min qablinā, rabbanā walā tuḥammilnā mā lā ṭāqata lanā bihī, wa‛fu ‛annā, waghfir lanā, warḥamnā, anta mawlānā fanṣurnā ‛alal qawmil kāfirīn.",
       translation:
@@ -128,7 +128,7 @@ export function baqarah_285_286(repeat = 1, enableCounter?: boolean) {
 export function baqarah_286(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic:
-      "… رَبَّنَا لَا تُؤَاخِذْنَآ إِن نَّسِينَآ أَوْ أَخْطَأْنَا رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَآ إِصْرًا كَمَا حَمَلْتَهُۥ عَلَى ٱلَّذِينَ مِن قَبْلِنَا رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِۦ وَٱعْفُ عَنَّا وَٱغْفِرْ لَنَا وَٱرْحَمْنَآ أَنتَ مَوْلَىٰنَا فَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَـٰفِرِينَ",
+      "… رَبَّنَا لَا تُؤَاخِذۡنَآ إِن نَّسِينَآ أَوۡ أَخۡطَأۡنَاۚ رَبَّنَا وَلَا تَحۡمِلۡ عَلَيۡنَآ إِصۡرٗا كَمَا حَمَلۡتَهُۥ عَلَى ٱلَّذِينَ مِن قَبۡلِنَاۚ رَبَّنَا وَلَا تُحَمِّلۡنَا مَا لَا طَاقَةَ لَنَا بِهِۦۖ وَٱعۡفُ عَنَّا وَٱغۡفِرۡ لَنَا وَٱرۡحَمۡنَآۚ أَنتَ مَوۡلَىٰنَا فَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ",
     translit:
       "… Rabbanā lā tu'ākhidhnā in nasīnā aw akhṭa'nā, rabbanā walā taḥmil ‛alaynā iṣran kamā ḥamaltahū ‛alalladhīna min qablinā, rabbanā walā tuḥammilnā mā lā ṭāqata lanā bihī, wa‛fu ‛annā, waghfir lanā, warḥamnā, anta mawlanā fanṣurnā ‛alal qawmil kāfirīn.",
     translation:
@@ -143,7 +143,7 @@ export function baqarah_286(repeat = 1, enableCounter?: boolean) {
 /** start of Aal-Imran 3:19 — used in khulasah-friday-opening-supplications */
 export function imran_19(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "إِنَّ ٱلدِّينَ عِندَ ٱللَّهِ ٱلْإِسْلَـٰمُ …",
+    arabic: "إِنَّ ٱلدِّينَ عِندَ ٱللَّهِ ٱلۡإِسۡلَٰمُۗ …",
     translit: "Innad dīna ‛indallāhil islām …",
     translation: "Indeed, the religion in the sight of Allāh is Islām …",
     surah: 3,
@@ -156,7 +156,7 @@ export function imran_19(repeat = 1, enableCounter?: boolean) {
 /** end of Aal-Imran 3:45 — used in khulasah-dhuhr-adhkar */
 export function imran_45(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… وَجِيهًا فِى ٱلدُّنْيَا وَٱلْـَٔاخِرَةِ وَمِنَ ٱلْمُقَرَّبِينَ",
+    arabic: "… وَجِيهٗا فِي ٱلدُّنۡيَا وَٱلۡأٓخِرَةِ وَمِنَ ٱلۡمُقَرَّبِينَ",
     translit: "… Wajīhan fiddunyā wal ākhirati  wa minal muqarrabīn.",
     translation:
       "… Held in honour in this world and in the Hereafter, and he will be one of those who are granted nearness to Allāh.",
@@ -171,7 +171,7 @@ export function imran_45(repeat = 1, enableCounter?: boolean) {
 export function imran_147(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic:
-      "… رَبَّنَا ٱغْفِرْ لَنَا ذُنُوبَنَا وَإِسْرَافَنَا فِىٓ أَمْرِنَا وَثَبِّتْ أَقْدَامَنَا وَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَـٰفِرِينَ",
+      "… رَبَّنَا ٱغۡفِرۡ لَنَا ذُنُوبَنَا وَإِسۡرَافَنَا فِيٓ أَمۡرِنَا وَثَبِّتۡ أَقۡدَامَنَا وَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ",
     translit:
       "… Rabbanā ighfir lanā dhunūbanā wa isrāfanā fī amrinā wathabbit aqdāmanā wanṣurnā ‛alal qawmil kāfirīn.",
     translation:
@@ -186,7 +186,7 @@ export function imran_147(repeat = 1, enableCounter?: boolean) {
 /** end of Aal-Imran 3:193 — used in visiting-the-beloved */
 export function imran_193(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّـَٔاتِنَا وَتَوَفَّنَا مَعَ ٱلْأَبْرَارِ",
+    arabic: "… ذُنُوبَنَا وَكَفِّرۡ عَنَّا سَيِّـَٔاتِنَا وَتَوَفَّنَا مَعَ ٱلۡأَبۡرَارِ",
     translit:
       "… dhunūbanā wa kaffir ‛annā sayyi’ātinā wa tawaffanā ma‛al abrār.",
     translation:
@@ -202,7 +202,7 @@ export function imran_193(repeat = 1, enableCounter?: boolean) {
 export function nisa_64(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic:
-      "… ٱللَّهِ وَلَوْ أَنَّهُمْ إِذ ظَّلَمُوٓا۟ أَنفُسَهُمْ جَآءُوكَ فَٱسْتَغْفَرُوا۟ ٱللَّهَ وَٱسْتَغْفَرَ لَهُمُ ٱلرَّسُولُ لَوَجَدُوا۟ ٱللَّهَ تَوَّابًا رَّحِيمًا",
+      "… ٱللَّهِۚ وَلَوۡ أَنَّهُمۡ إِذ ظَّلَمُوٓاْ أَنفُسَهُمۡ جَآءُوكَ فَٱسۡتَغۡفَرُواْ ٱللَّهَ وَٱسۡتَغۡفَرَ لَهُمُ ٱلرَّسُولُ لَوَجَدُواْ ٱللَّهَ تَوَّابٗا رَّحِيمٗا",
     translit:
       "… Wa law annahum idhẓalamū anfusahum jā'ūka fastaghfarul lāha wastaghfara lahumurrasūlu lawajadullāha tawwābar raḥīmā.",
     translation:
@@ -217,7 +217,7 @@ export function nisa_64(repeat = 1, enableCounter?: boolean) {
 /** end of An-Nisa 4:69 — used in dalail-khayrat-4---Thursday */
 export function nisa_69(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… مِّنَ ٱلنَّبِيِّـۧنَ وَٱلصِّدِّيقِينَ وَٱلشُّهَدَآءِ وَٱلصَّـٰلِحِينَ وَحَسُنَ أُو۟لَـٰٓئِكَ رَفِيقًا",
+    arabic: "… مِّنَ ٱلنَّبِيِّـۧنَ وَٱلصِّدِّيقِينَ وَٱلشُّهَدَآءِ وَٱلصَّٰلِحِينَۚ وَحَسُنَ أُوْلَٰٓئِكَ رَفِيقٗا",
     translit:
       "… minan nabiyyīna waṣ ṣiddīqīna wash shuhadā’i waṣ ṣāliḥīna wa ḥasuna ulā’ika rafīqā.",
     translation:
@@ -232,7 +232,7 @@ export function nisa_69(repeat = 1, enableCounter?: boolean) {
 /** start of Al-An'am 6:79 — used in khulasah-dhuhr-adhkar */
 export function an_am_79(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… وَجَّهْتُ وَجْهِىَ لِلَّذِى فَطَرَ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضَ …",
+    arabic: "… وَجَّهۡتُ وَجۡهِيَ لِلَّذِي فَطَرَ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَ …",
     translit: "Wajjahtu wajhiya lilladhī faṭaras samāwāti wal'arḍ …",
     translation:
       '"I have turned my face with single-minded devotion, towards Him Who has created the Heavens and the earth." …',
@@ -246,7 +246,7 @@ export function an_am_79(repeat = 1, enableCounter?: boolean) {
 /** start of Al-An'am 6:153 — used in salawat-compilations-majma-al-lataif-4---Monday */
 export function an_am_153(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "وَأَنَّ هَـٰذَا صِرَٰطِى مُسْتَقِيمًا …",
+    arabic: "وَأَنَّ هَٰذَا صِرَٰطِي مُسۡتَقِيمٗا …",
     translit: "Wa anna hādhā ṣirāṭī mustaqīmā …",
     translation: "And, [moreover], this is My path, which is straight …",
     surah: 6,
@@ -259,7 +259,7 @@ export function an_am_153(repeat = 1, enableCounter?: boolean) {
 /** middle of Al-A'raf 7:43 — used in khulasah-various-supplications-duas-for-travel */
 export function a_raf_43(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… ٱلْحَمْدُ لِلَّهِ ٱلَّذِى هَدَىٰنَا لِهَـٰذَا وَمَا كُنَّا لِنَهْتَدِىَ لَوْلَآ أَنْ هَدَىٰنَا ٱللَّهُ …",
+    arabic: "… ٱلۡحَمۡدُ لِلَّهِ ٱلَّذِي هَدَىٰنَا لِهَٰذَا وَمَا كُنَّا لِنَهۡتَدِيَ لَوۡلَآ أَنۡ هَدَىٰنَا ٱللَّهُۖ …",
     translit:
       "… Alḥamdu lillāhilladhī hadānā lihādhā wa mā kunnā linahtadiya lawlā an hadānallāhu …",
     translation:
@@ -274,7 +274,7 @@ export function a_raf_43(repeat = 1, enableCounter?: boolean) {
 /** end of At-Tawbah 9:128 — used in salawat-compilations-majma-al-lataif-4---Monday */
 export function tawbah_128(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… حَرِيصٌ عَلَيْكُم بِٱلْمُؤْمِنِينَ رَءُوفٌ رَّحِيمٌ",
+    arabic: "… حَرِيصٌ عَلَيۡكُم بِٱلۡمُؤۡمِنِينَ رَءُوفٞ رَّحِيمٞ",
     translit: "… Ḥarīṣun ‛alaykum bilmu’minīna ra’ūfur raḥīm.",
     translation:
       "… [he is] concerned over you [i.e., your guidance] and to the believers is kind and merciful.",
@@ -288,7 +288,7 @@ export function tawbah_128(repeat = 1, enableCounter?: boolean) {
 /** end of At-Tawbah 9:129 — used in khulasah-after-fajr-wird-latif */
 export function tawbah_129(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… حَسْبِىَ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيمِ",
+    arabic: "… حَسۡبِيَ ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَۖ عَلَيۡهِ تَوَكَّلۡتُۖ وَهُوَ رَبُّ ٱلۡعَرۡشِ ٱلۡعَظِيمِ",
     translit:
       "… Ḥasbī Allāhu lā ilāha illā Huwa ʿalayhi tawakkaltu wa Huwa Rabb ul-ʿarsh il-ʿaẓīm.",
     translation:
@@ -303,7 +303,7 @@ export function tawbah_129(repeat = 1, enableCounter?: boolean) {
 /** end of Hud 11:56 — used in khulasah-after-fajr-wird-of-imam-an-nawawi */
 export function hud_56(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… إِنَّ رَبِّى عَلَىٰ صِرَٰطٍ مُّسْتَقِيمٍ",
+    arabic: "… إِنَّ رَبِّي عَلَىٰ صِرَٰطٖ مُّسۡتَقِيمٖ",
     translit: "… inna rabbī ‛alā ṣirāṭim mustaqīm.",
     translation: "… Indeed, my Lord is on a path [that is] straight.",
     surah: 11,
@@ -316,7 +316,7 @@ export function hud_56(repeat = 1, enableCounter?: boolean) {
 /** end of Hud 11:73 — used in dalail-khayrat-allahs-most-beautiful-names */
 export function hud_73(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… رَحْمَتُ ٱللَّهِ وَبَرَكَـٰتُهُۥ عَلَيْكُمْ أَهْلَ ٱلْبَيْتِ إِنَّهُۥ حَمِيدٌ مَّجِيدٌ",
+    arabic: "… رَحۡمَتُ ٱللَّهِ وَبَرَكَٰتُهُۥ عَلَيۡكُمۡ أَهۡلَ ٱلۡبَيۡتِۚ إِنَّهُۥ حَمِيدٞ مَّجِيدٞ",
     translit:
       "… Raḥmatullāhi wa barakātuhū ‛alaykum ahlal bayti innahū ḥamīdum majīd.",
     translation:
@@ -331,7 +331,7 @@ export function hud_73(repeat = 1, enableCounter?: boolean) {
 /** end of Al-Hijr 15:87 — used in dalail-khayrat-7---Sunday */
 export function hijr_87(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… سَبْعًا مِّنَ ٱلْمَثَانِى وَٱلْقُرْءَانَ ٱلْعَظِيمَ",
+    arabic: "… سَبۡعٗا مِّنَ ٱلۡمَثَانِي وَٱلۡقُرۡءَانَ ٱلۡعَظِيمَ",
     translit: "… sab‛an minal mathānī wal qur’ānal ‛aẓīm.",
     translation: "… seven of the often repeated [verses] and the great Qur’ān.",
     surah: 15,
@@ -344,7 +344,7 @@ export function hijr_87(repeat = 1, enableCounter?: boolean) {
 /** end of Al-Kahf 18:10 — used in salawat-compilations-the-garden-of-love */
 export function kahf_10(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… رَبَّنَآ ءَاتِنَا مِن لَّدُنكَ رَحْمَةً وَهَيِّئْ لَنَا مِنْ أَمْرِنَا رَشَدًا",
+    arabic: "… رَبَّنَآ ءَاتِنَا مِن لَّدُنكَ رَحۡمَةٗ وَهَيِّئۡ لَنَا مِنۡ أَمۡرِنَا رَشَدٗا",
     translit:
       "… Rabbanā ātinā min ladunka raḥmatan wahayyi’ lanā min amrinā rashadā.",
     translation:
@@ -359,7 +359,7 @@ export function kahf_10(repeat = 1, enableCounter?: boolean) {
 /** Al-Anbiya 21:20 — used in dalail-khayrat-7---Sunday */
 export function anbiya_20(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "يُسَبِّحُونَ ٱلَّيْلَ وَٱلنَّهَارَ لَا يَفْتُرُونَ",
+    arabic: "يُسَبِّحُونَ ٱلَّيۡلَ وَٱلنَّهَارَ لَا يَفۡتُرُونَ",
     translit: "Yusabbiḥūnal layla wan nahāra lā yafturūn.",
     translation: "They exalt [Him] night and day [and] do not slacken.",
     surah: 21,
@@ -372,7 +372,7 @@ export function anbiya_20(repeat = 1, enableCounter?: boolean) {
 /** end of Al-Anbiya 21:87 — used in blessed-occasions-rajab-istighfar, dalail-khayrat-6---Saturday, khulasah-last-part-of-night-adhkar-before-dawn */
 export function anbiya_87(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… ٱلظُّلُمَـٰتِ أَن لَّآ إِلَـٰهَ إِلَّآ أَنتَ سُبْحَـٰنَكَ إِنِّى كُنتُ مِنَ ٱلظَّـٰلِمِينَ",
+    arabic: "… ٱلظُّلُمَٰتِ أَن لَّآ إِلَٰهَ إِلَّآ أَنتَ سُبۡحَٰنَكَ إِنِّي كُنتُ مِنَ ٱلظَّٰلِمِينَ",
     translit: "… lā ilāha illā anta subḥānaka innī kuntu minaẓ ẓālimīna.",
     translation:
       "… there is no deity but You, transcendent are You, truly I am amongst the wrongdoers.",
@@ -386,7 +386,7 @@ export function anbiya_87(repeat = 1, enableCounter?: boolean) {
 /** end of Al-Mu'minun 23:97 — used in khulasah-after-fajr-wird-latif */
 export function mu_minun_97(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… رَّبِّ أَعُوذُ بِكَ مِنْ هَمَزَٰتِ ٱلشَّيَـٰطِينِ",
+    arabic: "… رَّبِّ أَعُوذُ بِكَ مِنۡ هَمَزَٰتِ ٱلشَّيَٰطِينِ",
     translit: "… rabbi a‛ūdhu bika min hamazātish shayāṭīn.",
     translation:
       "… my Lord, I seek refuge in You from the incitements of the devils.",
@@ -400,7 +400,7 @@ export function mu_minun_97(repeat = 1, enableCounter?: boolean) {
 /** Al-Mu'minun 23:98 — used in khulasah-after-fajr-wird-latif */
 export function mu_minun_98(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "وَأَعُوذُ بِكَ رَبِّ أَن يَحْضُرُونِ",
+    arabic: "وَأَعُوذُ بِكَ رَبِّ أَن يَحۡضُرُونِ",
     translit: "Wa a‛ūdhu bika rabbi ay yaḥḍurūn.",
     translation:
       "And I seek refuge in You, my Lord, lest they be present with me.",
@@ -414,7 +414,7 @@ export function mu_minun_98(repeat = 1, enableCounter?: boolean) {
 /** middle of An-Nur 24:61 — used in khulasah-various-supplications-duas-for-travel */
 export function nur_61(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… تَحِيَّةً مِّنْ عِندِ ٱللَّهِ مُبَـٰرَكَةً طَيِّبَةً …",
+    arabic: "… تَحِيَّةٗ مِّنۡ عِندِ ٱللَّهِ مُبَٰرَكَةٗ طَيِّبَةٗۚ …",
     translit: "… taḥiyyatam min ‛indillāhi mubārakatan ṭayyibatan …",
     translation: "… a greeting from Allāh, blessed and good …",
     surah: 24,
@@ -427,7 +427,7 @@ export function nur_61(repeat = 1, enableCounter?: boolean) {
 /** start of Al-Qasas 28:85 — used in khulasah-various-supplications-duas-for-travel, salawat-compilations-the-garden-of-love */
 export function qasas_85(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "إِنَّ ٱلَّذِى فَرَضَ عَلَيْكَ ٱلْقُرْءَانَ لَرَآدُّكَ إِلَىٰ مَعَادٍ …",
+    arabic: "إِنَّ ٱلَّذِي فَرَضَ عَلَيۡكَ ٱلۡقُرۡءَانَ لَرَآدُّكَ إِلَىٰ مَعَادٖۚ …",
     translit: "Innalladhī faraḍa ‘alaykal qur’āna larādduka ilā ma‘ād …",
     translation:
       "Verily, He Who gave you the Qur’ān will bring you back to the Place of Return …",
@@ -441,7 +441,7 @@ export function qasas_85(repeat = 1, enableCounter?: boolean) {
 /** start of Ar-Rum 30:25 — used in dalail-khayrat-allahs-most-beautiful-names */
 export function rum_25(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "وَمِنْ ءَايَـٰتِهِۦٓ أَن تَقُومَ ٱلسَّمَآءُ وَٱلْأَرْضُ بِأَمْرِهِۦ …",
+    arabic: "وَمِنۡ ءَايَٰتِهِۦٓ أَن تَقُومَ ٱلسَّمَآءُ وَٱلۡأَرۡضُ بِأَمۡرِهِۦۚ …",
     translit: "Wa min āyātihī an taqūmas samā’u wal arḍu bi’amrihī …",
     translation:
       "And of His signs is that the heaven and earth stand [i.e., remain] by His command …",
@@ -455,7 +455,7 @@ export function rum_25(repeat = 1, enableCounter?: boolean) {
 /** end of Al-Ahzab 33:33 — used in dalail-khayrat-allahs-most-beautiful-names */
 export function ahzab_33(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… إِنَّمَا يُرِيدُ ٱللَّهُ لِيُذْهِبَ عَنكُمُ ٱلرِّجْسَ أَهْلَ ٱلْبَيْتِ وَيُطَهِّرَكُمْ تَطْهِيرًا",
+    arabic: "… إِنَّمَا يُرِيدُ ٱللَّهُ لِيُذۡهِبَ عَنكُمُ ٱلرِّجۡسَ أَهۡلَ ٱلۡبَيۡتِ وَيُطَهِّرَكُمۡ تَطۡهِيرٗا",
     translit:
       "… innamā yurīduLlāhu liyudh-hiba ʿankumur rijsa ahlal bayti wa yuṭahhirakum taṭhīran.",
     translation:
@@ -470,7 +470,7 @@ export function ahzab_33(repeat = 1, enableCounter?: boolean) {
 /** end of Al-Ahzab 33:69 — used in khulasah-dhuhr-adhkar */
 export function ahzab_69(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… وَكَانَ عِندَ ٱللَّهِ وَجِيهًا",
+    arabic: "… وَكَانَ عِندَ ٱللَّهِ وَجِيهٗا",
     translit: "… Wa kāna ‛indallāhi wajīhā.",
     translation: "… And he was honourable in the sight of Allāh.",
     surah: 33,
@@ -483,7 +483,7 @@ export function ahzab_69(repeat = 1, enableCounter?: boolean) {
 /** middle of Az-Zumar 39:46 — used in dalail-khayrat-8---Monday */
 export function zumar_46(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… ٱللَّهُمَّ فَاطِرَ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ عَـٰلِمَ ٱلْغَيْبِ وَٱلشَّهَـٰدَةِ …",
+    arabic: "… ٱللَّهُمَّ فَاطِرَ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ عَٰلِمَ ٱلۡغَيۡبِ وَٱلشَّهَٰدَةِ …",
     translit:
       "… allāhumma fāṭiras samāwāti wal arḍi ‛ālimal ghaybi wash shahādah …",
     translation:
@@ -498,7 +498,7 @@ export function zumar_46(repeat = 1, enableCounter?: boolean) {
 /** end of Ghafir 40:44 — used in khulasah-after-fajr-wird-of-imam-an-nawawi, prayers-for-palestine */
 export function ghafir_44(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… وَأُفَوِّضُ أَمْرِىٓ إِلَى ٱللَّهِ إِنَّ ٱللَّهَ بَصِيرٌۢ بِٱلْعِبَادِ",
+    arabic: "… وَأُفَوِّضُ أَمۡرِيٓ إِلَى ٱللَّهِۚ إِنَّ ٱللَّهَ بَصِيرُۢ بِٱلۡعِبَادِ",
     translit: "… Wa ufawwiḍu amrī ilallāh, innallāha baṣīrum bil ‛ibād.",
     translation:
       "… and I entrust my affair to Allāh. Indeed, Allāh is Seeing of [His] servants.",
@@ -512,7 +512,7 @@ export function ghafir_44(repeat = 1, enableCounter?: boolean) {
 /** end of Ash-Shura 42:11 — used in dalail-khayrat-allahs-most-beautiful-names */
 export function shura_11(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… لَيْسَ كَمِثْلِهِۦ شَىْءٌ وَهُوَ ٱلسَّمِيعُ ٱلْبَصِيرُ",
+    arabic: "… لَيۡسَ كَمِثۡلِهِۦ شَيۡءٞۖ وَهُوَ ٱلسَّمِيعُ ٱلۡبَصِيرُ",
     translit: "… laysa kamithlihī shay’un wa huwas samī‛ul baṣīr.",
     translation:
       "… There is nothing like unto Him, and He is the Hearing, the Seeing.",
@@ -526,7 +526,7 @@ export function shura_11(repeat = 1, enableCounter?: boolean) {
 /** end of Az-Zukhruf 43:13 — used in khulasah-various-supplications-duas-for-travel */
 export function zukhruf_13(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… سُبْحَـٰنَ ٱلَّذِى سَخَّرَ لَنَا هَـٰذَا وَمَا كُنَّا لَهُۥ مُقْرِنِينَ",
+    arabic: "… سُبۡحَٰنَ ٱلَّذِي سَخَّرَ لَنَا هَٰذَا وَمَا كُنَّا لَهُۥ مُقۡرِنِينَ",
     translit:
       "… Subḥānalladhī sakh-khara lanā hādhā wa mā kunnā lahū muqrinīna.",
     translation:
@@ -541,7 +541,7 @@ export function zukhruf_13(repeat = 1, enableCounter?: boolean) {
 /** start of Al-Fath 48:10 — used in visiting-the-beloved */
 export function fath_10(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "إِنَّ ٱلَّذِينَ يُبَايِعُونَكَ إِنَّمَا يُبَايِعُونَ ٱللَّهَ يَدُ ٱللَّهِ فَوْقَ أَيْدِيهِمْ …",
+    arabic: "إِنَّ ٱلَّذِينَ يُبَايِعُونَكَ إِنَّمَا يُبَايِعُونَ ٱللَّهَ يَدُ ٱللَّهِ فَوۡقَ أَيۡدِيهِمۡۚ …",
     translit:
       "Inna alladhīna yubāyi‛ūnaka innamā yubāyi‛ūna Allāha yadu Allāhi fawqa aydīhim …",
     translation:
@@ -556,7 +556,7 @@ export function fath_10(repeat = 1, enableCounter?: boolean) {
 /** middle of Al-Fath 48:29 — used in salawat-compilations-majma-al-lataif-7---Thursday */
 export function fath_29(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… سِيمَاهُمْ فِى وُجُوهِهِم مِّنْ أَثَرِ ٱلسُّجُودِ …",
+    arabic: "… سِيمَاهُمۡ فِي وُجُوهِهِم مِّنۡ أَثَرِ ٱلسُّجُودِۚ …",
     translit: "… sīmāhum fī wujūhihim min atharis sujūd …",
     translation:
       "… their sign is in their faces from the effect of prostration [i.e., prayer] …",
@@ -570,7 +570,7 @@ export function fath_29(repeat = 1, enableCounter?: boolean) {
 /** end of Qaf 50:35 — used in salawat-compilations-majma-al-lataif-4---Monday */
 export function qaf_35(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… وَلَدَيْنَا مَزِيدٌ",
+    arabic: "… وَلَدَيۡنَا مَزِيدٞ",
     translit: "… wa ladaynā mazīd.",
     translation: "… and with Us is more.",
     surah: 50,
@@ -584,7 +584,7 @@ export function qaf_35(repeat = 1, enableCounter?: boolean) {
 export function hashr_10(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic:
-      "… ٱغْفِرْ لَنَا وَلِإِخْوَٰنِنَا ٱلَّذِينَ سَبَقُونَا بِٱلْإِيمَـٰنِ وَلَا تَجْعَلْ فِى قُلُوبِنَا غِلًّا لِّلَّذِينَ ءَامَنُوا۟ رَبَّنَآ إِنَّكَ رَءُوفٌ رَّحِيمٌ",
+      "… ٱغۡفِرۡ لَنَا وَلِإِخۡوَٰنِنَا ٱلَّذِينَ سَبَقُونَا بِٱلۡإِيمَٰنِ وَلَا تَجۡعَلۡ فِي قُلُوبِنَا غِلّٗا لِّلَّذِينَ ءَامَنُواْ رَبَّنَآ إِنَّكَ رَءُوفٞ رَّحِيمٌ",
     translit:
       "… waghfīrlanā wa li ikhwānalladhīna sabaqūna bil īmani walā tajʿal fī qulūbinā ghillan lilladhīna āmanū. Rabbanā innaka raʾūfun raḥīm.",
     translation:
@@ -600,7 +600,7 @@ export function hashr_10(repeat = 1, enableCounter?: boolean) {
 export function hashr_24(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic:
-      "… لَهُ ٱلْأَسْمَآءُ ٱلْحُسْنَىٰ يُسَبِّحُ لَهُۥ مَا فِى ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
+      "… لَهُ ٱلۡأَسۡمَآءُ ٱلۡحُسۡنَىٰۚ يُسَبِّحُ لَهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِۖ وَهُوَ ٱلۡعَزِيزُ ٱلۡحَكِيمُ",
     translit:
       "… Lahul asmā’ul ḥusnā, yusabbiḥu lahū mā fissamāwāti wal’arḍ, wa huwal ‛azīzul ḥakīm.",
     translation:
@@ -616,7 +616,7 @@ export function hashr_24(repeat = 1, enableCounter?: boolean) {
 export function saff_13_14(repeat = 1, enableCounter?: boolean) {
   return [
     new QuranDhikrEntryModel({
-      arabic: "… نَصْرٌ مِّنَ ٱللَّهِ وَفَتْحٌ قَرِيبٌ وَبَشِّرِ ٱلْمُؤْمِنِينَ",
+      arabic: "… نَصۡرٞ مِّنَ ٱللَّهِ وَفَتۡحٞ قَرِيبٞۗ وَبَشِّرِ ٱلۡمُؤۡمِنِينَ",
       translit: "… naṣrum minallāhi wa fatḥun qarīb, wa bash-shiril mu'minīn.",
       translation:
         "… help from Allāh (against your enemies) and an imminent victory; and give glad tidings (O Prophet) to the believers.",
@@ -627,7 +627,7 @@ export function saff_13_14(repeat = 1, enableCounter?: boolean) {
     }),
     new QuranDhikrEntryModel({
       arabic:
-        "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ كُونُوٓا۟ أَنصَارَ ٱللَّهِ كَمَا قَالَ عِيسَى ٱبْنُ مَرْيَمَ لِلْحَوَارِيِّـۧنَ مَنْ أَنصَارِىٓ إِلَى ٱللَّهِ قَالَ ٱلْحَوَارِيُّونَ نَحْنُ أَنصَارُ ٱللَّهِ …",
+        "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ كُونُوٓاْ أَنصَارَ ٱللَّهِ كَمَا قَالَ عِيسَى ٱبۡنُ مَرۡيَمَ لِلۡحَوَارِيِّـۧنَ مَنۡ أَنصَارِيٓ إِلَى ٱللَّهِۖ قَالَ ٱلۡحَوَارِيُّونَ نَحۡنُ أَنصَارُ ٱللَّهِۖ …",
       translit:
         "Yā ayyuhalladhīna āmanū kūnū anṣārallāhi kamā qāla ‛īsabnu maryama lil ḥawāriyyīna man anṣārī ilallāh, qālal ḥawāriyyūna naḥnu anṣārullāh …",
       translation:
@@ -643,7 +643,7 @@ export function saff_13_14(repeat = 1, enableCounter?: boolean) {
 /** end of At-Talaq 65:12 — used in khulasah-after-fajr-wird-latif */
 export function talaq_12(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… أَنَّ ٱللَّهَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ وَأَنَّ ٱللَّهَ قَدْ أَحَاطَ بِكُلِّ شَىْءٍ عِلْمًۢا",
+    arabic: "… أَنَّ ٱللَّهَ عَلَىٰ كُلِّ شَيۡءٖ قَدِيرٞ وَأَنَّ ٱللَّهَ قَدۡ أَحَاطَ بِكُلِّ شَيۡءٍ عِلۡمَۢا",
     translit:
       "… annallāha ‛alā kulli shay’in qadīr wa annallāha qad aḥāṭa bikulli shay’in ‛ilmā.",
     translation:
@@ -658,7 +658,7 @@ export function talaq_12(repeat = 1, enableCounter?: boolean) {
 /** end of At-Tahrim 66:6 — used in dalail-khayrat-7---Sunday */
 export function tahrim_6(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… لَّا يَعْصُونَ ٱللَّهَ مَآ أَمَرَهُمْ وَيَفْعَلُونَ مَا يُؤْمَرُونَ",
+    arabic: "… لَّا يَعۡصُونَ ٱللَّهَ مَآ أَمَرَهُمۡ وَيَفۡعَلُونَ مَا يُؤۡمَرُونَ",
     translit: "… lā ya‛ṣūnallāha mā amarahum wa yaf‛alūna mā yu’marūn.",
     translation:
       "… they do not disobey Allāh in what He commands them but do what they are commanded.",
@@ -672,7 +672,7 @@ export function tahrim_6(repeat = 1, enableCounter?: boolean) {
 /** Al-Ikhlas 112:3 — used in dalail-khayrat-8---Monday */
 export function ikhlas_3(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+    arabic: "لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ",
     translit: "Lam yalid wa lam yūlad.",
     translation: "He neither begets nor is born,",
     surah: 112,
@@ -685,7 +685,7 @@ export function ikhlas_3(repeat = 1, enableCounter?: boolean) {
 /** Al-Ikhlas 112:4 — used in dalail-khayrat-8---Monday */
 export function ikhlas_4(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
+    arabic: "وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ",
     translit: "Wa lam yakun lahū kufuwan aḥad.",
     translation: "Nor is there to Him any equivalent.",
     surah: 112,
@@ -709,7 +709,7 @@ export function baqarah_137(
     surah: 2,
     entries: [
       new QuranEntryModel({
-        arabic: "… فَسَيَكْفِيكَهُمُ ٱللَّهُ وَهُوَ ٱلسَّمِيعُ ٱلْعَلِيمُ",
+        arabic: "… فَسَيَكۡفِيكَهُمُ ٱللَّهُۚ وَهُوَ ٱلسَّمِيعُ ٱلۡعَلِيمُ",
         translit: "fa-sayakfīkahumu-llāhu wa huwa-s-samīʿu-l-ʿalīm",
         translation:
           "And Allah will be sufficient for you against them, and He is the Hearing, the Knowing.",
@@ -734,7 +734,7 @@ export function a_raf_196(
     surah: 7,
     entries: [
       new QuranEntryModel({
-        arabic: "إِنَّ وَلِـِّۧىَ ٱللَّهُ ٱلَّذِى نَزَّلَ ٱلْكِتَـٰبَ ۖ وَهُوَ يَتَوَلَّى ٱلصَّـٰلِحِينَ",
+        arabic: "إِنَّ وَلِـِّۧيَ ٱللَّهُ ٱلَّذِي نَزَّلَ ٱلۡكِتَٰبَۖ وَهُوَ يَتَوَلَّى ٱلصَّٰلِحِينَ",
         translit:
           "inna waliyyiya-llāhu-lladhī nazzala-l-kitāba wa huwa yatawalla-ṣ-ṣāliḥīn",
         translation:
@@ -760,7 +760,7 @@ export function tawbah_129_section(
     surah: 9,
     entries: [
       new QuranEntryModel({
-        arabic: "… حَسْبِىَ ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيمِ",
+        arabic: "… حَسۡبِيَ ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَۖ عَلَيۡهِ تَوَكَّلۡتُۖ وَهُوَ رَبُّ ٱلۡعَرۡشِ ٱلۡعَظِيمِ",
         translit:
           "ḥasbiya-llāhu lā ilāha illā huwa ʿalayhi tawakkaltu wa huwa rabbu-l-ʿarshi-l-ʿaẓīm",
         translation:
@@ -786,7 +786,7 @@ export function yusuf_64(
     surah: 12,
     entries: [
       new QuranEntryModel({
-        arabic: "… فَٱللَّهُ خَيْرٌ حَـٰفِظًا وَهُوَ أَرْحَمُ ٱلرَّٰحِمِينَ",
+        arabic: "… فَٱللَّهُ خَيۡرٌ حَٰفِظٗاۖ وَهُوَ أَرۡحَمُ ٱلرَّٰحِمِينَ",
         translit: "fa-llāhu khayrun ḥāfiẓan wa huwa arḥamu-r-rāḥimīn",
         translation:
           "For Allah is the best guardian, and He is the most merciful of the merciful.",
@@ -811,7 +811,7 @@ export function taha_111(
     surah: 20,
     entries: [
       new QuranEntryModel({
-        arabic: "۞ وَعَنَتِ ٱلْوُجُوهُ لِلْحَىِّ ٱلْقَيُّومِ ۖ وَقَدْ خَابَ مَنْ حَمَلَ ظُلْمًا",
+        arabic: "۞ وَعَنَتِ ٱلۡوُجُوهُ لِلۡحَيِّ ٱلۡقَيُّومِۖ وَقَدۡ خَابَ مَنۡ حَمَلَ ظُلۡمٗا",
         translit:
           "wa ʿanati-l-wujūhu li-l-ḥayyi-l-qayyūm, wa qad khāba man ḥamala ẓulmā",
         translation:
@@ -837,7 +837,7 @@ export function mu_minun_115_118(
     surah: 23,
     entries: [
       new QuranEntryModel({
-        arabic: "أَفَحَسِبْتُمْ أَنَّمَا خَلَقْنَـٰكُمْ عَبَثًا وَأَنَّكُمْ إِلَيْنَا لَا تُرْجَعُونَ",
+        arabic: "أَفَحَسِبۡتُمۡ أَنَّمَا خَلَقۡنَٰكُمۡ عَبَثٗا وَأَنَّكُمۡ إِلَيۡنَا لَا تُرۡجَعُونَ",
         translit:
           "Afaḥasibtum annamā khalaqnākum ʿabathan wa annakum ilaynā lā turjaʿūn.",
         translation:
@@ -845,7 +845,7 @@ export function mu_minun_115_118(
         verse: 115,
       }),
       new QuranEntryModel({
-        arabic: "فَتَعَـٰلَى ٱللَّهُ ٱلْمَلِكُ ٱلْحَقُّ ۖ لَآ إِلَـٰهَ إِلَّا هُوَ رَبُّ ٱلْعَرْشِ ٱلْكَرِيمِ",
+        arabic: "فَتَعَٰلَى ٱللَّهُ ٱلۡمَلِكُ ٱلۡحَقُّۖ لَآ إِلَٰهَ إِلَّا هُوَ رَبُّ ٱلۡعَرۡشِ ٱلۡكَرِيمِ",
         translit:
           "Fa taʿālā Allāh ul-Malik ul-Ḥaqq, lā ilāha illā Huwa Rabb ul-ʿArsh il-Karīm.",
         translation:
@@ -854,7 +854,7 @@ export function mu_minun_115_118(
       }),
       new QuranEntryModel({
         arabic:
-          "وَمَن يَدْعُ مَعَ ٱللَّهِ إِلَـٰهًا ءَاخَرَ لَا بُرْهَـٰنَ لَهُۥ بِهِۦ فَإِنَّمَا حِسَابُهُۥ عِندَ رَبِّهِۦٓ ۚ إِنَّهُۥ لَا يُفْلِحُ ٱلْكَـٰفِرُونَ",
+          "وَمَن يَدۡعُ مَعَ ٱللَّهِ إِلَٰهًا ءَاخَرَ لَا بُرۡهَٰنَ لَهُۥ بِهِۦ فَإِنَّمَا حِسَابُهُۥ عِندَ رَبِّهِۦٓۚ إِنَّهُۥ لَا يُفۡلِحُ ٱلۡكَٰفِرُونَ",
         translit:
           "Wa man yadʿu maʿ Allāhi ilāhan ākhara lā burhāna lahu bihi, faʾinnamā ḥisābuhu ʿinda Rabbih, innahu lā yufliḥ ul-kāfirūn.",
         translation:
@@ -862,7 +862,7 @@ export function mu_minun_115_118(
         verse: 117,
       }),
       new QuranEntryModel({
-        arabic: "وَقُل رَّبِّ ٱغْفِرْ وَٱرْحَمْ وَأَنتَ خَيْرُ ٱلرَّٰحِمِينَ",
+        arabic: "وَقُل رَّبِّ ٱغۡفِرۡ وَٱرۡحَمۡ وَأَنتَ خَيۡرُ ٱلرَّٰحِمِينَ",
         translit: "Wa qul Rabb ighfir warḥam wa anta khayr ur-rāḥimīn.",
         translation:
           "Say, ‘Lord, forgive and have mercy: You are the most merciful of all.’",
@@ -887,7 +887,7 @@ export function naml_1(
     surah: 27,
     entries: [
       new QuranEntryModel({
-        arabic: "طسٓ …",
+        arabic: "طسٓۚ …",
         translit: "Ṭā Sīn",
         translation: "Ta Sin.",
         verse: 1,
@@ -911,13 +911,13 @@ export function rum_17_19(
     surah: 30,
     entries: [
       new QuranEntryModel({
-        arabic: "فَسُبْحَـٰنَ ٱللَّهِ حِينَ تُمْسُونَ وَحِينَ تُصْبِحُونَ",
+        arabic: "فَسُبۡحَٰنَ ٱللَّهِ حِينَ تُمۡسُونَ وَحِينَ تُصۡبِحُونَ",
         translit: "Fasubḥān Allāhi ḥīna tumsūna wa ḥīna tuṣbiḥūn.",
         translation: "So celebrate God’s glory in the evening, in the morning—",
         verse: 17,
       }),
       new QuranEntryModel({
-        arabic: "وَلَهُ ٱلْحَمْدُ فِى ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ وَعَشِيًّا وَحِينَ تُظْهِرُونَ",
+        arabic: "وَلَهُ ٱلۡحَمۡدُ فِي ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ وَعَشِيّٗا وَحِينَ تُظۡهِرُونَ",
         translit:
           "Wa lahu ulḥamdu fis-samāwāti wal-arḍi wa ʿashīyyan wa ḥīna tuẓhirūn.",
         translation:
@@ -926,7 +926,7 @@ export function rum_17_19(
       }),
       new QuranEntryModel({
         arabic:
-          "يُخْرِجُ ٱلْحَىَّ مِنَ ٱلْمَيِّتِ وَيُخْرِجُ ٱلْمَيِّتَ مِنَ ٱلْحَىِّ وَيُحْىِ ٱلْأَرْضَ بَعْدَ مَوْتِهَا ۚ وَكَذَٰلِكَ تُخْرَجُونَ",
+          "يُخۡرِجُ ٱلۡحَيَّ مِنَ ٱلۡمَيِّتِ وَيُخۡرِجُ ٱلۡمَيِّتَ مِنَ ٱلۡحَيِّ وَيُحۡيِ ٱلۡأَرۡضَ بَعۡدَ مَوۡتِهَاۚ وَكَذَٰلِكَ تُخۡرَجُونَ",
         translit:
           "Yukhrij ul-ḥayya min al-mayyiti wa yukhrij ul-mayyita min al-ḥayyi wa yuḥyī il-arḍa baʿda mawtihā, wa kathālika tukhrajūn.",
         translation:
@@ -952,7 +952,7 @@ export function ahzab_11_12(
     surah: 33,
     entries: [
       new QuranEntryModel({
-        arabic: "… ٱبْتُلِىَ ٱلْمُؤْمِنُونَ وَزُلْزِلُوا۟ زِلْزَالًا شَدِيدًا",
+        arabic: "… ٱبۡتُلِيَ ٱلۡمُؤۡمِنُونَ وَزُلۡزِلُواْ زِلۡزَالٗا شَدِيدٗا",
         translit: "(Faqad)i-btuliya-l-mu'minūna wa zulzilū zilzālan shadīdan",
         translation:
           "(There,) the believers were tried and shaken with a mighty shaking.",
@@ -960,7 +960,7 @@ export function ahzab_11_12(
       }),
       new QuranEntryModel({
         arabic:
-          "وَإِذْ يَقُولُ ٱلْمُنَـٰفِقُونَ وَٱلَّذِينَ فِى قُلُوبِهِم مَّرَضٌ مَّا وَعَدَنَا ٱللَّهُ وَرَسُولُهُۥٓ إِلَّا غُرُورًا",
+          "وَإِذۡ يَقُولُ ٱلۡمُنَٰفِقُونَ وَٱلَّذِينَ فِي قُلُوبِهِم مَّرَضٞ مَّا وَعَدَنَا ٱللَّهُ وَرَسُولُهُۥٓ إِلَّا غُرُورٗا",
         translit:
           "Wa idh yaqūlu-l-munāfiqūna wa-lladhīna fī qulūbihim maraḍun mā waʿadanā-llāhu wa rasūluhū illā ghurūran",
         translation:
@@ -987,7 +987,7 @@ export function ahzab_56(
     entries: [
       new QuranEntryModel({
         arabic:
-          "إِنَّ ٱللَّهَ وَمَلَـٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى ٱلنَّبِىِّ ۚ يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ صَلُّوا۟ عَلَيْهِ وَسَلِّمُوا۟ تَسْلِيمًا",
+          "إِنَّ ٱللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى ٱلنَّبِيِّۚ يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيۡهِ وَسَلِّمُواْ تَسۡلِيمًا",
         translit:
           "Inna Allāha wa malā’ikatahu yuṣallūna ‘alā al-nabīyi yā ayyuhā alladhīna āmanū ṣallū ‘alayhi wa sallimū taslīman.",
         translation:
@@ -1019,45 +1019,45 @@ export function ya_sin_1_9(
         verse: 1,
       }),
       new QuranEntryModel({
-        arabic: "وَٱلْقُرْءَانِ ٱلْحَكِيمِ",
+        arabic: "وَٱلۡقُرۡءَانِ ٱلۡحَكِيمِ",
         translit: "wa-l-qur'āni-l-ḥakīm",
         translation: "By the wise Qur'an.",
         verse: 2,
       }),
       new QuranEntryModel({
-        arabic: "إِنَّكَ لَمِنَ ٱلْمُرْسَلِينَ",
+        arabic: "إِنَّكَ لَمِنَ ٱلۡمُرۡسَلِينَ",
         translit: "innaka lamina-l-mursalīn",
         translation: "Indeed, you are from among the messengers.",
         verse: 3,
       }),
       new QuranEntryModel({
-        arabic: "عَلَىٰ صِرَٰطٍ مُّسْتَقِيمٍ",
+        arabic: "عَلَىٰ صِرَٰطٖ مُّسۡتَقِيمٖ",
         translit: "ʿalā ṣirāṭin mustaqīm",
         translation: "On a straight path.",
         verse: 4,
       }),
       new QuranEntryModel({
-        arabic: "تَنزِيلَ ٱلْعَزِيزِ ٱلرَّحِيمِ",
+        arabic: "تَنزِيلَ ٱلۡعَزِيزِ ٱلرَّحِيمِ",
         translit: "tanzīla-l-ʿazīzi-r-raḥīm",
         translation: "A revelation of the Exalted in Might, the Merciful.",
         verse: 5,
       }),
       new QuranEntryModel({
-        arabic: "لِتُنذِرَ قَوْمًا مَّآ أُنذِرَ ءَابَآؤُهُمْ فَهُمْ غَـٰفِلُونَ",
+        arabic: "لِتُنذِرَ قَوۡمٗا مَّآ أُنذِرَ ءَابَآؤُهُمۡ فَهُمۡ غَٰفِلُونَ",
         translit: "li-tundhira qawman mā undhira ābā'uhum fahum ghāfilūn",
         translation:
           "That you may warn a people whose forefathers were not warned, so they are unaware.",
         verse: 6,
       }),
       new QuranEntryModel({
-        arabic: "لَقَدْ حَقَّ ٱلْقَوْلُ عَلَىٰٓ أَكْثَرِهِمْ فَهُمْ لَا يُؤْمِنُونَ",
+        arabic: "لَقَدۡ حَقَّ ٱلۡقَوۡلُ عَلَىٰٓ أَكۡثَرِهِمۡ فَهُمۡ لَا يُؤۡمِنُونَ",
         translit: "laqad ḥaqqa-l-qawlu ʿalā aktharihim fahum lā yu'minūn",
         translation:
           "The word has come into effect upon most of them, so they do not believe.",
         verse: 7,
       }),
       new QuranEntryModel({
-        arabic: "إِنَّا جَعَلْنَا فِىٓ أَعْنَـٰقِهِمْ أَغْلَـٰلًا فَهِىَ إِلَى ٱلْأَذْقَانِ فَهُم مُّقْمَحُونَ",
+        arabic: "إِنَّا جَعَلۡنَا فِيٓ أَعۡنَٰقِهِمۡ أَغۡلَٰلٗا فَهِيَ إِلَى ٱلۡأَذۡقَانِ فَهُم مُّقۡمَحُونَ",
         translit:
           "innā jaʿalnā fī aʿnāqihim aghlālan fa-hiya ilā-l-adhqāni fahum muqmaḥūn",
         translation:
@@ -1065,8 +1065,7 @@ export function ya_sin_1_9(
         verse: 8,
       }),
       new QuranEntryModel({
-        arabic:
-          "وَجَعَلْنَا مِنۢ بَيْنِ أَيْدِيهِمْ سَدًّا وَمِنْ خَلْفِهِمْ سَدًّا فَأَغْشَيْنَـٰهُمْ فَهُمْ لَا يُبْصِرُونَ",
+        arabic: "وَجَعَلۡنَا مِنۢ بَيۡنِ أَيۡدِيهِمۡ سَدّٗا وَمِنۡ خَلۡفِهِمۡ سَدّٗا فَأَغۡشَيۡنَٰهُمۡ فَهُمۡ لَا يُبۡصِرُونَ",
         translit:
           "wa jaʿalnā min bayni aydīhim saddan wa min khalfihim saddan fa-aghshaynāhum fahum lā yubṣirūn",
         translation:
@@ -1092,7 +1091,7 @@ export function ya_sin_66_67(
     surah: 36,
     entries: [
       new QuranEntryModel({
-        arabic: "وَلَوْ نَشَآءُ لَطَمَسْنَا عَلَىٰٓ أَعْيُنِهِمْ فَٱسْتَبَقُوا۟ ٱلصِّرَٰطَ فَأَنَّىٰ يُبْصِرُونَ",
+        arabic: "وَلَوۡ نَشَآءُ لَطَمَسۡنَا عَلَىٰٓ أَعۡيُنِهِمۡ فَٱسۡتَبَقُواْ ٱلصِّرَٰطَ فَأَنَّىٰ يُبۡصِرُونَ",
         translit:
           "wa law nashā'u la-ṭamasnā ʿalā aʿyunihim fa-stabaqū-ṣ-ṣirāṭa fa-annā yubṣirūn",
         translation:
@@ -1100,7 +1099,7 @@ export function ya_sin_66_67(
         verse: 66,
       }),
       new QuranEntryModel({
-        arabic: "وَلَوْ نَشَآءُ لَمَسَخْنَـٰهُمْ عَلَىٰ مَكَانَتِهِمْ فَمَا ٱسْتَطَـٰعُوا۟ مُضِيًّا وَلَا يَرْجِعُونَ",
+        arabic: "وَلَوۡ نَشَآءُ لَمَسَخۡنَٰهُمۡ عَلَىٰ مَكَانَتِهِمۡ فَمَا ٱسۡتَطَٰعُواْ مُضِيّٗا وَلَا يَرۡجِعُونَ",
         translit:
           "wa law nashā'u la-masakhnāhum ʿalā makānatihim fa-mā-staṭāʿū muḍiyyan wa lā yarjiʿūn",
         translation:
@@ -1126,19 +1125,19 @@ export function saffat_79_81(
     surah: 37,
     entries: [
       new QuranEntryModel({
-        arabic: "سَلَـٰمٌ عَلَىٰ نُوحٍ فِى ٱلْعَـٰلَمِينَ",
+        arabic: "سَلَٰمٌ عَلَىٰ نُوحٖ فِي ٱلۡعَٰلَمِينَ",
         translit: "Salāmun ʿalā Nūḥin fil-ʿālamīn.",
         translation: "‘Peace be upon Noah among all the nations!’",
         verse: 79,
       }),
       new QuranEntryModel({
-        arabic: "إِنَّا كَذَٰلِكَ نَجْزِى ٱلْمُحْسِنِينَ",
+        arabic: "إِنَّا كَذَٰلِكَ نَجۡزِي ٱلۡمُحۡسِنِينَ",
         translit: "Innā kadhalika najzil-muḥsinīn.",
         translation: "This is how We reward those who do good:",
         verse: 80,
       }),
       new QuranEntryModel({
-        arabic: "إِنَّهُۥ مِنْ عِبَادِنَا ٱلْمُؤْمِنِينَ",
+        arabic: "إِنَّهُۥ مِنۡ عِبَادِنَا ٱلۡمُؤۡمِنِينَ",
         translit: "Innahu min ʿibādina al-muʾminīn.",
         translation: "he was truly one of Our faithful servants.",
         verse: 81,
@@ -1162,20 +1161,20 @@ export function saffat_180_182(
     surah: 37,
     entries: [
       new QuranEntryModel({
-        arabic: "سُبْحَـٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ",
+        arabic: "سُبۡحَٰنَ رَبِّكَ رَبِّ ٱلۡعِزَّةِ عَمَّا يَصِفُونَ",
         translit: "Subḥāna rabbika rabbil ‛izzati ‛ammā yaṣifūn.",
         translation:
           "Glory be to your Lord; the Lord of Honour and Power Who is far above what they attribute to Him;",
         verse: 180,
       }),
       new QuranEntryModel({
-        arabic: "وَسَلَـٰمٌ عَلَى ٱلْمُرْسَلِينَ",
+        arabic: "وَسَلَٰمٌ عَلَى ٱلۡمُرۡسَلِينَ",
         translit: "Wa salāmun ‛alal mursalīn.",
         translation: "And peace be on the Messengers;",
         verse: 181,
       }),
       new QuranEntryModel({
-        arabic: "وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
+        arabic: "وَٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ",
         translit: "Walḥamdu lillāhi rabbil ‛ālamīn.",
         translation:
           "And praise be to Allāh, the Lord and Cherisher of the Worlds. [Sūrah Al-Ṣāffāt (37), Verses 180-182]",
@@ -1206,7 +1205,7 @@ export function ghafir_1_3(
         verse: 1,
       }),
       new QuranEntryModel({
-        arabic: "تَنزِيلُ ٱلْكِتَـٰبِ مِنَ ٱللَّهِ ٱلْعَزِيزِ ٱلْعَلِيمِ",
+        arabic: "تَنزِيلُ ٱلۡكِتَٰبِ مِنَ ٱللَّهِ ٱلۡعَزِيزِ ٱلۡعَلِيمِ",
         translit: "Tanzīlul kitābi minallāhil ‛azīzil ‛alīm.",
         translation:
           "The revelation of the Book [i.e., the Qur’ān] is from Allāh, the Exalted in Might, the Knowing,",
@@ -1214,7 +1213,7 @@ export function ghafir_1_3(
       }),
       new QuranEntryModel({
         arabic:
-          "غَافِرِ ٱلذَّنۢبِ وَقَابِلِ ٱلتَّوْبِ شَدِيدِ ٱلْعِقَابِ ذِى ٱلطَّوْلِ ۖ لَآ إِلَـٰهَ إِلَّا هُوَ ۖ إِلَيْهِ ٱلْمَصِيرُ",
+          "غَافِرِ ٱلذَّنۢبِ وَقَابِلِ ٱلتَّوۡبِ شَدِيدِ ٱلۡعِقَابِ ذِي ٱلطَّوۡلِۖ لَآ إِلَٰهَ إِلَّا هُوَۖ إِلَيۡهِ ٱلۡمَصِيرُ",
         translit:
           "Ghāfiridh dhambi wa qābilit tawbi shadīdil ‛iqābi dhiṭ ṭawl, lā ilāha illā huwa ilayhil maṣīr.",
         translation:
@@ -1270,13 +1269,13 @@ export function rahman_19_20(
     surah: 55,
     entries: [
       new QuranEntryModel({
-        arabic: "مَرَجَ ٱلْبَحْرَيْنِ يَلْتَقِيَانِ",
+        arabic: "مَرَجَ ٱلۡبَحۡرَيۡنِ يَلۡتَقِيَانِ",
         translit: "maraja-l-baḥrayni yaltaqiyān",
         translation: "He released the two seas, meeting side by side.",
         verse: 19,
       }),
       new QuranEntryModel({
-        arabic: "بَيْنَهُمَا بَرْزَخٌ لَّا يَبْغِيَانِ",
+        arabic: "بَيۡنَهُمَا بَرۡزَخٞ لَّا يَبۡغِيَانِ",
         translit: "baynahumā barzakhun lā yabghiyān",
         translation: "Between them is a barrier which they do not transgress.",
         verse: 20,
@@ -1301,7 +1300,7 @@ export function hashr_21_24(
     entries: [
       new QuranEntryModel({
         arabic:
-          "لَوْ أَنزَلْنَا هَـٰذَا ٱلْقُرْءَانَ عَلَىٰ جَبَلٍ لَّرَأَيْتَهُۥ خَـٰشِعًا مُّتَصَدِّعًا مِّنْ خَشْيَةِ ٱللَّهِ ۚ وَتِلْكَ ٱلْأَمْثَـٰلُ نَضْرِبُهَا لِلنَّاسِ لَعَلَّهُمْ يَتَفَكَّرُونَ",
+          "لَوۡ أَنزَلۡنَا هَٰذَا ٱلۡقُرۡءَانَ عَلَىٰ جَبَلٖ لَّرَأَيۡتَهُۥ خَٰشِعٗا مُّتَصَدِّعٗا مِّنۡ خَشۡيَةِ ٱللَّهِۚ وَتِلۡكَ ٱلۡأَمۡثَٰلُ نَضۡرِبُهَا لِلنَّاسِ لَعَلَّهُمۡ يَتَفَكَّرُونَ",
         translit:
           "Lau anzalnā hādhā al-Qurʾāna ʿalā jabalin laraʾāytahu khāshiʿan mutaṣaddiʿan min khashyat Illāh, wa tilk al-amthālu naḍribuhā liʾn-nāsi laʿalahum yatafakkarūn.",
         translation:
@@ -1309,8 +1308,7 @@ export function hashr_21_24(
         verse: 21,
       }),
       new QuranEntryModel({
-        arabic:
-          "هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَـٰهَ إِلَّا هُوَ ۖ عَـٰلِمُ ٱلْغَيْبِ وَٱلشَّهَـٰدَةِ ۖ هُوَ ٱلرَّحْمَـٰنُ ٱلرَّحِيمُ",
+        arabic: "هُوَ ٱللَّهُ ٱلَّذِي لَآ إِلَٰهَ إِلَّا هُوَۖ عَٰلِمُ ٱلۡغَيۡبِ وَٱلشَّهَٰدَةِۖ هُوَ ٱلرَّحۡمَٰنُ ٱلرَّحِيمُ",
         translit:
           "Huwa Allāhu alladhī lā ilāha illā Hu, ʿālim ul-ghaybi wa ash-shahādati Huwa ar-Raḥmān ur-Raḥīm.",
         translation:
@@ -1319,7 +1317,7 @@ export function hashr_21_24(
       }),
       new QuranEntryModel({
         arabic:
-          "هُوَ ٱللَّهُ ٱلَّذِى لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْمَلِكُ ٱلْقُدُّوسُ ٱلسَّلَـٰمُ ٱلْمُؤْمِنُ ٱلْمُهَيْمِنُ ٱلْعَزِيزُ ٱلْجَبَّارُ ٱلْمُتَكَبِّرُ ۚ سُبْحَـٰنَ ٱللَّهِ عَمَّا يُشْرِكُونَ",
+          "هُوَ ٱللَّهُ ٱلَّذِي لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡمَلِكُ ٱلۡقُدُّوسُ ٱلسَّلَٰمُ ٱلۡمُؤۡمِنُ ٱلۡمُهَيۡمِنُ ٱلۡعَزِيزُ ٱلۡجَبَّارُ ٱلۡمُتَكَبِّرُۚ سُبۡحَٰنَ ٱللَّهِ عَمَّا يُشۡرِكُونَ",
         translit:
           "Huwa Allāhu alladhī lā ilāha illā Huwa al-Malik ul-Quddūs us-Salām ulMuʾmin ul-Muhaymin ul-ʿAzīz ul-Jabbār ul-Mutakabbir, subḥān Allāhi ʿammā yushrikūn.",
         translation:
@@ -1328,7 +1326,7 @@ export function hashr_21_24(
       }),
       new QuranEntryModel({
         arabic:
-          "هُوَ ٱللَّهُ ٱلْخَـٰلِقُ ٱلْبَارِئُ ٱلْمُصَوِّرُ ۖ لَهُ ٱلْأَسْمَآءُ ٱلْحُسْنَىٰ ۚ يُسَبِّحُ لَهُۥ مَا فِى ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ ۖ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
+          "هُوَ ٱللَّهُ ٱلۡخَٰلِقُ ٱلۡبَارِئُ ٱلۡمُصَوِّرُۖ لَهُ ٱلۡأَسۡمَآءُ ٱلۡحُسۡنَىٰۚ يُسَبِّحُ لَهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِۖ وَهُوَ ٱلۡعَزِيزُ ٱلۡحَكِيمُ",
         translit:
           "Huwa Allāh ul-Khāliq ul-Bāriʾ ulMuṣawwir, lahu ul-asmāʾ ul-ḥusnā, yusabbiḥu lahu ma fīs-samāwāti wal-arḍi wa Huwa al-ʿAzīz ul-Ḥakīm.",
         translation:
@@ -1354,19 +1352,19 @@ export function buruj_20_22(
     surah: 85,
     entries: [
       new QuranEntryModel({
-        arabic: "وَٱللَّهُ مِن وَرَآئِهِم مُّحِيطٌۢ",
+        arabic: "وَٱللَّهُ مِن وَرَآئِهِم مُّحِيطُۢ",
         translit: "wa-llāhu min warā'ihim muḥīṭ",
         translation: "And Allah, from behind them, is encompassing.",
         verse: 20,
       }),
       new QuranEntryModel({
-        arabic: "بَلْ هُوَ قُرْءَانٌ مَّجِيدٌ",
+        arabic: "بَلۡ هُوَ قُرۡءَانٞ مَّجِيدٞ",
         translit: "bal huwa qur'ānun majīd",
         translation: "But it is a glorious Qur'an.",
         verse: 21,
       }),
       new QuranEntryModel({
-        arabic: "فِى لَوْحٍ مَّحْفُوظٍۭ",
+        arabic: "فِي لَوۡحٖ مَّحۡفُوظِۭ",
         translit: "fī lawḥin maḥfūẓ",
         translation: "In a Preserved Tablet.",
         verse: 22,

@@ -5,7 +5,7 @@ export const quran = new QuranModel({
   surah: 67,
   entries: [
     new QuranEntryModel({
-      arabic: "تَبَـٰرَكَ ٱلَّذِى بِيَدِهِ ٱلْمُلْكُ وَهُوَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ",
+      arabic: "تَبَٰرَكَ ٱلَّذِي بِيَدِهِ ٱلۡمُلۡكُ وَهُوَ عَلَىٰ كُلِّ شَيۡءٖ قَدِيرٌ",
       translit:
         "Tabārakal ladhī biyadihil mulku wa huwa ‛alā kulli shay’in qadīr",
       translation:
@@ -13,8 +13,7 @@ export const quran = new QuranModel({
       verse: 1,
     }),
     new QuranEntryModel({
-      arabic:
-        "ٱلَّذِى خَلَقَ ٱلْمَوْتَ وَٱلْحَيَوٰةَ لِيَبْلُوَكُمْ أَيُّكُمْ أَحْسَنُ عَمَلًا ۚ وَهُوَ ٱلْعَزِيزُ ٱلْغَفُورُ",
+      arabic: "ٱلَّذِي خَلَقَ ٱلۡمَوۡتَ وَٱلۡحَيَوٰةَ لِيَبۡلُوَكُمۡ أَيُّكُمۡ أَحۡسَنُ عَمَلٗاۚ وَهُوَ ٱلۡعَزِيزُ ٱلۡغَفُورُ",
       translit:
         "Alladhī khalaqal mawta wal ḥayāta liyabluwakum ayyukum aḥsanu ‛amalā, wa huwal ‛azīzul ghafūr",
       translation:
@@ -23,7 +22,7 @@ export const quran = new QuranModel({
     }),
     new QuranEntryModel({
       arabic:
-        "ٱلَّذِى خَلَقَ سَبْعَ سَمَـٰوَٰتٍ طِبَاقًا ۖ مَّا تَرَىٰ فِى خَلْقِ ٱلرَّحْمَـٰنِ مِن تَفَـٰوُتٍ ۖ فَٱرْجِعِ ٱلْبَصَرَ هَلْ تَرَىٰ مِن فُطُورٍ",
+        "ٱلَّذِي خَلَقَ سَبۡعَ سَمَٰوَٰتٖ طِبَاقٗاۖ مَّا تَرَىٰ فِي خَلۡقِ ٱلرَّحۡمَٰنِ مِن تَفَٰوُتٖۖ فَٱرۡجِعِ ٱلۡبَصَرَ هَلۡ تَرَىٰ مِن فُطُورٖ",
       translit:
         "Alladhī khalaqa sab‛a samāwātin ṭibāqā, mā tarā fī khalqir Raḥmāni min tafāwut, farji‛il baṣara hal tarā min fuṭūr",
       translation:
@@ -31,7 +30,7 @@ export const quran = new QuranModel({
       verse: 3,
     }),
     new QuranEntryModel({
-      arabic: "ثُمَّ ٱرْجِعِ ٱلْبَصَرَ كَرَّتَيْنِ يَنقَلِبْ إِلَيْكَ ٱلْبَصَرُ خَاسِئًا وَهُوَ حَسِيرٌ",
+      arabic: "ثُمَّ ٱرۡجِعِ ٱلۡبَصَرَ كَرَّتَيۡنِ يَنقَلِبۡ إِلَيۡكَ ٱلۡبَصَرُ خَاسِئٗا وَهُوَ حَسِيرٞ",
       translit:
         "Thummar ji‛il baṣara karratayni yanqalib ilaykal baṣaru khāsi’an wa huwa ḥasīr",
       translation:
@@ -40,7 +39,7 @@ export const quran = new QuranModel({
     }),
     new QuranEntryModel({
       arabic:
-        "وَلَقَدْ زَيَّنَّا ٱلسَّمَآءَ ٱلدُّنْيَا بِمَصَـٰبِيحَ وَجَعَلْنَـٰهَا رُجُومًا لِّلشَّيَـٰطِينِ ۖ وَأَعْتَدْنَا لَهُمْ عَذَابَ ٱلسَّعِيرِ",
+        "وَلَقَدۡ زَيَّنَّا ٱلسَّمَآءَ ٱلدُّنۡيَا بِمَصَٰبِيحَ وَجَعَلۡنَٰهَا رُجُومٗا لِّلشَّيَٰطِينِۖ وَأَعۡتَدۡنَا لَهُمۡ عَذَابَ ٱلسَّعِيرِ",
       translit:
         "Wa laqad zayyannas samā’ad dunyā bimaṣābīḥa wa ja‛alnāhā rujūmal lish shayāṭīn, wa a‛tadnā lahum ‛adhābas sa‛īr",
       translation:
@@ -48,7 +47,7 @@ export const quran = new QuranModel({
       verse: 5,
     }),
     new QuranEntryModel({
-      arabic: "وَلِلَّذِينَ كَفَرُوا۟ بِرَبِّهِمْ عَذَابُ جَهَنَّمَ ۖ وَبِئْسَ ٱلْمَصِيرُ",
+      arabic: "وَلِلَّذِينَ كَفَرُواْ بِرَبِّهِمۡ عَذَابُ جَهَنَّمَۖ وَبِئۡسَ ٱلۡمَصِيرُ",
       translit:
         "Wa lilladhīna kafarū birabbihim ‛adhābu jahannama, wa bi’sal maṣīr",
       translation:
@@ -56,7 +55,7 @@ export const quran = new QuranModel({
       verse: 6,
     }),
     new QuranEntryModel({
-      arabic: "إِذَآ أُلْقُوا۟ فِيهَا سَمِعُوا۟ لَهَا شَهِيقًا وَهِىَ تَفُورُ",
+      arabic: "إِذَآ أُلۡقُواْ فِيهَا سَمِعُواْ لَهَا شَهِيقٗا وَهِيَ تَفُورُ",
       translit: "Idhā ulqū fīhā sami‛ū lahā shahīqan wa hiya tafūr",
       translation:
         "When they are thrown into it, they hear from it a [dreadful] inhaling while it boils up.",
@@ -64,7 +63,7 @@ export const quran = new QuranModel({
     }),
     new QuranEntryModel({
       arabic:
-        "تَكَادُ تَمَيَّزُ مِنَ ٱلْغَيْظِ ۖ كُلَّمَآ أُلْقِىَ فِيهَا فَوْجٌ سَأَلَهُمْ خَزَنَتُهَآ أَلَمْ يَأْتِكُمْ نَذِيرٌ",
+        "تَكَادُ تَمَيَّزُ مِنَ ٱلۡغَيۡظِۖ كُلَّمَآ أُلۡقِيَ فِيهَا فَوۡجٞ سَأَلَهُمۡ خَزَنَتُهَآ أَلَمۡ يَأۡتِكُمۡ نَذِيرٞ",
       translit:
         "Takādu tamayyazu minal ghayẓ, kullamā ulqiya fīhā fawjun sa’alahum khazanatuhā alam ya’tikum nadhīr",
       translation:
@@ -73,7 +72,7 @@ export const quran = new QuranModel({
     }),
     new QuranEntryModel({
       arabic:
-        "قَالُوا۟ بَلَىٰ قَدْ جَآءَنَا نَذِيرٌ فَكَذَّبْنَا وَقُلْنَا مَا نَزَّلَ ٱللَّهُ مِن شَىْءٍ إِنْ أَنتُمْ إِلَّا فِى ضَلَـٰلٍ كَبِيرٍ",
+        "قَالُواْ بَلَىٰ قَدۡ جَآءَنَا نَذِيرٞ فَكَذَّبۡنَا وَقُلۡنَا مَا نَزَّلَ ٱللَّهُ مِن شَيۡءٍ إِنۡ أَنتُمۡ إِلَّا فِي ضَلَٰلٖ كَبِيرٖ",
       translit:
         "Qālū balā qad jā’anā nadhīr, fakadhdhabnā wa qulnā mā nazzalallāhu min shay’in, in antum illā fī ḍalālin kabīr",
       translation:
@@ -81,7 +80,7 @@ export const quran = new QuranModel({
       verse: 9,
     }),
     new QuranEntryModel({
-      arabic: "وَقَالُوا۟ لَوْ كُنَّا نَسْمَعُ أَوْ نَعْقِلُ مَا كُنَّا فِىٓ أَصْحَـٰبِ ٱلسَّعِيرِ",
+      arabic: "وَقَالُواْ لَوۡ كُنَّا نَسۡمَعُ أَوۡ نَعۡقِلُ مَا كُنَّا فِيٓ أَصۡحَٰبِ ٱلسَّعِيرِ",
       translit:
         "Wa qālū law kunnā nasma‛u aw na‛qilu mā kunnā fī aṣḥābis sa‛īr",
       translation:
@@ -89,14 +88,14 @@ export const quran = new QuranModel({
       verse: 10,
     }),
     new QuranEntryModel({
-      arabic: "فَٱعْتَرَفُوا۟ بِذَنۢبِهِمْ فَسُحْقًا لِّأَصْحَـٰبِ ٱلسَّعِيرِ",
+      arabic: "فَٱعۡتَرَفُواْ بِذَنۢبِهِمۡ فَسُحۡقٗا لِّأَصۡحَٰبِ ٱلسَّعِيرِ",
       translit: "Fa‛tarafū bidhanbihim, fasuḥqan li’aṣḥābis sa‛īr",
       translation:
         "And they will admit their sin, so [it is] alienation for the companions of the Blaze.",
       verse: 11,
     }),
     new QuranEntryModel({
-      arabic: "إِنَّ ٱلَّذِينَ يَخْشَوْنَ رَبَّهُم بِٱلْغَيْبِ لَهُم مَّغْفِرَةٌ وَأَجْرٌ كَبِيرٌ",
+      arabic: "إِنَّ ٱلَّذِينَ يَخۡشَوۡنَ رَبَّهُم بِٱلۡغَيۡبِ لَهُم مَّغۡفِرَةٞ وَأَجۡرٞ كَبِيرٞ",
       translit:
         "Innal ladhīna yakhshawna rabbahum bilghaybi lahum maghfiratun wa ajrun kabīr",
       translation:
@@ -104,7 +103,7 @@ export const quran = new QuranModel({
       verse: 12,
     }),
     new QuranEntryModel({
-      arabic: "وَأَسِرُّوا۟ قَوْلَكُمْ أَوِ ٱجْهَرُوا۟ بِهِۦٓ ۖ إِنَّهُۥ عَلِيمٌۢ بِذَاتِ ٱلصُّدُورِ",
+      arabic: "وَأَسِرُّواْ قَوۡلَكُمۡ أَوِ ٱجۡهَرُواْ بِهِۦٓۖ إِنَّهُۥ عَلِيمُۢ بِذَاتِ ٱلصُّدُورِ",
       translit:
         "Wa asirrū qawlakum awijharū bihī, innahū ‛alīmum bidhātiṣ ṣudūr",
       translation:
@@ -112,7 +111,7 @@ export const quran = new QuranModel({
       verse: 13,
     }),
     new QuranEntryModel({
-      arabic: "أَلَا يَعْلَمُ مَنْ خَلَقَ وَهُوَ ٱللَّطِيفُ ٱلْخَبِيرُ",
+      arabic: "أَلَا يَعۡلَمُ مَنۡ خَلَقَ وَهُوَ ٱللَّطِيفُ ٱلۡخَبِيرُ",
       translit: "Alā ya‛lamu man khalaq, wa huwal laṭīful khabīr",
       translation:
         "Does He who created not know, while He is the Subtle, the Aware?",
@@ -120,7 +119,7 @@ export const quran = new QuranModel({
     }),
     new QuranEntryModel({
       arabic:
-        "هُوَ ٱلَّذِى جَعَلَ لَكُمُ ٱلْأَرْضَ ذَلُولًا فَٱمْشُوا۟ فِى مَنَاكِبِهَا وَكُلُوا۟ مِن رِّزْقِهِۦ ۖ وَإِلَيْهِ ٱلنُّشُورُ",
+        "هُوَ ٱلَّذِي جَعَلَ لَكُمُ ٱلۡأَرۡضَ ذَلُولٗا فَٱمۡشُواْ فِي مَنَاكِبِهَا وَكُلُواْ مِن رِّزۡقِهِۦۖ وَإِلَيۡهِ ٱلنُّشُورُ",
       translit:
         "Huwal ladhī ja‛ala lakumul arḍa dhalūlan famshū fī manākibihā wa kulū min rizqih, wa ilayhin nushūr",
       translation:
@@ -128,7 +127,7 @@ export const quran = new QuranModel({
       verse: 15,
     }),
     new QuranEntryModel({
-      arabic: "ءَأَمِنتُم مَّن فِى ٱلسَّمَآءِ أَن يَخْسِفَ بِكُمُ ٱلْأَرْضَ فَإِذَا هِىَ تَمُورُ",
+      arabic: "ءَأَمِنتُم مَّن فِي ٱلسَّمَآءِ أَن يَخۡسِفَ بِكُمُ ٱلۡأَرۡضَ فَإِذَا هِيَ تَمُورُ",
       translit:
         "A’amintum man fis samā’i an yakhsifa bikumul arḍa fa idhā hiya tamūr",
       translation:
@@ -136,7 +135,7 @@ export const quran = new QuranModel({
       verse: 16,
     }),
     new QuranEntryModel({
-      arabic: "أَمْ أَمِنتُم مَّن فِى ٱلسَّمَآءِ أَن يُرْسِلَ عَلَيْكُمْ حَاصِبًا ۖ فَسَتَعْلَمُونَ كَيْفَ نَذِيرِ",
+      arabic: "أَمۡ أَمِنتُم مَّن فِي ٱلسَّمَآءِ أَن يُرۡسِلَ عَلَيۡكُمۡ حَاصِبٗاۖ فَسَتَعۡلَمُونَ كَيۡفَ نَذِيرِ",
       translit:
         "Am amintum man fis samā’i an yursila ‛alaykum ḥāṣiba, fasata‛lamūna kayfa nadhīr",
       translation:
@@ -144,7 +143,7 @@ export const quran = new QuranModel({
       verse: 17,
     }),
     new QuranEntryModel({
-      arabic: "وَلَقَدْ كَذَّبَ ٱلَّذِينَ مِن قَبْلِهِمْ فَكَيْفَ كَانَ نَكِيرِ",
+      arabic: "وَلَقَدۡ كَذَّبَ ٱلَّذِينَ مِن قَبۡلِهِمۡ فَكَيۡفَ كَانَ نَكِيرِ",
       translit: "Wa laqad kadhdhabal ladhīna min qablihim, fakayfa kāna nakīr",
       translation:
         "And already had those before them denied, and how [terrible] was My reproach.",
@@ -152,7 +151,7 @@ export const quran = new QuranModel({
     }),
     new QuranEntryModel({
       arabic:
-        "أَوَلَمْ يَرَوْا۟ إِلَى ٱلطَّيْرِ فَوْقَهُمْ صَـٰٓفَّـٰتٍ وَيَقْبِضْنَ ۚ مَا يُمْسِكُهُنَّ إِلَّا ٱلرَّحْمَـٰنُ ۚ إِنَّهُۥ بِكُلِّ شَىْءٍۭ بَصِيرٌ",
+        "أَوَلَمۡ يَرَوۡاْ إِلَى ٱلطَّيۡرِ فَوۡقَهُمۡ صَٰٓفَّٰتٖ وَيَقۡبِضۡنَۚ مَا يُمۡسِكُهُنَّ إِلَّا ٱلرَّحۡمَٰنُۚ إِنَّهُۥ بِكُلِّ شَيۡءِۭ بَصِيرٌ",
       translit:
         "Awalam yaraw ilaṭ ṭayri fawqahum ṣāffātin wa yaqbiḍn, mā yumsikuhunna illar Raḥmān, innahū bikulli shay’im baṣīr",
       translation:
@@ -161,7 +160,7 @@ export const quran = new QuranModel({
     }),
     new QuranEntryModel({
       arabic:
-        "أَمَّنْ هَـٰذَا ٱلَّذِى هُوَ جُندٌ لَّكُمْ يَنصُرُكُم مِّن دُونِ ٱلرَّحْمَـٰنِ ۚ إِنِ ٱلْكَـٰفِرُونَ إِلَّا فِى غُرُورٍ",
+        "أَمَّنۡ هَٰذَا ٱلَّذِي هُوَ جُندٞ لَّكُمۡ يَنصُرُكُم مِّن دُونِ ٱلرَّحۡمَٰنِۚ إِنِ ٱلۡكَٰفِرُونَ إِلَّا فِي غُرُورٍ",
       translit:
         "Amman hādhal ladhī huwa jundun lakum yanṣurukum min dūnir Raḥmān, inil kāfirūna illā fī ghurūr",
       translation:
@@ -169,7 +168,7 @@ export const quran = new QuranModel({
       verse: 20,
     }),
     new QuranEntryModel({
-      arabic: "أَمَّنْ هَـٰذَا ٱلَّذِى يَرْزُقُكُمْ إِنْ أَمْسَكَ رِزْقَهُۥ ۚ بَل لَّجُّوا۟ فِى عُتُوٍّ وَنُفُورٍ",
+      arabic: "أَمَّنۡ هَٰذَا ٱلَّذِي يَرۡزُقُكُمۡ إِنۡ أَمۡسَكَ رِزۡقَهُۥۚ بَل لَّجُّواْ فِي عُتُوّٖ وَنُفُورٍ",
       translit:
         "Amman hādhal ladhī yarzuqukum in amsaka rizqah, bal lajjū fī ‛utuwwin wa nufūr",
       translation:
@@ -177,7 +176,7 @@ export const quran = new QuranModel({
       verse: 21,
     }),
     new QuranEntryModel({
-      arabic: "أَفَمَن يَمْشِى مُكِبًّا عَلَىٰ وَجْهِهِۦٓ أَهْدَىٰٓ أَمَّن يَمْشِى سَوِيًّا عَلَىٰ صِرَٰطٍ مُّسْتَقِيمٍ",
+      arabic: "أَفَمَن يَمۡشِي مُكِبًّا عَلَىٰ وَجۡهِهِۦٓ أَهۡدَىٰٓ أَمَّن يَمۡشِي سَوِيًّا عَلَىٰ صِرَٰطٖ مُّسۡتَقِيمٖ",
       translit:
         "Afaman yamshī mukibban ‛alā wajhihī ahdā amman yamshī sawiyyan ‛alā ṣirāṭin mustaqīm",
       translation:
@@ -186,7 +185,7 @@ export const quran = new QuranModel({
     }),
     new QuranEntryModel({
       arabic:
-        "قُلْ هُوَ ٱلَّذِىٓ أَنشَأَكُمْ وَجَعَلَ لَكُمُ ٱلسَّمْعَ وَٱلْأَبْصَـٰرَ وَٱلْأَفْـِٔدَةَ ۖ قَلِيلًا مَّا تَشْكُرُونَ",
+        "قُلۡ هُوَ ٱلَّذِيٓ أَنشَأَكُمۡ وَجَعَلَ لَكُمُ ٱلسَّمۡعَ وَٱلۡأَبۡصَٰرَ وَٱلۡأَفۡـِٔدَةَۚ قَلِيلٗا مَّا تَشۡكُرُونَ",
       translit:
         "Qul huwal ladhī ansha’akum wa ja‛ala lakumus sam‛a wal abṣāra wal af’idah, qalīlan mā tashkurūn",
       translation:
@@ -194,21 +193,21 @@ export const quran = new QuranModel({
       verse: 23,
     }),
     new QuranEntryModel({
-      arabic: "قُلْ هُوَ ٱلَّذِى ذَرَأَكُمْ فِى ٱلْأَرْضِ وَإِلَيْهِ تُحْشَرُونَ",
+      arabic: "قُلۡ هُوَ ٱلَّذِي ذَرَأَكُمۡ فِي ٱلۡأَرۡضِ وَإِلَيۡهِ تُحۡشَرُونَ",
       translit: "Qul huwal ladhī dhara’akum fil arḍi wa ilayhi tuḥsharūn",
       translation:
         'Say, "It is He who has multiplied you throughout the earth, and to Him you will be gathered."',
       verse: 24,
     }),
     new QuranEntryModel({
-      arabic: "وَيَقُولُونَ مَتَىٰ هَـٰذَا ٱلْوَعْدُ إِن كُنتُمْ صَـٰدِقِينَ",
+      arabic: "وَيَقُولُونَ مَتَىٰ هَٰذَا ٱلۡوَعۡدُ إِن كُنتُمۡ صَٰدِقِينَ",
       translit: "Wa yaqūlūna matā hādhal wa‛du in kuntum ṣādiqīn",
       translation:
         'And they say, "When is this promise, if you should be truthful?"',
       verse: 25,
     }),
     new QuranEntryModel({
-      arabic: "قُلْ إِنَّمَا ٱلْعِلْمُ عِندَ ٱللَّهِ وَإِنَّمَآ أَنَا۠ نَذِيرٌ مُّبِينٌ",
+      arabic: "قُلۡ إِنَّمَا ٱلۡعِلۡمُ عِندَ ٱللَّهِ وَإِنَّمَآ أَنَا۠ نَذِيرٞ مُّبِينٞ",
       translit: "Qul innamal ‛ilmu ‛indallāhi wa innamā ana nadhīrum mubīn",
       translation:
         'Say, "The knowledge is only with Allāh, and I am only a clear warner."',
@@ -216,7 +215,7 @@ export const quran = new QuranModel({
     }),
     new QuranEntryModel({
       arabic:
-        "فَلَمَّا رَأَوْهُ زُلْفَةً سِيٓـَٔتْ وُجُوهُ ٱلَّذِينَ كَفَرُوا۟ وَقِيلَ هَـٰذَا ٱلَّذِى كُنتُم بِهِۦ تَدَّعُونَ",
+        "فَلَمَّا رَأَوۡهُ زُلۡفَةٗ سِيٓـَٔتۡ وُجُوهُ ٱلَّذِينَ كَفَرُواْ وَقِيلَ هَٰذَا ٱلَّذِي كُنتُم بِهِۦ تَدَّعُونَ",
       translit:
         "Falammā ra’awhu zulfatan sī’at wujūhul ladhīna kafarū wa qīla hādhal ladhī kuntum bihī tadda‛ūn",
       translation:
@@ -225,7 +224,7 @@ export const quran = new QuranModel({
     }),
     new QuranEntryModel({
       arabic:
-        "قُلْ أَرَءَيْتُمْ إِنْ أَهْلَكَنِىَ ٱللَّهُ وَمَن مَّعِىَ أَوْ رَحِمَنَا فَمَن يُجِيرُ ٱلْكَـٰفِرِينَ مِنْ عَذَابٍ أَلِيمٍ",
+        "قُلۡ أَرَءَيۡتُمۡ إِنۡ أَهۡلَكَنِيَ ٱللَّهُ وَمَن مَّعِيَ أَوۡ رَحِمَنَا فَمَن يُجِيرُ ٱلۡكَٰفِرِينَ مِنۡ عَذَابٍ أَلِيمٖ",
       translit:
         "Qul ara’aytum in ahlakaniyallāhu wa mam ma‛iya aw raḥimanā, faman yujīrul kāfirīna min ‛adhābin alīm",
       translation:
@@ -233,8 +232,7 @@ export const quran = new QuranModel({
       verse: 28,
     }),
     new QuranEntryModel({
-      arabic:
-        "قُلْ هُوَ ٱلرَّحْمَـٰنُ ءَامَنَّا بِهِۦ وَعَلَيْهِ تَوَكَّلْنَا ۖ فَسَتَعْلَمُونَ مَنْ هُوَ فِى ضَلَـٰلٍ مُّبِينٍ",
+      arabic: "قُلۡ هُوَ ٱلرَّحۡمَٰنُ ءَامَنَّا بِهِۦ وَعَلَيۡهِ تَوَكَّلۡنَاۖ فَسَتَعۡلَمُونَ مَنۡ هُوَ فِي ضَلَٰلٖ مُّبِينٖ",
       translit:
         "Qul huwar Raḥmānu āmannā bihī wa ‛alayhi tawakkalnā, fasata‛lamūna man huwa fī ḍalālin mubīn",
       translation:
@@ -242,7 +240,7 @@ export const quran = new QuranModel({
       verse: 29,
     }),
     new QuranEntryModel({
-      arabic: "قُلْ أَرَءَيْتُمْ إِنْ أَصْبَحَ مَآؤُكُمْ غَوْرًا فَمَن يَأْتِيكُم بِمَآءٍ مَّعِينٍۭ",
+      arabic: "قُلۡ أَرَءَيۡتُمۡ إِنۡ أَصۡبَحَ مَآؤُكُمۡ غَوۡرٗا فَمَن يَأۡتِيكُم بِمَآءٖ مَّعِينِۭ",
       translit:
         "Qul ara’aytum in aṣbaḥa mā’ukum ghawran fa man ya’tīkum bimā’im ma‛īn",
       translation:

@@ -5,8 +5,7 @@ export const last_10_of_imran = new QuranModel({
   surah: 3,
   entries: [
     new QuranEntryModel({
-      arabic:
-        "إِنَّ فِى خَلْقِ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ وَٱخْتِلَـٰفِ ٱلَّيْلِ وَٱلنَّهَارِ لَـَٔايَـٰتٍ لِّأُو۟لِى ٱلْأَلْبَـٰبِ",
+      arabic: "إِنَّ فِي خَلۡقِ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ وَٱخۡتِلَٰفِ ٱلَّيۡلِ وَٱلنَّهَارِ لَأٓيَٰتٖ لِّأُوْلِي ٱلۡأَلۡبَٰبِ",
       translit:
         "Inna fī khalqis samāwāti wal arḍi wakhtilāfil layli wan nahāri la’āyātin li’ūlil albāb.",
       translation:
@@ -15,7 +14,7 @@ export const last_10_of_imran = new QuranModel({
     }),
     new QuranEntryModel({
       arabic:
-        "ٱلَّذِينَ يَذْكُرُونَ ٱللَّهَ قِيَـٰمًا وَقُعُودًا وَعَلَىٰ جُنُوبِهِمْ وَيَتَفَكَّرُونَ فِى خَلْقِ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ رَبَّنَا مَا خَلَقْتَ هَـٰذَا بَـٰطِلًا سُبْحَـٰنَكَ فَقِنَا عَذَابَ ٱلنَّارِ",
+        "ٱلَّذِينَ يَذۡكُرُونَ ٱللَّهَ قِيَٰمٗا وَقُعُودٗا وَعَلَىٰ جُنُوبِهِمۡ وَيَتَفَكَّرُونَ فِي خَلۡقِ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضِ رَبَّنَا مَا خَلَقۡتَ هَٰذَا بَٰطِلٗا سُبۡحَٰنَكَ فَقِنَا عَذَابَ ٱلنَّارِ",
       translit:
         "Alladhīna yadhkurūnallāha qiyāman waqu‛ūdan wa‛alā junūbihim wayatafakkarūna fī khalqis samāwāti wal arḍi rabbanā mā khalaqta hādhā bāṭilan subḥānaka faqinā ‛adhāban nār.",
       translation:
@@ -23,7 +22,7 @@ export const last_10_of_imran = new QuranModel({
       verse: 191,
     }),
     new QuranEntryModel({
-      arabic: "رَبَّنَآ إِنَّكَ مَن تُدْخِلِ ٱلنَّارَ فَقَدْ أَخْزَيْتَهُۥ ۖ وَمَا لِلظَّـٰلِمِينَ مِنْ أَنصَارٍ",
+      arabic: "رَبَّنَآ إِنَّكَ مَن تُدۡخِلِ ٱلنَّارَ فَقَدۡ أَخۡزَيۡتَهُۥۖ وَمَا لِلظَّٰلِمِينَ مِنۡ أَنصَارٖ",
       translit:
         "Rabbanā innaka man tudkhili nnāra faqad akhzaytahu wamā lilẓẓālimīna min anṣār.",
       translation:
@@ -32,7 +31,7 @@ export const last_10_of_imran = new QuranModel({
     }),
     new QuranEntryModel({
       arabic:
-        "رَّبَّنَآ إِنَّنَا سَمِعْنَا مُنَادِيًا يُنَادِى لِلْإِيمَـٰنِ أَنْ ءَامِنُوا۟ بِرَبِّكُمْ فَـَٔامَنَّا ۚ رَبَّنَا فَٱغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّـَٔاتِنَا وَتَوَفَّنَا مَعَ ٱلْأَبْرَارِ",
+        "رَّبَّنَآ إِنَّنَا سَمِعۡنَا مُنَادِيٗا يُنَادِي لِلۡإِيمَٰنِ أَنۡ ءَامِنُواْ بِرَبِّكُمۡ فَـَٔامَنَّاۚ رَبَّنَا فَٱغۡفِرۡ لَنَا ذُنُوبَنَا وَكَفِّرۡ عَنَّا سَيِّـَٔاتِنَا وَتَوَفَّنَا مَعَ ٱلۡأَبۡرَارِ",
       translit:
         "Rabbanā innanā sami‛nā munādiyan yunādī lil’īmāni an āminū birabbikum fa’āmannā rabbanā faghfir lanā dhunūbanā wakaffir ‛annā sayyi’ātinā watawaffanā ma‛al abrār.",
       translation:
@@ -41,7 +40,7 @@ export const last_10_of_imran = new QuranModel({
     }),
     new QuranEntryModel({
       arabic:
-        "رَبَّنَا وَءَاتِنَا مَا وَعَدتَّنَا عَلَىٰ رُسُلِكَ وَلَا تُخْزِنَا يَوْمَ ٱلْقِيَـٰمَةِ ۗ إِنَّكَ لَا تُخْلِفُ ٱلْمِيعَادَ",
+        "رَبَّنَا وَءَاتِنَا مَا وَعَدتَّنَا عَلَىٰ رُسُلِكَ وَلَا تُخۡزِنَا يَوۡمَ ٱلۡقِيَٰمَةِۖ إِنَّكَ لَا تُخۡلِفُ ٱلۡمِيعَادَ",
       translit:
         "Rabbanā wa’ātinā mā wa‛adttanā ‛alā rusulika walā tukhzinā yawmal qiyāmah innaka lā tukhlifulmī‛ād.",
       translation:
@@ -50,7 +49,7 @@ export const last_10_of_imran = new QuranModel({
     }),
     new QuranEntryModel({
       arabic:
-        "فَٱسْتَجَابَ لَهُمْ رَبُّهُمْ أَنِّى لَآ أُضِيعُ عَمَلَ عَـٰمِلٍ مِّنكُم مِّن ذَكَرٍ أَوْ أُنثَىٰ ۖ بَعْضُكُم مِّنۢ بَعْضٍ ۖ فَٱلَّذِينَ هَاجَرُوا۟ وَأُخْرِجُوا۟ مِن دِيَـٰرِهِمْ وَأُوذُوا۟ فِى سَبِيلِى وَقَـٰتَلُوا۟ وَقُتِلُوا۟ لَأُكَفِّرَنَّ عَنْهُمْ سَيِّـَٔاتِهِمْ وَلَأُدْخِلَنَّهُمْ جَنَّـٰتٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَـٰرُ ثَوَابًا مِّنْ عِندِ ٱللَّهِ ۗ وَٱللَّهُ عِندَهُۥ حُسْنُ ٱلثَّوَابِ",
+        "فَٱسۡتَجَابَ لَهُمۡ رَبُّهُمۡ أَنِّي لَآ أُضِيعُ عَمَلَ عَٰمِلٖ مِّنكُم مِّن ذَكَرٍ أَوۡ أُنثَىٰۖ بَعۡضُكُم مِّنۢ بَعۡضٖۖ فَٱلَّذِينَ هَاجَرُواْ وَأُخۡرِجُواْ مِن دِيَٰرِهِمۡ وَأُوذُواْ فِي سَبِيلِي وَقَٰتَلُواْ وَقُتِلُواْ لَأُكَفِّرَنَّ عَنۡهُمۡ سَيِّـَٔاتِهِمۡ وَلَأُدۡخِلَنَّهُمۡ جَنَّٰتٖ تَجۡرِي مِن تَحۡتِهَا ٱلۡأَنۡهَٰرُ ثَوَابٗا مِّنۡ عِندِ ٱللَّهِۚ وَٱللَّهُ عِندَهُۥ حُسۡنُ ٱلثَّوَابِ",
       translit:
         "Fastajāba lahum rabbuhum annī lā uḍī‛u ‛amala ‛āmilin minkum min dhakarin aw unthā ba‛ḍukum min ba‛ḍin falladhīna hājarū wa ukhrijū min diyārihim wa ūdhū fī sabīlī waqātalū waqutilū la’ukaffiranna ‛anhum sayyi’ātihim wala’udkhilannahum jannātin tajrī min taḥtihal anhāru thawāban min ‛indi Allāhi wallāhu ‛indahū ḥusnuth thawāb.",
       translation:
@@ -58,14 +57,14 @@ export const last_10_of_imran = new QuranModel({
       verse: 195,
     }),
     new QuranEntryModel({
-      arabic: "لَا يَغُرَّنَّكَ تَقَلُّبُ ٱلَّذِينَ كَفَرُوا۟ فِى ٱلْبِلَـٰدِ",
+      arabic: "لَا يَغُرَّنَّكَ تَقَلُّبُ ٱلَّذِينَ كَفَرُواْ فِي ٱلۡبِلَٰدِ",
       translit: "Lā yaghurrannaka taqallubulladhīna kafarū fil bilād.",
       translation:
         "Be not deceived by the [uninhibited] movement of the disbelievers throughout the land.",
       verse: 196,
     }),
     new QuranEntryModel({
-      arabic: "مَتَـٰعٌ قَلِيلٌ ثُمَّ مَأْوَىٰهُمْ جَهَنَّمُ ۚ وَبِئْسَ ٱلْمِهَادُ",
+      arabic: "مَتَٰعٞ قَلِيلٞ ثُمَّ مَأۡوَىٰهُمۡ جَهَنَّمُۖ وَبِئۡسَ ٱلۡمِهَادُ",
       translit: "Matā‛un qalīlun thumma ma’wāhum jahannamu wabi’sal mihād.",
       translation:
         "[It is but] a small enjoyment; then their [final] refuge is Hell, and wretched is the resting place.",
@@ -73,7 +72,7 @@ export const last_10_of_imran = new QuranModel({
     }),
     new QuranEntryModel({
       arabic:
-        "لَـٰكِنِ ٱلَّذِينَ ٱتَّقَوْا۟ رَبَّهُمْ لَهُمْ جَنَّـٰتٌ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَـٰرُ خَـٰلِدِينَ فِيهَا نُزُلًا مِّنْ عِندِ ٱللَّهِ ۗ وَمَا عِندَ ٱللَّهِ خَيْرٌ لِّلْأَبْرَارِ",
+        "لَٰكِنِ ٱلَّذِينَ ٱتَّقَوۡاْ رَبَّهُمۡ لَهُمۡ جَنَّٰتٞ تَجۡرِي مِن تَحۡتِهَا ٱلۡأَنۡهَٰرُ خَٰلِدِينَ فِيهَا نُزُلٗا مِّنۡ عِندِ ٱللَّهِۗ وَمَا عِندَ ٱللَّهِ خَيۡرٞ لِّلۡأَبۡرَارِ",
       translit:
         "Lākinilladhīna ttaqaw rabbahum lahum jannātun tajrī min taḥtihal anhāru khālidīna fīhā nuzulan min ‛indi Allāhi wamā ‛inda Allāhi khayrun lilabrār.",
       translation:
@@ -82,7 +81,7 @@ export const last_10_of_imran = new QuranModel({
     }),
     new QuranEntryModel({
       arabic:
-        "وَإِنَّ مِنْ أَهْلِ ٱلْكِتَـٰبِ لَمَن يُؤْمِنُ بِٱللَّهِ وَمَآ أُنزِلَ إِلَيْكُمْ وَمَآ أُنزِلَ إِلَيْهِمْ خَـٰشِعِينَ لِلَّهِ لَا يَشْتَرُونَ بِـَٔايَـٰتِ ٱللَّهِ ثَمَنًا قَلِيلًا ۗ أُو۟لَـٰٓئِكَ لَهُمْ أَجْرُهُمْ عِندَ رَبِّهِمْ ۗ إِنَّ ٱللَّهَ سَرِيعُ ٱلْحِسَابِ",
+        "وَإِنَّ مِنۡ أَهۡلِ ٱلۡكِتَٰبِ لَمَن يُؤۡمِنُ بِٱللَّهِ وَمَآ أُنزِلَ إِلَيۡكُمۡ وَمَآ أُنزِلَ إِلَيۡهِمۡ خَٰشِعِينَ لِلَّهِ لَا يَشۡتَرُونَ بِـَٔايَٰتِ ٱللَّهِ ثَمَنٗا قَلِيلًاۚ أُوْلَٰٓئِكَ لَهُمۡ أَجۡرُهُمۡ عِندَ رَبِّهِمۡۗ إِنَّ ٱللَّهَ سَرِيعُ ٱلۡحِسَابِ",
       translit:
         "Wa inna min ahlil kitābi laman yu’minu billāhi wamā unzila ilaykum wamā unzila ilayhim khāshi‛īna lillāhi lā yashtarūna bi’āyātillāhi thamanan qalīlan ūlā’ika lahum ajruhum ‛inda rabbihim inna Allāha sarī‛ul ḥisāb.",
       translation:
@@ -91,7 +90,7 @@ export const last_10_of_imran = new QuranModel({
     }),
     new QuranEntryModel({
       arabic:
-        "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱصْبِرُوا۟ وَصَابِرُوا۟ وَرَابِطُوا۟ وَٱتَّقُوا۟ ٱللَّهَ لَعَلَّكُمْ تُفْلِحُونَ",
+        "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُواْ ٱصۡبِرُواْ وَصَابِرُواْ وَرَابِطُواْ وَٱتَّقُواْ ٱللَّهَ لَعَلَّكُمۡ تُفۡلِحُونَ",
       translit:
         "Yā ayyuhalladhīna āmanū iṣbirū waṣābirū warābiṭū wattaqullāha la‛allakum tufliḥūn.",
       translation:

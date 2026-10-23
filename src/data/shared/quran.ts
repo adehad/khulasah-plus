@@ -44,38 +44,38 @@ export function fatihah(
     surah: 1,
     entries: [
       new QuranEntryModel({
-        arabic: "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
+        arabic: "ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ",
         translit: "Alḥamdulillāhi rabbil ‛ālamīn.",
         translation: "All Praise be to Allāh, Lord of the Universe",
         verse: 2,
       }),
       new QuranEntryModel({
-        arabic: "ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+        arabic: "ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ",
         translit: "Arraḥmānir raḥīm",
         translation: "The Most Compassionate, Most Merciful",
         verse: 3,
       }),
       new QuranEntryModel({
-        arabic: "مَـٰلِكِ يَوْمِ ٱلدِّينِ",
+        arabic: "مَٰلِكِ يَوۡمِ ٱلدِّينِ",
         translit: "Māliki yawmid dīn.",
         translation: "Lord of the Day of Judgement",
         verse: 4,
       }),
       new QuranEntryModel({
-        arabic: "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+        arabic: "إِيَّاكَ نَعۡبُدُ وَإِيَّاكَ نَسۡتَعِينُ",
         translit: "Iyyāka na‛budu wa iyyāka nasta‛īn.",
         translation:
           "You alone do we worship, and to You alone do we turn for help.",
         verse: 5,
       }),
       new QuranEntryModel({
-        arabic: "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
+        arabic: "ٱهۡدِنَا ٱلصِّرَٰطَ ٱلۡمُسۡتَقِيمَ",
         translit: "Ihdinaṣ ṣirāṭal mustaqīm.",
         translation: "Guide us to the Straight Way.",
         verse: 6,
       }),
       new QuranEntryModel({
-        arabic: "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
+        arabic: "صِرَٰطَ ٱلَّذِينَ أَنۡعَمۡتَ عَلَيۡهِمۡ غَيۡرِ ٱلۡمَغۡضُوبِ عَلَيۡهِمۡ وَلَا ٱلضَّآلِّينَ",
         translit:
           "Ṣirāṭalladhīna an‛amta ‛alayhim, ghayril maghḍūbi ‛alayhim walaḍ ḍāllīn.",
         translation:
@@ -105,14 +105,14 @@ export function baqarah_opening_1to5(
         verse: 1,
       }),
       new QuranEntryModel({
-        arabic: "ذَٰلِكَ ٱلْكِتَـٰبُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِّلْمُتَّقِينَ",
+        arabic: "ذَٰلِكَ ٱلۡكِتَٰبُ لَا رَيۡبَۛ فِيهِۛ هُدٗى لِّلۡمُتَّقِينَ",
         translit: "Dhālikal kitābu lā rayba fīhi hudan lilmuttaqīn.",
         translation:
           "This is the Book! There is no doubt about it — a guide for those mindful of Allah.",
         verse: 2,
       }),
       new QuranEntryModel({
-        arabic: "ٱلَّذِينَ يُؤْمِنُونَ بِٱلْغَيْبِ وَيُقِيمُونَ ٱلصَّلَوٰةَ وَمِمَّا رَزَقْنَـٰهُمْ يُنفِقُونَ",
+        arabic: "ٱلَّذِينَ يُؤۡمِنُونَ بِٱلۡغَيۡبِ وَيُقِيمُونَ ٱلصَّلَوٰةَ وَمِمَّا رَزَقۡنَٰهُمۡ يُنفِقُونَ",
         translit:
           "Alladhīna yuʾminūna bilghaybi wa yuqīmūnaṣ ṣalāta wa mimmā razaqnāhum yunfiqūn.",
         translation:
@@ -121,7 +121,7 @@ export function baqarah_opening_1to5(
       }),
       new QuranEntryModel({
         arabic:
-          "وَٱلَّذِينَ يُؤْمِنُونَ بِمَآ أُنزِلَ إِلَيْكَ وَمَآ أُنزِلَ مِن قَبْلِكَ وَبِٱلْـَٔاخِرَةِ هُمْ يُوقِنُونَ",
+          "وَٱلَّذِينَ يُؤۡمِنُونَ بِمَآ أُنزِلَ إِلَيۡكَ وَمَآ أُنزِلَ مِن قَبۡلِكَ وَبِٱلۡأٓخِرَةِ هُمۡ يُوقِنُونَ",
         translit:
           "Walladhīna yuʾminūna bimā unzila ilayka wa mā unzila min qablika wa bilākhirati hum yūqinūn.",
         translation:
@@ -129,7 +129,7 @@ export function baqarah_opening_1to5(
         verse: 4,
       }),
       new QuranEntryModel({
-        arabic: "أُو۟لَـٰٓئِكَ عَلَىٰ هُدًى مِّن رَّبِّهِمْ ۖ وَأُو۟لَـٰٓئِكَ هُمُ ٱلْمُفْلِحُونَ",
+        arabic: "أُوْلَٰٓئِكَ عَلَىٰ هُدٗى مِّن رَّبِّهِمۡۖ وَأُوْلَٰٓئِكَ هُمُ ٱلۡمُفۡلِحُونَ",
         translit: "Ulāʾika ʿalā hudan mir rabbihim wa ulāʾika humul mufliḥūn.",
         translation:
           "It is they who are truly guided by their Lord, and it is they who will be successful.",
@@ -152,7 +152,7 @@ export function baqarah_ayat_al_kursi(
     entries: [
       new QuranEntryModel({
         arabic:
-          "ٱللَّهُ لَآ إِلَـٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ ۚ لَا تَأْخُذُهُۥ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُۥ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۗ مَن ذَا ٱلَّذِى يَشْفَعُ عِندَهُۥٓ إِلَّا بِإِذْنِهِۦ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَىْءٍ مِّنْ عِلْمِهِۦٓ إِلَّا بِمَا شَآءَ ۚ وَسِعَ كُرْسِيُّهُ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضَ ۖ وَلَا يَـُٔودُهُۥ حِفْظُهُمَا ۚ وَهُوَ ٱلْعَلِىُّ ٱلْعَظِيمُ",
+          "ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡحَيُّ ٱلۡقَيُّومُۚ لَا تَأۡخُذُهُۥ سِنَةٞ وَلَا نَوۡمٞۚ لَّهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَمَا فِي ٱلۡأَرۡضِۗ مَن ذَا ٱلَّذِي يَشۡفَعُ عِندَهُۥٓ إِلَّا بِإِذۡنِهِۦۚ يَعۡلَمُ مَا بَيۡنَ أَيۡدِيهِمۡ وَمَا خَلۡفَهُمۡۖ وَلَا يُحِيطُونَ بِشَيۡءٖ مِّنۡ عِلۡمِهِۦٓ إِلَّا بِمَا شَآءَۚ وَسِعَ كُرۡسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَۖ وَلَا يَـُٔودُهُۥ حِفۡظُهُمَاۚ وَهُوَ ٱلۡعَلِيُّ ٱلۡعَظِيمُ",
         translit:
           "Allāhu lā ilāha illā huwa al-ḥayyu al-qayyūmu lā ta’khudhuhu sinatun wa lā nawmun lahu mā fī al-samāwāti wa mā fī al-arḍi man dhā alladhī yashfa‘u ‘indahu illā bi-idhnihi ya‘lamu mā bayna aydīhim wa mā khalfahum wa lā yuḥīṭūna bi-shay’in min ‘ilmihi illā bi-mā shā’a wasi‘a kursīyuhu al-samāwāti wa al-arḍa wa lā ya’ūduhu ḥifẓuhumā wa huwa al-‘alīyu al-‘aẓīmu",
         translation:
@@ -176,7 +176,7 @@ export function baqarah_amana_rasul(
     entries: [
       new QuranEntryModel({
         arabic:
-          "ءَامَنَ ٱلرَّسُولُ بِمَآ أُنزِلَ إِلَيْهِ مِن رَّبِّهِۦ وَٱلْمُؤْمِنُونَ ۚ كُلٌّ ءَامَنَ بِٱللَّهِ وَمَلَـٰٓئِكَتِهِۦ وَكُتُبِهِۦ وَرُسُلِهِۦ لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِّن رُّسُلِهِۦ ۚ وَقَالُوا۟ سَمِعْنَا وَأَطَعْنَا ۖ غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ ٱلْمَصِيرُ",
+          "ءَامَنَ ٱلرَّسُولُ بِمَآ أُنزِلَ إِلَيۡهِ مِن رَّبِّهِۦ وَٱلۡمُؤۡمِنُونَۚ كُلٌّ ءَامَنَ بِٱللَّهِ وَمَلَٰٓئِكَتِهِۦ وَكُتُبِهِۦ وَرُسُلِهِۦ لَا نُفَرِّقُ بَيۡنَ أَحَدٖ مِّن رُّسُلِهِۦۚ وَقَالُواْ سَمِعۡنَا وَأَطَعۡنَاۖ غُفۡرَانَكَ رَبَّنَا وَإِلَيۡكَ ٱلۡمَصِيرُ",
         translit:
           "Āmanarrasūlu bimā unzila ilayhi mirrabbihī wal mu’minūn, kullun āmana billāhi wa malā’ikatihī wa kutubihī wa rusulihī, lā nufarriqu bayna aḥadim mirrusulih, wa qālū sami‛nā wa aṭa‛nā, ghufrānaka rabbanā wa ilaykal maṣīr.",
         translation:
@@ -185,7 +185,7 @@ export function baqarah_amana_rasul(
       }),
       new QuranEntryModel({
         arabic:
-          "لَا يُكَلِّفُ ٱللَّهُ نَفْسًا إِلَّا وُسْعَهَا ۚ لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا ٱكْتَسَبَتْ ۗ رَبَّنَا لَا تُؤَاخِذْنَآ إِن نَّسِينَآ أَوْ أَخْطَأْنَا ۚ رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَآ إِصْرًا كَمَا حَمَلْتَهُۥ عَلَى ٱلَّذِينَ مِن قَبْلِنَا ۚ رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِۦ ۖ وَٱعْفُ عَنَّا وَٱغْفِرْ لَنَا وَٱرْحَمْنَآ ۚ أَنتَ مَوْلَىٰنَا فَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَـٰفِرِينَ",
+          "لَا يُكَلِّفُ ٱللَّهُ نَفۡسًا إِلَّا وُسۡعَهَاۚ لَهَا مَا كَسَبَتۡ وَعَلَيۡهَا مَا ٱكۡتَسَبَتۡۗ رَبَّنَا لَا تُؤَاخِذۡنَآ إِن نَّسِينَآ أَوۡ أَخۡطَأۡنَاۚ رَبَّنَا وَلَا تَحۡمِلۡ عَلَيۡنَآ إِصۡرٗا كَمَا حَمَلۡتَهُۥ عَلَى ٱلَّذِينَ مِن قَبۡلِنَاۚ رَبَّنَا وَلَا تُحَمِّلۡنَا مَا لَا طَاقَةَ لَنَا بِهِۦۖ وَٱعۡفُ عَنَّا وَٱغۡفِرۡ لَنَا وَٱرۡحَمۡنَآۚ أَنتَ مَوۡلَىٰنَا فَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ",
         translit:
           "Lā yukallifullāhu nafsan illā wus‛ahā, lahā mā kasabat wa ‛alayhā maktasabat, rabbanā lā tu’ākhidhnā innasīnā aw akhṭa’nā, rabbanā walā taḥmil ‛alaynā iṣran kamā ḥamaltahū ‛alalladhīna min  qablinā, rabbanā walā tuḥammilnā mā lā ṭāqata lanā bihī, wa‛fu ‛annā, waghfir lanā, warḥamnā, anta mawlanā fanṣurnā ‛alal qawmil kāfirīn.",
         translation:
@@ -209,7 +209,7 @@ export function ikhlas(
     surah: 112,
     entries: [
       new QuranEntryModel({
-        arabic: "قُلْ هُوَ ٱللَّهُ أَحَدٌ",
+        arabic: "قُلۡ هُوَ ٱللَّهُ أَحَدٌ",
         translit: "Qul HuwaLlāhu aḥad.",
         translation: "Say, ‘He is God the One, ",
         verse: 1,
@@ -221,13 +221,13 @@ export function ikhlas(
         verse: 2,
       }),
       new QuranEntryModel({
-        arabic: "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+        arabic: "لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ",
         translit: "Lam yalid wa lam yūlad.",
         translation: "He begot no one nor was He begotten.",
         verse: 3,
       }),
       new QuranEntryModel({
-        arabic: "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
+        arabic: "وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ",
         translit: "Wa lam yakun lahu kufuwan aḥad. (3x)",
         translation: "No one is comparable to Him.’",
         verse: 4,
@@ -249,7 +249,7 @@ export function falaq(
     surah: 113,
     entries: [
       new QuranEntryModel({
-        arabic: "قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ",
+        arabic: "قُلۡ أَعُوذُ بِرَبِّ ٱلۡفَلَقِ",
         translit: "Qul aʿūdhu bi rabb il-falaq.",
         translation: "Say, ‘I take refuge with the Lord of daybreak",
         verse: 1,
@@ -267,7 +267,7 @@ export function falaq(
         verse: 3,
       }),
       new QuranEntryModel({
-        arabic: "وَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ",
+        arabic: "وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِي ٱلۡعُقَدِ",
         translit: "Wa min sharri in-naffathāti fil ʿuqad.",
         translation: "the harm in witches when they blow on knots,",
         verse: 4,
@@ -295,7 +295,7 @@ export function nas(
     surah: 114,
     entries: [
       new QuranEntryModel({
-        arabic: "قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
+        arabic: "قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
         translit: "Qul aʿūdhu bi rabb in-nās.",
         translation: "Say, ‘I seek refuge with the Lord of people,",
         verse: 1,
@@ -307,25 +307,25 @@ export function nas(
         verse: 2,
       }),
       new QuranEntryModel({
-        arabic: "إِلَـٰهِ ٱلنَّاسِ",
+        arabic: "إِلَٰهِ ٱلنَّاسِ",
         translit: "Ilāh in-nās.",
         translation: "the God of people,",
         verse: 3,
       }),
       new QuranEntryModel({
-        arabic: "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ",
+        arabic: "مِن شَرِّ ٱلۡوَسۡوَاسِ ٱلۡخَنَّاسِ",
         translit: " Min sharril waswāsil khannās.",
         translation: "against the harm of the slinking whisperer",
         verse: 4,
       }),
       new QuranEntryModel({
-        arabic: "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ",
+        arabic: "ٱلَّذِي يُوَسۡوِسُ فِي صُدُورِ ٱلنَّاسِ",
         translit: "Al-ladhī yuwaswisu fī ṣudūr in-nās.",
         translation: "—who whispers into the hearts of people—",
         verse: 5,
       }),
       new QuranEntryModel({
-        arabic: "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
+        arabic: "مِنَ ٱلۡجِنَّةِ وَٱلنَّاسِ",
         translit: "Min aljinnati wan-nās.",
         translation: "whether they be jinn or people.’",
         verse: 6,
