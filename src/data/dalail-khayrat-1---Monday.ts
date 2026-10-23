@@ -1,3 +1,4 @@
+import { ahzab_56_verse } from "@/data/shared/quran-partial";
 import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
@@ -381,14 +382,7 @@ export default [
             translit: "wa burhānin ʿaẓīm:",
             translation: "and whose argument is mighty.",
           }),
-          new DhikrEntryModel({
-            arabic:
-              "﴿ إِنَّ اللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا ﴾",
-            translit:
-              "InnAllaha wa malāʾikatahu yuṣallūna ʿalan nabiyyi yā ayyuhalladhīna āmanū ṣallū ʿalayhi wa sallimū taslīman.",
-            translation:
-              "Allah and His angels call down blessings on the Prophet. O you who believe call down blessings on him and ask for complete peace and safety for him.",
-          }),
+          ahzab_56_verse(),
           new DhikrEntryModel({
             arabic: "لَبَّيْكَ اللَّهُمَّ رَبِّى وَسَعْدَيْكَ صَلَوَاتُ اللَّهِ البَرِّ الرَّحِيمِ",
             translit:
@@ -631,7 +625,7 @@ export default [
             arabic:
               "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا تُحِبُّ وَتَرْضَاهُ لَهُ.",
             translit:
-              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin kamā tuḥibbu wa tarḍāhu lahu.",
+              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin kamā tuḥibbu wa tarḍāhu lahu.",
             translation:
               "O Allah, bless Our Master Muhammad and the family of Our Master Muhammad as You love and are pleased with him.",
           }),

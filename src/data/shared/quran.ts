@@ -1,3 +1,18 @@
+import { quran as buruj_source } from "@/data/shared/quran-buruj";
+import { quran as duha_source } from "@/data/shared/quran-duha";
+import { quran as dukhan_source } from "@/data/shared/quran-dukhan";
+import { quran as kafirun_source } from "@/data/shared/quran-kafirun";
+import { quran as kahf_source } from "@/data/shared/quran-kahf";
+import { quran as kawthar_source } from "@/data/shared/quran-kawthar";
+import { quran as masad_source } from "@/data/shared/quran-masad";
+import { quran as mulk_source } from "@/data/shared/quran-mulk";
+import { quran as muzzammil_source } from "@/data/shared/quran-muzzammil";
+import { quran as nasr_source } from "@/data/shared/quran-nasr";
+import { quran as qadr_source } from "@/data/shared/quran-qadr";
+import { quran as quraysh_source } from "@/data/shared/quran-quraysh";
+import { quran as sajdah_source } from "@/data/shared/quran-sajdah";
+import { quran as sharh_source } from "@/data/shared/quran-sharh";
+import { quran as tariq_source } from "@/data/shared/quran-tariq";
 import { quran as waqiah_source } from "@/data/shared/quran-waqiah";
 import { quran as yasin_source } from "@/data/shared/quran-yasin";
 import {
@@ -29,43 +44,43 @@ export function fatihah(
     surah: 1,
     entries: [
       new QuranEntryModel({
-        arabic: "ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ ",
+        arabic: "ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ",
         translit: "Alḥamdulillāhi rabbil ‛ālamīn.",
         translation: "All Praise be to Allāh, Lord of the Universe",
-        verse: 1,
+        verse: 2,
       }),
       new QuranEntryModel({
-        arabic: "ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ ",
+        arabic: "ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ",
         translit: "Arraḥmānir raḥīm",
         translation: "The Most Compassionate, Most Merciful",
-        verse: 2,
+        verse: 3,
       }),
       new QuranEntryModel({
         arabic: "مَٰلِكِ يَوۡمِ ٱلدِّينِ",
         translit: "Māliki yawmid dīn.",
         translation: "Lord of the Day of Judgement",
-        verse: 3,
-      }),
-      new QuranEntryModel({
-        arabic: "إِيَّاكَ نَعۡبُدُ وَإِيَّاكَ نَسۡتَعِينُ ",
-        translit: "Iyyāka na‛budu wa iyyāka nasta‛īn.",
-        translation:
-          "You alone do we worship, and to You alone do we turn for help.",
         verse: 4,
       }),
       new QuranEntryModel({
-        arabic: "ٱهۡدِنَا ٱلصِّرَٰطَ ٱلۡمُسۡتَقِيمَ ",
-        translit: "Ihdinaṣ ṣirāṭal mustaqīm.",
-        translation: "Guide us to the Straight Way.",
+        arabic: "إِيَّاكَ نَعۡبُدُ وَإِيَّاكَ نَسۡتَعِينُ",
+        translit: "Iyyāka na‛budu wa iyyāka nasta‛īn.",
+        translation:
+          "You alone do we worship, and to You alone do we turn for help.",
         verse: 5,
       }),
       new QuranEntryModel({
-        arabic: "صِرَٰطَ ٱلَّذِينَ أَنۡعَمۡتَ عَلَيۡهِمۡ غَيۡرِ ٱلۡمَغۡضُوبِ عَلَيۡهِمۡ وَلَا ٱلضَّآلِّينَ (آمِين)",
-        translit:
-          "Ṣirāṭalladhīna an‛amta ‛alayhim, ghayril maghḍūbi ‛alayhim walaḍ ḍāllīn. Āmīn",
-        translation:
-          "The Way of those on whom You have bestowed Your grace; not the way of those who have earned Your anger, nor of those who went astray. Āmīn",
+        arabic: "ٱهۡدِنَا ٱلصِّرَٰطَ ٱلۡمُسۡتَقِيمَ",
+        translit: "Ihdinaṣ ṣirāṭal mustaqīm.",
+        translation: "Guide us to the Straight Way.",
         verse: 6,
+      }),
+      new QuranEntryModel({
+        arabic: "صِرَٰطَ ٱلَّذِينَ أَنۡعَمۡتَ عَلَيۡهِمۡ غَيۡرِ ٱلۡمَغۡضُوبِ عَلَيۡهِمۡ وَلَا ٱلضَّآلِّينَ",
+        translit:
+          "Ṣirāṭalladhīna an‛amta ‛alayhim, ghayril maghḍūbi ‛alayhim walaḍ ḍāllīn.",
+        translation:
+          "The Way of those on whom You have bestowed Your grace; not the way of those who have earned Your anger, nor of those who went astray.",
+        verse: 7,
       }),
     ],
     instruction,
@@ -137,7 +152,7 @@ export function baqarah_ayat_al_kursi(
     entries: [
       new QuranEntryModel({
         arabic:
-          "ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡحَيُّ ٱلۡقَيُّومُۚ لَا تَأۡخُذُهُۥ سِنَةٞ وَلَا نَوۡمٞۚ لَّهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَمَا فِي ٱلۡأَرۡضِۗ مَن ذَا ٱلَّذِي يَشۡفَعُ عِندَهُۥٓ إِلَّا بِإِذۡنِهِۦۚ يَعۡلَمُ مَا بَيۡنَ أَيۡدِيهِمۡ وَمَا خَلۡفَهُمۡۖ وَلَا يُحِيطُونَ بِشَيۡءٖ مِّنۡ عِلۡمِهِۦٓ إِلَّا بِمَا شَآءَۚ وَسِعَ كُرۡسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَۖ وَلَا يَـُٔودُهُۥ حِفۡظُهُمَاۚ وَهُوَ ٱلۡعَلِيُّ ٱلۡعَظِيمُ ",
+          "ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلۡحَيُّ ٱلۡقَيُّومُۚ لَا تَأۡخُذُهُۥ سِنَةٞ وَلَا نَوۡمٞۚ لَّهُۥ مَا فِي ٱلسَّمَٰوَٰتِ وَمَا فِي ٱلۡأَرۡضِۗ مَن ذَا ٱلَّذِي يَشۡفَعُ عِندَهُۥٓ إِلَّا بِإِذۡنِهِۦۚ يَعۡلَمُ مَا بَيۡنَ أَيۡدِيهِمۡ وَمَا خَلۡفَهُمۡۖ وَلَا يُحِيطُونَ بِشَيۡءٖ مِّنۡ عِلۡمِهِۦٓ إِلَّا بِمَا شَآءَۚ وَسِعَ كُرۡسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَۖ وَلَا يَـُٔودُهُۥ حِفۡظُهُمَاۚ وَهُوَ ٱلۡعَلِيُّ ٱلۡعَظِيمُ",
         translit:
           "Allāhu lā ilāha illā huwa al-ḥayyu al-qayyūmu lā ta’khudhuhu sinatun wa lā nawmun lahu mā fī al-samāwāti wa mā fī al-arḍi man dhā alladhī yashfa‘u ‘indahu illā bi-idhnihi ya‘lamu mā bayna aydīhim wa mā khalfahum wa lā yuḥīṭūna bi-shay’in min ‘ilmihi illā bi-mā shā’a wasi‘a kursīyuhu al-samāwāti wa al-arḍa wa lā ya’ūduhu ḥifẓuhumā wa huwa al-‘alīyu al-‘aẓīmu",
         translation:
@@ -170,11 +185,11 @@ export function baqarah_amana_rasul(
       }),
       new QuranEntryModel({
         arabic:
-          "لَا يُكَلِّفُ ٱللَّهُ نَفۡسًا إِلَّا وُسۡعَهَاۚ لَهَا مَا كَسَبَتۡ وَعَلَيۡهَا مَا ٱكۡتَسَبَتۡۗ رَبَّنَا لَا تُؤَاخِذۡنَآ إِن نَّسِينَآ أَوۡ أَخۡطَأۡنَاۚ رَبَّنَا وَلَا تَحۡمِلۡ عَلَيۡنَآ إِصۡرٗا كَمَا حَمَلۡتَهُۥ عَلَى ٱلَّذِينَ مِن قَبۡلِنَاۚ رَبَّنَا وَلَا تُحَمِّلۡنَا مَا لَا طَاقَةَ لَنَا بِهِۦۖ وَٱعۡفُ عَنَّا وَٱغۡفِرۡ لَنَا وَٱرۡحَمۡنَآۚ أَنتَ مَوۡلَىٰنَا فَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ (آمِين)",
+          "لَا يُكَلِّفُ ٱللَّهُ نَفۡسًا إِلَّا وُسۡعَهَاۚ لَهَا مَا كَسَبَتۡ وَعَلَيۡهَا مَا ٱكۡتَسَبَتۡۗ رَبَّنَا لَا تُؤَاخِذۡنَآ إِن نَّسِينَآ أَوۡ أَخۡطَأۡنَاۚ رَبَّنَا وَلَا تَحۡمِلۡ عَلَيۡنَآ إِصۡرٗا كَمَا حَمَلۡتَهُۥ عَلَى ٱلَّذِينَ مِن قَبۡلِنَاۚ رَبَّنَا وَلَا تُحَمِّلۡنَا مَا لَا طَاقَةَ لَنَا بِهِۦۖ وَٱعۡفُ عَنَّا وَٱغۡفِرۡ لَنَا وَٱرۡحَمۡنَآۚ أَنتَ مَوۡلَىٰنَا فَٱنصُرۡنَا عَلَى ٱلۡقَوۡمِ ٱلۡكَٰفِرِينَ",
         translit:
-          "Lā yukallifullāhu nafsan illā wus‛ahā, lahā mā kasabat wa ‛alayhā maktasabat, rabbanā lā tu’ākhidhnā innasīnā aw akhṭa’nā, rabbanā walā taḥmil ‛alaynā iṣran kamā ḥamaltahū ‛alalladhīna min  qablinā, rabbanā walā tuḥammilnā mā lā ṭāqata lanā bihī, wa‛fu ‛annā, waghfir lanā, warḥamnā, anta mawlanā fanṣurnā ‛alal qawmil kāfirīn. (Āmīn)",
+          "Lā yukallifullāhu nafsan illā wus‛ahā, lahā mā kasabat wa ‛alayhā maktasabat, rabbanā lā tu’ākhidhnā innasīnā aw akhṭa’nā, rabbanā walā taḥmil ‛alaynā iṣran kamā ḥamaltahū ‛alalladhīna min  qablinā, rabbanā walā tuḥammilnā mā lā ṭāqata lanā bihī, wa‛fu ‛annā, waghfir lanā, warḥamnā, anta mawlanā fanṣurnā ‛alal qawmil kāfirīn.",
         translation:
-          "Allāh will not burden any soul with more than what it can bear. It has [the good] it has earned, and [the evil] it has incurred. “Our Lord! Do not take us to task if we forget or make a mistake. Our Lord, do not place on us a burden like that which you have placed on those before us! Our Lord, do not place on us a burden that we do not have the strength to bear! Pardon us, and grant us forgiveness; and have mercy on us. You are our Protector; so grant us victory over the disbelieving people.” [Āmīn]",
+          "Allāh will not burden any soul with more than what it can bear. It has [the good] it has earned, and [the evil] it has incurred. “Our Lord! Do not take us to task if we forget or make a mistake. Our Lord, do not place on us a burden like that which you have placed on those before us! Our Lord, do not place on us a burden that we do not have the strength to bear! Pardon us, and grant us forgiveness; and have mercy on us. You are our Protector; so grant us victory over the disbelieving people.”",
         verse: 286,
       }),
     ],
@@ -194,25 +209,25 @@ export function ikhlas(
     surah: 112,
     entries: [
       new QuranEntryModel({
-        arabic: "قُلۡ هُوَ ٱللَّهُ أَحَدٌ ",
+        arabic: "قُلۡ هُوَ ٱللَّهُ أَحَدٌ",
         translit: "Qul HuwaLlāhu aḥad.",
         translation: "Say, ‘He is God the One, ",
         verse: 1,
       }),
       new QuranEntryModel({
-        arabic: "ٱللَّهُ ٱلصَّمَدُ ",
+        arabic: "ٱللَّهُ ٱلصَّمَدُ",
         translit: "Allāhus-Ṣamad.",
         translation: "God the eternally Besought.",
         verse: 2,
       }),
       new QuranEntryModel({
-        arabic: "لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ ",
+        arabic: "لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ",
         translit: "Lam yalid wa lam yūlad.",
         translation: "He begot no one nor was He begotten.",
         verse: 3,
       }),
       new QuranEntryModel({
-        arabic: "وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ ",
+        arabic: "وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ",
         translit: "Wa lam yakun lahu kufuwan aḥad. (3x)",
         translation: "No one is comparable to Him.’",
         verse: 4,
@@ -280,7 +295,7 @@ export function nas(
     surah: 114,
     entries: [
       new QuranEntryModel({
-        arabic: "قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ ",
+        arabic: "قُلۡ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
         translit: "Qul aʿūdhu bi rabb in-nās.",
         translation: "Say, ‘I seek refuge with the Lord of people,",
         verse: 1,
@@ -349,5 +364,230 @@ export function waqiah(
     instruction: instruction,
     basmallah: basmallah,
     repeat: repeat,
+  });
+}
+
+export function buruj(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: buruj_source.title,
+    surah: buruj_source.surah,
+    entries: buruj_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function tariq(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: tariq_source.title,
+    surah: tariq_source.surah,
+    entries: tariq_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function duha(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: duha_source.title,
+    surah: duha_source.surah,
+    entries: duha_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function sharh(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: sharh_source.title,
+    surah: sharh_source.surah,
+    entries: sharh_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function qadr(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: qadr_source.title,
+    surah: qadr_source.surah,
+    entries: qadr_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function quraysh(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: quraysh_source.title,
+    surah: quraysh_source.surah,
+    entries: quraysh_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function sajdah(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: sajdah_source.title,
+    surah: sajdah_source.surah,
+    entries: sajdah_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function kawthar(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: kawthar_source.title,
+    surah: kawthar_source.surah,
+    entries: kawthar_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function kafirun(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: kafirun_source.title,
+    surah: kafirun_source.surah,
+    entries: kafirun_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function nasr(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: nasr_source.title,
+    surah: nasr_source.surah,
+    entries: nasr_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function masad(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: masad_source.title,
+    surah: masad_source.surah,
+    entries: masad_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function kahf(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: kahf_source.title,
+    surah: kahf_source.surah,
+    entries: kahf_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function dukhan(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: dukhan_source.title,
+    surah: dukhan_source.surah,
+    entries: dukhan_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function muzzammil(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: muzzammil_source.title,
+    surah: muzzammil_source.surah,
+    entries: muzzammil_source.entries,
+    instruction,
+    basmallah,
+    repeat,
+  });
+}
+
+export function mulk(
+  repeat: number = 1,
+  instruction: string = "",
+  basmallah: boolean = true,
+) {
+  return new QuranModel({
+    title: mulk_source.title,
+    surah: mulk_source.surah,
+    entries: mulk_source.entries,
+    instruction,
+    basmallah,
+    repeat,
   });
 }

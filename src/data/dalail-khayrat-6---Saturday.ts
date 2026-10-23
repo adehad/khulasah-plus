@@ -1,3 +1,4 @@
+import { anbiya_87, saffat_96 } from "@/data/shared/quran-partial";
 import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
@@ -1099,13 +1100,12 @@ export default [
             translation:
               "O Living One, O Self-Sustaining One, O Lord of Majesty and Generosity",
           }),
+          anbiya_87(),
           new DhikrEntryModel({
-            arabic:
-              "﴿\nلَّآ إِلَٰهَ إِلَّآ أَنتَ سُبْحَٰنَكَ إِنِّى كُنتُ مِنَ الظَّٰلِمِينَ\n﴾.\n\n أَسْأَلُكَ بِمَا حَمَلَ كُرْسِيُّكَ مِنْ عَظَمَتِكَ",
-            translit:
-              "lā ilāha illā anta subḥānaka innī kuntu minaẓ ẓālimīna. Asʾaluka bimā ḥamala kursiyyuka min ʿaẓamatika",
+            arabic: "أَسْأَلُكَ بِمَا حَمَلَ كُرْسِيُّكَ مِنْ عَظَمَتِكَ",
+            translit: "Asʾaluka bimā ḥamala kursiyyuka min ʿaẓamatika",
             translation:
-              "There is no divinity except You, glory be to You, I am indeed one of the wrongdoers. I ask You for the sake of what Your Footstool carries of Your Sublimity",
+              "I ask You for the sake of what Your Footstool carries of Your Sublimity",
           }),
           new DhikrEntryModel({
             arabic: "وَجَلَالِكَ وَبَهَائِكَ",
@@ -1351,13 +1351,11 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "يَا مَنْ قَالَ وَقَوْلُهُ الحَقُّ: ﴿\n\n\n\nوَاللَّهُ خَلَقَكُمْ وَمَا تَعْمَلُونَ\n\n\n\n﴾",
-            translit:
-              "yā man qāla wa qawlul ḥaqqu: wAllahu khalaqakum wa mā taʿmalūna",
-            translation:
-              'O You who said, and whose word is Truth: "And Allah created you and what you do"',
+            arabic: "يَا مَنْ قَالَ وَقَوْلُهُ الحَقُّ",
+            translit: "yā man qāla wa qawlul ḥaqqu:",
+            translation: "O You who said, and whose word is Truth:",
           }),
+          saffat_96(),
           new DhikrEntryModel({
             arabic: "وَلَا يَصْدُرُ عَنْ أَحَدٍ مِنْ عَبِيدِهِ قَوْلٌ وَلَا فِعْلٌ وَلَا حَرَكَةٌ وَلَا سُكُونٌ",
             translit:

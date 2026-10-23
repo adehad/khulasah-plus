@@ -3,15 +3,15 @@ import { NavModel } from "@/models/nav";
 const theKhulasahContent = [
   new NavModel({
     title: "Introduction",
-    href: "/",
+    href: "khulasah/introduction",
   }),
   new NavModel({
     title: "The last part of the night",
-    href: "/",
+    href: "khulasah/last-part-of-night",
   }),
   new NavModel({
     title: "After every prayer",
-    href: "/",
+    href: "khulasah/after-every-prayer",
   }),
   new NavModel({
     title: "After Fajr",
@@ -19,7 +19,7 @@ const theKhulasahContent = [
   }),
   new NavModel({
     title: "Duha/Ishraq",
-    href: "/",
+    href: "khulasah/duha-ishraq",
   }),
   new NavModel({
     title: "Dhuhr",
@@ -35,15 +35,15 @@ const theKhulasahContent = [
   }),
   new NavModel({
     title: "After Isha",
-    href: "/",
+    href: "khulasah/after-isha",
   }),
   new NavModel({
     title: "Various supplications",
-    href: "/",
+    href: "khulasah/various-supplications",
   }),
   new NavModel({
     title: "Friday ",
-    href: "/",
+    href: "khulasah/friday",
   }),
 ];
 

@@ -1,3 +1,4 @@
+import { anbiya_20, hijr_87, tahrim_6 } from "@/data/shared/quran-partial";
 import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
@@ -1015,12 +1016,11 @@ export default [
             translation: "the guide to the Straight Path",
           }),
           new DhikrEntryModel({
-            arabic: "الَّذِي آتَيْتَهُ سَبْعًا مِنَ المَثَانِي وَالقُرْآنَ العَظِيمَ",
-            translit:
-              "alladhī ātaytahu sabʿan minal mathānī wal Qurʾānal ʿaẓīm",
-            translation:
-              "to whom You gave the Seven Mathani and the Mighty Qur'an",
+            arabic: "الَّذِي آتَيْتَهُ",
+            translit: "alladhī ātaytahu",
+            translation: "to whom You gave",
           }),
+          hijr_87(),
           new DhikrEntryModel({
             arabic: "نَبِيِّ الرَّحْمَةِ",
             translit: "nabiyyir raḥmah",
@@ -1076,15 +1076,12 @@ export default [
             translation: "O Allah, bless the angels and those who are close",
           }),
           new DhikrEntryModel({
-            arabic: "الَّذِينَ \n﴿\nيُسَبِّحُونَ الَّيْلَ وَالنَّهَارَ لَا يَفْتُرُونَ\n﴾",
-            translit: "alladhīna yusabbiḥūnal layla wan nahāra lā yafturūn",
-            translation: "who glorify night and day and do not slacken",
+            arabic: "الَّذِينَ",
+            translit: "alladhīna",
+            translation: "who",
           }),
-          new DhikrEntryModel({
-            arabic: "﴿\n لَّا يَعْصُونَ اللَّهَ مَآ أَمَرَهُمْ وَيَفْعَلُونَ مَا يُؤْمَرُونَ\n﴾.",
-            translit: "lā yaʿṣūnaLlāha mā amarahum wa yafʿalūna mā yuʾmarūn.",
-            translation: "and do as they are commanded.",
-          }),
+          anbiya_20(),
+          tahrim_6(),
         ],
       }),
       new DhikrModel({

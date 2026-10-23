@@ -473,7 +473,7 @@ export default [
             arabic:
               "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا وَمَوْلَانَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ عَدَدَ مَا أَحَاطَ بِهِ عِلْمُكَ.",
             translit:
-              "Allāhumma ṣalli ʿalā sayyidinā wa mawlānā Muḥammadin ʿadada mā aḥāṭa bihi ʿilmuka.",
+              "Allāhumma ṣalli ʿalā sayyidinā wa mawlānā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin ʿadada mā aḥāṭa bihi ʿilmuka.",
             translation:
               "O Allah, bless Our Master, Mawlana Muhammad and the family of Our Master Muhammad in quantity as great as what Your knowledge encompasses.",
           }),
@@ -843,7 +843,7 @@ export default [
             arabic:
               "اللَّهُمَّ صَلِّ عَلَى مَنْ هُوَ فِي السَّمَاءِ سَيِّدُنَا مَحْمُودٌ، وَفِي الأَرْضِ سَيِّدُنَا مُحَمَّدٌ.",
             translit:
-              "Allāhumma ṣalli ʿalā man huwa fissamāʾi maḥmūdun wa fīl arḍi Muḥammadun.",
+              "Allāhumma ṣalli ʿalā man huwa fissamāʾi sayyidunā maḥmūdun wa fīl arḍi sayyidunā Muḥammadun.",
             translation:
               "O Allah, bless the one who is our praiseworthy Master in the heaven and Our Master Muhammad on the earth.",
           }),

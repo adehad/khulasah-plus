@@ -6,6 +6,7 @@ import {
   ikhlas,
   nas,
 } from "@/data/shared/quran";
+import { baqarah_128 } from "@/data/shared/quran-partial";
 import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export const wird = [
@@ -74,13 +75,12 @@ export const wird = [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic: "رَبَّنَا اغْفِرْ لَنَا وَتُبْ عَلَيْنَا إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ",
-            translation:
-              "Our Lord, forgive us and grant us repentance; indeed, You are the Oft-Forgiving, Most Merciful.",
-            translit:
-              "Rabbanaghfir lanā wa tub ‛alaynā innaka antat tawwābur raḥīm.",
+            arabic: "رَبَّنَا اغْفِرْ لَنَا",
+            translit: "Rabbanaghfir lanā",
+            translation: "Our Lord, forgive us",
             repeat: 3,
           }),
+          baqarah_128(3),
         ],
       }),
       new DhikrModel({
@@ -642,13 +642,18 @@ export const wird = [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "جَزَى اللَّهُ عَنَّا سَيِّدَنَا مُحَمَّدًا صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ خَيْرًا، جَزَى اللَّهُ عَنَّا سَيِّدَنَا مُحَمَّدًا صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ مَا هُوَ أَهْلُهُ",
-            translation:
-              "May Allāh reward, on our behalf, our master Muḥammad (blessings and peace on him) with good. May Allāh reward our master Muḥammad (blessings and peace on him) that which he is entitled to.",
+            arabic: "جَزَى اللَّهُ عَنَّا سَيِّدَنَا مُحَمَّدًا صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ خَيْرًا",
             translit:
-              "Jazallāhu ‛annā sayyidanā Muḥammadan ṣallallāhu ‛alayhi wa sallama khayran, jazallāhu ‛annā sayyidanā Muḥammadan ṣallallāhu ‛alayhi wa sallama mā huwa ahluhū.",
-            repeat: 3,
+              "Jazallāhu ‛annā sayyidanā Muḥammadan ṣallallāhu ‛alayhi wa sallama khayran",
+            translation: "May Allāh reward, on our behalf",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "جَزَى اللَّهُ عَنَّا سَيِّدَنَا مُحَمَّدًا صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ مَا هُوَ أَهْلُهُ",
+            translit:
+              "jazallāhu ‛annā sayyidanā Muḥammadan ṣallallāhu ‛alayhi wa sallama mā huwa ahluhū.",
+            translation:
+              "our master Muḥammad (blessings and peace on him) with good. May Allāh reward our master Muḥammad (blessings and peace on him) that which he is entitled to.",
           }),
         ],
       }),

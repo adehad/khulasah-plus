@@ -14,7 +14,16 @@ const transformationMap: Record<string, string> = {
 
   // Replace Tatweel (ـ) followed by Nun (نِ) with just Nun (نِ).
   "\u0640\u0646": "\u0646",
+
+  // Persian/Urdu letter forms from copied sources: Keheh and Heh Doachashmee.
+  "\u06A9": "\u0643",
+  "\u06BE": "\u0647",
 };
+
+// Farsi Yeh is dotless when final, so it stands for Alef Maksura there and Yeh elsewhere.
+const FARSI_YEH_FINAL =
+  /\u06CC(?=[\u064B-\u065F\u0670]*(?![\u0621-\u064A\u06CC]))/g;
+const FARSI_YEH = /\u06CC/g;
 
 async function normalizeFile(filePath: string) {
   try {
@@ -24,6 +33,9 @@ async function normalizeFile(filePath: string) {
     for (const [find, replace] of Object.entries(transformationMap)) {
       newContent = newContent.replaceAll(find, replace);
     }
+    newContent = newContent
+      .replace(FARSI_YEH_FINAL, "\u0649")
+      .replace(FARSI_YEH, "\u064A");
 
     if (originalContent !== newContent) {
       await fs.writeFile(filePath, newContent, "utf-8");

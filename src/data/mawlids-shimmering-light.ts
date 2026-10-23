@@ -1,9 +1,20 @@
 import {
+  ahzab_56_q,
+  fath_1_q,
+  fath_2_q,
+  fath_3_q,
+  fatihah_1_q,
+  saffat_180_q,
+  saffat_181_q,
+  saffat_182_q,
+  tawbah_128_q,
+  tawbah_129_q,
+} from "@/data/shared/quran-partial";
+import {
   QasidaChapterModel,
   QasidaEntryModel,
   QasidaModel,
   QasidaVerseModel,
-  QuranEntryModel,
 } from "@/models/recitation";
 
 const shimmeringLight = [
@@ -188,6 +199,7 @@ const shimmeringLight = [
             ],
           }),
           new QasidaVerseModel({
+            chorus: true,
             entries: [
               new QasidaEntryModel({
                 arabic: "يَا رَبِّ صَلِّ عَلَى مُحَمَّد",
@@ -221,63 +233,24 @@ const shimmeringLight = [
         entries: [
           new QasidaVerseModel({
             entries: [
-              new QuranEntryModel({
-                arabic: "أَعُوذُ باِللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
+              new QasidaEntryModel({
+                arabic: "أَعُوذُ باِللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
                 translit: "aʿūdhu bi-llāhi mina ash-shayṭāni r-rajīm",
                 translation: "I seek refuge with Allah from the accursed satan",
-                verse: 0,
               }),
             ],
           }),
           new QasidaVerseModel({
-            entries: [
-              new QuranEntryModel({
-                arabic: "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ",
-                translit: "bismi-llāhi r-raḥmāni r-raḥīm",
-                translation:
-                  "In the name of Allah, Most Compassionate, Ever-Merciful",
-                verse: 0,
-              }),
-            ],
+            entries: [fatihah_1_q()],
           }),
           new QasidaVerseModel({
-            entries: [
-              new QuranEntryModel({
-                arabic:
-                  "﴿ إِنَّا فَتَحْنَا لَكَ فَتْحًا مُّبِينًا ۝ لِّيَغْفِرَ لَكَ ٱللَّهُ مَا تَقَدَّمَ مِن ذَنۢبِكَ وَمَا تَأَخَّرَ وَيُتِمَّ نِعْمَتَهُۥ عَلَيْكَ وَيَهْدِيَكَ صِرَٰطًا مُّسْتَقِيمًا ۝ وَيَنصُرَكَ ٱللَّهُ نَصْرًا عَزِيزًا ﴾ ",
-                translit:
-                  " ﴿ innā fataḥnā laka fatḥan mubīnan ۝ li-yaghfira laka llāhu mā taqaddama min dhanbika wa-mā taʾakhkhara wa-yutimmu ni‘matahu ʿalayka wa-yahdīka ṣirāṭan mustaqīman ۝ wa-yansuraka llāhu naṣran ʿazīzan ﴾",
-                translation:
-                  "[48:1] Truly We have granted you a manifest victory. [48:2] [O Beloved] so that Allah may forgive, for your sake, your community's past faults and those to follow, complete His favor to you, guide [your community] to a straight path. [48:3] and help you mightily.",
-                verse: 1,
-              }),
-            ],
+            entries: [fath_1_q(), fath_2_q(), fath_3_q()],
           }),
           new QasidaVerseModel({
-            entries: [
-              new QuranEntryModel({
-                arabic:
-                  "﴿ لَقَدْ جَآءَكُمْ رَسُولٌ مِّنْ أَنفُسِكُمْ عَزِيزٌ عَلَيْهِ مَا عَنِتُّمْ حَرِيصٌ عَلَيْكُم بِٱلْمُؤْمِنِينَ رَءُوفٌ رَّحِيمٌ ۝  فإِن تَوَلَّوۡاْ فَقُلْ حَسْبِىَ ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ۖ عَلَيْهِ تَوَكَّلْتُ ۖ وَهُوَ رَبُّ ٱلْعَرْشِ ٱلْعَظِيمِ ﴾",
-                translit:
-                  "﴿ laqad jāʾakum rasūlun min anfusikum ʿazīzun ʿalayhi mā ʿanittum ḥarīṣun ʿalaykum bi-l-muʾminīna raʾūfun raḥīm ۝ fa-in tawallaw fa-qul ḥasbiyallāhu lā ilāha illā huwa ʿalayhi tawakkaltu wa-huwa rabbu l-ʿarshi l-ʿaẓīm ﴾ ",
-                translation:
-                  "[9:128] A Messenger has come to you from among yourselves. Your suffering distresses him: he is deeply concerned for you and full of kindness and mercy towards the believers. [9:129] If they turn away [O Beloved], say, ‘Allah is enough for me: there is no god but Him; I put my trust in Him; He is the Lord of the Mighty Throne.'",
-                verse: 128,
-              }),
-            ],
+            entries: [tawbah_128_q(), tawbah_129_q()],
           }),
           new QasidaVerseModel({
-            entries: [
-              new QuranEntryModel({
-                arabic:
-                  "﴿ إِنَّ ٱللَّهَ وَمَلَائِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ يَا أَيُّهَا الَّذِينَ آمَنُوا صَلُّوا عَلَيْهِ وَسَلِّمُوا تَسْلِيمًا ﴾",
-                translit:
-                  "﴿ innā llāhu wa-malāʾikatuhu yuṣallūna ʿalā n-nabiyy yā ayyuhā alladhīna āmanū ṣallū ʿalayhi wa-sallimū taslīman ﴾",
-                translation:
-                  "[33:56] Indeed, Allah and His angels send blessings upon the Prophet. O you who believe, send blessings upon him and salute him with abundant greetings of peace.",
-                verse: 56,
-              }),
-            ],
+            entries: [ahzab_56_q()],
           }),
           new QasidaVerseModel({
             entries: [
@@ -1108,14 +1081,14 @@ const shimmeringLight = [
               }),
               new QasidaEntryModel({
                 arabic: "وَتَجَلَّتِ الْأَنْوَارُ مِنْ كُلِّ الْجِهَـــا",
-                translit: "wa-taja l-la n-nuwāru min kulli l-jihā(ti)",
-                translation:
-                  "The time of the birth of the Accepted Intercessor had come.",
+                translit: "wa-tajallati l-anwāru min kulli l-jihā(ti)",
+                translation: "Lights manifested from every direction,",
               }),
               new QasidaEntryModel({
                 arabic: "ـــتِ فَوَقْتُ مِيلَادِ الْمُشَفَّعِ حَانَا",
                 translit: "(ti) fawaqtu milādi l-mushaffiʿ ḥānā",
-                translation: "",
+                translation:
+                  "and the time of the birth of the Accepted Intercessor had come",
               }),
             ],
           }),
@@ -1129,8 +1102,7 @@ const shimmeringLight = [
               }),
               new QasidaEntryModel({
                 arabic: "ظَهَرَ الْحَبِيبُ مُكَرَّمًا وَمُصَانَا",
-                translit:
-                  "ẓahara l-ḥabību mukarraman wa-muṣānā maḥallu l-maqāmi",
+                translit: "ẓahara l-ḥabību mukarraman wa-muṣānā",
                 translation: "The Beloved, honored and protected, appeared.",
               }),
             ],
@@ -1145,7 +1117,7 @@ const shimmeringLight = [
             entries: [
               new QasidaEntryModel({
                 arabic: "مَحَلُّ الْمَقَام",
-                translit: "",
+                translit: "Maḥallul maqām",
                 translation: "Place of Standing",
               }),
             ],
@@ -2350,7 +2322,7 @@ const shimmeringLight = [
               }),
               new QasidaEntryModel({
                 arabic: "وِي الْقَوْلُ مِنَّا أَوْ يَكُونُ ثَنَانَا",
-                translit: "wa-īnna minnā qawlun amyakūnu thanānā",
+                translit: "wī l-qawlu minnā aw yakūnu thanānā",
                 translation:
                   "Could our statements of praise ever measure up to His?",
               }),
@@ -2626,16 +2598,7 @@ const shimmeringLight = [
             ],
           }),
           new QasidaVerseModel({
-            entries: [
-              new QasidaEntryModel({
-                arabic:
-                  "﴿ سُبْحَٰنَ رَبِّكَ رَبِّ ٱلْعِزَّةِ عَمَّا يَصِفُونَ ۝ وَسَلَٰمٌ عَلَى ٱلْمُرْسَلِينَ ۝ وَٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ ﴾",
-                translit:
-                  "subḥāna rabbika rabbi l-ʿizzati ʿammā yaṣifūn ۝ wa-salāmun ʿalá l-mursalīn ۝ wa-l-ḥamdu li-llāhi rabbi l-ʿālamīn",
-                translation:
-                  "37:180 Glory be to your Lord, the Lord of Honour and Power! He is free from what they attribute to Him. 37:181 And peace be upon the messengers. 37:182 And all praise is due to Allah, the Lord of the worlds.",
-              }),
-            ],
+            entries: [saffat_180_q(), saffat_181_q(), saffat_182_q()],
           }),
         ],
       }),
