@@ -23,7 +23,7 @@ repos:
     -   id: normalize-arabic-chars
         name: Normalize Arabic Characters
         entry: bun scripts/normalize-arabic.ts
-        language: node
+        language: system
         types: [ts]
         files: ^src/data/
         exclude: |
