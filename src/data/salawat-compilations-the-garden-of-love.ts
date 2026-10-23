@@ -1793,7 +1793,7 @@ export default [
             translit:
               "Allāhumma ṣalli ‛alā sayyidinā Muḥammadin wa‛alā āli sayyidinā Muḥammad",
             translation:
-              "O Allah bestow prayers upon our master Muhammad and the Family of our master Muhammad by the number of what You know",
+              "O Allah bestow prayers upon our master Muhammad and the Family of our master Muhammad",
           }),
           new DhikrEntryModel({
             arabic: "عَدَدَ مَا عَلِمْتَ",
@@ -1803,7 +1803,7 @@ export default [
           new DhikrEntryModel({
             arabic: "وَمِلْءَ مَا عَلِمْتَ",
             translit: "wamil’a mā ‛alimt",
-            translation: "",
+            translation: "and as much as fills what You know.",
           }),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَدَدَ الشَّفْعِ وَالوَتْرِ",
@@ -1924,25 +1924,24 @@ export default [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ",
             translit: "Allāhumma ṣalli ‛alā sayyidinā Muḥammad",
-            translation:
-              "O Allah, bestow prayers upon our master Muhammad and his Family among the first.",
+            translation: "O Allah, bestow prayers upon our master Muhammad",
           }),
           new DhikrEntryModel({
             arabic: "وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ فِي الأَوَّلِينَ",
             translit: "wa‛alā āli sayyidinā Muḥammadin fil-awwalīn",
             translation:
-              "Bestow prayers upon our master Muhammad and his Family among the last.",
+              "and upon the Family of our master Muhammad among the first;",
           }),
           new DhikrEntryModel({
             arabic: "وَصَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ",
             translit: "wa-ṣalli ‛alā sayyidinā Muḥammad",
-            translation: "",
+            translation: "and bestow prayers upon our master Muhammad",
           }),
           new DhikrEntryModel({
             arabic: "وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ فِي الآخِرِينَ",
             translit: "wa‛alā āli sayyidinā Muḥammadin fil-ākhirīn",
             translation:
-              "Bestow prayers upon our master Muhammad and his Family in the Supreme Assembly until the Day of Judgment.",
+              "and upon the Family of our master Muhammad among the last;",
           }),
           new DhikrEntryModel({
             arabic:
