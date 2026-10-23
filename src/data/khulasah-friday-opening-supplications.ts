@@ -1,3 +1,4 @@
+import { falaq, ikhlas, nas } from "@/data/shared/quran";
 import { imran_19 } from "@/data/shared/quran-partial";
 import {
   DhikrEntryModel,
@@ -248,143 +249,13 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({
-        instruction:
-          "Then recite: Sūrah Al-Ikhlāṣ 11 times, and Sūrah Al-Falaq, Sūrah Al-Nās and Sūrah Al-Fātiḥah once each.",
-        entries: [
-          new DhikrEntryModel({
-            arabic: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
-            translit: "Bismillāhir raḥmānir raḥīm.",
-            translation:
-              "In the name of Allah, the Most Gracious, the Most Merciful.",
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "قُلْ هُوَ ٱللَّهُ أَحَدٌ",
-            translit: "Qul huwal lāhu aḥad.",
-            translation: 'Say, "He is Allāh, [who is] One,',
-            surah: 112,
-            verse: 1,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "ٱللَّهُ ٱلصَّمَدُ",
-            translit: "Allāhuṣ ṣamad.",
-            translation: "Allāh, the Eternal Refuge.",
-            surah: 112,
-            verse: 2,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "لَمْ يَلِدْ وَلَمْ يُولَدْ",
-            translit: "Lam yalid wa lam yūlad.",
-            translation: "He neither begets nor is born,",
-            surah: 112,
-            verse: 3,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
-            translit: "Wa lam yakul lahū kufuwan aḥad. (11 times)",
-            translation: 'Nor is there to Him any equivalent."',
-            surah: 112,
-            verse: 4,
-          }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
-            translit: "Bismillāhir raḥmānir raḥīm.",
-            translation:
-              "In the name of Allah, the Most Gracious, the Most Merciful.",
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ",
-            translit: "Qul a‛ūdhu birabbil falaq.",
-            translation: 'Say, "I seek refuge in the Lord of daybreak',
-            surah: 113,
-            verse: 1,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "مِن شَرِّ مَا خَلَقَ",
-            translit: "Min sharri mā khalaq.",
-            translation: "From the evil of that which He created",
-            surah: 113,
-            verse: 2,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
-            translit: "Wa min sharri ghāsiqin idhā waqab.",
-            translation: "And from the evil of darkness when it settles",
-            surah: 113,
-            verse: 3,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ",
-            translit: "Wa min sharrin naffāthāti fil ‛uqad.",
-            translation: "And from the evil of the blowers in knots",
-            surah: 113,
-            verse: 4,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
-            translit: "Wa min sharri ḥāsidin idhā ḥasad.",
-            translation: 'And from the evil of an envier when he envies."',
-            surah: 113,
-            verse: 5,
-          }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic: "بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
-            translit: "Bismillāhir raḥmānir raḥīm.",
-            translation:
-              "In the name of Allah, the Most Gracious, the Most Merciful.",
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
-            translit: "Qul a‛ūdhu birabbin nās.",
-            translation: 'Say, "I seek refuge in the Lord of mankind,',
-            surah: 114,
-            verse: 1,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "مَلِكِ ٱلنَّاسِ",
-            translit: "Malikin nās.",
-            translation: "The Sovereign of mankind,",
-            surah: 114,
-            verse: 2,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "إِلَٰهِ ٱلنَّاسِ",
-            translit: "Ilāhin nās.",
-            translation: "The God of mankind,",
-            surah: 114,
-            verse: 3,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ",
-            translit: "Min sharril waswāsil khannās.",
-            translation: "From the evil of the retreating whisperer -",
-            surah: 114,
-            verse: 4,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ",
-            translit: "Alladhī yuwaswisu fī ṣudūrin nās.",
-            translation: "Who whispers [evil] into the breasts of mankind -",
-            surah: 114,
-            verse: 5,
-          }),
-          new QuranDhikrEntryModel({
-            arabic: "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
-            translit: "Minal jinnati wannās.",
-            translation: 'From among the jinn and mankind".',
-            surah: 114,
-            verse: 6,
-          }),
-        ],
-      }),
+      ikhlas(
+        11,
+        "Then recite: Sūrah Al-Ikhlāṣ 11 times, and Sūrah Al-Falaq, Sūrah Al-Nās and Sūrah Al-Fātiḥah once each.",
+        true,
+      ),
+      falaq(1, "", true),
+      nas(1, "", true),
     ],
   }),
 ];
