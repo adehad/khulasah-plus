@@ -12,10 +12,10 @@ const homeContent = [
   new NavModel({ href: "hadrahs", title: "Hadrahs" }),
   new NavModel({ href: "blessed-occasions", title: "Blessed Occasions" }),
   // new NavModel({ href: "", title: "Visiting the Beloved ﷺ" }),
-  // new NavModel({
-  //   href: "",
-  //   title: "Prayers for the Victoring in Masjid Al-Aqsa and Palenstine",
-  // }),
+  new NavModel({
+    href: "prayers-for-palestine",
+    title: "Prayers for the Victoring in Masjid Al-Aqsa and Palenstine",
+  }),
 ];
 
 export default homeContent;
