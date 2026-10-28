@@ -1032,10 +1032,10 @@ export function anbiya_20(repeat = 1, enableCounter?: boolean) {
 /** end of Al-Anbiya 21:87 — used in blessed-occasions-rajab-istighfar, dalail-khayrat-6---Saturday, khulasah-last-part-of-night-adhkar-before-dawn */
 export function anbiya_87(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "لَآ إِلَٰهَ إِلَّآ أَنتَ سُبۡحَٰنَكَ إِنِّي كُنتُ مِنَ ٱلظَّٰلِمِينَ",
-    translit: "Lā ilāha illā anta subḥānaka innī kuntu minaẓ ẓālimīn.",
+    arabic: "… لَآ إِلَٰهَ إِلَّآ أَنتَ سُبۡحَٰنَكَ إِنِّي كُنتُ مِنَ ٱلظَّٰلِمِينَ",
+    translit: "… lā ilāha illā anta subḥānaka innī kuntu minaẓ ẓālimīn.",
     translation:
-      'And [mention] the man of the fish [i.e., Jonah], when he went off in anger and thought that We would not decree [anything] upon him. And he called out within the darknesses, "There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers."',
+      "… There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers.",
     surah: 21,
     verse: 87,
     repeat,
