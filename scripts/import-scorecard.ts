@@ -47,21 +47,31 @@ const replaceAll = (s: string, pairs: [number[], number][]) =>
     s,
   );
 
+const UTHMANI_HAMZA_MADDA = new RegExp(
+  String.fromCharCode(0x0623, 0x0653),
+  "g",
+);
+
 /**
  * Letter-form variants that do not change the reading: Persian letter shapes used by the old pages,
  * alif wasla, Uthmani small marks, and the Quranic sukun/open-tanwin glyphs. These are accepted silently.
  */
 const letterForms = (s: string) =>
-  replaceAll(s.normalize("NFC"), [
-    [[0x06cc], 0x064a], // Persian yeh
-    [[0x06a9], 0x0643], // keheh
-    [[0x06c1, 0x06be], 0x0647], // heh goal, heh doachashmee
-    [[0x0671], 0x0627], // alif wasla
-    [[0x06e1], 0x0652], // Quranic sukun
-    [[0x08f0], 0x064b],
-    [[0x08f1], 0x064c],
-    [[0x08f2], 0x064d],
-  ])
+  replaceAll(
+    s
+      .normalize("NFC")
+      .replace(UTHMANI_HAMZA_MADDA, String.fromCharCode(0x0622)),
+    [
+      [[0x06cc], 0x064a], // Persian yeh
+      [[0x06a9], 0x0643], // keheh
+      [[0x06c1, 0x06be], 0x0647], // heh goal, heh doachashmee
+      [[0x0671], 0x0627], // alif wasla
+      [[0x06e1], 0x0652], // Quranic sukun
+      [[0x08f0], 0x064b],
+      [[0x08f1], 0x064c],
+      [[0x08f2], 0x064d],
+    ],
+  )
     .replace(cls([0x0670]), "")
     .replace(QURANIC_MARKS, "")
     .replace(NON_ARABIC, " ")
