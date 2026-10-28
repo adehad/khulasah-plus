@@ -1,3 +1,4 @@
+import { NavModel } from "@/models/nav";
 import {
   QasidaChapterModel,
   QasidaEntryModel,
@@ -3000,5 +3001,13 @@ export default [
         ],
       }),
     ],
+  }),
+  new NavModel({
+    title: "Qasidah Mudhariyyah",
+    href: "the-burdah/qasidah-mudhariyyah",
+  }),
+  new NavModel({
+    title: "Qasidah Muhammadiyyah",
+    href: "the-burdah/qasidah-muhammadiyyah",
   }),
 ];
