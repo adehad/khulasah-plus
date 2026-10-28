@@ -117,11 +117,6 @@ export const pageConfigs: PageConfig[] = [
     contentImportPath: "khulasah-after-isha-index",
   },
   {
-    path: "khulasah/after-isha/adhkar",
-    title: "Adhkar after Isha",
-    contentImportPath: "khulasah-after-isha-adhkar",
-  },
-  {
     path: "khulasah/after-isha/wird-as-sakran",
     title: "Wird of Imam Abu Bakr as-Sakran",
     contentImportPath: "khulasah-after-isha-wird-as-sakran",
