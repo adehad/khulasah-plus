@@ -43,7 +43,7 @@ const theKhulasahContent = [
   }),
   new NavModel({
     title: "Friday ",
-    href: "/",
+    href: "khulasah/friday",
   }),
 ];
 
