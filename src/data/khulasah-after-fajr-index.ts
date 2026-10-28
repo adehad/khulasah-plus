@@ -23,7 +23,7 @@ export const afterFajrContent = [
   }),
   new NavModel({
     title: "Wird of Imam Abu Bakr as-Sakran",
-    href: "/",
+    href: "khulasah/after-fajr/wird-as-sakran",
   }),
   new NavModel({
     title: "Wird of Imam an-Nawawi",
