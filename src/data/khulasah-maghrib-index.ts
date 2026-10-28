@@ -3,7 +3,7 @@ import { NavModel } from "@/models/nav";
 export const adhkarBeforeOrAfterMaghribContent = [
   new NavModel({
     title: "Wird Al-Latif",
-    href: "/",
+    href: "khulasah/after-fajr/wird-al-latif",
   }),
   new NavModel({
     title: "Istighfar",
