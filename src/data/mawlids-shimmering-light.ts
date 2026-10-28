@@ -20,6 +20,8 @@ import {
 const shimmeringLight = [
   new QasidaModel({
     title: "The Shimmering Light",
+    instruction:
+      "In Mentioning the Birth of the Interceding Prophet, by the erudite scholar al-Habib Umar bin Hafiz",
     entries: [
       new QasidaChapterModel({
         number: 1,
@@ -1067,9 +1069,10 @@ const shimmeringLight = [
                 translit:
                   "subḥāna llāhi wa-l-ḥamdu li-llāhi wa-lā ilāha illá llāhu wa-llāhu akbar",
                 translation:
-                  "Glory be to Allāh, and praise be to Allāh, and there is no god but Allāh, and Allāh is the Greatest (four times). Then add:",
+                  "Glory be to Allāh, and praise be to Allāh, and there is no god but Allāh, and Allāh is the Greatest",
               }),
             ],
+            repeat: 4,
           }),
           new QasidaVerseModel({
             entries: [
@@ -1081,6 +1084,10 @@ const shimmeringLight = [
                 translation:
                   "There is no power and no strength except with Allāh, the Most High, the Magnificent, in every moment forever, to the number of His creation, to the extent of His pleasure, to the weight of His Throne, and the ink that it would take to write His Words.",
               }),
+            ],
+          }),
+          new QasidaVerseModel({
+            entries: [
               new QasidaEntryModel({
                 arabic: "وَتَجَلَّتِ الْأَنْوَارُ مِنْ كُلِّ الْجِهَـــا",
                 translit: "wa-tajallati l-anwāru min kulli l-jihā(ti)",
@@ -1113,17 +1120,8 @@ const shimmeringLight = [
       }),
       new QasidaChapterModel({
         number: 7,
-        title: "Chapter 7",
+        title: "Chapter 7 - Place of Standing",
         entries: [
-          new QasidaVerseModel({
-            entries: [
-              new QasidaEntryModel({
-                arabic: "مَحَلُّ الْمَقَام",
-                translit: "Maḥallul maqām",
-                translation: "Place of Standing",
-              }),
-            ],
-          }),
           new QasidaVerseModel({
             entries: [
               new QasidaEntryModel({
@@ -2228,17 +2226,8 @@ const shimmeringLight = [
       }),
       new QasidaChapterModel({
         number: 11,
-        title: "Chapter 11",
+        title: "Chapter 11 - Supplication",
         entries: [
-          new QasidaVerseModel({
-            entries: [
-              new QasidaEntryModel({
-                arabic: "الدُّعَاءُ",
-                translit: "duʿāʾu",
-                translation: "Supplication",
-              }),
-            ],
-          }),
           new QasidaVerseModel({
             entries: [
               new QasidaEntryModel({
