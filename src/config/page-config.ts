@@ -32,6 +32,11 @@ export const pageConfigs: PageConfig[] = [
     contentImportPath: "khulasah-after-fajr-index",
   },
   {
+    path: "khulasah/after-fajr/initial-adhkar",
+    title: "Initial adhkar",
+    contentImportPath: "khulasah-after-fajr-initial-adhkar",
+  },
+  {
     path: "khulasah/after-fajr/wird-al-latif",
     title: "Wird al Latif",
     contentImportPath: "khulasah-after-fajr-wird-latif",

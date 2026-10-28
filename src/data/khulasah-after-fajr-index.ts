@@ -3,7 +3,7 @@ import { NavModel } from "@/models/nav";
 export const afterFajrContent = [
   new NavModel({
     title: "Initial adhkar",
-    href: "/",
+    href: "khulasah/after-fajr/initial-adhkar",
   }),
   new NavModel({
     title: "Wird of Shaykh Abu Bakr bin Salim",
