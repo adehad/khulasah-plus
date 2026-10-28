@@ -17,21 +17,55 @@ import { WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
-    title: "Short Surahs",
-    entries: [
-      buruj(1, "", true),
-      tariq(1, "", true),
-      duha(1, "", true),
-      sharh(1, "", true),
-      qadr(1, "", true),
-      quraysh(1, "", true),
-      kawthar(1, "", true),
-      kafirun(1, "", true),
-      nasr(1, "", true),
-      masad(1, "", true),
-      ikhlas(1, "", true),
-      falaq(1, "", true),
-      nas(1, "", true),
-    ],
+    title: "Surah Buruj",
+    entries: [buruj(1, "", true)],
+  }),
+  new WirdModel({
+    title: "Surah Tariq",
+    entries: [tariq(1, "", true)],
+  }),
+  new WirdModel({
+    title: "Surah Duha",
+    entries: [duha(1, "", true)],
+  }),
+  new WirdModel({
+    title: "Surah Sharh",
+    entries: [sharh(1, "", true)],
+  }),
+  new WirdModel({
+    title: "Surah Qadr",
+    entries: [qadr(1, "", true)],
+  }),
+  new WirdModel({
+    title: "Surah Quraysh",
+    entries: [quraysh(1, "", true)],
+  }),
+  new WirdModel({
+    title: "Surah Kawthar",
+    entries: [kawthar(1, "", true)],
+  }),
+  new WirdModel({
+    title: "Surah Kafirun",
+    entries: [kafirun(1, "", true)],
+  }),
+  new WirdModel({
+    title: "Surah Nasr",
+    entries: [nasr(1, "", true)],
+  }),
+  new WirdModel({
+    title: "Surah Masad",
+    entries: [masad(1, "", true)],
+  }),
+  new WirdModel({
+    title: "Surah Ikhlas",
+    entries: [ikhlas(1, "", true)],
+  }),
+  new WirdModel({
+    title: "Surah Falaq",
+    entries: [falaq(1, "", true)],
+  }),
+  new WirdModel({
+    title: "Surah Nas",
+    entries: [nas(1, "", true)],
   }),
 ];

@@ -124,6 +124,7 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction: "Then raise your hands in supplication and say:",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ",
@@ -350,6 +351,20 @@ export default [
           }),
         ],
       }),
+    ],
+  }),
+  // An untitled, empty wird carries the rubric that sits between the two duas
+  new WirdModel({
+    title: "",
+    instruction:
+      "Pray for whatever you wish that is pleasing to Allah, the Exalted. Then read:",
+    entries: [],
+  }),
+  new WirdModel({
+    title: "Prayer on Completion of the Holy Qur'an",
+    instruction:
+      "By Imam Ali Zayn al-Abidin bin al-Husayn bin Imam Ali bin Abi Talib (Allah's pleasure be upon them)",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
