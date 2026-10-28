@@ -7,7 +7,7 @@ export const afterFajrContent = [
   }),
   new NavModel({
     title: "Wird of Shaykh Abu Bakr bin Salim",
-    href: "/",
+    href: "khulasah/after-fajr/wird-of-shaykh-abu-bakr-bin-salim",
   }),
   new NavModel({
     title: "al-Wird al-Latif",
