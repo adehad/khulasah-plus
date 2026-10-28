@@ -19,7 +19,7 @@ const mawlidsContent = [
   }),
   new NavModel({
     title: "Mawlid Barzanji",
-    href: "/",
+    href: "mawlids/mawlid-barzanji",
   }),
 ];
 
