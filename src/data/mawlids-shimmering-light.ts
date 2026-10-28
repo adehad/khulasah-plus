@@ -1066,7 +1066,8 @@ const shimmeringLight = [
                 arabic: "سُبْحَانَ ٱللَّهِ وَٱلْحَمْدُ لِلَّهِ وَلَا إِلَهَ إِلَّا ٱللَّهُ وَٱللَّهُ أَكْبَرُ",
                 translit:
                   "subḥāna llāhi wa-l-ḥamdu li-llāhi wa-lā ilāha illá llāhu wa-llāhu akbar",
-                translation: "four times. Then add:",
+                translation:
+                  "Glory be to Allāh, and praise be to Allāh, and there is no god but Allāh, and Allāh is the Greatest (four times). Then add:",
               }),
             ],
           }),
@@ -1077,7 +1078,8 @@ const shimmeringLight = [
                   "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّهِ الْعَلِيِّ الْعَظِيمِ فِي كُلِّ لَحْظَةٍ أَبَداً عَدَدَ خَلْقِهِ وَرِضَى نَفسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ",
                 translit:
                   "wa-lā ḥawla wa-lā quwwata illā bi-llāhi l-ʿaliyyi l-ʿaẓīmi fī kulli laḥẓatin abadan ʿadada khalqihi wa-riḍā nafsihi wa-zinata ʿarshihi wa-midāda kalimātihi",
-                translation: "Lights manifested from every direction.",
+                translation:
+                  "There is no power and no strength except with Allāh, the Most High, the Magnificent, in every moment forever, to the number of His creation, to the extent of His pleasure, to the weight of His Throne, and the ink that it would take to write His Words.",
               }),
               new QasidaEntryModel({
                 arabic: "وَتَجَلَّتِ الْأَنْوَارُ مِنْ كُلِّ الْجِهَـــا",
@@ -1864,7 +1866,7 @@ const shimmeringLight = [
             entries: [
               new QasidaEntryModel({
                 arabic: "عَنْ سِعَةِ الْعَقْلِ وَوَقَّادِ الحِجَا",
-                translit: "ʿan siyātil-ʿaqli wa-waqqādi l-ḥijā",
+                translit: "ʿan siʿatil-ʿaqli wa-waqqādi l-ḥijā",
                 translation: "revealing his vast intellect and great sagacity.",
               }),
               new QasidaEntryModel({

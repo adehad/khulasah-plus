@@ -93,7 +93,8 @@ export default [
               "سُبْحَانَ خَالِقِ النُّورِ. وَصَلَّى اللَّهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَآلِهِ وَصَحْبِهِ وَسَلَّمَ",
             translit:
               "subḥāna Khāliqin nūr. Wa ṣallallāhu ‛alā sayyidinā Muḥammadin wa ālihī wa ṣaḥbihī wa sallam",
-            translation: "Holy be You, the Creator of light.",
+            translation:
+              "Holy be You, the Creator of light. And may Allāh bless our master Muḥammad, and his family and companions, and grant them peace.",
           }),
         ],
       }),

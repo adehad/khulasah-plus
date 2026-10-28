@@ -180,7 +180,7 @@ export default [
             translit:
               "Wa lā ḥawla wa lā quwwata illā billāhil ‛aliyyil ‛aẓīm. wa ṣallallāhu ‛alā sayyidinā Muḥammadin wa ‛alā ālihī wa ṣaḥbihī wa sallam",
             translation:
-              "and may blessings and peace be upon our master Muḥammad his family and companions",
+              "And there is no power and no strength except with Allāh, the Most High, the Magnificent. And may blessings and peace be upon our master Muḥammad his family and companions",
           }),
         ],
       }),

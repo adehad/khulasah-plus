@@ -137,8 +137,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "وَأَنَّ النَّارَ حَقٌ",
-            translit:
-              "wa anna kulla mā jāʾa bihi rasūlu l-Lāhi ṣallā Allāhu ʿalayhi wa ālihi wa sallama ḥaqq.",
+            translit: "wa anna an-Nāra ḥaqq",
             translation: "and that the Fire is true,",
           }),
           new DhikrEntryModel({

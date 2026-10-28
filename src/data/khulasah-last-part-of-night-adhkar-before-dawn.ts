@@ -2225,8 +2225,7 @@ export default [
           new QasidaEntryModel({
             arabic: "وَالصَّحْبِ وَالتَّابِعِين",
             translit: "waṣṣaḥḥibi wattābi‛īn.",
-            translation:
-              "Poem of al-Habib Ali bin Muhammad al-Habashi - Rabbi inni",
+            translation: "and the Companions and the followers",
           }),
         ],
       }),
@@ -3388,7 +3387,8 @@ export default [
             arabic: "عَدَدَ خَلْقِهِ، وَرِضَى نَفْسِهِ، وَزِنَةَ عَرْشِهِ، وَمِدَادَ كَلِمَاتِهِ",
             translit:
               "‛Adada khalqihī wa riḍā nafsihī wa zinata ‛arshihī wa midāda kalimātihī.",
-            translation: "Verses of poetry by al-Habib Umar bin Hafiz",
+            translation:
+              "to the number of His creation, to the extent of His pleasure, to the weight of His Throne, and the ink that it would take to write His Words.",
           }),
         ],
       }),
@@ -3478,7 +3478,7 @@ export default [
           new QasidaEntryModel({
             arabic: "وَحَاسِدٍ مُعَانِدِ",
             translit: "wa ḥāsidin mu'ānidi",
-            translation: "Istighfar",
+            translation: "and every envious, obstinate one,",
           }),
           new QasidaEntryModel({
             arabic: "بِحَقِّ سِرِّ (طسٓمٓ)",
