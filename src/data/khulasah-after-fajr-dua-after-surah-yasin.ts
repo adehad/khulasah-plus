@@ -54,15 +54,11 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic: "Imam al-Haddad's dua after Surah Yasin:",
-            translit: "",
-            translation: "",
-          }),
-        ],
-      }),
+    ],
+  }),
+  new WirdModel({
+    title: "Imam al-Haddad's Dua after Surah Yasin",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
