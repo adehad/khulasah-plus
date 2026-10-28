@@ -4,6 +4,8 @@ export interface PageConfig {
   contentImportPath: string;
   /** Per-page meta description for SEO. Falls back to site-wide default in BaseLayout. */
   description?: string;
+  /** Reached by direct URL only; the navigation check does not require a link to it */
+  unlisted?: boolean;
 }
 
 export const pageConfigs: PageConfig[] = [
@@ -448,12 +450,14 @@ export const pageConfigs: PageConfig[] = [
     path: "salawat-rabi-al-awwal-1445",
     title: "Salawat - Rabi al-Awwal 1445",
     contentImportPath: "salawat-rabi-al-awwal-1445",
+    unlisted: true,
   },
   {
     path: "salawat-compilations/salawat-of-habib-ahmad-mashhur-al-haddad",
     title: "Salawat of Habib Ahmad Mashhur al-Haddad",
     contentImportPath:
       "salawat-compilations-salawat-of-habib-ahmad-mashhur-al-haddad",
+    unlisted: true,
   },
   {
     path: "salawat-compilations",
