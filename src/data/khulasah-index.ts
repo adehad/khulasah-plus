@@ -23,7 +23,7 @@ const theKhulasahContent = [
   }),
   new NavModel({
     title: "Dhuhr",
-    href: "/",
+    href: "khulasah/dhuhr/adhkar",
   }),
   new NavModel({
     title: "After Asr",
