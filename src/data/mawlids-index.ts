@@ -15,7 +15,7 @@ const mawlidsContent = [
   }),
   new NavModel({
     title: "Mawlid Dayba'i",
-    href: "/",
+    href: "mawlids/mawlid-dayba-i",
   }),
   new NavModel({
     title: "Mawlid Barzanji",
