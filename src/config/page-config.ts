@@ -422,7 +422,7 @@ export const pageConfigs: PageConfig[] = [
   {
     path: "hadrahs/hadrah-badriyyah",
     title: "Hadrah Badriyyah",
-    contentImportPath: "hadrah-badriyyah",
+    contentImportPath: "hadrahs-hadrah-badriyyah",
   },
   {
     path: "hadrahs/hadrah-ba-sawdan",
