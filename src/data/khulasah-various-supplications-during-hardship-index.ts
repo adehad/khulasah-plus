@@ -3,6 +3,7 @@ import { NavModel } from "@/models/nav";
 import {
   DhikrEntryModel,
   DhikrModel,
+  only_instruction,
   QasidaEntryModel,
   QasidaModel,
   QasidaVerseModel,
@@ -18,20 +19,12 @@ export const duringHardshipContent = [
       }),
     ],
   }),
-  new WirdModel({
-    title: "",
-    instruction: "Then read the following poem:",
-    entries: [],
-  }),
+  only_instruction("Then read the following poem:"),
   new NavModel({
     title: "Poem of Imam al-Haddad",
     href: "khulasah/various-supplications/during-hardship/poem",
   }),
-  new WirdModel({
-    title: "",
-    instruction: "Then read:",
-    entries: [],
-  }),
+  only_instruction("Then read:"),
   new QasidaModel({
     title: "",
     instruction: "Then read (3 times):",

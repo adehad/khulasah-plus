@@ -289,6 +289,11 @@ export class WirdModel extends BaseRecitationModel {
   }
 }
 
+/** A rubric that stands alone between links or sections, with nothing to recite under it */
+export function only_instruction(instruction: string) {
+  return new WirdModel({ title: "", instruction, entries: [] });
+}
+
 /**
  * Represents a Quran recitation model.
  *

@@ -1,5 +1,5 @@
 import { NavModel } from "@/models/nav";
-import { WirdModel } from "@/models/recitation";
+import { only_instruction } from "@/models/recitation";
 
 // The original page is a set of links to the Isha wirds and surahs with one reminder between them
 export const wird = [
@@ -11,12 +11,9 @@ export const wird = [
     title: "Wird of Imam an-Nawawi",
     href: "khulasah/after-isha/wird-of-imam-an-nawawi",
   }),
-  new WirdModel({
-    title: "",
-    instruction:
-      "Remember to read Sūrah Sajdah and Sūrah Tabārak (Al Mulk). It is better to read them in the two rak’āts after the ‘Ishā prayer.",
-    entries: [],
-  }),
+  only_instruction(
+    "Remember to read Sūrah Sajdah and Sūrah Tabārak (Al Mulk). It is better to read them in the two rak’āts after the ‘Ishā prayer.",
+  ),
   new NavModel({
     title: "Surah Sajdah",
     href: "khulasah/after-isha/surah-as-sajdah",
