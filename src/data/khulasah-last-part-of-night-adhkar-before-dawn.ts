@@ -87,14 +87,14 @@ export default [
         entries: [anbiya_87_verse()],
       }),
       new DhikrModel({
+        repeat: 40,
         entries: [
           new DhikrEntryModel({
             arabic: "يَا حَيُّ يَا قَيُّومُ",
             translit: "Yā ḥayyu yā qayyūmu",
             translation: "O Ever-Living, O Self-Sustaining,",
-            repeat: 40,
           }),
-          anbiya_87(40),
+          anbiya_87(),
         ],
       }),
       new DhikrModel({

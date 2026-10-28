@@ -73,14 +73,14 @@ export const wird = [
         ],
       }),
       new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "رَبَّنَا اغْفِرْ لَنَا",
             translit: "Rabbanaghfir lanā",
             translation: "Our Lord, forgive us",
-            repeat: 3,
           }),
-          baqarah_128(3),
+          baqarah_128(),
         ],
       }),
       new DhikrModel({

@@ -116,6 +116,7 @@ export default [
         ],
       }),
       new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "آمَنْتُ بِٱللَّهِ ٱلْعَظِيمِ وَكَفَرْتُ بِٱلْجِبْتِ وَٱلطَّاغُوتِ",
@@ -128,9 +129,8 @@ export default [
             arabic: "وَٱسْتَمْسَكْتُ",
             translit: "wastamsaktu",
             translation: "and I grasp",
-            repeat: 3,
           }),
-          baqarah_256(3),
+          baqarah_256(),
         ],
       }),
       new DhikrModel({

@@ -1032,10 +1032,10 @@ export function anbiya_20(repeat = 1, enableCounter?: boolean) {
 /** end of Al-Anbiya 21:87 — used in blessed-occasions-rajab-istighfar, dalail-khayrat-6---Saturday, khulasah-last-part-of-night-adhkar-before-dawn */
 export function anbiya_87(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
-    arabic: "… ٱلظُّلُمَٰتِ أَن لَّآ إِلَٰهَ إِلَّآ أَنتَ سُبۡحَٰنَكَ إِنِّي كُنتُ مِنَ ٱلظَّٰلِمِينَ",
-    translit: "… lā ilāha illā anta subḥānaka innī kuntu minaẓ ẓālimīna.",
+    arabic: "لَآ إِلَٰهَ إِلَّآ أَنتَ سُبۡحَٰنَكَ إِنِّي كُنتُ مِنَ ٱلظَّٰلِمِينَ",
+    translit: "Lā ilāha illā anta subḥānaka innī kuntu minaẓ ẓālimīn.",
     translation:
-      "… there is no deity but You, transcendent are You, truly I am amongst the wrongdoers.",
+      "There is no deity but You, transcendent are You, truly I am amongst the wrongdoers.",
     surah: 21,
     verse: 87,
     repeat,
