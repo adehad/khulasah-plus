@@ -1,4 +1,4 @@
-import { falaq, ikhlas, nas } from "@/data/shared/quran";
+import { falaq, fatihah, ikhlas, nas } from "@/data/shared/quran";
 import {
   baqarah_1,
   baqarah_2,
@@ -145,6 +145,7 @@ export default [
       ),
       falaq(1, "", true),
       nas(1, "", true),
+      fatihah(1, "", true),
     ],
   }),
 ];
