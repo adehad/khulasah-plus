@@ -13,10 +13,10 @@ export const salawatCompilationsContent = [
     title: "Dalail al-Khayrat",
     href: "salawat-compilations/dalail-khayrat",
   }),
-  // new NavModel({
-  //   title: "Majma al-Lata'if al-Arshiyyah",
-  //   href: "salawat-compilations/majma-al-lataif",
-  // }),
+  new NavModel({
+    title: "Majma al-Lata'if al-Arshiyyah",
+    href: "salawat-compilations/majma-al-lataif",
+  }),
 ];
 
 export default salawatCompilationsContent;
