@@ -19,7 +19,7 @@ export const afterFajrContent = [
   }),
   new NavModel({
     title: "Dua after Surah Yasin",
-    href: "/",
+    href: "khulasah/after-fajr/dua-after-surah-yasin",
   }),
   new NavModel({
     title: "Wird of Imam Abu Bakr as-Sakran",
