@@ -35,7 +35,7 @@ const theKhulasahContent = [
   }),
   new NavModel({
     title: "After Isha",
-    href: "/",
+    href: "khulasah/after-isha",
   }),
   new NavModel({
     title: "Various supplications",
