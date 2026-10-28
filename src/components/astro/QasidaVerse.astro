@@ -1,0 +1,95 @@
+---
+import type { QasidaVerseModel } from "@/models/recitation";
+import { repeatDisplay } from "@/utils/repeat";
+import QasidaEntry from "./QasidaEntry.astro";
+import RepeatNote from "./RepeatNote.astro";
+
+interface Props {
+  verse: QasidaVerseModel;
+  verseId: string;
+  label: number;
+}
+
+const { verse, verseId, label } = Astro.props;
+const { suffix } = repeatDisplay(verse.repeat, verse.entries.length);
+---
+
+<RepeatNote count={verse.repeat} lines={verse.entries.length} />
+{verse.chorus ? (
+  <Fragment>
+    <button class="chorus-toggle-button" data-chorus-target={verseId}>Chorus</button>
+    <div class="verses sticky-chorus" id={verseId}>
+      {verse.entries.map((entry) => <QasidaEntry entry={entry} repeatText={suffix} />)}
+    </div>
+  </Fragment>
+) : (
+  <Fragment>
+    <kp-sticky-button label={label} elementId={verseId} variant="verse"></kp-sticky-button>
+    <div class="verses" id={verseId}>
+      {verse.entries.map((entry) => <QasidaEntry entry={entry} repeatText={suffix} />)}
+    </div>
+  </Fragment>
+)}
+
+<style>
+  .verses {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chorus-toggle-button {
+    position: sticky;
+    top: 7rem;
+    width: 4ch;
+    writing-mode: sideways-rl;
+    padding: 8px 5px;
+    border-radius: 5px 15px 15px 5px;
+    z-index: 11;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    background-color: var(--sl-color-primary-700);
+    color: var(--sl-color-primary-50);
+    border: none;
+  }
+
+  .sticky-chorus {
+    transition: max-height 0.5s ease-out;
+    background-color: hsl(from var(--sl-color-primary-700) h s l / 90%);
+    color: var(--sl-color-primary-50);
+    top: 30px;
+    z-index: 9;
+    /* biome-ignore lint/complexity/noImportantStyles: overrides flex-basis set by parent grid */
+    flex-basis: 100% !important; /* Take full width when active */
+  }
+
+  .sticky-chorus.is-active {
+    position: sticky;
+    max-height: 70vh;
+    overflow-y: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    animation: slideIn 0.4s ease-out forwards;
+    padding: 20px;
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0.8;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* the qasida container is the size container: wide enough, the two hemistichs sit side by side */
+  @container (width > 600px) {
+    .verses {
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+</style>
