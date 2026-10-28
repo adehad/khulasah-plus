@@ -3,7 +3,7 @@ import { NavModel } from "@/models/nav";
 const homeContent = [
   new NavModel({ href: "khulasah", title: "Khulasah" }),
   new NavModel({ href: "mawlids", title: "Mawlids" }),
-  // new NavModel({ href: "the-burdah", title: "The Burdah" }),
+  new NavModel({ href: "the-burdah", title: "The Burdah" }),
   new NavModel({ href: "salawat-compilations", title: "Salawat Compilations" }),
   new NavModel({
     href: "dua-khatm-al-quran-al-karim",
