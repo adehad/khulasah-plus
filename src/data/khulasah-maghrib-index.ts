@@ -7,7 +7,7 @@ export const adhkarBeforeOrAfterMaghribContent = [
   }),
   new NavModel({
     title: "Istighfar",
-    href: "/",
+    href: "khulasah/maghrib/istighfar",
   }),
   new NavModel({
     title: "Ratib al-Attas",
