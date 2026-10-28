@@ -2,7 +2,8 @@ import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
-    title: "Adhkar after the Fajr adhan, but before the Fajr prayer",
+    title:
+      "Invocations (Adhkār) Before Fajr (after the Adhān but before the sunnah ṣalāh)",
     entries: [
       new DhikrModel({
         entries: [
@@ -23,10 +24,18 @@ export default [
             translit:
               "Fī kulli laḥẓatin abadan, ‛adada khalqihī wa riḍā nafsihī wa zinata ‛arshihī wa midāda kalimātihī.",
             translation:
-              "Do not forget to pray the two-rakaats sunnah of Fajr, as they have immense reward.",
+              "At every moment, forever, to the number of His creation, the extent of His good pleasure, the weight of His Throne, and the ink of His words.",
           }),
         ],
       }),
+    ],
+  }),
+  new WirdModel({
+    title:
+      "Supplication at Fajr (after the sunnah ṣalāh but before the Iqāmah)",
+    instruction:
+      "Do not forget to pray the two-rakaats sunnah of Fajr, as they have immense reward.",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -520,11 +529,13 @@ export default [
             arabic: "وَصَلَّى اللَّهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ",
             translit:
               "wa ṣallallāhu ‛alā sayyidinā Muḥammadin wa ‛alā ālihī wa ṣaḥbihī wa sallam.",
-            translation: "Then say:",
+            translation:
+              "And may Allāh bless our master Muḥammad, and his family and companions, and grant them peace.",
           }),
         ],
       }),
       new DhikrModel({
+        instruction: "Then say:",
         entries: [
           new DhikrEntryModel({
             arabic: "يَا حَيُّ يَا قَيُّومُ لَا إِلَهَ إِلَّا أَنْتَ",
@@ -542,11 +553,17 @@ export default [
               "يَا حَيُّ يَا قَيُّومُ أَحيِ الْقُلُوبَ تَحْيَا، وَأَصْلِح لَنَا الْأَعْمَالَ فِي الدِّينِ وَالدُّنْيَا",
             translit:
               "Yā ḥayyu yā qayyūmu iḥyil qulūba taḥyā, wa aṣliḥ lanal a‛māla fiddīni waddunyā.",
-            translation: "Dhikr before the iqama:",
+            translation:
+              "O Ever-Living, O Self-Sustaining, give life to the hearts so that they live, and set right our deeds in religion and in this world.",
             repeat: 18,
           }),
         ],
       }),
+    ],
+  }),
+  new WirdModel({
+    title: "Dhikr before the iqama",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({

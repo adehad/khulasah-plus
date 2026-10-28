@@ -19,7 +19,8 @@ import {
 
 export default [
   new WirdModel({
-    title: "Adhkar before dawn",
+    title:
+      "Adhkar in the latter part of the night after concluding the Witr prayer",
     entries: [
       new DhikrModel({
         entries: [
@@ -104,10 +105,16 @@ export default [
               "فِي كُلِّ لَحْظَةٍ أَبَدًا، عَدَدَ خَلقِكَ، وَرِضَى نَفْسِكَ، وَزِنَةَ عَرْشِكَ، وَمِدَادَ كَلِمَاتِكَ",
             translit:
               "Fī kulli laḥẓatin abadan, ‛adada khalqika, wa riḍā nafsika, wa zinata ‛arshika, wa midāda kalimātika.",
-            translation: "Supplications Using Allah’s Most Beautiful Names",
+            translation:
+              "in every moment forever, to the number of Your creation, to the extent of Your pleasure, to the weight of Your Throne, and the ink that it would take to write Your Words.",
           }),
         ],
       }),
+    ],
+  }),
+  new WirdModel({
+    title: "Supplications Using Allah’s Most Beautiful Names",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -519,12 +526,13 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "Repeat more or less 200 times, and intend with each repetition that Allāh will fulfill all one's needs.",
         entries: [
           new DhikrEntryModel({
             arabic: "يَا اللَّهُ",
             translit: "Yā Allāh",
-            translation:
-              "[Repeat more or less 200 times, and intend with each repetition that Allāh will fulfill all one's needs.]",
+            translation: "O Allah!",
             repeat: 200,
           }),
         ],
@@ -894,8 +902,7 @@ export default [
           new DhikrEntryModel({
             arabic: "يَا أَرْحَمَ الرَّاحِمِينَ",
             translit: "Yā arḥamar rāḥimīn.",
-            translation:
-              "Poem of Imam Abu Bakr bin Abdullah al-Aydarus - Ilahi Nas`aluk",
+            translation: "O Most Merciful of the merciful.",
             repeat: 3,
           }),
         ],
@@ -903,7 +910,9 @@ export default [
     ],
   }),
   new QasidaModel({
-    title: "",
+    title: "Poem of Imam Abu Bakr bin Abdullah al-Aydarus - Ilahi Nas`aluk",
+    instruction:
+      "This and the following poems are read in unison and with the repetition of the verses in bold (3 times). *The bracketed line was added by al-Ḥabīb Ibrāhīm bin ʽUmar bin ʽAqīl bin Yahya, who was the Muftī of Taiz.",
     entries: [
       new QasidaVerseModel({
         chorus: false,
@@ -1128,13 +1137,12 @@ export default [
           new QasidaEntryModel({
             arabic: "(وَنَاظِمَهَا أَبَا بَكْرٍ إِمَامًا",
             translit: "(Wa nāẓimahā abā bakrin imāman,",
-            translation:
-              "*This line was added by al-Ḥabīb Ibrāhīm bin ʽUmar bin ʽAqīl bin Yahya,",
+            translation: "(And the composer of theses verses, Abū Bakr,",
           }),
           new QasidaEntryModel({
             arabic: "حَبَاهُ إِلَهُهُ جَاهًا مَكِينًا)*",
             translit: "ḥabāhu ilāhuhū jāhan makīnā).",
-            translation: "who was the Muftī of Taiz",
+            translation: "an Imām whom his Lord endowed with immense stature).",
           }),
         ],
       }),
@@ -1207,7 +1215,7 @@ export default [
             arabic: "وَنَخْتِمُ بِالصَّلَاةِ عَلَى مُحَمَّدْ",
             translit: "Wa nakhtimu biṣṣalāti ‛alā Muḥammad,",
             translation:
-              "Imam Abdullah bin Alawi al-Haddad’s Poem - Ya 'Alim as-sirri",
+              "We complete this poem with salutations upon Muḥammad,",
           }),
           new QasidaEntryModel({
             arabic: "إِمَامِ الْكُلِّ خَيْرِ الشَّافِعِينَا",
@@ -1219,7 +1227,7 @@ export default [
     ],
   }),
   new QasidaModel({
-    title: "",
+    title: "Imam Abdullah bin Alawi al-Haddad’s Poem - Ya 'Alim as-sirri",
     entries: [
       new QasidaVerseModel({
         chorus: false,
@@ -1777,7 +1785,8 @@ export default [
     ],
   }),
   new QasidaModel({
-    title: "",
+    title:
+      "Poem of al-Habib Abdullah bin Husayn bin Tahir - Ya Arham ar-Rahimin",
     entries: [
       new QasidaVerseModel({
         chorus: true,
@@ -2232,7 +2241,7 @@ export default [
     ],
   }),
   new QasidaModel({
-    title: "",
+    title: "Poem of al-Habib Ali bin Muhammad al-Habashi - Rabbi inni",
     entries: [
       new QasidaVerseModel({
         chorus: false,
@@ -2381,7 +2390,7 @@ export default [
           new QasidaEntryModel({
             arabic: "وَاحْفَظِ الْقَلْبَ أَنْ يُلِمَّ بِهِ الشَّيــ",
             translit: "Waḥfaẓil qalba an yulimma bihish,",
-            translation: "Poem of Imam al-Haddad - Qad Kafani",
+            translation: "And guard the heart from being visited by",
           }),
           new QasidaEntryModel({
             arabic: "ــطَانُ وَالنَّفْسُ وَالْهَوَى وَالدَّنِيَّهْ",
@@ -2390,6 +2399,11 @@ export default [
           }),
         ],
       }),
+    ],
+  }),
+  new QasidaModel({
+    title: "Poem of Imam al-Haddad - Qad Kafani",
+    entries: [
       new QasidaVerseModel({
         chorus: true,
         entries: [
@@ -2456,12 +2470,12 @@ export default [
           new QasidaEntryModel({
             arabic: "قَدْ كَفَانِي عِلْمُ رَبِّي",
             translit: "Qad kafānī ‛ilmu rabbī,",
-            translation: "=339",
+            translation: "Enough for me is my Lord's knowledge",
           }),
           new QasidaEntryModel({
             arabic: "مِنْ سُؤَالِي وَاخْتِيَارِي",
             translit: "Min su’ālī wakhtiyārī.",
-            translation: "=340",
+            translation: "to spare me my asking and my choosing.",
           }),
         ],
       }),
@@ -2531,12 +2545,12 @@ export default [
           new QasidaEntryModel({
             arabic: "قَدْ كَفَانِي عِلْمُ رَبِّي",
             translit: "Qad kafānī ‛ilmu rabbī,",
-            translation: "=339",
+            translation: "Enough for me is my Lord's knowledge",
           }),
           new QasidaEntryModel({
             arabic: "مِنْ سُؤَالِي وَاخْتِيَارِي",
             translit: "Min su’ālī wakhtiyārī.",
-            translation: "=340",
+            translation: "to spare me my asking and my choosing.",
           }),
         ],
       }),
@@ -2606,12 +2620,12 @@ export default [
           new QasidaEntryModel({
             arabic: "قَدْ كَفَانِي عِلْمُ رَبِّي",
             translit: "Qad kafānī ‛ilmu rabbī,",
-            translation: "=339",
+            translation: "Enough for me is my Lord's knowledge",
           }),
           new QasidaEntryModel({
             arabic: "مِنْ سُؤَالِي وَاخْتِيَارِي",
             translit: "Min su’ālī wakhtiyārī.",
-            translation: "=340",
+            translation: "to spare me my asking and my choosing.",
           }),
         ],
       }),
@@ -2681,12 +2695,12 @@ export default [
           new QasidaEntryModel({
             arabic: "قَدْ كَفَانِي عِلْمُ رَبِّي",
             translit: "Qad kafānī ‛ilmu rabbī,",
-            translation: "=339",
+            translation: "Enough for me is my Lord's knowledge",
           }),
           new QasidaEntryModel({
             arabic: "مِنْ سُؤَالِي وَاخْتِيَارِي",
             translit: "Min su’ālī wakhtiyārī.",
-            translation: "=340",
+            translation: "to spare me my asking and my choosing.",
           }),
         ],
       }),
@@ -2756,20 +2770,19 @@ export default [
           new QasidaEntryModel({
             arabic: "قَدْ كَفَانِي عِلْمُ رَبِّي",
             translit: "Qad kafānī ‛ilmu rabbī,",
-            translation:
-              "Supplications of al-Habib Muhammad bin Abdullah al-Haddar",
+            translation: "Enough for me is my Lord's knowledge",
           }),
           new QasidaEntryModel({
             arabic: "مِنْ سُؤَالِي وَاخْتِيَارِي",
             translit: "Min su’ālī wakhtiyārī.",
-            translation: "=340",
+            translation: "to spare me my asking and my choosing.",
           }),
         ],
       }),
     ],
   }),
   new WirdModel({
-    title: "",
+    title: "Supplications of al-Habib Muhammad bin Abdullah al-Haddar",
     entries: [
       new DhikrModel({
         entries: [
@@ -3090,10 +3103,16 @@ export default [
             arabic: "عَدَدَ خَلقِهِ، وَرِضَى نَفْسِهِ، وَزِنَةَ عَرْشِهِ، وَمِدَادَ كَلِمَاتِهِ",
             translit:
               "‛Adada khalqihī wa riḍā nafsihī wa zinata ‛arshihī wa midāda kalimātihī.",
-            translation: "Wird of Sayyidina al-Shaykh Abu Bakr bin Salim",
+            translation:
+              "to the number of His creation, the pleasure of Himself, the weight of His Throne and the ink of His words.",
           }),
         ],
       }),
+    ],
+  }),
+  new WirdModel({
+    title: "Wird of Sayyidina al-Shaykh Abu Bakr bin Salim",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -3395,7 +3414,7 @@ export default [
     ],
   }),
   new QasidaModel({
-    title: "",
+    title: "Verses of poetry by al-Habib Umar bin Hafiz",
     entries: [
       new QasidaVerseModel({
         chorus: false,
@@ -3490,7 +3509,7 @@ export default [
     ],
   }),
   new WirdModel({
-    title: "",
+    title: "Istighfar",
     entries: [
       new DhikrModel({
         repeat: 27,

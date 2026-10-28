@@ -1,3 +1,4 @@
+import { ikhlas, kafirun } from "@/data/shared/quran";
 import {
   imran_190,
   imran_191,
@@ -18,11 +19,9 @@ import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 export default [
   new WirdModel({
     title: "Supplication when awakening from sleep",
+    instruction:
+      "Remember my brother/sister, the etiquette and supplications for awakening from sleep, ablution and prayer.",
     entries: [
-      new DhikrModel({
-        instruction:
-          "Remember my brother/sister, the etiquette and supplications for awakening from sleep, ablution and prayer.",
-      }),
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -30,13 +29,12 @@ export default [
             translit:
               "Alḥamdulillāhilladhī aḥyānā ba‛damā amātanā wa ilayhin nushūr.",
             translation:
-              "Praise be to Allāh, Who has given us life after causing us to die",
+              "Praise be to Allāh, Who has given us life after causing us to die, and unto Him is the resurrection.",
           }),
           new DhikrEntryModel({
             arabic: "الْحَمْدُ لِلَّهِ الَّذِي رَدَّ عَلَيَّ رُوحِي",
             translit: "Alḥamdulillāhilladhī radda ‛alayya rūḥī,",
-            translation:
-              "and unto Him is the resurrection. Praise be to Allāh Who has returned my soul",
+            translation: "Praise be to Allāh Who has returned my soul,",
           }),
           new DhikrEntryModel({
             arabic: "وَعَافَانِي فِي جَسَدِي",
@@ -49,7 +47,6 @@ export default [
             translation: "and allowed me to remember Him.",
           }),
         ],
-        title: "Supplication when awakening from sleep",
       }),
       new DhikrModel({
         entries: [
@@ -218,12 +215,12 @@ export default [
     ],
   }),
   new WirdModel({
-    title: "The TAHAJJUD PRAYER",
+    title: "The Tahajjud Prayer",
+    instruction: "The Tahajjud prayer starts with two short raka‛āt.",
     entries: [
       new DhikrModel({
         entries: [nisa_64()],
-        instruction:
-          "Two short raka‛āt. • In the FIRST RAKAʽAH, after Sūrah al-Fātiḥah recite:",
+        instruction: "In the FIRST RAKAʽAH, after Sūrah al-Fātiḥah recite:",
       }),
       new DhikrModel({
         entries: [
@@ -235,7 +232,7 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({ instruction: "Then recite: Sūrah al-Kāfirūn" }),
+      kafirun(1, "Then recite Sūrah al-Kāfirūn:"),
       new DhikrModel({
         entries: [nisa_110()],
         instruction: "In the SECOND RAKAʽAH, after Sūrah al-Fātiḥah recite:",
@@ -250,7 +247,7 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({ instruction: "Then recite: Sūrah Al-Ikhlāṣ" }),
+      ikhlas(1, "Then recite Sūrah Al-Ikhlāṣ:"),
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -259,14 +256,14 @@ export default [
             translit:
               "Allāhu akbar (10), alḥamdulillāh (10), subḥānallāhi wa biḥamdih (10), subḥānal malikil quddūs (10), astaghfirullāh (10), lā ilāha illallāh (10).",
             translation:
-              "Allāh is the Greatest (10 times); All Praise be to Allāh (10 times); Glory and praise be to Allāh (10 times); Glory be to the Most Pure One (10 times); I ask Allāh's forgiveness (10 times); There is no god",
+              "Allāh is the Greatest (10 times); All Praise be to Allāh (10 times); Glory and praise be to Allāh (10 times); Glory be to the Most Pure One (10 times); I ask Allāh's forgiveness (10 times); There is no god, but Allāh (10 times);",
           }),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ ضِيقِ الدُّنْيَا وَضِيقِ يَوْمِ الْقِيَامَةِ (10)",
             translit:
               "Allāhumma innī a‛ūdhu bika min ḍīqid dunyā wa ḍīqi yawmil qiyāmah (10).",
             translation:
-              "but Allāh (10 times); O Allāh! I seek refuge in You from the distress of this world, and the distress of the Day of Judgement. (10 times).",
+              "O Allāh! I seek refuge in You from the distress of this world, and the distress of the Day of Judgement. (10 times).",
           }),
         ],
         instruction: "Say afterwards:",
