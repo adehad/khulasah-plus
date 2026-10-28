@@ -961,7 +961,7 @@ export default [
             translit:
               "wa ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin kullamā dhakarahudh dhākirūna",
             translation:
-              "Glorious. And bless and grant peace and blessings on Our Master Muhammad and the family of Our Master Muhammad when ever he is mentioned by those who do dhikr",
+              "And bless and grant peace and blessings on Our Master Muhammad and the family of Our Master Muhammad when ever he is mentioned by those who do dhikr",
           }),
           new DhikrEntryModel({
             arabic: "وَغَفَلَ عَنْ ذِكْرِهِ الغَافِلُونَ.",

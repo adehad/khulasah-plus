@@ -3525,12 +3525,13 @@ export default [
             arabic: "[مَعَ الرِّضَى مِنْكَ فِي عَفْوٍ وَعَافِيَةٍ",
             translit: "[ma‛ar-riḍā minka fī ‛afwin wa‛āfiyah",
             translation:
-              "[with Your good pleasure. And grant us pardon, well-being, and a good end to our lives,",
+              "[with Your good pleasure, and grant us pardon, well-being,",
           }),
           new QasidaEntryModel({
             arabic: "وَحُسْنِ خَاتِمَةٍ إِنْ يَنْقَضِ العُمُرُ]",
             translit: "wa-ḥusni khātimatin in yanquḍil-‛umur]",
-            translation: "whenever our time comes.]",
+            translation:
+              "and a good end to our lives, whenever our time comes.]",
           }),
         ],
       }),
