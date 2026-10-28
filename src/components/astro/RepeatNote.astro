@@ -1,0 +1,21 @@
+---
+import { repeatDisplay } from "@/utils/repeat";
+
+interface Props {
+  count: number;
+  /** how many lines repeat together; a single line shows its count inline instead */
+  lines: number;
+}
+
+const { count, lines } = Astro.props;
+const { note } = repeatDisplay(count, lines);
+---
+
+{note && <p class="instruction repeat-note">(Repeat the following x{count})</p>}
+
+<style>
+  .repeat-note {
+    text-align: center;
+    margin-top: 0.5em;
+  }
+</style>
