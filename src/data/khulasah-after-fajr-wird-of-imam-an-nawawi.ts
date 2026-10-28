@@ -12,6 +12,8 @@ import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 export default [
   new WirdModel({
     title: "Wird of Imam an-Nawawi",
+    instruction:
+      "(as written in the 2013, 2018 and 2022 editions of the Khulasah book published by Maktab at-Tawthiq in Dar al-Mustafa ﷺ)",
     entries: [
       new DhikrModel({
         entries: [
@@ -426,11 +428,13 @@ export default [
             translit:
               "Wa lā ḥawla wa lā quwwata illā billāhil ‛aliyyil ‛aẓīm, wa ṣallallāhu ‛alā sayyidinā Muḥammadanin nabiyyil ummiyyi wa ‛alā ālihī wa ṣaḥbihī wa sallam.",
             translation:
-              "Then blow lightly, without spitting, to your right (3 times), to your left (3 times), in front of you (3 times), and behind you (3 times).",
+              "And there is no might and no power except through Allāh, the Most High, the Magnificent. And may Allāh bless our master Muḥammad, the unlettered Prophet, and his family and companions, and grant them peace.",
           }),
         ],
       }),
       new DhikrModel({
+        instruction:
+          "Then blow lightly, without spitting, to your right (3 times), to your left (3 times), in front of you (3 times), and behind you (3 times).",
         entries: [
           new DhikrEntryModel({
             arabic: "خَبَأْتُ نَفْسِي فِي خَزَائِنِ بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
@@ -520,7 +524,7 @@ export default [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ يَا مَنِ اسْمُهُ مَحبُوبٌ",
             translit: "Allāhumma yā manismuhū maḥbūbun",
-            translation: "Then say:",
+            translation: "O Allāh, O He whose name is beloved,",
           }),
           new DhikrEntryModel({
             arabic: "وَوَجْهُهُ مَطْلُوبٌ",
@@ -553,6 +557,7 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction: "Then say:",
         entries: [
           new DhikrEntryModel({
             arabic: "حَسْبُنَا ٱللَّهُ وَنِعْمَ الْوَكِيلُ",

@@ -15,6 +15,7 @@ import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 export default [
   new WirdModel({
     title: "Wird al Latif",
+    instruction: "al-Wird al-Latif of Imam al-Haddad",
     entries: [
       ikhlas(3, "", true),
       falaq(3, "", true),

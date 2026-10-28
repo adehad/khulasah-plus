@@ -1,11 +1,14 @@
-import { kafirun } from "@/data/shared/quran";
+import { falaq, ikhlas, kafirun, nas } from "@/data/shared/quran";
 import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
-    title: "Etiquettes and supplications of sleep",
+    title: "Supplication for Sleep",
+    instruction: "Do not forget the etiquettes and supplications of sleep.",
     entries: [
       new DhikrModel({
+        instruction:
+          "Perform ablution. Come to your bed. Beat the dust off it (3 times). Lie on your right side facing the qibla, with a pure heart, free of deceit and malice, and say repentantly:",
         entries: [
           new DhikrEntryModel({
             arabic: "بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي",
@@ -168,6 +171,12 @@ export default [
           }),
         ],
       }),
+      ikhlas(
+        11,
+        "Then recite Sūrah al-Ikhlāṣ, Sūrah al-Falaq and Sūrah an-Nās while your palms are joined together (but open, facing heaven). Then blow into your palms, and rub them over whatever part of your body you can, starting from the top of your head, drawing them over your face, and down to the rest of what you can reach of your body (3 times).",
+      ),
+      falaq(),
+      nas(),
       new DhikrModel({
         repeat: 3,
         entries: [
@@ -200,6 +209,7 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction: "Then place your right hand under your cheek and say:",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ قِنِي عَذَابَكَ يَوْمَ تَبْعَثُ عِبَادَكَ",
@@ -210,8 +220,9 @@ export default [
           }),
         ],
       }),
-      kafirun(1, "Let the last thing you say be:"),
+      kafirun(1, "Then recite Sūrah al-Kāfirūn."),
       new DhikrModel({
+        instruction: "Let the last thing you say be:",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ أَسْلَمْتُ نَفْسِي إِلَيْكَ",

@@ -20,6 +20,8 @@ import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 const hizbAlBahrContent = [
   new WirdModel({
     title: "Hizb al-Bahr",
+    instruction:
+      "Ḥizb al-Baḥr (Litany of the Sea) of Sayyidi Abul Ḥasan al-Shādhilī",
     entries: [
       new DhikrModel({
         entries: [

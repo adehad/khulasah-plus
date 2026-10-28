@@ -1,3 +1,4 @@
+import { fatihah } from "@/data/shared/quran";
 import {
   baqarah_127,
   baqarah_128,
@@ -8,6 +9,7 @@ import {
   saffat_181,
   saffat_182,
 } from "@/data/shared/quran-partial";
+import { NavModel } from "@/models/nav";
 import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
@@ -118,32 +120,37 @@ export default [
             translit:
               "Fī kulli laḥẓatin abadan, ‛adada khalqihī wa riḍā nafsihī wa zinata ‛arshihī wa midāda kalimātihī.",
             translation:
-              "And one adds after the ṣalāh of Fajr and Maghrib, before folding one's legs:",
+              "At every moment, forever, to the number of His creation, the extent of His good pleasure, the weight of His Throne, and the ink of His words.",
           }),
         ],
       }),
       new DhikrModel({
+        instruction:
+          "And one adds after the ṣalāh of Fajr and Maghrib, before folding one's legs:",
         entries: [
           new DhikrEntryModel({
             arabic:
               "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلكُ وَلَهُ الْحَمْدُ، يُحْيِي وَيُمِيتُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
             translit:
               "Lā ilāha illallāhu waḥdahū lā sharīka lahū, lahul mulku wa lahul ḥamdu yuḥyī wa yumītu wa huwa ‛alā kulli shay’in qadīr",
-            translation: "If it is morning, one then says:",
+            translation:
+              "There is no god but Allāh, alone, without partner. His is the dominion and His is all praise. He gives life and causes death, and He has power over all things.",
             repeat: 10,
           }),
         ],
       }),
       new DhikrModel({
+        instruction: "If it is morning, one then says:",
         entries: [
           new DhikrEntryModel({
             arabic: "وَإِلَيهِ النُّشُورُ",
             translit: "wa ilayhin nushūr",
-            translation: "If it is evening, one says:",
+            translation: "and unto Him is the resurrection.",
           }),
         ],
       }),
       new DhikrModel({
+        instruction: "If it is evening, one says:",
         entries: [
           new DhikrEntryModel({
             arabic: "وَإِلَيهِ الْـمَصِيرُ",
@@ -258,8 +265,7 @@ export default [
           new DhikrEntryModel({
             arabic: "سُبْحَانَ اللَّه",
             translit: "Subḥānallāh",
-            translation:
-              "Then one raises their hands in supplication, and says (silently):",
+            translation: "Glory be to Allāh.",
             repeat: 33,
           }),
           new DhikrEntryModel({
@@ -297,6 +303,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "Then one raises their hands in supplication, and says (silently):",
         entries: [
           new DhikrEntryModel({
             arabic:
@@ -304,11 +312,13 @@ export default [
             translit:
               "Alḥamdulillāhi rabbil ‛ālamīn, Allāhumma ṣalli wa sallim ‛alā sayyidinā Muḥammadin wa ‛alā āli sayyidinā Muḥammad.",
             translation:
-              "Then one supplicates for whatever one wants and with which Allāh Most High is pleased, and ends with the supplication of Imām al-Ḥaddād, which is:",
+              "All praise is for Allāh, Lord of the worlds. O Allāh, bless and grant peace to our master Muḥammad and the family of our master Muḥammad.",
           }),
         ],
       }),
       new DhikrModel({
+        instruction:
+          "Then one supplicates for whatever one wants and with which Allāh Most High is pleased, and ends with the supplication of Imām al-Ḥaddād, which is:",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ أَخْرِجْ مِنْ قَلْبِي كُلَّ قَدْرٍ لِلدُّنْيَا",
@@ -419,11 +429,13 @@ export default [
             arabic: "فِي كُلِّ لَحْظَةٍ أَبَدًا عَدَدَ خَلْقِهِ وَرِضَى نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ",
             translit:
               "Fī kulli laḥẓatin abadan, ‛adada khalqihī wa riḍā nafsihī wa zinata ‛arshihī wa midāda kalimātihī.",
-            translation: "After the Fajr and Maghrib prayers add:",
+            translation:
+              "At every moment, forever, to the number of His creation, the extent of His good pleasure, the weight of His Throne, and the ink of His words.",
           }),
         ],
       }),
       new DhikrModel({
+        instruction: "After the Fajr and Maghrib prayers add:",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ أَجِرْنَا مِنَ النَّارِ",
@@ -484,10 +496,20 @@ export default [
             translit:
               "Fī kulli laḥẓatin abadan, ‛adada khalqihī wa riḍā nafsihī wa zinata ‛arshihī wa midāda kalimātihī.",
             translation:
-              "A supplication for all Muslims is recommended after every salah",
+              "At every moment, forever, to the number of His creation, the extent of His good pleasure, the weight of His Throne, and the ink of His words.",
           }),
         ],
       }),
+    ],
+  }),
+  new NavModel({
+    title: "A supplication for all Muslims is recommended after every salah",
+    href: "khulasah/various-supplications/supplication-for-all-muslims",
+  }),
+  new WirdModel({
+    title: "",
+    instruction: "After the Fajr and Asr prayers add:",
+    entries: [
       new DhikrModel({
         entries: [ra_d_28()],
       }),
@@ -547,10 +569,12 @@ export default [
           new DhikrEntryModel({
             arabic: "صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ",
             translit: "Ṣallallāhu ‛alayhi wa ālihī wa sallam.",
-            translation: "Then recite Sūrah Al-Fātiḥah.",
+            translation:
+              "May the blessings and peace of Allāh be upon him and his family.",
           }),
         ],
       }),
+      fatihah(1, "Then recite Sūrah Al-Fātiḥah."),
     ],
   }),
 ];

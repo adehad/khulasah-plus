@@ -16,6 +16,8 @@ import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 export default [
   new WirdModel({
     title: "Wird of Imam Abu Bakr as-Sakran",
+    instruction:
+      "Wird of Imam Abu Bakr as-Sakran bin Shaykh Abdur Rahman as-Saqqaf",
     entries: [
       new DhikrModel({
         entries: [

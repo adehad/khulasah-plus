@@ -3,6 +3,12 @@ import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 export default [
   new WirdModel({
     title: "The Duha prayer",
+    instruction:
+      "Do not neglect the prayer after sunrise (Ḍuḥā) as its virtue is great. It consists of two raka‛āt or more; up to 8 or 12 raka‛āt. Imam Muslim narrated in his Sahih from Abu Dharr (may Allah be pleased with him) that the Messenger of Allah (peace and blessings be upon him and his family) said: Charity is due on account of every joint of a person's body, each morning. Every saying of ‘Glory be to Allah’ is charity. Every saying of ‘Praise be to Allah’ is charity. Every saying of ‘There is no god but Allah’ is charity. Every saying of ‘Allah is the Greatest’ is charity. Enjoining good is charity. Forbidding evil is charity. And what suffices for that are two rak`ahs of Duha.",
+    entries: [],
+  }),
+  new WirdModel({
+    title: "Supplication after the Ḍuḥā prayer",
     entries: [
       new DhikrModel({
         entries: [
@@ -42,6 +48,7 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction: "Then say, while raising up your hands:",
         entries: [
           new DhikrEntryModel({
             arabic: "يَا بَاسِطُ",
@@ -52,6 +59,7 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction: "Then bring your hands together, saying:",
         entries: [
           new DhikrEntryModel({
             arabic: "ابْسُط عَلَيْنَا الْخَيْرَ وَالرِّزْقَ",

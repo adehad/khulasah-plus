@@ -12,6 +12,8 @@ import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 export const wird = [
   new WirdModel({
     title: "Ratib Imam Al-Haddad",
+    instruction:
+      "The famous Ratib al-Haddad of Imām ‛Abdullah ibn ‛Alawī al-Ḥaddād",
     audio: {
       url: "https://cdn.jsdelivr.net/gh/adehad/khulasah-plus-cdn@main/audio/khulasah-maghrib-ratib-al-haddad.opus",
       title: "Ratib al Imam Al Haddad",
@@ -615,6 +617,8 @@ export const wird = [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "After reading the Fātiḥah one raises their hands and asks for whatever one wants and then says:",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ إِنَّا نَسْأَلُكَ رِضَاكَ وَالْجَنَّةَ وَنَعُوذُ بِكَ مِنْ سَخَطِكَ وَالنَّارِ",
@@ -627,6 +631,7 @@ export const wird = [
         ],
       }),
       new DhikrModel({
+        instruction: "The following is added:",
         entries: [
           new DhikrEntryModel({
             arabic:

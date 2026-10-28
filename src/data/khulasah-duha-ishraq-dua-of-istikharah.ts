@@ -2,7 +2,9 @@ import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
-    title: "Dua of Istikharah",
+    title: "Supplication of Istikhārah",
+    instruction:
+      "The Messenger of Allāh, may the blessings and peace of Allāh be upon him and his family, said: When anyone of you has an important matter to decide, let him pray two raka‛āt, other than the compulsory prayer, and then say:",
     entries: [
       new DhikrModel({
         entries: [
@@ -98,6 +100,13 @@ export default [
           }),
         ],
       }),
+    ],
+  }),
+  new WirdModel({
+    title: "Specific and General Supplications of Istikhārah",
+    instruction:
+      "Every day after the Ishrāq (sunrise) and ḍuḥā (early morning) prayers, four or two raka‛āt, with the intention of Istikhārah, should be performed. Then the supplicant says:",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({

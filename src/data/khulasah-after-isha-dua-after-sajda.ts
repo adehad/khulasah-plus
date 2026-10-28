@@ -3,35 +3,37 @@ import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 export default [
   new WirdModel({
     title: "Dua after sajda tilawa or sajda shukr",
+    instruction:
+      "Supplication made after sajda tilawa (prostration after a verse of the Holy Quran that necessitates prostration) or sajda shukr (prostration of thankfulness):",
     entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ لَكَ سَجَدتُ",
             translit: "Allāhumma laka sajadtu",
-            translation: "O Allah",
+            translation: "O Allah, to You I have prostrated.",
           }),
           new DhikrEntryModel({
             arabic: "وَبِكَ آمَنتُ",
             translit: "Wa bika āmantu",
-            translation: "to You I have prostrated. In You",
+            translation: "In You, I have believed.",
           }),
           new DhikrEntryModel({
             arabic: "وَلَكَ أَسْلَمتُ",
             translit: "Wa laka aslamtu",
-            translation: "I have believed. To You",
+            translation: "To You, I have submitted.",
           }),
           new DhikrEntryModel({
             arabic: "سَجَدَ وَجْهِيَ لِلَّذِي خَلَقَهُ وَصَوَّرَهُ وَشَقَّ سَمعَهُ وَبَصَرَهُ بِحَوْلِهِ وَقُوَّتِهِ",
             translit:
               "Sajada wajhiya lilladhī khalaqahū wa ṣawwarahū wa shaqqa sam‛ahū wa baṣarahū biḥawlihī wa quwwatih",
             translation:
-              "I have submitted. My face fell prostrate before He who created it and brought forth its faculties of hearing and seeing by His might and power. Blessed is Allah",
+              "My face fell prostrate before He who created it and brought forth its faculties of hearing and seeing by His might and power.",
           }),
           new DhikrEntryModel({
             arabic: "فَتَبَارَكَ اللَّهُ أَحسَنُ الْخَالِقِينَ",
             translit: "Fatabārakallāhu aḥsanul khāliqīn",
-            translation: "the best of creators.",
+            translation: "Blessed is Allah, the best of creators.",
           }),
         ],
       }),

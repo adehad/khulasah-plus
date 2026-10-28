@@ -20,6 +20,7 @@ import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 export default [
   new WirdModel({
     title: "Ratib al-Attas",
+    instruction: "The Ratib of al-Imam Umar bin Abdurrahman al-Attas",
     entries: [
       new DhikrModel({
         entries: [
@@ -301,6 +302,7 @@ export default [
         entries: [...baqarah_285_286()],
       }),
       new DhikrModel({
+        instruction: "Then read:",
         entries: [
           new DhikrEntryModel({
             arabic:
@@ -488,7 +490,6 @@ export default [
         ],
       }),
       new DhikrModel({
-        instruction: "Then say:",
         entries: [
           new DhikrEntryModel({
             arabic:
@@ -533,6 +534,7 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction: "Then say:",
         entries: [
           new DhikrEntryModel({
             arabic:
