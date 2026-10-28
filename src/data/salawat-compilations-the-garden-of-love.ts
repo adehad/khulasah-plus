@@ -19,25 +19,9 @@ import {
 export default [
   new WirdModel({
     title: "The Garden of Love",
+    instruction:
+      "Rawḍatul-Maḥabbah fiṣ-ṣalāti ‛alā Sayyidil-Aḥibbah: The Garden of Love, in sending blessings upon the Master of the beloved ones",
     entries: [
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic: "رَوْضَةُ المَحَبَّة",
-            translit: "Rawḍatul-maḥabbah",
-            translation: "The Garden of Love",
-          }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic: "فِي الصَّلَاةِ عَلَى سَيِّدِ الأَحِبَّة",
-            translit: "Fī aṣ-ṣalāti ‛alā sayyidil-aḥibbah",
-            translation: "The Garden of Love:",
-          }),
-        ],
-      }),
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
