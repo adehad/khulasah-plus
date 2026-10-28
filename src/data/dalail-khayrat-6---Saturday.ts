@@ -1,3 +1,4 @@
+import { anbiya_87, saffat_96 } from "@/data/shared/quran-partial";
 import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
@@ -16,23 +17,23 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin wa aʿṭihil wasīlata wal faḍīlata",
             translation:
-              "O Allah, bless Our Master Muhammad and the family of Our Master Muhammad and give him the closest access",
+              "O Allah, bless Our Master Muhammad and the family of Our Master Muhammad and give him the closest access and the preeminence",
           }),
           new DhikrEntryModel({
             arabic: "وَالدَّرَجَةَ الرَّفِيعَةَ",
             translit: "wa darajatar rafīʾata",
-            translation: "the preeminence",
+            translation: "and the lofty rank.",
           }),
           new DhikrEntryModel({
             arabic: "وَابْعَثْهُ اللَّهُمَّ مَقَامًا مَحْمُودًا الَّذِي وَعَدْتَهُ",
             translit: "wabʾath-hu Allāhumma maqāman maḥmūdanalladhi waʿadtahu",
-            translation: "and the lofty rank. Elevate him",
+            translation:
+              "Elevate him, O Allah, to the Praiseworthy Station that You promised him,",
           }),
           new DhikrEntryModel({
             arabic: "إِنَّكَ لَا تُخْلِفُ المِيعَادَ.",
             translit: "innaka lā tukhliful mīʿād.",
-            translation:
-              "O Allah, to the Praiseworthy Station that You promised him, for You do not renege on Your promise.",
+            translation: "for You do not renege on Your promise.",
           }),
         ],
       }),
@@ -195,15 +196,11 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic: "ابتداء الثلث الثالث",
-            translit: "Ibtidāʾ ath-thulth ath-thālith",
-            translation: "Beginning of the Third Quarter",
-          }),
-        ],
-      }),
+    ],
+  }),
+  new WirdModel({
+    title: "Beginning of the Last Third",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -420,7 +417,8 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَدَدَ عِلْمِكَ",
-            translit: "Allāhumma ṣalli ʿalā sayyidinā Muhammad ʿadada ʿilmika",
+            translit:
+              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin ʿadada ʿilmika",
             translation:
               "O Allah, bless Our Master Muhammad to the extent of Your knowledge",
           }),
@@ -599,7 +597,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "وَجَوْفِهَا وَقِبْلَتِهَا",
-            translit: "wa jawfīhā wa qiblatihā",
+            translit: "wa jawfihā wa qiblatihā",
             translation: "and in the north and south",
           }),
           new DhikrEntryModel({
@@ -613,7 +611,7 @@ export default [
             arabic:
               "وَصَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَدَدَ مَا خَلَقْتَ فِي بِحَارِكَ مِنَ الحِيتَانِ وَالدَّوَابِّ وَالمِيَاهِ وَالرِّمَالِ وَغَيْرِ ذَلِكَ",
             translit:
-              "wa ṣalli ʿalā sayyidinā Muḥammadin ʿadada mā khalaqta fī biḥārika minal ḥītani wad dawāʿabbi wal miyāhi war rimāli wa ghayri dhalika",
+              "wa ṣalli ʿalā sayyidinā Muḥammadin ʿadada mā khalaqta fī biḥārika minal ḥītāni wad dawābbi wal miyāhi war rimāli wa ghayri dhālika",
             translation:
               "Bless Our Master Muhammad in quantity as great as what You created in Your seas of fish, animals, water, sand and other than that",
           }),
@@ -626,13 +624,14 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "وَصَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَدَدَ النَّمْلِ",
-            translit: "wa ṣalli ala sayyidinā Muḥammadin adada naml",
+            translit: "wa ṣalli ʿalā sayyidinā Muḥammadin ʿadadan naml",
             translation:
               "Bless Our Master Muhammad in quantity as great as the ants",
           }),
           new DhikrEntryModel({
             arabic: "وَصَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَدَدَ المِيَاهِ العَذْبَةِ",
-            translit: "wa ṣalli ala sayyidinā Muhammad adadal miyahil adhbah",
+            translit:
+              "wa ṣalli ʿalā sayyidinā Muḥammadin ʿadadal miyāhil ʿadhbah",
             translation:
               "Bless Our Master Muhammad as abundantly as the sweet waters",
           }),
@@ -1067,15 +1066,11 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic: "ابتداء الربع الرابع",
-            translit: "Ibtidāʾur Rubʿ ir Rābiʿ",
-            translation: "Beginning of the Fourth Quarter",
-          }),
-        ],
-      }),
+    ],
+  }),
+  new WirdModel({
+    title: "Beginning of the Fourth Quarter",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -1099,13 +1094,12 @@ export default [
             translation:
               "O Living One, O Self-Sustaining One, O Lord of Majesty and Generosity",
           }),
+          anbiya_87(),
           new DhikrEntryModel({
-            arabic:
-              "﴿\nلَّآ إِلَٰهَ إِلَّآ أَنتَ سُبْحَٰنَكَ إِنِّى كُنتُ مِنَ الظَّٰلِمِينَ\n﴾.\n\n أَسْأَلُكَ بِمَا حَمَلَ كُرْسِيُّكَ مِنْ عَظَمَتِكَ",
-            translit:
-              "lā ilāha illā anta subḥānaka innī kuntu minaẓ ẓālimīna. Asʾaluka bimā ḥamala kursiyyuka min ʿaẓamatika",
+            arabic: "أَسْأَلُكَ بِمَا حَمَلَ كُرْسِيُّكَ مِنْ عَظَمَتِكَ",
+            translit: "Asʾaluka bimā ḥamala kursiyyuka min ʿaẓamatika",
             translation:
-              "There is no divinity except You, glory be to You, I am indeed one of the wrongdoers. I ask You for the sake of what Your Footstool carries of Your Sublimity",
+              "I ask You for the sake of what Your Footstool carries of Your Sublimity",
           }),
           new DhikrEntryModel({
             arabic: "وَجَلَالِكَ وَبَهَائِكَ",
@@ -1351,13 +1345,11 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "يَا مَنْ قَالَ وَقَوْلُهُ الحَقُّ: ﴿\n\n\n\nوَاللَّهُ خَلَقَكُمْ وَمَا تَعْمَلُونَ\n\n\n\n﴾",
-            translit:
-              "yā man qāla wa qawlul ḥaqqu: wAllahu khalaqakum wa mā taʿmalūna",
-            translation:
-              'O You who said, and whose word is Truth: "And Allah created you and what you do"',
+            arabic: "يَا مَنْ قَالَ وَقَوْلُهُ الحَقُّ",
+            translit: "yā man qāla wa qawlul ḥaqqu:",
+            translation: "O You who said, and whose word is Truth:",
           }),
+          saffat_96(),
           new DhikrEntryModel({
             arabic: "وَلَا يَصْدُرُ عَنْ أَحَدٍ مِنْ عَبِيدِهِ قَوْلٌ وَلَا فِعْلٌ وَلَا حَرَكَةٌ وَلَا سُكُونٌ",
             translit:
@@ -1518,7 +1510,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic:
-              "أَن تُصَلِّي عَلَي سَيِّدِنَا مُحَمَّدٍ وَعَلَي آلِ سَيِّدِنَا مُحَمَّدٍ عَدَدَ مَا خَلَقْتَ مِنْ قَبْلِ أَنْ تَكُونَ السَّمَاءُ مَبْنِيَّةً",
+              "أَن تُصَلِّيَ عَلَي سَيِّدِنَا مُحَمَّدٍ وَعَلَي آلِ سَيِّدِنَا مُحَمَّدٍ عَدَدَ مَا خَلَقْتَ مِنْ قَبْلِ أَنْ تَكُونَ السَّمَاءُ مَبْنِيَّةً",
             translit:
               "an tuṣalliya ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin ʿadada mā khalaqta min qabli an takūnas samāʾu mabniyyah",
             translation:
