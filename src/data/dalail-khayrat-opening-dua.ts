@@ -140,7 +140,7 @@ export default [
         ],
       }),
       taawwudh(),
-      ikhlas(),
+      ikhlas(3),
       falaq(),
       nas(),
       fatihah(),
