@@ -19,7 +19,7 @@ export const adhkarBeforeOrAfterMaghribContent = [
   }),
   new NavModel({
     title: "Aqidah of Shaykh Ali ibn Abu Bakr as-Sakran",
-    href: "/",
+    href: "khulasah/maghrib/aqidah-as-sakran",
   }),
 ];
 
