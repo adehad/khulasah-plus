@@ -19,7 +19,7 @@ const theKhulasahContent = [
   }),
   new NavModel({
     title: "Duha/Ishraq",
-    href: "/",
+    href: "khulasah/duha-ishraq",
   }),
   new NavModel({
     title: "Dhuhr",
