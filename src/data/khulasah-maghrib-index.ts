@@ -11,7 +11,7 @@ export const adhkarBeforeOrAfterMaghribContent = [
   }),
   new NavModel({
     title: "Ratib al-Attas",
-    href: "/",
+    href: "khulasah/maghrib/ratib-al-attas",
   }),
   new NavModel({
     title: "Ratib al-Haddad",
