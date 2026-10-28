@@ -399,7 +399,7 @@ export default [
           }),
           mu_minun_118(),
           new DhikrEntryModel({
-            arabic: "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا باللَّهِ العَلِيِّ العَظِيمِ.",
+            arabic: "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ العَلِيِّ العَظِيمِ.",
             translit: "wa lā hawlā wa lā quwwata illā biLlāhil ʿaliyyīl ʿazīm.",
             translation:
               "and there is no strength nor power save with Allah, the High, the Great.",

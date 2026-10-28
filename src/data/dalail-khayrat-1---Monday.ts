@@ -1154,7 +1154,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "ثُمَّ تَدْعُو بِهَذَا الدُّعَاءِ فَإِنَّهُ مَرْجُوُّ الْإِجَابَةِ إِنْ شَاءَ اللهُ بَعْدَ الصَّلَاةِ عَلَى النَّبِيِّ صَلَى اللهُ عَلَيْهِ وَسَلَّمَ",
+              "ثُمَّ تَدْعُو بِهَذَا الدُّعَاءِ فَإِنَّهُ مَرْجُوُّ الْإِجَابَةِ إِنْ شَاءَ اللَّهُ بَعْدَ الصَّلَاةِ عَلَى النَّبِيِّ صَلَى اللَّهُ عَلَيْهِ وَسَلَّمَ",
             translit:
               "Thumma tadʿū bihādhāduʿāʾ fa innahū marjū al ijāba inshāʾAllāh baʿda asṣalāh ʿalān nabī ṣallAllāhu ʿalayhi wasallam.",
             translation:

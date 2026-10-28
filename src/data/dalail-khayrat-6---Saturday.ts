@@ -1510,7 +1510,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic:
-              "أَن تُصَلِّي عَلَي سَيِّدِنَا مُحَمَّدٍ وَعَلَي آلِ سَيِّدِنَا مُحَمَّدٍ عَدَدَ مَا خَلَقْتَ مِنْ قَبْلِ أَنْ تَكُونَ السَّمَاءُ مَبْنِيَّةً",
+              "أَن تُصَلِّيَ عَلَي سَيِّدِنَا مُحَمَّدٍ وَعَلَي آلِ سَيِّدِنَا مُحَمَّدٍ عَدَدَ مَا خَلَقْتَ مِنْ قَبْلِ أَنْ تَكُونَ السَّمَاءُ مَبْنِيَّةً",
             translit:
               "an tuṣalliya ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin ʿadada mā khalaqta min qabli an takūnas samāʾu mabniyyah",
             translation:

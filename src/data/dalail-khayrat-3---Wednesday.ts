@@ -949,7 +949,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَي سَيِّدِنَا إِبرَاهِيمَ وَعَلَى آلِ سَيِّدِنَا إِبرَاهِيمَ فِي العَالَمينَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
+              "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَي سَيِّدِنَا إِبرَاهِيمَ وَعَلَى آلِ سَيِّدِنَا إِبرَاهِيمَ فِي العَالَمِينَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin kamā ṣallayta ʿalā sayyidinā Ibrāhīma wa ʿalā āli sayyidinā Ibrāhīma fil ʿālamina innaka ḥamīdun majīd",
             translation:
@@ -1006,7 +1006,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبيِّ الأُمِّيِّ الطَّاهِرِ المُطَهَّرِ وَعَلَى آلِهِ وَسَلِّمْ.",
+              "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الأُمِّيِّ الطَّاهِرِ المُطَهَّرِ وَعَلَى آلِهِ وَسَلِّمْ.",
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin nabiyyil ummiyyiṭ ṭahiril muṭahhari wa ʿalā ālihi wa sallim.",
             translation:

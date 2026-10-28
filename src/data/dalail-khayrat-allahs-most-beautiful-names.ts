@@ -1048,7 +1048,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic:
-              "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا باللَّهِ العَلِيِّ العَظِيمِ. سُبْحَانَكَ لَا نُحْصِي ثَنَاءً عَلَيْكَ أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ",
+              "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ العَلِيِّ العَظِيمِ. سُبْحَانَكَ لَا نُحْصِي ثَنَاءً عَلَيْكَ أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ",
             translit:
               "wā lā ḥawla wā lā quwwata illā biLlahil ʿaliyyil ʿaẓīm. Subḥānaka lā nuḥṣī thanāʾan ʿalayka ʾanta kamāthnayta ʿalā nafsika",
             translation:

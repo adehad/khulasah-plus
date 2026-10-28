@@ -52,7 +52,7 @@ export default [
               "Bless him and his family in quantity as great as the billowing clouds",
           }),
           new DhikrEntryModel({
-            arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ الرِّيَاحِ الذَّارِيةِ",
+            arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ الرِّيَاحِ الذَّارِيَةِ",
             translit:
               "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadadar riyāḥidh dhāriyati",
             translation:
