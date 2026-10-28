@@ -1,10 +1,6 @@
 import { NavModel } from "@/models/nav";
 
 export const salawatCompilationsContent = [
-  // new NavModel({
-  //   title: "Afdal as-Salawat",
-  //   href: "salawat-compilations/afdal-as-salawat",
-  // }),
   new NavModel({
     title: "The Garden of Love",
     href: "salawat-compilations/the-garden-of-love",

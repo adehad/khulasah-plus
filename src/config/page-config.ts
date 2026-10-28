@@ -461,11 +461,6 @@ export const pageConfigs: PageConfig[] = [
     contentImportPath: "salawat-compilations-index",
   },
   {
-    path: "salawat-compilations/afdal-as-salawat",
-    title: "Afdal as-Salawat",
-    contentImportPath: "salawat-compilations-afdal-as-salawat",
-  },
-  {
     path: "salawat-compilations/the-garden-of-love",
     title: "The Garden of Love",
     contentImportPath: "salawat-compilations-the-garden-of-love",
