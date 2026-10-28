@@ -27,7 +27,7 @@ export const afterFajrContent = [
   }),
   new NavModel({
     title: "Wird of Imam an-Nawawi",
-    href: "/",
+    href: "khulasah/after-fajr/wird-of-imam-an-nawawi",
   }),
 ];
 
