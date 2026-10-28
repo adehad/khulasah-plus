@@ -124,7 +124,8 @@ export const quran = new QuranModel({
         "إِنَّمَا يُؤۡمِنُ بِـَٔايَٰتِنَا ٱلَّذِينَ إِذَا ذُكِّرُواْ بِهَا خَرُّواْۤ سُجَّدٗاۤ وَسَبَّحُواْ بِحَمۡدِ رَبِّهِمۡ وَهُمۡ لَا يَسۡتَكۡبِرُونَ۩",
       translit:
         "Innamā yu’minu bi’āyātinalladhīna idhā dhukkirū bihā kharrū sujjadan wasabbaḥū biḥamdi rabbihim wahum lā yastakbirūn.",
-      translation: "The previous verse was a verse of prostration.",
+      translation:
+        "Only those believe in Our verses who, when they are reminded by them, fall down in prostration and exalt [Allāh] with praise of their Lord, and they are not arrogant.",
       verse: 15,
     }),
     new QuranEntryModel({

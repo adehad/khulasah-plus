@@ -799,7 +799,7 @@ export function tawbah_128_verse(repeat = 1, enableCounter?: boolean) {
     translit:
       "Laqad jā’akum rasūlun min anfusikum ‛azīzun ‛alayhi mā ‛anittum ḥarīṣun ‛alaykum bil-mu’minīna ra’ūfur-raḥīm",
     translation:
-      "There has come to you a Messenger from among yourselves, grievous to whom is your burden, concerned (is he) for you; for the believers (he is) full of compassion, merciful. If they turn away then say: Allah is sufficient for me; there is no god but He. On Him do I rely; He is the Lord of the Awesome Throne.",
+      "There has certainly come to you a Messenger from among yourselves. Grievous to him is what you suffer; [he is] concerned over you [i.e., your guidance] and to the believers is kind and merciful.",
     surah: 9,
     verse: 128,
     repeat,
@@ -814,7 +814,7 @@ export function tawbah_129(repeat = 1, enableCounter?: boolean) {
     translit:
       "… Ḥasbī Allāhu lā ilāha illā Huwa ʿalayhi tawakkaltu wa Huwa Rabb ul-ʿarsh il-ʿaẓīm.",
     translation:
-      "… Allah is enough for me: there is no god but Him; I put my trust in Him; He is Lord of the Mighty Throne.",
+      "… Sufficient for me is Allāh; there is no deity except Him. On Him I have relied, and He is the Lord of the Great Throne.",
     surah: 9,
     verse: 129,
     repeat,
@@ -2196,7 +2196,7 @@ export function saffat_180_182(
         arabic: "وَٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ",
         translit: "Walḥamdu lillāhi rabbil ‛ālamīn.",
         translation:
-          "And praise be to Allāh, the Lord and Cherisher of the Worlds. [Sūrah Al-Ṣāffāt (37), Verses 180-182]",
+          "And praise be to Allāh, the Lord and Cherisher of the Worlds.",
         verse: 182,
       }),
     ],
