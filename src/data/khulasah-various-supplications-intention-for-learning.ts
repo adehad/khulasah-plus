@@ -2,7 +2,7 @@ import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
-    title: "Intention for Learning & Specific times to say Salawat",
+    title: "The Objectives for Learning and Teaching by Imām al-Ḥaddād",
     entries: [
       new DhikrModel({
         entries: [

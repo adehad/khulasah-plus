@@ -1,4 +1,12 @@
 import {
+  baqarah_ayat_al_kursi,
+  fatihah,
+  ikhlas,
+  qadr,
+  quraysh,
+  sharh,
+} from "@/data/shared/quran";
+import {
   a_raf_43,
   an_am_13,
   baqarah_255,
@@ -19,6 +27,8 @@ export default [
     title: "Duas for travel",
     entries: [
       new DhikrModel({
+        instruction:
+          "Before departure for travel, a person should pray two rak‛āt. In the first cycle he should recite Sūrah al-Fātiḥah, followed by Sūrah al-Kāfirūn, and in the second cycle he should recite Sūrah al-Fātiḥah, followed by Sūrah al-Ikhlāṣ. After the prayer, he should raise his hands and supplicate to Allāh with absolute sincerity and a truthful intention, saying:",
         entries: [
           new DhikrEntryModel({
             arabic: "الْحَمْدُ لِلَّهِ",
@@ -131,6 +141,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "When you intend to leave from the door of your house, say:",
         entries: [
           new DhikrEntryModel({
             arabic: "بِسْمِ اللَّهِ",
@@ -229,6 +241,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "When leaving the house say the following (supplication) which has been proven as protection:",
         entries: [
           new DhikrEntryModel({
             arabic: "بِاسْمِكَ اللَّهُمَّ خَرَجْنَا",
@@ -263,6 +277,7 @@ export default [
         entries: [baqarah_255()],
       }),
       new DhikrModel({
+        instruction: "When the supplicant walks, he/she says:",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ بِكَ انْتَشَرتُ",
@@ -322,6 +337,11 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "He recites this supplication for every dwelling that he enters.",
+      }),
+      new DhikrModel({
+        instruction: "When the supplicant is being transported, he/she says:",
         entries: [
           new DhikrEntryModel({
             arabic: "بِسْمِ اللَّهِ وَبِاللَّهِ وَاللَّهُ أَكْبَر",
@@ -380,6 +400,7 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction: "When the supplicant sits in his transport, he/she says:",
         entries: [
           new DhikrEntryModel({
             arabic: "سُبْحَانَ اللَّهِ، وَالْحَمْدُ لِلَّهِ، وَلَا إِلَهَ إِلَّا اللَّهُ، وَاللَّهُ أَكْبَرُ",
@@ -410,6 +431,8 @@ export default [
         entries: [zumar_67()],
       }),
       new DhikrModel({
+        instruction:
+          "The one riding in a car, plane or ship adds: Ibn ‛Abbās, may Allāh be pleased with them, said regarding it: (whosoever says it, and drowns, then his blood money is my responsibility).",
         entries: [hud_41(), zukhruf_13(), zukhruf_14()],
       }),
       new DhikrModel({
@@ -469,6 +492,18 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction: "Then follow it up with a smile.",
+      }),
+    ],
+  }),
+  new WirdModel({
+    title: "Supplication of Amīr al-Mu’minīn ‛Ali (peace be upon him)",
+    instruction:
+      "Guaranteed protection for the traveller when he travels, and whatever he possesses:",
+    entries: [
+      fatihah(3, "Read Sūrah Al-Fātiḥah (3 times)."),
+      new DhikrModel({
+        instruction: "Then say:",
         entries: [
           new DhikrEntryModel({
             arabic:
@@ -481,7 +516,9 @@ export default [
           }),
         ],
       }),
+      qadr(3, "Then read Sūrah Qadr (3 times)."),
       new DhikrModel({
+        instruction: "Then say:",
         entries: [
           new DhikrEntryModel({
             arabic:
@@ -494,7 +531,9 @@ export default [
           }),
         ],
       }),
+      baqarah_ayat_al_kursi(3, "Then read Ayat al-Kursi (3 times)."),
       new DhikrModel({
+        instruction: "Then say:",
         entries: [
           new DhikrEntryModel({
             arabic:
@@ -507,7 +546,9 @@ export default [
           }),
         ],
       }),
+      ikhlas(3, "Then read Sūrah Al-Ikhlāṣ (3 times)."),
       new DhikrModel({
+        instruction: "And then:",
         entries: [
           new DhikrEntryModel({
             arabic:
@@ -521,9 +562,12 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction: "Then read:",
         entries: [qasas_85()],
       }),
       new DhikrModel({
+        instruction:
+          "Then repeat the supplication for fending off grief as follows:",
         entries: [
           new DhikrEntryModel({
             arabic: "لَا إِلَهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيم",
@@ -547,6 +591,7 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction: "After completing this, the supplicant says:",
         entries: [
           new DhikrEntryModel({
             arabic: "عَدَدَ خَلقِهِ وَرِضَى نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ",
@@ -557,7 +602,20 @@ export default [
           }),
         ],
       }),
+      baqarah_ayat_al_kursi(
+        1,
+        "It will be good if he adds Ayat al-Kursi once,",
+      ),
+      sharh(7, "then Surah Alam Nashrah (seven times),"),
+      quraysh(1, "then Surah Quraysh."),
+    ],
+  }),
+  new WirdModel({
+    title: "",
+    entries: [
+      quraysh(1, "If he fears anyone, he should read Sūrah Quraysh,"),
       new DhikrModel({
+        instruction: "and say:",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ إِنَّا نَجْعَلُكَ فِي نُحُورِهِمْ",
@@ -601,6 +659,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "When the supplicant ascends an elevated place, he should say:",
         entries: [
           new DhikrEntryModel({
             arabic:
@@ -613,6 +673,11 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction: "And when he descends, he glorifies Allāh.",
+      }),
+      new DhikrModel({
+        instruction:
+          "When the supplicant fears forlornness in his travels, he/she says:",
         entries: [
           new DhikrEntryModel({
             arabic:
@@ -625,6 +690,7 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction: "When night befalls him, the supplicant says:",
         entries: [
           new DhikrEntryModel({
             arabic: "يَا أَرْضُ",
@@ -680,6 +746,8 @@ export default [
         entries: [an_am_13()],
       }),
       new DhikrModel({
+        instruction:
+          "When the supplicant looks out over their own city or another, then they should read:",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُ أَكْبَر (3) لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ",
@@ -840,6 +908,12 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "[Then he recites what is easy for him to do so from the Qur’ān, and gifts the reward to the souls of the deceased and the living. Our master Imām Aḥmad bin al-Ḥasan al-‛Aṭṭas al-‛Alawī, who passed away in Huraydah in Ḥaḍramawt 1334 Hijri, used to encourage this and said: “Verily, these pious actions are written on the scrolls of the living, and are a mercy for the deceased, and it is the best of all gifts for them.”]",
+      }),
+      new DhikrModel({
+        instruction:
+          "Supplication for entering the house: the supplicant greets the occupants of the house upon entering it, and if no one is present, he says:",
         entries: [
           new DhikrEntryModel({
             arabic: "السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ",
@@ -898,7 +972,15 @@ export default [
       new DhikrModel({
         entries: [isra_80(), mu_minun_29()],
       }),
+      fatihah(
+        1,
+        "Then read Sūrah Al-Fātiḥah and Sūrah Al-Ikhlāṣ thrice, and Ayat al-Kursi.",
+      ),
+      ikhlas(3),
+      baqarah_ayat_al_kursi(),
       new DhikrModel({
+        instruction:
+          "It is guaranteed for wealth for oneself and their neighbours. When the Prophet, may the blessings and peace of Allāh be upon him, returned from his travels and came to his family, he would say:",
         entries: [
           new DhikrEntryModel({
             arabic: "تَوْبًا تَوْبًا لِرَبِّنَا أَوْبًا، لَا يُغَادِرُ حَوْبًا",

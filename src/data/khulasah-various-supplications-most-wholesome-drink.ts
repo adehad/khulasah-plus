@@ -7,6 +7,8 @@ import {
 export default [
   new QasidaModel({
     title: "The Most Wholesome Drink",
+    instruction:
+      "Directing oneself towards Allāh through His Most Beautiful Names. Poem by the erudite scholar, al-Habib Umar bin Muḥammad bin Salim bin Hafiz bin al-Shaykh Abi Bakr bin Salim. May Allah benefit us by him. Ameen.",
     entries: [
       new QasidaVerseModel({
         chorus: false,

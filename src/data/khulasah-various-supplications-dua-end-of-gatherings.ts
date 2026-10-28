@@ -14,7 +14,7 @@ import {
 
 export default [
   new QasidaModel({
-    title: "Dua at the end of gatherings and lessons",
+    title: "Supplication at the End of Gatherings (of Dhikr) and Lessons",
     entries: [
       new QasidaVerseModel({
         chorus: false,

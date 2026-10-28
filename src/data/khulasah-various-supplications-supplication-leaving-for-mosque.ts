@@ -2,7 +2,9 @@ import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
-    title: "Supplication for Leaving the House for the Mosque",
+    title: "Supplication for Leaving the House",
+    instruction:
+      "Remember the etiquettes and supplications when leaving the house, walking to the mosque, entering it, and exiting from it.",
     entries: [
       new DhikrModel({
         entries: [
@@ -12,16 +14,22 @@ export default [
             translit:
               "Bismillāhi āmantu billāh, tawakkaltu ‘alallāhi, wa lā ḥawla wa lā quwwata illā billāhil ‘aliyyil ‘aẓīm.",
             translation:
-              "SUPPLICATION FOR WALKING TO THE MOSQUE AND ANY ACT OF OBEDIENCE:",
+              "In the name of Allāh. I believe in Allāh, I put my trust in Allāh, and there is no power and no strength except with Allāh, the Most High, the Magnificent.",
           }),
         ],
       }),
+    ],
+  }),
+  new WirdModel({
+    title: "Supplication for Walking to the Mosque and Any Act of Obedience",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ إِنِّي أَسْأَلُكَ بِحَقِّ السَّائِلِينَ عَلَيْكَ",
             translit: "Allāhumma innī as’aluka biḥaqqis sā’ilīna ‘alayka",
-            translation: "SUPPLICATION FOR ENTERING THE MOSQUE:",
+            translation:
+              "O Allāh! I beseech You in the name of those who have a right to ask You",
           }),
           new DhikrEntryModel({
             arabic: "وَبِحَقِّ الرَّاغِبِينَ إِلَيْكَ",
@@ -68,6 +76,11 @@ export default [
           }),
         ],
       }),
+    ],
+  }),
+  new WirdModel({
+    title: "Supplication for Entering the Mosque",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -76,9 +89,13 @@ export default [
             translit:
               "Bismillāhi. Allāhumma ṣalli ‘alā sayyidinā Muḥammadin wa ‘alihī. Allāhummaghfir lī dhunūbī waftaḥ lī abwāba raḥmatika.",
             translation:
-              "-Enter with your right foot, with the intention of i‛tikāf, and do not speak except if it is for the good.",
+              "In the name of Allāh. O Allāh, bless our master Muḥammad and his family. O Allāh, forgive me my sins and open for me the gates of Your mercy.",
           }),
         ],
+      }),
+      new DhikrModel({
+        instruction:
+          "Enter with your right foot, with the intention of i‛tikāf, and do not speak except if it is for the good.",
       }),
     ],
   }),
@@ -86,6 +103,7 @@ export default [
     title: "Supplication for Exiting the Mosque",
     entries: [
       new DhikrModel({
+        instruction: "Exit with the left foot and say:",
         entries: [
           new DhikrEntryModel({
             arabic: "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ وَجُنُودِه",

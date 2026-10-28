@@ -2,7 +2,7 @@ import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
   new WirdModel({
-    title: "Selected Salawat",
+    title: "Prayer of Shaykh Abu Bakr bin Salim",
     entries: [
       new DhikrModel({
         entries: [
@@ -10,7 +10,8 @@ export default [
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّم فِي كُلِّ لَحْظَةٍ أَبَدًا عَلَى عَبْدِكَ الْمُصْطَفَى",
             translit:
               "Allāhumma ṣalli wa sallim fī kulli laḥẓatin abadan ‛alā ‛abdikal muṣṭafā",
-            translation: "Prayer of Imam Abdullah bin Alawi al-Haddad:",
+            translation:
+              "O Allāh, send blessings and peace in every moment, forever, upon Your chosen servant,",
           }),
           new DhikrEntryModel({
             arabic: "وَنَبِيِّكَ الْمُجْتَبَى",
@@ -66,12 +67,18 @@ export default [
           }),
         ],
       }),
+    ],
+  }),
+  new WirdModel({
+    title: "Prayer of Imam Abdullah bin Alawi al-Haddad",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
             arabic: "سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ",
             translit: "Subḥānakallāhumma rabbanā wa biḥamdik",
-            translation: "Prayer of Habib Ali bin Muhammad al-Habashi:",
+            translation:
+              "Glory be to You, O Allāh, our Lord, and praise be to You.",
           }),
           new DhikrEntryModel({
             arabic: "أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا أَنْتَ",
@@ -100,6 +107,11 @@ export default [
           }),
         ],
       }),
+    ],
+  }),
+  new WirdModel({
+    title: "Prayer of Habib Ali bin Muhammad al-Habashi",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -128,6 +140,7 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction: "Alternatively, you may read:",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّم عَلَى سَيِّدِنَا مُحَمَّدٍ مِفْتَاحِ بَابِ رَحِمَةِ اللَّهِ",
@@ -154,6 +167,11 @@ export default [
           }),
         ],
       }),
+    ],
+  }),
+  new WirdModel({
+    title: "Prayer of Imam Muhammad bin Abil Hasan al-Bakri",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -195,6 +213,11 @@ export default [
           }),
         ],
       }),
+    ],
+  }),
+  new WirdModel({
+    title: "Prayers by some of the righteous",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -272,10 +295,16 @@ export default [
               "اللَّهُمَّ صَلِّ وَسَلِّم عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ فِي كُلِّ لَمْحَةٍ وَنَفَسٍ بِعَدَدِ كُلِّ مَعْلُومٍ لَكَ",
             translit:
               "Allāhumma ṣalli wa sallim ‛alā sayyidinā Muḥammadin wa ‛alā āli sayyidinā Muḥammadin fī kulli lamḥatin wa nafasin bi‛adadi kulli ma‛lūmin lak",
-            translation: "Prayers by the Compiler of the Khulasah:",
+            translation:
+              "O Allāh, send blessings and peace upon our master Muḥammad and upon the family of our master Muḥammad, with every glance and breath, to the number of all that is known to You.",
           }),
         ],
       }),
+    ],
+  }),
+  new WirdModel({
+    title: "Prayers by the Compiler of the Khulasah",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
