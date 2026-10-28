@@ -317,11 +317,19 @@ export default [
           }),
           new DhikrEntryModel({
             arabic:
-              "وَتُوَسِّعَ قُلُوبَنَا وَتُؤَهِّلَهَا لِمَعْرِفَتِكَ الْخَاصَّةِ الَّتِي أَكْرَمْتَ بِهَا عِبَادَكَ الْعَارِفِينَ وَأَوْلِيَائَكَ الصَّالِحِينَ وَتَرْزُقَنَا مِنَ التَّقْوَى الَّتِي أَكْرَمْتَ بِهَا عِبَادَكَ الْمُتَّقِينَ حَقِيقَتَهَا وَثَمَرَتَهَا وَأُصُولَهَا وَفُرُوعَهَا ۞",
+              "وَتُوَسِّعَ قُلُوبَنَا وَتُؤَهِّلَهَا لِمَعْرِفَتِكَ الْخَاصَّةِ الَّتِي أَكْرَمْتَ بِهَا عِبَادَكَ الْعَارِفِينَ وَأَوْلِيَائَكَ الصَّالِحِينَ",
             translit:
-              "watuwassiʿa qulūbanā watuʼahhilahā limaʿrifatika al-khāṣat al-atī akramta bihā ʿibādaka al-ʿārifīna waʼawliyāʼaka aṣ-ṣāliḥīna watarzuqanā mina at-taqwā al-atī akramta bihā ʿibādaka al-mutaqīna ḥaqīqatahā wathamaratahā waʼuṣūlahā wafurūʿahā",
+              "watuwassiʿa qulūbanā watuʼahhilahā limaʿrifatika al-khāṣat al-atī akramta bihā ʿibādaka al-ʿārifīna waʼawliyāʼaka aṣ-ṣāliḥīna",
             translation:
-              "and that You will expand our hearts and grant them the capacity for Your special knowledge, with which You have ennobled such of Your servants that are possessed of knowledge about You and virtuous saints, and that You will sustain us with taqwa with which You have ennobled servants of Yours who are endowed with taqwa [that You will sustain us] with its essence, its fruit, its main roots and its branches",
+              "and that You will expand our hearts and grant them the capacity for Your special knowledge, with which You have ennobled such of Your servants that are possessed of knowledge about You and virtuous saints,",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "وَتَرْزُقَنَا مِنَ التَّقْوَى الَّتِي أَكْرَمْتَ بِهَا عِبَادَكَ الْمُتَّقِينَ حَقِيقَتَهَا وَثَمَرَتَهَا وَأُصُولَهَا وَفُرُوعَهَا ۞",
+            translit:
+              "watarzuqanā mina at-taqwā al-atī akramta bihā ʿibādaka al-mutaqīna ḥaqīqatahā wathamaratahā waʼuṣūlahā wafurūʿahā",
+            translation:
+              "and that You will sustain us with taqwa with which You have ennobled servants of Yours who are endowed with taqwa [that You will sustain us] with its essence, its fruit, its main roots and its branches",
           }),
           new DhikrEntryModel({
             arabic: "وَتُنْزِلَنَا مِنَ الْاِسْتِقَامَةِ أَعْلَى مَنَازِلِهَا ۞",
@@ -337,11 +345,18 @@ export default [
           }),
           new DhikrEntryModel({
             arabic:
-              "وَتَسْلُكَ بِنَا سَبِيلَ الْاِتِّبَاعِ فِي الْأَقْوَالِ وَالْأَفْعَالِ وَالنِّيَّاتِ وَالْأَعْمَالِ لِحَبِيبِكَ أَشْرَفِ خَلْقِكَ عَلَيْكَ سَيِّدِنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ وَتُوَفِّرَ حَظَّنَا مِنْ حُبِّ هَذَا الْحَبِيبِ وَاتِّبَاعِهِ فِي كُلِّ أَحْوَالِنَا ۞",
+              "وَتَسْلُكَ بِنَا سَبِيلَ الْاِتِّبَاعِ فِي الْأَقْوَالِ وَالْأَفْعَالِ وَالنِّيَّاتِ وَالْأَعْمَالِ لِحَبِيبِكَ أَشْرَفِ خَلْقِكَ عَلَيْكَ سَيِّدِنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ",
             translit:
-              "watasluka binā sabīla al-itibāʿi fī al-ʼaqwāli wālʼafʿāli wālnīīāti wālʼaʿmāli liḥabībika ashrafi khalqika ʿalayka sayyidinā muḥammadin ṣallā allāhu ʿalayhi waʼālihi wasallama watuwaffira ḥaẓẓanā min ḥubbi hadhā al-ḥabībi wātibāʿihi fī kulli aḥwālinā",
+              "watasluka binā sabīla al-itibāʿi fī al-ʼaqwāli wālʼafʿāli wālnīīāti wālʼaʿmāli liḥabībika ashrafi khalqika ʿalayka sayyidinā muḥammadin ṣallā allāhu ʿalayhi waʼālihi wasallama",
             translation:
-              "And that You may grant us entry to the path of following, in words, deeds, intentions, and works, Your beloved, the most honoured of created beings in your presence, namely our master Muhammad, may Allah bless him and bestow peace upon him, as well as his household, and that You may make ample our share of love for this beloved and of following him in all our states",
+              "And that You may grant us entry to the path of following, in words, deeds, intentions, and works, Your beloved, the most honoured of created beings in your presence, namely our master Muhammad, may Allah bless him and bestow peace upon him, as well as his household,",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَتُوَفِّرَ حَظَّنَا مِنْ حُبِّ هَذَا الْحَبِيبِ وَاتِّبَاعِهِ فِي كُلِّ أَحْوَالِنَا ۞",
+            translit:
+              "watuwaffira ḥaẓẓanā min ḥubbi hadhā al-ḥabībi wātibāʿihi fī kulli aḥwālinā",
+            translation:
+              "and that You may make ample our share of love for this beloved and of following him in all our states",
           }),
           new DhikrEntryModel({
             arabic:
@@ -353,11 +368,18 @@ export default [
           }),
           new DhikrEntryModel({
             arabic:
-              "وَشَرِّفْنَا بِرُؤْيَةِ وَجْهِهِ الشَّرِيفِ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ وَهُوَ رَاضٍ عَنَّا فِي الْمَنَامِ وَالْيَقَظَةِ وَفِي الدُّنْيَا وَفِي الْبَرْزَخِ وَالْآخِرَةِ وَأَكْرِمْنَا يَا رَبَّنَا بِالْبَرَكَةِ التَّامَّةِ الْوَاسِعَةِ فِي أَعْمَالِنَا ۞",
+              "وَشَرِّفْنَا بِرُؤْيَةِ وَجْهِهِ الشَّرِيفِ صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ وَهُوَ رَاضٍ عَنَّا فِي الْمَنَامِ وَالْيَقَظَةِ وَفِي الدُّنْيَا وَفِي الْبَرْزَخِ وَالْآخِرَةِ",
             translit:
-              "washarrifnā biruʼyat wajhihi ash-sharīfi ṣallā allāhu ʿalayhi waʼālihi wasallama wahuwa rāḍin ʿannā fī al-manāmi wālyaqaẓat wafī ad-dunyā wafī al-barzakhi wālʼākhirat waʼakrimnā yā rabanā bilbarakat at-tāmmat al-wāsiʿat fī aʿmālinā",
+              "washarrifnā biruʼyat wajhihi ash-sharīfi ṣallā allāhu ʿalayhi waʼālihi wasallama wahuwa rāḍin ʿannā fī al-manāmi wālyaqaẓat wafī ad-dunyā wafī al-barzakhi wālʼākhirat",
             translation:
-              "and may You honour us with the vision of his honoured face, Allah bless him and bestow peace upon him and his household, whilst he is well pleased with us, in sleep and our wakeful moments, in this world, the world in between and the hereafter. And may You honour us, O our Lord, with complete and copious blessing in our works,",
+              "and may You honour us with the vision of his honoured face, Allah bless him and bestow peace upon him and his household, whilst he is well pleased with us, in sleep and our wakeful moments, in this world, the world in between and the hereafter.",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَأَكْرِمْنَا يَا رَبَّنَا بِالْبَرَكَةِ التَّامَّةِ الْوَاسِعَةِ فِي أَعْمَالِنَا ۞",
+            translit:
+              "waʼakrimnā yā rabanā bilbarakat at-tāmmat al-wāsiʿat fī aʿmālinā",
+            translation:
+              "And may You honour us, O our Lord, with complete and copious blessing in our works,",
           }),
           new DhikrEntryModel({
             arabic: "وَفِي نِيَّاتِنَا وَفِي أَرْزَاقِنَا وَفِي حَرَكَاتِنَا وَسَكَنَاتِنَا ۞",
