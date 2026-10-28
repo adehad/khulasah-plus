@@ -323,17 +323,17 @@ const hizbAlBahrContent = [
           }),
           new DhikrEntryModel({
             arabic: "وَعَلِّمْنِي مِنْ عِلْمِكَ",
-            translit: "wa ‘allimnī min ‘ilmika",
+            translit: "wa ‛allimnī min ‛ilmika",
             translation: "teach me from Your knowledge",
           }),
           new DhikrEntryModel({
             arabic: "وَأَفْهِمْنِي عَنْكَ",
-            translit: "wa afhimnī ‘anka",
+            translit: "wa afhimnī ‛anka",
             translation: "establish me in Your presence",
           }),
           new DhikrEntryModel({
             arabic: "وَأَسْمِعْنِي مِنْكَ",
-            translit: "wa asmi‘nī minka",
+            translit: "wa asmi‛nī minka",
             translation: "make me understand from You",
           }),
           new DhikrEntryModel({
@@ -343,171 +343,171 @@ const hizbAlBahrContent = [
           }),
           new DhikrEntryModel({
             arabic: "وَأَقِمْنِي بِشُهُودِكَ",
-            translit: "wa aqimnī bi-shuhūdika",
+            translit: "wa aqimnī bishuhūdika",
             translation: "make me see by You",
           }),
           new DhikrEntryModel({
             arabic: "وَعَرِّفْنِي الطَّرِيقَ إِلَيْكَ",
-            translit: "wa ‘arrifnī al-ṭarīqa ilayka",
+            translit: "wa ‛arrifniṭ ṭarīqa ilayka",
             translation: "make it easy for me by Your grace",
           }),
           new DhikrEntryModel({
             arabic: "وَهَوِّنْهَا عَلَيَّ بِفَضْلِكَ",
-            translit: "wa hawwinhā ‘alayya bi-faḍlika",
+            translit: "wa hawwinhā ‛alayya bifaḍlika",
             translation: "show me the way to You",
           }),
           new DhikrEntryModel({
             arabic: "وَأَلْبِسْنِي لِبَاسَ التَّقْوَى مِنْكَ",
-            translit: "wa albisnī libāsa al-taqwā minka",
+            translit: "wa albisnī libāsat taqwā minka",
             translation: "and clothe me with the garment of piety from You",
           }),
           new DhikrEntryModel({
             arabic:
               "إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ. يَا سَمِيعُ يَا عَلِيمُ يَا حَلِيمُ يَا عَلِيُّ يَا عَظِيمُ يَا اللَّهُ",
             translit:
-              "innaka ‘alā kulli shay’in qadīr. Yā Samī‘u yā ‘Alīmu yā Ḥalīmu yā ‘Alīyu yā ‘Aẓīmu yā Allāhu",
+              "innaka ‛alā kulli shay’in qadīr. Yā Samī‛u yā ‛Alīmu yā Ḥalīmu yā ‛Aliyyu yā ‛Aẓīmu yā Allāhu",
             translation:
               "Indeed, You have power over all things. O All-Hearing, O All-Knowing, O Forbearing, O Most High, O Supreme, O Allah",
           }),
           new DhikrEntryModel({
             arabic: "اِسْمَعْ دُعَائِي بِخَصَائِصِ لُطْفِكَ آمِينَ",
-            translit: "isma‘ du‘ā’ī bi-khaṣā’iṣi luṭfika, Āmīn.",
+            translit: "isma‛ du‛ā’ī bikhaṣā’iṣi luṭfika, āmīn",
             translation:
               "hear my prayer with the specialties of Your subtlety, Amin.",
           }),
           new DhikrEntryModel({
             arabic: "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ كُلِّهَا مِنْ شَرِّ مَا خَلَقَ",
             translit:
-              "A‘ūdhu bi-kalimāti Allāhi al-tāmmāti kullihā min sharri mā khalaqa.",
+              "A‛ūdhu bikalimātillāhit tāmmāti kullihā min sharri mā khalaq",
             translation:
               "I seek refuge in the perfect words of Allah from the evil of what He has created.",
             repeat: 3,
           }),
           new DhikrEntryModel({
             arabic: "يَا عَظِيمَ السُّلْطَانِ",
-            translit: "Yā ‘Aẓīma al-sulṭāni",
+            translit: "Yā ‛Aẓīmas sulṭāni",
             translation: "O great of authority",
           }),
           new DhikrEntryModel({
             arabic: "يَا قَدِيمَ الْإِحْسَانِ",
-            translit: "yā Qadīma al-iḥsāni",
+            translit: "yā Qadīmal iḥsāni",
             translation: "O ancient of goodness",
           }),
           new DhikrEntryModel({
             arabic: "يَا دَائِمَ النَّعْمَاءِ",
-            translit: "yā Dā’ima al-na‘mā’i",
+            translit: "yā Dā’iman na‛mā’i",
             translation: "O eternal of blessings",
           }),
           new DhikrEntryModel({
             arabic: "يَا بَاسِطَ الرِّزْقِ",
-            translit: "yā Bāsiṭa al-rizqi",
+            translit: "yā Bāsiṭar rizqi",
             translation: "O extender of provision",
           }),
           new DhikrEntryModel({
             arabic: "يَا كَثِيرَ الْخَيْرَاتِ",
-            translit: "yā Kathīra al-khayrāti",
+            translit: "yā Kathīral khayrāti",
             translation: "O abundant of good things",
           }),
           new DhikrEntryModel({
             arabic: "يَا وَاسِعَ الْعَطَاءِ",
-            translit: "yā Wāsi‘a al-‘aṭā’i",
+            translit: "yā Wāsi‛al ‛aṭā’i",
             translation: "O vast of giving",
           }),
           new DhikrEntryModel({
             arabic: "يَا دَافِعَ الْبَلَاءِ",
-            translit: "yā Dāfi‘a al-balā’i",
+            translit: "yā Dāfi‛al balā’i",
             translation: "O repeller of affliction",
           }),
           new DhikrEntryModel({
             arabic: "وَيَا سَامِعَ الدُّعَاءِ",
-            translit: "wa yā Sāmi‘a al-du‘ā’i",
+            translit: "wa yā Sāmi‛ad du‛ā’i",
             translation: "O hearer of prayer",
           }),
           new DhikrEntryModel({
             arabic: "يَا حَاضِرًا لَيْسَ بِغَائِبٍ",
-            translit: "yā Ḥāḍiran laysa bi-ghā’ibin",
+            translit: "yā Ḥāḍiran laysa bighā’ibin",
             translation: "O present one who is not absent",
           }),
           new DhikrEntryModel({
             arabic: "يَا مَوجُودًا عِنْدَ الشَّدَائِدِ",
-            translit: "yā Mawjūdan ‘inda al-shadā’idi",
+            translit: "yā Mawjūdan ‛indash shadā’idi",
             translation: "O existent one at times of hardship",
           }),
           new DhikrEntryModel({
             arabic: "يَا خَفِيَّ اللُّطْفِ",
-            translit: "yā Khafīya al-luṭfi",
+            translit: "yā Khafiyyal luṭfi",
             translation: "O subtle of kindness",
           }),
           new DhikrEntryModel({
             arabic: "يَا لَطِيفَ الصُّنْعِ",
-            translit: "yā Laṭīfa al-ṣun‘i",
+            translit: "yā Laṭīfaṣ ṣun‛i",
             translation: "O gentle of creation",
           }),
           new DhikrEntryModel({
             arabic: "يَا حَلِيمًا لَا يَعْجَلُ",
-            translit: "yā Ḥalīman lā ya‘jalu",
+            translit: "yā Ḥalīman lā ya‛jalu",
             translation: "O forbearing one who does not hasten",
           }),
           new DhikrEntryModel({
             arabic: "اِقْضِ حَاجَتِي بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ",
-            translit: "iqḍi ḥājatī bi-raḥmatika yā Arḥama al-rāḥimīn.",
+            translit: "iqḍi ḥājatī biraḥmatika yā Arḥamar rāḥimīn",
             translation:
               "fulfill my need by Your mercy, O most merciful of the merciful.",
           }),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ إِنَّكَ تَعْلَمُ مَا نَحْنُ فِيهِ",
-            translit: "Allāhumma innaka ta‘lamu mā naḥnu fīhi",
+            translit: "Allāhumma innaka ta‛lamu mā naḥnu fīhi",
             translation: "O Allah, You know what we are in",
           }),
           new DhikrEntryModel({
             arabic: "وَمَا نَطْلُبُهُ وَنَرْتَجِيهِ مِنْ رَحْمَتِكَ فِي أَمْرِنَا كُلِّه",
             translit:
-              "wa mā naṭlubuhu wa nartajīhi min raḥmatika fī amrinā kullih",
+              "wa mā naṭlubuhū wa nartajīhi min raḥmatika fī amrinā kullih",
             translation:
               "and what we seek and hope for from Your mercy in all our affairs",
           }),
           new DhikrEntryModel({
             arabic: "فَيَسِّرْ لَنَا مَا نَحْنُ فِيهِ مِنْ سَفَرِنَا وَمَا نَطْلُبُهُ مِنْ حَوَائِجِنَا",
             translit:
-              "fa-yassir lanā mā naḥnu fīhi min safarinā wa mā naṭlubuhu min ḥawā’ijinā",
+              "fayassir lanā mā naḥnu fīhi min safarinā wa mā naṭlubuhū min ḥawā’ijinā",
             translation:
               "So make easy for us what we are in of our journey and what we seek of our needs",
           }),
           new DhikrEntryModel({
             arabic: "وَقَرِّبْ عَلَيْنَا الْمَسَافَاتِ",
-            translit: "wa qarrib ‘alaynā al-masāfāti",
+            translit: "wa qarrib ‛alaynal masāfāti",
             translation: "and shorten the distances for us",
           }),
           new DhikrEntryModel({
             arabic: "وَسَلِّمْنَا مِنَ الْعِلَلِ وَالْآفَاتِ",
-            translit: "wa sallimnā mina al-‘ilali wa al-āfāti",
+            translit: "wa sallimnā minal ‛ilali wal āfāti",
             translation: "and save us from illnesses and calamities",
           }),
           new DhikrEntryModel({
             arabic: "وَلَا تَجْعَلِ الدُّنْيَا أَكْبَرَ هَمِّنَا",
-            translit: "wa lā taj‘al al-dunyā akbara hamminā",
+            translit: "wa lā taj‛alid dunyā akbara hamminā",
             translation: "and do not make this world our greatest concern",
           }),
           new DhikrEntryModel({
             arabic: "وَلَا مَبْلَغَ عِلْمِنَا",
-            translit: "wa lā mablagha ‘ilminā",
+            translit: "wa lā mablagha ‛ilminā",
             translation: "nor the extent of our knowledge",
           }),
           new DhikrEntryModel({
             arabic: "وَلَا تُسَلِّطْ عَلَيْنَا مَنْ لَا يَرْحَمُنَا",
-            translit: "wa lā tusalliṭ ‘alaynā man lā yarḥamunā",
+            translit: "wa lā tusalliṭ ‛alaynā man lā yarḥamunā",
             translation:
               "and do not give authority over us to one who will not have mercy on us",
           }),
           new DhikrEntryModel({
             arabic: "بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِينَ",
-            translit: "bi-raḥmatika yā Arḥama al-rāḥimīn.",
+            translit: "biraḥmatika yā Arḥamar rāḥimīn",
             translation: "by Your mercy, O most merciful of the merciful.",
           }),
           new DhikrEntryModel({
             arabic: "وَصَلَّى اللَّهُ عَلَى سَيِّدِنَا مُحَمَّدٍ وَآلِهِ وَصَحْبِهِ وَسَلَّمَ",
             translit:
-              "Wa ṣallā Allāhu ‘alā sayyidinā Muḥammadin wa ālihi wa ṣaḥbihi wa sallam.",
+              "Wa ṣallallāhu ‛alā sayyidinā Muḥammadin wa ālihī wa ṣaḥbihī wa sallam",
             translation:
               "And may Allah send blessings and peace upon our master Muhammad and his family and companions.",
           }),
