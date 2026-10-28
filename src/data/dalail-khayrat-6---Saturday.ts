@@ -417,7 +417,8 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَدَدَ عِلْمِكَ",
-            translit: "Allāhumma ṣalli ʿalā sayyidinā Muhammad ʿadada ʿilmika",
+            translit:
+              "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin ʿadada ʿilmika",
             translation:
               "O Allah, bless Our Master Muhammad to the extent of Your knowledge",
           }),
@@ -596,7 +597,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "وَجَوْفِهَا وَقِبْلَتِهَا",
-            translit: "wa jawfīhā wa qiblatihā",
+            translit: "wa jawfihā wa qiblatihā",
             translation: "and in the north and south",
           }),
           new DhikrEntryModel({
@@ -610,7 +611,7 @@ export default [
             arabic:
               "وَصَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَدَدَ مَا خَلَقْتَ فِي بِحَارِكَ مِنَ الحِيتَانِ وَالدَّوَابِّ وَالمِيَاهِ وَالرِّمَالِ وَغَيْرِ ذَلِكَ",
             translit:
-              "wa ṣalli ʿalā sayyidinā Muḥammadin ʿadada mā khalaqta fī biḥārika minal ḥītani wad dawāʿabbi wal miyāhi war rimāli wa ghayri dhalika",
+              "wa ṣalli ʿalā sayyidinā Muḥammadin ʿadada mā khalaqta fī biḥārika minal ḥītāni wad dawābbi wal miyāhi war rimāli wa ghayri dhālika",
             translation:
               "Bless Our Master Muhammad in quantity as great as what You created in Your seas of fish, animals, water, sand and other than that",
           }),
@@ -623,13 +624,14 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "وَصَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَدَدَ النَّمْلِ",
-            translit: "wa ṣalli ala sayyidinā Muḥammadin adada naml",
+            translit: "wa ṣalli ʿalā sayyidinā Muḥammadin ʿadadan naml",
             translation:
               "Bless Our Master Muhammad in quantity as great as the ants",
           }),
           new DhikrEntryModel({
             arabic: "وَصَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَدَدَ المِيَاهِ العَذْبَةِ",
-            translit: "wa ṣalli ala sayyidinā Muhammad adadal miyahil adhbah",
+            translit:
+              "wa ṣalli ʿalā sayyidinā Muḥammadin ʿadadal miyāhil ʿadhbah",
             translation:
               "Bless Our Master Muhammad as abundantly as the sweet waters",
           }),

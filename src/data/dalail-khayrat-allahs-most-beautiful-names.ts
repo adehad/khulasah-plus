@@ -24,7 +24,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "الرَّحْمَٰنُ جَلَّ جَلَالُهُ",
-            translit: "Ar-Rahmān jalla jalāluhu.",
+            translit: "Ar-Raḥmān jalla jalāluhu.",
             translation: "The Merciful, He is exalted!",
           }),
         ],
@@ -33,7 +33,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "الرَّحِيمُ جَلَّ جَلَالُهُ",
-            translit: "Ar-Rahīm jalla jalāluhu.",
+            translit: "Ar-Raḥīm jalla jalāluhu.",
             translation: "The Most Merciful, He is exalted!",
           }),
         ],
@@ -177,7 +177,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "الفَتَّاحُ جَلَّ جَلَالُهُ",
-            translit: "Al-Fattāh jalla jalāluhu.",
+            translit: "Al-Fattāḥ jalla jalāluhu.",
             translation: "The Opener, He is exalted!",
           }),
         ],
@@ -195,7 +195,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "القَابِضُ جَلَّ جَلَالُهُ",
-            translit: "Al-Qābid jalla jalāluhu.",
+            translit: "Al-Qābiḍ jalla jalāluhu.",
             translation: "The Withholder, He is exalted!",
           }),
         ],
@@ -204,7 +204,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "البَاسِطُ جَلَّ جَلَالُهُ",
-            translit: "Al-Bāsit jalla jalāluhu.",
+            translit: "Al-Bāsiṭ jalla jalāluhu.",
             translation: "The Expander, He is exalted!",
           }),
         ],
@@ -240,7 +240,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "المُذِلُّ جَلَّ جَلَالُهُ",
-            translit: "Al-Mudhil jalla jalāluhu.",
+            translit: "Al-Mudhill jalla jalāluhu.",
             translation: "The Dishonourer, He is exalted!",
           }),
         ],
@@ -528,7 +528,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "المُحْصِي جَلَّ جَلَالُهُ",
-            translit: "Al-Muhsī jalla jalāluhu.",
+            translit: "Al-Muḥṣī jalla jalāluhu.",
             translation: "The Counter, He is exalted!",
           }),
         ],
@@ -555,7 +555,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "المُحْيِي جَلَّ جَلَالُهُ",
-            translit: "Al-Muhyī jalla jalāluhu.",
+            translit: "Al-Muḥyī jalla jalāluhu.",
             translation: "The Reviver, He is exalted!",
           }),
         ],
@@ -807,7 +807,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "المُغْنِي جَلَّ جَلَالُهُ",
-            translit: "Al-Mughni jalla jalāluhu.",
+            translit: "Al-Mughnī jalla jalāluhu.",
             translation: "The Enricher, He is exalted!",
           }),
         ],
