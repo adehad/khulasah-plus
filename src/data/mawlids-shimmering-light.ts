@@ -1123,6 +1123,7 @@ const shimmeringLight = [
         title: "Chapter 7 - Place of Standing",
         entries: [
           new QasidaVerseModel({
+            repeat: 3,
             entries: [
               new QasidaEntryModel({
                 arabic: "صَلَّى اللَّهُ عَلَى مُحَمَّدْ",
@@ -1130,8 +1131,8 @@ const shimmeringLight = [
                 translation: "O Allāh, send Your Mercy upon Muḥammad",
               }),
               new QasidaEntryModel({
-                arabic: "صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمْ (ثَلَاثًا)",
-                translit: "ṣallá llāhu ʿalayhi wa-sallam (thalāthan)",
+                arabic: "صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمْ",
+                translit: "ṣallá llāhu ʿalayhi wa-sallam",
                 translation: "O Allāh, send your Mercy and Peace upon him",
               }),
             ],
