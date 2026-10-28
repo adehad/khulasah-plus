@@ -9,7 +9,7 @@ const homeContent = [
     href: "dua-khatm-al-quran-al-karim",
     title: "Dua Khatm Al-Quran",
   }),
-  // new NavModel({ href: "hadrahs", title: "Hadrahs" }),
+  new NavModel({ href: "hadrahs", title: "Hadrahs" }),
   new NavModel({ href: "blessed-occasions", title: "Blessed Occasions" }),
   // new NavModel({ href: "", title: "Visiting the Beloved ﷺ" }),
   // new NavModel({
