@@ -482,12 +482,23 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "الْحَمْدُ لِلَّهِ (3) وَاللَّهُ أَكْبَر (3) سُبْحَانَكَ إِنِّي ظَلَمتُ نَفْسِي فَاغْفِرْ لِي، إِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ",
+            arabic: "الْحَمْدُ لِلَّهِ",
+            translit: "Alḥamdulillāh",
+            translation: "Praise be to Allāh",
+            repeat: 3,
+          }),
+          new DhikrEntryModel({
+            arabic: "وَاللَّهُ أَكْبَر",
+            translit: "Wallāhu akbar",
+            translation: "Allāh is Great",
+            repeat: 3,
+          }),
+          new DhikrEntryModel({
+            arabic: "سُبْحَانَكَ إِنِّي ظَلَمتُ نَفْسِي فَاغْفِرْ لِي، إِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ",
             translit:
-              "Alḥamdulillāh (3 times) Wallāhu akbar (3 times) Subḥānaka innī ẓalamtu nafsī faghfir lī, innahū lā yaghfirudh dhunūba illā Anta.",
+              "Subḥānaka innī ẓalamtu nafsī faghfir lī, innahū lā yaghfirudh dhunūba illā Anta.",
             translation:
-              "Praise be to Allāh (3 times), Allāh is Great (3 times), Glory belongs to You. Indeed, I have wronged myself; forgive me. Verily, none forgive sins but You.",
+              "Glory belongs to You. Indeed, I have wronged myself; forgive me. Verily, none forgive sins but You.",
           }),
         ],
       }),
@@ -750,11 +761,15 @@ export default [
           "When the supplicant looks out over their own city or another, then they should read:",
         entries: [
           new DhikrEntryModel({
-            arabic: "اللَّهُ أَكْبَر (3) لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ",
-            translit:
-              "Allāhu akbar (3) Lā ilāha illallāhu waḥdahū lā sharīka lah",
-            translation:
-              "Allāh is Great (3 times). There is no god but Allāh alone; He has no partner.",
+            arabic: "اللَّهُ أَكْبَر",
+            translit: "Allāhu akbar",
+            translation: "Allāh is Great",
+            repeat: 3,
+          }),
+          new DhikrEntryModel({
+            arabic: "لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ",
+            translit: "Lā ilāha illallāhu waḥdahū lā sharīka lah",
+            translation: "There is no god but Allāh alone; He has no partner.",
           }),
           new DhikrEntryModel({
             arabic: "لَهُ الْمُلكُ وَالْحَمْدُ",
@@ -898,12 +913,16 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "اللَّهُمَّ بَارِك لَنَا فِيهَا (3) وَحَبِّبْنَا إِلَى أَهْلِهَا وَحَبِّبْ صَالِحِي أَهْلِهَا إِلَيْنَا",
-            translit:
-              "Allāhumma bārik lanā fīhā (3 times) wa ḥabbibnā ilā ahlihā wa ḥabbib ṣāliḥī ahlihā ilaynā.",
+            arabic: "اللَّهُمَّ بَارِك لَنَا فِيهَا",
+            translit: "Allāhumma bārik lanā fīhā",
+            translation: "O Allāh! Bless us in it",
+            repeat: 3,
+          }),
+          new DhikrEntryModel({
+            arabic: "وَحَبِّبْنَا إِلَى أَهْلِهَا وَحَبِّبْ صَالِحِي أَهْلِهَا إِلَيْنَا",
+            translit: "wa ḥabbibnā ilā ahlihā wa ḥabbib ṣāliḥī ahlihā ilaynā.",
             translation:
-              "O Allāh! Bless us in it (3 times) and make us love its people, and make the pious from among them love us.",
+              "and make us love its people, and make the pious from among them love us.",
           }),
         ],
       }),

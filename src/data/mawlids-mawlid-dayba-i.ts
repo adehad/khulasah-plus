@@ -1623,15 +1623,20 @@ export default [
                 translation:
                   "the heavens were filled with lights; and the angels resounded with declarations of oneness, glorification and seeking forgiveness.",
               }),
+            ],
+          }),
+          new QasidaVerseModel({
+            chorus: false,
+            entries: [
               new QasidaEntryModel({
-                arabic:
-                  "[سُبْحَانَ ٱللَّهِ وَٱلْحَمْدُ لِلَّهِ وَلَا إِلَهَ إِلَّا ٱللَّهُ وَٱللَّهُ أَكْبَر] (4)",
+                arabic: "[سُبْحَانَ ٱللَّهِ وَٱلْحَمْدُ لِلَّهِ وَلَا إِلَهَ إِلَّا ٱللَّهُ وَٱللَّهُ أَكْبَر]",
                 translit:
-                  "[Subḥānallāhi walḥamdulillāhi wa lā ilāha illallāhu wallāhu akbar] (4).",
+                  "[Subḥānallāhi walḥamdulillāhi wa lā ilāha illallāhu wallāhu akbar]",
                 translation:
-                  "[Glory be to Allāh, praise be to Allāh, there is no god but Allāh, and Allāh is the Greatest] (4).",
+                  "[Glory be to Allāh, praise be to Allāh, there is no god but Allāh, and Allāh is the Greatest]",
               }),
             ],
+            repeat: 4,
           }),
           new QasidaVerseModel({
             chorus: false,
@@ -3501,12 +3506,18 @@ export default [
                 translit: "wa ghāfirudh dhunūbi wal khaṭī’āt.",
                 translation: "and the Forgiver of sins and wrongs.",
               }),
+            ],
+          }),
+          new QasidaVerseModel({
+            chorus: false,
+            entries: [
               new QasidaEntryModel({
-                arabic: "[يَا أَرْحَمَ الرَّاحِمِينَ (ثلاثا)]",
-                translit: "[Yā arḥamar rāḥimīn (thalāthan)]",
-                translation: "[O Most Merciful of the merciful (three times)]",
+                arabic: "[يَا أَرْحَمَ الرَّاحِمِينَ]",
+                translit: "[Yā arḥamar rāḥimīn]",
+                translation: "[O Most Merciful of the merciful]",
               }),
             ],
+            repeat: 3,
           }),
           new QasidaVerseModel({
             chorus: false,

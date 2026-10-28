@@ -1,4 +1,5 @@
 import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
+import { baqarah_255 } from "./shared/quran-partial";
 
 export default [
   new WirdModel({
@@ -567,13 +568,36 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "سُبْحَانَ اللَّه (10)، لَا إِلَهَ إِلَّا اللَّهُ (10)، الْحَمْدُ لِلَّه (10)، اللَّهُ أَكْبَر (10)، أَسْتَغْفِرُ اللَّه (10)، آية الكرسي",
-            translit:
-              "Subḥānallāh (10), lā ilāha illallāh (10), Alḥamdulillāh (10), Allāhu akbar (10), astaghfirullāh (10), āyatul kursī.",
-            translation:
-              "Subhanallah (ten times), La ilaha illallah (ten times), Alhamdulillah (ten times), Allahu Akbar (ten times), Astaghfirullah (ten times), Ayat al-Kursi.",
+            arabic: "سُبْحَانَ اللَّه",
+            translit: "Subḥānallāh",
+            translation: "Glory be to Allāh",
+            repeat: 10,
           }),
+          new DhikrEntryModel({
+            arabic: "لَا إِلَهَ إِلَّا اللَّهُ",
+            translit: "Lā ilāha illallāh",
+            translation: "There is no god but Allāh",
+            repeat: 10,
+          }),
+          new DhikrEntryModel({
+            arabic: "الْحَمْدُ لِلَّه",
+            translit: "Alḥamdulillāh",
+            translation: "All praise be to Allāh",
+            repeat: 10,
+          }),
+          new DhikrEntryModel({
+            arabic: "اللَّهُ أَكْبَر",
+            translit: "Allāhu akbar",
+            translation: "Allāh is the Greatest",
+            repeat: 10,
+          }),
+          new DhikrEntryModel({
+            arabic: "أَسْتَغْفِرُ اللَّه",
+            translit: "Astaghfirullāh",
+            translation: "I ask Allāh's forgiveness",
+            repeat: 10,
+          }),
+          baqarah_255(),
         ],
       }),
     ],

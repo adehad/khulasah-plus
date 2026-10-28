@@ -1001,9 +1001,10 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic: "يَا أَرْحَمَ الرَّاحِمِينَ (ثلاثًا).",
-            translit: "Yā arḥamar rāḥimīn (thalāthan)",
-            translation: "O Most Merciful of the merciful. (three times)",
+            arabic: "يَا أَرْحَمَ الرَّاحِمِينَ.",
+            translit: "Yā arḥamar rāḥimīn",
+            translation: "O Most Merciful of the merciful.",
+            repeat: 3,
           }),
         ],
       }),

@@ -251,19 +251,48 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "اللَّهُ أَكْبَرُ (10) الْحَمْدُ لِلَّهِ (10) سُبْحَانَ اللَّهِ وَبِحَمْدِهِ (10) سُبْحَانَ الْمَلِكِ الْقُدُّوسِ (10) أَسْتَغْفِرُ اللَّهَ (10) لَا إِلَهَ إِلَّا اللَّهُ (10)",
-            translit:
-              "Allāhu akbar (10), alḥamdulillāh (10), subḥānallāhi wa biḥamdih (10), subḥānal malikil quddūs (10), astaghfirullāh (10), lā ilāha illallāh (10).",
-            translation:
-              "Allāh is the Greatest (10 times); All Praise be to Allāh (10 times); Glory and praise be to Allāh (10 times); Glory be to the Most Pure One (10 times); I ask Allāh's forgiveness (10 times); There is no god, but Allāh (10 times);",
+            arabic: "اللَّهُ أَكْبَرُ",
+            translit: "Allāhu akbar",
+            translation: "Allāh is the Greatest",
+            repeat: 10,
           }),
           new DhikrEntryModel({
-            arabic: "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ ضِيقِ الدُّنْيَا وَضِيقِ يَوْمِ الْقِيَامَةِ (10)",
+            arabic: "الْحَمْدُ لِلَّهِ",
+            translit: "Alḥamdulillāh",
+            translation: "All Praise be to Allāh",
+            repeat: 10,
+          }),
+          new DhikrEntryModel({
+            arabic: "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ",
+            translit: "Subḥānallāhi wa biḥamdih",
+            translation: "Glory and praise be to Allāh",
+            repeat: 10,
+          }),
+          new DhikrEntryModel({
+            arabic: "سُبْحَانَ الْمَلِكِ الْقُدُّوسِ",
+            translit: "Subḥānal malikil quddūs",
+            translation: "Glory be to the Most Pure One",
+            repeat: 10,
+          }),
+          new DhikrEntryModel({
+            arabic: "أَسْتَغْفِرُ اللَّهَ",
+            translit: "Astaghfirullāh",
+            translation: "I ask Allāh's forgiveness",
+            repeat: 10,
+          }),
+          new DhikrEntryModel({
+            arabic: "لَا إِلَهَ إِلَّا اللَّهُ",
+            translit: "Lā ilāha illallāh",
+            translation: "There is no god, but Allāh",
+            repeat: 10,
+          }),
+          new DhikrEntryModel({
+            arabic: "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ ضِيقِ الدُّنْيَا وَضِيقِ يَوْمِ الْقِيَامَةِ",
             translit:
-              "Allāhumma innī a‛ūdhu bika min ḍīqid dunyā wa ḍīqi yawmil qiyāmah (10).",
+              "Allāhumma innī a‛ūdhu bika min ḍīqid dunyā wa ḍīqi yawmil qiyāmah.",
             translation:
-              "O Allāh! I seek refuge in You from the distress of this world, and the distress of the Day of Judgement. (10 times).",
+              "O Allāh! I seek refuge in You from the distress of this world, and the distress of the Day of Judgement.",
+            repeat: 10,
           }),
         ],
         instruction: "Say afterwards:",

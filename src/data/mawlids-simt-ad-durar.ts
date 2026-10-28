@@ -2492,13 +2492,14 @@ export default [
             chorus: false,
             entries: [
               new QasidaEntryModel({
-                arabic: "{السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهْ} (ثَلَاثًا)",
+                arabic: "{السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهْ}",
                 translit:
-                  "{As-salāmu ‛alayka ayyuhan nabiyyu wa raḥmatullāhi wa barakātuh} (thalāthan)",
+                  "{As-salāmu ‛alayka ayyuhan nabiyyu wa raḥmatullāhi wa barakātuh}",
                 translation:
-                  "{Peace be upon you, O Prophet, and the mercy of Allah and His blessings} (3 times)",
+                  "{Peace be upon you, O Prophet, and the mercy of Allah and His blessings}",
               }),
             ],
+            repeat: 3,
           }),
           new QasidaVerseModel({
             chorus: false,

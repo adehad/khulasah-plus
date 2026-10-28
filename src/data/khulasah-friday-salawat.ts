@@ -337,13 +337,15 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَبْدِكَ وَرَسُولِكَ النَّبِيِّ الْأُمِّي وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّم تَسلِيمًا (80 مرّة أَوْ 100 مرّة)",
+              "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ عَبْدِكَ وَرَسُولِكَ النَّبِيِّ الْأُمِّي وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّم تَسلِيمًا",
             translit:
-              "Allāhumma ṣalli ‛alā sayyidinā Muḥammadin ‛abdika wa rasūlikan nabiyyil ummiyyi wa ‛alā ālihī wa ṣaḥbihī wa sallim taslīmā. (80 or 100 times)",
+              "Allāhumma ṣalli ‛alā sayyidinā Muḥammadin ‛abdika wa rasūlikan nabiyyil ummiyyi wa ‛alā ālihī wa ṣaḥbihī wa sallim taslīmā.",
             translation:
-              "O Allāh! Bestow blessings and peace upon our master Muḥammad, your servant and Messenger, the unlettered Prophet, and upon his family and his companions. (80 or 100 times).",
+              "O Allāh! Bestow blessings and peace upon our master Muḥammad, your servant and Messenger, the unlettered Prophet, and upon his family and his companions.",
+            repeat: 80,
           }),
         ],
+        instruction: "Recite 80 or 100 times:",
       }),
     ],
   }),
