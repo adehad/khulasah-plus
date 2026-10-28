@@ -11,7 +11,7 @@ const theKhulasahContent = [
   }),
   new NavModel({
     title: "After every prayer",
-    href: "/",
+    href: "khulasah/after-every-prayer",
   }),
   new NavModel({
     title: "After Fajr",
