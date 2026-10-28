@@ -7,7 +7,7 @@ const theKhulasahContent = [
   }),
   new NavModel({
     title: "The last part of the night",
-    href: "/",
+    href: "khulasah/last-part-of-night",
   }),
   new NavModel({
     title: "After every prayer",
