@@ -1084,66 +1084,65 @@ export default [
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ صَلَاةً تَمُدُّ بِهَا جِسْمِي مِنْ جِسْمِهِ",
             translit:
               "Allāhumma ṣalli ‛alā sayyidinā Muḥammadin ṣalātan tamuddu bihā jismī min jismih",
-            translation: "O Allah, bestow prayers upon our master Muhammad",
+            translation:
+              "O Allah, bestow prayers upon our master Muhammad through which my body attains assistance from his body",
           }),
           new DhikrEntryModel({
             arabic: "وَقَلْبِي مِنْ قَلْبِهِ",
             translit: "Wa qalbī min qalbih",
-            translation:
-              "through which my body attains assistance from his body",
+            translation: "my heart from his heart",
           }),
           new DhikrEntryModel({
             arabic: "وَرُوحِي مِنْ رُوحِهِ",
             translit: "Wa rūḥī min rūḥih",
-            translation: "my heart from his heart",
+            translation: "my soul from his soul",
           }),
           new DhikrEntryModel({
             arabic: "وَسِرِّي مِنْ سِرِّهِ",
             translit: "Wa sirrī min sirrih",
-            translation: "my soul from his soul",
+            translation: "my secret from his secret",
           }),
           new DhikrEntryModel({
             arabic: "وَعِلْمِي مِنْ عِلْمِهِ",
             translit: "Wa ‛ilmī min ‛ilmih",
-            translation: "my secret from his secret",
+            translation: "my knowledge from his knowledge",
           }),
           new DhikrEntryModel({
             arabic: "وَعَمَلِي مِنْ عَمَلِهِ",
             translit: "Wa ‛amalī min ‛amalih",
-            translation: "my knowledge from his knowledge",
+            translation: "my action from his action",
           }),
           new DhikrEntryModel({
             arabic: "وَخُلُقِي مِنْ خُلُقِهِ",
             translit: "Wa khuluqī min khuluqih",
-            translation: "my action from his action",
+            translation: "my character from his character",
           }),
           new DhikrEntryModel({
             arabic: "وَنِيَّتِي مِنْ نِيَّتِهِ",
             translit: "Wa niyyatī min niyyatih",
-            translation: "my character from his character",
+            translation: "my intention from his intention",
           }),
           new DhikrEntryModel({
             arabic: "وَوِجْهَتِي مِنْ وِجْهَتِهِ",
             translit: "Wa wijhatī min wijhatih",
-            translation: "my intention from his intention",
+            translation: "my heart’s focus from his heart’s focus",
           }),
           new DhikrEntryModel({
             arabic: "وَقَصْدِي مِنْ قَصْدِهِ",
             translit: "Wa qaṣdī min qaṣdih",
-            translation: "my heart’s focus from his heart’s focus",
+            translation: "my direct aspiration from his direct aspiration.",
           }),
           new DhikrEntryModel({
             arabic: "وَتَعُودُ بَرَكَاتُها عَلَيَّ وَعَلَى أَهْلِي وَأَحْبَابِي وَأَصْحَابِي وَعَلَى أَهْلِ عَصْرِي",
             translit:
               "Wa ta‛ūdu barakātuhā ‛alayya wa ‛alā ahlī wa aḥbābī wa aṣḥābī wa ‛alā ahli ‛aṣrī",
             translation:
-              "my direct aspiration from his direct aspiration. May I attain the blessings of these prayers",
+              "May I attain the blessings of these prayers along with my children, my companions and the people of my time.",
           }),
           new DhikrEntryModel({
             arabic: "وَعَلَى آلِهِ وَسَلِّم يَا نُورُ",
             translit: "Wa ‛alā ālihī wa sallim yā Nūr",
-            translation:
-              "along with my children, my companions and the people of my time. O Light!",
+            translation: "and upon his Family, and grant him peace. O Light!",
           }),
         ],
       }),
@@ -1165,13 +1164,12 @@ export default [
           new DhikrEntryModel({
             arabic: "وَاجْمَعْنِي بِهِ فِي كُلِّ أَطْوَارِي",
             translit: "Wajma‛nī bihī fī kulli aṭwārī",
-            translation:
-              "Join me with him in all my states, and upon his Family and Companions",
+            translation: "Join me with him in all my states,",
           }),
           new DhikrEntryModel({
             arabic: "وَعَلَى آلِهِ وَصَحْبِهِ يَا نُور",
             translit: "Wa ‛alā ālihī wa ṣaḥbihī yā Nūr",
-            translation: "O Light!",
+            translation: "and upon his Family and Companions. O Light!",
           }),
         ],
       }),
@@ -1243,24 +1241,24 @@ export default [
             translit:
               "Allāhumma innā natawajjahu ilayka wa natawassalu ilayka biḥaqqi nabiyyika Muḥammadin nabiyyir raḥmati an taqḍiya ḥawā’ijanā",
             translation:
-              "O Allah, indeed we turn to You and seek Your help through the merit of Your Prophet Muhammad",
+              "O Allah, indeed we turn to You and seek Your help through the merit of Your Prophet Muhammad, the Prophet of Mercy, to fulfill our needs,",
           }),
           new DhikrEntryModel({
             arabic: "وَتُصْلِحَ نِيَّاتِنَا",
             translit: "Wa tuṣliḥa niyyātinā",
-            translation: "the Prophet of Mercy",
+            translation: "rectify our intentions,",
           }),
           new DhikrEntryModel({
             arabic: "وَتُطَهِّرَ قُلُوبَنَا",
             translit: "Wa tuṭahhira qulūbanā",
-            translation: "to fulfill our needs",
+            translation: "and purify our hearts.",
           }),
           new DhikrEntryModel({
             arabic: "وَأَنْ تَغْفِرَ لَنَا مَغْفِرَةً عَامَّةً تَمْحُو بِهَا جَمِيعَ ذُنُوبِنَا",
             translit:
               "Wa an taghfira lanā maghfiratan ‛āmmatan tamḥū bihā jamī‛a dhunūbinā",
             translation:
-              "rectify our intentions, and purify our hearts. Grant us a comprehensive forgiveness that erases all our sins.",
+              "Grant us a comprehensive forgiveness that erases all our sins.",
           }),
         ],
       }),

@@ -29,8 +29,7 @@ export default [
           new QasidaEntryModel({
             arabic: "فَدُعَائِي وابْتِهَالِي",
             translit: "Fadu‛ā’ī wabtihālī,",
-            translation:
-              "Hence my supplications and entreaties bear witness to my utter dependence.",
+            translation: "Hence my supplications and entreaties",
           }),
           new QasidaEntryModel({
             arabic: "شَاهِدٌ لِي بِافْتِقَارِي",
@@ -332,8 +331,7 @@ export default [
           new QasidaEntryModel({
             arabic: "وَأَرِحْ سِرِّي وَقَلْبِي",
             translit: "Wa ariḥ sirrī wa qalbī,",
-            translation:
-              "Grant comfort to my secret and my heart from its fervour and passion.",
+            translation: "Grant comfort to my secret and my heart",
           }),
           new QasidaEntryModel({
             arabic: "مِنْ لَظَاهَا وَالشُّوَاظِ",

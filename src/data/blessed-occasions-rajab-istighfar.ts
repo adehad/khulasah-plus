@@ -463,22 +463,23 @@ export default [
             translit:
               "Wa astaghfiruka min kulli farīḍatin awjabtahā ‛alayya fī ānā’il-layli wa aṭrāfin-nahār",
             translation:
-              "I seek Your forgiveness for every obligation which You have requested that I fulfil in the day or the night which I have subsequently neglected out of heedlessness",
+              "I seek Your forgiveness for every obligation which You have requested that I fulfil in the day or the night",
           }),
           new DhikrEntryModel({
             arabic: "فَتَرَكْتُهَا خَطَأ أَوْ عَمْدًا أَوْ نِسْيَانًا",
             translit: "fa-taraktuhā khaṭa’an aw ‛amdan aw nisyānā",
-            translation: "absentmindedness",
+            translation:
+              "which I have subsequently neglected out of heedlessness, absentmindedness, forgetfulness",
           }),
           new DhikrEntryModel({
             arabic: "أَوْ تَهَاوُنًا",
             translit: "aw tahāwunā",
-            translation: "forgetfulness or ignorance",
+            translation: "or negligence",
           }),
           new DhikrEntryModel({
             arabic: "أَوْ جَهْلًا وَأَنَا مُعَاقَبٌ بِهَا",
             translit: "aw jahlan wa anā mu‛āqabun bihā",
-            translation: "and for which I will be punished.",
+            translation: "or ignorance, and for which I will be punished.",
           }),
         ],
       }),
@@ -512,12 +513,12 @@ export default [
           new DhikrEntryModel({
             arabic: "أَوْ تَهَاوُنًا",
             translit: "aw tahāwunā",
-            translation: "ignorance,",
+            translation: "not caring,",
           }),
           new DhikrEntryModel({
             arabic: "أَوْ جَهْلًا",
             translit: "aw jahlā",
-            translation: "not caring,",
+            translation: "ignorance,",
           }),
           new DhikrEntryModel({
             arabic: "أَوْ قِلَّةَ مُبَالَاةٍ بِهَا",

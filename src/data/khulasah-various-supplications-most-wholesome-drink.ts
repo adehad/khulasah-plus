@@ -16,12 +16,12 @@ export default [
           new QasidaEntryModel({
             arabic: "اللَّهُ يَا رَحۡمَٰنُ يَا رَحِيمُ",
             translit: "Allāhu yā Raḥmānu ya Raḥīmu,",
-            translation: "O Allāh, All-Compassionate and Merciful King,",
+            translation: "O Allāh, All-Compassionate and Merciful,",
           }),
           new QasidaEntryModel({
             arabic: "يَا مَلِكٌ عَطَاؤُهُ فَخِيمُ",
             translit: "Yā Malikun ‛aṭā’uhū fakhīmu.",
-            translation: "whose gifts are boundless",
+            translation: "King whose gifts are boundless",
           }),
         ],
       }),
@@ -46,13 +46,13 @@ export default [
           new QasidaEntryModel({
             arabic: "سَلَامُ يَا مُؤْمِنُ آمِن رَوْعَتِي",
             translit: "Salāmu yā Mu’minu āmin raw‛atī,",
-            translation: "O Source of Peace, Inspirer of Faith,",
+            translation:
+              "O Source of Peace, Inspirer of Faith, relieve my fear.",
           }),
           new QasidaEntryModel({
             arabic: "مُهَيْمِنٌ عَزِيزُ اِرْفَعْ رُتْبَتِي",
             translit: "Muhayminun ‛azīzu irfa‛ rutbatī.",
-            translation:
-              "relieve my fear. Guardian, Most Mighty, elevate my rank.",
+            translation: "Guardian, Most Mighty, elevate my rank.",
           }),
         ],
       }),
@@ -137,12 +137,13 @@ export default [
           new QasidaEntryModel({
             arabic: "يَا حَكَمٌ يَا عَدْلُ عَامِلْ بِالْكَرَمْ",
             translit: "Yā ḥakamu yā ‛adlu ‛āmil bil karam,",
-            translation: "O Judge, O Most Just, I beg clemency. O All-Aware,",
+            translation: "O Judge, O Most Just, I beg clemency.",
           }),
           new QasidaEntryModel({
             arabic: "لَطِيفُ يَا خَبِيرُ وَادْفَعِ النِّقَمْ",
             translit: "Laṭīfu yā khabīru wadfa‛in niqama.",
-            translation: "O Knower of Subtleties, remove all misfortunes.",
+            translation:
+              "O Knower of Subtleties, O All-Aware, remove all misfortunes.",
           }),
         ],
       }),
@@ -246,13 +247,13 @@ export default [
           new QasidaEntryModel({
             arabic: "مُحْيِي مُمِيتُ رَبَّنَا اصْلِحِ الْقُلُوبْ",
             translit: "Muḥyī mumītu rabbanā aṣliḥil qulūb,",
-            translation: "O Giver and Taker of Life,",
+            translation:
+              "O Giver and Taker of Life, O Lord, purify our hearts.",
           }),
           new QasidaEntryModel({
             arabic: "يَا حَيُّ يَا قَيُّومُ وَاكْشِفِ الْكُرُوب",
             translit: "Yā ḥayyu yā qayyūmu wakshifil kurūb.",
-            translation:
-              "O Lord, purify our hearts. O Ever Living, O Self-Subsisting, ease our distress.",
+            translation: "O Ever Living, O Self-Subsisting, ease our distress.",
           }),
         ],
       }),
@@ -262,13 +263,12 @@ export default [
           new QasidaEntryModel({
             arabic: "يَا وَاجِدٌ يَا مَاجِدٌ هَبْنَا الْأَمَلْ",
             translit: "Yā wājidu yā mājidu habnal amal,",
-            translation: "O Finder,",
+            translation: "O Finder, O Splendid One, grant us hope.",
           }),
           new QasidaEntryModel({
             arabic: "يَا وَاحِدٌ يَا أَحَدٌ عَزَّ وَجَل",
             translit: "Yā wāḥidu yā aḥadu ‛azza wa jalla.",
-            translation:
-              "O Splendid One, grant us hope. (You are) the One and Only, Majestic and Glorified.",
+            translation: "(You are) the One and Only, Majestic and Glorified.",
           }),
         ],
       }),
@@ -278,13 +278,13 @@ export default [
           new QasidaEntryModel({
             arabic: "يَا فَرْدُ يَا صَمَدُ أَصْلِحِ الشُّئُونْ",
             translit: "Yā fardu yā ṣamadu aṣliḥish shu’ūn,",
-            translation: "O Singular,",
+            translation:
+              "O Singular, O Satisfier of Needs, set right our affairs.",
           }),
           new QasidaEntryModel({
             arabic: "يَا قَادِرٌ مُقْتَدِرٌ جَلِّ الْحُزُونْ",
             translit: "Yā qādiru muqtadiru jallil ḥazūn.",
-            translation:
-              "O Satisfier of Needs, set right our affairs. O Powerful and Capable, rid us of sorrows.",
+            translation: "O Powerful and Capable, rid us of sorrows.",
           }),
         ],
       }),
@@ -326,13 +326,13 @@ export default [
             arabic: "تَوَّابُ تُبْ وَاكْفِ الْعِدَا يَا مُنْتَقِم",
             translit: "Tawwābu tub wakfil ‛idā yā muntaqimu,",
             translation:
-              "O Accepter of Repentance, pardon us, suffice us against the enemy.",
+              "O Accepter of Repentance, pardon us, suffice us against the enemy. O Avenger,",
           }),
           new QasidaEntryModel({
             arabic: "عَفُوُّ يَا رَؤُفُ سَامِحْ مَنْ نَدِمْ",
             translit: "‛Afuwwu yā ra’ūfu sāmiḥ min nadam.",
             translation:
-              "O Avenger, O Forgiver, O Clement One, forgive those who show regret.",
+              "O Forgiver, O Clement One, forgive those who show regret.",
           }),
         ],
       }),
@@ -373,13 +373,14 @@ export default [
           new QasidaEntryModel({
             arabic: "يَا مَانِعٌ يَا ضَارُّ اِكْفِنَا الضَّرَرْ",
             translit: "Yā māni‛u yā ḍārru ikfinaḍ ḍarar,",
-            translation: "O Preventer,",
+            translation:
+              "O Preventer, O Bestower of affection, protect us from harm.",
           }),
           new QasidaEntryModel({
             arabic: "يَا نَافِعُ انْفَعْنَا فَأَنْتَ الْمُدَّخَر",
             translit: "Yā nāfi‛u infa‛nā fa’antal muddakhar.",
             translation:
-              "O Bestower of affection, protect us from harm. O Giver of benefit, benefit us, for You are the Keeper of Treasures.",
+              "O Giver of benefit, benefit us, for You are the Keeper of Treasures.",
           }),
         ],
       }),
@@ -389,13 +390,13 @@ export default [
           new QasidaEntryModel({
             arabic: "يَا نُورُ نَوِّرْ وَاهْدِنَا يَا هَادِي",
             translit: "Yā nūru nawwir wahdinā yā hādī,",
-            translation: "O Light, illuminate us and guide us,",
+            translation:
+              "O Light, illuminate us and guide us, for You are the Guide.",
           }),
           new QasidaEntryModel({
             arabic: "بَدِيعُ أَصْلِح بَاطِنِي وَالْبَادِي",
             translit: "Badī‛u aṣliḥ bāṭinī wal bādī.",
-            translation:
-              "for You are the Guide. O Originator, reform my inner and outer self.",
+            translation: "O Originator, reform my inner and outer self.",
           }),
         ],
       }),

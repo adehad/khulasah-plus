@@ -168,18 +168,18 @@ export default [
                 arabic: "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ",
                 translit: "Bismillāhir raḥmānir raḥīm",
                 translation:
-                  "All praise be to the Most Compassionate. He sent His Chosen One, Ahmad,",
+                  "In the Name of Allah, the Most Compassionate, the Most Merciful.",
               }),
               new QasidaEntryModel({
                 arabic: "الْحَمْدُ لِلرَّحْمَنِ أَرْسَلَ بِالْهُدَى",
                 translit: "Alḥamdu lirraḥmāni arsala bilhudā",
-                translation: "with guidance and the religion of truth.",
+                translation:
+                  "All praise be to the Most Compassionate. He sent His Chosen One, Ahmad, with guidance",
               }),
               new QasidaEntryModel({
                 arabic: "وَدِينِ حَقٍّ مُصْطَفَاهُ أَحْمَدَا",
                 translit: "Wa dīni ḥaqqin muṣṭafāhu Aḥmadā",
-                translation:
-                  "and the religion of truth; Ahmad is His Chosen One.",
+                translation: "and the religion of truth.",
               }),
             ],
           }),
@@ -1271,14 +1271,15 @@ export default [
                 arabic: "بسمِ اللهِ الرَّحمنِ الرَّحِيم",
                 translit: "Bismillāhir raḥmānir raḥīm",
                 translation:
-                  "O Lord, by the Chosen One, the noblest Intercessor,",
+                  "In the Name of Allah, the Most Compassionate, the Most Merciful.",
               }),
               new QasidaEntryModel({
                 arabic:
                   "الحَمْدُ لِلَّهِ رَبِّ العَالَمِين اللّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ فِي الأَوَّلِين وَصَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ فِي الآخِرِين وَصَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ فِي النَّبِيِّين وَصَلِّ وَسَلِّمْ علَى سَيِّدِنَا مُحَمَّدٍ فِي المُرْسَلِين وَصَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ فِي المَلَإِ الأَعْلَى إِلَى يَوْمِ الدِّين وَصَلِّ وَسَلِّم عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِين",
                 translit:
                   "Alḥamdu lillāhi rabbil ‛ālamīn. Allāhumma ṣalli wa sallim ‛alā sayyidinā Muḥammadin fil awwalīn, wa ṣalli wa sallim ‛alā sayyidinā Muḥammadin fil ākhirīn, wa ṣalli wa sallim ‛alā sayyidinā Muḥammadin fin nabiyyīn, wa ṣalli wa sallim ‛alā sayyidinā Muḥammadin fil mursalīn, wa ṣalli wa sallim ‛alā sayyidinā Muḥammadin fil mala’il a‛lā ilā yawmid dīn, wa ṣalli wa sallim ‛alā sayyidinā Muḥammadin wa ‛alā ālihī wa ṣaḥbihī ajma‛īn",
-                translation: "set our states aright; keep us away from ruin",
+                translation:
+                  "All praise is due to Allah, Lord of the Worlds. O Allah, bless and grant peace to our master Muhammad among the first, among the last, among the Prophets, among the Messengers, and in the Highest Assembly until the Day of Judgement, and bless and grant peace to our master Muhammad and to all his family and companions.",
               }),
               new QasidaEntryModel({
                 arabic: "يَا رَبِّ بِالمُخْتَارِ أَكْرَمِ شَافِعٍ",

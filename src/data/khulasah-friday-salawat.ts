@@ -197,19 +197,21 @@ export default [
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّم بِجَمِيعِ الصَّلَوَاتِ كُلِّهَا عَدَدَ مَا فِي عِلْمِ اللَّهِ",
             translit:
               "Allāhumma ṣalli wa sallim bijamī‛iṣ ṣalawāti kullihā ‛adada mā fī ‛ilmillāh",
-            translation: "O Allāh! Bestow all blessings and peace",
+            translation:
+              "O Allāh! Bestow all blessings and peace, the number of which is in the knowledge of Allāh,",
           }),
           new DhikrEntryModel({
             arabic: "عَلَى سَيِّدِنَا مُحَمَّدٍ وَآلِهِ وَمَنْ وَالَاهُ",
             translit: "‛alā sayyidinā Muḥammadin wa ālihī wa man wālāhu",
-            translation: "the number of which is in the knowledge of Allāh",
+            translation:
+              "upon our master Muḥammad, his family and his followers,",
           }),
           new DhikrEntryModel({
             arabic: "فِي كُلِّ لَحْظَةٍ أَبَدًا بِكُلِّ لِسَانٍ لِأَهْلِ الْمَعْرِفَةِ بِاللَّهِ",
             translit:
               "fī kulli laḥẓatin abadan bikulli lisānin li’ahlil ma‛rifati billāhi.",
             translation:
-              "upon our master Muḥammad, his family and his followers, in every moment, forever, with the tongue of every Gnostic knower of Allah",
+              "in every moment, forever, with the tongue of every Gnostic knower of Allah",
             repeat: 3,
           }),
         ],

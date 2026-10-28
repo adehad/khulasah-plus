@@ -103,13 +103,13 @@ export default [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ أَنْتَ خَلَقْتَ نَفْسِي وَأَنْتَ تَتَوَفَّاهَا",
             translit: "Allāhumma anta khalaqta nafsī wa anta tatawaffāhā",
-            translation: "O Allāh! You created my soul",
+            translation:
+              "O Allāh! You created my soul and You can withdraw it;",
           }),
           new DhikrEntryModel({
             arabic: "لَكَ مَمَاتُهَا وَمَحْيَاهَا",
             translit: "laka mamātuhā wa maḥyāhā",
-            translation:
-              "and You can withdraw it; You can cause it to die and You can give it life",
+            translation: "You can cause it to die and You can give it life",
           }),
           new DhikrEntryModel({
             arabic: "إِنْ أَمَتَّهَا فَاغْفِرْ لَهَا",

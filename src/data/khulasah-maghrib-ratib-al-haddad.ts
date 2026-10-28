@@ -650,7 +650,8 @@ export const wird = [
             arabic: "جَزَى اللَّهُ عَنَّا سَيِّدَنَا مُحَمَّدًا صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ خَيْرًا",
             translit:
               "Jazallāhu ‛annā sayyidanā Muḥammadan ṣallallāhu ‛alayhi wa sallama khayran",
-            translation: "May Allāh reward, on our behalf",
+            translation:
+              "May Allāh reward, on our behalf, our master Muḥammad (blessings and peace on him) with good.",
           }),
           new DhikrEntryModel({
             arabic:
@@ -658,7 +659,7 @@ export const wird = [
             translit:
               "jazallāhu ‛annā sayyidanā Muḥammadan ṣallallāhu ‛alayhi wa sallama mā huwa ahluhū.",
             translation:
-              "our master Muḥammad (blessings and peace on him) with good. May Allāh reward our master Muḥammad (blessings and peace on him) that which he is entitled to.",
+              "May Allāh reward our master Muḥammad (blessings and peace on him) that which he is entitled to.",
           }),
         ],
       }),

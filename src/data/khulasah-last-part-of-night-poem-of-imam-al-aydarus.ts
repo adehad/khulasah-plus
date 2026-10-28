@@ -92,13 +92,12 @@ export default [
             arabic: "وَبِالْهَادِي تَوَسَّلنَا وَلُذْنَا",
             translit: "Wa bilhādī tawassalnā waludhnā,",
             translation:
-              "And by the Guide (the Prophet), we ask him to intercede",
+              "And by the Guide (the Prophet), we ask him to intercede (in our request to You) and take recourse to him;",
           }),
           new QasidaEntryModel({
             arabic: "وَكُلِّ الْأَنْبِيَا وَالْمُرْسَلِينَا",
             translit: "wa kullil ambiyā wal mursalīnā.",
-            translation:
-              "(in our request to You) and take recourse to him; and by all the Prophets and Messengers,",
+            translation: "and by all the Prophets and Messengers,",
           }),
         ],
       }),
@@ -188,13 +187,13 @@ export default [
           new QasidaEntryModel({
             arabic: "وَذِكرُ الْعَيْدَرُوسِ الْقُطْبِ أَجْلَى",
             translit: "Wa dhikrul ‛aydarūsil quṭbi ajlā,",
-            translation: "The remembrance",
+            translation:
+              "The remembrance of al-‛Aydarūs, the Qutb, is most potent",
           }),
           new QasidaEntryModel({
             arabic: "عَنِ الْقَلْبِ الصَّدَى لِلصَّادِقِينَا",
             translit: "‛anil qalbiṣṣadā liṣṣādiqīnā.",
-            translation:
-              "of al-‛Aydarūs, the Qutb, is most potent in removing the rust of the hearts of the truthful.",
+            translation: "in removing the rust of the hearts of the truthful.",
           }),
         ],
       }),

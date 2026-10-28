@@ -17,23 +17,23 @@ export default [
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin wa aʿṭihil wasīlata wal faḍīlata",
             translation:
-              "O Allah, bless Our Master Muhammad and the family of Our Master Muhammad and give him the closest access",
+              "O Allah, bless Our Master Muhammad and the family of Our Master Muhammad and give him the closest access and the preeminence",
           }),
           new DhikrEntryModel({
             arabic: "وَالدَّرَجَةَ الرَّفِيعَةَ",
             translit: "wa darajatar rafīʾata",
-            translation: "the preeminence",
+            translation: "and the lofty rank.",
           }),
           new DhikrEntryModel({
             arabic: "وَابْعَثْهُ اللَّهُمَّ مَقَامًا مَحْمُودًا الَّذِي وَعَدْتَهُ",
             translit: "wabʾath-hu Allāhumma maqāman maḥmūdanalladhi waʿadtahu",
-            translation: "and the lofty rank. Elevate him",
+            translation:
+              "Elevate him, O Allah, to the Praiseworthy Station that You promised him,",
           }),
           new DhikrEntryModel({
             arabic: "إِنَّكَ لَا تُخْلِفُ المِيعَادَ.",
             translit: "innaka lā tukhliful mīʿād.",
-            translation:
-              "O Allah, to the Praiseworthy Station that You promised him, for You do not renege on Your promise.",
+            translation: "for You do not renege on Your promise.",
           }),
         ],
       }),

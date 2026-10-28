@@ -1,5 +1,10 @@
 import { baqarah_201, saffat_180_182 } from "@/data/shared/quran-partial";
-import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
+import {
+  DhikrEntryModel,
+  DhikrModel,
+  only_instruction,
+  WirdModel,
+} from "@/models/recitation";
 
 export default [
   new WirdModel({
@@ -37,47 +42,47 @@ export default [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ انْفَعْنَا",
             translit: "Allāhumman-fa‛nā",
-            translation: "O Allah, benefit us! O Allah",
+            translation: "O Allah, benefit us!",
           }),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ ارْفَعْنَا",
             translit: "Allāhummar-fa‛nā",
-            translation: "raise us! O Allah",
+            translation: "O Allah, raise us!",
           }),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ اسْتُرْنَا",
             translit: "Allāhummas-turnā",
-            translation: "veil us! O Allah",
+            translation: "O Allah, veil us!",
           }),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ اجْبُرْنَا",
             translit: "Allāhummaj-burnā",
-            translation: "help us! O Allah",
+            translation: "O Allah, help us!",
           }),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ ارْحَمْنَا",
             translit: "Allāhummar-ḥamnā",
-            translation: "have mercy on us",
+            translation: "O Allah, have mercy on us,",
           }),
           new DhikrEntryModel({
             arabic: "وَارْحَمْ وَالِدِيْنَا",
             translit: "War-ḥam wālidīnā",
-            translation: "and have mercy on our Shaykhs",
+            translation: "and have mercy on our parents,",
           }),
           new DhikrEntryModel({
             arabic: "وَارْحَمْ مَشَايِخَنَا",
             translit: "war-ḥam mashāyikhanā",
-            translation: "teachers",
+            translation: "and have mercy on our Shaykhs,",
           }),
           new DhikrEntryModel({
             arabic: "وَارْحَمْ مُعَلِّمِينَا",
             translit: "war-ḥam mu‛allimīnā",
-            translation: "their parents",
+            translation: "teachers,",
           }),
           new DhikrEntryModel({
             arabic: "وَوَالِدِيهِمْ وَالْحَاضِرِينَ",
             translit: "wa wālidīhim wal-ḥāḍirīn",
-            translation: "those present",
+            translation: "their parents, those present,",
           }),
           new DhikrEntryModel({
             arabic: "وَجَمِيعِ الْمُسْلِمِينَ",
@@ -354,12 +359,9 @@ export default [
     ],
   }),
   // An untitled, empty wird carries the rubric that sits between the two duas
-  new WirdModel({
-    title: "",
-    instruction:
-      "Pray for whatever you wish that is pleasing to Allah, the Exalted. Then read:",
-    entries: [],
-  }),
+  only_instruction(
+    "Pray for whatever you wish that is pleasing to Allah, the Exalted. Then read:",
+  ),
   new WirdModel({
     title: "Prayer on Completion of the Holy Qur'an",
     instruction:
@@ -449,12 +451,12 @@ export default [
             arabic: "اللَّهُمَّ افْعَلْ بِنَا وَبِهِمْ مِنَ الْجَمِيلِ مَا أَنْتَ أَهْلُهُ",
             translit: "Allāhummaf-‛al binā wa bihim minal-jamīli mā anta ahluh",
             translation:
-              "O Allah, act beautifully with us and them as befits You. O Most Merciful! O Allah",
+              "O Allah, act beautifully with us and them as befits You.",
           }),
           new DhikrEntryModel({
             arabic: "يَا أَرْحَمَ الرَّاحِمِينَ",
             translit: "Yā arḥamar-rāḥimīn",
-            translation: "our Lord",
+            translation: "O Most Merciful!",
           }),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ",
@@ -614,14 +616,14 @@ export default [
           new DhikrEntryModel({
             arabic: "يَا كَرِيم",
             translit: "Yā Karīm",
-            translation: "O Generous One! O Allah,",
+            translation: "O Generous One!",
           }),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ إِنَّكَ أَحْضَرْتَنَا خَتْمَ كِتَابِكَ الَّذِي عَظَّمْتَ حُرْمَتَهُ",
             translit:
               "Allāhumma innaka aḥḍartanā khatma kitābikal-ladhī ‛aẓẓamta ḥurmatah",
             translation:
-              "You brought us to the completion of Your Book whose sanctity You exalted.",
+              "O Allah, You brought us to the completion of Your Book whose sanctity You exalted.",
           }),
           new DhikrEntryModel({
             arabic: "وَجَعَلْتَهُ مُهَيْمِنًا عَلَى كُلِّ كِتَابٍ أَنْزَلْتَهُ",
@@ -711,12 +713,13 @@ export default [
           new DhikrEntryModel({
             arabic: "يَا كَرِيم",
             translit: "Yā Karīm",
-            translation: "O Generous One! O Allah,",
+            translation: "O Generous One!",
           }),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ فَإِذْ بَلَّغْتَنَا خَاتِمَتَهُ",
             translit: "Allāhumma fa idh ballaghtanā khātimatah",
-            translation: "as You have allowed us to reach its completion,",
+            translation:
+              "O Allah, as You have allowed us to reach its completion,",
           }),
           new DhikrEntryModel({
             arabic: "وَحَبَّبْتَ إِلَيْنَا تِلَاوَتَهُ",
@@ -757,12 +760,13 @@ export default [
             translit:
               "wal-i‛tirāfi bi-annahū min ‛indik, lā tu‛āriḍunash-shukūku fī taṣdīqih",
             translation:
-              "acknowledge that it is from You, are never afflicted with doubt about its veracity, nor prone to deviate from intending its path.",
+              "acknowledge that it is from You, are never afflicted with doubt about its veracity,",
           }),
           new DhikrEntryModel({
             arabic: "وَلَا يَخْتَلِجُنَا الزَّيْغُ عَنْ قَصْدِ طَرِيقِهِ يَا كَرِيم",
             translit: "wa lā yakhtalijunaz-zayghu ‛an qaṣdi ṭarīqih, yā Karīm",
-            translation: "O Generous One!",
+            translation:
+              "nor prone to deviate from intending its path, O Generous One!",
           }),
         ],
       }),
@@ -782,13 +786,14 @@ export default [
           new DhikrEntryModel({
             arabic: "يَا كَرِيم",
             translit: "Yā Karīm",
-            translation: "O Generous One! O Allah,",
+            translation: "O Generous One!",
           }),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ وَكَمَا جَعَلْتَ قُلُوبَنَا مُذَلَّلَةً بِحَمْلِهِ",
             translit:
               "Allāhumma wa kamā ja‛alta qulūbanā mudhallalatan biḥamlih",
-            translation: "as You have made our hearts humbled by carrying it,",
+            translation:
+              "O Allah, as You have made our hearts humbled by carrying it,",
           }),
           new DhikrEntryModel({
             arabic: "وَعَرَّفْتَنَا مِنْكَ شَرَفَ فَضْلِهِ",
@@ -848,13 +853,13 @@ export default [
           new DhikrEntryModel({
             arabic: "يَا كَرِيم",
             translit: "Yā Karīm",
-            translation: "O Generous One, O Allah,",
+            translation: "O Generous One!",
           }),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ وَكَمَا نَصَبْتَهُ عَلَمًا لِلدَّلَالَةِ عَلَيْكَ",
             translit: "Allāhumma wa kamā naṣabtahū ‛alaman lid-dalālati ‛alayk",
             translation:
-              "as You have raised it as a banner for guidance to You,",
+              "O Allah, as You have raised it as a banner for guidance to You,",
           }),
           new DhikrEntryModel({
             arabic: "وَأَنْهَجْتَ بِهِ سَبِيلَ مَنْ نَزَعَاتُهُ إِلَيْكَ",
@@ -904,13 +909,13 @@ export default [
           new DhikrEntryModel({
             arabic: "يَا كَرِيم",
             translit: "Yā Karīm",
-            translation: "O Generous One! O Allah,",
+            translation: "O Generous One!",
           }),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ وَاجْعَلْهُ لَنَا فِي ظُلَمِ اللَّيَالِي مُؤْنِسًا",
             translit: "Allāhumma waj-‛alhu lanā fī ẓulamil-layālī mu’nisā",
             translation:
-              "make it an intimate companion for us in the darkness of nights,",
+              "O Allah, make it an intimate companion for us in the darkness of nights,",
           }),
           new DhikrEntryModel({
             arabic: "وَلِأَقْدَامِنَا عَنْ نَقْلِهَا إِلَى الْمَعَاصِي حَابِسًا",
@@ -968,14 +973,14 @@ export default [
           new DhikrEntryModel({
             arabic: "يَا كَرِيم",
             translit: "Yā Karīm",
-            translation: "O Generous One! O Allah,",
+            translation: "O Generous One!",
           }),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ وَاجْبُرْ بِهِ خَلَّتَنَا بِالْغِنَى مِنْ عُدْمِ الْإِمْلَاقِ",
             translit:
               "Allāhumma wajbur bihī khallatanā bil-ghinā min ‛udmil-imlāq",
             translation:
-              "through it, redress our need - with independence from the emptiness of poverty.",
+              "O Allah, through it, redress our need - with independence from the emptiness of poverty.",
           }),
           new DhikrEntryModel({
             arabic: "وَسُقْ إِلَيْنَا بِهِ رَغَدَ الْعَيْشِ وَخِصْبَ السَّعَةِ فِي الْأَرْزَاقِ",
@@ -1034,13 +1039,13 @@ export default [
           new DhikrEntryModel({
             arabic: "يَا كَرِيم",
             translit: "Yā Karīm",
-            translation: "O Generous One! O Allah,",
+            translation: "O Generous One!",
           }),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ وَكَمَا أَكْرَمْتَنَا بِخَتْمِ كِتَابِكَ",
             translit: "Allāhumma wa kamā akramtanā bikhatmi kitābik",
             translation:
-              "and as You have honoured us with the completion of Your Book,",
+              "O Allah, and as You have honoured us with the completion of Your Book,",
           }),
           new DhikrEntryModel({
             arabic: "وَنَدَبْتَنَا إِلَى التَّعَرُّضِ لِجَزِيلِ ثَوَابِكَ",
@@ -1117,19 +1122,20 @@ export default [
           new DhikrEntryModel({
             arabic: "يَا كَرِيم",
             translit: "Yā Karīm",
-            translation: "O Generous One! O Allah",
+            translation: "O Generous One!",
           }),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ وَسَهِّلْ بِهِ عَلَى أَنْفُسِنَا عِنْدَ الْمَوْتِ كُرَبَ السِّيَاقِ",
             translit:
               "Allāhumma wa sahhil bihī ‛alā anfusinā ‛indal-mawti kurabas-siyāq",
-            translation: "through it",
+            translation:
+              "O Allah, through it, make easy upon us the agonies of removal of the soul at the point of death,",
           }),
           new DhikrEntryModel({
             arabic: "وَعَلَزَ الْأَنِينِ إِذَا بَلَغَتِ الرُّوحُ التَّرَاقِ",
             translit: "wa ‛alazal-anīni idhā balaghatir-rūḥut-tarāq",
             translation:
-              "make easy upon us the agonies of removal of the soul at the point of death",
+              "the convulsions of the groaning when the soul reaches the collar bone",
           }),
           new DhikrEntryModel({
             arabic:
@@ -1137,33 +1143,34 @@ export default [
             translit:
               "wa tajallā malakul-mawti ṣallallāhu ‛alā nabiyyinā wa ‛alayhi wa sallama liqabḍihā min ḥujubil-ghuyūb, wa qīla man rāq",
             translation:
-              "the convulsions of the groaning when the soul reaches the collar bone and the Angel of Death (may Allah bless and grant peace to our Prophet and to him) appears to seize it from behind the veils of the unseen and it shall be said",
+              "and the Angel of Death (may Allah bless and grant peace to our Prophet and to him) appears to seize it from behind the veils of the unseen and it shall be said, “Is there anyone to treat him now?”",
           }),
           new DhikrEntryModel({
             arabic: "وَذَافَ لَهَا مِنْ ذُعَافِ مَرَارَةِ الْمَوْتِ كَأْسًا مَسْمُومَةَ الْمَذَاقِ",
             translit:
               "wa dhāfa lahā min dhu‛āfi marārātil-mawti ka’san masmūmatal-madhāq",
             translation:
-              "“Is there anyone to treat him now?” He mixes for it from the lethal bitterness of death a cup of poisonous taste",
+              "He mixes for it from the lethal bitterness of death a cup of poisonous taste,",
           }),
           new DhikrEntryModel({
             arabic: "وَرَمَاهَا عَنْ قَوْسِ الْمَنَايَا بِسَهْمِ وَحْشَةِ الْفِرَاقِ",
             translit: "wa ramāhā ‛an qawsil-manāyā bisahmi waḥshatil-firāq",
             translation:
-              "firing it from the bow of death with the arrow of lonesome separation. The departure draws close to the afterlife",
+              "firing it from the bow of death with the arrow of lonesome separation.",
           }),
           new DhikrEntryModel({
             arabic: "وَدَنَا مِنَّا الرَّحِيلُ إِلَى الْآخِرَةِ وَصَارَتِ الْأَعْمَالُ قَلَائِدَ فِي الْأَعْنَاقِ",
             translit:
               "wa danā minnar-raḥīlu ilal-ākhirati wa ṣāratil-a‛mālu qalā’ida fil-a‛nāq",
             translation:
-              "actions become a necklace around necks and graves are the resting abode until the appointed time of the Meeting Day",
+              "The departure draws close to the afterlife, actions become a necklace around necks",
           }),
           new DhikrEntryModel({
             arabic: "وَكَانَتِ الْقُبُورُ هِيَ الْمَأْوَى إِلَى مِيقَاتِ يَوْمِ التَّلَاقِ يَا كَرِيم",
             translit:
               "wa kānatil-qubūru hiyal-ma’wā ilā mīqāti yawmit-talāq, yā Karīm",
-            translation: "O Generous One!",
+            translation:
+              "and graves are the resting abode until the appointed time of the Meeting Day, O Generous One!",
           }),
         ],
       }),
@@ -1183,12 +1190,13 @@ export default [
           new DhikrEntryModel({
             arabic: "يَا كَرِيم",
             translit: "Yā Karīm",
-            translation: "O Generous One! O Allah,",
+            translation: "O Generous One!",
           }),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ وَبَارِكْ لَنَا فِي حُلُولِ دَارِ الْبِلَى",
             translit: "Allāhumma wa bārik lanā fī ḥulūli dāril-balā",
-            translation: "bless us at our arrival at the abode of decay,",
+            translation:
+              "O Allah, bless us at our arrival at the abode of decay,",
           }),
           new DhikrEntryModel({
             arabic: "وَطُولِ الْإِقَامَةِ بَيْنَ أَطْبَاقِ الثَّرَى",
@@ -1268,12 +1276,13 @@ export default [
           new DhikrEntryModel({
             arabic: "يَا كَرِيم",
             translit: "Yā Karīm",
-            translation: "O Generous One! O Allah,",
+            translation: "O Generous One!",
           }),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ وَأَطِلْ بِهِ صَلَاحَ ظَاهِرِنَا",
             translit: "Allāhumma wa aṭil bihī ṣalāḥa ẓāhirinā",
-            translation: "lengthen by it the goodness of our exterior,",
+            translation:
+              "O Allah, lengthen by it the goodness of our exterior,",
           }),
           new DhikrEntryModel({
             arabic: "وَاحْجُبْ بِهِ خَطَرَاتِ الْوَسَاوِسِ عَنْ صِحَّةِ ضَمَائِرِنَا",
@@ -1338,12 +1347,13 @@ export default [
           new DhikrEntryModel({
             arabic: "يَا كَرِيم",
             translit: "Yā Karīm",
-            translation: "O Generous One! O Allah,",
+            translation: "O Generous One!",
           }),
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ وَاحْطُطْ بِهِ عَنَّا ثِقَلَ الْأَوْزَارِ",
             translit: "Allāhumma waḥṭuṭ bihī ‛annā thiqalal-awzār",
-            translation: "through it, reduce the heaviness of sins on us.",
+            translation:
+              "O Allah, through it, reduce the heaviness of sins on us.",
           }),
           new DhikrEntryModel({
             arabic: "وَهَبْ لَنَا بِهِ حُسْنَ شَمَائِلَ الْأَبْرَارِ",
@@ -1545,7 +1555,7 @@ export default [
           new DhikrEntryModel({
             arabic: "يَا كَرِيم",
             translit: "Yā Karīm",
-            translation: "O Generous One! O Allah,",
+            translation: "O Generous One!",
           }),
           new DhikrEntryModel({
             arabic:
@@ -1553,7 +1563,7 @@ export default [
             translit:
               "Allāhumma wa ānis waḥshatanā biṭā‛atika yā mu’nisal-fardil-ḥayrāni fī mahāmihil-qifār",
             translation:
-              "provide solace to our loneliness with Your worship, O Provider of solace to the bewildered one in his empty place of confusion.",
+              "O Allah, provide solace to our loneliness with Your worship, O Provider of solace to the bewildered one in his empty place of confusion.",
           }),
           new DhikrEntryModel({
             arabic: "وَتَدَارَكْنَا بِعِصْمَتِكَ يَا مُدْرِكَ الْغَرِيقِ فِي لُجَجِ الْبِحَارِ",

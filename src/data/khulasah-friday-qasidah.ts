@@ -80,13 +80,13 @@ export default [
           new QasidaEntryModel({
             arabic: "وَاجْعَلْهُمُ لَنَا فِدَا",
             translit: "Waj‛alhumu lanā fidā,",
-            translation: "Let them suffer the consequences of their evils,",
+            translation:
+              "Let them suffer the consequences of their evils, and make them our ransom",
           }),
           new QasidaEntryModel({
             arabic: "وَعِبْرَةً لِلنَّاظِرِين",
             translit: "wa ‛ibratan linnāẓirīna.",
-            translation:
-              "and make them our ransom and a lesson for the onlookers.",
+            translation: "and a lesson for the onlookers.",
           }),
         ],
       }),
@@ -101,12 +101,12 @@ export default [
           new QasidaEntryModel({
             arabic: "يَا رَبِّ فَرِّقْ جَمْعَهُمْ",
             translit: "Yā Rabbi farriq jam‛ahum.",
-            translation: "O Lord, divide them. O Lord,",
+            translation: "O Lord, divide them.",
           }),
           new QasidaEntryModel({
             arabic: "يَا رَبِّ قَلِّلْ عَدَّهُمْ",
             translit: "Yā Rabbi qallil ‛addahum,",
-            translation: "minimize their numbers,",
+            translation: "O Lord, minimize their numbers,",
           }),
           new QasidaEntryModel({
             arabic: "وَاجْعَلْهُمُ فِى الْغَابِرِين",
@@ -277,13 +277,13 @@ export default [
           new QasidaEntryModel({
             arabic: "وَالْحَسَنَيْنِ وَالْبَتُول",
             translit: "Wal Ḥasanayni wal Batūl,",
-            translation: "and in honour of his two grandchildren,",
+            translation:
+              "and in honour of his two grandchildren, Ḥasan and Ḥusayn, and al-Batūl",
           }),
           new QasidaEntryModel({
             arabic: "وَالْمُرْتَضَى أَبِي الْفُحُول",
             translit: "wal Murtaḍā Abil Fuḥūl,",
-            translation:
-              "Ḥasan and Ḥusayn, and al-Batūl as well as the honour of al-Murtaḍā,",
+            translation: "as well as the honour of al-Murtaḍā,",
           }),
           new QasidaEntryModel({
             arabic: "وَجَاهِ جِبْرِيلَ الْأَمِين",
@@ -298,8 +298,7 @@ export default [
           new QasidaEntryModel({
             arabic: "ثُمَّ الصَّلَاةُ وَالسَّلَام",
             translit: "Thummaṣ ṣalātu wassalāmu,",
-            translation:
-              "And shower Your blessings and peace on the Prophet the best of humankind, and the companions and those who follow them.",
+            translation: "And shower Your blessings and peace",
           }),
           new QasidaEntryModel({
             arabic: "عَلَى النَّبِي خَيْرِ الْأَنَامْ",
