@@ -5,6 +5,7 @@ import {
   type QasidaModel,
   QasidaVerseModel,
 } from "@/models/recitation";
+import { slugify } from "@/utils/string";
 import ExpandSection from "./ExpandSection.astro";
 import QasidaEntry from "./QasidaEntry.astro";
 
@@ -22,7 +23,7 @@ const hasAudio = !!model.audio?.url;
 <div class="qasida-container" style="container-type: inline-size;">
   {model.title && (
     <div class="qasida-title-row">
-      <h1 class="qasida-title">{model.title}</h1>
+      <h1 id={slugify(model.title)} class="qasida-title">{model.title}</h1>
       {hasAudio && (
         <sl-icon-button
           class="circle-btn audio-play-btn"
