@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "astro dev",
     "build:search": "bun scripts/build-search-index.ts",
+    "check:nav": "bun scripts/check-nav.ts",
     "build": "bun run build:search && astro build",
     "build:prod": "bun run build:search && astro build && bun scripts/google-site-verification.ts",
     "start": "bun run dev",

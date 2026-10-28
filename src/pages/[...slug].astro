@@ -11,10 +11,9 @@ export function getStaticPaths() {
       // Home page is handled by index.astro
       if (config.path === "") return false;
       if (!contentModules.has(config.contentImportPath)) {
-        console.warn(
-          `Skipping "${config.path}" — content file missing: ${config.contentImportPath}.ts`,
+        throw new Error(
+          `Build failed: content file missing for route "${config.path}" — expected src/data/${config.contentImportPath}.ts`,
         );
-        return false;
       }
       return true;
     })
