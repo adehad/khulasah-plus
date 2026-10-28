@@ -9,6 +9,8 @@ import {
 export default [
   new QasidaModel({
     title: "",
+    instruction:
+      "Composed by Habib Umar bin Hafiz (may Allah protect him and benefit us by him)",
     entries: [
       new QasidaChapterModel({
         number: 1,
@@ -654,16 +656,6 @@ export default [
             chorus: false,
             entries: [
               new QasidaEntryModel({
-                arabic: "هذه قصيدة للإمام عمر المحضار",
-                translit: "Hādhihi qaṣīdatun lil Imām ‛Umar al-Miḥḍār",
-                translation: "This poem is by Imam Umar al-Mihdar",
-              }),
-            ],
-          }),
-          new QasidaVerseModel({
-            chorus: false,
-            entries: [
-              new QasidaEntryModel({
                 arabic: "صَلُّوا عَلَى النُّورِ أَحْمَد",
                 translit: "Ṣallū ‛alan nūri Aḥmad",
                 translation: "Send blessings upon the light, Ahmad,",
@@ -882,16 +874,6 @@ export default [
             chorus: false,
             entries: [
               new QasidaEntryModel({
-                arabic: "وهذه القصيدة أيضا للإمام عمر المحضار",
-                translit: "Wa hādhihil qaṣīdatu ayḍan lil Imām ‛Umar al-Miḥḍār",
-                translation: "This poem is also by Imam Umar al-Mihdar",
-              }),
-            ],
-          }),
-          new QasidaVerseModel({
-            chorus: false,
-            entries: [
-              new QasidaEntryModel({
                 arabic: "يَا حَادِيَ الْأجْمَال قُمْ شِدْ لِي وَارْحَلْ إِلَى فَوْق",
                 translit: "Yā ḥādiyal ajmāli qum shidd lī warḥal ilā fawq",
                 translation:
@@ -996,18 +978,6 @@ export default [
         number: 5,
         title: "Poem by Imam Abu Bakr al-Adani al-Aydarus",
         entries: [
-          new QasidaVerseModel({
-            chorus: false,
-            entries: [
-              new QasidaEntryModel({
-                arabic: "وهذه قصيدة للإمام أبي بكر العدني العيدروس",
-                translit:
-                  "Hādhihi qaṣīdatun lil Imām Abī Bakr al-‛Adanī al-‛Aydarūs",
-                translation:
-                  "This poem is by Imam Abu Bakr al-Adani al-Aydarus",
-              }),
-            ],
-          }),
           new QasidaVerseModel({
             chorus: false,
             entries: [
@@ -1192,16 +1162,6 @@ export default [
         number: 6,
         title: "Poem by Shaykh Abu Bakr bin Salim",
         entries: [
-          new QasidaVerseModel({
-            chorus: false,
-            entries: [
-              new QasidaEntryModel({
-                arabic: "هذه القصيدة للشيخ أبي بكر بن سالم",
-                translit: "Hādhihil qaṣīdatu lish Shaykh Abī Bakr ibni Sālim",
-                translation: "This poem is by Shaykh Abu Bakr ibn Salim",
-              }),
-            ],
-          }),
           new QasidaVerseModel({
             chorus: false,
             entries: [
@@ -1430,17 +1390,6 @@ export default [
         title: "Poem also by Shaykh Abu Bakr bin Salim",
         entries: [
           new QasidaVerseModel({
-            chorus: false,
-            entries: [
-              new QasidaEntryModel({
-                arabic: "وللشيخ أبي بكر بن سالم أيضا هذه القصيدة",
-                translit:
-                  "Wa lish Shaykh Abī Bakr ibni Sālim ayḍan hādhihil qaṣīdah",
-                translation: "This poem is also by Shaykh Abu Bakr ibn Salim",
-              }),
-            ],
-          }),
-          new QasidaVerseModel({
             chorus: true,
             entries: [
               new QasidaEntryModel({
@@ -1644,31 +1593,9 @@ export default [
       new QasidaChapterModel({
         number: 8,
         title: "Poem by Habib Abdallah bin Alawi al-Haddad",
+        instruction:
+          "He, may Allah be pleased with him, composed it in the year 1124 AH",
         entries: [
-          new QasidaVerseModel({
-            chorus: false,
-            entries: [
-              new QasidaEntryModel({
-                arabic: "هذه القصيدة للحبيب عبد الله بن علوي الحداد",
-                translit:
-                  "Hādhihil qaṣīdatu lilḥabību ‛Abdillāh ibni ‛Alawī al-Ḥaddād",
-                translation:
-                  "This poem is by Habib Abdullah ibn Alawi al-Haddad",
-              }),
-            ],
-          }),
-          new QasidaVerseModel({
-            chorus: false,
-            entries: [
-              new QasidaEntryModel({
-                arabic: "قالها رضي الله عنه في سنة ١١٢٤هـ",
-                translit:
-                  "Qālahā raḍiyallāhu ‛anhu fī sanati alfin wa mi’atin wa arba‛atin wa ‛ishrīna hijriyyah",
-                translation:
-                  "He, may Allah be pleased with him, composed it in the year 1124 AH",
-              }),
-            ],
-          }),
           new QasidaVerseModel({
             chorus: false,
             entries: [
@@ -2035,18 +1962,6 @@ export default [
             chorus: false,
             entries: [
               new QasidaEntryModel({
-                arabic: "هذه القصيدة للحبيب علي بن محمد الحبشي",
-                translit:
-                  "Hādhihil qaṣīdatu lilḥabību ‛Aliyy ibni Muḥammadil Ḥabashī",
-                translation:
-                  "This poem is by Habib Ali ibn Muhammad al-Habashi",
-              }),
-            ],
-          }),
-          new QasidaVerseModel({
-            chorus: false,
-            entries: [
-              new QasidaEntryModel({
                 arabic: "مَنْ نَصَحَنِي.. فَإِنِّي مِنه للنُّصحِ قَابِلْ",
                 translit: "Man naṣaḥanī.. fa innī minhu lin nuṣḥi qābil",
                 translation:
@@ -2319,37 +2234,9 @@ export default [
         number: 10,
         title:
           "The conclusion of a poem by Habib Abdullah bin Husayn bin Tahir",
+        instruction:
+          "The conclusion, from the poem “Hadiyyat as-Sadiq” by Habib Abdullah ibn Husayn ibn Tahir",
         entries: [
-          new QasidaVerseModel({
-            chorus: false,
-            entries: [
-              new QasidaEntryModel({
-                arabic: "الخاتمة",
-                translit: "Al-khātimah",
-                translation: "The Conclusion",
-              }),
-            ],
-          }),
-          new QasidaVerseModel({
-            chorus: false,
-            entries: [
-              new QasidaEntryModel({
-                arabic: 'من منظومة "هدية الصديق"',
-                translit: "Min manẓūmati “Hadiyyatiṣ Ṣadīq”",
-                translation: "From the poem “Hadiyyat as-Sadiq”",
-              }),
-            ],
-          }),
-          new QasidaVerseModel({
-            chorus: false,
-            entries: [
-              new QasidaEntryModel({
-                arabic: "للحبيب عبد اللّه بن حسين بن طاهر",
-                translit: "Lilḥabību ‛Abdillāh ibni Ḥusayn ibni Ṭāhir",
-                translation: "By Habib Abdullah ibn Husayn ibn Tahir",
-              }),
-            ],
-          }),
           new QasidaVerseModel({
             chorus: false,
             entries: [

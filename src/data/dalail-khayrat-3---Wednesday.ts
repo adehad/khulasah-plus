@@ -803,15 +803,11 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic: "ابتداء الثلث الثاني",
-            translit: "Ibtidāʾ ath-Thuluths ath-Thānī",
-            translation: "Beginning of the Second Third",
-          }),
-        ],
-      }),
+    ],
+  }),
+  new WirdModel({
+    title: "Beginning of the Second Third",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({

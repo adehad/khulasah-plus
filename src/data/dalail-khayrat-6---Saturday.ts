@@ -196,15 +196,11 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic: "ابتداء الثلث الثالث",
-            translit: "Ibtidāʾ ath-thulth ath-thālith",
-            translation: "Beginning of the Third Quarter",
-          }),
-        ],
-      }),
+    ],
+  }),
+  new WirdModel({
+    title: "Beginning of the Last Third",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -1068,15 +1064,11 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic: "ابتداء الربع الرابع",
-            translit: "Ibtidāʾur Rubʿ ir Rābiʿ",
-            translation: "Beginning of the Fourth Quarter",
-          }),
-        ],
-      }),
+    ],
+  }),
+  new WirdModel({
+    title: "Beginning of the Fourth Quarter",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({

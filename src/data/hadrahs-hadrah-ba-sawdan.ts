@@ -22,10 +22,14 @@ import {
 export default [
   new QasidaModel({
     title: "",
+    instruction:
+      "Compiled by Shaykh Abdullah bin Ahmad Ba Sawdan (رضي اللّه عنه)",
     entries: [
       new QasidaChapterModel({
         number: 1,
         title: "Tahleel",
+        instruction:
+          'Begin by reciting Surah Fatihah, Surah Ya Sin and what you can of "La ilaha illaLlah". Then say:',
         entries: [
           new QasidaVerseModel({
             repeat: 3,
@@ -1794,6 +1798,7 @@ export default [
       new QasidaChapterModel({
         number: 5,
         title: "Verses with Tarteel",
+        instruction: "Then recite these verses with tarteel:",
         entries: [
           new QasidaVerseModel({
             chorus: false,

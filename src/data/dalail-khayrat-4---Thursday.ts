@@ -1225,15 +1225,11 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic: "ابتداء الربع الثالث",
-            translit: "Ibtidāʾur Rubʿ ith Thālith",
-            translation: "Beginning of the Third Quarter",
-          }),
-        ],
-      }),
+    ],
+  }),
+  new WirdModel({
+    title: "Beginning of the Third Quarter",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
