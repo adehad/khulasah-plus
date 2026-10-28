@@ -10,8 +10,8 @@ const mawlidsContent = [
     href: "/",
   }),
   new NavModel({
-    title: "After every prayer",
-    href: "/",
+    title: "Simt ad-Durar (Mawlid al-Habashi)",
+    href: "mawlids/simt-ad-durar",
   }),
   new NavModel({
     title: "Mawlid Dayba'i",
