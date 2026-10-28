@@ -35,6 +35,8 @@ const hasAudio = !!model.audio?.url;
     </div>
   )}
 
+  {model.instruction && <p class="instruction">{model.instruction}</p>}
+
   {model.entries.map((entry, i) => {
     if (entry instanceof ExpandModel) {
       const expandId = `${prefix}-expand-${i + 1}`;
@@ -48,8 +50,9 @@ const hasAudio = !!model.audio?.url;
       const chapterId = `${prefix}-chapter-${i + 1}`;
       return (
         <Fragment>
-          <kp-sticky-button label={i + 1} elementId={chapterId} variant="chapter"></kp-sticky-button>
+          <kp-sticky-button label={entry.number} elementId={chapterId} variant="chapter"></kp-sticky-button>
           <h1 id={chapterId} class="chapter-header">{entry.title}</h1>
+          {entry.instruction && <p class="instruction">{entry.instruction}</p>}
           {entry.entries.map((chapterEntry, j) => {
             if (chapterEntry instanceof QasidaVerseModel) {
               const verseId = `${prefix}-verse-${i + 1}-${j + 1}`;
