@@ -46,6 +46,9 @@ jobs:
         with:
           extra_args: normalize-arabic-chars --all-files
 
+      - name: Check navigation
+        run: bun run check:nav
+
       - name: Production Build
         run: bun run build:prod
         env:
