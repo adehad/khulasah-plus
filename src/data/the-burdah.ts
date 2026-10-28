@@ -9,7 +9,7 @@ export default [
   new QasidaModel({
     title: "The Burdah",
     instruction:
-      "By Imam Sharaf ad-Dīn Abī ‘Abd-Allāh Muḥammad al-Busīrī (رضي اللهُ عنه). Translated by Mostafa Azzam",
+      "By Imam Sharaf ad-Dīn Abī ‘Abd-Allāh Muḥammad al-Busīrī (رضي اللهُ عنه)",
     entries: [
       new QasidaVerseModel({
         chorus: false,
@@ -2037,6 +2037,114 @@ export default [
                 translit: "Bi-akramir rusuli kunnā akramal umam",
                 translation:
                   "The Greatest Prophet, we are the greatest community.",
+              }),
+            ],
+          }),
+        ],
+      }),
+      new QasidaChapterModel({
+        number: 7.1,
+        title: "7.1 - English Addition",
+        instruction:
+          "These lines were added by the translator to the English rendition and are not part of the original Burdah.",
+        entries: [
+          new QasidaVerseModel({
+            chorus: false,
+            entries: [
+              new QasidaEntryModel({
+                arabic: "",
+                translit: "",
+                translation:
+                  "[The gentlest of souls until the enemy forced the fight,",
+              }),
+              new QasidaEntryModel({
+                arabic: "",
+                translit: "",
+                translation: "Abusing him and all his companions so brutally.",
+              }),
+            ],
+          }),
+          new QasidaVerseModel({
+            chorus: false,
+            entries: [
+              new QasidaEntryModel({
+                arabic: "",
+                translit: "",
+                translation:
+                  "The many years of their torture, murder, and tyranny",
+              }),
+              new QasidaEntryModel({
+                arabic: "",
+                translit: "",
+                translation:
+                  "He chose to bear and endure—and those with him— patiently.",
+              }),
+            ],
+          }),
+          new QasidaVerseModel({
+            chorus: false,
+            entries: [
+              new QasidaEntryModel({
+                arabic: "",
+                translit: "",
+                translation:
+                  "Their only crime being that they called to God, Him alone;",
+              }),
+              new QasidaEntryModel({
+                arabic: "",
+                translit: "",
+                translation: "An invitation delivered by them all peacefully.",
+              }),
+            ],
+          }),
+          new QasidaVerseModel({
+            chorus: false,
+            entries: [
+              new QasidaEntryModel({
+                arabic: "",
+                translit: "",
+                translation:
+                  "Until the order from God came down to him, the command:",
+              }),
+              new QasidaEntryModel({
+                arabic: "",
+                translit: "",
+                translation:
+                  "If they keep fighting your call, now fight them back physically.",
+              }),
+            ],
+          }),
+          new QasidaVerseModel({
+            chorus: false,
+            entries: [
+              new QasidaEntryModel({
+                arabic: "",
+                translit: "",
+                translation:
+                  "Though tenderness and compassion are your nature we know,",
+              }),
+              new QasidaEntryModel({
+                arabic: "",
+                translit: "",
+                translation:
+                  "The time has come you must stop their stopping people from Me.",
+              }),
+            ],
+          }),
+          new QasidaVerseModel({
+            chorus: false,
+            entries: [
+              new QasidaEntryModel({
+                arabic: "",
+                translit: "",
+                translation:
+                  "And when it came to the rights of God, the Gentle was fierce;",
+              }),
+              new QasidaEntryModel({
+                arabic: "",
+                translit: "",
+                translation:
+                  "And struck all horror into the heart of each enemy.]",
               }),
             ],
           }),
