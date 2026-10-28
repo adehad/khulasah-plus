@@ -28,49 +28,49 @@ export default [
             translit:
               "min yawmi khalaqtad dunyā ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
             translation:
-              "from the day You created the world until the Day of Resurrection - times a thousand",
+              "from the day You created the world until the Day of Resurrection - a thousand times every day",
           }),
           new DhikrEntryModel({
             arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ كُلِّ سَنَةٍ خَلَقْتَهُمْ فِيهَا",
             translit:
               "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadada kulli sanatin khalaqtahum fīhā",
             translation:
-              "every day. Bless him and his family in quantity as great as the number of years in which You created them",
+              "Bless him and his family in quantity as great as the number of years in which You created them",
           }),
           new DhikrEntryModel({
             arabic: "مِنْ يَوْمِ خَلَقْتَ الدُّنْيَا إِلَى يَوْمِ القِيَامَةِ فِي كُلِّ يَوْمٍ أَلْفَ مَرَّةٍ",
             translit:
               "min yawmin khalaqtad dunyā ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
             translation:
-              "from the day You created the world until the Day of Resurrection - times a thousand",
+              "from the day You created the world until the Day of Resurrection - a thousand times every day",
           }),
           new DhikrEntryModel({
             arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ السَّحَابِ الجَارِيَةِ",
             translit:
               "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadadas saḥābil jāriyati",
             translation:
-              "every day. Bless him and his family in quantity as great as the billowing clouds",
+              "Bless him and his family in quantity as great as the billowing clouds",
           }),
           new DhikrEntryModel({
             arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ الرِّيَاحِ الذَّارِيةِ",
             translit:
               "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadadar riyāḥidh dhāriyati",
             translation:
-              "every day. Bless him and his family in quantity as great as the driving winds",
+              "Bless him and his family in quantity as great as the driving winds",
           }),
           new DhikrEntryModel({
             arabic: "مِنْ يَوْمِ خَلَقْتَ الدُّنْيَا إِلَى يَوْمِ القِيَامَةِ فِي كُلِّ يَوْمٍ أَلْفَ مَرَّةٍ",
             translit:
               "min yawmi khalaqtad dunyā ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
             translation:
-              "from the day You created the world until the Day of Resurrection - times a thousand",
+              "from the day You created the world until the Day of Resurrection - a thousand times every day",
           }),
           new DhikrEntryModel({
             arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ مَا هَبَّتِ الرِّيَاحُ عَلَيْهِ",
             translit:
               "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadada mā habbatir riyāḥu ʿalayhi",
             translation:
-              "every day. Bless him and his family in quantity as great as what the winds blow upon it",
+              "Bless him and his family in quantity as great as what the winds blow upon it",
           }),
           new DhikrEntryModel({
             arabic: "وَحَرَّكَتْهُ مِنَ الأَغْصَانِ وَالأَشْجَارِ",
@@ -94,21 +94,21 @@ export default [
             translit:
               "min yawmi khalaqtad dunyā ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
             translation:
-              "from the day You created the world until the Day of Resurrection - times a thousand",
+              "from the day You created the world until the Day of Resurrection - a thousand times every day",
           }),
           new DhikrEntryModel({
             arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ أَمْوَاجِ بِحَارِكَ",
             translit:
               "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadada amwāji biḥārika",
             translation:
-              "every day. Bless him and his family in quantity as great as the waves of Your seas",
+              "Bless him and his family in quantity as great as the waves of Your seas",
           }),
           new DhikrEntryModel({
             arabic: "مِنْ يَوْمِ خَلَقْتَ الدُّنْيَا إِلَى يَوْمِ القِيَامَةِ فِي كُلِّ يَوْمٍ أَلْفَ مَرَّةٍ",
             translit:
               "min yawmi khalaqtad dunyā ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
             translation:
-              "from the day You created the world until the Day of Resurrection - times a thousand",
+              "from the day You created the world until the Day of Resurrection - a thousand times every day",
           }),
           new DhikrEntryModel({
             arabic:
@@ -116,7 +116,7 @@ export default [
             translit:
               "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadadar ramli wal ḥaṣa wa kulli ḥajarin wa madarin khalaqtahu fī mashāriqil arḍi wa maghāribihā",
             translation:
-              "every day. Bless him and his family in quantity as great as the sand and the pebbles and every stone and the clay that You created in the eastern and western parts of the earth",
+              "Bless him and his family in quantity as great as the sand and the pebbles and every stone and the clay that You created in the eastern and western parts of the earth",
           }),
           new DhikrEntryModel({
             arabic: "سَهْلِهَا وَجِبَالِهَا وَأَوْدِيَتِهَا",
@@ -128,14 +128,14 @@ export default [
             translit:
               "min yawmi khalaqtad dunyā ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
             translation:
-              "from the day You created the world until the Day of Resurrection - times a thousand",
+              "from the day You created the world until the Day of Resurrection - a thousand times every day",
           }),
           new DhikrEntryModel({
             arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ نَبَاتِ الأَرْضِ فِي قِبْلَتِهَا وَجَوْفِهَا",
             translit:
               "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadadan nabātil arḍi fī qiblatihā wa jawfīhā",
             translation:
-              "every day. Bless him and his family in quantity as great as the plants of the earth in its north and south",
+              "Bless him and his family in quantity as great as the plants of the earth in its north and south",
           }),
           new DhikrEntryModel({
             arabic: "وَشَرْقِهَا وَغَرْبِهَا",
@@ -160,7 +160,7 @@ export default [
             translit:
               "wa mā yakhruju minhā min nabātihā wa barakātihā min yawmi khalaqtad dunyā ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
             translation:
-              "and what it produces of its plants and blessings from the day You created the world until the Day of Resurrection - times a thousand",
+              "and what it produces of its plants and blessings from the day You created the world until the Day of Resurrection - a thousand times every day",
           }),
           new DhikrEntryModel({
             arabic:
@@ -168,14 +168,14 @@ export default [
             translit:
               "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadada mā khalaqta minal insi waljinni wash shayāṭīni",
             translation:
-              "every day. Bless him and his family in quantity as great as what you created of men, jinn and shaytans",
+              "Bless him and his family in quantity as great as what you created of men, jinn and shaytans",
           }),
           new DhikrEntryModel({
             arabic: "وَمَا أَنْتَ خَالِقُهُ مِنْهُمْ إِلَى يَوْمِ القِيَامَةِ فِي كُلِّ يَوْمٍ أَلْفَ مَرَّةٍ",
             translit:
               "wamā anta khāliquhu minhum ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
             translation:
-              "and what You will create of them until the Day of Resurrection - times a thousand",
+              "and what You will create of them until the Day of Resurrection - a thousand times every day",
           }),
           new DhikrEntryModel({
             arabic:
@@ -183,42 +183,42 @@ export default [
             translit:
               "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadada kulli shaʿratin fī abdānihim wawujūhihim waʿalā ruʾūsihim",
             translation:
-              "every day. Bless him and his family in quantity as great as every hair on their bodies, their faces and heads",
+              "Bless him and his family in quantity as great as every hair on their bodies, their faces and heads",
           }),
           new DhikrEntryModel({
             arabic: "مُنْذُ خَلَقْتَ الدُّنْيَا إِلَى يَوْمِ القِيَامَةِ فِي كُلِّ يَوْمٍ أَلْفَ مَرَّةٍ",
             translit:
               "mundhu khalaqtad dunyā ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
             translation:
-              "since You created the world until the Day of Resurrection - times a thousand",
+              "since You created the world until the Day of Resurrection - a thousand times every day",
           }),
           new DhikrEntryModel({
             arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ أَنْفَاسِهِمْ وَأَلْفَاظِهِمْ وَأَلْحَاظِهِمْ",
             translit:
               "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadada anfāsihim wa alfāẓihim wa alḥāẓihim",
             translation:
-              "every day. Bless him and his family in quantity as great as their breaths, phrases and glances",
+              "Bless him and his family in quantity as great as their breaths, phrases and glances",
           }),
           new DhikrEntryModel({
             arabic: "مِنْ يَوْمِ خَلَقْتَ الدُّنْيَا إِلَى يَوْمِ القِيَامَةِ فِي كُلِّ يَوْمٍ أَلْفَ مَرَّةٍ",
             translit:
               "min yawmi khalaqtad dunyā ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
             translation:
-              "from the day You created the world until the Day of Resurrection - times a thousand",
+              "from the day You created the world until the Day of Resurrection - a thousand times every day",
           }),
           new DhikrEntryModel({
             arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ طَيَرَانِ الجِنِّ وَخَفَقَانِ الإِنْسِ",
             translit:
               "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadada ṭayarānil jinni wa khafaqānil insi",
             translation:
-              "every day. Bless him and his family in quantity as great as the flights of the jinn and every human heartbeat",
+              "Bless him and his family in quantity as great as the flights of the jinn and every human heartbeat",
           }),
           new DhikrEntryModel({
             arabic: "مِنْ يَوْمِ خَلَقْتَ الدُّنْيَا إِلَى يَوْمِ القِيَامَةِ فِي كُلِّ يَوْمٍ أَلْفَ مَرَّةٍ",
             translit:
               "min yawmi khalaqtad dunyā ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
             translation:
-              "from the day You created the world until the Day of Resurrection - times a thousand",
+              "from the day You created the world until the Day of Resurrection - a thousand times every day",
           }),
           new DhikrEntryModel({
             arabic:
@@ -226,7 +226,7 @@ export default [
             translit:
               "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadada kulli bahīmatin khalaqtahā ʿalā arḍika ṣaghīratan wa kabīratan",
             translation:
-              "every day. Bless him and his family in quantity as great as every animal You created on Your earth both small and large",
+              "Bless him and his family in quantity as great as every animal You created on Your earth both small and large",
           }),
           new DhikrEntryModel({
             arabic: "فِي مَشَارِقِ الأَرْضِ وَمَغَارِبِهَا",
@@ -239,14 +239,14 @@ export default [
             translit:
               "mimmā ʿulima wa mimmā lā yaʿlamu ʿilmahu illā anta min yawmi khalaqtad dunyā ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
             translation:
-              "of those which are known and those whose knowledge is only known by You from the day You created the world until the Day of Resurrection - times a thousand",
+              "of those which are known and those whose knowledge is only known by You from the day You created the world until the Day of Resurrection - a thousand times every day",
           }),
           new DhikrEntryModel({
             arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ مَنْ صَلَّى عَلَيْهِ",
             translit:
               "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadada man ṣalla ʿalayhi",
             translation:
-              "every day. Bless him and his family in quantity as great as whoever has blessed him",
+              "Bless him and his family in quantity as great as whoever has blessed him",
           }),
           new DhikrEntryModel({
             arabic: "وَعَدَدَ مَنْ لَمْ يُصَلِّ عَلَيْهِ",
@@ -259,14 +259,14 @@ export default [
             translit:
               "wa ʿadada man yuṣalli ʿalayhi ilā yawmil qiyāmati fī kulli yawmin alfa marrah",
             translation:
-              "and in quantity as great as whoever will bless him until the Day of Resurrection - times a thousand",
+              "and in quantity as great as whoever will bless him until the Day of Resurrection - a thousand times every day",
           }),
           new DhikrEntryModel({
             arabic: "وَأَنْ تُصَلِّيَ عَلَيْهِ وَعَلَى آلِهِ عَدَدَ الأَحْيَاءِ وَالأَمْوَاتِ",
             translit:
               "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadada aḥyāʾi wal amwāti",
             translation:
-              "every day. Bless him and his family in quantity as great as the living and the dead",
+              "Bless him and his family in quantity as great as the living and the dead",
           }),
           new DhikrEntryModel({
             arabic: "وَعَدَدَ مَا خَلَقْتَ مِنْ حِيتَانٍ وَطَيْرٍ وَنَمْلٍ وَنَحْلٍ وَحَشَرَاتٍ",
@@ -318,7 +318,7 @@ export default [
             translit:
               "wa an tuṣalli ʿalayhi wa ʿalā ālihi ʿadada khalqika wa riḍā nafsika wa zinata ʿarshika wa midāda kalimātika",
             translation:
-              "every day. Bless him and his family in quantity as great as Your creation, Your pleasure, the weight of Your Throne and the ink of Your words",
+              "Bless him and his family in quantity as great as Your creation, Your pleasure, the weight of Your Throne and the ink of Your words",
           }),
           new DhikrEntryModel({
             arabic: "وَأَنْ تُعْطِيَهُ الوَسِيلَةَ وَالفَضِيلَةَ",
