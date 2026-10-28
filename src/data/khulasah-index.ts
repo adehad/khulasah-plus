@@ -3,7 +3,7 @@ import { NavModel } from "@/models/nav";
 const theKhulasahContent = [
   new NavModel({
     title: "Introduction",
-    href: "/",
+    href: "khulasah/introduction",
   }),
   new NavModel({
     title: "The last part of the night",
