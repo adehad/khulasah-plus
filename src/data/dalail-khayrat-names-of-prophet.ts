@@ -1,3 +1,4 @@
+import { ahzab_56_verse } from "@/data/shared/quran-partial";
 import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
@@ -5,16 +6,7 @@ export default [
     title: "Dalāʾil al-Khayrāt - Names of The Prophet ﷺ",
     entries: [
       new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic:
-              "﴿إِنَّ اللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا﴾",
-            translit:
-              "InnaLlāha wa malāʾikatahu yuṣallūna ʿalan nabiyyi yā ayyuhalladhīna āmanū ṣallū ʿalayhi wa sallimū taslīmā",
-            translation:
-              "Allah and His angels send blessings on the Prophet. O you who believe! Call down blessings on him and salute him with a worthy salutation",
-          }),
-        ],
+        entries: [ahzab_56_verse()],
       }),
       new DhikrModel({
         entries: [
