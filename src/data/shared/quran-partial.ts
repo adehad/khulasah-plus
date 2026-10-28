@@ -15,7 +15,8 @@ export function fatihah_1(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic: "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ",
     translit: "Bismillāhir raḥmānir raḥīm.",
-    translation: "In the Name of Allāh, Most Compassionate, Most Merciful.",
+    translation:
+      "In the name of Allāh, the Entirely Merciful, the Especially Merciful.",
     surah: 1,
     verse: 1,
     repeat,
@@ -28,7 +29,7 @@ export function fatihah_2(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic: "ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ",
     translit: "Alḥamdulillāhi rabbil ‛ālamīn.",
-    translation: "All Praise be to Allāh, Lord of the Universe.",
+    translation: "[All] praise is [due] to Allāh, Lord of the worlds -",
     surah: 1,
     verse: 2,
     repeat,
@@ -41,7 +42,7 @@ export function fatihah_3(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic: "ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ",
     translit: "Arraḥmānir raḥīm.",
-    translation: "Most Compassionate, Most Merciful.",
+    translation: "The Entirely Merciful, the Especially Merciful,",
     surah: 1,
     verse: 3,
     repeat,
@@ -54,7 +55,7 @@ export function fatihah_4(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic: "مَٰلِكِ يَوۡمِ ٱلدِّينِ",
     translit: "Māliki yawmid dīn.",
-    translation: "Lord of the Day of Judgement.",
+    translation: "Sovereign of the Day of Recompense.",
     surah: 1,
     verse: 4,
     repeat,
@@ -67,8 +68,7 @@ export function fatihah_5(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic: "إِيَّاكَ نَعۡبُدُ وَإِيَّاكَ نَسۡتَعِينُ",
     translit: "Iyyāka na‛budu wa iyyāka nasta‛īn.",
-    translation:
-      "You alone do we worship, and to You alone do we turn for help.",
+    translation: "It is You we worship and You we ask for help.",
     surah: 1,
     verse: 5,
     repeat,
@@ -81,7 +81,7 @@ export function fatihah_6(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic: "ٱهۡدِنَا ٱلصِّرَٰطَ ٱلۡمُسۡتَقِيمَ",
     translit: "Ihdinaṣ ṣirāṭal mustaqīm.",
-    translation: "Guide us to the Straight Way.",
+    translation: "Guide us to the straight path -",
     surah: 1,
     verse: 6,
     repeat,
@@ -96,7 +96,7 @@ export function fatihah_7(repeat = 1, enableCounter?: boolean) {
     translit:
       "Ṣirāṭal ladhīna an‛amta ‛alayhim, ghayril maghḍūbi ‛alayhim walaḍ ḍāllīn.",
     translation:
-      "The Way of those on whom You have bestowed Your Grace; not the way of those who have earned your anger, nor of those who went astray.",
+      "The path of those upon whom You have bestowed favor, not of those who have earned [Your] anger or of those who are astray.",
     surah: 1,
     verse: 7,
     repeat,
@@ -239,7 +239,7 @@ export function baqarah_201(repeat = 1, enableCounter?: boolean) {
     translit:
       "… Rabbanā ātinā fiddunyā ḥasanatan wa fil ākhirati ḥasanatan wa qinā ‛adhāban nār.",
     translation:
-      "… Our Lord! Grant us the good of this world and the Hereafter, and protect us from the torment of the Fire.",
+      "… Our Lord, give us in this world [that which is] good and in the Hereafter [that which is] good and protect us from the punishment of the Fire.",
     surah: 2,
     verse: 201,
     repeat,
@@ -451,7 +451,7 @@ export function imran_45(repeat = 1, enableCounter?: boolean) {
     arabic: "… وَجِيهٗا فِي ٱلدُّنۡيَا وَٱلۡأٓخِرَةِ وَمِنَ ٱلۡمُقَرَّبِينَ",
     translit: "… Wajīhan fiddunyā wal ākhirati  wa minal muqarrabīn.",
     translation:
-      "… Held in honour in this world and in the Hereafter, and he will be one of those who are granted nearness to Allāh.",
+      "… distinguished in this world and the Hereafter and among those brought near [to Allāh].",
     surah: 3,
     verse: 45,
     repeat,
@@ -668,7 +668,7 @@ export function nisa_64(repeat = 1, enableCounter?: boolean) {
     translit:
       "… Wa law annahum idhẓalamū anfusahum jā'ūka fastaghfarul lāha wastaghfara lahumurrasūlu lawajadullāha tawwābar raḥīmā.",
     translation:
-      "… If they had come to you (O Prophet) and sought forgiveness from Allāh whenever they wronged themselves, and (you) the Messenger had prayed for forgiveness for them, they would have found that Allāh is Oft-Forgiving, Most Merciful.",
+      "… And if, when they wronged themselves, they had come to you, [O Muḥammad], and asked forgiveness of Allāh and the Messenger had asked forgiveness for them, they would have found Allāh Accepting of Repentance and Merciful.",
     surah: 4,
     verse: 64,
     repeat,
@@ -683,7 +683,7 @@ export function nisa_69(repeat = 1, enableCounter?: boolean) {
     translit:
       "… minan nabiyyīna waṣ ṣiddīqīna wash shuhadā’i waṣ ṣāliḥīna wa ḥasuna ulā’ika rafīqā.",
     translation:
-      "… among the prophets, the steadfast affirmers of truth, the martyrs and the righteous. And excellent are those as companions.",
+      "… of the prophets, the steadfast affirmers of truth, the martyrs and the righteous. And excellent are those as companions.",
     surah: 4,
     verse: 69,
     repeat,
@@ -698,7 +698,7 @@ export function nisa_110(repeat = 1, enableCounter?: boolean) {
     translit:
       "Wa may ya‛mal sū'an aw yaẓlim nafsahū, thumma yastaghfirillāha yajidillāha ghafūrarraḥīmā.",
     translation:
-      "If any one commits an evil deed or has been unjust to his soul, but afterwards ask Allāh for forgiveness, he will find Allāh Oft-Forgiving, Most Merciful.",
+      "And whoever does a wrong or wrongs himself but then seeks forgiveness of Allāh will find Allāh Forgiving and Merciful.",
     surah: 4,
     verse: 110,
     repeat,
@@ -712,7 +712,7 @@ export function an_am_13(repeat = 1, enableCounter?: boolean) {
     arabic: "۞ وَلَهُۥ مَا سَكَنَ فِي ٱلَّيۡلِ وَٱلنَّهَارِۚ وَهُوَ ٱلسَّمِيعُ ٱلۡعَلِيمُ",
     translit: "Wa lahū mā sakana fillayli wan nahār, wa huwas samī‘ul ‘alīm.",
     translation:
-      "And to Him belongs whatever exists in the night and the day, and He is the All-Hearing, the All-Knowing.",
+      "And to Him belongs that which reposes by night and by day, and He is the Hearing, the Knowing.",
     surah: 6,
     verse: 13,
     repeat,
@@ -726,7 +726,7 @@ export function an_am_79(repeat = 1, enableCounter?: boolean) {
     arabic: "… وَجَّهۡتُ وَجۡهِيَ لِلَّذِي فَطَرَ ٱلسَّمَٰوَٰتِ وَٱلۡأَرۡضَ …",
     translit: "Wajjahtu wajhiya lilladhī faṭaras samāwāti wal'arḍ …",
     translation:
-      '"I have turned my face with single-minded devotion, towards Him Who has created the Heavens and the earth." …',
+      "Indeed, I have turned my face [i.e., self] toward He who created the heavens and the earth, …",
     surah: 6,
     verse: 79,
     repeat,
@@ -754,7 +754,7 @@ export function a_raf_43(repeat = 1, enableCounter?: boolean) {
     translit:
       "… Alḥamdu lillāhilladhī hadānā lihādhā wa mā kunnā linahtadiya lawlā an hadānallāhu …",
     translation:
-      "… All Praise belongs to Allāh, Who has guided us to this. Had Allāh not guided us, we would never have found the way …",
+      "… Praise to Allāh, who has guided us to this; and we would never have been guided if Allāh had not guided us. …",
     surah: 7,
     verse: 43,
     repeat,
@@ -845,7 +845,7 @@ export function hud_41(repeat = 1, enableCounter?: boolean) {
     translit:
       "Wa qālar kabū fīhā bismillāhi majréhā wa mursāhā, inna rabbi laghafūrur raḥīm.",
     translation:
-      "Embark on it. In the Name of Allāh it shall set sail and cast anchor. Verily, my Lord is Ever Forgiving, Most Merciful.",
+      'And [Noah] said, "Embark therein; in the name of Allāh [are] its course and its anchorage. Indeed, my Lord is Forgiving and Merciful."',
     surah: 11,
     verse: 41,
     repeat,
@@ -887,7 +887,7 @@ export function ra_d_9(repeat = 1, enableCounter?: boolean) {
     arabic: "عَٰلِمُ ٱلۡغَيۡبِ وَٱلشَّهَٰدَةِ ٱلۡكَبِيرُ ٱلۡمُتَعَالِ",
     translit: "ʿalimul ghaybi wash shahādatil kabīrul mutaʿāli",
     translation:
-      "the Knower of the Unseen and the Visible, the Great, the Self-Exalted.'",
+      "[He is] Knower of the unseen and the witnessed, the Grand, the Exalted.",
     surah: 13,
     verse: 9,
     repeat,
@@ -993,7 +993,7 @@ export function isra_80(repeat = 1, enableCounter?: boolean) {
     translit:
       "… Rabbi adkhilnī mudkhala ṣidqiw wa akhrijnī mukhraja ṣidqiw waj‘al lī milladunka sulṭānan naṣīrā.",
     translation:
-      "… O my Lord! Grant me an honourable entrance and an honourable exit and sustain me with Your Power.",
+      "… My Lord, cause me to enter a sound entrance and to exit a sound exit and grant me from Yourself a supporting authority.",
     surah: 17,
     verse: 80,
     repeat,
@@ -1008,7 +1008,7 @@ export function kahf_10(repeat = 1, enableCounter?: boolean) {
     translit:
       "… Rabbanā ātinā min ladunka raḥmatan wahayyi’ lanā min amrinā rashadā.",
     translation:
-      "… O our Lord! Grant us a mercy from You, and grant us rectitude in our affair.",
+      "… Our Lord, grant us from Yourself mercy and prepare for us from our affair right guidance.",
     surah: 18,
     verse: 10,
     repeat,
@@ -1035,7 +1035,7 @@ export function anbiya_87(repeat = 1, enableCounter?: boolean) {
     arabic: "لَآ إِلَٰهَ إِلَّآ أَنتَ سُبۡحَٰنَكَ إِنِّي كُنتُ مِنَ ٱلظَّٰلِمِينَ",
     translit: "Lā ilāha illā anta subḥānaka innī kuntu minaẓ ẓālimīn.",
     translation:
-      "There is no deity but You, transcendent are You, truly I am amongst the wrongdoers.",
+      'And [mention] the man of the fish [i.e., Jonah], when he went off in anger and thought that We would not decree [anything] upon him. And he called out within the darknesses, "There is no deity except You; exalted are You. Indeed, I have been of the wrongdoers."',
     surah: 21,
     verse: 87,
     repeat,
@@ -1066,7 +1066,7 @@ export function anbiya_88(repeat = 1, enableCounter?: boolean) {
     translit:
       "Fastajabnā lahū wa najjaynāhu minal-ghamm, wa kadhālika nunjil-mu’minīn",
     translation:
-      "So We responded to him and delivered him from distress; thus do We deliver those who have faith.",
+      "So We responded to him and saved him from the distress. And thus do We save the believers.",
     surah: 21,
     verse: 88,
     repeat,
@@ -1081,7 +1081,7 @@ export function anbiya_89(repeat = 1, enableCounter?: boolean) {
     translit:
       "Wa zakariyyā idh nādā rabbahū rabbi lā tadharnī fardā wa anta khayrul-wārithīn",
     translation:
-      'And remember Zakariyya, when he cried to his Lord: "O my Lord! Leave me not without offspring, for You are the best of bestowers."',
+      'And [mention] Zechariah, when he called to his Lord, "My Lord, do not leave me alone [with no heir], while You are the best of inheritors."',
     surah: 21,
     verse: 89,
     repeat,
@@ -1095,7 +1095,7 @@ export function anbiya_107(repeat = 1, enableCounter?: boolean) {
     arabic: "وَمَآ أَرۡسَلۡنَٰكَ إِلَّا رَحۡمَةٗ لِّلۡعَٰلَمِينَ",
     translit: "Wa mā arsalnāka illā raḥmatan lil ‛ālamīn",
     translation:
-      "We have sent you, [O Beloved], only as a mercy to the worlds.",
+      "And We have not sent you, [O Muḥammad], except as a mercy to the worlds.",
     surah: 21,
     verse: 107,
     repeat,
@@ -1109,7 +1109,7 @@ export function mu_minun_29(repeat = 1, enableCounter?: boolean) {
     arabic: "… رَّبِّ أَنزِلۡنِي مُنزَلٗا مُّبَارَكٗا وَأَنتَ خَيۡرُ ٱلۡمُنزِلِينَ",
     translit: "… Rabbi anzilnī munzalan mubārakan wa anta khayrul munzilīn.",
     translation:
-      "… My Lord! Let me land with Your blessings in a blessed landing place. For You alone can provide the best of landings.",
+      "… My Lord, let me land at a blessed landing place, and You are the best to accommodate [us].",
     surah: 23,
     verse: 29,
     repeat,
@@ -1137,7 +1137,7 @@ export function mu_minun_98(repeat = 1, enableCounter?: boolean) {
     arabic: "وَأَعُوذُ بِكَ رَبِّ أَن يَحۡضُرُونِ",
     translit: "Wa a‛ūdhu bika rabbi ay yaḥḍurūn.",
     translation:
-      "And I seek refuge in You, my Lord, lest they be present with me.",
+      'And I seek refuge in You, my Lord, lest they be present with me."',
     surah: 23,
     verse: 98,
     repeat,
@@ -1151,7 +1151,7 @@ export function mu_minun_118(repeat = 1, enableCounter?: boolean) {
     arabic: "… رَّبِّ ٱغۡفِرۡ وَٱرۡحَمۡ وَأَنتَ خَيۡرُ ٱلرَّٰحِمِينَ",
     translit: "… Rabbigh-fir war-ḥam wa anta khayrur-rāḥimīn",
     translation:
-      '… "My Lord! Forgive and have mercy, for You are the Best of those who show mercy."',
+      "… My Lord, forgive and have mercy, and You are the best of the merciful.",
     surah: 23,
     verse: 118,
     repeat,
@@ -1178,7 +1178,7 @@ export function qasas_85(repeat = 1, enableCounter?: boolean) {
     arabic: "إِنَّ ٱلَّذِي فَرَضَ عَلَيۡكَ ٱلۡقُرۡءَانَ لَرَآدُّكَ إِلَىٰ مَعَادٖۚ …",
     translit: "Innalladhī faraḍa ‘alaykal qur’āna larādduka ilā ma‘ād …",
     translation:
-      "Verily, He Who gave you the Qur’ān will bring you back to the Place of Return …",
+      "Indeed, [O Muḥammad], He who imposed upon you the Qur’ān will take you back to a place of return. …",
     surah: 28,
     verse: 85,
     repeat,
@@ -1207,7 +1207,7 @@ export function ahzab_33(repeat = 1, enableCounter?: boolean) {
     translit:
       "… innamā yurīduLlāhu liyudh-hiba ʿankumur rijsa ahlal bayti wa yuṭahhirakum taṭhīran.",
     translation:
-      "… Allah desires to remove all impurity from you, People of the House, and to purify you completely.",
+      "… Allāh intends only to remove from you the impurity [of sin], O people of the [Prophet's] household, and to purify you with [extensive] purification.",
     surah: 33,
     verse: 33,
     repeat,
@@ -1223,7 +1223,7 @@ export function ahzab_56_verse(repeat = 1, enableCounter?: boolean) {
     translit:
       "InnAllaha wa malāʾikatahu yuṣallūna ʿalan nabiyyi yā ayyuhalladhīna āmanū ṣallū ʿalayhi wa sallimū taslīman.",
     translation:
-      "Allah and His angels call down blessings on the Prophet. O you who believe call down blessings on him and ask for complete peace and safety for him.",
+      "Indeed, Allāh confers blessing upon the Prophet, and His angels [ask Him to do so]. O you who have believed, ask [Allāh to confer] blessing upon him and ask [Allāh to grant him] peace.",
     surah: 33,
     verse: 56,
     repeat,
@@ -1236,7 +1236,7 @@ export function ahzab_69(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic: "… وَكَانَ عِندَ ٱللَّهِ وَجِيهٗا",
     translit: "… Wa kāna ‛indallāhi wajīhā.",
-    translation: "… And he was honourable in the sight of Allāh.",
+    translation: "… And he, in the sight of Allāh, was distinguished.",
     surah: 33,
     verse: 69,
     repeat,
@@ -1249,7 +1249,7 @@ export function saffat_96(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic: "وَٱللَّهُ خَلَقَكُمۡ وَمَا تَعۡمَلُونَ",
     translit: "wAllahu khalaqakum wa mā taʿmalūna",
-    translation: "And Allah created you and what you do",
+    translation: 'While Allāh created you and that which you do?"',
     surah: 37,
     verse: 96,
     repeat,
@@ -1320,7 +1320,7 @@ export function zumar_67(repeat = 1, enableCounter?: boolean) {
     translit:
       "Wa mā qadarullāha ḥaqqa qadrihī, wal arḍu jamī‘an qabḍatuhū yawmal qiyāmati was samāwātu maṭwiyyātum biyamīnihī, subḥānahū wa ta‘ālā ‘ammā yushrikūn.",
     translation:
-      "They have not made a just appraisal of Allāh, such as He deserves. And on the Day of Resurrection the whole earth will be grasped by His Hand, with the Heavens folded up in His Right Hand. Glory be to Him! High is He above all that they associate as partners with Him!",
+      "They have not appraised Allāh with true appraisal, while the earth entirely will be [within] His grip on the Day of Resurrection, and the heavens will be folded in His right hand. Exalted is He and high above what they associate with Him.",
     surah: 39,
     verse: 67,
     repeat,
@@ -1363,7 +1363,7 @@ export function shura_25(repeat = 1, enableCounter?: boolean) {
     translit:
       "Wa huwal ladhī yaqbalut tawbata ‛an ‛ibādihī wa ya‛fū ‛anis sayyi’āti wa ya‛lamu mā taf‛alūn",
     translation:
-      "It is He who accepts repentance for His servants and pardons evil deeds. He knows everything you do.",
+      "And it is He who accepts repentance from His servants and pardons misdeeds, and He knows what you do.",
     surah: 42,
     verse: 25,
     repeat,
@@ -1378,7 +1378,7 @@ export function zukhruf_13(repeat = 1, enableCounter?: boolean) {
     translit:
       "… Subḥānalladhī sakh-khara lanā hādhā wa mā kunnā lahū muqrinīna.",
     translation:
-      "… Glory to Him Who has subjected these (creatures) to us; we would never on our own have accomplished it.",
+      "… Exalted is He who has subjected this to us, and we could not have [otherwise] subdued it.",
     surah: 43,
     verse: 13,
     repeat,
@@ -1391,7 +1391,7 @@ export function zukhruf_14(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic: "وَإِنَّآ إِلَىٰ رَبِّنَا لَمُنقَلِبُونَ",
     translit: "wa innā ilā rabbinā lamunqalibūn",
-    translation: "And to our Lord shall we surely return.",
+    translation: 'And indeed we, to our Lord, will [surely] return."',
     surah: 43,
     verse: 14,
     repeat,
@@ -1448,7 +1448,7 @@ export function fath_10(repeat = 1, enableCounter?: boolean) {
     translit:
       "Inna alladhīna yubāyi‛ūnaka innamā yubāyi‛ūna Allāha yadu Allāhi fawqa aydīhim …",
     translation:
-      "Indeed, those who pledge allegiance to you, [O Beloved], are actually pledging allegiance to Allah. The hand of Allah is over theirs …",
+      "Indeed, those who pledge allegiance to you, [O Muḥammad] - they are actually pledging allegiance to Allāh. The hand of Allāh is over their hands. …",
     surah: 48,
     verse: 10,
     repeat,
@@ -1491,7 +1491,7 @@ export function hashr_10(repeat = 1, enableCounter?: boolean) {
     translit:
       "… waghfīrlanā wa li ikhwānalladhīna sabaqūna bil īmani walā tajʿal fī qulūbinā ghillan lilladhīna āmanū. Rabbanā innaka raʾūfun raḥīm.",
     translation:
-      "… and forgive us and our brothers who preceded us in faith, and do not place rancour in our hearts towards those who believe, Our Lord. You are Compassionate, Merciful.",
+      "… forgive us and our brothers who preceded us in faith and put not in our hearts [any] resentment toward those who have believed. Our Lord, indeed You are Kind and Merciful.",
     surah: 59,
     verse: 10,
     repeat,
@@ -1585,7 +1585,7 @@ export function saff_13_14(repeat = 1, enableCounter?: boolean) {
       arabic: "… نَصۡرٞ مِّنَ ٱللَّهِ وَفَتۡحٞ قَرِيبٞۗ وَبَشِّرِ ٱلۡمُؤۡمِنِينَ",
       translit: "… naṣrum minallāhi wa fatḥun qarīb, wa bash-shiril mu'minīn.",
       translation:
-        "… help from Allāh (against your enemies) and an imminent victory; and give glad tidings (O Prophet) to the believers.",
+        "… victory from Allāh and an imminent conquest; and give good tidings to the believers.",
       verse: 13,
       surah: 61,
       repeat,
@@ -1597,7 +1597,7 @@ export function saff_13_14(repeat = 1, enableCounter?: boolean) {
       translit:
         "Yā ayyuhalladhīna āmanū kūnū anṣārallāhi kamā qāla ‛īsabnu maryama lil ḥawāriyyīna man anṣārī ilallāh, qālal ḥawāriyyūna naḥnu anṣārullāh …",
       translation:
-        'O you who believe, be Allāh\'s Helpers as Jesus, son of Mary, said to the desciples: "Who will be my helpers in the cause of Allah? They said: "We are Allāh\'s helpers..." …',
+        'O you who have believed, be supporters of Allāh, as when Jesus, the son of Mary, said to the disciples, "Who are my supporters for Allāh?" The disciples said, "We are supporters of Allāh." …',
       verse: 14,
       surah: 61,
       repeat,
@@ -1666,8 +1666,7 @@ export function mursalat_23(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic: "فَقَدَرۡنَا فَنِعۡمَ ٱلۡقَٰدِرُونَ",
     translit: "Faqadarnā fani‘mal qādirūn.",
-    translation:
-      "Thus have We determined (the stages of development); and indeed Our power to determine is excellent.",
+    translation: "And We determined [it], and excellent [are We] to determine.",
     surah: 77,
     verse: 23,
     repeat,
@@ -1706,7 +1705,7 @@ export function ikhlas_4(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic: "وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ",
     translit: "Wa lam yakun lahū kufuwan aḥad.",
-    translation: "Nor is there to Him any equivalent.",
+    translation: 'Nor is there to Him any equivalent."',
     surah: 112,
     verse: 4,
     repeat,
@@ -1731,7 +1730,7 @@ export function baqarah_137(
         arabic: "… فَسَيَكۡفِيكَهُمُ ٱللَّهُۚ وَهُوَ ٱلسَّمِيعُ ٱلۡعَلِيمُ",
         translit: "fa-sayakfīkahumu-llāhu wa huwa-s-samīʿu-l-ʿalīm",
         translation:
-          "And Allah will be sufficient for you against them, and He is the Hearing, the Knowing.",
+          "and Allāh will be sufficient for you against them. And He is the Hearing, the Knowing.",
         verse: 137,
       }),
     ],
@@ -1757,7 +1756,7 @@ export function a_raf_196(
         translit:
           "inna waliyyiya-llāhu-lladhī nazzala-l-kitāba wa huwa yatawalla-ṣ-ṣāliḥīn",
         translation:
-          "Indeed, my protector is Allah, who has sent down the Book; and He is an ally to the righteous.",
+          "Indeed, my protector is Allāh, who has sent down the Book; and He is an ally to the righteous.",
         verse: 196,
       }),
     ],
@@ -1783,7 +1782,7 @@ export function tawbah_129_section(
         translit:
           "ḥasbiya-llāhu lā ilāha illā huwa ʿalayhi tawakkaltu wa huwa rabbu-l-ʿarshi-l-ʿaẓīm",
         translation:
-          "Sufficient for me is Allah; there is no deity except Him. On Him I have relied, and He is the Lord of the Great Throne.",
+          "Sufficient for me is Allāh; there is no deity except Him. On Him I have relied, and He is the Lord of the Great Throne.",
         verse: 129,
       }),
     ],
@@ -1808,7 +1807,7 @@ export function yusuf_64(
         arabic: "… فَٱللَّهُ خَيۡرٌ حَٰفِظٗاۖ وَهُوَ أَرۡحَمُ ٱلرَّٰحِمِينَ",
         translit: "fa-llāhu khayrun ḥāfiẓan wa huwa arḥamu-r-rāḥimīn",
         translation:
-          "For Allah is the best guardian, and He is the most merciful of the merciful.",
+          "But Allāh is the best guardian, and He is the most merciful of the merciful.",
         verse: 64,
       }),
     ],
@@ -1834,7 +1833,7 @@ export function taha_111(
         translit:
           "wa ʿanati-l-wujūhu li-l-ḥayyi-l-qayyūm, wa qad khāba man ḥamala ẓulmā",
         translation:
-          "And faces shall be humbled before the Ever-Living, the Self-Sustaining. And he will have failed who carries injustice.",
+          "And [all] faces will be humbled before the Ever-Living, the Self-Sustaining. And he will have failed who carries injustice.",
         verse: 111,
       }),
     ],
@@ -1860,7 +1859,7 @@ export function mu_minun_115_118(
         translit:
           "Afaḥasibtum annamā khalaqnākum ʿabathan wa annakum ilaynā lā turjaʿūn.",
         translation:
-          "Did you think We had created you in vain, and that you would not be brought back to Us?",
+          'Then did you think that We created you uselessly and that to Us you would not be returned?"',
         verse: 115,
       }),
       new QuranEntryModel({
@@ -1868,7 +1867,7 @@ export function mu_minun_115_118(
         translit:
           "Fa taʿālā Allāh ul-Malik ul-Ḥaqq, lā ilāha illā Huwa Rabb ul-ʿArsh il-Karīm.",
         translation:
-          "Exalted be God, the true King, there is no god but Him, the Lord of the Glorious Throne!",
+          "So exalted is Allāh, the Sovereign, the Truth; there is no deity except Him, Lord of the Noble Throne.",
         verse: 116,
       }),
       new QuranEntryModel({
@@ -1877,14 +1876,14 @@ export function mu_minun_115_118(
         translit:
           "Wa man yadʿu maʿ Allāhi ilāhan ākhara lā burhāna lahu bihi, faʾinnamā ḥisābuhu ʿinda Rabbih, innahu lā yufliḥ ul-kāfirūn.",
         translation:
-          "Whoever prays to another god alongside Him—he has no proof of this—will face his reckoning with his Lord. Those who reject the truth will not prosper.",
+          "And whoever invokes besides Allāh another deity for which he has no proof - then his account is only with his Lord. Indeed, the disbelievers will not succeed.",
         verse: 117,
       }),
       new QuranEntryModel({
         arabic: "وَقُل رَّبِّ ٱغۡفِرۡ وَٱرۡحَمۡ وَأَنتَ خَيۡرُ ٱلرَّٰحِمِينَ",
         translit: "Wa qul Rabb ighfir warḥam wa anta khayr ur-rāḥimīn.",
         translation:
-          "Say, ‘Lord, forgive and have mercy: You are the most merciful of all.’",
+          'And, [O Muḥammad], say, "My Lord, forgive and have mercy, and You are the best of the merciful."',
         verse: 118,
       }),
     ],
@@ -1908,7 +1907,7 @@ export function naml_1(
       new QuranEntryModel({
         arabic: "طسٓۚ …",
         translit: "Ṭā Sīn",
-        translation: "Ta Sin.",
+        translation: "Ṭā, Seen.",
         verse: 1,
       }),
     ],
@@ -1932,7 +1931,8 @@ export function rum_17_19(
       new QuranEntryModel({
         arabic: "فَسُبۡحَٰنَ ٱللَّهِ حِينَ تُمۡسُونَ وَحِينَ تُصۡبِحُونَ",
         translit: "Fasubḥān Allāhi ḥīna tumsūna wa ḥīna tuṣbiḥūn.",
-        translation: "So celebrate God’s glory in the evening, in the morning—",
+        translation:
+          "So exalted is Allāh when you reach the evening and when you reach the morning.",
         verse: 17,
       }),
       new QuranEntryModel({
@@ -1940,7 +1940,7 @@ export function rum_17_19(
         translit:
           "Wa lahu ulḥamdu fis-samāwāti wal-arḍi wa ʿashīyyan wa ḥīna tuẓhirūn.",
         translation:
-          "praise is due to Him in the heavens and the earth—in the late afternoon, and at midday.",
+          "And to Him is [due all] praise throughout the heavens and the earth. And [exalted is He] at night and when you are at noon.",
         verse: 18,
       }),
       new QuranEntryModel({
@@ -1949,7 +1949,7 @@ export function rum_17_19(
         translit:
           "Yukhrij ul-ḥayya min al-mayyiti wa yukhrij ul-mayyita min al-ḥayyi wa yuḥyī il-arḍa baʿda mawtihā, wa kathālika tukhrajūn.",
         translation:
-          "He brings the living out of the dead and the dead out of the living. He gives life to the earth after death, and you will be brought out in the same way.",
+          "He brings the living out of the dead and brings the dead out of the living and brings to life the earth after its lifelessness. And thus will you be brought out.",
         verse: 19,
       }),
     ],
@@ -1974,7 +1974,7 @@ export function ahzab_11_12(
         arabic: "… ٱبۡتُلِيَ ٱلۡمُؤۡمِنُونَ وَزُلۡزِلُواْ زِلۡزَالٗا شَدِيدٗا",
         translit: "… ibtuliya-l-mu'minūna wa zulzilū zilzālan shadīdan",
         translation:
-          "… the believers were tried and shaken with a mighty shaking.",
+          "… the believers were tested and shaken with a severe shaking.",
         verse: 11,
       }),
       new QuranEntryModel({
@@ -1983,7 +1983,7 @@ export function ahzab_11_12(
         translit:
           "Wa idh yaqūlu-l-munāfiqūna wa-lladhīna fī qulūbihim maraḍun mā waʿadanā-llāhu wa rasūluhū illā ghurūran",
         translation:
-          "And when the hypocrites and those in whose hearts is a disease said, ‘Allah and His Messenger did not promise us except delusion.’",
+          'And [remember] when the hypocrites and those in whose hearts is disease said, "Allāh and His Messenger did not promise us except delusion,"',
         verse: 12,
       }),
     ],
@@ -2010,7 +2010,7 @@ export function ahzab_56(
         translit:
           "Inna Allāha wa malā’ikatahu yuṣallūna ‘alā al-nabīyi yā ayyuhā alladhīna āmanū ṣallū ‘alayhi wa sallimū taslīman.",
         translation:
-          "Indeed, Allah confers blessing upon the Prophet, and His angels [ask Him to do so]. O you who have believed, ask [Allah to confer] blessing upon him and ask [Allah to grant him] peace.",
+          "Indeed, Allāh confers blessing upon the Prophet, and His angels [ask Him to do so]. O you who have believed, ask [Allāh to confer] blessing upon him and ask [Allāh to grant him] peace.",
         verse: 56,
       }),
     ],
@@ -2034,19 +2034,19 @@ export function ya_sin_1_9(
       new QuranEntryModel({
         arabic: "يسٓ",
         translit: "Yā Sīn",
-        translation: "Ya Sin.",
+        translation: "Yā, Seen.",
         verse: 1,
       }),
       new QuranEntryModel({
         arabic: "وَٱلۡقُرۡءَانِ ٱلۡحَكِيمِ",
         translit: "wa-l-qur'āni-l-ḥakīm",
-        translation: "By the wise Qur'an.",
+        translation: "By the wise Qur’ān,",
         verse: 2,
       }),
       new QuranEntryModel({
         arabic: "إِنَّكَ لَمِنَ ٱلۡمُرۡسَلِينَ",
         translit: "innaka lamina-l-mursalīn",
-        translation: "Indeed, you are from among the messengers.",
+        translation: "Indeed you, [O Muḥammad], are from among the messengers,",
         verse: 3,
       }),
       new QuranEntryModel({
@@ -2058,7 +2058,8 @@ export function ya_sin_1_9(
       new QuranEntryModel({
         arabic: "تَنزِيلَ ٱلۡعَزِيزِ ٱلرَّحِيمِ",
         translit: "tanzīla-l-ʿazīzi-r-raḥīm",
-        translation: "A revelation of the Exalted in Might, the Merciful.",
+        translation:
+          "[This is] a revelation of the Exalted in Might, the Merciful,",
         verse: 5,
       }),
       new QuranEntryModel({
@@ -2072,7 +2073,7 @@ export function ya_sin_1_9(
         arabic: "لَقَدۡ حَقَّ ٱلۡقَوۡلُ عَلَىٰٓ أَكۡثَرِهِمۡ فَهُمۡ لَا يُؤۡمِنُونَ",
         translit: "laqad ḥaqqa-l-qawlu ʿalā aktharihim fahum lā yu'minūn",
         translation:
-          "The word has come into effect upon most of them, so they do not believe.",
+          "Already the word [i.e., decree] has come into effect upon most of them, so they do not believe.",
         verse: 7,
       }),
       new QuranEntryModel({
@@ -2080,7 +2081,7 @@ export function ya_sin_1_9(
         translit:
           "innā jaʿalnā fī aʿnāqihim aghlālan fa-hiya ilā-l-adhqāni fahum muqmaḥūn",
         translation:
-          "Indeed, We have put shackles on their necks, and they are to their chins, so they are with heads aloft.",
+          "Indeed, We have put shackles on their necks, and they are to their chins, so they are with heads [kept] aloft.",
         verse: 8,
       }),
       new QuranEntryModel({
@@ -2114,7 +2115,7 @@ export function ya_sin_66_67(
         translit:
           "wa law nashā'u la-ṭamasnā ʿalā aʿyunihim fa-stabaqū-ṣ-ṣirāṭa fa-annā yubṣirūn",
         translation:
-          "And if We willed, We could have obliterated their eyes, then they would race to the path, but how would they see?",
+          "And if We willed, We could have obliterated their eyes, and they would race to [find] the path, and how could they see?",
         verse: 66,
       }),
       new QuranEntryModel({
@@ -2122,7 +2123,7 @@ export function ya_sin_66_67(
         translit:
           "wa law nashā'u la-masakhnāhum ʿalā makānatihim fa-mā-staṭāʿū muḍiyyan wa lā yarjiʿūn",
         translation:
-          "And if We willed, We could have transfigured them in their places, so they would not be able to proceed, nor would they return.",
+          "And if We willed, We could have deformed them, [paralyzing them] in their places so they would not be able to proceed, nor could they return.",
         verse: 67,
       }),
     ],
@@ -2146,19 +2147,19 @@ export function saffat_79_81(
       new QuranEntryModel({
         arabic: "سَلَٰمٌ عَلَىٰ نُوحٖ فِي ٱلۡعَٰلَمِينَ",
         translit: "Salāmun ʿalā Nūḥin fil-ʿālamīn.",
-        translation: "‘Peace be upon Noah among all the nations!’",
+        translation: '"Peace upon Noah among the worlds."',
         verse: 79,
       }),
       new QuranEntryModel({
         arabic: "إِنَّا كَذَٰلِكَ نَجۡزِي ٱلۡمُحۡسِنِينَ",
         translit: "Innā kadhalika najzil-muḥsinīn.",
-        translation: "This is how We reward those who do good:",
+        translation: "Indeed, We thus reward the doers of good.",
         verse: 80,
       }),
       new QuranEntryModel({
         arabic: "إِنَّهُۥ مِنۡ عِبَادِنَا ٱلۡمُؤۡمِنِينَ",
         translit: "Innahu min ʿibādina al-muʾminīn.",
-        translation: "he was truly one of Our faithful servants.",
+        translation: "Indeed, he was of Our believing servants.",
         verse: 81,
       }),
     ],
@@ -2183,20 +2184,19 @@ export function saffat_180_182(
         arabic: "سُبۡحَٰنَ رَبِّكَ رَبِّ ٱلۡعِزَّةِ عَمَّا يَصِفُونَ",
         translit: "Subḥāna rabbika rabbil ‛izzati ‛ammā yaṣifūn.",
         translation:
-          "Glory be to your Lord; the Lord of Honour and Power Who is far above what they attribute to Him;",
+          "Exalted is your Lord, the Lord of might, above what they describe.",
         verse: 180,
       }),
       new QuranEntryModel({
         arabic: "وَسَلَٰمٌ عَلَى ٱلۡمُرۡسَلِينَ",
         translit: "Wa salāmun ‛alal mursalīn.",
-        translation: "And peace be on the Messengers;",
+        translation: "And peace upon the messengers.",
         verse: 181,
       }),
       new QuranEntryModel({
         arabic: "وَٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَٰلَمِينَ",
         translit: "Walḥamdu lillāhi rabbil ‛ālamīn.",
-        translation:
-          "And praise be to Allāh, the Lord and Cherisher of the Worlds.",
+        translation: "And praise to Allāh, Lord of the worlds.",
         verse: 182,
       }),
     ],
@@ -2260,13 +2260,13 @@ export function shura_1_2(
       new QuranEntryModel({
         arabic: "حمٓ",
         translit: "Ḥā Mīm",
-        translation: "Ha Mim.",
+        translation: "Ḥā, Meem.",
         verse: 1,
       }),
       new QuranEntryModel({
         arabic: "عٓسٓقٓ",
         translit: "ʿAyn Sīn Qāf",
-        translation: "Ayn Sin Qaf.",
+        translation: "ʿAyn, Seen, Qāf.",
         verse: 2,
       }),
     ],
@@ -2290,13 +2290,14 @@ export function rahman_19_20(
       new QuranEntryModel({
         arabic: "مَرَجَ ٱلۡبَحۡرَيۡنِ يَلۡتَقِيَانِ",
         translit: "maraja-l-baḥrayni yaltaqiyān",
-        translation: "He released the two seas, meeting side by side.",
+        translation: "He released the two seas, meeting [one another];",
         verse: 19,
       }),
       new QuranEntryModel({
         arabic: "بَيۡنَهُمَا بَرۡزَخٞ لَّا يَبۡغِيَانِ",
         translit: "baynahumā barzakhun lā yabghiyān",
-        translation: "Between them is a barrier which they do not transgress.",
+        translation:
+          "Between them is a barrier so neither of them transgresses.",
         verse: 20,
       }),
     ],
@@ -2323,7 +2324,7 @@ export function hashr_21_24(
         translit:
           "Lau anzalnā hādhā al-Qurʾāna ʿalā jabalin laraʾāytahu khāshiʿan mutaṣaddiʿan min khashyat Illāh, wa tilk al-amthālu naḍribuhā liʾn-nāsi laʿalahum yatafakkarūn.",
         translation:
-          "If We had sent this Qur’an down on a mountain, you would have seen it humbled and split apart in its awe of God: We offer people such illustrations so that they may reflect.",
+          "If We had sent down this Qur’ān upon a mountain, you would have seen it humbled and splitting from fear of Allāh. And these examples We present to the people that perhaps they will give thought.",
         verse: 21,
       }),
       new QuranEntryModel({
@@ -2331,7 +2332,7 @@ export function hashr_21_24(
         translit:
           "Huwa Allāhu alladhī lā ilāha illā Hu, ʿālim ul-ghaybi wa ash-shahādati Huwa ar-Raḥmān ur-Raḥīm.",
         translation:
-          "He is God: there is no god other than Him. It is He who knows what is hidden as well as what is in the open, He is the Lord of Mercy, the Giver of Mercy.",
+          "He is Allāh, other than whom there is no deity, Knower of the unseen and the witnessed. He is the Entirely Merciful, the Especially Merciful.",
         verse: 22,
       }),
       new QuranEntryModel({
@@ -2340,7 +2341,7 @@ export function hashr_21_24(
         translit:
           "Huwa Allāhu alladhī lā ilāha illā Huwa al-Malik ul-Quddūs us-Salām ulMuʾmin ul-Muhaymin ul-ʿAzīz ul-Jabbār ul-Mutakabbir, subḥān Allāhi ʿammā yushrikūn.",
         translation:
-          "He is God: there is no god other than Him, the Controller, the Holy One, Source of Peace, Granter of Security, Guardian over all, the Almighty, the Compeller, the Truly Great; God is far above anything they consider to be His partner.",
+          "He is Allāh, other than whom there is no deity, the Sovereign, the Pure, the Perfection, the Grantor of Security, the Overseer, the Exalted in Might, the Compeller, the Superior. Exalted is Allāh above whatever they associate with Him.",
         verse: 23,
       }),
       new QuranEntryModel({
@@ -2349,7 +2350,7 @@ export function hashr_21_24(
         translit:
           "Huwa Allāh ul-Khāliq ul-Bāriʾ ulMuṣawwir, lahu ul-asmāʾ ul-ḥusnā, yusabbiḥu lahu ma fīs-samāwāti wal-arḍi wa Huwa al-ʿAzīz ul-Ḥakīm.",
         translation:
-          "He is God: the Creator, the Originator, the Shaper. The best names belong to Him. Everything in the heavens and earth glorifies Him: He is the Almighty, the Wise.",
+          "He is Allāh, the Creator, the Producer, the Fashioner; to Him belong the best names. Whatever is in the heavens and earth is exalting Him. And He is the Exalted in Might, the Wise.",
         verse: 24,
       }),
     ],
@@ -2373,19 +2374,19 @@ export function buruj_20_22(
       new QuranEntryModel({
         arabic: "وَٱللَّهُ مِن وَرَآئِهِم مُّحِيطُۢ",
         translit: "wa-llāhu min warā'ihim muḥīṭ",
-        translation: "And Allah, from behind them, is encompassing.",
+        translation: "While Allāh encompasses them from behind.",
         verse: 20,
       }),
       new QuranEntryModel({
         arabic: "بَلۡ هُوَ قُرۡءَانٞ مَّجِيدٞ",
         translit: "bal huwa qur'ānun majīd",
-        translation: "But it is a glorious Qur'an.",
+        translation: "But this is an honored Qur’ān",
         verse: 21,
       }),
       new QuranEntryModel({
         arabic: "فِي لَوۡحٖ مَّحۡفُوظِۭ",
         translit: "fī lawḥin maḥfūẓ",
-        translation: "In a Preserved Tablet.",
+        translation: "[Inscribed] in a Preserved Slate.",
         verse: 22,
       }),
     ],
@@ -2405,7 +2406,8 @@ export function fatihah_1_q() {
   return new QuranEntryModel({
     arabic: "بِسۡمِ ٱللَّهِ ٱلرَّحۡمَٰنِ ٱلرَّحِيمِ",
     translit: "bismi-llāhi r-raḥmāni r-raḥīm",
-    translation: "In the name of Allah, Most Compassionate, Ever-Merciful",
+    translation:
+      "In the name of Allāh, the Entirely Merciful, the Especially Merciful.",
     verse: 1,
     surah: 1,
   });

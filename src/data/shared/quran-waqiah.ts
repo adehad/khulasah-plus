@@ -50,7 +50,7 @@ export const quran = new QuranModel({
       arabic: "فَأَصۡحَٰبُ ٱلۡمَيۡمَنَةِ مَآ أَصۡحَٰبُ ٱلۡمَيۡمَنَةِ",
       translit: "Fa’aṣḥābul maymanati mā aṣḥābul maymanah.",
       translation:
-        "So the companions of the right - what are the companions of the right?",
+        "Then the companions of the right - what are the companions of the right?",
       verse: 8,
     }),
     new QuranEntryModel({
