@@ -51,12 +51,6 @@ const ARABIC_HEADINGS = [
   "فِي الصَّلَاةِ عَلَى سَيِّدِ الأَحِبَّة",
 ];
 const ACCEPTED_PREFIXES = ["45 - "];
-// reviewed: the original writes these blocks out twice as well
-const ACCEPTED_DOUBLED = new Set([
-  "khulasah-after-fajr-wird-of-imam-an-nawawi.ts",
-  "khulasah-after-isha-wird-of-imam-an-nawawi.ts",
-]);
-
 const git = (...args: string[]) =>
   execFileSync("git", args, { cwd: ROOT, encoding: "utf8", maxBuffer: 1e8 });
 const cp = (...codes: number[]) => String.fromCharCode(...codes);
@@ -125,10 +119,8 @@ for (const f of readdirSync(DATA).filter((f) => f.endsWith(".ts"))) {
         lines.slice(i, i + n).join("|") ===
         lines.slice(i + n, i + 2 * n).join("|")
       ) {
-        if (!ACCEPTED_DOUBLED.has(f)) {
-          doubled[f] ??= [];
-          doubled[f].push(`${n} lines from line ${i + 1}: ${lines[i]}`);
-        }
+        doubled[f] ??= [];
+        doubled[f].push(`${n} lines from line ${i + 1}: ${lines[i]}`);
         i += 2 * n - 1;
         break;
       }
