@@ -14,7 +14,7 @@ const homeContent = [
   new NavModel({ href: "ziyarahs", title: "Ziyarahs" }),
   new NavModel({
     href: "prayers-for-palestine",
-    title: "Prayers for the Victoring in Masjid Al-Aqsa and Palenstine",
+    title: "Prayers for Victory in Masjid al-Aqsa and Palestine",
   }),
 ];
 
