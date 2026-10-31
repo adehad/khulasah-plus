@@ -110,9 +110,20 @@ registerRoute(
   }),
 );
 
+// The precache keys each page without a trailing slash, but the host redirects /page to /page/,
+// so that form (and /page/index.html) is what bookmarks, reloads and the shortcuts ask for.
+// Pages are static, so a query string never selects different HTML and is dropped here too.
+function pageWithoutTrailingSlash({ url }: { url: URL }): URL[] {
+  const variant = new URL(url.href);
+  variant.search = "";
+  variant.pathname = url.pathname.replace(/\/(index\.html)?$/, "") || "/";
+  return [variant];
+}
+
 // All HTML pages are included in __WB_MANIFEST via globPatterns.
 // Launch params (the Search shortcut's ?search, the protocol handler's ?url=) are read by the page,
 // so they must not stop the precached page from being served offline.
 precacheAndRoute(self.__WB_MANIFEST, {
   ignoreURLParametersMatching: [/^utm_/, /^fbclid$/, /^search$/, /^url$/],
+  urlManipulation: pageWithoutTrailingSlash,
 });
