@@ -1,0 +1,30 @@
+---
+interface Props {
+  verse: number;
+}
+
+const { verse } = Astro.props;
+---
+
+<span class="arabic verse-end">
+  <span class="arabic verse-number">{verse}</span>
+  ۝
+</span>
+
+<style>
+  .verse-end {
+    display: inline-block;
+    position: relative;
+    line-height: 0.8em;
+  }
+
+  /* The number sits inside the ayah-end glyph; Amiri's digits fit the ring where the Qur'an font's do not */
+  .verse-number {
+    position: absolute;
+    overflow: hidden;
+    transform: translateX(+25%) translateY(-21%) scale(0.4);
+    text-align: center;
+    width: 3ch;
+    font-family: "Amiri", serif;
+  }
+</style>

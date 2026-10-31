@@ -1,6 +1,7 @@
 ---
 import { SURAH_NAMES } from "@/data/shared/surah-names";
 import { type QasidaEntryModel, QuranEntryModel } from "@/models/recitation";
+import VerseEnd from "./VerseEnd.astro";
 
 interface Props {
   entry: QasidaEntryModel | QuranEntryModel;
@@ -13,7 +14,12 @@ const surah = isQuran ? entry.surah : undefined;
 
 <div class="qasida-entry">
   <div class:list={["arabic", { quran: isQuran }]} dir="rtl" lang="ar">
-    {isQuran ? `﴿${entry.arabic} ۝${(entry as QuranEntryModel).verse}﴾` : entry.arabic}
+    {isQuran ? (
+      <>
+        {/* a no-break space keeps the verse end on the line of the verse's last word */}
+        {"﴿"}{entry.arabic}{" "}<VerseEnd verse={(entry as QuranEntryModel).verse} />{"﴾"}
+      </>
+    ) : entry.arabic}
   </div>
   <div class="translit">{entry.translit}</div>
   <div class="translation">{entry.translation}</div>
