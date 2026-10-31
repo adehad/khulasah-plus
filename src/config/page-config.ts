@@ -563,3 +563,11 @@ export const pageConfigs: PageConfig[] = [
   },
   // Add more page configurations here
 ];
+
+const pagePaths = new Set(pageConfigs.map((c) => c.path));
+
+/** The page path a nav href points at, without its anchor or trailing slash */
+export const pagePathOf = (href: string) =>
+  href.split("#")[0].replace(/\/$/, "");
+
+export const hasPage = (href: string) => pagePaths.has(pagePathOf(href));

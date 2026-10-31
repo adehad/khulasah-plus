@@ -1,4 +1,5 @@
 ---
+import { hasPage } from "@/config/page-config";
 import type { NavModel } from "@/models/nav";
 import { resolveBasePath } from "@/utils/paths";
 
@@ -9,9 +10,18 @@ interface Props {
 const { item } = Astro.props;
 ---
 
-<a class="nav-button" href={resolveBasePath(`/${item.href}`)}>
-  {item.title}
-</a>
+{
+  // links to pages that do not exist yet (allowed in check-nav) show as disabled tiles
+  hasPage(item.href) ? (
+    <a class="nav-button" href={resolveBasePath(`/${item.href}`)}>
+      {item.title}
+    </a>
+  ) : (
+    <span class="nav-button disabled" aria-disabled="true">
+      {item.title}
+    </span>
+  )
+}
 
 <style>
   .nav-button {
@@ -28,7 +38,13 @@ const { item } = Astro.props;
     transition: background-color 0.2s;
   }
 
-  .nav-button:hover {
+  a.nav-button:hover {
     background-color: var(--sl-color-primary-200);
+  }
+
+  .nav-button.disabled {
+    background-color: var(--sl-color-neutral-100);
+    color: var(--sl-color-neutral-500);
+    cursor: default;
   }
 </style>
