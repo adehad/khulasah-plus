@@ -14,7 +14,7 @@ function initToc() {
     const item = document.createElement("sl-menu-item");
     item.textContent = heading.textContent?.trim() ?? "";
     item.addEventListener("click", () => {
-      // Scroll directly — setting hash alone doesn't scroll inside overflow containers
+      // Scroll directly for a smooth scroll; replaceState below does not scroll
       heading.scrollIntoView({ behavior: "smooth" });
       history.replaceState(null, "", `#${heading.id}`);
     });

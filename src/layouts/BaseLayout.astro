@@ -169,6 +169,24 @@ const baseURL = import.meta.env.BASE_URL;
 <body>
   <Header pagePath={pagePath} />
 
+  <!--
+    The fixed content frame and sticky offsets sit below the header, whose height
+    changes (wrapping, audio player expanding), so it is published as a CSS var.
+    Runs right after the header is parsed so the frame is placed before first paint.
+  -->
+  <script is:inline>
+    (function() {
+      var header = document.querySelector("body > header");
+      if (!header) return;
+      var root = document.documentElement;
+      function publishHeight() {
+        root.style.setProperty("--header-height", header.getBoundingClientRect().height + "px");
+      }
+      publishHeight();
+      new ResizeObserver(publishHeight).observe(header, { box: "border-box" });
+    })();
+  </script>
+
   <div class="content-border">
     <main>
       <slot />

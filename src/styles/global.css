@@ -63,13 +63,19 @@ body {
   font-family: var(--font-family);
   padding: 0;
   margin: 0;
-  height: 100%;
+}
+
+html {
+  /* The document is the scroll container (not <main>) so mobile browsers can
+     collapse their address bar. Anchor and scrollIntoView targets must clear
+     the sticky header and the fixed frame band above the content. */
+  --content-top: calc(var(--header-height, 0px) + var(--border-inset));
+  scroll-padding-top: var(--content-top);
+  scroll-padding-bottom: var(--border-inset);
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  height: 100dvh;
+  min-height: 100dvh;
   background-color: var(--sl-color-neutral-0);
   color: var(--sl-color-neutral-950);
 }
@@ -91,31 +97,43 @@ h3 {
 }
 
 .content-border {
-  flex: 1;
-  min-height: 0;
-  position: relative;
-  /* Insets main so its scroll area sits entirely inside the border overlay,
-     prevent overlap between content elements and the border */
+  /* Keeps content inside the fixed frame band */
   padding: var(--border-inset);
   box-sizing: border-box;
 }
 
 main {
   display: block;
-  height: 100%;
-  overflow-y: auto;
-  box-sizing: border-box;
 }
 
-/* Decorative border overlay — does not consume layout space */
+/* The frame is pinned to the viewport below the header while the document
+   scrolls underneath it. ::before is an opaque band in the theme background
+   so scrolled content does not show through the transparent parts of the
+   ornamental border image drawn by ::after. */
+.content-border::before,
 .content-border::after {
   content: "";
-  position: absolute;
-  inset: 0;
+  position: fixed;
+  top: var(--header-height, 0px);
+  right: 0;
+  bottom: 0;
+  left: 0;
   pointer-events: none;
-  z-index: 50;
   border-style: solid;
   border-width: var(--border-inset);
+}
+
+.content-border::before {
+  z-index: 49;
+  border-color: var(--sl-color-neutral-0);
+  /* With fractional device pixel ratios the last device row at the viewport
+     bottom is left uncovered; overhang the bottom without moving the inner edge */
+  bottom: -2px;
+  border-bottom-width: calc(var(--border-inset) + 2px);
+}
+
+.content-border::after {
+  z-index: 50;
   border-image-slice: 20% 20%;
   border-image-repeat: round;
 }
@@ -170,18 +188,7 @@ main {
     display: none !important;
   }
 
-  body {
-    /* biome-ignore lint/complexity/noImportantStyles: print styles must override all specificity */
-    display: block !important;
-    /* biome-ignore lint/complexity/noImportantStyles: print styles must override all specificity */
-    height: auto !important;
-  }
-
-  main {
-    /* biome-ignore lint/complexity/noImportantStyles: print styles must override all specificity */
-    overflow-y: visible !important;
-  }
-
+  .content-border::before,
   .content-border::after {
     /* biome-ignore lint/complexity/noImportantStyles: print styles must override all specificity */
     display: none !important;

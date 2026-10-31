@@ -44,7 +44,7 @@ const rows = verses.map((verse) => ({
 
   .chorus-toggle-button {
     position: sticky;
-    top: 7rem;
+    top: calc(var(--content-top, 0px) + 7rem);
     width: 4ch;
     writing-mode: sideways-rl;
     padding: 8px 5px;
@@ -61,7 +61,7 @@ const rows = verses.map((verse) => ({
     transition: max-height 0.5s ease-out;
     background-color: hsl(from var(--sl-color-primary-700) h s l / 90%);
     color: var(--sl-color-primary-50);
-    top: 30px;
+    top: calc(var(--content-top, 0px) + 30px);
     z-index: 9;
     /* biome-ignore lint/complexity/noImportantStyles: overrides flex-basis set by parent grid */
     flex-basis: 100% !important; /* Take full width when active */
