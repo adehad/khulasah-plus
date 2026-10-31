@@ -12,20 +12,33 @@
 
 import type SlRange from "@shoelace-style/shoelace/dist/components/range/range.js";
 import type SlSwitch from "@shoelace-style/shoelace/dist/components/switch/switch.js";
-import { css, html, LitElement } from "lit";
+import { css, html, LitElement, nothing, type TemplateResult } from "lit";
 import { customElement, state } from "lit/decorators.js";
 
 import "@shoelace-style/shoelace/dist/components/button/button.js";
 import "@shoelace-style/shoelace/dist/components/dialog/dialog.js";
-import "@shoelace-style/shoelace/dist/components/divider/divider.js";
 import "@shoelace-style/shoelace/dist/components/icon/icon.js";
 import "@shoelace-style/shoelace/dist/components/range/range.js";
 import "@shoelace-style/shoelace/dist/components/switch/switch.js";
+import "@shoelace-style/shoelace/dist/components/tab/tab.js";
+import "@shoelace-style/shoelace/dist/components/tab-group/tab-group.js";
+import "@shoelace-style/shoelace/dist/components/tab-panel/tab-panel.js";
 
 import { applySingleSettingToCSS } from "@/context/settings-context";
 import { audioCache, type CachedAudio } from "@/services/audio-cache";
 import { circleButtonStyles } from "@/styles/shared-styles";
-import { type SettingsModel, storage } from "@/utils/storage";
+import {
+  currentInstallHint,
+  INSTALL_PROMPT_CHANGED,
+  type InstallHint,
+  isStandalone,
+} from "@/utils/install";
+import {
+  LifecycleRegistry,
+  type SettingsModel,
+  type SettingsTab,
+  storage,
+} from "@/utils/storage";
 
 type SettingName = keyof SettingsModel;
 
@@ -48,6 +61,24 @@ const TEXT_SETTINGS: readonly TextSetting[] = [
   { key: "transliteration", label: "Transliteration", min: 0.5, max: 2 },
   { key: "translation", label: "Translation", min: 0.5, max: 2 },
 ] as const;
+
+const INSTALL_HINTS: Record<InstallHint, TemplateResult> = {
+  ios: html`Tap <sl-icon name="box-arrow-up" label="Share"></sl-icon> Share, then
+    <strong>Add to Home Screen</strong>.`,
+  "mac-safari": html`Choose <strong>File → Add to Dock</strong>.`,
+  "firefox-android": html`Open the <strong>⋮</strong> menu, then
+    <strong>More → Add app to Home screen</strong>.`,
+  "firefox-windows": html`Look for the <strong>Add tab to taskbar</strong> button
+    in the address bar. If it isn't there, this browser can't install apps.`,
+  "firefox-unsupported": html`This browser can't install apps.`,
+  samsung: html`Look for the install icon in the address bar, or open the menu
+    and choose <strong>Add page to → Home screen</strong>.`,
+  chromium: html`Open the browser menu and choose <strong>Install app</strong> or
+    <strong>Add to Home screen</strong>. If neither is there, it may already be
+    installed.`,
+  other: html`Open the browser menu and look for <strong>Install</strong> or
+    <strong>Add to Home screen</strong>.`,
+};
 
 type SortColumn = "title" | "size" | "cachedAt";
 type SortDirection = "asc" | "desc";
@@ -91,11 +122,60 @@ export class SettingsMenu extends LitElement {
   @state()
   private _settings: SettingsModel = storage.get("settings");
 
+  // Stored values are not validated on read, so anything unknown falls back to the text tab.
+  private _tab: SettingsTab =
+    storage.get("settingsTab") === "audio" ? "audio" : "text";
+
+  @state()
+  private _hasInstallPrompt = Boolean(window.__installPrompt);
+
+  @state()
+  private _showInstallHint = false;
+
+  private _lifecycle = new LifecycleRegistry<"installPrompt">();
+
   static styles = [
     circleButtonStyles,
     css`
       sl-dialog::part(panel) {
         width: 90dvw;
+      }
+
+      /* Tighter than Shoelace's defaults so the whole dialog fits a phone screen. */
+      sl-dialog {
+        --header-spacing: 0.5rem 1rem;
+        --body-spacing: 0 1rem 0.75rem;
+        --footer-spacing: 0.5rem 1rem 0.75rem;
+      }
+
+      /* Title, install button and close share one midline. */
+      sl-dialog::part(header),
+      sl-dialog::part(header-actions) {
+        align-items: center;
+      }
+
+      /* Shoelace pads the actions with "0 var(--header-spacing)", which turns a
+         two-value spacing into a bottom padding that pushes the actions off the
+         title's midline. */
+      sl-dialog::part(header-actions) {
+        gap: 0.25rem;
+        padding: 0 1rem 0 0;
+      }
+
+      /* Closing is the dialog's main exit, so it is larger and in the danger colour. */
+      sl-dialog::part(close-button) {
+        color: var(--sl-color-danger-600);
+        font-size: 1.5rem;
+      }
+
+      sl-dialog::part(close-button__base) {
+        padding: 0.625rem;
+      }
+
+      sl-dialog::part(close-button__base):hover,
+      sl-dialog::part(close-button__base):focus-visible {
+        color: var(--sl-color-danger-700);
+        background-color: var(--sl-color-danger-100);
       }
 
       @media (min-width: 768px) {
@@ -105,17 +185,11 @@ export class SettingsMenu extends LitElement {
         }
       }
 
-      .settings-container {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-      }
-
       /* Display Settings Grid */
       .display-settings {
         display: grid;
         grid-template-columns: auto auto 1fr;
-        gap: 0.75rem 1rem;
+        gap: 0.5rem 1rem;
         align-items: center;
       }
 
@@ -136,10 +210,29 @@ export class SettingsMenu extends LitElement {
         pointer-events: none;
       }
 
-      /* Audio Cache Section */
-      .audio-cache-section h3 {
-        margin: 0 0 0.75rem 0;
-        font-size: 1rem;
+      sl-tab-group {
+        --indicator-color: var(--sl-color-primary-600);
+      }
+
+      /* Tabs keep a 44px touch target. */
+      sl-tab::part(base) {
+        min-height: 2.75rem;
+        padding-block: 0;
+      }
+
+      sl-tab-panel {
+        --padding: 0.75rem 0 0.25rem;
+      }
+
+      /* Group labels match the column headers: small and muted, so groups
+         read as distinct without the height of a full heading. */
+      .group-label {
+        margin: 0 0 0.5rem 0;
+        font-size: 0.7rem;
+        font-weight: 600;
+        color: var(--sl-color-neutral-500);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
       }
 
       .cache-empty {
@@ -160,7 +253,7 @@ export class SettingsMenu extends LitElement {
         grid-template-columns: 1fr auto auto auto;
         gap: 0.5rem 1rem;
         align-items: center;
-        max-height: 200px;
+        max-height: 50dvh;
         overflow-y: auto;
         margin-bottom: 1rem;
       }
@@ -203,6 +296,36 @@ export class SettingsMenu extends LitElement {
         white-space: nowrap;
       }
 
+      /* A small filled button; padding on the host still gives it a 44px touch target. */
+      .install-btn {
+        padding-block: calc((2.75rem - var(--sl-input-height-small)) / 2);
+      }
+
+      /* The same deep teal in both themes (light primary-700 = dark primary-300)
+         so the white label keeps 5.2:1 contrast; Shoelace's dark theme would
+         otherwise invert it to a light fill with dark text. */
+      .install-btn::part(base) {
+        background-color: rgb(83 114 112);
+        border-color: rgb(83 114 112);
+        color: rgb(255 255 255);
+      }
+
+      .install-btn::part(base):hover {
+        background-color: rgb(68 94 92);
+        border-color: rgb(68 94 92);
+        color: rgb(255 255 255);
+      }
+
+      .install-hint {
+        margin: 0 0 0.5rem;
+        font-size: 0.875rem;
+        color: var(--sl-color-neutral-600);
+      }
+
+      .install-hint:empty {
+        display: none;
+      }
+
       .cache-error {
         color: var(--sl-color-danger-600);
         margin: 0;
@@ -210,6 +333,84 @@ export class SettingsMenu extends LitElement {
       }
     `,
   ];
+
+  connectedCallback(): void {
+    super.connectedCallback();
+    this._lifecycle.register("installPrompt", {
+      setup: () =>
+        window.addEventListener(
+          INSTALL_PROMPT_CHANGED,
+          this._refreshInstallPrompt,
+        ),
+      cleanup: () =>
+        window.removeEventListener(
+          INSTALL_PROMPT_CHANGED,
+          this._refreshInstallPrompt,
+        ),
+    });
+  }
+
+  disconnectedCallback(): void {
+    this._lifecycle.cleanupAll();
+    super.disconnectedCallback();
+  }
+
+  private _refreshInstallPrompt = () => {
+    this._hasInstallPrompt = Boolean(window.__installPrompt);
+    if (this._hasInstallPrompt) this._showInstallHint = false;
+  };
+
+  // A captured prompt can only be shown once, so it is dropped whatever the
+  // user chooses; the browser fires beforeinstallprompt again if still installable.
+  // Without one (Safari, Firefox, or Chromium before it is eligible) the button
+  // explains the browser's own install route instead.
+  private async _install(): Promise<void> {
+    const prompt = window.__installPrompt;
+    if (!prompt) {
+      this._showInstallHint = !this._showInstallHint;
+      return;
+    }
+    window.__installPrompt = null;
+    try {
+      await prompt.prompt();
+      await prompt.userChoice;
+    } finally {
+      this._refreshInstallPrompt();
+    }
+  }
+
+  // Sits beside the dialog title so installing costs no extra row.
+  private _renderInstallButton() {
+    if (isStandalone()) return nothing;
+    return html`
+      <sl-button
+        slot="header-actions"
+        class="install-btn"
+        variant="primary"
+        size="small"
+        @click=${this._install}
+      >
+        <sl-icon slot="prefix" name="download"></sl-icon>
+        Install app
+      </sl-button>
+    `;
+  }
+
+  // A live region so its reveal is announced; Shoelace buttons do not forward
+  // aria-expanded to their inner button.
+  private _renderInstallHint() {
+    if (isStandalone()) return nothing;
+    return html`<p class="install-hint" role="status">${
+      this._showInstallHint && !this._hasInstallPrompt
+        ? INSTALL_HINTS[currentInstallHint()]
+        : nothing
+    }</p>`;
+  }
+
+  private _rememberTab = (event: CustomEvent<{ name: string }>) => {
+    this._tab = event.detail.name === "audio" ? "audio" : "text";
+    storage.set("settingsTab", this._tab);
+  };
 
   private _updateSetting<K extends keyof SettingsModel>(
     key: K,
@@ -223,6 +424,8 @@ export class SettingsMenu extends LitElement {
   openDialog(toOpen: boolean) {
     this.isDialogOpen = toOpen;
     if (toOpen) {
+      this._refreshInstallPrompt();
+      this._showInstallHint = false;
       this._loadCachedAudio();
     }
   }
@@ -463,7 +666,7 @@ export class SettingsMenu extends LitElement {
 
   render() {
     return html`
-      <button class="circle-btn" @click=${() => this.openDialog(true)}>
+      <button class="circle-btn" aria-label="Settings" @click=${() => this.openDialog(true)}>
         <sl-icon name="gear"></sl-icon>
       </button>
 
@@ -472,16 +675,18 @@ export class SettingsMenu extends LitElement {
         @sl-hide=${() => this.openDialog(false)}
         label="Settings"
       >
-        <div class="settings-container">
-          ${this._renderDisplaySettings()}
+        ${this._renderInstallButton()}
+        ${this._renderInstallHint()}
+        <sl-tab-group @sl-tab-show=${this._rememberTab}>
+          <sl-tab slot="nav" panel="text" ?active=${this._tab === "text"}>Text</sl-tab>
+          <sl-tab slot="nav" panel="audio" ?active=${this._tab === "audio"}>Audio</sl-tab>
 
-          <sl-divider></sl-divider>
-
-          <div class="audio-cache-section">
-            <h3>Offline Audio Cache</h3>
+          <sl-tab-panel name="text">${this._renderDisplaySettings()}</sl-tab-panel>
+          <sl-tab-panel name="audio">
+            <h3 class="group-label">Offline audio cache</h3>
             ${this._renderAudioCacheManager()}
-          </div>
-        </div>
+          </sl-tab-panel>
+        </sl-tab-group>
         <sl-button slot="footer" @click=${() => this.openDialog(false)}>Close</sl-button>
       </sl-dialog>
     `;

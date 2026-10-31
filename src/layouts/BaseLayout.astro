@@ -163,6 +163,29 @@ const appShortName = "Khulasah+";
     })();
   </script>
 
+  <!--
+    beforeinstallprompt can fire before module scripts load, so it is stashed
+    here for the settings menu's "Install app" option to use later. The default
+    is deliberately not prevented, so the browser's own install banner still
+    shows and the settings item is a fallback for anyone who dismissed it.
+  -->
+  <script is:inline>
+    (function() {
+      // Must match INSTALL_PROMPT_CHANGED in src/utils/install.ts; an inline script cannot import it.
+      function changed() {
+        window.dispatchEvent(new Event("kp-install-prompt-changed"));
+      }
+      window.addEventListener("beforeinstallprompt", function(e) {
+        window.__installPrompt = e;
+        changed();
+      });
+      window.addEventListener("appinstalled", function() {
+        window.__installPrompt = null;
+        changed();
+      });
+    })();
+  </script>
+
   <!-- Shoelace base path setup (must run before any Shoelace components) -->
   <script>
     import { setBasePath } from "@shoelace-style/shoelace/dist/utilities/base-path.js";
