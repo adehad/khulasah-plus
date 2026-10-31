@@ -19,8 +19,55 @@ import {
 export default [
   new WirdModel({
     title: "Introduction",
-    instruction:
-      'Compiled by al-Habib Muhammad bin Abdur Rahman as-Saqqaf\n\nIn the Name of Allah, Most Compassionate, Ever-Merciful\n\nAll praise be to Allah for His countless blessings and beautiful favours. May Allah bestow prayers and peace upon the Seal of His Prophets and the Master of His Saints, and upon his Family who bear his standard, his loyal Companions, and all who follow them until the Day of Meeting Him.\n\nAllah sent His Beloved, Muhammad, as a mercy to all creation, and opened a door to His spiritual assistance by allowing us to join in bestowing prayers upon him. He made prayers upon him a ladder by which we ascend to degrees of closeness to him, and a pool from which we can sip the drink of love for him.\n\nBy bestowing prayers upon him, we find relief from anxieties and distress, forgiveness for our sins, healing for our wounds, purification for our hearts, illumination for our inner vision, and a strengthened connection to the Beloved ﷺ. Moreover, our Lord, the Responsive, answers our supplications.\n\nThe benefits of bestowing prayers upon the Prophet ﷺ are innumerable, and its virtues are boundless. It serves as a tool for the spiritual seeker and is a garden for the devotee. It is enough for us that our Lord says: “Indeed, Allah and His angels bestow prayers upon the Prophet. O you who believe, bestow prayers upon him and salute him with abundant greetings of peace.”\n\nIn response to the Beloved’s ﷺ request for us to bestow prayers upon him abundantly and to be equipped with its blessings, I have compiled this collection of prayers that Allah, the Most Exalted, graciously gifted to the hearts of those who love and know Him. My hope is that Allah will benefit us as He has benefited them.\n\nThese prayers can be recited as a daily litany, or aloud in gatherings of lovers, especially on Thursday evenings and Fridays. I have high hopes that those who consistently recite and adhere to these prayers will attain the great spiritual opening and unite with the Luminous Lamp, the Prophet ﷺ.\n\nI presented this compilation of prayers to my master, Al-Habib Umar bin Muhammad bin Salim bin Hafiz Ibn Shaykh Abu Bakr bin Salim, who granted his permission and titled it "The Garden of Love: Bestowing Prayers upon the Master of All Beloveds ﷺ."\n\nI ask Allah to grant those who recite these prayers all that He has bestowed upon their composers, both outwardly and inwardly.',
+    instruction: `
+      Compiled by al-Habib Muhammad bin Abdur Rahman as-Saqqaf
+
+      In the Name of Allah, Most Compassionate, Ever-Merciful
+
+      All praise be to Allah for His countless blessings and beautiful favours.
+      May Allah bestow prayers and peace upon the Seal of His Prophets and the
+      Master of His Saints, and upon his Family who bear his standard, his loyal
+      Companions, and all who follow them until the Day of Meeting Him.
+
+      Allah sent His Beloved, Muhammad, as a mercy to all creation, and opened a
+      door to His spiritual assistance by allowing us to join in bestowing
+      prayers upon him. He made prayers upon him a ladder by which we ascend to
+      degrees of closeness to him, and a pool from which we can sip the drink of
+      love for him.
+
+      By bestowing prayers upon him, we find relief from anxieties and distress,
+      forgiveness for our sins, healing for our wounds, purification for our
+      hearts, illumination for our inner vision, and a strengthened connection
+      to the Beloved ﷺ. Moreover, our Lord, the Responsive, answers our
+      supplications.
+
+      The benefits of bestowing prayers upon the Prophet ﷺ are innumerable, and
+      its virtues are boundless. It serves as a tool for the spiritual seeker
+      and is a garden for the devotee. It is enough for us that our Lord says:
+      “Indeed, Allah and His angels bestow prayers upon the Prophet. O you who
+      believe, bestow prayers upon him and salute him with abundant greetings of
+      peace.”
+
+      In response to the Beloved’s ﷺ request for us to bestow prayers upon him
+      abundantly and to be equipped with its blessings, I have compiled this
+      collection of prayers that Allah, the Most Exalted, graciously gifted to
+      the hearts of those who love and know Him. My hope is that Allah will
+      benefit us as He has benefited them.
+
+      These prayers can be recited as a daily litany, or aloud in gatherings of
+      lovers, especially on Thursday evenings and Fridays. I have high hopes
+      that those who consistently recite and adhere to these prayers will attain
+      the great spiritual opening and unite with the Luminous Lamp, the Prophet
+      ﷺ.
+
+      I presented this compilation of prayers to my master, Al-Habib Umar bin
+      Muhammad bin Salim bin Hafiz Ibn Shaykh Abu Bakr bin Salim, who granted
+      his permission and titled it "The Garden of Love: Bestowing Prayers upon
+      the Master of All Beloveds ﷺ."
+
+      I ask Allah to grant those who recite these prayers all that He has
+      bestowed upon their composers, both outwardly and inwardly.
+    `,
     entries: [
       new DhikrModel({
         entries: [
