@@ -1,6 +1,7 @@
 import { NavModel } from "@/models/nav";
 
 const homeContent = [
+  new NavModel({ href: "favourites", title: "Favourites" }),
   new NavModel({ href: "khulasah", title: "Khulasah" }),
   new NavModel({ href: "mawlids", title: "Mawlids" }),
   new NavModel({ href: "the-burdah", title: "The Burdah" }),

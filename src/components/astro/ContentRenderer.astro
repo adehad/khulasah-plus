@@ -1,5 +1,6 @@
 ---
 import type { ContentModel } from "@/config/content-loader";
+import { FavouritesModel } from "@/models/favourites";
 import { NavModel } from "@/models/nav";
 import {
   DhikrModel,
@@ -10,6 +11,7 @@ import {
 } from "@/models/recitation";
 import DhikrSection from "./DhikrSection.astro";
 import ExpandSection from "./ExpandSection.astro";
+import FavouritesSection from "./FavouritesSection.astro";
 import NavGrid from "./NavGrid.astro";
 import QasidaSection from "./QasidaSection.astro";
 import QuranSection from "./QuranSection.astro";
@@ -41,6 +43,9 @@ const { items, pagePath } = Astro.props;
   }
   if (item instanceof NavModel) {
     return <NavGrid item={item} />;
+  }
+  if (item instanceof FavouritesModel) {
+    return <FavouritesSection />;
   }
   throw new Error(`ContentRenderer: unhandled model type "${item?.constructor?.name}"`);
 })}
