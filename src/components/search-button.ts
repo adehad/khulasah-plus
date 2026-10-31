@@ -5,12 +5,16 @@ import "@shoelace-style/shoelace/dist/components/icon/icon.js";
 import "@/components/search-modal";
 import { LifecycleRegistry } from "@/utils/storage";
 
+export const SEARCH_PARAM = "search";
+// Lets a launch into an already-open window open search without a reload.
+export const OPEN_SEARCH_EVENT = "kp-open-search";
+
 @customElement("kp-search-button")
 export class SearchButton extends LitElement {
   @state()
   private isModalOpen = false;
 
-  private _lifecycle = new LifecycleRegistry<"keydown">();
+  private _lifecycle = new LifecycleRegistry<"keydown" | "openSearch">();
 
   static styles = css`
     :host {
@@ -51,6 +55,24 @@ export class SearchButton extends LitElement {
       cleanup: () =>
         window.removeEventListener("keydown", this.handleGlobalKeyDown),
     });
+
+    this._lifecycle.register("openSearch", {
+      setup: () => window.addEventListener(OPEN_SEARCH_EVENT, this.openModal),
+      cleanup: () =>
+        window.removeEventListener(OPEN_SEARCH_EVENT, this.openModal),
+    });
+
+    this.openFromSearchParam();
+  }
+
+  // The manifest's Search shortcut launches "/?search"; the param is dropped
+  // afterwards so a reload or shared link doesn't reopen the dialog.
+  private openFromSearchParam() {
+    const url = new URL(window.location.href);
+    if (!url.searchParams.has(SEARCH_PARAM)) return;
+    url.searchParams.delete(SEARCH_PARAM);
+    history.replaceState(history.state, "", url);
+    this.openModal();
   }
 
   disconnectedCallback(): void {
@@ -66,9 +88,9 @@ export class SearchButton extends LitElement {
     }
   };
 
-  private openModal() {
+  private openModal = () => {
     this.isModalOpen = true;
-  }
+  };
 
   private closeModal() {
     this.isModalOpen = false;

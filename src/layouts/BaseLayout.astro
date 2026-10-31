@@ -28,6 +28,9 @@ const shoelaceVersion = JSON.parse(
 ).version;
 const shoelaceCDN = `https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@${shoelaceVersion}`;
 const baseURL = import.meta.env.BASE_URL;
+// Home-screen labels use the short form, matching the manifest short_name
+const appName = "Khulasah Plus";
+const appShortName = "Khulasah+";
 ---
 
 <!DOCTYPE html>
@@ -39,12 +42,13 @@ const baseURL = import.meta.env.BASE_URL;
   <meta charset="utf-8" />
   <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
 
-  <title>{title} | Khulasah Plus</title>
+  <title>{`${title} | ${appName}`}</title>
   <meta name="description" content={description} />
   <link rel="canonical" href={canonicalURL} />
 
   <!-- Open Graph -->
-  <meta property="og:title" content={`${title} | Khulasah Plus`} />
+  <meta property="og:title" content={`${title} | ${appName}`} />
+  <meta property="og:site_name" content={appName} />
   <meta property="og:description" content={description} />
   <meta property="og:url" content={canonicalURL} />
   <meta property="og:type" content="website" />
@@ -55,7 +59,7 @@ const baseURL = import.meta.env.BASE_URL;
 
   <!-- Apple PWA -->
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-title" content="Khulasah Plus" />
+  <meta name="apple-mobile-web-app-title" content={appShortName} />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
   <!-- Icons -->
@@ -192,6 +196,7 @@ const baseURL = import.meta.env.BASE_URL;
     import "@/scripts/chorus-toggle";
     import "@/scripts/hash-navigation";
     import "@/scripts/toc";
+    import "@/scripts/launch-queue";
   </script>
 
   <!-- Register service worker (injectRegister: false means we must do it manually) -->

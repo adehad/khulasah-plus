@@ -90,4 +90,8 @@ workbox.routing.registerRoute(
 
 // All HTML pages are included in __WB_MANIFEST via globPatterns.
 // precacheAndRoute handles navigation requests automatically (including /path → /path/index.html).
-workbox.precaching.precacheAndRoute(self.__WB_MANIFEST || []);
+// Launch params (the Search shortcut's ?search, the protocol handler's ?url=) are read by the page,
+// so they must not stop the precached page from being served offline.
+workbox.precaching.precacheAndRoute(self.__WB_MANIFEST || [], {
+  ignoreURLParametersMatching: [/^utm_/, /^fbclid$/, /^search$/, /^url$/],
+});
