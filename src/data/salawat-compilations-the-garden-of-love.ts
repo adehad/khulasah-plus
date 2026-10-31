@@ -18,10 +18,67 @@ import {
 
 export default [
   new WirdModel({
-    title: "The Garden of Love",
-    instruction:
-      "Rawḍatul-Maḥabbah fiṣ-ṣalāti ‛alā Sayyidil-Aḥibbah: The Garden of Love, in sending blessings upon the Master of the beloved ones",
+    title: "Introduction",
+    instruction: "Compiled by al-Habib Muhammad bin Abdur Rahman as-Saqqaf",
     entries: [
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "",
+            translit: "",
+            translation:
+              "In the Name of Allah, Most Compassionate, Ever-Merciful",
+          }),
+          new DhikrEntryModel({
+            arabic: "",
+            translit: "",
+            translation:
+              "All praise be to Allah for His countless blessings and beautiful favours. May Allah bestow prayers and peace upon the Seal of His Prophets and the Master of His Saints, and upon his Family who bear his standard, his loyal Companions, and all who follow them until the Day of Meeting Him.",
+          }),
+          new DhikrEntryModel({
+            arabic: "",
+            translit: "",
+            translation:
+              "Allah sent His Beloved, Muhammad, as a mercy to all creation, and opened a door to His spiritual assistance by allowing us to join in bestowing prayers upon him. He made prayers upon him a ladder by which we ascend to degrees of closeness to him, and a pool from which we can sip the drink of love for him.",
+          }),
+          new DhikrEntryModel({
+            arabic: "",
+            translit: "",
+            translation:
+              "By bestowing prayers upon him, we find relief from anxieties and distress, forgiveness for our sins, healing for our wounds, purification for our hearts, illumination for our inner vision, and a strengthened connection to the Beloved ﷺ. Moreover, our Lord, the Responsive, answers our supplications.",
+          }),
+          new DhikrEntryModel({
+            arabic: "",
+            translit: "",
+            translation:
+              "The benefits of bestowing prayers upon the Prophet ﷺ are innumerable, and its virtues are boundless. It serves as a tool for the spiritual seeker and is a garden for the devotee. It is enough for us that our Lord says: “Indeed, Allah and His angels bestow prayers upon the Prophet. O you who believe, bestow prayers upon him and salute him with abundant greetings of peace.”",
+          }),
+          new DhikrEntryModel({
+            arabic: "",
+            translit: "",
+            translation:
+              "In response to the Beloved’s ﷺ request for us to bestow prayers upon him abundantly and to be equipped with its blessings, I have compiled this collection of prayers that Allah, the Most Exalted, graciously gifted to the hearts of those who love and know Him. My hope is that Allah will benefit us as He has benefited them.",
+          }),
+          new DhikrEntryModel({
+            arabic: "",
+            translit: "",
+            translation:
+              "These prayers can be recited as a daily litany, or aloud in gatherings of lovers, especially on Thursday evenings and Fridays. I have high hopes that those who consistently recite and adhere to these prayers will attain the great spiritual opening and unite with the Luminous Lamp, the Prophet ﷺ.",
+          }),
+          new DhikrEntryModel({
+            arabic: "",
+            translit: "",
+            translation:
+              'I presented this compilation of prayers to my master, Al-Habib Umar bin Muhammad bin Salim bin Hafiz Ibn Shaykh Abu Bakr bin Salim, who granted his permission and titled it "The Garden of Love: Bestowing Prayers upon the Master of All Beloveds ﷺ."',
+          }),
+          new DhikrEntryModel({
+            arabic: "",
+            translit: "",
+            translation:
+              "I ask Allah to grant those who recite these prayers all that He has bestowed upon their composers, both outwardly and inwardly.",
+          }),
+        ],
+      }),
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -166,6 +223,13 @@ export default [
           }),
         ],
       }),
+    ],
+  }),
+  new WirdModel({
+    title: "The Garden of Love",
+    instruction:
+      "Rawḍatul-Maḥabbah fiṣ-ṣalāti ‛alā Sayyidil-Aḥibbah: The Garden of Love, in sending blessings upon the Master of the beloved ones",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -539,6 +603,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "It is attributed to our master Abdullah bin Abbas (may Allah be pleased with them).",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ يَا دَائِمَ الْفَضْلِ عَلَى الْبَرِيَّةِ",
@@ -569,6 +635,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "It is by Imam al-Shafi'i (may Allah be pleased with him).",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ كُلَّمَا ذَكَرَهُ الذَّاكِرُونَ",
@@ -591,6 +659,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "It is by my master Imam Abdul Qadir al-Jaylani (may Allah be pleased with him), as well as the two formulas that follow it.",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ وَكَرِّمْ عَلَى سَيِّدِنَا وَمَوْلَانَا مُحَمَّدٍ",
@@ -874,6 +944,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "It is by my master Imam ar-Rifa’i al-Hasani (may Allah be pleased with him).",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى نُورِكَ الْأَسْبَقِ",
@@ -1037,6 +1109,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "It is by Shaykh Abdullah Muhammad al-Maghribi, from Imam Abdullah al-Sharif al-Alami (may Allah be pleased with them).",
         entries: [
           new DhikrEntryModel({
             arabic:
@@ -1061,6 +1135,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "Salat at-Taziyyah, also known as An-Nariyyah, is a widely known prayer of great benefit. It is by Imam Ibrahim at-Tazi (may Allah be pleased with him).",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ صَلَاةً كَامِلَةً",
@@ -1113,6 +1189,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "Salat al-Fatih by my master Muhammad al-Bakri (may Allah be pleased with him). It is attributed to Imam Ali (may Allah be pleased with him) and was popularized and spread by Imam Ahmed at-Tijani (may Allah be pleased with him).",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ الْفَاتِحِ لِمَا أُغْلِقَ",
@@ -1145,6 +1223,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "It is by Imam and knower of Allah Ahmad bin Alwan al-Hasani al-Yamani (may Allah be pleased with him).",
         entries: [
           new DhikrEntryModel({
             arabic:
@@ -1266,6 +1346,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "It is by Imam Ibn Raysun (may Allah be pleased with him). It is also attributed to Imam Abdul Qadir al-Fasi (may Allah be pleased with him). Habib Haddar al-Haddar (may Allah be pleased with him) used to recommend it.",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الكَامِلِ وَعَلَى آلِهِ",
@@ -1283,6 +1365,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "It is by my master the Imam and knower of Allah Abdus Salam ibn Mashish al-Hasani (may Allah be pleased with him).",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى مَنْ مِنْهُ انْشَقَّتِ الأَسْرَارُ",
@@ -1482,6 +1566,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "It is by my master the Imam and knower of Allah Abul Hasan al-Shadhili (may Allah be pleased with him).",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ النُّورِ الذَّاتِي",
@@ -1499,6 +1585,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "It is by my master the Imam and knower of Allah Ibrahim ad-Dasuqi (may Allah be pleased with him).",
         entries: [
           new DhikrEntryModel({
             arabic:
@@ -1522,6 +1610,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "It is by the Imam and knower of Allah, Ahmad al-Badawi (may Allah be pleased with him), of Tanta.",
         entries: [
           new DhikrEntryModel({
             arabic:
@@ -1654,6 +1744,7 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction: "Salat at-Tibbiyyah",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ طِبِّ القُلُوبِ وَدَوَائِهَا",
@@ -1680,6 +1771,7 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction: "Salat al-Faraj",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ عَلَى سَيِّدِنَا مُحَمَّدٍ",
@@ -1715,6 +1807,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          'Salat al-Munijiyah. It was mentioned by al-Samhudi in "Jawahir al-Iqdayn" and al-Fakihani in "Al-Fajr al-Munir".',
         entries: [
           new DhikrEntryModel({
             arabic:
@@ -1769,6 +1863,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "It is by my master Imam Abdullah bin Alawi al-Haddad (may Allah be pleased with him).",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ يَا رَبَّ سَيِّدِنَا مُحَمَّدٍ وَآلِ سَيِّدِنَا مُحَمَّدٍ",
@@ -1837,6 +1933,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "It is by my master Imam Ahmad bin Idris al-Hasani (may Allah be pleased with him).",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ إِنِّي أَسْأَلُكَ بِنُورِ وَجْهِ اللَّهِ العَظِيمِ",
@@ -1958,6 +2056,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "It is by my master Imam Ali bin Muhammad al-Habashi Ba Alawi (may Allah be pleased with him), as well as the two formulas that follow it.",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سيِّدِنَا مُحَمَّدٍ أَوَّلِ مُتَلَقٍّ لِفَيْضِكَ الأَوَّلِ",
@@ -2165,6 +2265,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "It is by Imam Muhammad Mahdi ar-Rawwas ar-Rifa’i al-Husayni (may Allah be pleased with him).",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ فِي السَّادَاتِ",
@@ -2207,6 +2309,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "It is by Imam Ibrahim bin Aqil bin Yahya Ba Alawi (may Allah be pleased with him).",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ حَبِيبِكَ المَحْبُوبِ وَمُحِبِّيهِ",
@@ -2229,6 +2333,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "It is by my master Imam Ahmad Mashhur bin Taha al-Haddad Ba Alawi (may Allah be pleased with him), as well as the one that follows it.",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحمَّدٍ حَبِيبِ الرَّحْمَنِ",
@@ -2285,6 +2391,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "It is by my master Imam Habib Abdul Qadir bin Ahmad as-Saqqaf (may Allah be pleased with him), as well as the one that follows it, taken from his correspondence.",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى الأَبِ الكَرِيمِ، وَالرَّسُولِ العَظِيمِ",
@@ -2349,6 +2457,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "It is by Habib Muhammad bin Abdullah al-Haddar Ba Alawi (may Allah be pleased with him).",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ بِجَمِيعِ الصَّلَوَاتِ كُلِّهَا عَدَدَ مَا فِي عِلْمِ اللَّهِ",
@@ -2372,6 +2482,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "It is by Habib Abu Bakr al-Adani bin Ali al-Mashhur (may Allah be pleased with him), taken from a supplement of his poem (Al-Sharaf Al-Asna fi Mandhumat As-Salat Was Salam Alal Habib Al-Muqarrab min Qab Qawsayn Au Adna ﷺ).",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ النُّورِ الأَتَمِّ",
@@ -2404,6 +2516,8 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "It is by Habib Umar bin Hafiz Ibn Shaykh Abi Bakr bin Salim Ba Alawi (may Allah be pleased with him), and also the one that follows it.",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَآلِ سَيِّدِنَا مُحَمَّدٍ وَالأَصْحَابِ",
@@ -2573,6 +2687,7 @@ export default [
         ],
       }),
       new DhikrModel({
+        instruction: "It is by Habib Ali Zayn al-Abidin al-Jifri.",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ جَنَّةِ الْجَنَّةِ",
@@ -2821,7 +2936,8 @@ export default [
     ],
   }),
   new QasidaModel({
-    title: "",
+    title: "Al-Qasidah Al-Mudhariyyah",
+    instruction: "by Imam Sharaf ad-Din Muhammad bin Sa’id al-Busiri",
     entries: [
       new QasidaVerseModel({
         chorus: false,
@@ -3538,9 +3654,7 @@ export default [
     ],
   }),
   new WirdModel({
-    title: "",
-    instruction:
-      "Litany of Shaykh Abu Bakr bin Salim Ba Alawi (may Allah be pleased with him)",
+    title: "Litany of Shaykh Abu Bakr bin Salim Ba Alawi",
     entries: [
       new DhikrModel({
         entries: [
