@@ -22,7 +22,8 @@
     "test:visual": "playwright test --project=webkit --project=chromium",
     "test:e2e": "playwright test --project=functional",
     "test:visual:report": "playwright show-report",
-    "test:pwa": "bun run build && playwright test -c playwright.pwa.config.ts"
+    "test:pwa": "bun run build && playwright test -c playwright.pwa.config.ts",
+    "screenshots": "playwright test -c playwright.screenshots.config.ts"
   },
   "author": "",
   "license": "ISC",

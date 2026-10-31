@@ -71,6 +71,7 @@ export default defineConfig({
         globIgnores: [
           "sw.dev.js",
           "search-index.json", // Too large for precache — runtime cached via StaleWhileRevalidate in sw.js
+          "assets/screenshots/**", // Store listing only; the app never shows them
         ],
       },
       injectRegister: false,
