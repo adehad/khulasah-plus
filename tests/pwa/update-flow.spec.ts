@@ -136,7 +136,7 @@ test("regression: users needed a hard refresh after a deploy; an open page now u
   expect(loads).toBe(loadsAfterUpdate);
 });
 
-test("regression: offline, /page/ addresses showed the browser's error page", async ({
+test("regression: offline, /page/ links and unknown pages showed the browser's error page", async ({
   page,
   context,
 }) => {
@@ -145,9 +145,13 @@ test("regression: offline, /page/ addresses showed the browser's error page", as
   // The host redirects /page to /page/, so that is the address bookmarks and reloads use.
   await page.goto(`${origin}/khulasah/`);
   const pageTitle = await page.title();
+  await page.goto(`${origin}/404`);
+  const notFoundTitle = await page.title();
   await page.waitForFunction(() => navigator.serviceWorker.controller !== null);
 
   await context.setOffline(true);
   await page.goto(`${origin}/khulasah/`);
   await expect(page).toHaveTitle(pageTitle);
+  await page.goto(`${origin}/no-such-page/`);
+  await expect(page).toHaveTitle(notFoundTitle);
 });
