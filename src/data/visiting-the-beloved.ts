@@ -93,7 +93,7 @@ export default [
             translit:
               "As-salāmu ‛alayka ayyuhan nabiyyu wa raḥmatullāhi wa barakātuh",
             translation:
-              "Peace be upon you, O Prophet, and the mercy and blessings of Allah! (thrice)",
+              "Peace be upon you, O Prophet, and the mercy and blessings of Allah!",
             repeat: 3,
           }),
         ],

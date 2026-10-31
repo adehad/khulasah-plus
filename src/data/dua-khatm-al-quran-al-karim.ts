@@ -1389,7 +1389,7 @@ export default [
             arabic: "يَا أَكْرَمَ مَنْ سُئِلَ وَأَوْسَعَ مَنْ جَادَ بِالْعَطَايَا",
             translit: "Yā akrama man su’ila wa aws‛a man jāda bil-‛aṭāyā",
             translation:
-              "O Most Generous of those asked and Most Vast of those who lavishly give gifts (three times)",
+              "O Most Generous of those asked and Most Vast of those who lavishly give gifts",
             repeat: 3,
           }),
         ],
@@ -1525,7 +1525,7 @@ export default [
             translit:
               "Ayyidnā Allāhumma minka yā rabbi fī hādhihis-sā‛atish-sharīfatil-mubārakatil-mu‛aẓẓamati ‛inda khatmil-qur’āni bil-‛iṣmati wat-tawfīq",
             translation:
-              "support us, O Allah, at this noble blessed venerable moment at the completion of the Qur'an with protection and success from You, O Lord. (three times)",
+              "support us, O Allah, at this noble blessed venerable moment at the completion of the Qur'an with protection and success from You, O Lord.",
             repeat: 3,
           }),
         ],
@@ -1642,7 +1642,7 @@ export default [
             translit:
               "wa ‛alaynā ma‛ahum wa fīhim biraḥmatika yā arḥamar-rāḥimīn",
             translation:
-              "and us with them and among them, by Your mercy, O Most Merciful! (three times)",
+              "and us with them and among them, by Your mercy, O Most Merciful!",
             repeat: 3,
           }),
         ],

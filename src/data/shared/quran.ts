@@ -227,7 +227,7 @@ export function ikhlas(
       }),
       new QuranEntryModel({
         arabic: "وَلَمۡ يَكُن لَّهُۥ كُفُوًا أَحَدُۢ",
-        translit: "Wa lam yakun lahu kufuwan aḥad. (3x)",
+        translit: "Wa lam yakun lahu kufuwan aḥad.",
         translation: 'Nor is there to Him any equivalent."',
         verse: 4,
       }),
