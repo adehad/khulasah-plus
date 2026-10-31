@@ -98,66 +98,6 @@ export default [
               "May the prayers and peace of Allah be upon our Master Muhammad and upon his Family and Companions.",
           }),
           new DhikrEntryModel({
-            arabic: "والْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
-            translit: "Wal-ḥamdu lillāhi rabbil-‛ālamīn",
-            translation: "All praise is due to Allah, Lord of the Worlds,",
-          }),
-          new DhikrEntryModel({
-            arabic: "فِي كُلِّ لَحْظَةٍ أَبَدًا",
-            translit: "fī kulli laḥẓatin abadā",
-            translation: "in every instant forever,",
-          }),
-          new DhikrEntryModel({
-            arabic: "عَدَدَ خَلْقِهِ",
-            translit: "‛Adada khalqih",
-            translation: "the number of His creation,",
-          }),
-          new DhikrEntryModel({
-            arabic: "وَرِضَاءَ نَفْسِهِ",
-            translit: "wa riḍā’a nafsih",
-            translation: "to His satisfaction,",
-          }),
-          new DhikrEntryModel({
-            arabic: "وَزِنَةَ عَرْشِهِ",
-            translit: "wa zinata ‛arshih",
-            translation: "the weight of His throne,",
-          }),
-          new DhikrEntryModel({
-            arabic: "وَمِدَادَ كَلِمَاتِهِ",
-            translit: "wa midāda kalimātih",
-            translation: "and the amount of ink of His words.",
-          }),
-          new DhikrEntryModel({
-            arabic: "والْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
-            translit: "Wal-ḥamdu lillāhi rabbil-‛ālamīn",
-            translation: "All praise is due to Allah, Lord of the Worlds,",
-          }),
-          new DhikrEntryModel({
-            arabic: "فِي كُلِّ لَحْظَةٍ أَبَدًا",
-            translit: "fī kulli laḥẓatin abadā",
-            translation: "in every instant, forever,",
-          }),
-          new DhikrEntryModel({
-            arabic: "عَدَدَ خَلْقِهِ",
-            translit: "‛Adada khalqih",
-            translation: "to the number of His creation,",
-          }),
-          new DhikrEntryModel({
-            arabic: "وَرِضَاءَ نَفْسِهِ",
-            translit: "wa riḍā’a nafsih",
-            translation: "to the measure of His good pleasure,",
-          }),
-          new DhikrEntryModel({
-            arabic: "وَزِنَةَ عَرْشِهِ",
-            translit: "wa zinata ‛arshih",
-            translation: "to the weight of His Throne,",
-          }),
-          new DhikrEntryModel({
-            arabic: "وَمِدَادَ كَلِمَاتِهِ",
-            translit: "wa midāda kalimātih",
-            translation: "and to the extent of the ink of His words.",
-          }),
-          new DhikrEntryModel({
             arabic: "أَسْتَغْفِرُ اللَّهَ",
             translit: "Astaghfirullāh",
             translation: "I seek the forgiveness of Allah.",

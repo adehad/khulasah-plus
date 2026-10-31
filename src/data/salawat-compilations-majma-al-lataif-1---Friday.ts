@@ -562,56 +562,16 @@ export default [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ مِفْتَاحِ بَابِ رَحْمَةِ اللَّهِ",
+            arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ",
             translit:
-              "Allāhumma ṣalli wa sallim ‛alā sayyidinā Muḥammadin wa ‛alā āli sayyidinā Muḥammadin miftāḥi bābi raḥmatillāh",
+              "Allāhumma ṣalli wa sallim ‛alā sayyidinā Muḥammadin wa ‛alā āli sayyidinā Muḥammad",
             translation:
-              "O Allah, bestow blessings and peace upon our master Muhammad and upon the family of our master Muhammad, the key to the door of Allah’s mercy,",
+              "O Allah, bestow blessings and peace upon our master Muhammad and upon the family of our master Muhammad,",
           }),
           new DhikrEntryModel({
-            arabic: "عَدَدَ مَا فِي عِلْمِ اللَّهِ",
-            translit: "‛Adada mā fī ‛ilmillāh",
-            translation: "as many as all that is in Allah’s knowledge,",
-          }),
-          new DhikrEntryModel({
-            arabic: "صَلَاةً وَسَلَامًا دَائِمَيْنِ بِدَوَامِ مُلْكِ اللَّه.",
-            translit: "Ṣalātan wa salāman dā’imayni bidawāmi mulkillāh",
-            translation:
-              "a prayer and peace everlasting, lasting as long as Allah’s dominion.",
-          }),
-          new DhikrEntryModel({
-            arabic: "عَدَدَ مَا فِي عِلْمِ اللَّهِ",
-            translit: "‛Adada mā fī ‛ilmillāh",
-            translation: "as many as all that is in Allah’s knowledge,",
-          }),
-          new DhikrEntryModel({
-            arabic: "صَلَاةً وَسَلَامًا دَائِمَيْنِ بِدَوَامِ مُلْكِ اللَّه.",
-            translit: "Ṣalātan wa salāman dā’imayni bidawāmi mulkillāh",
-            translation:
-              "a prayer and peace everlasting, lasting as long as Allah’s dominion.",
-          }),
-          new DhikrEntryModel({
-            arabic: "عَدَدَ مَا فِي عِلْمِ اللَّهِ",
-            translit: "‛Adada mā fī ‛ilmillāh",
-            translation: "as many as all that is in Allah’s knowledge,",
-          }),
-          new DhikrEntryModel({
-            arabic: "صَلَاةً وَسَلَامًا دَائِمَيْنِ بِدَوَامِ مُلْكِ اللَّه.",
-            translit: "Ṣalātan wa salāman dā’imayni bidawāmi mulkillāh",
-            translation:
-              "a prayer and peace everlasting, lasting as long as Allah’s dominion.",
-          }),
-          new DhikrEntryModel({
-            arabic: "عَدَدَ مَا فِي عِلْمِ اللَّهِ",
-            translit: "‛Adada mā fī ‛ilmillāh",
-            translation: "as many as all that is in Allah’s knowledge,",
-          }),
-          new DhikrEntryModel({
-            arabic: "صَلَاةً وَسَلَامًا دَائِمَيْنِ بِدَوَامِ مُلْكِ اللَّه.",
-            translit: "Ṣalātan wa salāman dā’imayni bidawāmi mulkillāh",
-            translation:
-              "a prayer and peace everlasting, lasting as long as Allah’s dominion.",
+            arabic: "صَلَاةً لَا يَنْقَطِعُ مَدَدُهَا،",
+            translit: "Ṣalātan lā yanqaṭi‛u madaduhā",
+            translation: "a prayer whose supply is never cut off,",
           }),
           new DhikrEntryModel({
             arabic: "وَلَا يَنْحَصِرُ عَدَدُهَا",
