@@ -34,6 +34,9 @@ jobs:
       - name: Run Playwright tests
         run: bunx playwright test
 
+      - name: Run PWA update flow test
+        run: bun run test:pwa
+
       # Expiring artifact — the screenshots to eyeball; uploaded even on failure.
       - name: Upload Playwright report
         if: ${{ !cancelled() }}
