@@ -1,4 +1,5 @@
 ---
+import { pageConfigs } from "@/config/page-config";
 import {
   ExpandModel,
   QasidaChapterModel,
@@ -18,6 +19,7 @@ interface Props {
 const { model, index, pagePath } = Astro.props;
 const prefix = `q${index + 1}`;
 const hasAudio = !!model.audio?.url;
+const pageTitle = pageConfigs.find((c) => c.path === pagePath)?.title ?? "";
 
 /** Consecutive chorus verses are sung as one chorus: the first carries the run under a single tab, the rest render nothing */
 const verseRun = (entries: unknown[], at: number): QasidaVerseModel[] => {
@@ -37,13 +39,24 @@ const verseRun = (entries: unknown[], at: number): QasidaVerseModel[] => {
     <div class="qasida-title-row">
       <h1 id={slugify(model.title)} class="qasida-title">{model.title}</h1>
       {hasAudio && (
-        <sl-icon-button
-          class="circle-btn audio-play-btn"
-          name="play-circle"
-          label="Play audio"
-          data-audio-url={model.audio!.url}
-          data-audio-title={model.audio!.title ?? model.title}
-        ></sl-icon-button>
+        <>
+          <sl-icon-button
+            class="circle-btn audio-play-btn"
+            name="play-circle"
+            label="Play audio"
+            data-audio-url={model.audio!.url}
+            data-audio-title={model.audio!.title ?? model.title}
+          ></sl-icon-button>
+          <kp-favourite-star
+            class="section-star"
+            href={`${pagePath}#${slugify(model.title)}`}
+            label={
+              pageTitle && pageTitle !== model.title
+                ? `${pageTitle} · ${model.title}`
+                : model.title
+            }
+          ></kp-favourite-star>
+        </>
       )}
     </div>
   )}
@@ -64,7 +77,10 @@ const verseRun = (entries: unknown[], at: number): QasidaVerseModel[] => {
       return (
         <Fragment>
           <kp-sticky-button label={entry.number} elementId={chapterId} variant="chapter"></kp-sticky-button>
-          <h1 id={chapterId} class="chapter-header">{entry.title}</h1>
+          {/* Named by its title alone: the chapter's star goes inside the heading so it scrolls away with it */}
+          <h1 id={chapterId} class="chapter-header" aria-labelledby={`${chapterId}-title`}>
+            <span id={`${chapterId}-title`}>{entry.title}</span>
+          </h1>
           {entry.instruction && <p class="instruction">{entry.instruction}</p>}
           {entry.entries.map((chapterEntry, j) => {
             if (chapterEntry instanceof QasidaVerseModel) {
@@ -110,6 +126,11 @@ const verseRun = (entries: unknown[], at: number): QasidaVerseModel[] => {
 
   .chapter-header {
     text-align: center;
+  }
+
+  .section-star {
+    --kp-favourite-star-size: 1.4rem;
+    color: var(--sl-color-primary-500);
   }
 
   .circle-btn {

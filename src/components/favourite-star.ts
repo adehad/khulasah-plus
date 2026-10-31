@@ -50,7 +50,8 @@ export class FavouriteStar extends LitElement {
       padding: 0.25rem;
       border: none;
       border-radius: 50%;
-      background: none;
+      /* A placement that overlaps text gives the star an opaque backdrop */
+      background: var(--kp-favourite-star-background, none);
       cursor: pointer;
       color: inherit;
       -webkit-text-fill-color: currentColor;

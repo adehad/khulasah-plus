@@ -45,6 +45,7 @@ const homeCrumb = breadcrumbs[0];
 const currentCrumb =
   breadcrumbs.length > 1 ? breadcrumbs[breadcrumbs.length - 1] : null;
 const intermediateCrumbs = breadcrumbs.slice(1, breadcrumbs.length - 1);
+const onFavouritesPage = pagePath === "favourites";
 ---
 
 <header>
@@ -70,7 +71,12 @@ const intermediateCrumbs = breadcrumbs.slice(1, breadcrumbs.length - 1);
     {currentCrumb && (
       <>
         <span class="separator" aria-hidden="true">/</span>
-        <span class="breadcrumb-current">{currentCrumb.text}</span>
+        <span class="breadcrumb-current">
+          {currentCrumb.text}
+          {!onFavouritesPage && (
+            <kp-favourite-star class="page-star" href={pagePath} label={currentCrumb.text}></kp-favourite-star>
+          )}
+        </span>
         <sl-dropdown id="toc-dropdown" style="display: none;">
           <button slot="trigger" class="toc-trigger">
             <InlineIcon name="chevron-double-down" size="1rem" label="Table of contents" />
@@ -82,6 +88,14 @@ const intermediateCrumbs = breadcrumbs.slice(1, breadcrumbs.length - 1);
   </nav>
 
   <div class="header-actions">
+    <a
+      href={resolveBasePath("/favourites/")}
+      class="header-btn"
+      aria-label="Favourites"
+      aria-current={onFavouritesPage ? "page" : undefined}
+    >
+      <InlineIcon name={onFavouritesPage ? "star-fill" : "star"} size="1.5rem" />
+    </a>
     <kp-search-button></kp-search-button>
     <settings-menu></settings-menu>
     <theme-switcher></theme-switcher>
@@ -94,7 +108,9 @@ const intermediateCrumbs = breadcrumbs.slice(1, breadcrumbs.length - 1);
   header {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /* Centred so actions that wrap onto their own row stay centred; the breadcrumb's auto margin keeps the
+       single-row layout of breadcrumb left, actions right */
+    justify-content: center;
     align-items: center;
     background: var(--sl-color-neutral-0);
     padding: 12px;
@@ -111,6 +127,7 @@ const intermediateCrumbs = breadcrumbs.slice(1, breadcrumbs.length - 1);
   .breadcrumb {
     display: flex;
     align-items: center;
+    margin-right: auto;
     gap: 0.5rem;
     font-size: var(--sl-font-size-small);
     -webkit-app-region: no-drag;
@@ -137,6 +154,13 @@ const intermediateCrumbs = breadcrumbs.slice(1, breadcrumbs.length - 1);
     font-weight: var(--sl-font-weight-semibold);
   }
 
+  /* Inline inside the title so a wrapped title keeps its star right after the last word */
+  .page-star {
+    --kp-favourite-star-size: 1rem;
+    font-weight: normal;
+    color: var(--sl-color-neutral-600);
+  }
+
   .toc-trigger {
     display: inline-flex;
     align-items: center;
@@ -158,6 +182,26 @@ const intermediateCrumbs = breadcrumbs.slice(1, breadcrumbs.length - 1);
     align-items: center;
     gap: 10px;
     -webkit-app-region: no-drag;
+  }
+
+  /* Mirrors the shared circle-btn look of the neighbouring Lit header buttons */
+  .header-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    color: var(--sl-color-primary-500);
+    transition:
+      background-color 0.2s ease-in-out,
+      border-color 0.2s ease-in-out;
+  }
+
+  .header-btn:hover {
+    background-color: var(--sl-color-primary-100);
+    border-color: var(--sl-color-primary-300);
   }
 
   kp-audio-player {
