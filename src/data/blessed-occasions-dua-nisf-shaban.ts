@@ -1,13 +1,39 @@
 import { ra_d_39 } from "@/data/shared/quran-partial";
-import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
+import { NavModel } from "@/models/nav";
+import {
+  DhikrEntryModel,
+  DhikrModel,
+  only_instruction,
+  WirdModel,
+} from "@/models/recitation";
 
 export default [
+  only_instruction(`
+    It is the practice of many of the pious people of the Ummah to recite Sūrah
+    Yā Sīn three times on the 15th night of Sha'bān.
+
+    The first time it is recited with the intention of being blessed with
+    longevity along with success in one’s acts of obedience to Allah.
+
+    The second time it is recited with the intention of protection from
+    diseases, disabilities, tribulations and trials, and that calamities are
+    diverted.
+
+    The third time it is recited with the intention of enrichment of the heart,
+    not being dependent upon others and being blessed with a good ending.
+  `),
+  new NavModel({
+    title: "Surah Yasin",
+    href: "khulasah/after-fajr/surah-yasin",
+  }),
   new WirdModel({
     title: "Dua Nisf Shaban",
-
+    instruction:
+      "After each recitation of Sūrah Yā Sīn they recite the following prayer:",
+    // the recording credit sits with the audio rather than in the page text
     audio: {
       url: "https://cdn.jsdelivr.net/gh/adehad/khulasah-plus-cdn@main/audio/blessed-occasions-dua-nisf-shaban.opus",
-      title: "Dua Nisf Shaban",
+      title: "Dua Nisf Shaban, recited by al-Habib Ahmad Mashhur al-Haddad",
     },
     entries: [
       new DhikrModel({
