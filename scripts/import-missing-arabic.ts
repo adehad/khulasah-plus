@@ -24,6 +24,32 @@ const COUNT_MARKER = /\([^)]*(ثلاث|مرتين|مرات|[0-9٠-٩])[^)]*\)/g;
 const ACCEPTED = new Set([
   "﴿إِنَّ وَلِيِّيَ ٱللَّهُ ٱلَّذِى نَزَّلَ ٱلْكِتَـٰبَ ۖ وَهُوَ يَتَوَلَّى ٱلصَّـٰلِحِينَ﴾",
 ]);
+// headings and captions: pages keep English-only headings (user, 2026-10-31)
+const ARABIC_HEADINGS = [
+  "هذه قصيدة للإمام عمر المحضار",
+  "وهذه القصيدة أيضا للإمام عمر المحضار",
+  "وهذه قصيدة للإمام أبي بكر العدني العيدروس",
+  "هذه القصيدة للشيخ أبي بكر بن سالم",
+  "وللشيخ أبي بكر بن سالم أيضا هذه القصيدة",
+  "هذه القصيدة للحبيب عبد الله بن علوي الحداد",
+  "قالها رضي الله عنه في سنة ١١٢٤هـ",
+  "هذه القصيدة للحبيب علي بن محمد الحبشي",
+  'من منظومة "هدية الصديق"',
+  "للحبيب عبد اللّه بن حسين بن طاهر",
+  "الشَّرَاب الطَّهُور",
+  "مِن مَولِد وَسِيرَةِ بَدرِ البُدُور",
+  "مَوْضِعُ القِيَام",
+  "بِذِكرِ مَولِدِ النَّبِيِّ الشَّافِع",
+  "مَحَلُّ الْمَقَام",
+  "ابتداء الربع الثاني",
+  "ابتداء الثلث الثاني",
+  "ابتداء الربع الثالث",
+  "ابتداء الثلث الثالث",
+  "ابتداء الربع الرابع",
+  "دعاء يقرأ عقيب دلائل الخيرات",
+  "رَوْضَةُ المَحَبَّة",
+  "فِي الصَّلَاةِ عَلَى سَيِّدِ الأَحِبَّة",
+];
 const ACCEPTED_PREFIXES = ["45 - "];
 // reviewed: the original writes these blocks out twice as well
 const ACCEPTED_DOUBLED = new Set([
@@ -67,7 +93,9 @@ const skeleton = (s: string) => {
     .trim();
 };
 // typed here, the accepted text may differ from the page in mark order, so it is compared by skeleton
-const acceptedSkeletons = new Set([...ACCEPTED].map(skeleton));
+const acceptedSkeletons = new Set(
+  [...ACCEPTED, ...ARABIC_HEADINGS].map(skeleton),
+);
 const runs = (words: string[]) =>
   words.length < 3
     ? [words.join(" ")]
