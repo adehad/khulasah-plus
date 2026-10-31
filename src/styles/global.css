@@ -292,3 +292,13 @@ kp-sticky-button[variant="verse"] + * > kp-favourite-star.number-star {
   --number-top: var(--kp-verse-number-top);
   --number-height: var(--kp-verse-number-height);
 }
+
+/*
+ * Marks the home page's Favourites tile from here rather than through a NavModel icon option, which keeps
+ * NavModel and NavGrid untouched while a sibling change reworks navigation.
+ */
+a.nav-button[href$="/favourites"]::before {
+  content: "★";
+  margin-inline-end: 0.4em;
+  color: var(--kp-favourite-color);
+}

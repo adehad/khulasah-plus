@@ -17,6 +17,13 @@ export const pageConfigs: PageConfig[] = [
       "Islamic recitations, adhkar, and daily practices — Khulasah, Mawlids, Salawat, and more.",
   },
   {
+    path: "favourites",
+    title: "Favourites",
+    contentImportPath: "favourites",
+    description:
+      "Your saved pages, sections and entries, organised into folders on this device.",
+  },
+  {
     path: "khulasah",
     title: "Khulasah",
     contentImportPath: "khulasah-index",

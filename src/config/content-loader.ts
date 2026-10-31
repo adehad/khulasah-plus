@@ -1,7 +1,8 @@
+import type { FavouritesModel } from "@/models/favourites";
 import type { NavModel } from "@/models/nav";
 import type { BaseRecitationModel } from "@/models/recitation";
 
-export type ContentModel = BaseRecitationModel | NavModel;
+export type ContentModel = BaseRecitationModel | NavModel | FavouritesModel;
 
 // Vite resolves import.meta.glob statically at build time
 const modules = import.meta.glob<{ default: ContentModel[] }>("../data/*.ts", {

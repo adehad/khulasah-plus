@@ -1,0 +1,18 @@
+---
+import { pageConfigs } from "@/config/page-config";
+
+// Pasted links are checked against this list, so the client can reject a link to a page that does not exist
+// without shipping page-config (and its content imports) to the browser.
+const knownPages = pageConfigs.map(({ path, title }) => ({ path, title }));
+// "<" is escaped so a title can never close the script element early.
+const knownPagesJson = JSON.stringify(knownPages).replaceAll("<", "\\u003c");
+---
+
+<kp-favourites-page>
+  <script type="application/json" set:html={knownPagesJson} />
+</kp-favourites-page>
+
+<!-- Imported here rather than in BaseLayout so only the favourites page downloads it -->
+<script>
+  import "@/components/favourites-page";
+</script>
