@@ -3,6 +3,7 @@ import { resolve } from "node:path";
 import sitemap from "@astrojs/sitemap";
 import AstroPWA from "@vite-pwa/astro";
 import { defineConfig } from "astro/config";
+import { shoelaceIcons } from "./src/integrations/shoelace-icons";
 
 const bunLock = readFileSync(resolve(import.meta.dirname, "bun.lock"), "utf-8");
 
@@ -41,6 +42,7 @@ export default defineConfig({
     sitemap({
       filter: (page) => !page.includes("/component-gallery"),
     }),
+    shoelaceIcons(),
     AstroPWA({
       strategies: "injectManifest",
       // The build bundles the worker's workbox imports into dist/sw.js, so installing it needs no CDN.
