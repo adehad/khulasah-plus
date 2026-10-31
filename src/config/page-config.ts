@@ -384,32 +384,52 @@ export const pageConfigs: PageConfig[] = [
     title: "Blessed Occasions",
     contentImportPath: "blessed-occasions-index",
     description:
-      "Supplications and adhkar for blessed occasions — Rajab, Sha'ban, Dhul-Hijjah, and more.",
+      "Supplications and adhkar for blessed occasions, arranged by the months of the Islamic year.",
   },
   {
-    path: "blessed-occasions/dua-new-year-begins",
+    path: "blessed-occasions/1-muharram",
+    title: "1 - Muharram",
+    contentImportPath: "blessed-occasions-1-muharram-index",
+  },
+  {
+    path: "blessed-occasions/1-muharram/dua-new-year-begins",
     title: "Dua when the new year begins",
-    contentImportPath: "blessed-occasions-dua-new-year-begins",
+    contentImportPath: "blessed-occasions-1-muharram-dua-new-year-begins",
   },
   {
-    path: "blessed-occasions/rajab-istighfar",
+    path: "blessed-occasions/7-rajab",
+    title: "7 - Rajab",
+    contentImportPath: "blessed-occasions-7-rajab-index",
+  },
+  {
+    path: "blessed-occasions/7-rajab/rajab-istighfar",
     title: "The Rajab Istighfar",
-    contentImportPath: "blessed-occasions-rajab-istighfar",
+    contentImportPath: "blessed-occasions-7-rajab-istighfar",
   },
   {
-    path: "blessed-occasions/dua-nisf-shaban",
+    path: "blessed-occasions/8-shaban",
+    title: "8 - Shaban",
+    contentImportPath: "blessed-occasions-8-shaban-index",
+  },
+  {
+    path: "blessed-occasions/8-shaban/dua-nisf-shaban",
     title: "Dua Nisf Shaban",
-    contentImportPath: "blessed-occasions-dua-nisf-shaban",
+    contentImportPath: "blessed-occasions-8-shaban-dua-nisf-shaban",
   },
   {
-    path: "blessed-occasions/adhkar-first-ten-days-dhul-hijjah",
+    path: "blessed-occasions/12-dhul-hijjah",
+    title: "12 - Dhul Hijjah",
+    contentImportPath: "blessed-occasions-12-dhul-hijjah-index",
+  },
+  {
+    path: "blessed-occasions/12-dhul-hijjah/adhkar-first-ten-days",
     title: "Adhkār for the First Ten Days of Dhul-Ḥijjah",
-    contentImportPath: "blessed-occasions-adhkar-first-ten-days-dhul-hijjah",
+    contentImportPath: "blessed-occasions-12-dhul-hijjah-adhkar-first-ten-days",
   },
   {
-    path: "blessed-occasions/dua-end-of-year",
+    path: "blessed-occasions/12-dhul-hijjah/dua-end-of-year",
     title: "Dua at the end of the year",
-    contentImportPath: "blessed-occasions-dua-end-of-year",
+    contentImportPath: "blessed-occasions-12-dhul-hijjah-dua-end-of-year",
   },
   {
     path: "dua-khatm-al-quran-al-karim",

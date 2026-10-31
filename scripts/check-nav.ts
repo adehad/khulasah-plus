@@ -19,7 +19,17 @@ import { slugify } from "../src/utils/string.ts";
  * Suppressions: hrefs allowed to point at a page that does not exist yet (NavGrid shows them as
  * disabled tiles). An entry fails the check once its page exists or nothing links to it.
  */
-const PENDING_PAGES = new Set<string>([]);
+const PENDING_PAGES = new Set<string>([
+  // months of the Islamic year with no blessed occasions written up yet
+  "blessed-occasions/2-safar",
+  "blessed-occasions/3-rabi-al-awwal",
+  "blessed-occasions/4-rabi-al-thani",
+  "blessed-occasions/5-jumada-al-ula",
+  "blessed-occasions/6-jumada-al-thaniyah",
+  "blessed-occasions/9-ramadan",
+  "blessed-occasions/10-shawwal",
+  "blessed-occasions/11-dhul-qadah",
+]);
 
 const dataDir = resolve(import.meta.dir, "../src/data");
 
