@@ -4,6 +4,11 @@ import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 export default [
   new WirdModel({
     title: "Supplications for Victory in Masjid al-Aqsa and Palestine",
+    instruction: `
+      Habib Umar bin Hafiz (may Allah protect him) recommends reciting this litany
+      every day with the intention of bringing tranquility, protection and victory
+      for Masjid al-Aqsa and Palestine:
+    `,
     entries: [
       new DhikrModel({
         repeat: 450,

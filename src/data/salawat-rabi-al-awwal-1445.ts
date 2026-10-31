@@ -3,6 +3,10 @@ import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 export default [
   new WirdModel({
     title: "Salawat - Rabi al-Awwal 1445",
+    instruction: `
+      Habib Umar bin Hafiz (may Allah protect him) recommends reciting this
+      salawat 3000 times in the month of Rabi al-Awwal, if possible.
+    `,
     entries: [
       new DhikrModel({
         entries: [
