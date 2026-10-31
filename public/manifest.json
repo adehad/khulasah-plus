@@ -60,9 +60,116 @@
   ],
   "screenshots": [
     {
-      "src": "assets/screenshots/screen.png",
-      "sizes": "1617x1012",
-      "type": "image/png"
+      "src": "assets/screenshots/home-narrow.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Home in light and dark mode"
+    },
+    {
+      "src": "assets/screenshots/audio-narrow.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Recitation audio playing, saved for offline listening"
+    },
+    {
+      "src": "assets/screenshots/content-narrow.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Arabic, transliteration and translation, following the system theme"
+    },
+    {
+      "src": "assets/screenshots/font-size-narrow.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Adjustable Arabic, transliteration and translation font sizes"
+    },
+    {
+      "src": "assets/screenshots/quran-narrow.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Qur’an passages with their surah and verse reference"
+    },
+    {
+      "src": "assets/screenshots/favourites-narrow.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Favourites organised into coloured folders"
+    },
+    {
+      "src": "assets/screenshots/search-narrow.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Search across every recitation"
+    },
+    {
+      "src": "assets/screenshots/permalink-narrow.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Copy a link to any numbered entry"
+    },
+    {
+      "src": "assets/screenshots/home-wide.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Home in light and dark mode"
+    },
+    {
+      "src": "assets/screenshots/audio-wide.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Recitation audio playing, saved for offline listening"
+    },
+    {
+      "src": "assets/screenshots/content-wide.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Arabic, transliteration and translation, following the system theme"
+    },
+    {
+      "src": "assets/screenshots/font-size-wide.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Adjustable Arabic, transliteration and translation font sizes"
+    },
+    {
+      "src": "assets/screenshots/quran-wide.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Qur’an passages with their surah and verse reference"
+    },
+    {
+      "src": "assets/screenshots/favourites-wide.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Favourites organised into coloured folders"
+    },
+    {
+      "src": "assets/screenshots/search-wide.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Search across every recitation"
+    },
+    {
+      "src": "assets/screenshots/permalink-wide.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Copy a link to any numbered entry"
     }
   ],
   "categories": ["books", "education", "lifestyle"],
