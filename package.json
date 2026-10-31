@@ -2,6 +2,9 @@
   "name": "khulasah-plus",
   "version": "0.0.1",
   "packageManager": "bun@1.2.23",
+  "engines": {
+    "node": ">=24"
+  },
   "description": "Khulasah Plus — PWA for Islamic recitations, adhkar, and daily practices.",
   "main": "index.js",
   "scripts": {
@@ -15,6 +18,7 @@
     "format": "biome check --write",
     "generate-pwa-assets": "pwa-assets-generator",
     "preview": "astro preview",
+    "test:unit": "bun test",
     "test:visual": "playwright test",
     "test:visual:report": "playwright show-report"
   },
