@@ -10,7 +10,7 @@ const mawlidsContent = [
     href: "mawlids/the-pure-drink",
   }),
   new NavModel({
-    title: "Simt ad-Durar",
+    title: "Simt ad-Durar (Mawlid al-Habashi)",
     href: "mawlids/simt-ad-durar",
   }),
   new NavModel({
