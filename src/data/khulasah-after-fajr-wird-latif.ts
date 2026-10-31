@@ -66,6 +66,7 @@ export default [
         ],
       }),
       new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "ٱللَّهُمَّ إِنِّي أَصْبَحْتُ مِنْكَ فِي نِعْمَةٍ وَعَافِيَةٍ وَسَتْرٍ",
@@ -80,11 +81,11 @@ export default [
               "faʾatmim niʿmataka ʿalayya wa ʿāfiyataka wa satraka fid-dunyā wal-ākhīrah.",
             translation:
               "so complete Your favor upon me, Your well-being, and Your protection, in this world and the next.",
-            repeat: 3,
           }),
         ],
       }),
       new DhikrModel({
+        repeat: 4,
         entries: [
           new DhikrEntryModel({
             arabic: "ٱللَّهُمَّ إِنِّي أَصْبَحْتُ أُشْهِدُكَ وَأُشْهِدُ حَمَلَةَ عَرْشِكَ وَمَلَائِكَتَكَ وَجَمِيعَ خَلْقِكَ",
@@ -100,7 +101,6 @@ export default [
               "annaka antaLlāhu lā ilāha illā anta waḥdaka lā sharīka laka, wa anna Sayyidanā Muḥammadan ʿabduka wa rasūluk.",
             translation:
               "that You are Allah, there is no god but You, alone with no partners, and that our master Muhammad is Your slave and messenger.",
-            repeat: 4,
           }),
         ],
       }),
@@ -633,6 +633,7 @@ export default [
         ],
       }),
       new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "لَآ إِلَٰهَ إِلَّا ٱللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ",
@@ -650,6 +651,7 @@ export default [
         ],
       }),
       new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic:
@@ -665,7 +667,6 @@ export default [
               "wa ʿalā ālihi wa ṣaḥbihi ʿadada kulli dharratin alfa marrah.",
             translation:
               "and upon his family and companions”—equal to every atom one thousand times over.",
-            repeat: 3,
           }),
         ],
       }),

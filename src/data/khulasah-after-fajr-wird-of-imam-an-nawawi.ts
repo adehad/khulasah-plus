@@ -23,39 +23,10 @@ export default [
             translation:
               "In the name of Allāh, the Most Compassionate, the Most Merciful.",
           }),
-          new DhikrEntryModel({
-            arabic: "بِسْمِ ٱللَّهِ",
-            translit: "Bismillāh",
-            translation: "In the name of Allāh.",
-          }),
-          new DhikrEntryModel({
-            arabic: "ٱللَّهُ أَكْبَرُ",
-            translit: "Allāhu akbar",
-            translation: "Allāh is Greater.",
-          }),
-          new DhikrEntryModel({
-            arabic: "ٱللَّهُ أَكْبَرُ",
-            translit: "Allāhu akbar",
-            translation: "Allāh is Greater.",
-          }),
-          new DhikrEntryModel({
-            arabic:
-              "ٱللَّهُ أَكْبَرُ أَقُولُ عَلَى نَفْسِي وَعَلَى دِيْنِي وَعَلَى أَهْلِي وَعَلَى أَوْلَادِي وَعَلَى مَالِي وَعَلَى أَصْحَابِي وَعَلَى أَدْيَانِهِمْ وَعَلَى أَمْوَالِهِمْ",
-            translit:
-              "Allāhu akbar aqūlu ‛alā nafsī, wa ‛alā dīnī, wa ‛alā ahlī, wa ‛alā awlādī, wa ‛alā mālī, wa ‛alā aṣḥābī, wa ‛alā adyānihim, wa ‛alā amwālihim",
-            translation:
-              "Allāh is Greater. I say over myself, my religion, my family, my children, my wealth, my companions, their religions and their wealth:",
-          }),
-          new DhikrEntryModel({
-            arabic: "أَلْفَ أَلْفِ أَلْفِ لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّهِ الْعَلِيِّ الْعَظِيمِ",
-            translit:
-              "alfa alfi alfi lā ḥawla wa lā quwwata illā billāhil ‛aliyyil ‛aẓīm.",
-            translation:
-              "a thousand thousand thousand times, there is no might and no power except through Allāh, the Most High, the Almighty.",
-          }),
         ],
       }),
       new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "بِسْمِ ٱللَّهِ",
@@ -77,40 +48,6 @@ export default [
               "ٱللَّهُ أَكْبَرُ أَقُولُ عَلَى نَفْسِي وَعَلَى دِيْنِي وَعَلَى أَهْلِي وَعَلَى أَوْلَادِي وَعَلَى مَالِي وَعَلَى أَصْحَابِي وَعَلَى أَدْيَانِهِمْ وَعَلَى أَمْوَالِهِمْ",
             translit:
               "Allāhu akbar aqūlu ‛alā nafsī, wa ‛alā dīnī, wa ‛alā ahlī, wa ‛alā awlādī, wa ‛alā mālī, wa ‛alā aṣḥābī, wa ‛alā adyānihim, wa ‛alā amwālihim",
-            translation:
-              "Allāh is Greater. I say over myself, my religion, my family, my children, my wealth, my companions, their religions and their wealth:",
-          }),
-          new DhikrEntryModel({
-            arabic: "أَلْفَ أَلْفِ أَلْفِ لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِٱللَّهِ الْعَلِيِّ الْعَظِيمِ",
-            translit:
-              "alfa alfi alfi lā ḥawla wa lā quwwata illā billāhil ‛aliyyil ‛aẓīm.",
-            translation:
-              "a thousand thousand thousand times, there is no might and no power except through Allāh, the Most High, the Almighty.",
-          }),
-        ],
-      }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic: "بِسْمِ ٱللَّهِ",
-            translit: "Bismillāh",
-            translation: "In the name of Allāh.",
-          }),
-          new DhikrEntryModel({
-            arabic: "ٱللَّهُ أَكْبَرُ",
-            translit: "Allāhu akbar",
-            translation: "Allāh is Greater.",
-          }),
-          new DhikrEntryModel({
-            arabic: "ٱللَّهُ أَكْبَرُ",
-            translit: "Allāhu akbar",
-            translation: "Allāh is Greater.",
-          }),
-          new DhikrEntryModel({
-            arabic:
-              "ٱللَّهُ أَكْبَرُ أَقُولُ عَلَى نَفْسِي وَعَلَى دِيْنِي وَعَلَى أَهْلِي وَعَلَى أَوْلَادِي وَعَلَى مَالِي وَعَلَى أَصْحَابِي وَعَلَى أَدْيَانِهِمْ وَعَلَى أَمْوَالِهِمْ",
-            translit:
-              "Allāhu akbar, aqūlu ‛alā nafsī, wa ‛alā dīnī, wa ‛alā ahlī, wa ‛alā awlādī, wa ‛alā mālī, wa ‛alā aṣḥābī, wa ‛alā adyānihim, wa ‛alā amwālihim",
             translation:
               "Allāh is Greater. I say over myself, my religion, my family, my children, my wealth, my companions, their religions and their wealth:",
           }),
@@ -208,6 +145,7 @@ export default [
         ],
       }),
       new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "بِسْمِ ٱللَّهِ خَيْرِ الْأَسْمَاءِ فِي الْأَرْضِ وَفِي السَّمَاءِ",
@@ -238,7 +176,6 @@ export default [
               "Allāh Allāh Allāhu a‛azzu wa ajallu wa akbaru mimmā akhāfu wa aḥdharu.",
             translation:
               "Allāh, Allāh, Allāh is greater and mightier than what I fear and guard against.",
-            repeat: 3,
           }),
         ],
       }),

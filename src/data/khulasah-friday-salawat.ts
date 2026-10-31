@@ -192,6 +192,7 @@ export default [
         ],
       }),
       new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّم بِجَمِيعِ الصَّلَوَاتِ كُلِّهَا عَدَدَ مَا فِي عِلْمِ اللَّهِ",
@@ -212,7 +213,6 @@ export default [
               "fī kulli laḥẓatin abadan bikulli lisānin li’ahlil ma‛rifati billāhi.",
             translation:
               "in every moment, forever, with the tongue of every Gnostic knower of Allah",
-            repeat: 3,
           }),
         ],
       }),
@@ -228,6 +228,7 @@ export default [
         ],
       }),
       new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّم عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ وَالْأَصْحَاب",
@@ -255,7 +256,6 @@ export default [
               "wa tasqīnī bihimā biyadihish sharīfati a‛dhabal ku’ūsi min aḥlā sharāb",
             translation:
               "that will quench my thirst by giving me through his honoured hand the sweetest drink from the purest glass (water from the fountain of the Prophet)",
-            repeat: 3,
           }),
         ],
       }),
@@ -354,6 +354,7 @@ export default [
       "Ṣalāt at-Tāj (The Prayer of the Crown) by Sayyiduna Shaykh Abu Bakr bin Salim (P2)",
     entries: [
       new DhikrModel({
+        repeat: 7,
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ وَكَرِّمْ",
@@ -437,7 +438,6 @@ export default [
             arabic: "إِلَى يَوْمِ الدِّين يَا أَرْحَمَ الرَّاحِمِين",
             translit: "ilā yawmid dīn, yā arḥamar rāḥimīn",
             translation: "until the Day of Judgement, O Most Merciful.",
-            repeat: 7,
           }),
         ],
       }),

@@ -11,6 +11,7 @@ export default [
     title: "Supplication after the Ḍuḥā prayer",
     entries: [
       new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
             arabic: "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
@@ -31,7 +32,6 @@ export default [
               "yā allāhu, yā waḥidu, yā aḥadu, yā wājidu, yā jawwād; infaḥnā minka bi nafḥati khayrin",
             translation:
               "O Allāh, the One and the Unique, O Creator, O the Most Generous; blow upon us from Yourself a breeze of goodness.",
-            repeat: 3,
           }),
         ],
       }),
