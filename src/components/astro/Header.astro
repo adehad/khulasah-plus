@@ -46,20 +46,35 @@ const currentCrumb =
   breadcrumbs.length > 1 ? breadcrumbs[breadcrumbs.length - 1] : null;
 const intermediateCrumbs = breadcrumbs.slice(1, breadcrumbs.length - 1);
 const onFavouritesPage = pagePath === "favourites";
+const showPageStar = !!currentCrumb && !onFavouritesPage;
+const favouritesHref = resolveBasePath("/favourites/");
 ---
 
-<header>
+<!--
+  One row. The page title truncates and opens a menu of its parent pages and chapters (filled by toc.ts).
+  The page actions are one set of elements: inline when the row has room, otherwise behind the menu toggle,
+  so settings-menu and theme-switcher, which hold state and listeners, are never rendered twice.
+-->
+<header class:list={[{ "has-menu": !isHome }]}>
   <nav aria-label="Breadcrumb" class="breadcrumb">
-    <a href={isHome ? "#" : homeCrumb.href} class="breadcrumb-link">
+    <a href={isHome ? "#" : homeCrumb.href} class="home-link">
       <InlineIcon name="house" size="1.2rem" label="Home" />
     </a>
 
-    {intermediateCrumbs.length > 0 && (
+    {currentCrumb && (
       <>
         <span class="separator" aria-hidden="true">/</span>
-        <sl-dropdown>
-          <sl-button slot="trigger" size="small" caret>{intermediateCrumbs.length}</sl-button>
-          <sl-menu>
+        <sl-dropdown id="toc-dropdown" class="title-dropdown" disabled={intermediateCrumbs.length === 0}>
+          <button
+            slot="trigger"
+            class="title-trigger"
+            aria-current="page"
+            disabled={intermediateCrumbs.length === 0}
+          >
+            <span class="title-text">{currentCrumb.text}</span>
+            <InlineIcon name="chevron-down" size="0.75rem" class="title-chevron" />
+          </button>
+          <sl-menu id="toc-menu">
             {intermediateCrumbs.map(crumb => (
               <a href={crumb.href}><sl-menu-item>{crumb.text}</sl-menu-item></a>
             ))}
@@ -67,55 +82,126 @@ const onFavouritesPage = pagePath === "favourites";
         </sl-dropdown>
       </>
     )}
-
-    {currentCrumb && (
-      <>
-        <span class="separator" aria-hidden="true">/</span>
-        <span class="breadcrumb-current">
-          {currentCrumb.text}
-          {!onFavouritesPage && (
-            <kp-favourite-star class="page-star" href={pagePath} label={currentCrumb.text}></kp-favourite-star>
-          )}
-        </span>
-        <sl-dropdown id="toc-dropdown" style="display: none;">
-          <button slot="trigger" class="toc-trigger">
-            <InlineIcon name="chevron-double-down" size="1rem" label="Table of contents" />
-          </button>
-          <sl-menu id="toc-menu"></sl-menu>
-        </sl-dropdown>
-      </>
-    )}
   </nav>
 
-  <div class="header-actions">
-    <a
-      href={resolveBasePath("/favourites/")}
-      class="header-btn"
-      aria-label="Favourites"
-      aria-current={onFavouritesPage ? "page" : undefined}
+  <kp-search-button></kp-search-button>
+
+  {!isHome && (
+    <button
+      type="button"
+      class="header-btn menu-toggle"
+      aria-label="More actions"
+      title="More actions"
+      aria-expanded="false"
+      aria-controls="header-menu"
     >
-      <InlineIcon name={onFavouritesPage ? "star-fill" : "star"} size="1.5rem" />
-    </a>
-    <kp-search-button></kp-search-button>
-    <settings-menu></settings-menu>
-    <theme-switcher></theme-switcher>
+      <InlineIcon name="list" size="1.5rem" />
+    </button>
+  )}
+
+  <div id="header-menu" class="header-menu">
+    {showPageStar ? (
+      <div class="favourites-split" role="group" aria-label="Favourites">
+        <kp-favourite-star
+          class="page-star"
+          href={pagePath}
+          label={currentCrumb.text}
+          title="Favourite this page"
+        ></kp-favourite-star>
+        <a href={favouritesHref} class="favourites-link" aria-label="All favourites" title="All favourites">
+          <InlineIcon name="chevron-right" size="0.9rem" />
+        </a>
+      </div>
+    ) : (
+      <a
+        href={favouritesHref}
+        class="header-btn"
+        aria-label="Favourites"
+        title="Favourites"
+        aria-current={onFavouritesPage ? "page" : undefined}
+      >
+        <InlineIcon name={onFavouritesPage ? "star-fill" : "star"} size="1.5rem" />
+      </a>
+    )}
+    <settings-menu title="Settings"></settings-menu>
+    <theme-switcher title="Theme"></theme-switcher>
   </div>
 
   <kp-audio-player></kp-audio-player>
 </header>
 
+<script>
+  const toggle = document.querySelector<HTMLButtonElement>("header .menu-toggle");
+  const menu = document.getElementById("header-menu");
+
+  if (toggle && menu) {
+    const isOpen = () => toggle.getAttribute("aria-expanded") === "true";
+    const setOpen = (open: boolean) => {
+      toggle.setAttribute("aria-expanded", String(open));
+      menu.classList.toggle("open", open);
+    };
+
+    // settings-menu opens its dialog inside the menu, so the menu stays open, and rendered, while one is up.
+    // Only the menu's own chrome is put away meanwhile, and once the dialog has closed the menu has done its job.
+    let openDialogs = 0;
+    const fromDialog = (event: Event) =>
+      (event.composedPath()[0] as Element | undefined)?.localName === "sl-dialog";
+    menu.addEventListener("sl-show", (event) => {
+      if (!fromDialog(event)) return;
+      openDialogs++;
+      menu.classList.add("dialog-open");
+    });
+    menu.addEventListener("sl-after-hide", (event) => {
+      if (!fromDialog(event)) return;
+      openDialogs = Math.max(0, openDialogs - 1);
+      if (openDialogs > 0) return;
+      menu.classList.remove("dialog-open");
+      if (isOpen()) {
+        setOpen(false);
+        toggle.focus();
+      }
+    });
+    // The favourite dialog lives outside the menu, so the menu simply closes rather than hiding behind it.
+    // The star then goes with the closed menu, so the toggle takes back the focus the dialog would return.
+    let refocusToggle = false;
+    window.addEventListener("kp-favourite-open", () => {
+      refocusToggle = isOpen();
+      setOpen(false);
+    });
+    window.addEventListener("sl-after-hide", (event) => {
+      if (!refocusToggle || !fromDialog(event)) return;
+      refocusToggle = false;
+      toggle.focus();
+    });
+
+    toggle.addEventListener("click", () => setOpen(!isOpen()));
+    document.addEventListener("keydown", (event) => {
+      if (event.key !== "Escape" || !isOpen() || openDialogs > 0) return;
+      setOpen(false);
+      toggle.focus();
+    });
+    document.addEventListener("pointerdown", (event) => {
+      if (!isOpen() || openDialogs > 0) return;
+      const path = event.composedPath();
+      if (!path.includes(menu) && !path.includes(toggle)) setOpen(false);
+    });
+  }
+</script>
+
 <style>
   header {
     display: flex;
     flex-wrap: wrap;
-    /* Centred so actions that wrap onto their own row stay centred; the breadcrumb's auto margin keeps the
-       single-row layout of breadcrumb left, actions right */
-    justify-content: center;
     align-items: center;
+    /* at least 8px between neighbouring touch targets; no row gap, which the empty audio player's own row
+       would turn into extra height */
+    column-gap: 8px;
     background: var(--sl-color-neutral-0);
-    padding: 12px;
-    padding-top: calc(4px + env(titlebar-area-y, 0));
-    padding-bottom: 0px;
+    /* no start padding: the home link's own padding insets its icon while its tap target reaches the edge */
+    padding: calc(2px + env(titlebar-area-y, 0px)) calc(var(--border-inset) / 2) 2px 0;
+    /* 44px touch targets for the circle buttons here, including those of settings-menu, theme-switcher and
+       kp-search-button, which read this property */
+    --kp-circle-btn-size: 2.75rem;
     min-height: env(titlebar-area-height, 30px);
     -webkit-app-region: drag;
     z-index: 100;
@@ -125,63 +211,120 @@ const onFavouritesPage = pagePath === "favourites";
   }
 
   .breadcrumb {
+    /* Insets the house's drawn edge, 1.5 of its 16 units inside its 1.2rem box, to the middle of the frame's
+       ornamental band, matching the last control's right edge */
+    --home-padding: calc(var(--border-inset) / 2 - 1.2rem * 1.5 / 16);
+    flex: 1 1 0;
+    min-width: 0;
     display: flex;
     align-items: center;
-    margin-right: auto;
-    gap: 0.5rem;
     font-size: var(--sl-font-size-small);
+  }
+
+  .home-link,
+  .title-dropdown,
+  kp-search-button,
+  .menu-toggle,
+  .header-menu,
+  kp-audio-player {
     -webkit-app-region: no-drag;
   }
 
-  .breadcrumb-link {
+  /* The padding, not a margin, keeps the 44px tap target running to the screen edge */
+  .home-link {
     display: inline-flex;
     align-items: center;
+    flex-shrink: 0;
+    min-width: 44px;
+    min-height: 44px;
+    padding-inline-start: var(--home-padding);
     color: var(--sl-color-neutral-600);
-    text-decoration: none;
   }
 
-  .breadcrumb-link:hover {
+  .home-link:hover {
     color: var(--sl-color-primary-600);
   }
 
+  /* Tight around the slash so home and title read as one unit. Where the home link's 44px minimum leaves room
+     after its icon, the slash moves back into that room, 4px from the icon, and lets taps through to the link. */
   .separator {
+    flex-shrink: 0;
+    margin-inline: min(4px, calc(var(--home-padding) + 1.2rem + 4px - 44px)) 4px;
+    pointer-events: none;
     color: var(--sl-color-neutral-500);
     user-select: none;
   }
 
-  .breadcrumb-current {
-    color: var(--sl-color-neutral-950);
-    font-weight: var(--sl-font-weight-semibold);
+  .title-dropdown {
+    min-width: 0;
   }
 
-  /* Inline inside the title so a wrapped title keeps its star right after the last word */
-  .page-star {
-    --kp-favourite-star-size: 1rem;
-    font-weight: normal;
-    color: var(--sl-color-neutral-600);
+  /* Lets the trigger, and so the title inside it, shrink below its text width */
+  .title-dropdown::part(trigger) {
+    max-width: 100%;
   }
 
-  .toc-trigger {
-    display: inline-flex;
-    align-items: center;
-    background: none;
-    border: none;
-    padding: 0.25rem;
-    cursor: pointer;
-    color: var(--sl-color-neutral-600);
-    transform: translateY(0.15rem);
-  }
-
-  .toc-trigger:hover {
-    color: var(--sl-color-primary-600);
-  }
-
-  .header-actions {
+  .title-trigger {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    gap: 10px;
-    -webkit-app-region: no-drag;
+    gap: 0.25rem;
+    max-width: 100%;
+    min-height: 44px;
+    padding: 0 0.25rem 0 0;
+    border: none;
+    background: none;
+    font: inherit;
+    font-weight: var(--sl-font-weight-semibold);
+    color: var(--sl-color-neutral-950);
+    cursor: pointer;
+  }
+
+  .title-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  /* InlineIcon's svg carries only InlineIcon's scope, so its class is matched globally under the scoped trigger */
+  .title-trigger :global(.title-chevron) {
+    color: var(--sl-color-neutral-600);
+  }
+
+  /* A dropdown of one entry, the page itself, is no use: the title is plain text until toc.ts finds
+     parents or chapters to list */
+  .title-trigger:disabled {
+    cursor: default;
+  }
+
+  .title-trigger:disabled :global(.title-chevron) {
+    display: none;
+  }
+
+  /* sl-dropdown caps its menu at this variable with !important but only sizes height itself, so the width
+     cap goes through the variable too; long titles then wrap instead of running off screen */
+  #toc-menu {
+    --auto-size-available-width: min(90vw, 24rem);
+  }
+
+  #toc-menu :global(sl-menu-item::part(label)) {
+    white-space: normal;
+  }
+
+  #toc-menu :global(sl-menu-item::part(base)) {
+    min-height: 44px;
+  }
+
+  /* The global preflight's border and margin reset outranks sl-divider's own :host styles, which left the line
+     invisible, so it is drawn here, in a shade that also reads on the dark menu background */
+  #toc-menu :global(sl-divider) {
+    border-top: 1px solid var(--sl-color-neutral-400);
+    margin-block: 0.25rem;
+  }
+
+  .header-menu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 
   /* Mirrors the shared circle-btn look of the neighbouring Lit header buttons */
@@ -189,19 +332,65 @@ const onFavouritesPage = pagePath === "favourites";
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
+    flex-shrink: 0;
+    width: var(--kp-circle-btn-size);
+    height: var(--kp-circle-btn-size);
+    padding: 0;
     border-radius: 50%;
     border: 1px solid transparent;
+    background: none;
+    cursor: pointer;
     color: var(--sl-color-primary-500);
     transition:
       background-color 0.2s ease-in-out,
       border-color 0.2s ease-in-out;
   }
 
-  .header-btn:hover {
+  .header-btn:hover,
+  .menu-toggle[aria-expanded="true"] {
     background-color: var(--sl-color-primary-100);
     border-color: var(--sl-color-primary-300);
+  }
+
+  /* The page's own star and the way to all favourites, as one split control: two 44px targets 8px apart
+     inside one outline, which is inset so it adds no height */
+  .favourites-split {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: calc(var(--kp-circle-btn-size) / 2);
+    box-shadow: inset 0 0 0 1px var(--sl-color-neutral-200);
+  }
+
+  /* the divider sits in the gap, outside both targets */
+  .favourites-split::after {
+    content: "";
+    position: absolute;
+    inset-block: 25%;
+    inset-inline-start: calc(var(--kp-circle-btn-size) + 4px);
+    border-inline-start: 1px solid var(--sl-color-neutral-200);
+  }
+
+  .page-star {
+    --kp-favourite-star-size: 1.5rem;
+    --kp-favourite-star-padding: calc((var(--kp-circle-btn-size) - 1.5rem) / 2);
+    color: var(--sl-color-primary-500);
+  }
+
+  .favourites-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--kp-circle-btn-size);
+    height: var(--kp-circle-btn-size);
+    border-start-end-radius: calc(var(--kp-circle-btn-size) / 2);
+    border-end-end-radius: calc(var(--kp-circle-btn-size) / 2);
+    color: var(--sl-color-primary-500);
+  }
+
+  .favourites-link:hover {
+    background-color: var(--sl-color-primary-100);
   }
 
   kp-audio-player {
@@ -219,21 +408,35 @@ const onFavouritesPage = pagePath === "favourites";
     color: inherit;
   }
 
-  @media (max-width: 420px) {
-    header {
-      justify-content: center;
-      gap: 0.5rem;
+  /* Too narrow for the title and every action: the actions drop down from the menu toggle */
+  @media (width < 40rem) {
+    .has-menu .header-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 8px;
+      padding: 0.25rem;
+      background: var(--sl-color-neutral-0);
+      border: 1px solid var(--sl-color-neutral-200);
+      border-radius: var(--sl-border-radius-large);
+      box-shadow: var(--sl-shadow-large);
     }
 
-    .breadcrumb {
-      width: 100%;
+    .has-menu .header-menu.open {
       display: flex;
-      justify-content: center;
     }
 
-    .header-actions {
-      width: 100dvw;
-      justify-content: center;
+    /* While a dialog opened from the menu is up, the menu leaves the screen. Opacity or visibility would
+       carry into that dialog, which renders inside the menu; a fixed dialog does not move with it. */
+    .has-menu .header-menu.dialog-open {
+      right: auto;
+      left: -200vw;
+    }
+  }
+
+  @media (width >= 40rem) {
+    .menu-toggle {
+      display: none;
     }
   }
 </style>

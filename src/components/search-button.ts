@@ -22,8 +22,8 @@ export class SearchButton extends LitElement {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 2.5rem;
-      height: 2.5rem;
+      width: var(--kp-circle-btn-size, 2.5rem);
+      height: var(--kp-circle-btn-size, 2.5rem);
       border-radius: 50%;
       border: 1px solid transparent;
       background-color: transparent;

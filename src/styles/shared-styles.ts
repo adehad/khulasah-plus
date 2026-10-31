@@ -5,8 +5,9 @@ export const circleButtonStyles = css`
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 2.5rem;
-    height: 2.5rem;
+    /* A host page can grow the hit area, e.g. to a 44px touch target, without touching each component */
+    width: var(--kp-circle-btn-size, 2.5rem);
+    height: var(--kp-circle-btn-size, 2.5rem);
     border-radius: 50%;
     border: 1px solid transparent;
     background-color: transparent;
