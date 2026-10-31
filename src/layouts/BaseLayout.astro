@@ -142,9 +142,6 @@ const appShortName = "Khulasah+";
         // Default to light
         document.getElementById("light-theme").media = "";
       }
-
-      // Set Shoelace base path for icons
-      window.__SHOELACE_CDN__ = shoelaceCDN;
     })();
   </script>
 
@@ -189,7 +186,9 @@ const appShortName = "Khulasah+";
   <!-- Shoelace base path setup (must run before any Shoelace components) -->
   <script>
     import { setBasePath } from "@shoelace-style/shoelace/dist/utilities/base-path.js";
-    setBasePath((window as any).__SHOELACE_CDN__ + "/cdn/");
+    import { SHOELACE_BASE_PATH } from "@/config/shoelace-icons";
+    import { resolveBasePath } from "@/utils/paths";
+    setBasePath(resolveBasePath(SHOELACE_BASE_PATH));
   </script>
 </head>
 
