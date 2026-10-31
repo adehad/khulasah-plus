@@ -4,6 +4,8 @@ export interface PageConfig {
   contentImportPath: string;
   /** Per-page meta description for SEO. Falls back to site-wide default in BaseLayout. */
   description?: string;
+  /** Reached by direct URL only; the navigation check does not require a link to it */
+  unlisted?: boolean;
 }
 
 export const pageConfigs: PageConfig[] = [
@@ -30,6 +32,11 @@ export const pageConfigs: PageConfig[] = [
     path: "khulasah/after-fajr",
     title: "After Fajr",
     contentImportPath: "khulasah-after-fajr-index",
+  },
+  {
+    path: "khulasah/after-fajr/initial-adhkar",
+    title: "Initial adhkar",
+    contentImportPath: "khulasah-after-fajr-initial-adhkar",
   },
   {
     path: "khulasah/after-fajr/wird-al-latif",
@@ -422,12 +429,12 @@ export const pageConfigs: PageConfig[] = [
   {
     path: "hadrahs/hadrah-badriyyah",
     title: "Hadrah Badriyyah",
-    contentImportPath: "hadrah-badriyyah",
+    contentImportPath: "hadrahs-hadrah-badriyyah",
   },
   {
     path: "hadrahs/hadrah-ba-sawdan",
     title: "Hadrah Ba Sawdan",
-    contentImportPath: "hadrah-ba-sawdan",
+    contentImportPath: "hadrahs-hadrah-ba-sawdan",
   },
   {
     path: "prayers-for-palestine",
@@ -440,25 +447,9 @@ export const pageConfigs: PageConfig[] = [
     contentImportPath: "visiting-the-beloved",
   },
   {
-    path: "salawat-rabi-al-awwal-1445",
-    title: "Salawat - Rabi al-Awwal 1445",
-    contentImportPath: "salawat-rabi-al-awwal-1445",
-  },
-  {
-    path: "salawat-compilations/salawat-of-habib-ahmad-mashhur-al-haddad",
-    title: "Salawat of Habib Ahmad Mashhur al-Haddad",
-    contentImportPath:
-      "salawat-compilations-salawat-of-habib-ahmad-mashhur-al-haddad",
-  },
-  {
     path: "salawat-compilations",
     title: "Compilations of Salawat",
     contentImportPath: "salawat-compilations-index",
-  },
-  {
-    path: "salawat-compilations/afdal-as-salawat",
-    title: "Afdal as-Salawat",
-    contentImportPath: "salawat-compilations-afdal-as-salawat",
   },
   {
     path: "salawat-compilations/the-garden-of-love",

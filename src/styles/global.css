@@ -41,8 +41,8 @@
     format("woff2");
   font-weight: 400;
   font-style: normal;
-  /*  (Arabic comma) ، ,  ASCII digits and parentheses */
-  unicode-range: U+060C, U+0028-0029, U+0030-0039;
+  /*  Arabic comma ، semicolon ؛ question mark ؟, ASCII digits and parentheses */
+  unicode-range: U+060C, U+061B, U+061F, U+0028-0029, U+0030-0039;
 }
 
 :host,
@@ -159,6 +159,8 @@ main {
 .instruction {
   font-size: var(--translation-font-size);
   font-style: italic;
+  /* multi-paragraph instructions (introductions, etiquettes) keep their line breaks */
+  white-space: pre-line;
   color: var(--sl-color-primary-500);
 }
 

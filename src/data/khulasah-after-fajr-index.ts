@@ -3,11 +3,11 @@ import { NavModel } from "@/models/nav";
 export const afterFajrContent = [
   new NavModel({
     title: "Initial adhkar",
-    href: "/",
+    href: "khulasah/after-fajr/initial-adhkar",
   }),
   new NavModel({
     title: "Wird of Shaykh Abu Bakr bin Salim",
-    href: "/",
+    href: "khulasah/after-fajr/wird-of-shaykh-abu-bakr-bin-salim",
   }),
   new NavModel({
     title: "al-Wird al-Latif",
@@ -19,15 +19,15 @@ export const afterFajrContent = [
   }),
   new NavModel({
     title: "Dua after Surah Yasin",
-    href: "/",
+    href: "khulasah/after-fajr/dua-after-surah-yasin",
   }),
   new NavModel({
     title: "Wird of Imam Abu Bakr as-Sakran",
-    href: "/",
+    href: "khulasah/after-fajr/wird-as-sakran",
   }),
   new NavModel({
     title: "Wird of Imam an-Nawawi",
-    href: "/",
+    href: "khulasah/after-fajr/wird-of-imam-an-nawawi",
   }),
 ];
 

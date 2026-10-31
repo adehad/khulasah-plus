@@ -3,6 +3,7 @@ import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 export default [
   new WirdModel({
     title: "Dalāʾil al-Khayrāt - Duʿāʾ of Completion",
+    instruction: "A supplication recited after Dalāʾil al-Khayrāt",
     entries: [
       new DhikrModel({
         entries: [

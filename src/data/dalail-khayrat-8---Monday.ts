@@ -1,3 +1,9 @@
+import {
+  ikhlas_3,
+  ikhlas_4,
+  ra_d_9,
+  zumar_46,
+} from "@/data/shared/quran-partial";
 import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
@@ -468,12 +474,7 @@ export default [
             translit: "dhul-jalāli wal ikrāmi",
             translation: "Master of Majesty and Honour",
           }),
-          new DhikrEntryModel({
-            arabic: "عَالِمُ الغَيْبِ وَالشَّهَادَةِ الكَبِيرُ المُتَعَالِ",
-            translit: "ʿalimul ghaybi wash shahādatil kabīrul mutaʿāli",
-            translation:
-              "the Knower of the Unseen and the Visible, the Great, the Self-Exalted.'",
-          }),
+          ra_d_9(),
           new DhikrEntryModel({
             arabic: "وَأَسْأَلُكَ بِاسْمِكَ العَظِيمِ الأَعْظَمِ الَّذِي إِذَا دُعِيتَ بِهِ أَجَبْتَ",
             translit:
@@ -624,12 +625,12 @@ export default [
               "O Allah, I ask You, and I testify that You are Allah, there is no god except You, the One, the Unique, the Eternal",
           }),
           new DhikrEntryModel({
-            arabic: "الَّذِي \n\n﴿\n\n\nلَمْ يَلِدْ وَلَمْ يُولَدْ . وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌ\n﴾",
-            translit:
-              "alladhī lam yalid wa lam yūlad wa lam yakun lahu kufuwan aḥad",
-            translation:
-              "who did not beget nor was He begotten, and there is none equal to Him",
+            arabic: "الَّذِي",
+            translit: "alladhī",
+            translation: "who",
           }),
+          ikhlas_3(),
+          ikhlas_4(),
           new DhikrEntryModel({
             arabic: "يَا هُوَ يَا مَنْ لَّا هُوَ إِلَّا هُوَ",
             translit: "yā huwa yā man lā huwa illā huwa",
@@ -669,13 +670,11 @@ export default [
       }),
       new DhikrModel({
         entries: [
+          zumar_46(),
           new DhikrEntryModel({
-            arabic:
-              "اللَّهُمَّ فَاطِرَ السَّمَاوَاتِ وَالأَرْضِ عَالِمَ الغَيْبِ وَالشَّهَادَةِ الرَّحْمَٰنَ الرَّحِيمَ",
-            translit:
-              "Allāhumma fāṭiras samāwāti wal arḍi ʿālimal ghaybi wash shahādatir raḥmānar raḥīm",
-            translation:
-              "O Allah, Creator of the heavens and the earth, Knower of the Unseen and Visible, the All-Merciful, the Most Merciful",
+            arabic: "الرَّحْمَٰنَ الرَّحِيمَ",
+            translit: "ar-raḥmānar raḥīm",
+            translation: "the All-Merciful, the Most Merciful",
           }),
           new DhikrEntryModel({
             arabic: "الحَيَّ القَيُّومَ الدَّيَّانَ الحَنَّانَ المَنَّانَ",

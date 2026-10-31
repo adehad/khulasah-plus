@@ -74,17 +74,27 @@ export class QuranEntryModel implements RecitationEntry {
   translit: string;
   translation: string;
   verse: number;
+  /** Only needed outside a QuranModel (e.g. inside a QasidaVerseModel), where no parent carries the surah */
+  surah?: number;
 
   constructor({
     arabic,
     translit,
     translation,
     verse,
-  }: { arabic: string; translit: string; translation: string; verse: number }) {
+    surah,
+  }: {
+    arabic: string;
+    translit: string;
+    translation: string;
+    verse: number;
+    surah?: number;
+  }) {
     this.arabic = arabic;
     this.translit = translit;
     this.translation = translation;
     this.verse = verse;
+    this.surah = surah;
   }
 }
 
@@ -102,6 +112,8 @@ export class QuranDhikrEntryModel implements RecitationEntry {
   translation: string;
   verse: number;
   surah: number;
+  repeat: number;
+  enableCounter?: boolean;
 
   constructor({
     arabic,
@@ -109,18 +121,24 @@ export class QuranDhikrEntryModel implements RecitationEntry {
     translation,
     verse,
     surah,
+    repeat = 1,
+    enableCounter,
   }: {
     arabic: string;
     translit: string;
     translation: string;
     verse: number;
     surah: number;
+    repeat?: number;
+    enableCounter?: boolean;
   }) {
     this.arabic = arabic;
     this.translit = translit;
     this.translation = translation;
     this.verse = verse;
     this.surah = surah;
+    this.repeat = repeat;
+    this.enableCounter = enableCounter;
   }
 }
 
@@ -152,16 +170,21 @@ export class QasidaEntryModel implements RecitationEntry {
 export class QasidaVerseModel {
   entries: (QasidaEntryModel | QuranEntryModel)[];
   chorus: boolean;
+  /** Times the verse is recited, as hadrahs prescribe for litany lines */
+  repeat: number;
 
   constructor({
     entries,
     chorus = false,
+    repeat = 1,
   }: {
     entries: (QasidaEntryModel | QuranEntryModel)[];
     chorus?: boolean;
+    repeat?: number;
   }) {
     this.entries = entries;
     this.chorus = chorus;
+    this.repeat = repeat;
   }
 }
 
@@ -171,13 +194,35 @@ export class QasidaVerseModel {
  * Represents a generic recitation item, such as a dhikr or a Quran recitation.
  *
  * @property title - The title of the recitation.
- * @property instruction - Optional instructions for the recitation.
+ * @property instruction - Optional instructions for the recitation; multi-line text is folded (see foldText).
  */
 export abstract class BaseRecitationModel {
+  public instruction?: string;
+
   constructor(
     public title: string,
-    public instruction?: string,
-  ) {}
+    instruction?: string,
+  ) {
+    this.instruction = instruction && foldText(instruction);
+  }
+}
+
+/**
+ * Reads prose the way a YAML folded block does, so long text can be written as an indented template literal:
+ * indentation is ignored, single line breaks join into spaces, and blank lines separate paragraphs.
+ */
+export function foldText(text: string): string {
+  return text
+    .split(/\n[ \t]*\n/)
+    .map((paragraph) =>
+      paragraph
+        .split("\n")
+        .map((line) => line.trim())
+        .filter(Boolean)
+        .join(" "),
+    )
+    .filter(Boolean)
+    .join("\n\n");
 }
 
 /**
@@ -264,6 +309,11 @@ export class WirdModel extends BaseRecitationModel {
     this.entries = entries;
     this.audio = audio;
   }
+}
+
+/** A rubric that stands alone between links or sections, with nothing to recite under it */
+export function only_instruction(instruction: string) {
+  return new WirdModel({ title: "", instruction, entries: [] });
 }
 
 /**

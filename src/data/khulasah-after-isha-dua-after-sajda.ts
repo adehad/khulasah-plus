@@ -1,0 +1,68 @@
+import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
+
+export default [
+  new WirdModel({
+    title: "Dua after sajda tilawa or sajda shukr",
+    instruction:
+      "Supplication made after sajda tilawa (prostration after a verse of the Holy Quran that necessitates prostration) or sajda shukr (prostration of thankfulness):",
+    entries: [
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "اللَّهُمَّ لَكَ سَجَدتُ",
+            translit: "Allāhumma laka sajadtu",
+            translation: "O Allah, to You I have prostrated.",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَبِكَ آمَنتُ",
+            translit: "Wa bika āmantu",
+            translation: "In You, I have believed.",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَلَكَ أَسْلَمتُ",
+            translit: "Wa laka aslamtu",
+            translation: "To You, I have submitted.",
+          }),
+          new DhikrEntryModel({
+            arabic: "سَجَدَ وَجْهِيَ لِلَّذِي خَلَقَهُ وَصَوَّرَهُ وَشَقَّ سَمعَهُ وَبَصَرَهُ بِحَوْلِهِ وَقُوَّتِهِ",
+            translit:
+              "Sajada wajhiya lilladhī khalaqahū wa ṣawwarahū wa shaqqa sam‛ahū wa baṣarahū biḥawlihī wa quwwatih",
+            translation:
+              "My face fell prostrate before He who created it and brought forth its faculties of hearing and seeing by His might and power.",
+          }),
+          new DhikrEntryModel({
+            arabic: "فَتَبَارَكَ اللَّهُ أَحسَنُ الْخَالِقِينَ",
+            translit: "Fatabārakallāhu aḥsanul khāliqīn",
+            translation: "Blessed is Allah, the best of creators.",
+          }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "اللَّهُمَّ اكْتُبْ لِي بِهَا عِنْدَكَ أَجْرًا",
+            translit: "Allāhummaktub lī bihā ‛indaka ajra",
+            translation:
+              "O Allah, record for me a reward for this (prostration),",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَضَع عَنِّي بِهَا وِزْرًا",
+            translit: "Wa ḍa‛ ‛annī bihā wizra",
+            translation: "and remove from me a sin.",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَاجْعَلْهَا لِي عِنْدَكَ ذُخْرًا",
+            translit: "Waj‛alhā lī ‛indaka dhukhra",
+            translation: "Save it for me",
+          }),
+          new DhikrEntryModel({
+            arabic: "وَاقْبَلْهَا مِنِّي كَمَا قَبِلتَهَا مِنْ عَبدِكَ دَاوُد",
+            translit: "Waqbalhā minnī kamā qabiltahā min ‛abdika Dāwūd",
+            translation:
+              "and accept it from me just as You had accepted it from Your servant Dawud.",
+          }),
+        ],
+      }),
+    ],
+  }),
+];

@@ -180,7 +180,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic:
-              "وَبِالأَسْمَاءِ الَّتِي دَعَاكَ بِهَا سَيِّدُنَا مُحَمَّدٌ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ وَعَلَى جَمِيعِ النَّبِيِّينَ وَالمُرْسَلِينَ:\n أَنْ تُصَلِّي عَلَى سَيِّدِنَا مُحَمَّدٍ نَّبِيِّكَ عَدَدَ مَا خَلَقْتَهُ مِنْ قَبْلِ أَنْ تَكُونَ السَّمَاءُ مَبْنِيَّةً",
+              "وَبِالأَسْمَاءِ الَّتِي دَعَاكَ بِهَا سَيِّدُنَا مُحَمَّدٌ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ وَعَلَى جَمِيعِ النَّبِيِّينَ وَالمُرْسَلِينَ:\n أَنْ تُصَلِّيَ عَلَى سَيِّدِنَا مُحَمَّدٍ نَّبِيِّكَ عَدَدَ مَا خَلَقْتَهُ مِنْ قَبْلِ أَنْ تَكُونَ السَّمَاءُ مَبْنِيَّةً",
             translit:
               "wa bil asmāʾillatī daʿāka bihā sayyidunā Muḥammadun ṣallAllāhu ʿalayhi wa sallama wa ʿalā jamīʿin nabiyyīna wal mursalīna: An tuṣallī ʿalā sayyidinā Muḥammadin nabiyyika ʿadada ma khalaqtahu min qabli an takūnas samāʾu mabniyyatan",
             translation:
@@ -453,7 +453,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic: "مِمَّا لَا يَعْلَمُ عِلْمَهُ إِلَّا أَنْتَ",
-            translit: "mimmā lā yaʿlamu illā anta",
+            translit: "mimmā lā yaʿlamu ʿilmahu illā anta",
             translation: "whose knowledge no one knows except You",
           }),
           new DhikrEntryModel({
@@ -1072,7 +1072,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic:
-              "أَنْ تُصَلِّي عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ عَدَدَ مَا خَلَقْتَ مِنْ قَبْلِ أَنْ تَكُونَ السَّمَاءُ مَبْنِيَّةً",
+              "أَنْ تُصَلِّيَ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ عَدَدَ مَا خَلَقْتَ مِنْ قَبْلِ أَنْ تَكُونَ السَّمَاءُ مَبْنِيَّةً",
             translit:
               "an tuṣallī ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin ʿadada ma khalaqta min qabli an takūnas samāʾu mabniyyatan",
             translation:
@@ -1486,7 +1486,7 @@ export default [
             translation: "Whatever Allah wills",
           }),
           new DhikrEntryModel({
-            arabic: "لَا قُوَّةَ إِلَّا باللَّهِ العَلِيِّ العَظِيمِ.",
+            arabic: "لَا قُوَّةَ إِلَّا بِاللَّهِ العَلِيِّ العَظِيمِ.",
             translit: "lā quwwata illā biLlāhil ʿaliyyil ʿaẓīm.",
             translation:
               "There is no strength save with Allah the High, the Great",

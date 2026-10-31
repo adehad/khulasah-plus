@@ -29,7 +29,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic:
-              "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا باللَّهِ العَلِيِّ العَظِيمِ. اللَّهُمَّ إِنِّي أَبْرَأُ مِنْ حَوْلِي وَقُوَّتِي إِلَى حَوْلِكَ وَقُوَّتِكَ. اللَّهُمَّ إِنِّي أَتَقَرَّبُ إِلَيْكَ بِالصَّلَاةِ عَلَى سَيِّدِنَا مُحَمَّدٍ",
+              "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ العَلِيِّ العَظِيمِ. اللَّهُمَّ إِنِّي أَبْرَأُ مِنْ حَوْلِي وَقُوَّتِي إِلَى حَوْلِكَ وَقُوَّتِكَ. اللَّهُمَّ إِنِّي أَتَقَرَّبُ إِلَيْكَ بِالصَّلَاةِ عَلَى سَيِّدِنَا مُحَمَّدٍ",
             translit:
               "Wa lā ḥawla wa lā quwwata illā biLlāhil ʿaliyyil ʿaẓīm. Allāhumma innī abraʾu min ḥawlī wa quwwatī ilā ḥawlika wa quwwatika. Allāhumma innī ataqarrabu ilayka biṣṣalāti ʿalā sayyidinā Muḥammadin",
             translation:
@@ -121,7 +121,7 @@ export default [
             translation: "Allah is the Greatest.",
           }),
           new DhikrEntryModel({
-            arabic: "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا باللَّهِ العَلِيِّ العَظِيم",
+            arabic: "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ العَلِيِّ العَظِيم",
             translit:
               "Wa lā ḥawla wa lā quwwata illā biLlāhil ʿaliyyil ʿaẓīm .",
             translation:
@@ -140,7 +140,7 @@ export default [
         ],
       }),
       taawwudh(),
-      ikhlas(),
+      ikhlas(3),
       falaq(),
       nas(),
       fatihah(),
