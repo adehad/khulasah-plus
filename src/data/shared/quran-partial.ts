@@ -791,7 +791,7 @@ export function tawbah_128(repeat = 1, enableCounter?: boolean) {
   });
 }
 
-/** At-Tawbah 9:128 — used in blessed-occasions-rajab-istighfar */
+/** At-Tawbah 9:128 — used in blessed-occasions-7-rajab-istighfar */
 export function tawbah_128_verse(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic:
@@ -822,7 +822,7 @@ export function tawbah_129(repeat = 1, enableCounter?: boolean) {
   });
 }
 
-/** At-Tawbah 9:129 — used in blessed-occasions-rajab-istighfar, khulasah-after-fajr-wird-of-imam-an-nawawi */
+/** At-Tawbah 9:129 — used in blessed-occasions-7-rajab-istighfar, khulasah-after-fajr-wird-of-imam-an-nawawi */
 export function tawbah_129_verse(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic:
@@ -926,7 +926,7 @@ export function ra_d_28(repeat = 1, enableCounter?: boolean) {
   });
 }
 
-/** Ar-Ra'd 13:39 — used in blessed-occasions-dua-nisf-shaban */
+/** Ar-Ra'd 13:39 — used in blessed-occasions-8-shaban-dua-nisf-shaban */
 export function ra_d_39(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic: "يَمۡحُواْ ٱللَّهُ مَا يَشَآءُ وَيُثۡبِتُۖ وَعِندَهُۥٓ أُمُّ ٱلۡكِتَٰبِ",
@@ -1029,7 +1029,7 @@ export function anbiya_20(repeat = 1, enableCounter?: boolean) {
   });
 }
 
-/** end of Al-Anbiya 21:87 — used in blessed-occasions-rajab-istighfar, dalail-khayrat-6---Saturday, khulasah-last-part-of-night-adhkar-before-dawn */
+/** end of Al-Anbiya 21:87 — used in blessed-occasions-7-rajab-istighfar, dalail-khayrat-6---Saturday, khulasah-last-part-of-night-adhkar-before-dawn */
 export function anbiya_87(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic: "… لَآ إِلَٰهَ إِلَّآ أَنتَ سُبۡحَٰنَكَ إِنِّي كُنتُ مِنَ ٱلظَّٰلِمِينَ",
@@ -1059,7 +1059,7 @@ export function anbiya_87_verse(repeat = 1, enableCounter?: boolean) {
   });
 }
 
-/** Al-Anbiya 21:88 — used in blessed-occasions-rajab-istighfar */
+/** Al-Anbiya 21:88 — used in blessed-occasions-7-rajab-istighfar */
 export function anbiya_88(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic: "فَٱسۡتَجَبۡنَا لَهُۥ وَنَجَّيۡنَٰهُ مِنَ ٱلۡغَمِّۚ وَكَذَٰلِكَ نُـۨجِي ٱلۡمُؤۡمِنِينَ",
@@ -1074,7 +1074,7 @@ export function anbiya_88(repeat = 1, enableCounter?: boolean) {
   });
 }
 
-/** Al-Anbiya 21:89 — used in blessed-occasions-rajab-istighfar */
+/** Al-Anbiya 21:89 — used in blessed-occasions-7-rajab-istighfar */
 export function anbiya_89(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic: "وَزَكَرِيَّآ إِذۡ نَادَىٰ رَبَّهُۥ رَبِّ لَا تَذَرۡنِي فَرۡدٗا وَأَنتَ خَيۡرُ ٱلۡوَٰرِثِينَ",
@@ -1145,7 +1145,7 @@ export function mu_minun_98(repeat = 1, enableCounter?: boolean) {
   });
 }
 
-/** end of Al-Mu'minun 23:118 — used in blessed-occasions-rajab-istighfar, dalail-khayrat-4---Thursday */
+/** end of Al-Mu'minun 23:118 — used in blessed-occasions-7-rajab-istighfar, dalail-khayrat-4---Thursday */
 export function mu_minun_118(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic: "… رَّبِّ ٱغۡفِرۡ وَٱرۡحَمۡ وَأَنتَ خَيۡرُ ٱلرَّٰحِمِينَ",
