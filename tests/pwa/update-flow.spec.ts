@@ -98,8 +98,6 @@ test.afterEach(async () => {
   await rm(root, { recursive: true, force: true });
 });
 
-// Needs network: sw.js pulls Workbox from Google's CDN via importScripts, so offline the worker
-// never installs and the page is never controlled.
 test("regression: users needed a hard refresh after a deploy; an open page now updates itself", async ({
   page,
 }) => {
