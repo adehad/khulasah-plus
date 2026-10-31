@@ -1,7 +1,8 @@
 import { baqarah_ayat_al_kursi } from "@/data/shared/quran";
 import {
   a_raf_196,
-  ahzab_11_12,
+  ahzab_11,
+  ahzab_12,
   ahzab_56,
   baqarah_137,
   buruj_20_22,
@@ -57,14 +58,19 @@ const hizbAlBahrContent = [
             translation:
               "We ask You for protection in our movements and our stillness, in our words and our desires, and our thoughts; from the doubts and the suspicions and the illusions that veil our hearts from contemplating the unseen.",
           }),
+        ],
+      }),
+      new DhikrModel({
+        entries: [
           new DhikrEntryModel({
             arabic: "فَقَدِ",
             translit: "Faqad",
             translation: "for indeed,",
           }),
+          ahzab_11(),
+          ahzab_12(),
         ],
       }),
-      ahzab_11_12(1, "", false),
       new DhikrModel({
         entries: [
           new DhikrEntryModel({

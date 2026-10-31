@@ -1959,37 +1959,33 @@ export function rum_17_19(
   });
 }
 
-/** Al-Ahzab 33:11-12, one entry per verse */
-export function ahzab_11_12(
-  repeat = 1,
-  instruction = "",
-  basmallah = false,
-  title = "Al-Ahzab",
-) {
-  return new QuranModel({
-    title,
+/** Al-Ahzab 33:11 — used in khulasah-after-asr-hizb-al-bahr */
+export function ahzab_11(repeat = 1, enableCounter?: boolean) {
+  return new QuranDhikrEntryModel({
+    arabic: "… ٱبۡتُلِيَ ٱلۡمُؤۡمِنُونَ وَزُلۡزِلُواْ زِلۡزَالٗا شَدِيدٗا",
+    translit: "… ibtuliya-l-mu'minūna wa zulzilū zilzālan shadīdan",
+    translation:
+      "… the believers were tested and shaken with a severe shaking.",
     surah: 33,
-    entries: [
-      new QuranEntryModel({
-        arabic: "… ٱبۡتُلِيَ ٱلۡمُؤۡمِنُونَ وَزُلۡزِلُواْ زِلۡزَالٗا شَدِيدٗا",
-        translit: "… ibtuliya-l-mu'minūna wa zulzilū zilzālan shadīdan",
-        translation:
-          "… the believers were tested and shaken with a severe shaking.",
-        verse: 11,
-      }),
-      new QuranEntryModel({
-        arabic:
-          "وَإِذۡ يَقُولُ ٱلۡمُنَٰفِقُونَ وَٱلَّذِينَ فِي قُلُوبِهِم مَّرَضٞ مَّا وَعَدَنَا ٱللَّهُ وَرَسُولُهُۥٓ إِلَّا غُرُورٗا",
-        translit:
-          "Wa idh yaqūlu-l-munāfiqūna wa-lladhīna fī qulūbihim maraḍun mā waʿadanā-llāhu wa rasūluhū illā ghurūran",
-        translation:
-          'And [remember] when the hypocrites and those in whose hearts is disease said, "Allāh and His Messenger did not promise us except delusion,"',
-        verse: 12,
-      }),
-    ],
-    instruction,
-    basmallah,
+    verse: 11,
     repeat,
+    enableCounter,
+  });
+}
+
+/** Al-Ahzab 33:12 — used in khulasah-after-asr-hizb-al-bahr */
+export function ahzab_12(repeat = 1, enableCounter?: boolean) {
+  return new QuranDhikrEntryModel({
+    arabic:
+      "وَإِذۡ يَقُولُ ٱلۡمُنَٰفِقُونَ وَٱلَّذِينَ فِي قُلُوبِهِم مَّرَضٞ مَّا وَعَدَنَا ٱللَّهُ وَرَسُولُهُۥٓ إِلَّا غُرُورٗا",
+    translit:
+      "Wa idh yaqūlu-l-munāfiqūna wa-lladhīna fī qulūbihim maraḍun mā waʿadanā-llāhu wa rasūluhū illā ghurūran",
+    translation:
+      'And [remember] when the hypocrites and those in whose hearts is disease said, "Allāh and His Messenger did not promise us except delusion,"',
+    surah: 33,
+    verse: 12,
+    repeat,
+    enableCounter,
   });
 }
 
