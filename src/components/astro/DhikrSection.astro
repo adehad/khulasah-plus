@@ -6,8 +6,10 @@ import {
   type DhikrModel,
   QuranDhikrEntryModel,
 } from "@/models/recitation";
+import { repeatDisplay } from "@/utils/repeat";
 import DhikrEntry from "./DhikrEntry.astro";
 import QuranEntry from "./QuranEntry.astro";
+import RepeatNote from "./RepeatNote.astro";
 
 interface Props {
   model: DhikrModel;
@@ -19,7 +21,10 @@ const { model, index, elementId: providedId } = Astro.props;
 
 const modelRepeat = model.repeat ?? 1;
 const showModelCounter = modelRepeat > DHIKR_COUNTER_THRESHOLD;
-const showModelRepeatText = modelRepeat > 1;
+// a one-line group shows its count inline on that line; its own count wins if it has one
+const groupSuffix = repeatDisplay(modelRepeat, model.entries.length).suffix;
+const lineSuffix = (repeat: number) =>
+  repeatDisplay(repeat, 1).suffix || groupSuffix;
 
 const elementId = providedId ?? `${index + 1}`;
 const makeKey = (suffix?: number) => {
@@ -29,7 +34,7 @@ const makeKey = (suffix?: number) => {
 
 <div class="dhikr-container" id={elementId}>
   {model.instruction && <p class="instruction">{model.instruction}</p>}
-  {showModelRepeatText && <p class="instruction dhikr-repeat">(Repeat the following x{modelRepeat})</p>}
+  <RepeatNote count={modelRepeat} lines={model.entries.length} />
   {model.entries.map((entry, i) => {
     if (entry instanceof QuranDhikrEntryModel) {
       const surahName = SURAH_NAMES.get(entry.surah) ?? `Surah ${entry.surah}`;
@@ -41,7 +46,7 @@ const makeKey = (suffix?: number) => {
             entry={entry}
             openingBrace={true}
             closingBrace={true}
-            repeatText={entry.repeat > 1 ? ` (x${entry.repeat})` : ""}
+            repeatText={lineSuffix(entry.repeat)}
           />
           {showCounter && (
             <kp-dhikr-counter target={entry.repeat} storagekey={makeKey(i)} />
@@ -52,7 +57,13 @@ const makeKey = (suffix?: number) => {
         </>
       );
     }
-    return <DhikrEntry entry={entry as DhikrEntryModel} storageKey={makeKey(i)} />;
+    return (
+      <DhikrEntry
+        entry={entry as DhikrEntryModel}
+        storageKey={makeKey(i)}
+        repeatText={lineSuffix(entry.repeat)}
+      />
+    );
   })}
   {showModelCounter && (
     <kp-dhikr-counter
@@ -63,10 +74,5 @@ const makeKey = (suffix?: number) => {
 </div>
 
 <style>
-  .dhikr-repeat {
-    text-align: center;
-    margin-top: 0.5em;
-    font-style: italic;
-  }
 
 </style>

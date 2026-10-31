@@ -5,9 +5,11 @@ import VerseEnd from "./VerseEnd.astro";
 
 interface Props {
   entry: QasidaEntryModel | QuranEntryModel;
+  /** count shown inline when this line is repeated on its own */
+  repeatText?: string;
 }
 
-const { entry } = Astro.props;
+const { entry, repeatText = "" } = Astro.props;
 const isQuran = entry instanceof QuranEntryModel;
 const surah = isQuran ? entry.surah : undefined;
 ---
@@ -17,12 +19,14 @@ const surah = isQuran ? entry.surah : undefined;
     {isQuran ? (
       <>
         {/* a no-break space keeps the verse end on the line of the verse's last word */}
-        {"﴿"}{entry.arabic}{" "}<VerseEnd verse={(entry as QuranEntryModel).verse} />{"﴾"}
+        {"﴿"}{entry.arabic}{" "}<VerseEnd verse={(entry as QuranEntryModel).verse} />{"﴾"}{repeatText}
       </>
-    ) : entry.arabic}
+    ) : (
+      <>{entry.arabic}{repeatText}</>
+    )}
   </div>
-  <div class="translit">{entry.translit}</div>
-  <div class="translation">{entry.translation}</div>
+  <div class="translit">{entry.translit}{repeatText}</div>
+  <div class="translation">{entry.translation}{repeatText}</div>
   {surah && (
     <kp-footnote type="quran">
       Surah {SURAH_NAMES.get(surah) ?? `Surah ${surah}`} ({surah}):{(entry as QuranEntryModel).verse}

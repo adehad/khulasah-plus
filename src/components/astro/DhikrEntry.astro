@@ -7,10 +7,11 @@ import {
 interface Props {
   entry: DhikrEntryModel;
   storageKey: string;
+  /** inline count, decided by the section from this line and its group */
+  repeatText: string;
 }
 
-const { entry, storageKey } = Astro.props;
-const repeatText = entry.repeat > 1 ? ` (x${entry.repeat})` : "";
+const { entry, storageKey, repeatText } = Astro.props;
 const showCounter =
   entry.repeat > DHIKR_COUNTER_THRESHOLD || entry.enableCounter === true;
 ---
