@@ -19,7 +19,111 @@ import {
 
 export default [
   new WirdModel({
-    title: "Visiting the Beloved ﷺ",
+    title: "Introduction",
+    instruction: "by al-Habib Muhammad bin Abdur Rahman as-Saqqaf",
+    entries: [
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "",
+            translit: "",
+            translation:
+              "In the name of Allah, the Most Compassionate, the Most Merciful.",
+          }),
+          new DhikrEntryModel({
+            arabic: "",
+            translit: "",
+            translation:
+              "All praise be to Allah for His immense blessings, abundant grace and favours. Peace and blessings be upon the Seal of His Prophets, and upon his Family and Companions, and His saints who follow them.",
+          }),
+          new DhikrEntryModel({
+            arabic: "",
+            translit: "",
+            translation:
+              "One of the greatest and most magnificent treasures granted to this nation is the privilege of visiting their great Prophet, the owner of the Pool (Hawdh) and the Banner (Liwa).",
+          }),
+          new DhikrEntryModel({
+            arabic: "",
+            translit: "",
+            translation:
+              "How many a negligent sinner stood at his door and left with the robe of sainthood, for he is the gate of generosity, and a source of endless charity!",
+          }),
+          new DhikrEntryModel({
+            arabic: "",
+            translit: "",
+            translation:
+              "O you who are burdened with sins and many flaws, O you who desire high ranks and aspire to lofty stations, come forward to visit him. Hurry to receive glad tidings.",
+          }),
+          new DhikrEntryModel({
+            arabic: "",
+            translit: "",
+            translation:
+              "And know that even if you were to come to him from the farthest reaches of the earth, crawling on your eyes, you would still not fulfill even an atom of the rights he has over you.",
+          }),
+        ],
+      }),
+    ],
+  }),
+  new WirdModel({
+    title: "Etiquettes of Visiting",
+    instruction: "When you enter the illuminated city of Madinah:",
+    entries: [
+      new DhikrModel({
+        entries: [
+          new DhikrEntryModel({
+            arabic: "",
+            translit: "",
+            translation:
+              "Make yourself as presentable as possible: take a ritual bath (ghusl), apply the finest perfume you have, and wear your cleanest and most elegant clothes.",
+          }),
+          new DhikrEntryModel({
+            arabic: "",
+            translit: "",
+            translation:
+              "Then make your way to the noble Prophet's mosque and perform the prayer of greeting the mosque (tahiyyatul masjid). If possible, perform it in the Rawdhah as that is even better.",
+          }),
+          new DhikrEntryModel({
+            arabic: "",
+            translit: "",
+            translation:
+              "Then head towards the direction of the Pure Countenance, in front of the perfumed chamber.",
+          }),
+          new DhikrEntryModel({
+            arabic: "",
+            translit: "",
+            translation:
+              "Stand with respect, reverence, awe and shyness. Be aware of his exalted spiritual presence ﷺ, and visualise his noble person before you.",
+          }),
+          new DhikrEntryModel({
+            arabic: "",
+            translit: "",
+            translation:
+              "Offer salutations and greetings to the Best of Creation ﷺ and know that he is alive in his grave, responding to your greetings.",
+          }),
+          new DhikrEntryModel({
+            arabic: "",
+            translit: "",
+            translation:
+              "Afterward, greet our master Abu Bakr as-Siddiq and our master Umar al-Faruq, may Allah be pleased with them both.",
+          }),
+          new DhikrEntryModel({
+            arabic: "",
+            translit: "",
+            translation:
+              "Thereafter, head towards al-Baqi’. Go to the grave of Sayyidatuna Fatimah az-Zahra, may Allah be pleased with her, and greet her, her husband and her children and the rest of the Companions of the Messenger of Allah in al-Baqi’, and supplicate as you wish.",
+          }),
+          new DhikrEntryModel({
+            arabic: "",
+            translit: "",
+            translation:
+              "You should retrace the footsteps of the Messenger of Allah (peace and blessings be upon him) and his noble Companions, by visiting places such as Masjid Quba, Masjid Qiblatayn, the Martyrs of Uhud, and other sites.",
+          }),
+        ],
+      }),
+    ],
+  }),
+  new WirdModel({
+    title: "Greeting the Messenger of Allah ﷺ (P1)",
     entries: [
       new DhikrModel({
         entries: [
@@ -417,7 +521,7 @@ export default [
     ],
   }),
   new QasidaModel({
-    title: "",
+    title: "Greeting the Messenger of Allah ﷺ (P2)",
     entries: [
       new QasidaVerseModel({
         chorus: false,
@@ -439,7 +543,7 @@ export default [
     ],
   }),
   new WirdModel({
-    title: "",
+    title: "Greeting the Messenger of Allah ﷺ (P3)",
     entries: [
       new DhikrModel({
         entries: [
@@ -850,7 +954,7 @@ export default [
     ],
   }),
   new QasidaModel({
-    title: "",
+    title: "Greeting the Messenger of Allah ﷺ (P4)",
     entries: [
       new QasidaVerseModel({
         chorus: false,
@@ -880,10 +984,15 @@ export default [
             arabic: "فَازَ بِالْخَيْرِ وَبِالْعَهْدِ وَفَا",
             translit: "Fāza bil khayri wa bil ‛ahdi wafā",
             translation:
-              "whoever holds onto you attains all good and remains true to the covenant. ***",
+              "whoever holds onto you attains all good and remains true to the covenant.",
           }),
         ],
       }),
+    ],
+  }),
+  new QasidaModel({
+    title: "Greeting the Messenger of Allah ﷺ (P5)",
+    entries: [
       new QasidaVerseModel({
         chorus: false,
         entries: [
@@ -1007,14 +1116,14 @@ export default [
             arabic: "هُوَ الْغَرَضُ الْأَقْصَـى فَيَا سَيِّدِي قُمْ بِي",
             translit: "Huwal gharaḍul aqṣā fa yā sayyidī qum bī",
             translation:
-              "is the ultimate goal, so O my master, please help me. ***",
+              "is the ultimate goal, so O my master, please help me.",
           }),
         ],
       }),
     ],
   }),
   new WirdModel({
-    title: "",
+    title: "Greeting the Messenger of Allah ﷺ (P6)",
     entries: [
       new DhikrModel({
         entries: [
@@ -1558,6 +1667,11 @@ export default [
           }),
         ],
       }),
+    ],
+  }),
+  new WirdModel({
+    title: "Greeting the Righteous Caliphs",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
