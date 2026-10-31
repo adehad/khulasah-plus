@@ -73,8 +73,10 @@ const qasida = new QasidaModel({
 });
 
 const nav = [
-  new NavModel({ href: "component-gallery", title: "Sample Link A" }),
-  new NavModel({ href: "component-gallery", title: "Sample Link B" }),
+  // tiles only render as links when the href is a real page
+  new NavModel({ href: "khulasah", title: "Sample Link A" }),
+  new NavModel({ href: "mawlids", title: "Sample Link B" }),
+  new NavModel({ href: "component-gallery/no-page", title: "Sample Disabled" }),
 ];
 
 const sections = [
