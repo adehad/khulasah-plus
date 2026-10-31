@@ -194,13 +194,35 @@ export class QasidaVerseModel {
  * Represents a generic recitation item, such as a dhikr or a Quran recitation.
  *
  * @property title - The title of the recitation.
- * @property instruction - Optional instructions for the recitation.
+ * @property instruction - Optional instructions for the recitation; multi-line text is folded (see foldText).
  */
 export abstract class BaseRecitationModel {
+  public instruction?: string;
+
   constructor(
     public title: string,
-    public instruction?: string,
-  ) {}
+    instruction?: string,
+  ) {
+    this.instruction = instruction && foldText(instruction);
+  }
+}
+
+/**
+ * Reads prose the way a YAML folded block does, so long text can be written as an indented template literal:
+ * indentation is ignored, single line breaks join into spaces, and blank lines separate paragraphs.
+ */
+export function foldText(text: string): string {
+  return text
+    .split(/\n[ \t]*\n/)
+    .map((paragraph) =>
+      paragraph
+        .split("\n")
+        .map((line) => line.trim())
+        .filter(Boolean)
+        .join(" "),
+    )
+    .filter(Boolean)
+    .join("\n\n");
 }
 
 /**
