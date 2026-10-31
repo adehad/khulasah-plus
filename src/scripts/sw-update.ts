@@ -17,13 +17,16 @@ if ("serviceWorker" in navigator) {
 }
 
 async function registerServiceWorker() {
-  const swFile = import.meta.env.DEV ? "sw.dev.js" : "sw.js";
+  // Dev serves src/sw.ts unbundled from vite-plugin-pwa's dev URL, so it must run as a module.
+  const [swFile, type]: [string, WorkerType] = import.meta.env.DEV
+    ? ["dev-sw.js?dev-sw", "module"]
+    : ["sw.js", "classic"];
   // Read before registering: a first install claims this page, and only a page that already had a
   // worker is running against a precache that a new worker can replace.
   let controlled = navigator.serviceWorker.controller !== null;
   const registration = await navigator.serviceWorker.register(
     resolveBasePath(swFile),
-    { updateViaCache: "none" },
+    { type, updateViaCache: "none" },
   );
 
   if (registration.waiting) offerUpdate(registration);

@@ -1,6 +1,12 @@
-importScripts(
-  `https://storage.googleapis.com/workbox-cdn/releases/${__WORKBOX_VERSION__}/workbox-sw.js`,
-);
+/// <reference lib="webworker" />
+import { CacheableResponsePlugin } from "workbox-cacheable-response";
+import { ExpirationPlugin } from "workbox-expiration";
+import { precacheAndRoute } from "workbox-precaching";
+import { RangeRequestsPlugin } from "workbox-range-requests";
+import { registerRoute } from "workbox-routing";
+import { CacheFirst, StaleWhileRevalidate } from "workbox-strategies";
+
+declare const self: ServiceWorkerGlobalScope;
 
 // An update waits until the page asks for it, so an open page is never left running against a
 // precache it did not load from; the page reloads onto the new version once this worker takes
@@ -11,7 +17,7 @@ importScripts(
 const UPDATE_PROTOCOL_MARKER = "sw-update-protocol-v1";
 
 self.addEventListener("install", (event) => {
-  const cdn = `https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@${__SHOELACE_VERSION__}`;
+  const cdn = `https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@${import.meta.env.SHOELACE_VERSION}`;
   event.waitUntil(
     Promise.all([
       // Warm Shoelace theme CSS cache on install
@@ -21,9 +27,11 @@ self.addEventListener("install", (event) => {
           cache.add(`${cdn}/dist/themes/dark.css`),
         ]);
       }),
-      caches.has(UPDATE_PROTOCOL_MARKER).then((speaksProtocol) => {
-        if (!speaksProtocol) return self.skipWaiting();
-      }),
+      caches
+        .has(UPDATE_PROTOCOL_MARKER)
+        .then((speaksProtocol) =>
+          speaksProtocol ? undefined : self.skipWaiting(),
+        ),
     ]),
   );
 });
@@ -41,21 +49,21 @@ self.addEventListener("activate", (event) => {
 // Cache audio files from CDN with streaming support
 const AUDIO_CDN_PATTERNS = [/\.opus$/i, /\.mp3$/i, /\.ogg$/i];
 
-workbox.routing.registerRoute(
+registerRoute(
   ({ url, request }) => {
     // Check if this is an audio request
     if (request.destination === "audio") return true;
     // Check URL patterns for audio files
     return AUDIO_CDN_PATTERNS.some((pattern) => pattern.test(url.href));
   },
-  new workbox.strategies.CacheFirst({
+  new CacheFirst({
     cacheName: "audio-cache",
     plugins: [
-      new workbox.cacheableResponse.CacheableResponsePlugin({
+      new CacheableResponsePlugin({
         statuses: [0, 200, 206], // Include partial content for range requests
       }),
-      new workbox.rangeRequests.RangeRequestsPlugin(),
-      new workbox.expiration.ExpirationPlugin({
+      new RangeRequestsPlugin(),
+      new ExpirationPlugin({
         maxEntries: 50,
         maxAgeSeconds: 60 * 60 * 24 * 30, // 30 days
       }),
@@ -64,17 +72,17 @@ workbox.routing.registerRoute(
 );
 
 // Cache shoelace assets
-workbox.routing.registerRoute(
+registerRoute(
   ({ url }) =>
     url.origin === "https://cdn.jsdelivr.net" &&
     url.pathname.startsWith("/npm/@shoelace-style/shoelace"),
-  new workbox.strategies.CacheFirst({
+  new CacheFirst({
     cacheName: "shoelace-assets",
     plugins: [
-      new workbox.cacheableResponse.CacheableResponsePlugin({
+      new CacheableResponsePlugin({
         statuses: [0, 200],
       }),
-      new workbox.expiration.ExpirationPlugin({
+      new ExpirationPlugin({
         maxEntries: 100,
         maxAgeSeconds: 60 * 60 * 24 * 30, // 30 Days
       }),
@@ -84,31 +92,27 @@ workbox.routing.registerRoute(
 
 // search-index.json is too large for precaching and not needed on initial load.
 // Cache on first search use, serve from cache while revalidating in the background.
-workbox.routing.registerRoute(
+registerRoute(
   ({ url, request }) =>
     request.method === "GET" &&
     url.origin === self.location.origin &&
     url.pathname.endsWith("/search-index.json"),
-  new workbox.strategies.StaleWhileRevalidate({
+  new StaleWhileRevalidate({
     cacheName: "search-index",
     plugins: [
-      new workbox.cacheableResponse.CacheableResponsePlugin({
+      new CacheableResponsePlugin({
         statuses: [200],
       }),
-      new workbox.expiration.ExpirationPlugin({
+      new ExpirationPlugin({
         maxEntries: 1,
       }),
     ],
   }),
 );
 
-// This is your Service Worker, you can put any of your custom Service Worker
-// code in this file, above the `precacheAndRoute` line.
-
 // All HTML pages are included in __WB_MANIFEST via globPatterns.
-// precacheAndRoute handles navigation requests automatically (including /path → /path/index.html).
 // Launch params (the Search shortcut's ?search, the protocol handler's ?url=) are read by the page,
 // so they must not stop the precached page from being served offline.
-workbox.precaching.precacheAndRoute(self.__WB_MANIFEST || [], {
+precacheAndRoute(self.__WB_MANIFEST, {
   ignoreURLParametersMatching: [/^utm_/, /^fbclid$/, /^search$/, /^url$/],
 });

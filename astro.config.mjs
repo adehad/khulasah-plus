@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from "node:fs";
+import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import sitemap from "@astrojs/sitemap";
 import AstroPWA from "@vite-pwa/astro";
@@ -14,27 +14,7 @@ const getVersion = (pkg) => {
   return version;
 };
 
-const WORKBOX_VERSION = getVersion("workbox-build");
 const SHOELACE_VERSION = getVersion("@shoelace-style/shoelace");
-
-const isDev = process.argv.includes("dev");
-
-if (isDev) {
-  const swTemplate = readFileSync(
-    resolve(import.meta.dirname, "public/sw.js"),
-    "utf-8",
-  );
-  const swDev = swTemplate
-    // biome-ignore lint/suspicious/noTemplateCurlyInString: intentional find-and-replace of template literal placeholders in sw.js
-    .replace("${__WORKBOX_VERSION__}", WORKBOX_VERSION)
-    .replace(
-      // biome-ignore lint/suspicious/noTemplateCurlyInString: intentional find-and-replace of template literal placeholders in sw.js
-      "${__SHOELACE_VERSION__}",
-      SHOELACE_VERSION,
-    );
-  writeFileSync(resolve(import.meta.dirname, "public/sw.dev.js"), swDev);
-  console.log("Generated public/sw.dev.js for development.");
-}
 
 export default defineConfig({
   site: "https://khulasah-plus.adehad.workers.dev",
@@ -63,13 +43,13 @@ export default defineConfig({
     }),
     AstroPWA({
       strategies: "injectManifest",
+      // The build bundles the worker's workbox imports into dist/sw.js, so installing it needs no CDN.
+      srcDir: "src",
+      filename: "sw.ts",
       injectManifest: {
-        swSrc: isDev ? "public/sw.dev.js" : "public/sw.js",
-        swDest: "dist/sw.js",
-        globDirectory: "dist",
+        minify: true,
         globPatterns: ["**/*.{html,js,css,json,png,ico,svg,woff,woff2}"],
         globIgnores: [
-          "sw.dev.js",
           "search-index.json", // Too large for precache — runtime cached via StaleWhileRevalidate in sw.js
           "assets/screenshots/**", // Store listing only; the app never shows them
         ],
@@ -78,6 +58,8 @@ export default defineConfig({
       manifest: false,
       devOptions: {
         enabled: true,
+        // Dev serves the worker unbundled, so its workbox imports need a module worker.
+        type: "module",
       },
     }),
   ],
@@ -88,8 +70,7 @@ export default defineConfig({
       },
     },
     define: {
-      __WORKBOX_VERSION__: JSON.stringify(WORKBOX_VERSION),
-      __SHOELACE_VERSION__: JSON.stringify(SHOELACE_VERSION),
+      "import.meta.env.SHOELACE_VERSION": JSON.stringify(SHOELACE_VERSION),
     },
     plugins: [
       {
