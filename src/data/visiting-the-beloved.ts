@@ -20,107 +20,15 @@ import {
 export default [
   new WirdModel({
     title: "Introduction",
-    instruction: "by al-Habib Muhammad bin Abdur Rahman as-Saqqaf",
-    entries: [
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic: "",
-            translit: "",
-            translation:
-              "In the name of Allah, the Most Compassionate, the Most Merciful.",
-          }),
-          new DhikrEntryModel({
-            arabic: "",
-            translit: "",
-            translation:
-              "All praise be to Allah for His immense blessings, abundant grace and favours. Peace and blessings be upon the Seal of His Prophets, and upon his Family and Companions, and His saints who follow them.",
-          }),
-          new DhikrEntryModel({
-            arabic: "",
-            translit: "",
-            translation:
-              "One of the greatest and most magnificent treasures granted to this nation is the privilege of visiting their great Prophet, the owner of the Pool (Hawdh) and the Banner (Liwa).",
-          }),
-          new DhikrEntryModel({
-            arabic: "",
-            translit: "",
-            translation:
-              "How many a negligent sinner stood at his door and left with the robe of sainthood, for he is the gate of generosity, and a source of endless charity!",
-          }),
-          new DhikrEntryModel({
-            arabic: "",
-            translit: "",
-            translation:
-              "O you who are burdened with sins and many flaws, O you who desire high ranks and aspire to lofty stations, come forward to visit him. Hurry to receive glad tidings.",
-          }),
-          new DhikrEntryModel({
-            arabic: "",
-            translit: "",
-            translation:
-              "And know that even if you were to come to him from the farthest reaches of the earth, crawling on your eyes, you would still not fulfill even an atom of the rights he has over you.",
-          }),
-        ],
-      }),
-    ],
+    instruction:
+      "by al-Habib Muhammad bin Abdur Rahman as-Saqqaf\n\nIn the name of Allah, the Most Compassionate, the Most Merciful.\n\nAll praise be to Allah for His immense blessings, abundant grace and favours. Peace and blessings be upon the Seal of His Prophets, and upon his Family and Companions, and His saints who follow them.\n\nOne of the greatest and most magnificent treasures granted to this nation is the privilege of visiting their great Prophet, the owner of the Pool (Hawdh) and the Banner (Liwa).\n\nHow many a negligent sinner stood at his door and left with the robe of sainthood, for he is the gate of generosity, and a source of endless charity!\n\nO you who are burdened with sins and many flaws, O you who desire high ranks and aspire to lofty stations, come forward to visit him. Hurry to receive glad tidings.\n\nAnd know that even if you were to come to him from the farthest reaches of the earth, crawling on your eyes, you would still not fulfill even an atom of the rights he has over you.",
+    entries: [],
   }),
   new WirdModel({
     title: "Etiquettes of Visiting",
-    instruction: "When you enter the illuminated city of Madinah:",
-    entries: [
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic: "",
-            translit: "",
-            translation:
-              "Make yourself as presentable as possible: take a ritual bath (ghusl), apply the finest perfume you have, and wear your cleanest and most elegant clothes.",
-          }),
-          new DhikrEntryModel({
-            arabic: "",
-            translit: "",
-            translation:
-              "Then make your way to the noble Prophet's mosque and perform the prayer of greeting the mosque (tahiyyatul masjid). If possible, perform it in the Rawdhah as that is even better.",
-          }),
-          new DhikrEntryModel({
-            arabic: "",
-            translit: "",
-            translation:
-              "Then head towards the direction of the Pure Countenance, in front of the perfumed chamber.",
-          }),
-          new DhikrEntryModel({
-            arabic: "",
-            translit: "",
-            translation:
-              "Stand with respect, reverence, awe and shyness. Be aware of his exalted spiritual presence ﷺ, and visualise his noble person before you.",
-          }),
-          new DhikrEntryModel({
-            arabic: "",
-            translit: "",
-            translation:
-              "Offer salutations and greetings to the Best of Creation ﷺ and know that he is alive in his grave, responding to your greetings.",
-          }),
-          new DhikrEntryModel({
-            arabic: "",
-            translit: "",
-            translation:
-              "Afterward, greet our master Abu Bakr as-Siddiq and our master Umar al-Faruq, may Allah be pleased with them both.",
-          }),
-          new DhikrEntryModel({
-            arabic: "",
-            translit: "",
-            translation:
-              "Thereafter, head towards al-Baqi’. Go to the grave of Sayyidatuna Fatimah az-Zahra, may Allah be pleased with her, and greet her, her husband and her children and the rest of the Companions of the Messenger of Allah in al-Baqi’, and supplicate as you wish.",
-          }),
-          new DhikrEntryModel({
-            arabic: "",
-            translit: "",
-            translation:
-              "You should retrace the footsteps of the Messenger of Allah (peace and blessings be upon him) and his noble Companions, by visiting places such as Masjid Quba, Masjid Qiblatayn, the Martyrs of Uhud, and other sites.",
-          }),
-        ],
-      }),
-    ],
+    instruction:
+      "When you enter the illuminated city of Madinah:\n\nMake yourself as presentable as possible: take a ritual bath (ghusl), apply the finest perfume you have, and wear your cleanest and most elegant clothes.\n\nThen make your way to the noble Prophet's mosque and perform the prayer of greeting the mosque (tahiyyatul masjid). If possible, perform it in the Rawdhah as that is even better.\n\nThen head towards the direction of the Pure Countenance, in front of the perfumed chamber.\n\nStand with respect, reverence, awe and shyness. Be aware of his exalted spiritual presence ﷺ, and visualise his noble person before you.\n\nOffer salutations and greetings to the Best of Creation ﷺ and know that he is alive in his grave, responding to your greetings.\n\nAfterward, greet our master Abu Bakr as-Siddiq and our master Umar al-Faruq, may Allah be pleased with them both.\n\nThereafter, head towards al-Baqi’. Go to the grave of Sayyidatuna Fatimah az-Zahra, may Allah be pleased with her, and greet her, her husband and her children and the rest of the Companions of the Messenger of Allah in al-Baqi’, and supplicate as you wish.\n\nYou should retrace the footsteps of the Messenger of Allah (peace and blessings be upon him) and his noble Companions, by visiting places such as Masjid Quba, Masjid Qiblatayn, the Martyrs of Uhud, and other sites.",
+    entries: [],
   }),
   new WirdModel({
     title: "Greeting the Messenger of Allah ﷺ (P1)",
