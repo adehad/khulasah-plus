@@ -166,6 +166,7 @@ export interface StorageSchema {
   settings: SettingsModel;
   theme: ThemeValue;
   dhikrCounters: Record<string, number>;
+  settingsTab: SettingsTab;
 }
 
 /**
@@ -186,6 +187,11 @@ export interface SettingsModel {
 export type ThemeValue = "light" | "dark" | "auto";
 
 /**
+ * The settings dialog tab a viewer last used
+ */
+export type SettingsTab = "text" | "audio";
+
+/**
  * Default values for each storage key (like Pydantic Field defaults)
  */
 const storageDefaults: StorageSchema = {
@@ -199,6 +205,7 @@ const storageDefaults: StorageSchema = {
   },
   theme: "auto",
   dhikrCounters: {},
+  settingsTab: "text",
 };
 
 /**
