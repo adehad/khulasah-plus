@@ -15,7 +15,8 @@ test("component gallery: capture full-page screenshot + sticky-button colour inv
   await page.waitForFunction(() => {
     const els = [...document.querySelectorAll("kp-sticky-button")];
     return (
-      els.length > 0 && els.every((e) => e.shadowRoot?.querySelector("button.sticky"))
+      els.length > 0 &&
+      els.every((e) => e.shadowRoot?.querySelector("button.sticky"))
     );
   });
 
