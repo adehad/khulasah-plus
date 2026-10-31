@@ -49,12 +49,12 @@ export class StickyButton extends LitElement {
     }
 
     :host([variant="verse"]) {
-      top: 4rem;
+      top: calc(var(--content-top, 0px) + 4rem);
     }
 
     :host([variant="chapter"]),
     :host([variant="entry"]) {
-      top: 1rem;
+      top: calc(var(--content-top, 0px) + 1rem);
     }
 
     .sticky {
