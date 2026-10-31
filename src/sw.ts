@@ -1,10 +1,14 @@
 /// <reference lib="webworker" />
 import { CacheableResponsePlugin } from "workbox-cacheable-response";
 import { ExpirationPlugin } from "workbox-expiration";
-import { precacheAndRoute } from "workbox-precaching";
+import { matchPrecache, precacheAndRoute } from "workbox-precaching";
 import { RangeRequestsPlugin } from "workbox-range-requests";
-import { registerRoute } from "workbox-routing";
-import { CacheFirst, StaleWhileRevalidate } from "workbox-strategies";
+import { NavigationRoute, registerRoute } from "workbox-routing";
+import {
+  CacheFirst,
+  NetworkOnly,
+  StaleWhileRevalidate,
+} from "workbox-strategies";
 
 declare const self: ServiceWorkerGlobalScope;
 
@@ -127,3 +131,16 @@ precacheAndRoute(self.__WB_MANIFEST, {
   ignoreURLParametersMatching: [/^utm_/, /^fbclid$/, /^search$/, /^url$/],
   urlManipulation: pageWithoutTrailingSlash,
 });
+
+// Registered after the precache so it only sees pages that are not precached; offline, the
+// precached 404 page stands in for the browser's own error page.
+const network = new NetworkOnly();
+registerRoute(
+  new NavigationRoute(async (options) => {
+    try {
+      return await network.handle(options);
+    } catch {
+      return (await matchPrecache("404")) ?? Response.error();
+    }
+  }),
+);
