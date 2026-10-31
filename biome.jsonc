@@ -11,6 +11,8 @@
       "src/**",
       "scripts/**",
       "public/**",
+      "tests/**",
+      "*.config.ts",
       "astro.config.mjs",
       "biome.jsonc",
       "tsconfig.json"
@@ -42,6 +44,24 @@
   // biome cannot analyze Astro template usage — imports/variables used in the
   // HTML template section (below ---) appear "unused" to biome's static analysis
   "overrides": [
+    // Test rules are scoped by path because the "test" domain only auto-enables
+    // for jest/vitest/mocha/ava, not bun:test or Playwright. Focused tests are an
+    // error because Playwright's forbidOnly only guards CI; skips only warn since
+    // a conditional test.skip() is legitimate. Non-null assertions are allowed
+    // because a missing element should crash the test and fail it.
+    {
+      "includes": ["tests/**"],
+      "linter": {
+        "domains": { "test": "recommended" },
+        "rules": {
+          "style": { "noNonNullAssertion": "off" },
+          "suspicious": {
+            "noFocusedTests": "error",
+            "noSkippedTests": "warn"
+          }
+        }
+      }
+    },
     {
       "includes": ["**/*.astro"],
       "linter": {
