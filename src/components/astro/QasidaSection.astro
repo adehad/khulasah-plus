@@ -18,6 +18,18 @@ interface Props {
 const { model, index, pagePath } = Astro.props;
 const prefix = `q${index + 1}`;
 const hasAudio = !!model.audio?.url;
+
+/** Consecutive chorus verses are sung as one chorus: the first carries the run under a single tab, the rest render nothing */
+const verseRun = (entries: unknown[], at: number): QasidaVerseModel[] => {
+  const verse = entries[at] as QasidaVerseModel;
+  if (!verse.chorus) return [verse];
+  const isChorus = (e: unknown) => e instanceof QasidaVerseModel && e.chorus;
+  if (isChorus(entries[at - 1])) return [];
+  const run = [verse];
+  for (let k = at + 1; isChorus(entries[k]); k++)
+    run.push(entries[k] as QasidaVerseModel);
+  return run;
+};
 ---
 
 <div class="qasida-container" style="container-type: inline-size;">
@@ -56,7 +68,8 @@ const hasAudio = !!model.audio?.url;
           {entry.instruction && <p class="instruction">{entry.instruction}</p>}
           {entry.entries.map((chapterEntry, j) => {
             if (chapterEntry instanceof QasidaVerseModel) {
-              return <QasidaVerse verse={chapterEntry} verseId={`${prefix}-verse-${i + 1}-${j + 1}`} label={j + 1} />;
+              const run = verseRun(entry.entries, j);
+              return run.length > 0 && <QasidaVerse verses={run} verseId={`${prefix}-verse-${i + 1}-${j + 1}`} label={j + 1} />;
             }
             if (chapterEntry instanceof ExpandModel) {
               return <ExpandSection model={chapterEntry} index={j} pagePath={pagePath} />;
@@ -67,7 +80,8 @@ const hasAudio = !!model.audio?.url;
       );
     }
     if (entry instanceof QasidaVerseModel) {
-      return <QasidaVerse verse={entry} verseId={`${prefix}-verse-${i + 1}`} label={i + 1} />;
+      const run = verseRun(model.entries, i);
+      return run.length > 0 && <QasidaVerse verses={run} verseId={`${prefix}-verse-${i + 1}`} label={i + 1} />;
     }
     throw new Error(`QasidaSection: unhandled entry type "${entry?.constructor?.name}"`);
   })}

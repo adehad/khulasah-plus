@@ -5,31 +5,35 @@ import QasidaEntry from "./QasidaEntry.astro";
 import RepeatNote from "./RepeatNote.astro";
 
 interface Props {
-  verse: QasidaVerseModel;
+  /** one verse, or a run of consecutive chorus verses that is sung as a single chorus */
+  verses: QasidaVerseModel[];
   verseId: string;
   label: number;
 }
 
-const { verse, verseId, label } = Astro.props;
-const { suffix } = repeatDisplay(verse.repeat, verse.entries.length);
+const { verses, verseId, label } = Astro.props;
+const chorus = verses[0].chorus;
+const rows = verses.map((verse) => ({
+  verse,
+  suffix: repeatDisplay(verse.repeat, verse.entries.length).suffix,
+}));
 ---
 
-<RepeatNote count={verse.repeat} lines={verse.entries.length} />
-{verse.chorus ? (
-  <Fragment>
-    <button class="chorus-toggle-button" data-chorus-target={verseId}>Chorus</button>
-    <div class="verses sticky-chorus" id={verseId}>
-      {verse.entries.map((entry) => <QasidaEntry entry={entry} repeatText={suffix} />)}
-    </div>
-  </Fragment>
+{chorus ? (
+  <button class="chorus-toggle-button" data-chorus-target={verseId}>Chorus</button>
 ) : (
-  <Fragment>
-    <kp-sticky-button label={label} elementId={verseId} variant="verse"></kp-sticky-button>
-    <div class="verses" id={verseId}>
-      {verse.entries.map((entry) => <QasidaEntry entry={entry} repeatText={suffix} />)}
-    </div>
-  </Fragment>
+  <kp-sticky-button label={label} elementId={verseId} variant="verse"></kp-sticky-button>
 )}
+<div class:list={[{ "sticky-chorus": chorus }]} id={verseId}>
+  {rows.map(({ verse, suffix }) => (
+    <Fragment>
+      <RepeatNote count={verse.repeat} lines={verse.entries.length} />
+      <div class="verses">
+        {verse.entries.map((entry) => <QasidaEntry entry={entry} repeatText={suffix} />)}
+      </div>
+    </Fragment>
+  ))}
+</div>
 
 <style>
   .verses {
