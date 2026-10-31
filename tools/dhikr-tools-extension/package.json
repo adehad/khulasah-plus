@@ -1,0 +1,91 @@
+{
+  "name": "dhikr-tools",
+  "displayName": "Dhikr Tools",
+  "description": "Repo-local refactors for khulasah-plus recitation data files.",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": ["onLanguage:typescript"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "dhikrTools.splitIntoSibling",
+        "title": "Dhikr: Split selection into a new sibling model"
+      },
+      {
+        "command": "dhikrTools.addRepeatField",
+        "title": "Dhikr: Add / set repeat field"
+      },
+      {
+        "command": "dhikrTools.transliterateFields",
+        "title": "Dhikr: Transliterate translit fields from Arabic"
+      }
+    ],
+    "configuration": {
+      "title": "Dhikr Tools",
+      "properties": {
+        "dhikrTools.romanizeTanwin": {
+          "type": "boolean",
+          "default": true,
+          "description": "Romanize tanwin when transliterating."
+        },
+        "dhikrTools.assimilateSunLetters": {
+          "type": "boolean",
+          "default": true,
+          "description": "Assimilate sun letters when transliterating."
+        }
+      }
+    },
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "dhikrTools.splitIntoSibling",
+          "when": "editorLangId == typescript && resourcePath =~ /src[\\\\/]data[\\\\/]/"
+        },
+        {
+          "command": "dhikrTools.addRepeatField",
+          "when": "editorLangId == typescript && resourcePath =~ /src[\\\\/]data[\\\\/]/"
+        },
+        {
+          "command": "dhikrTools.transliterateFields",
+          "when": "editorLangId == typescript && resourcePath =~ /src[\\\\/]data[\\\\/]/"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "dhikrTools.splitIntoSibling",
+        "key": "ctrl+alt+g",
+        "mac": "cmd+alt+g",
+        "when": "editorHasSelection && editorTextFocus && editorLangId == typescript && resourcePath =~ /src[\\\\/]data[\\\\/]/"
+      },
+      {
+        "command": "dhikrTools.addRepeatField",
+        "key": "ctrl+alt+r",
+        "mac": "cmd+alt+r",
+        "when": "editorTextFocus && editorLangId == typescript && resourcePath =~ /src[\\\\/]data[\\\\/]/"
+      }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "bun test",
+    "link-local": "bun scripts/link-local.mjs",
+    "unlink-local": "bun scripts/unlink-local.mjs",
+    "update-vendor": "bun scripts/update-vendor.mjs"
+  },
+  "dependencies": {
+    "ts-morph": "^24.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.0",
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.4.0"
+  }
+}

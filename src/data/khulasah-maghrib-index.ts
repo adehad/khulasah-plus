@@ -3,15 +3,15 @@ import { NavModel } from "@/models/nav";
 export const adhkarBeforeOrAfterMaghribContent = [
   new NavModel({
     title: "Wird Al-Latif",
-    href: "/",
+    href: "khulasah/after-fajr/wird-al-latif",
   }),
   new NavModel({
     title: "Istighfar",
-    href: "/",
+    href: "khulasah/maghrib/istighfar",
   }),
   new NavModel({
     title: "Ratib al-Attas",
-    href: "/",
+    href: "khulasah/maghrib/ratib-al-attas",
   }),
   new NavModel({
     title: "Ratib al-Haddad",
@@ -19,7 +19,7 @@ export const adhkarBeforeOrAfterMaghribContent = [
   }),
   new NavModel({
     title: "Aqidah of Shaykh Ali ibn Abu Bakr as-Sakran",
-    href: "/",
+    href: "khulasah/maghrib/aqidah-as-sakran",
   }),
 ];
 

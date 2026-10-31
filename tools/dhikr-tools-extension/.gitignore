@@ -1,0 +1,5 @@
+# build output
+out/
+
+# local junction override for the dhikr-tools translit library
+vendor/ar-transliteration.local/

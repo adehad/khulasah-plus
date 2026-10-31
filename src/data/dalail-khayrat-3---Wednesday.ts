@@ -803,15 +803,11 @@ export default [
           }),
         ],
       }),
-      new DhikrModel({
-        entries: [
-          new DhikrEntryModel({
-            arabic: "ابتداء الثلث الثاني",
-            translit: "Ibtidāʾ ath-Thuluths ath-Thānī",
-            translation: "Beginning of the Second Third",
-          }),
-        ],
-      }),
+    ],
+  }),
+  new WirdModel({
+    title: "Beginning of the Second Third",
+    entries: [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
@@ -953,7 +949,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَي سَيِّدِنَا إِبرَاهِيمَ وَعَلَى آلِ سَيِّدِنَا إِبرَاهِيمَ فِي العَالَمينَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
+              "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِ سَيِّدِنَا مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَي سَيِّدِنَا إِبرَاهِيمَ وَعَلَى آلِ سَيِّدِنَا إِبرَاهِيمَ فِي العَالَمِينَ إِنَّكَ حَمِيدٌ مَجِيدٌ",
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin kamā ṣallayta ʿalā sayyidinā Ibrāhīma wa ʿalā āli sayyidinā Ibrāhīma fil ʿālamina innaka ḥamīdun majīd",
             translation:
@@ -965,7 +961,7 @@ export default [
             translit:
               "wa ṣalli ʿalā sayyidinā Muḥammadin wa ʿalā āli sayyidinā Muḥammadin kullamā dhakarahudh dhākirūna",
             translation:
-              "Glorious. And bless and grant peace and blessings on Our Master Muhammad and the family of Our Master Muhammad when ever he is mentioned by those who do dhikr",
+              "And bless and grant peace and blessings on Our Master Muhammad and the family of Our Master Muhammad when ever he is mentioned by those who do dhikr",
           }),
           new DhikrEntryModel({
             arabic: "وَغَفَلَ عَنْ ذِكْرِهِ الغَافِلُونَ.",
@@ -1010,7 +1006,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic:
-              "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبيِّ الأُمِّيِّ الطَّاهِرِ المُطَهَّرِ وَعَلَى آلِهِ وَسَلِّمْ.",
+              "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الأُمِّيِّ الطَّاهِرِ المُطَهَّرِ وَعَلَى آلِهِ وَسَلِّمْ.",
             translit:
               "Allāhumma ṣalli ʿalā sayyidinā Muḥammadin nabiyyil ummiyyiṭ ṭahiril muṭahhari wa ʿalā ālihi wa sallim.",
             translation:

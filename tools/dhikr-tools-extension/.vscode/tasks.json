@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "compile-dhikr-ext",
+      "type": "shell",
+      "command": "bun run compile",
+      "options": {
+        "cwd": "${workspaceFolder}/"
+      },
+      "problemMatcher": ["$tsc"],
+      "presentation": { "reveal": "silent" }
+    },
+    {
+      "label": "watch-dhikr-ext",
+      "type": "shell",
+      "command": "bun run watch",
+      "options": {
+        "cwd": "${workspaceFolder}/"
+      },
+      "isBackground": true,
+      "problemMatcher": ["$tsc-watch"],
+      "presentation": { "reveal": "silent" }
+    }
+  ]
+}

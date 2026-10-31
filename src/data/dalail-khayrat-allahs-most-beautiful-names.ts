@@ -1,3 +1,10 @@
+import {
+  ahzab_33,
+  ahzab_56_verse,
+  hud_73,
+  rum_25,
+  shura_11,
+} from "@/data/shared/quran-partial";
 import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export default [
@@ -17,7 +24,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "الرَّحْمَٰنُ جَلَّ جَلَالُهُ",
-            translit: "Ar-Rahmān jalla jalāluhu.",
+            translit: "Ar-Raḥmān jalla jalāluhu.",
             translation: "The Merciful, He is exalted!",
           }),
         ],
@@ -26,7 +33,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "الرَّحِيمُ جَلَّ جَلَالُهُ",
-            translit: "Ar-Rahīm jalla jalāluhu.",
+            translit: "Ar-Raḥīm jalla jalāluhu.",
             translation: "The Most Merciful, He is exalted!",
           }),
         ],
@@ -170,7 +177,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "الفَتَّاحُ جَلَّ جَلَالُهُ",
-            translit: "Al-Fattāh jalla jalāluhu.",
+            translit: "Al-Fattāḥ jalla jalāluhu.",
             translation: "The Opener, He is exalted!",
           }),
         ],
@@ -188,7 +195,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "القَابِضُ جَلَّ جَلَالُهُ",
-            translit: "Al-Qābid jalla jalāluhu.",
+            translit: "Al-Qābiḍ jalla jalāluhu.",
             translation: "The Withholder, He is exalted!",
           }),
         ],
@@ -197,7 +204,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "البَاسِطُ جَلَّ جَلَالُهُ",
-            translit: "Al-Bāsit jalla jalāluhu.",
+            translit: "Al-Bāsiṭ jalla jalāluhu.",
             translation: "The Expander, He is exalted!",
           }),
         ],
@@ -233,7 +240,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "المُذِلُّ جَلَّ جَلَالُهُ",
-            translit: "Al-Mudhil jalla jalāluhu.",
+            translit: "Al-Mudhill jalla jalāluhu.",
             translation: "The Dishonourer, He is exalted!",
           }),
         ],
@@ -521,7 +528,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "المُحْصِي جَلَّ جَلَالُهُ",
-            translit: "Al-Muhsī jalla jalāluhu.",
+            translit: "Al-Muḥṣī jalla jalāluhu.",
             translation: "The Counter, He is exalted!",
           }),
         ],
@@ -548,7 +555,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "المُحْيِي جَلَّ جَلَالُهُ",
-            translit: "Al-Muhyī jalla jalāluhu.",
+            translit: "Al-Muḥyī jalla jalāluhu.",
             translation: "The Reviver, He is exalted!",
           }),
         ],
@@ -800,7 +807,7 @@ export default [
         entries: [
           new DhikrEntryModel({
             arabic: "المُغْنِي جَلَّ جَلَالُهُ",
-            translit: "Al-Mughni jalla jalāluhu.",
+            translit: "Al-Mughnī jalla jalāluhu.",
             translation: "The Enricher, He is exalted!",
           }),
         ],
@@ -1012,20 +1019,15 @@ export default [
             translation:
               "Fearful hearts are put at rest by remembrance of Him and by it harm is removed.",
           }),
+          rum_25(),
           new DhikrEntryModel({
-            arabic: "﴿\nوَمِنْ ءَايَٰتِهِۦٓ أَنْ تَقُومَ السَّمَآءُ وَالْأَرْضُ بِأَمْرِهِ \n ﴾",
-            translit: "wa min āyātihi an taqūmas samāʾu wal arḍu bi amrihi",
-            translation:
-              "Among His signs is that heaven and earth are sustained by His command.",
-          }),
-          new DhikrEntryModel({
-            arabic:
-              "أَحَاطَ بِكُلِّ شَيْءٍ عِلْمًا وَغَفَرَ ذُنُوبَ الْمُذْنِبِينَ كَرَمًا وَحِلْمًا\n\n ﴿\n\nلَيْسَ كَمِثْلِهِۦ شَىْءٌ ۖ وَهُوَ السَّمِيعُ الْبَصِيرُ\n\n ﴾\n.",
+            arabic: "أَحَاطَ بِكُلِّ شَيْءٍ عِلْمًا وَغَفَرَ ذُنُوبَ الْمُذْنِبِينَ كَرَمًا وَحِلْمًا",
             translit:
-              "aḥāṭa bikulli shayʾin ʿilman wa ghafara dhunubal mudhnibīna karaman waḥ ilman laysa kamithlihi shayʾun wa huwas samīʿul baṣīr.",
+              "aḥāṭa bikulli shayʾin ʿilman wa ghafara dhunubal mudhnibīna karaman waḥ ilman",
             translation:
-              'His knowledge encompasses everything. He forgives the wrong actions of those who commit them, out of generosity and forbearance. "There is nothing like Him and He is the All-Hearing, All-Seeing."',
+              "His knowledge encompasses everything. He forgives the wrong actions of those who commit them, out of generosity and forbearance.",
           }),
+          shura_11(),
         ],
       }),
       new DhikrModel({
@@ -1046,7 +1048,7 @@ export default [
           }),
           new DhikrEntryModel({
             arabic:
-              "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا باللَّهِ العَلِيِّ العَظِيمِ. سُبْحَانَكَ لَا نُحْصِي ثَنَاءً عَلَيْكَ أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ",
+              "وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ العَلِيِّ العَظِيمِ. سُبْحَانَكَ لَا نُحْصِي ثَنَاءً عَلَيْكَ أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ",
             translit:
               "wā lā ḥawla wā lā quwwata illā biLlahil ʿaliyyil ʿaẓīm. Subḥānaka lā nuḥṣī thanāʾan ʿalayka ʾanta kamāthnayta ʿalā nafsika",
             translation:
@@ -1088,22 +1090,9 @@ export default [
             translation:
               "O You Who help those who ask for help. There is no god but You. By the honour of Our Master Muhammad, may Allah bless him and grant him peace, give us succour and show us mercy.",
           }),
-          new DhikrEntryModel({
-            arabic:
-              "رَحْمَةُ اللَّهِ وَبَرَكَاتُهُ عَلَيْكُمْ أَهْلَ البَيْتِ إِنَّهُ حَمِيدٌ مَجِيدٌ: ﴿إِنَّمَا يُرِيدُ اللَّهُ لِيُذْهِبَ عَنكُمُ الرِّجْسَ أَهْلَ الْبَيْتِ وَيُطَهِّرَكُمْ تَطْهِيرًا﴾",
-            translit:
-              "RaḥmatuLlāhi wa barakātuhu ʿalaykum ahlal bayti innahu ḥamīdun majīdun: innamā yurīduLlāhu liyudh-hiba ʿankumur rijsa ahlal bayti wa yuṭahhirakum taṭhīran.",
-            translation:
-              "May the mercy of Allah and His blessings be upon you, People of the House. He is Praiseworthy, Glorious. Allah desires to remove all impurity from you, People of the House, and to purify you completely.",
-          }),
-          new DhikrEntryModel({
-            arabic:
-              "﴿إِنَّ اللَّهَ وَمَلَٰٓئِكَتَهُۥ يُصَلُّونَ عَلَى النَّبِىِّ ۚ يَٰٓأَيُّهَا الَّذِينَ ءَامَنُواْ صَلُّواْ عَلَيْهِ وَسَلِّمُواْ تَسْلِيمًا﴾",
-            translit:
-              "innaLlāha wamalāʾikatahu yuṣallūna ʿalān nabiyyi yā ayyuhāl ladhīna āmanū ṣallū ʿalayhi wasallimū taslīman.",
-            translation:
-              "Allah and His angels call down blessings on the Prophet. O you who believe, call down blessings on him and ask for complete peace and safety for him.",
-          }),
+          hud_73(),
+          ahzab_33(),
+          ahzab_56_verse(),
         ],
       }),
       new DhikrModel({

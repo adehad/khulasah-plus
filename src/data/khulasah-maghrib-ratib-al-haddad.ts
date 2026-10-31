@@ -6,11 +6,14 @@ import {
   ikhlas,
   nas,
 } from "@/data/shared/quran";
+import { baqarah_128 } from "@/data/shared/quran-partial";
 import { DhikrEntryModel, DhikrModel, WirdModel } from "@/models/recitation";
 
 export const wird = [
   new WirdModel({
     title: "Ratib Imam Al-Haddad",
+    instruction:
+      "The famous Ratib al-Haddad of Imām ‛Abdullah ibn ‛Alawī al-Ḥaddād",
     audio: {
       url: "https://cdn.jsdelivr.net/gh/adehad/khulasah-plus-cdn@main/audio/khulasah-maghrib-ratib-al-haddad.opus",
       title: "Ratib al Imam Al Haddad",
@@ -72,15 +75,14 @@ export const wird = [
         ],
       }),
       new DhikrModel({
+        repeat: 3,
         entries: [
           new DhikrEntryModel({
-            arabic: "رَبَّنَا اغْفِرْ لَنَا وَتُبْ عَلَيْنَا إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيمُ",
-            translation:
-              "Our Lord, forgive us and grant us repentance; indeed, You are the Oft-Forgiving, Most Merciful.",
-            translit:
-              "Rabbanaghfir lanā wa tub ‛alaynā innaka antat tawwābur raḥīm.",
-            repeat: 3,
+            arabic: "رَبَّنَا اغْفِرْ لَنَا",
+            translit: "Rabbanaghfir lanā",
+            translation: "Our Lord, forgive us",
           }),
+          baqarah_128(),
         ],
       }),
       new DhikrModel({
@@ -615,6 +617,8 @@ export const wird = [
         ],
       }),
       new DhikrModel({
+        instruction:
+          "After reading the Fātiḥah one raises their hands and asks for whatever one wants and then says:",
         entries: [
           new DhikrEntryModel({
             arabic: "اللَّهُمَّ إِنَّا نَسْأَلُكَ رِضَاكَ وَالْجَنَّةَ وَنَعُوذُ بِكَ مِنْ سَخَطِكَ وَالنَّارِ",
@@ -627,6 +631,7 @@ export const wird = [
         ],
       }),
       new DhikrModel({
+        instruction: "The following is added:",
         entries: [
           new DhikrEntryModel({
             arabic:
@@ -642,13 +647,19 @@ export const wird = [
       new DhikrModel({
         entries: [
           new DhikrEntryModel({
-            arabic:
-              "جَزَى اللَّهُ عَنَّا سَيِّدَنَا مُحَمَّدًا صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ خَيْرًا، جَزَى اللَّهُ عَنَّا سَيِّدَنَا مُحَمَّدًا صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ مَا هُوَ أَهْلُهُ",
-            translation:
-              "May Allāh reward, on our behalf, our master Muḥammad (blessings and peace on him) with good. May Allāh reward our master Muḥammad (blessings and peace on him) that which he is entitled to.",
+            arabic: "جَزَى اللَّهُ عَنَّا سَيِّدَنَا مُحَمَّدًا صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ خَيْرًا",
             translit:
-              "Jazallāhu ‛annā sayyidanā Muḥammadan ṣallallāhu ‛alayhi wa sallama khayran, jazallāhu ‛annā sayyidanā Muḥammadan ṣallallāhu ‛alayhi wa sallama mā huwa ahluhū.",
-            repeat: 3,
+              "Jazallāhu ‛annā sayyidanā Muḥammadan ṣallallāhu ‛alayhi wa sallama khayran",
+            translation:
+              "May Allāh reward, on our behalf, our master Muḥammad (blessings and peace on him) with good.",
+          }),
+          new DhikrEntryModel({
+            arabic:
+              "جَزَى اللَّهُ عَنَّا سَيِّدَنَا مُحَمَّدًا صَلَّى اللَّهُ عَلَيْهِ وَآلِهِ وَسَلَّمَ مَا هُوَ أَهْلُهُ",
+            translit:
+              "jazallāhu ‛annā sayyidanā Muḥammadan ṣallallāhu ‛alayhi wa sallama mā huwa ahluhū.",
+            translation:
+              "May Allāh reward our master Muḥammad (blessings and peace on him) that which he is entitled to.",
           }),
         ],
       }),
