@@ -232,7 +232,7 @@ export function baqarah_186(repeat = 1, enableCounter?: boolean) {
   });
 }
 
-/** end of Al-Baqarah 2:201 — used in khulasah-last-part-of-night-adhkar-before-dawn, visiting-the-beloved, dua-khatm-al-quran-al-karim */
+/** end of Al-Baqarah 2:201 — used in khulasah-last-part-of-night-adhkar-before-dawn, ziyarahs-visiting-the-beloved, dua-khatm-al-quran-al-karim */
 export function baqarah_201(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic: "… رَبَّنَآ ءَاتِنَا فِي ٱلدُّنۡيَا حَسَنَةٗ وَفِي ٱلۡأٓخِرَةِ حَسَنَةٗ وَقِنَا عَذَابَ ٱلنَّارِ",
@@ -521,7 +521,7 @@ export function imran_192(repeat = 1, enableCounter?: boolean) {
   });
 }
 
-/** end of Aal-Imran 3:193 — used in visiting-the-beloved */
+/** end of Aal-Imran 3:193 — used in ziyarahs-visiting-the-beloved */
 export function imran_193(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic: "… ذُنُوبَنَا وَكَفِّرۡ عَنَّا سَيِّـَٔاتِنَا وَتَوَفَّنَا مَعَ ٱلۡأَبۡرَارِ",
@@ -552,7 +552,7 @@ export function imran_193_verse(repeat = 1, enableCounter?: boolean) {
   });
 }
 
-/** Aal-Imran 3:194 — used in khulasah-last-part-of-night-adhkar-on-waking-up, visiting-the-beloved */
+/** Aal-Imran 3:194 — used in khulasah-last-part-of-night-adhkar-on-waking-up, ziyarahs-visiting-the-beloved */
 export function imran_194(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic:
@@ -660,7 +660,7 @@ export function imran_200(repeat = 1, enableCounter?: boolean) {
   });
 }
 
-/** end of An-Nisa 4:64 — used in khulasah-last-part-of-night-adhkar-on-waking-up, visiting-the-beloved */
+/** end of An-Nisa 4:64 — used in khulasah-last-part-of-night-adhkar-on-waking-up, ziyarahs-visiting-the-beloved */
 export function nisa_64(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic:
@@ -1089,7 +1089,7 @@ export function anbiya_89(repeat = 1, enableCounter?: boolean) {
   });
 }
 
-/** Al-Anbiya 21:107 — used in visiting-the-beloved */
+/** Al-Anbiya 21:107 — used in ziyarahs-visiting-the-beloved */
 export function anbiya_107(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic: "وَمَآ أَرۡسَلۡنَٰكَ إِلَّا رَحۡمَةٗ لِّلۡعَٰلَمِينَ",
@@ -1356,7 +1356,7 @@ export function shura_11(repeat = 1, enableCounter?: boolean) {
   });
 }
 
-/** Ash-Shura 42:25 — used in visiting-the-beloved */
+/** Ash-Shura 42:25 — used in ziyarahs-visiting-the-beloved */
 export function shura_25(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic: "وَهُوَ ٱلَّذِي يَقۡبَلُ ٱلتَّوۡبَةَ عَنۡ عِبَادِهِۦ وَيَعۡفُواْ عَنِ ٱلسَّيِّـَٔاتِ وَيَعۡلَمُ مَا تَفۡعَلُونَ",
@@ -1441,7 +1441,7 @@ export function fath_3(repeat = 1, enableCounter?: boolean) {
   });
 }
 
-/** start of Al-Fath 48:10 — used in visiting-the-beloved */
+/** start of Al-Fath 48:10 — used in ziyarahs-visiting-the-beloved */
 export function fath_10(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic: "إِنَّ ٱلَّذِينَ يُبَايِعُونَكَ إِنَّمَا يُبَايِعُونَ ٱللَّهَ يَدُ ٱللَّهِ فَوۡقَ أَيۡدِيهِمۡۚ …",
@@ -1648,7 +1648,7 @@ export function qalam_1(repeat = 1, enableCounter?: boolean) {
   });
 }
 
-/** Al-Qalam 68:4 — used in salawat-compilations-majma-al-lataif-4---Monday, visiting-the-beloved */
+/** Al-Qalam 68:4 — used in salawat-compilations-majma-al-lataif-4---Monday, ziyarahs-visiting-the-beloved */
 export function qalam_4(repeat = 1, enableCounter?: boolean) {
   return new QuranDhikrEntryModel({
     arabic: "وَإِنَّكَ لَعَلَىٰ خُلُقٍ عَظِيمٖ",
