@@ -14,7 +14,7 @@ import {
 
 export default [
   new QasidaModel({
-    title: "Supplication at the End of Gatherings (of Dhikr) and Lessons",
+    title: "Supplication at the End of Gatherings (of Dhikr) and Lessons (P1)",
     entries: [
       new QasidaVerseModel({
         chorus: false,
@@ -143,7 +143,7 @@ export default [
     ],
   }),
   new WirdModel({
-    title: "",
+    title: "Supplication at the End of Gatherings (of Dhikr) and Lessons (P2)",
     entries: [
       new DhikrModel({
         entries: [
@@ -187,7 +187,7 @@ export default [
     ],
   }),
   new QasidaModel({
-    title: "",
+    title: "Supplication at the End of Gatherings (of Dhikr) and Lessons (P3)",
     entries: [
       new QasidaVerseModel({
         chorus: false,
@@ -388,7 +388,7 @@ export default [
     ],
   }),
   new WirdModel({
-    title: "",
+    title: "Supplication at the End of Gatherings (of Dhikr) and Lessons (P4)",
     entries: [
       new DhikrModel({
         entries: [

@@ -508,7 +508,7 @@ export default [
     ],
   }),
   new WirdModel({
-    title: "Supplication of Amīr al-Mu’minīn ‛Ali (peace be upon him)",
+    title: "Supplication of Amīr al-Mu’minīn ‛Ali (peace be upon him) (P1)",
     instruction:
       "Guaranteed protection for the traveller when he travels, and whatever he possesses:",
     entries: [
@@ -622,7 +622,7 @@ export default [
     ],
   }),
   new WirdModel({
-    title: "",
+    title: "Supplication of Amīr al-Mu’minīn ‛Ali (peace be upon him) (P2)",
     entries: [
       quraysh(1, "If he fears anyone, he should read Sūrah Quraysh,"),
       new DhikrModel({

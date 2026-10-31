@@ -507,7 +507,7 @@ export default [
     href: "khulasah/various-supplications/supplication-for-all-muslims",
   }),
   new WirdModel({
-    title: "",
+    title: "After the Fajr and Asr prayers",
     instruction: "After the Fajr and Asr prayers add:",
     entries: [
       new DhikrModel({

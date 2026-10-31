@@ -91,7 +91,7 @@ export default [
   }),
   new WirdModel({
     title:
-      "Ṣalāt at-Tāj (The Prayer of the Crown) by Sayyiduna Shaykh Abu Bakr bin Salim",
+      "Ṣalāt at-Tāj (The Prayer of the Crown) by Sayyiduna Shaykh Abu Bakr bin Salim (P1)",
     entries: [
       new DhikrModel({
         entries: [
@@ -350,7 +350,8 @@ export default [
     ],
   }),
   new WirdModel({
-    title: "",
+    title:
+      "Ṣalāt at-Tāj (The Prayer of the Crown) by Sayyiduna Shaykh Abu Bakr bin Salim (P2)",
     entries: [
       new DhikrModel({
         entries: [
