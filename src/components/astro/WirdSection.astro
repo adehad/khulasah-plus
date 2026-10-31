@@ -1,4 +1,5 @@
 ---
+import { pageConfigs } from "@/config/page-config";
 import {
   DhikrModel,
   ExpandModel,
@@ -20,6 +21,7 @@ const { model, index, pagePath } = Astro.props;
 const wirdSlug = model.title ? slugify(model.title) : `${index}`;
 const titleId = model.title ? slugify(model.title) : "";
 const hasAudio = !!model.audio?.url;
+const pageTitle = pageConfigs.find((c) => c.path === pagePath)?.title ?? "";
 ---
 
 <div class="wird-container">
@@ -27,13 +29,24 @@ const hasAudio = !!model.audio?.url;
     <div class="wird-title-row">
       <h1 id={titleId} class="wird-title">{model.title}</h1>
       {hasAudio && (
-        <sl-icon-button
-          class="circle-btn audio-play-btn"
-          name="play-circle"
-          label="Play audio"
-          data-audio-url={model.audio!.url}
-          data-audio-title={model.audio!.title ?? model.title}
-        ></sl-icon-button>
+        <>
+          <sl-icon-button
+            class="circle-btn audio-play-btn"
+            name="play-circle"
+            label="Play audio"
+            data-audio-url={model.audio!.url}
+            data-audio-title={model.audio!.title ?? model.title}
+          ></sl-icon-button>
+          <kp-favourite-star
+            class="section-star"
+            href={`${pagePath}#${titleId}`}
+            label={
+              pageTitle && pageTitle !== model.title
+                ? `${pageTitle} · ${model.title}`
+                : model.title
+            }
+          ></kp-favourite-star>
+        </>
       )}
     </div>
   )}
@@ -90,6 +103,11 @@ const hasAudio = !!model.audio?.url;
     gap: 0.5rem;
   }
 
+
+  .section-star {
+    --kp-favourite-star-size: 1.4rem;
+    color: var(--sl-color-primary-500);
+  }
 
   .circle-btn {
     font-size: 1.5rem;

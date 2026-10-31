@@ -249,3 +249,46 @@ main {
 .sl-theme-dark {
   --kp-favourite-color: #f5c542;
 }
+
+/*
+ * Sticky numbers (sticky-button.ts) and the favourite star beside each one share these, so the star can sit
+ * on the number's row without measuring it. Sizes are in rem, not the button font's ch, because the star's
+ * font differs.
+ */
+:root {
+  --kp-number-top: 1rem;
+  --kp-verse-number-top: 4rem;
+  --kp-number-width: 2rem;
+  --kp-number-height: 2.25rem;
+  --kp-verse-number-height: 1.875rem;
+}
+
+/*
+ * A number's star opens its entry, which starts right under the number, and is drawn back up beside the
+ * number. It sticks there only while that entry is on screen. It takes no height, so offering it never
+ * shifts the entry's text, and the number's own row has no text for it to cover.
+ */
+kp-favourite-star.number-star {
+  --number-top: var(--kp-number-top);
+  --number-height: var(--kp-number-height);
+  display: flex;
+  /* centres the star on the zero-height box, so moving the box up half a number centres it on the number */
+  align-items: center;
+  align-self: flex-start;
+  width: fit-content;
+  height: 0;
+  position: sticky;
+  /* where the entry's top is once the number has stuck, so star and number stick together */
+  top: calc(var(--number-top) + var(--number-height));
+  /* under the sticky number (z-index 10), over content scrolling under the stuck number */
+  z-index: 1;
+  translate: calc(var(--kp-number-width) + 0.25rem)
+    calc(var(--number-height) / -2);
+  --kp-favourite-star-size: 1rem;
+  --kp-favourite-star-background: var(--sl-color-neutral-0);
+}
+
+kp-sticky-button[variant="verse"] + * > kp-favourite-star.number-star {
+  --number-top: var(--kp-verse-number-top);
+  --number-height: var(--kp-verse-number-height);
+}
