@@ -47,7 +47,8 @@ export class FavouriteStar extends LitElement {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      padding: 0.25rem;
+      /* A placement can widen the hit area around an unchanged icon */
+      padding: var(--kp-favourite-star-padding, 0.25rem);
       border: none;
       border-radius: 50%;
       /* A placement that overlaps text gives the star an opaque backdrop */
