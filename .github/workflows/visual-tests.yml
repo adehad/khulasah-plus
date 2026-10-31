@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v7
         with:
-          node-version: "24"
+          node-version-file: .node-version
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
@@ -30,8 +30,9 @@ jobs:
 
       # Behavioural specs gate the run (engine-level, OS-independent); the gallery
       # spec captures a full-page screenshot per engine into the HTML report.
-      - name: Run visual tests
-        run: bun run test:visual
+      # All projects run in one invocation so the site is built once for the visual and functional suites.
+      - name: Run Playwright tests
+        run: bunx playwright test
 
       # Expiring artifact — the screenshots to eyeball; uploaded even on failure.
       - name: Upload Playwright report

@@ -240,3 +240,12 @@ main {
 }
 
 /* End Shoelace Specific Theme Override */
+
+/* Gold marks favourites in both themes; the light shade is darkened to keep 3:1 contrast against white */
+:root {
+  --kp-favourite-color: #b8860b;
+}
+
+.sl-theme-dark {
+  --kp-favourite-color: #f5c542;
+}

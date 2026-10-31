@@ -19,7 +19,8 @@
     "generate-pwa-assets": "pwa-assets-generator",
     "preview": "astro preview",
     "test:unit": "bun test",
-    "test:visual": "playwright test",
+    "test:visual": "playwright test --project=webkit --project=chromium",
+    "test:e2e": "playwright test --project=functional",
     "test:visual:report": "playwright show-report"
   },
   "author": "",
