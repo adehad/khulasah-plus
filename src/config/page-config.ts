@@ -437,9 +437,14 @@ export const pageConfigs: PageConfig[] = [
     contentImportPath: "prayers-for-palestine",
   },
   {
-    path: "visiting-the-beloved",
+    path: "ziyarahs",
+    title: "Ziyarahs",
+    contentImportPath: "ziyarahs-index",
+  },
+  {
+    path: "ziyarahs/visiting-the-beloved",
     title: "Visiting the Beloved ﷺ",
-    contentImportPath: "visiting-the-beloved",
+    contentImportPath: "ziyarahs-visiting-the-beloved",
   },
   {
     path: "salawat-compilations",
