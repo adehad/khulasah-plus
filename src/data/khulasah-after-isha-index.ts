@@ -3,10 +3,6 @@ import { only_instruction } from "@/models/recitation";
 
 export const afterIshaContent = [
   new NavModel({
-    title: "Adhkar after Isha",
-    href: "khulasah/after-isha/adhkar",
-  }),
-  new NavModel({
     title: "Wird of Imam Abu Bakr as-Sakran",
     href: "khulasah/after-isha/wird-as-sakran",
   }),

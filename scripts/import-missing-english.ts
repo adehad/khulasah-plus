@@ -17,6 +17,8 @@ const ORIGINAL_BRANCH = "content-making";
 const SKIP_PAGES = [/\/Dalail Khayrat\//, /Afdal as-Salawat/];
 // reviewed and placed in reworded form: nav labels, page titles, and rubrics split around shared surahs
 const ACCEPTED = new Set([
+  "Wird of Imam as-Sakran",
+  "Supplication made after a prostration of recital or a prostration of thankfulness",
   "*The audio above is a recitation of the dua by al-Habib Ahmad Mashhur al-Haddad (may Allah be pleased with him).",
   "PRAYERS FOR VICTORY IN MASJID AL-AQSA AND PALESTINE",
   "INVOCATIONS (ADHKĀR) AFTER THE OBLIGATORY ṢALĀH:",
