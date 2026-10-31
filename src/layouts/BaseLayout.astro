@@ -223,10 +223,8 @@ const appShortName = "Khulasah+";
   </script>
 
   <!-- Register service worker (injectRegister: false means we must do it manually) -->
-  <script is:inline define:vars={{ isDev: import.meta.env.DEV, baseURL }}>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register(baseURL + (isDev ? "sw.dev.js" : "sw.js"));
-    }
+  <script>
+    import "@/scripts/sw-update";
   </script>
 </body>
 </html>

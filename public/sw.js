@@ -2,24 +2,41 @@ importScripts(
   `https://storage.googleapis.com/workbox-cdn/releases/${__WORKBOX_VERSION__}/workbox-sw.js`,
 );
 
-// Register Service Worker Take over — warm Shoelace theme CSS cache on install
+// An update waits until the page asks for it, so an open page is never left running against a
+// precache it did not load from; the page reloads onto the new version once this worker takes
+// over. Pages from before that protocol have no update toast and would never ask, leaving their
+// readers on the old version until every window closed, so the marker cache records that the
+// active worker speaks it: without the marker (a first install, or replacing a worker from before
+// the protocol) this worker activates straight away as the old one did.
+const UPDATE_PROTOCOL_MARKER = "sw-update-protocol-v1";
+
 self.addEventListener("install", (event) => {
   const cdn = `https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@${__SHOELACE_VERSION__}`;
   event.waitUntil(
-    caches.open("shoelace-assets").then(async (cache) => {
-      await Promise.allSettled([
-        cache.add(`${cdn}/dist/themes/light.css`),
-        cache.add(`${cdn}/dist/themes/dark.css`),
-      ]);
-    }),
+    Promise.all([
+      // Warm Shoelace theme CSS cache on install
+      caches.open("shoelace-assets").then(async (cache) => {
+        await Promise.allSettled([
+          cache.add(`${cdn}/dist/themes/light.css`),
+          cache.add(`${cdn}/dist/themes/dark.css`),
+        ]);
+      }),
+      caches.has(UPDATE_PROTOCOL_MARKER).then((speaksProtocol) => {
+        if (!speaksProtocol) return self.skipWaiting();
+      }),
+    ]),
   );
-  self.skipWaiting();
+});
+
+self.addEventListener("message", (event) => {
+  if (event.data?.type === "SKIP_WAITING") self.skipWaiting();
 });
 
 self.addEventListener("activate", (event) => {
-  event.waitUntil(self.clients.claim());
+  event.waitUntil(
+    Promise.all([caches.open(UPDATE_PROTOCOL_MARKER), self.clients.claim()]),
+  );
 });
-// End Service Worker Take over
 
 // Cache audio files from CDN with streaming support
 const AUDIO_CDN_PATTERNS = [/\.opus$/i, /\.mp3$/i, /\.ogg$/i];
