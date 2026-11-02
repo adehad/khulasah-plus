@@ -36,14 +36,12 @@ test("toFavouriteHref strips a root base", () => {
   ).toBe("khulasah");
 });
 
-test.each([
-  "",
-  "   ",
-  "http://",
-  "javascript:alert(1)",
-])("toFavouriteHref rejects %p", (input) => {
-  expect(toFavouriteHref(input, site)).toBeNull();
-});
+test.each(["", "   ", "http://", "javascript:alert(1)"])(
+  "toFavouriteHref rejects %p",
+  (input) => {
+    expect(toFavouriteHref(input, site)).toBeNull();
+  },
+);
 
 test.each([
   ["", "/plus/", "/plus/"],

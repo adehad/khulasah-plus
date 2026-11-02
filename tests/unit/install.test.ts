@@ -70,8 +70,9 @@ const cases: [string, string, number, InstallHint][] = [
   ],
 ];
 
-test.each(
-  cases,
-)("%s gets its own install instructions", (_browser, userAgent, maxTouchPoints, hint) => {
-  expect(installHint(userAgent, maxTouchPoints)).toBe(hint);
-});
+test.each(cases)(
+  "%s gets its own install instructions",
+  (_browser, userAgent, maxTouchPoints, hint) => {
+    expect(installHint(userAgent, maxTouchPoints)).toBe(hint);
+  },
+);
