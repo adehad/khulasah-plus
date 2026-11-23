@@ -122,13 +122,16 @@ describe("favourites store", () => {
         },
       },
     ],
-  ])("starts empty, still works and reports changes unsaved with %s", (_name, backend) => {
-    const store = createFavouritesStore({ backend });
-    expect(store.getTree()).toEqual([]);
-    store.add({ title: "A", href: "a" });
-    expect(store.isFavourite("a")).toBe(true);
-    expect(store.isSaved()).toBe(false);
-  });
+  ])(
+    "starts empty, still works and reports changes unsaved with %s",
+    (_name, backend) => {
+      const store = createFavouritesStore({ backend });
+      expect(store.getTree()).toEqual([]);
+      store.add({ title: "A", href: "a" });
+      expect(store.isFavourite("a")).toBe(true);
+      expect(store.isSaved()).toBe(false);
+    },
+  );
 
   test.each([
     ["corrupt", "{not json"],
@@ -191,19 +194,20 @@ describe("parseFavourites", () => {
     );
   });
 
-  test.each([
-    "\\evil.com",
-    "\t/evil.com",
-    "\n/evil.com",
-  ])("an imported href %j cannot lead to another site", (href) => {
-    const text = JSON.stringify({
-      version: 1,
-      items: [{ id: "a", title: "A", href }],
-    });
-    expect(() => parseFavourites(text)).toThrow(FavouritesFormatError);
-    const origin = "https://site.example";
-    expect(new URL(favouriteHrefToUrl(href, "/"), origin).origin).toBe(origin);
-  });
+  test.each(["\\evil.com", "\t/evil.com", "\n/evil.com"])(
+    "an imported href %j cannot lead to another site",
+    (href) => {
+      const text = JSON.stringify({
+        version: 1,
+        items: [{ id: "a", title: "A", href }],
+      });
+      expect(() => parseFavourites(text)).toThrow(FavouritesFormatError);
+      const origin = "https://site.example";
+      expect(new URL(favouriteHrefToUrl(href, "/"), origin).origin).toBe(
+        origin,
+      );
+    },
+  );
 
   test.each([
     ["invalid JSON", "{"],
